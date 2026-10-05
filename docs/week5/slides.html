@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <meta name="author" content="Week 5: Relationships and simple regression">
+  <meta name="dcterms.date" content="2027-01-05">
+  <title>Business Statistics – ETX1100/ETX5900 Business Statistics</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-6bc5865dcfecb006383e69f0f2fc01d0.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <link href="../site_libs/countdown-0.6.0/countdown.css" rel="stylesheet">
+  <script src="../site_libs/countdown-0.6.0/countdown.js"></script>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="../site_libs/quarto-contrib/quarto-project/quarto-monash/presentation/_images/background/bg-02.png" data-background-position="center" data-background-size="contain" class="quarto-title-block center">
+<div id="title-slide-text">
+
+  <h1 class="title">ETX1100/ETX5900 Business Statistics</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Week 5: Relationships and simple regression 
+</div>
+</div>
+</div>
+
+  <p class="date">5 January 2027</p>
+
+</div>
+
+</section><section id="TOC">
+<nav role="doc-toc"> 
+<h2 id="toc-title">Outline</h2>
+<ul>
+<li><a href="#/what-does-related-mean" id="/toc-what-does-related-mean">What does “related” mean?</a></li>
+<li><a href="#/numerical-relationships" id="/toc-numerical-relationships">Numerical relationships</a></li>
+<li><a href="#/simple-linear-regression" id="/toc-simple-linear-regression">Simple linear regression</a></li>
+<li><a href="#/validation-and-responsible-prediction" id="/toc-validation-and-responsible-prediction">Validation and responsible prediction</a></li>
+<li><a href="#/integrated-application" id="/toc-integrated-application">Integrated application</a></li>
+</ul>
+</nav>
+</section>
+<section id="todays-journey" class="slide level2">
+<h2>Today’s journey</h2>
+<ol type="1">
+<li>Revisit relationships between categorical variables.</li>
+<li>Visualise and quantify numerical relationships.</li>
+<li>Distinguish association from causation.</li>
+<li>Build and interpret a simple linear regression in Excel.</li>
+<li>Predict responsibly and diagnose limitations.</li>
+</ol>
+<!-- Springboards: ETF W7 relationships block and ETF W8 seminar/workshop. -->
+</section>
+<section>
+<section id="what-does-related-mean" class="title-slide slide level1 center">
+<h1>What does “related” mean?</h1>
+
+</section>
+<section id="retrieval-check" class="slide level2">
+<h2>Retrieval check</h2>
+<ul>
+<li>How would you assess association between two categorical variables?</li>
+<li>What does independence mean in probability language?</li>
+<li>What does a small p-value say—and not say?</li>
+<li>Which variable types can be placed on a scatterplot?</li>
+</ul>
+</section>
+<section id="match-the-method-to-the-variables" class="slide level2">
+<h2>Match the method to the variables</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Explanatory variable</th>
+<th>Outcome variable</th>
+<th>Useful tools</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>categorical</td>
+<td>categorical</td>
+<td>contingency table, conditional probability</td>
+</tr>
+<tr class="even">
+<td>numerical</td>
+<td>numerical</td>
+<td>scatterplot, covariance, correlation, regression</td>
+</tr>
+<tr class="odd">
+<td>categorical</td>
+<td>numerical</td>
+<td>group summaries, boxplots</td>
+</tr>
+</tbody>
+</table>
+<p>Method selection begins with the business question and variable types.</p>
+</section>
+<section id="categorical-association" class="slide level2">
+<h2>Categorical association</h2>
+<p>Two categorical variables are associated when the outcome distribution changes across explanatory-variable groups.</p>
+<p>Compare conditional probabilities such as:</p>
+<p><span class="math display">P(\text{tried}\mid\text{high income})</span></p>
+<p>with the corresponding probabilities in other income groups or with the marginal probability.</p>
+</section>
+<section id="watch-me-categorical-relationship" class="slide level2">
+<h2>Watch me: categorical relationship</h2>
+<p>Using a contingency table, ask:</p>
+<ol type="1">
+<li>What is the outcome?</li>
+<li>What groups are being compared?</li>
+<li>Are row or column percentages appropriate?</li>
+<li>Do conditional probabilities differ meaningfully?</li>
+<li>Is causal language justified?</li>
+</ol>
+</section>
+<section id="now-you-try-explain-the-association" class="slide level2">
+<h2>Now you try: explain the association</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_59bd7431" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>A loyalty-app sample finds 72% high satisfaction among users and 61% among non-users.</p>
+<ol type="1">
+<li>State the observed association.</li>
+<li>Explain why the two percentages are conditional.</li>
+<li>Give two plausible confounders.</li>
+<li>Rewrite “the app increases satisfaction” as a defensible conclusion.</li>
+</ol>
+</section></section>
+<section>
+<section id="numerical-relationships" class="title-slide slide level1 center">
+<h1>Numerical relationships</h1>
+
+</section>
+<section id="scatterplots-first" class="slide level2">
+<h2>Scatterplots first</h2>
+<p>A scatterplot reveals:</p>
+<ul>
+<li><strong>direction:</strong> positive or negative;</li>
+<li><strong>form:</strong> linear or nonlinear;</li>
+<li><strong>strength:</strong> tight or diffuse pattern; and</li>
+<li><strong>unusual observations:</strong> outliers or influential points.</li>
+</ul>
+<p>Put the explanatory variable <span class="math inline">X</span> on the horizontal axis and response <span class="math inline">Y</span> on the vertical axis.</p>
+</section>
+<section id="covariance" class="slide level2">
+<h2>Covariance</h2>
+<p>Sample covariance measures joint movement:</p>
+<p><span class="math display">s_{XY}=\frac{\sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})}{n-1}.</span></p>
+<ul>
+<li>Positive: variables tend to move in the same direction.</li>
+<li>Negative: variables tend to move in opposite directions.</li>
+<li>Magnitude depends on measurement units, limiting comparison.</li>
+</ul>
+</section>
+<section id="correlation" class="slide level2">
+<h2>Correlation</h2>
+<p>Correlation standardises covariance:</p>
+<p><span class="math display">r=\frac{s_{XY}}{s_Xs_Y},\qquad -1\le r\le1.</span></p>
+<ul>
+<li>Sign gives direction.</li>
+<li>Magnitude gives strength of <strong>linear</strong> association.</li>
+<li>Correlation is unit-free and symmetric in <span class="math inline">X</span> and <span class="math inline">Y</span>.</li>
+</ul>
+<p>Excel: <code>=CORREL(x_range,y_range)</code>.</p>
+</section>
+<section id="watch-me-income-and-spending" class="slide level2">
+<h2>Watch me: income and spending</h2>
+<p>Open <code>week5-regression-data.xlsx</code>, sheet <strong>IncomeSpend</strong>.</p>
+<ol type="1">
+<li>Insert a scatterplot of <code>Spend</code> against <code>Income</code>.</li>
+<li>Label axes with units.</li>
+<li>Add a linear trendline.</li>
+<li>Calculate <code>=CORREL(Income,Spend)</code>.</li>
+<li>Describe direction, form, strength, and unusual points.</li>
+</ol>
+</section>
+<section id="now-you-try-age-and-market-price" class="slide level2">
+<h2>Now you try: age and market price</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_ebd604ca" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>On <strong>HouseSize</strong>:</p>
+<ol type="1">
+<li>plot market price against house age;</li>
+<li>add a linear trendline;</li>
+<li>calculate correlation;</li>
+<li>interpret its sign and magnitude; and</li>
+<li>identify whether the plot supports a linear summary.</li>
+</ol>
+</section>
+<section id="correlation-cautions" class="slide level2">
+<h2>Correlation cautions</h2>
+<ul>
+<li><span class="math inline">r\approx0</span> does not rule out a nonlinear relationship.</li>
+<li>One influential observation can alter <span class="math inline">r</span> greatly.</li>
+<li>Restricted ranges can weaken an observed correlation.</li>
+<li>Combining groups can create a misleading aggregate pattern.</li>
+<li>Correlation does not establish causation.</li>
+</ul>
+</section>
+<section id="now-you-try-correlation-critique" class="slide level2">
+<h2>Now you try: correlation critique</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_565ce874" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>For each statement, identify the problem:</p>
+<ol type="1">
+<li>“<span class="math inline">r=0</span>, so the variables are unrelated.”</li>
+<li>“Sales and advertising are correlated, so advertising caused every sale.”</li>
+<li>“The correlation is 0.8 kilograms.”</li>
+<li>“Removing the unusual store is fine because it improves <span class="math inline">r</span>.”</li>
+</ol>
+</section></section>
+<section>
+<section id="simple-linear-regression" class="title-slide slide level1 center">
+<h1>Simple linear regression</h1>
+
+</section>
+<section id="population-and-fitted-models" class="slide level2">
+<h2>Population and fitted models</h2>
+<p>Population model:</p>
+<p><span class="math display">Y_i=\beta_0+\beta_1X_i+\varepsilon_i.</span></p>
+<p>Fitted sample model:</p>
+<p><span class="math display">\hat Y_i=\hat\beta_0+\hat\beta_1X_i.</span></p>
+<p>Residual:</p>
+<p><span class="math display">e_i=Y_i-\hat Y_i.</span></p>
+</section>
+<section id="least-squares" class="slide level2">
+<h2>Least squares</h2>
+<p>Least squares chooses the line that minimises:</p>
+<p><span class="math display">SSE=\sum_{i=1}^{n}e_i^2.</span></p>
+<p>Squaring prevents positive and negative residuals cancelling and penalises larger errors more strongly.</p>
+<p>The fitted line describes the mean response predicted at each <span class="math inline">X</span>.</p>
+</section>
+<section id="interpreting-coefficients" class="slide level2">
+<h2>Interpreting coefficients</h2>
+<ul>
+<li><strong>Intercept <span class="math inline">\hat\beta_0</span>:</strong> predicted <span class="math inline">Y</span> when <span class="math inline">X=0</span>.</li>
+<li><strong>Slope <span class="math inline">\hat\beta_1</span>:</strong> predicted mean change in <span class="math inline">Y</span> for a one-unit increase in <span class="math inline">X</span>.</li>
+</ul>
+<p>Include both variables, units, direction, and “on average”. Question whether <span class="math inline">X=0</span> is observed or meaningful.</p>
+</section>
+<section id="watch-me-regression-in-excel" class="slide level2">
+<h2>Watch me: regression in Excel</h2>
+<p>For <code>Spend</code> as <span class="math inline">Y</span> and <code>Income</code> as <span class="math inline">X</span>:</p>
+<ol type="1">
+<li><code>Data → Data Analysis → Regression</code>;</li>
+<li>select the labelled <span class="math inline">Y</span> and <span class="math inline">X</span> ranges;</li>
+<li>tick <strong>Labels</strong> and request residual output;</li>
+<li>locate coefficients, <span class="math inline">R^2</span>, standard errors, and p-values; and</li>
+<li>write the fitted equation.</li>
+</ol>
+</section>
+<section id="now-you-try-interpret-incomespend" class="slide level2">
+<h2>Now you try: interpret IncomeSpend</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_ac9b4ab1" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>From the Excel output:</p>
+<ol type="1">
+<li>report and interpret the intercept;</li>
+<li>report and interpret the slope;</li>
+<li>predict the spending change for an AUD 10,000 income increase;</li>
+<li>state whether the intercept is practically meaningful; and</li>
+<li>compare the slope sign with the correlation sign.</li>
+</ol>
+</section>
+<section id="coefficient-test" class="slide level2">
+<h2>Coefficient test</h2>
+<p>To test for a linear relationship:</p>
+<p><span class="math display">H_0:\beta_1=0,\qquad H_1:\beta_1\ne0.</span></p>
+<p>Excel reports the two-sided p-value for the slope. A small p-value supports a population linear association, subject to model assumptions and study design.</p>
+</section>
+<section id="coefficient-of-determination" class="slide level2">
+<h2>Coefficient of determination</h2>
+<p><span class="math display">R^2=\frac{\text{variation explained by the model}}{\text{total variation in }Y}.</span></p>
+<p>Interpret <span class="math inline">R^2</span> as the percentage of sample variation in the <strong>response</strong> explained by its linear relationship with <span class="math inline">X</span>.</p>
+<p>It is not the percentage of observations predicted correctly.</p>
+</section>
+<section id="watch-me-predict-from-the-line" class="slide level2">
+<h2>Watch me: predict from the line</h2>
+<p>For the fitted model</p>
+<p><span class="math display">\widehat{Spend}=8254.575+0.296(Income),</span></p>
+<p>substitute an income within the observed range. Keep units consistent and distinguish:</p>
+<ul>
+<li>predicted mean spending; and</li>
+<li>an individual’s actual spending, which also contains residual variation.</li>
+</ul>
+</section>
+<section id="now-you-try-housesize-regression" class="slide level2">
+<h2>Now you try: HouseSize regression</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_548052b9" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Regress market price (AUD thousands) on house age.</p>
+<ol type="1">
+<li>Write and interpret the fitted equation.</li>
+<li>Interpret the slope in dollars per year.</li>
+<li>Predict the change associated with five additional years of age.</li>
+<li>Interpret <span class="math inline">R^2</span> and the slope p-value.</li>
+<li>Compare fitted and observed values for one house.</li>
+</ol>
+</section></section>
+<section>
+<section id="validation-and-responsible-prediction" class="title-slide slide level1 center">
+<h1>Validation and responsible prediction</h1>
+
+</section>
+<section id="residual-plots" class="slide level2">
+<h2>Residual plots</h2>
+<p>A useful linear model has residuals that are:</p>
+<ul>
+<li>centred around zero;</li>
+<li>randomly scattered rather than curved;</li>
+<li>roughly constant in vertical spread; and</li>
+<li>not dominated by a few influential cases.</li>
+</ul>
+<p>A pattern in residuals is information the model failed to capture.</p>
+</section>
+<section id="watch-me-inspect-residuals" class="slide level2">
+<h2>Watch me: inspect residuals</h2>
+<p>Create predicted values and residuals for the age model.</p>
+<ol type="1">
+<li>Plot residuals against fitted values.</li>
+<li>Look for curvature or a funnel shape.</li>
+<li>Identify unusually large residuals.</li>
+<li>Return to the original data before deciding whether any point is erroneous.</li>
+</ol>
+</section>
+<section id="now-you-try-model-audit" class="slide level2">
+<h2>Now you try: model audit</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_beb22dad" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Audit the IncomeSpend model:</p>
+<ol type="1">
+<li>inspect its residual plot;</li>
+<li>identify one strength and one limitation;</li>
+<li>assess whether the line is suitable for prediction;</li>
+<li>name one omitted variable; and</li>
+<li>state whether a causal interpretation is justified.</li>
+</ol>
+</section>
+<section id="extrapolation" class="slide level2">
+<h2>Extrapolation</h2>
+<p>Prediction outside the observed <span class="math inline">X</span> range is extrapolation.</p>
+<ul>
+<li>The relationship may change beyond the data.</li>
+<li>A mathematically valid calculation can be substantively implausible.</li>
+<li>Report whether a requested <span class="math inline">X</span> is inside the sample range.</li>
+<li>Prefer collecting relevant data to extending the line blindly.</li>
+</ul>
+</section>
+<section id="now-you-try-prediction-guardrails" class="slide level2">
+<h2>Now you try: prediction guardrails</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_4b939c75" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Before predicting spending for a household income of AUD 500,000:</p>
+<ol type="1">
+<li>check the observed income range;</li>
+<li>label the request interpolation or extrapolation;</li>
+<li>explain the main risk;</li>
+<li>recommend an alternative if the request is unsupported.</li>
+</ol>
+</section></section>
+<section>
+<section id="integrated-application" class="title-slide slide level1 center">
+<h1>Integrated application</h1>
+
+</section>
+<section id="watch-me-a-defensible-regression-brief" class="slide level2">
+<h2>Watch me: a defensible regression brief</h2>
+<p>A concise brief contains:</p>
+<ol type="1">
+<li>business question and variable roles;</li>
+<li>scatterplot and correlation;</li>
+<li>fitted equation with coefficient interpretations;</li>
+<li><span class="math inline">R^2</span>, slope test, and prediction;</li>
+<li>residual and range checks; and</li>
+<li>a recommendation with limitations.</li>
+</ol>
+</section>
+<section id="now-you-try-choose-the-better-predictor" class="slide level2">
+<h2>Now you try: choose the better predictor</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_f0a5fdc9" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Using <strong>HouseSize</strong>, compare separate simple regressions of market price on:</p>
+<ul>
+<li>house age; and</li>
+<li>house size.</li>
+</ul>
+<p>Recommend the more useful single predictor using plots, correlation, <span class="math inline">R^2</span>, slope evidence, residuals, and business reasoning. Explain why this is not yet a multiple-regression conclusion.</p>
+</section>
+<section id="common-traps" class="slide level2">
+<h2>Common traps</h2>
+<ul>
+<li>Reversing <span class="math inline">X</span> and <span class="math inline">Y</span>.</li>
+<li>Reporting correlation without examining the scatterplot.</li>
+<li>Interpreting the intercept when <span class="math inline">X=0</span> is meaningless.</li>
+<li>Omitting units or “on average” from a slope interpretation.</li>
+<li>Claiming <span class="math inline">R^2</span> measures causality or accuracy.</li>
+<li>Extrapolating without checking the observed range.</li>
+<li>Treating association as causal evidence.</li>
+</ul>
+</section>
+<section id="closing-check" class="slide level2">
+<h2>Closing check</h2>
+<p>Can you:</p>
+<ul>
+<li>select tools for categorical and numerical relationships?</li>
+<li>interpret a scatterplot and correlation together?</li>
+<li>build a simple regression in Excel?</li>
+<li>interpret intercept, slope, <span class="math inline">R^2</span>, and slope p-value?</li>
+<li>make an in-range prediction and calculate a residual?</li>
+<li>communicate model limitations and avoid causal overreach?</li>
+</ul>
+
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script>
+    // Copy over background colors to new div
+    divs = document.querySelectorAll('[data-background-color]');
+
+    Array.from(divs).map(function (x) {
+      const color = x.dataset.backgroundColor;
+
+      var new_div = document.createElement('div');
+      new_div.setAttribute("class", "background-color-div");
+      new_div.style.backgroundColor = color;
+      x.appendChild(new_div);
+      x.removeAttribute("data-background-color");
+    })
+
+    // Remove background colors from backgrounds div
+    Array.from(
+      document.querySelectorAll("[data-background-hash]")
+    ).map(function (x) {
+      x.removeAttribute("data-background-hash");
+      x.style.backgroundColor = null;
+    })
+    </script>
+
+    <script>
+    // Copy over background images to new div
+    divs = document.querySelectorAll('[data-background-image]');
+
+    Array.from(divs).map(function (x) {
+      var new_div = document.createElement('div');
+      new_div.setAttribute("class", "background-image-div");
+
+      if (x.dataset.backgroundImage != undefined) {
+        new_div.style.backgroundImage = "url(" + x.dataset.backgroundImage + ")";
+        x.removeAttribute("data-background-image");
+      }
+      if (x.dataset.backgroundSize != undefined) {
+        new_div.style.backgroundSize = x.dataset.backgroundSize;
+        x.removeAttribute("data-background-size");
+      }
+      if (x.dataset.backgroundPosition != undefined) {
+        new_div.style.backgroundPosition = x.dataset.backgroundPosition;
+        x.removeAttribute("data-background-position");
+      }
+      if (x.dataset.backgroundRepeat != undefined) {
+        new_div.style.backgroundRepeat = x.dataset.backgroundRepeat;
+        x.removeAttribute("data-background-repeat");
+      }
+      if (x.dataset.backgroundOpacity != undefined) {
+        new_div.style.backgroundOpacity = x.dataset.backgroundOpacity;
+        x.removeAttribute("data-background-opacity");
+      }
+
+      x.appendChild(new_div);
+    })
+    </script>
+
+    <script>
+    // Copy over background vidoes
+
+    // Run once when we load
+    var video_div = document.querySelectorAll(".backgrounds video");
+    var slide_div = document.querySelectorAll("[data-background-video]");
+
+    for (let i = 0; i < video_div.length; i++) {
+      video_div[i].setAttribute("class", "background-video-div");
+
+      slide_div[i].appendChild(video_div[i]);
+      slide_div[i].removeAttribute("data-background-video");
+    }
+
+    Reveal.getCurrentSlide().querySelectorAll("video").forEach(x => x.play());
+
+    // Each time we advance slides, as the background videos aren't loaded
+    // unless they are a few slides away
+    Reveal.on('slidechanged', event => {
+      var video_div = document.querySelectorAll(".backgrounds video");
+      var slide_div = document.querySelectorAll("[data-background-video]");
+
+      for (let i = 0; i < video_div.length; i++) {
+        video_div[i].setAttribute("class", "background-video-div");
+
+        slide_div[i].appendChild(video_div[i]);
+        slide_div[i].removeAttribute("data-background-video");
+      }
+
+      Reveal.getCurrentSlide().querySelectorAll("video").forEach(x => x.play());
+    });
+    </script>
+
+    <script>
+    // Copy over background vidoes
+
+    // Run once when we load
+    var iframe_div = document.querySelectorAll(".backgrounds iframe");
+    var slide_div = document.querySelectorAll("[data-background-iframe]");
+
+    for (let i = 0; i < iframe_div.length; i++) {
+      iframe_div[i].setAttribute("class", "background-iframe-div");
+
+      slide_div[i].appendChild(iframe_div[i]);
+      slide_div[i].removeAttribute("data-background-iframe");
+    }
+
+    // Each time we advance slides, as the background videos aren't loaded
+    // unless they are a few slides away
+    Reveal.on('slidechanged', event => {
+      var iframe_div = document.querySelectorAll(".backgrounds iframe");
+      var slide_div = document.querySelectorAll("[data-background-iframe]");
+
+      for (let i = 0; i < iframe_div.length; i++) {
+        iframe_div[i].setAttribute("class", "background-iframe-div");
+
+        slide_div[i].appendChild(iframe_div[i]);
+        slide_div[i].removeAttribute("data-background-iframe");
+      }
+    });
+    </script>
+
+    <script>
+    // Clean up slide background styles
+    divs = document.querySelectorAll('.slide-background-content');
+    Array.from(divs).map(function (x) {
+      x.style = null;
+    })
+    </script>
+
+    <script>
+    // Move menu button
+    menu_div = document.querySelector(".slide-menu-button");
+    document.querySelector(".slides").appendChild(menu_div);
+
+    // Move progress bar
+    menu_div = document.querySelector(".progress");
+    document.querySelector(".slides").appendChild(menu_div);
+    </script>
+
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/bstat\.numbat\.space");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
