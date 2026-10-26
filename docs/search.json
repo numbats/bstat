@@ -11,7 +11,7 @@
     "href": "week8/slides.html#the-four-purposes",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "The four purposes",
-    "text": "The four purposes\n\n\n\n\n\n\n\n\nPurpose\nCore question\nExample method\n\n\n\n\nDescribe\nWhat happened in this sample?\ntables, charts, summaries\n\n\nInfer\nWhat does the sample suggest about a population?\nintervals, tests\n\n\nPredict\nWhat outcome is expected for given inputs?\nregression\n\n\nOptimise\nWhat controllable decision is best?\nData Tables, Goal Seek, Solver"
+    "text": "The four purposes\n\n\n\n\n\n\n\n\nPurpose\nCore question\nExample method\n\n\n\n\nDescribe\nWhat happened in this sample?\ntables, charts, summaries\n\n\nInfer\nWhat does the sample suggest about a population?\nintervals, tests\n\n\nPredict\nWhat outcome is expected for given inputs?\nregression\n\n\nDecide\nWhich listed feasible option performs best?\nToolPak regression plus an Excel formula model"
   },
   {
     "objectID": "week8/slides.html#watch-me-unpack-a-business-question",
@@ -25,7 +25,7 @@
     "href": "week8/slides.html#now-you-try-method-selection",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Now you try: method selection",
-    "text": "Now you try: method selection\n\n\n\n\n\nChoose a purpose and method for each question:\n\nWhat percentage of stores open 24 hours?\nIs population mean service quality above 80?\nWhich staffing factors predict profit?\nWhat advertising allocation maximises profit under a budget?\n\nJustify each choice from the variables and claim."
+    "text": "Now you try: method selection\n\n\n\n\n\nChoose a purpose and method for each question:\n\nWhat percentage of stores open 24 hours?\nIs population mean service quality above 80?\nWhich staffing factors predict profit?\nWhich listed price gives the highest predicted profit within a capacity limit?\n\nJustify each choice from the variables and claim."
   },
   {
     "objectID": "week8/slides.html#business-context",
@@ -154,6 +154,20 @@
     "text": "Now you try: executive recommendation\n\n\n\n\n\nWrite a five-sentence executive recommendation:\n\ndecision and strength of recommendation;\nmost relevant quantitative evidence;\npractical meaning;\nprincipal limitation; and\na pilot or additional evidence that would reduce uncertainty."
   },
   {
+    "objectID": "week8/slides.html#watch-me-carry-a-toolpak-model-into-a-decision",
+    "href": "week8/slides.html#watch-me-carry-a-toolpak-model-into-a-decision",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Watch me: carry a ToolPak model into a decision",
+    "text": "Watch me: carry a ToolPak model into a decision\nSuppose a pricing pilot covering AUD 50–105 gives the fitted equation\n\\widehat{Units}=701-5.01\\times Price.\nBefore recommending a price, identify which numbers came from the Analysis ToolPak and which business inputs are still needed. State the observed price range and the production rule you would check."
+  },
+  {
+    "objectID": "week8/slides.html#now-you-try-compare-feasible-prices",
+    "href": "week8/slides.html#now-you-try-compare-feasible-prices",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Now you try: compare feasible prices",
+    "text": "Now you try: compare feasible prices\n\n\n\n\n\nCompare listed prices AUD 80, 90, and 100. Assume unit cost AUD 40, fixed cost AUD 1,200, and capacity 340 units.\nFor each price calculate predicted units, whole units planned after the capacity rule, revenue, cost, and profit. Recommend one listed price and explain one way the recommendation could change if the assumptions are wrong."
+  },
+  {
     "objectID": "week8/slides.html#misconception-1-conditional-probability",
     "href": "week8/slides.html#misconception-1-conditional-probability",
     "title": "ETX1100/ETX5900 Business Statistics",
@@ -249,210 +263,203 @@
     "href": "week7/slides.html#todays-journey",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Today’s journey",
-    "text": "Today’s journey\n\nTranslate a business decision into a spreadsheet model.\nSeparate inputs, decisions, calculations, objectives, and constraints.\nExplore sensitivity with one- and two-way Data Tables.\nWork backwards with Goal Seek.\nOptimise constrained decisions with Solver."
+    "text": "Today’s journey\n\nUse the Analysis ToolPak to estimate a price-demand relationship.\nTurn regression output into a transparent spreadsheet model.\nCompare listed prices subject to production capacity.\nTest how the recommendation changes when assumptions change.\nCommunicate a decision and its limits."
   },
   {
     "objectID": "week7/slides.html#retrieval-check",
     "href": "week7/slides.html#retrieval-check",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Retrieval check",
-    "text": "Retrieval check\n\nHow is prediction different from optimisation?\nWhat does a regression coefficient estimate?\nWhy should inputs be separated from formulas?\nWhat makes a recommendation auditable?"
+    "text": "Retrieval check\n\nWhich variable is the outcome in a demand regression?\nWhat do the intercept and price coefficient represent?\nWhy should a prediction stay within the observed price range?\nWhat is the difference between a fitted value and an actual sale?"
   },
   {
-    "objectID": "week7/slides.html#what-is-a-business-model",
-    "href": "week7/slides.html#what-is-a-business-model",
+    "objectID": "week7/slides.html#the-pricing-question",
+    "href": "week7/slides.html#the-pricing-question",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "What is a business model?",
-    "text": "What is a business model?\nA spreadsheet model is a simplified, explicit representation of a decision problem.\nIt links:\n\nknown or assumed inputs;\ncontrollable decisions;\ncalculation logic;\na performance objective; and\nrestrictions or constraints."
+    "section": "The pricing question",
+    "text": "The pricing question\nA business wants to choose a listed price for the next period.\nIt has a synthetic pricing pilot with 24 comparable store-weeks. Different prices were assigned across those store-weeks; units sold were recorded.\nThe business also knows its variable cost, fixed cost, and weekly production capacity. Recommend a feasible price from the listed options and explain how uncertain demand affects the recommendation."
+  },
+  {
+    "objectID": "week7/slides.html#the-workflow",
+    "href": "week7/slides.html#the-workflow",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "The workflow",
+    "text": "The workflow\nBusiness question \\rightarrow pilot data \\rightarrow ToolPak regression \\rightarrow spreadsheet formulas \\rightarrow feasible scenario comparison \\rightarrow sensitivity \\rightarrow recommendation\nRegression supplies a demand estimate. The spreadsheet translates that estimate into revenue, cost, and profit. Neither part replaces business judgement."
+  },
+  {
+    "objectID": "week7/slides.html#watch-me-inspect-the-pilot",
+    "href": "week7/slides.html#watch-me-inspect-the-pilot",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Watch me: inspect the pilot",
+    "text": "Watch me: inspect the pilot\nOpen the Week 7 workbook, sheet Pilot sales.\n\nIdentify the observational unit, response, and predictor.\nCheck units, missing values, and the observed price range.\nPlot units sold against price.\nDescribe direction, form, spread, and unusual points."
+  },
+  {
+    "objectID": "week7/slides.html#now-you-try-data-and-decision-audit",
+    "href": "week7/slides.html#now-you-try-data-and-decision-audit",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Now you try: data and decision audit",
+    "text": "Now you try: data and decision audit\n\n\n\n\n\nRecord the pilot’s price range, one reason a straight-line model may be useful, one reason its prediction may be wrong, and one business input the pilot does not supply."
+  },
+  {
+    "objectID": "week7/slides.html#watch-me-run-regression",
+    "href": "week7/slides.html#watch-me-run-regression",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Watch me: run Regression",
+    "text": "Watch me: run Regression\nIn Excel choose Data &gt; Data Analysis &gt; Regression.\n\nInput Y Range: units sold, including its label.\nInput X Range: price, including its label.\nCheck Labels and select a blank output area or new worksheet.\nAsk for residual output if available.\n\nKeep the raw pilot data unchanged."
+  },
+  {
+    "objectID": "week7/slides.html#what-the-output-gives-us",
+    "href": "week7/slides.html#what-the-output-gives-us",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "What the output gives us",
+    "text": "What the output gives us\nWrite the fitted model as\n\\widehat{Units}=b_0+b_1\\times Price.\nRead b_0 and b_1 from the Coefficients column. Check R^2, the price coefficient’s p-value, and whether residuals show an obvious pattern.\nThe intercept may have no practical meaning at price zero. It is still needed in the prediction formula."
+  },
+  {
+    "objectID": "week7/slides.html#now-you-try-explain-the-regression",
+    "href": "week7/slides.html#now-you-try-explain-the-regression",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Now you try: explain the regression",
+    "text": "Now you try: explain the regression\n\n\n\n\n\nRun the ToolPak regression and report the fitted equation with units, the expected change in units for an AUD 1 price increase, a predicted quantity at an observed price, one output check, and one limit on treating the estimate as future demand."
+  },
+  {
+    "objectID": "week7/slides.html#watch-me-validate-before-using-coefficients",
+    "href": "week7/slides.html#watch-me-validate-before-using-coefficients",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Watch me: validate before using coefficients",
+    "text": "Watch me: validate before using coefficients\n\nConfirm that Y is units and X is price.\nCompare a fitted value with the corresponding observed quantity.\nScan residuals for structure and outliers.\nCheck predictions in the proposed price range are non-negative.\nKeep enough coefficient precision to avoid changing close decisions by rounding."
+  },
+  {
+    "objectID": "week7/slides.html#now-you-try-output-quality-check",
+    "href": "week7/slides.html#now-you-try-output-quality-check",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Now you try: output quality check",
+    "text": "Now you try: output quality check\n\n\n\n\n\nChoose two pilot observations. Calculate fitted units and residuals from your coefficients. Compare them with Excel’s regression output. Flag anything that does not agree."
   },
   {
     "objectID": "week7/slides.html#model-anatomy",
     "href": "week7/slides.html#model-anatomy",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Model anatomy",
-    "text": "Model anatomy\n\n\n\nComponent\nQuestion\n\n\n\n\nInputs\nWhat is known or assumed?\n\n\nDecisions\nWhat can the business control?\n\n\nCalculations\nHow do inputs and decisions combine?\n\n\nObjective\nWhat should be maximised, minimised, or targeted?\n\n\nConstraints\nWhat limits feasible decisions?"
+    "text": "Model anatomy\n\n\n\nComponent\nIn this case\n\n\n\n\nEvidence\npilot price and sales\n\n\nInputs\ncoefficients, costs, capacity\n\n\nDecision\nlisted selling price\n\n\nCalculations\nunits, revenue, cost, profit\n\n\nObjective\nhighest listed feasible profit\n\n\nRules\nwhole non-negative units, capacity, pilot range"
   },
   {
-    "objectID": "week7/slides.html#watch-me-formulate-before-opening-solver",
-    "href": "week7/slides.html#watch-me-formulate-before-opening-solver",
+    "objectID": "week7/slides.html#watch-me-connect-output-to-inputs",
+    "href": "week7/slides.html#watch-me-connect-output-to-inputs",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: formulate before opening Solver",
-    "text": "Watch me: formulate before opening Solver\nA firm sells a product with unit cost AUD 40 and demand q=800-5p.\n\nInput: unit cost.\nDecision: price p.\nCalculation: demand and profit (p-40)q.\nObjective: maximise profit.\nConstraints: non-negative price and demand.\n\nWrite this logic in words before entering formulas."
+    "section": "Watch me: connect output to inputs",
+    "text": "Watch me: connect output to inputs\nOpen Decision model. Paste the ToolPak intercept into cell B7 and price slope into B8. The business assumptions are in B4:B6.\nFor a listed price in A13, enter the predicted units formula in B13:\n=$B$7+$B$8*A13\nCheck one prediction by hand. Fill down only after the first row is correct."
   },
   {
-    "objectID": "week7/slides.html#now-you-try-map-the-decision-problem",
-    "href": "week7/slides.html#now-you-try-map-the-decision-problem",
+    "objectID": "week7/slides.html#now-you-try-label-and-audit-the-model",
+    "href": "week7/slides.html#now-you-try-label-and-audit-the-model",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: map the decision problem",
-    "text": "Now you try: map the decision problem\n\n\n\n\n\nA café chooses how many staff to roster. More staff increase wage cost but may increase customers served and reduce waiting.\nIdentify:\n\ninputs;\ndecision variable;\ncalculations;\nobjective; and\nat least three constraints or business rules."
+    "section": "Now you try: label and audit the model",
+    "text": "Now you try: label and audit the model\n\n\n\n\n\nIdentify which inputs came from data and which are business assumptions. Verify the units; test one low and one high listed price; explain why a prediction outside the pilot range needs extra caution."
   },
   {
-    "objectID": "week7/slides.html#spreadsheet-design-principles",
-    "href": "week7/slides.html#spreadsheet-design-principles",
+    "objectID": "week7/slides.html#watch-me-apply-the-capacity-rule",
+    "href": "week7/slides.html#watch-me-apply-the-capacity-rule",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Spreadsheet design principles",
-    "text": "Spreadsheet design principles\n\nPlace each input in one labelled cell.\nReference cells instead of burying numbers in formulas.\nUse units consistently.\nColour or style inputs and decisions distinctly.\nAdd reasonableness checks.\nKeep the objective cell and constraint calculations visible.\nDocument assumptions beside the model."
+    "section": "Watch me: apply the capacity rule",
+    "text": "Watch me: apply the capacity rule\nStock is counted in whole units and cannot exceed capacity. Enter in C13:\n=MAX(0,MIN(ROUNDDOWN(B13,0),$B$6))\nThis rounds predicted demand down, caps units at the capacity in B6, and prevents negative planned sales. Check that this is the intended business rule."
   },
   {
-    "objectID": "week7/slides.html#watch-me-build-the-price-model",
-    "href": "week7/slides.html#watch-me-build-the-price-model",
+    "objectID": "week7/slides.html#watch-me-calculate-profit",
+    "href": "week7/slides.html#watch-me-calculate-profit",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: build the price model",
-    "text": "Watch me: build the price model\nOpen week7-modelling-data.xlsx, sheet Book Example.\nTrace the cells for:\n\nprice and unit cost;\ndemand formula;\nrevenue and total cost;\nprofit; and\nchecks for negative demand.\n\nChange one input and verify the calculation chain."
+    "section": "Watch me: calculate profit",
+    "text": "Watch me: calculate profit\n\nRevenue = price times units planned.\nCost = fixed cost plus unit cost times units planned.\nProfit = revenue minus cost.\n\nIn the first scenario row, use =A13*C13 in D13, =$B$5+$B$4*C13 in E13, and =D13-E13 in F13. Check the first row before copying down."
   },
   {
-    "objectID": "week7/slides.html#now-you-try-audit-the-model",
-    "href": "week7/slides.html#now-you-try-audit-the-model",
+    "objectID": "week7/slides.html#now-you-try-complete-the-scenario-model",
+    "href": "week7/slides.html#now-you-try-complete-the-scenario-model",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: audit the model",
-    "text": "Now you try: audit the model\n\n\n\n\n\n\nIdentify any hard-coded assumptions inside formulas.\nAdd labels and units where needed.\nTest a low and high price.\nAdd a check that flags negative demand.\nExplain which cells a decision-maker may safely change."
+    "section": "Now you try: complete the scenario model",
+    "text": "Now you try: complete the scenario model\n\n\n\n\n\nFill columns B:F for every listed price. Check that units planned are whole, non-negative, never exceed capacity, and that profit agrees with an independent calculation. In column G, flag negative predicted demand or a capacity breach. Name one formula that could be valid in Excel but wrong for the business."
   },
   {
-    "objectID": "week7/slides.html#what-if-analysis",
-    "href": "week7/slides.html#what-if-analysis",
+    "objectID": "week7/slides.html#watch-me-find-the-best-listed-scenario",
+    "href": "week7/slides.html#watch-me-find-the-best-listed-scenario",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "What-if analysis",
-    "text": "What-if analysis\nSensitivity analysis asks how an output changes when assumptions or decisions change.\nA Data Table:\n\nrepeatedly substitutes trial values;\nrecords the resulting formula output; and\nreveals thresholds, nonlinearities, and robust regions.\n\nIt explores scenarios; it does not prove assumptions are correct."
+    "section": "Watch me: find the best listed scenario",
+    "text": "Watch me: find the best listed scenario\nFilter or sort the completed rows by predicted profit. Keep the check column visible.\nCompare the highest-profit listed price with its neighbouring listed prices. Report price, predicted units, units planned, expected profit, and whether capacity binds.\nThis is a comparison of listed options, not a claim that every possible price has been searched."
   },
   {
-    "objectID": "week7/slides.html#one-way-data-table",
-    "href": "week7/slides.html#one-way-data-table",
+    "objectID": "week7/slides.html#now-you-try-defend-a-recommendation",
+    "href": "week7/slides.html#now-you-try-defend-a-recommendation",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "One-way Data Table",
-    "text": "One-way Data Table\nFor a list of trial prices:\n\nreference the profit cell above the result column;\nselect the entire table range;\nchoose Data → What-If Analysis → Data Table;\nuse the column input cell when trial values run down a column."
+    "section": "Now you try: defend a recommendation",
+    "text": "Now you try: defend a recommendation\n\n\n\n\n\nRecommend one listed price. Report the nearest alternative and its profit difference, whether capacity changes the sales forecast, and one assumption that could reverse the ranking."
   },
   {
-    "objectID": "week7/slides.html#watch-me-profit-by-price",
-    "href": "week7/slides.html#watch-me-profit-by-price",
+    "objectID": "week7/slides.html#why-sensitivity-matters",
+    "href": "week7/slides.html#why-sensitivity-matters",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: profit by price",
-    "text": "Watch me: profit by price\nCreate a one-way table for prices from AUD 40 to AUD 140.\nCheck:\n\nwhere profit becomes positive;\nwhere profit reaches its largest listed value;\nwhether profit changes linearly; and\nwhether any trial produces impossible demand."
+    "section": "Why sensitivity matters",
+    "text": "Why sensitivity matters\nThe regression estimates demand from limited data. Costs and capacity may also change.\nChange one input at a time, recalculate the scenario formulas, and record the best listed feasible option. Restore baseline inputs after each trial."
   },
   {
-    "objectID": "week7/slides.html#now-you-try-refine-the-search",
-    "href": "week7/slides.html#now-you-try-refine-the-search",
+    "objectID": "week7/slides.html#watch-me-stress-test-one-assumption",
+    "href": "week7/slides.html#watch-me-stress-test-one-assumption",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: refine the search",
-    "text": "Now you try: refine the search\n\n\n\n\n\nUse a coarse Data Table to locate the promising price region, then create a finer table using smaller increments.\nReport the best listed price, demand, profit, and one limitation of grid search."
+    "section": "Watch me: stress-test one assumption",
+    "text": "Watch me: stress-test one assumption\nIncrease unit variable cost in B4 from AUD 40 to AUD 50.\nBefore changing the cell, predict whether the recommended price is likely to rise, fall, or stay the same. Then recalculate and compare the best listed price and profit with baseline.\nDo not overwrite the ToolPak coefficients while testing a cost assumption."
   },
   {
-    "objectID": "week7/slides.html#two-way-data-table",
-    "href": "week7/slides.html#two-way-data-table",
+    "objectID": "week7/slides.html#now-you-try-two-stress-tests",
+    "href": "week7/slides.html#now-you-try-two-stress-tests",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Two-way Data Table",
-    "text": "Two-way Data Table\nA two-way table varies one input across columns and another down rows.\n\nRow input cell: corresponds to values across the top row.\nColumn input cell: corresponds to values down the first column.\nThe upper-left corner references the output formula."
+    "section": "Now you try: two stress tests",
+    "text": "Now you try: two stress tests\n\n\n\n\n\nStarting from baseline each time:\n\nSet capacity to 200 units.\nIncrease unit variable cost to AUD 50.\n\nFor each case, report the best listed price, planned units, and profit. Explain which assumption changes the decision more and why."
   },
   {
-    "objectID": "week7/slides.html#watch-me-price-and-cost-sensitivity",
-    "href": "week7/slides.html#watch-me-price-and-cost-sensitivity",
+    "objectID": "week7/slides.html#a-model-is-a-conditional-recommendation",
+    "href": "week7/slides.html#a-model-is-a-conditional-recommendation",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: price and cost sensitivity",
-    "text": "Watch me: price and cost sensitivity\nVary price across columns and unit cost down rows.\nBefore running the table, predict:\n\nhow higher costs affect profit;\nwhether the best price must change; and\nwhich combinations could produce a loss.\n\nThen use conditional formatting to reveal the pattern."
+    "section": "A model is a conditional recommendation",
+    "text": "A model is a conditional recommendation\nThe chosen price depends on the pilot reflecting future customers; prices being comparable across store-weeks; a roughly linear relationship within the observed range; and costs and capacity being accurate.\nA small p-value or high R^2 cannot settle these business assumptions."
   },
   {
-    "objectID": "week7/slides.html#now-you-try-two-way-sensitivity",
-    "href": "week7/slides.html#now-you-try-two-way-sensitivity",
+    "objectID": "week7/slides.html#group-brief-recommend-a-launch-price",
+    "href": "week7/slides.html#group-brief-recommend-a-launch-price",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: two-way sensitivity",
-    "text": "Now you try: two-way sensitivity\n\n\n\n\n\nBuild the two-way price-by-cost table.\n\nIdentify the correct row and column input cells.\nFind the highest profit in each cost scenario.\nDescribe whether the recommended price is robust.\nState one assumption that deserves further testing."
+    "section": "Group brief: recommend a launch price",
+    "text": "Group brief: recommend a launch price\nPrepare a one-page pricing brief for the manager using your workbook. Include:\n\nthe ToolPak equation and one output check;\na labelled formula model and best listed feasible price;\none baseline alternative and both sensitivity results; and\na recommendation, one limitation, and a revisit condition."
   },
   {
-    "objectID": "week7/slides.html#work-backwards-from-a-target",
-    "href": "week7/slides.html#work-backwards-from-a-target",
+    "objectID": "week7/slides.html#now-you-try-team-working-time",
+    "href": "week7/slides.html#now-you-try-team-working-time",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Work backwards from a target",
-    "text": "Work backwards from a target\nGoal Seek changes one input until a formula reaches a specified target.\nUse it when:\n\nthere is one target output;\none adjustable input; and\nthe relationship is represented by a formula.\n\nIt finds a solution, not necessarily a global optimum."
+    "section": "Now you try: team working time",
+    "text": "Now you try: team working time\n\n\n\n\n\nComplete the brief. Each group member should be able to explain where the regression coefficients came from and how the workbook turns them into a decision."
   },
   {
-    "objectID": "week7/slides.html#watch-me-investment-break-even",
-    "href": "week7/slides.html#watch-me-investment-break-even",
+    "objectID": "week7/slides.html#watch-me-critique-a-decision-memo",
+    "href": "week7/slides.html#watch-me-critique-a-decision-memo",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: investment break-even",
-    "text": "Watch me: investment break-even\nOn the Investment sheet:\n\ncalculate net present value from the cash flows and discount rate;\nchoose Data → What-If Analysis → Goal Seek;\nset the NPV cell to 0 by changing the discount-rate cell; and\ninterpret the result as the internal rate of return."
+    "section": "Watch me: critique a decision memo",
+    "text": "Watch me: critique a decision memo\nCheck whether a memo gives a listed feasible price and units, distinguishes predicted from actual profit, states the capacity rule, compares sensitivity against the same baseline, and avoids unsupported causal or global-optimum claims."
   },
   {
-    "objectID": "week7/slides.html#now-you-try-target-profit",
-    "href": "week7/slides.html#now-you-try-target-profit",
+    "objectID": "week7/slides.html#now-you-try-improve-the-memo",
+    "href": "week7/slides.html#now-you-try-improve-the-memo",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: target profit",
-    "text": "Now you try: target profit\n\n\n\n\n\nUse Goal Seek on the price model to find a price that produces a chosen target profit.\n\nRecord the starting value and solution.\nTry a different starting value.\nCheck demand and other business rules.\nExplain why multiple solutions may exist for a nonlinear profit curve."
-  },
-  {
-    "objectID": "week7/slides.html#when-solver-is-needed",
-    "href": "week7/slides.html#when-solver-is-needed",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "When Solver is needed",
-    "text": "When Solver is needed\nSolver can:\n\nmaximise, minimise, or target an objective;\nchange one or more decision cells; and\nenforce constraints.\n\nThe mathematical model still comes first. Solver cannot rescue incorrect formulas or missing business rules."
-  },
-  {
-    "objectID": "week7/slides.html#product-mix-case",
-    "href": "week7/slides.html#product-mix-case",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Product-mix case",
-    "text": "Product-mix case\nA factory produces Products A and B.\n\n\n\nResource or value\nProduct A\nProduct B\nAvailable\n\n\n\n\nProfit per unit\nAUD 30\nAUD 50\n—\n\n\nAssembly hours\n2\n4\n240\n\n\nFinishing hours\n3\n2\n180\n\n\n\nChoose units of A and B to maximise total profit."
-  },
-  {
-    "objectID": "week7/slides.html#watch-me-formulate-the-product-mix",
-    "href": "week7/slides.html#watch-me-formulate-the-product-mix",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: formulate the product mix",
-    "text": "Watch me: formulate the product mix\nDecision cells: A and B units.\nObjective:\n\\max\\ 30A+50B.\nConstraints:\n2A+4B\\le240, 3A+2B\\le180, A,B\\ge0.\nAdd integer constraints only if partial units are infeasible."
-  },
-  {
-    "objectID": "week7/slides.html#watch-me-configure-solver",
-    "href": "week7/slides.html#watch-me-configure-solver",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: configure Solver",
-    "text": "Watch me: configure Solver\n\nSet objective to the total-profit cell and choose Max.\nSelect the A and B decision cells.\nAdd both capacity constraints and non-negativity.\nChoose Simplex LP for this linear model.\nSolve, keep the solution, and inspect used versus available resources."
-  },
-  {
-    "objectID": "week7/slides.html#now-you-try-solve-and-validate",
-    "href": "week7/slides.html#now-you-try-solve-and-validate",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: solve and validate",
-    "text": "Now you try: solve and validate\n\n\n\n\n\nBuild and solve the product-mix model.\n\nReport optimal A, B, and profit.\nIdentify binding constraints.\nSubstitute the decisions back into every constraint.\nExplain why a feasible solution is not automatically optimal.\nState whether integer restrictions are needed."
-  },
-  {
-    "objectID": "week7/slides.html#sensitivity-after-optimisation",
-    "href": "week7/slides.html#sensitivity-after-optimisation",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Sensitivity after optimisation",
-    "text": "Sensitivity after optimisation\nAn optimal decision depends on assumptions.\nTest:\n\nprofit per unit;\nresource availability;\nminimum commitments;\nmaximum demand; and\ninteger requirements.\n\nRecord whether the recommended decisions change materially."
-  },
-  {
-    "objectID": "week7/slides.html#now-you-try-stress-test-the-recommendation",
-    "href": "week7/slides.html#now-you-try-stress-test-the-recommendation",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: stress-test the recommendation",
-    "text": "Now you try: stress-test the recommendation\n\n\n\n\n\nChange one assumption at a time:\n\nreduce assembly capacity by 10%;\nincrease Product A profit to AUD 40;\nimpose a minimum of 20 units of B; and\nimpose integer decisions.\n\nFor each scenario, record the new decision and profit. Identify the most decision-sensitive assumption."
-  },
-  {
-    "objectID": "week7/slides.html#from-optimum-to-recommendation",
-    "href": "week7/slides.html#from-optimum-to-recommendation",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "From optimum to recommendation",
-    "text": "From optimum to recommendation\nA useful modelling brief explains:\n\nrecommended decisions and objective value;\nwhich constraints bind;\nkey assumptions and their sources;\nsensitivity to plausible changes;\nimplementation considerations; and\nwhat the model omits.\n\nAn optimum inside the spreadsheet may still be unsuitable in practice."
-  },
-  {
-    "objectID": "week7/slides.html#now-you-try-decision-memo",
-    "href": "week7/slides.html#now-you-try-decision-memo",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: decision memo",
-    "text": "Now you try: decision memo\n\n\n\n\n\nWrite a four-sentence memo for the factory manager:\n\nrecommendation;\nexpected profit;\nlimiting resources and sensitivity; and\none operational limitation requiring judgement."
+    "section": "Now you try: improve the memo",
+    "text": "Now you try: improve the memo\n\n\n\n\n\nSwap briefs with another group. Identify one calculation to verify, one claim to qualify, and one action that would make the recommendation more useful. Revise your final paragraph."
   },
   {
     "objectID": "week7/slides.html#common-traps",
     "href": "week7/slides.html#common-traps",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Common traps",
-    "text": "Common traps\n\nOpening Solver before formulating the problem.\nHard-coding assumptions inside formulas.\nSwapping row and column input cells in a Data Table.\nTreating Goal Seek as an optimiser.\nOmitting non-negativity or capacity constraints.\nChoosing the wrong Solver method.\nReporting a solution without checking feasibility and sensitivity."
+    "text": "Common traps\n\nReversing the ToolPak X and Y ranges.\nCopying a rounded coefficient that changes close rankings.\nApplying the regression far outside pilot prices.\nHard-coding assumptions inside every scenario formula.\nForgetting fixed cost or capacity.\nCalling the best listed option an unrestricted optimum.\nTreating a prediction or statistical association as guaranteed sales."
   },
   {
     "objectID": "week7/slides.html#closing-check",
     "href": "week7/slides.html#closing-check",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Closing check",
-    "text": "Closing check\nCan you:\n\nidentify inputs, decisions, objective, and constraints?\nbuild an auditable spreadsheet model?\ncreate one- and two-way Data Tables?\nuse Goal Seek for a target?\nconfigure and validate a Solver optimisation?\ncommunicate a decision with sensitivity and limitations?"
+    "text": "Closing check\nCan you obtain and check a ToolPak regression output; identify inputs, a decision, calculations, an objective, and rules; build and audit a formula-based spreadsheet model; select the best listed feasible scenario; test assumptions; and communicate a recommendation with limitations?"
   },
   {
     "objectID": "week6/slides.html#todays-journey",
@@ -1544,7 +1551,7 @@
     "href": "week1/slides.html#the-eight-week-pathway",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "The eight-week pathway",
-    "text": "The eight-week pathway\n\nData stories and descriptive statistics\nProbability and distributions\nSampling and estimation\nTesting business claims\nRelationships and simple regression\nMultiple regression\nSpreadsheet modelling and optimisation\nIntegrated case and revision"
+    "text": "The eight-week pathway\n\nData stories and descriptive statistics\nProbability and distributions\nSampling and estimation\nTesting business claims\nRelationships and simple regression\nMultiple regression\nToolPak-supported spreadsheet business modelling\nIntegrated case and revision"
   },
   {
     "objectID": "week1/slides.html#how-each-three-hour-class-works",
@@ -1582,11 +1589,11 @@
     "text": "Install desktop Excel before class\n\nInstall the current desktop version of Microsoft Excel through Monash Microsoft 365.\nSign in with your Monash account and install all available updates.\nDo not rely only on Excel for the web: some analysis and modelling tools differ or are unavailable.\nBring a laptop on which you can open, edit, and save .xlsx files."
   },
   {
-    "objectID": "week1/slides.html#enable-the-analysis-add-ins",
-    "href": "week1/slides.html#enable-the-analysis-add-ins",
+    "objectID": "week1/slides.html#enable-the-analysis-toolpak",
+    "href": "week1/slides.html#enable-the-analysis-toolpak",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Enable the analysis add-ins",
-    "text": "Enable the analysis add-ins\nWindows\nFile → Options → Add-ins → Manage Excel Add-ins → Go\nmacOS\nTools → Excel Add-ins\nEnable:\n\nAnalysis ToolPak\nSolver Add-in\n\nWe will verify that Data Analysis and Solver appear on the Data ribbon."
+    "section": "Enable the Analysis ToolPak",
+    "text": "Enable the Analysis ToolPak\nWindows\nFile → Options → Add-ins → Manage Excel Add-ins → Go\nmacOS\nTools → Excel Add-ins\nEnable Analysis ToolPak. Verify that Data Analysis appears on the Data ribbon."
   },
   {
     "objectID": "week1/slides.html#workbook-anatomy",
@@ -1600,7 +1607,7 @@
     "href": "week1/slides.html#ribbons-we-will-use",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Ribbons we will use",
-    "text": "Ribbons we will use\n\nHome: formatting, editing, and number display\nInsert: tables, PivotTables, and charts\nFormulas: functions and formula auditing\nData: sorting, filtering, Data Analysis, What-If Analysis, and Solver\n\nThe goal is not to memorise every command; it is to know where to look."
+    "text": "Ribbons we will use\n\nHome: formatting, editing, and number display\nInsert: tables, PivotTables, and charts\nFormulas: functions and formula auditing\nData: sorting, filtering, and Data Analysis\n\nThe goal is not to memorise every command; it is to know where to look."
   },
   {
     "objectID": "week1/slides.html#get-the-week-1-workbook",
@@ -1740,7 +1747,7 @@
     "href": "week1/slides.html#excel-readiness-check",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Excel readiness check",
-    "text": "Excel readiness check\nBefore moving on, can you:\n\nfind a worksheet and a cell from an address?\ndistinguish a typed value from a formula?\nexplain what a range such as B2:B101 represents?\nuse a lookup, IF, and IFERROR?\nfilter observations and clear the filter?\nuse COUNTIF, SUMIF, and a PivotTable?\nlocate Data Analysis and Solver?\nsave your workbook using a meaningful filename?"
+    "text": "Excel readiness check\nBefore moving on, can you:\n\nfind a worksheet and a cell from an address?\ndistinguish a typed value from a formula?\nexplain what a range such as B2:B101 represents?\nuse a lookup, IF, and IFERROR?\nfilter observations and clear the filter?\nuse COUNTIF, SUMIF, and a PivotTable?\nlocate Data Analysis?\nsave your workbook using a meaningful filename?"
   },
   {
     "objectID": "week1/slides.html#from-a-business-question-to-data",
@@ -1908,7 +1915,7 @@
     "href": "index.html#weekly-schedule",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Weekly schedule",
-    "text": "Weekly schedule\nThe weekly 3hr workshop runs on Tuesdays from 13:00 to 16:00.\n\n\n\nWeek\nWeek commencing\nTopic\nClassroom activity\nAssessments\n\n\n\n\n1\n23 Nov 2026\nFrom business question to an effective data story\nExercise 1\nQuiz 1\n\n\n2\n30 Nov 2026\nProbability and distributions\nExercise 2\nQuiz 2\n\n\n3\n07 Dec 2026\nSampling and estimation: confidence intervals for means and proportions\nExercise 3\nQuiz 3\n\n\n4\n14 Dec 2026\nTesting business claims: hypothesis tests for means and proportions\nExercise 4\nQuiz 4; written assignment due at the end of Week 4\n\n\n—\n21 Dec 2026\nMid-semester break\n\n\n\n\n5\n04 Jan 2027\nRelationships and simple linear regression\nExercise 5\nQuiz 5\n\n\n6\n11 Jan 2027\nMultiple regression and model evaluation\nExercise 6\nQuiz 6\n\n\n7\n18 Jan 2027\nSpreadsheet business modelling and optimisation\nExercise 7\nQuiz 7\n\n\n8\n25 Jan 2027\nIntegrated business case, communication and revision\nExercise 8\nQuiz 8"
+    "text": "Weekly schedule\nThe weekly 3hr workshop runs on Tuesdays from 13:00 to 16:00.\n\n\n\nWeek\nWeek commencing\nTopic\nClassroom activity\nAssessments\n\n\n\n\n1\n23 Nov 2026\nFrom business question to an effective data story\nExercise 1\nQuiz 1\n\n\n2\n30 Nov 2026\nProbability and distributions\nExercise 2\nQuiz 2\n\n\n3\n07 Dec 2026\nSampling and estimation: confidence intervals for means and proportions\nExercise 3\nQuiz 3\n\n\n4\n14 Dec 2026\nTesting business claims: hypothesis tests for means and proportions\nExercise 4\nQuiz 4; written assignment due at the end of Week 4\n\n\n—\n21 Dec 2026\nMid-semester break\n\n\n\n\n5\n04 Jan 2027\nRelationships and simple linear regression\nExercise 5\nQuiz 5\n\n\n6\n11 Jan 2027\nMultiple regression and model evaluation\nExercise 6\nQuiz 6\n\n\n7\n18 Jan 2027\nSpreadsheet business modelling with the Analysis ToolPak\nExercise 7\nQuiz 7\n\n\n8\n25 Jan 2027\nIntegrated business case, communication and revision\nExercise 8\nQuiz 8"
   },
   {
     "objectID": "index.html#assessment-summary",
@@ -2139,21 +2146,21 @@
     "href": "week7/index.html",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "",
-    "text": "Formulate a spreadsheet model using inputs, decisions, objectives and constraints.\nExplore sensitivity using one- and two-way Data Tables.\nWork backwards from a target using Goal Seek.\nSolve and validate constrained optimisation problems with Solver."
+    "text": "Estimate a price–demand relationship with the Analysis ToolPak.\nFormulate a spreadsheet decision model using regression output, business inputs, formulas and capacity rules.\nCompare feasible listed prices and test the recommendation against cost and capacity changes.\nCommunicate a decision with its assumptions and limitations."
   },
   {
     "objectID": "week7/index.html#what-you-will-learn-this-week",
     "href": "week7/index.html#what-you-will-learn-this-week",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "",
-    "text": "Formulate a spreadsheet model using inputs, decisions, objectives and constraints.\nExplore sensitivity using one- and two-way Data Tables.\nWork backwards from a target using Goal Seek.\nSolve and validate constrained optimisation problems with Solver."
+    "text": "Estimate a price–demand relationship with the Analysis ToolPak.\nFormulate a spreadsheet decision model using regression output, business inputs, formulas and capacity rules.\nCompare feasible listed prices and test the recommendation against cost and capacity changes.\nCommunicate a decision with its assumptions and limitations."
   },
   {
     "objectID": "week7/index.html#class-workbook",
     "href": "week7/index.html#class-workbook",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Class workbook",
-    "text": "Class workbook\nDownload the Week 7 modelling workbook and open the interactive slides."
+    "text": "Class workbook\nDownload the Week 7 modelling workbook and open the interactive slides.\nBefore class, confirm that Data Analysis is available in desktop Excel and review the Week 5 regression output. The in-class group exercise uses the pilot data and decision-model sheets in this workbook."
   },
   {
     "objectID": "week7/index.html#slides-for-the-week",
@@ -2174,14 +2181,14 @@
     "href": "week8/index.html",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "",
-    "text": "Select and combine appropriate methods for an end-to-end business case.\nRefine regression models and communicate evidence-based recommendations.\nIdentify and correct common statistical misconceptions.\nConsolidate method selection and interpretation across all six learning outcomes."
+    "text": "Select and combine appropriate methods for an end-to-end business case.\nRefine regression models and communicate evidence-based recommendations.\nRevisit a ToolPak-supported pricing decision and check its business assumptions.\nIdentify and correct common statistical misconceptions.\nConsolidate method selection and interpretation across all six learning outcomes."
   },
   {
     "objectID": "week8/index.html#what-you-will-learn-this-week",
     "href": "week8/index.html#what-you-will-learn-this-week",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "",
-    "text": "Select and combine appropriate methods for an end-to-end business case.\nRefine regression models and communicate evidence-based recommendations.\nIdentify and correct common statistical misconceptions.\nConsolidate method selection and interpretation across all six learning outcomes."
+    "text": "Select and combine appropriate methods for an end-to-end business case.\nRefine regression models and communicate evidence-based recommendations.\nRevisit a ToolPak-supported pricing decision and check its business assumptions.\nIdentify and correct common statistical misconceptions.\nConsolidate method selection and interpretation across all six learning outcomes."
   },
   {
     "objectID": "week8/index.html#class-workbook",

@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.10.19">
 
-  <meta name="author" content="Week 7: Spreadsheet modelling and optimisation">
+  <meta name="author" content="Week 7: From regression to business decisions">
   <meta name="dcterms.date" content="2027-01-19">
   <title>Business Statistics – ETX1100/ETX5900 Business Statistics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -161,7 +161,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Week 7: Spreadsheet modelling and optimisation 
+Week 7: From regression to business decisions 
 </div>
 </div>
 </div>
@@ -174,50 +174,125 @@ Week 7: Spreadsheet modelling and optimisation
 <nav role="doc-toc"> 
 <h2 id="toc-title">Outline</h2>
 <ul>
-<li><a href="#/model-formulation" id="/toc-model-formulation">Model formulation</a></li>
-<li><a href="#/sensitivity-with-data-tables" id="/toc-sensitivity-with-data-tables">Sensitivity with Data Tables</a></li>
-<li><a href="#/goal-seek" id="/toc-goal-seek">Goal Seek</a></li>
-<li><a href="#/constrained-optimisation-with-solver" id="/toc-constrained-optimisation-with-solver">Constrained optimisation with Solver</a></li>
-<li><a href="#/communicating-a-model" id="/toc-communicating-a-model">Communicating a model</a></li>
+<li><a href="#/business-question-and-evidence" id="/toc-business-question-and-evidence">Business question and evidence</a></li>
+<li><a href="#/estimate-demand-with-the-analysis-toolpak" id="/toc-estimate-demand-with-the-analysis-toolpak">Estimate demand with the Analysis ToolPak</a></li>
+<li><a href="#/formulate-the-business-model" id="/toc-formulate-the-business-model">Formulate the business model</a></li>
+<li><a href="#/compare-and-challenge-decisions" id="/toc-compare-and-challenge-decisions">Compare and challenge decisions</a></li>
+<li><a href="#/integrated-classroom-exercise" id="/toc-integrated-classroom-exercise">Integrated classroom exercise</a></li>
+<li><a href="#/consolidation" id="/toc-consolidation">Consolidation</a></li>
 </ul>
 </nav>
 </section>
 <section id="todays-journey" class="slide level2">
 <h2>Today’s journey</h2>
 <ol type="1">
-<li>Translate a business decision into a spreadsheet model.</li>
-<li>Separate inputs, decisions, calculations, objectives, and constraints.</li>
-<li>Explore sensitivity with one- and two-way Data Tables.</li>
-<li>Work backwards with Goal Seek.</li>
-<li>Optimise constrained decisions with Solver.</li>
+<li>Use the Analysis ToolPak to estimate a price-demand relationship.</li>
+<li>Turn regression output into a transparent spreadsheet model.</li>
+<li>Compare listed prices subject to production capacity.</li>
+<li>Test how the recommendation changes when assumptions change.</li>
+<li>Communicate a decision and its limits.</li>
 </ol>
-<!-- Springboards: ETF W10 seminar/workshop. -->
+<!-- Springboards: ETF W8 regression and W10 business-decision cases; adapted for the intensive using the Analysis ToolPak and ordinary Excel formulas. -->
 </section>
 <section>
-<section id="model-formulation" class="title-slide slide level1 center">
-<h1>Model formulation</h1>
+<section id="business-question-and-evidence" class="title-slide slide level1 center">
+<h1>Business question and evidence</h1>
 
 </section>
 <section id="retrieval-check" class="slide level2">
 <h2>Retrieval check</h2>
 <ul>
-<li>How is prediction different from optimisation?</li>
-<li>What does a regression coefficient estimate?</li>
-<li>Why should inputs be separated from formulas?</li>
-<li>What makes a recommendation auditable?</li>
+<li>Which variable is the outcome in a demand regression?</li>
+<li>What do the intercept and price coefficient represent?</li>
+<li>Why should a prediction stay within the observed price range?</li>
+<li>What is the difference between a fitted value and an actual sale?</li>
 </ul>
 </section>
-<section id="what-is-a-business-model" class="slide level2">
-<h2>What is a business model?</h2>
-<p>A spreadsheet model is a simplified, explicit representation of a decision problem.</p>
-<p>It links:</p>
+<section id="the-pricing-question" class="slide level2">
+<h2>The pricing question</h2>
+<p>A business wants to choose a listed price for the next period.</p>
+<p>It has a synthetic pricing pilot with 24 comparable store-weeks. Different prices were assigned across those store-weeks; units sold were recorded.</p>
+<p>The business also knows its variable cost, fixed cost, and weekly production capacity. Recommend a <strong>feasible price from the listed options</strong> and explain how uncertain demand affects the recommendation.</p>
+</section>
+<section id="the-workflow" class="slide level2">
+<h2>The workflow</h2>
+<p><strong>Business question <span class="math inline">\rightarrow</span> pilot data <span class="math inline">\rightarrow</span> ToolPak regression <span class="math inline">\rightarrow</span> spreadsheet formulas <span class="math inline">\rightarrow</span> feasible scenario comparison <span class="math inline">\rightarrow</span> sensitivity <span class="math inline">\rightarrow</span> recommendation</strong></p>
+<p>Regression supplies a demand estimate. The spreadsheet translates that estimate into revenue, cost, and profit. Neither part replaces business judgement.</p>
+</section>
+<section id="watch-me-inspect-the-pilot" class="slide level2">
+<h2>Watch me: inspect the pilot</h2>
+<p>Open the Week 7 workbook, sheet <strong>Pilot sales</strong>.</p>
+<ol type="1">
+<li>Identify the observational unit, response, and predictor.</li>
+<li>Check units, missing values, and the observed price range.</li>
+<li>Plot units sold against price.</li>
+<li>Describe direction, form, spread, and unusual points.</li>
+</ol>
+</section>
+<section id="now-you-try-data-and-decision-audit" class="slide level2">
+<h2>Now you try: data and decision audit</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_65423294" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Record the pilot’s price range, one reason a straight-line model may be useful, one reason its prediction may be wrong, and one business input the pilot does not supply.</p>
+</section></section>
+<section>
+<section id="estimate-demand-with-the-analysis-toolpak" class="title-slide slide level1 center">
+<h1>Estimate demand with the Analysis ToolPak</h1>
+
+</section>
+<section id="watch-me-run-regression" class="slide level2">
+<h2>Watch me: run Regression</h2>
+<p>In Excel choose <strong>Data &gt; Data Analysis &gt; Regression</strong>.</p>
 <ul>
-<li>known or assumed inputs;</li>
-<li>controllable decisions;</li>
-<li>calculation logic;</li>
-<li>a performance objective; and</li>
-<li>restrictions or constraints.</li>
+<li><strong>Input Y Range:</strong> units sold, including its label.</li>
+<li><strong>Input X Range:</strong> price, including its label.</li>
+<li>Check <strong>Labels</strong> and select a blank output area or new worksheet.</li>
+<li>Ask for residual output if available.</li>
 </ul>
+<p>Keep the raw pilot data unchanged.</p>
+</section>
+<section id="what-the-output-gives-us" class="slide level2">
+<h2>What the output gives us</h2>
+<p>Write the fitted model as</p>
+<p><span class="math display">\widehat{Units}=b_0+b_1\times Price.</span></p>
+<p>Read <span class="math inline">b_0</span> and <span class="math inline">b_1</span> from the <strong>Coefficients</strong> column. Check <span class="math inline">R^2</span>, the price coefficient’s p-value, and whether residuals show an obvious pattern.</p>
+<p>The intercept may have no practical meaning at price zero. It is still needed in the prediction formula.</p>
+</section>
+<section id="now-you-try-explain-the-regression" class="slide level2">
+<h2>Now you try: explain the regression</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_5649efdf" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Run the ToolPak regression and report the fitted equation with units, the expected change in units for an AUD 1 price increase, a predicted quantity at an observed price, one output check, and one limit on treating the estimate as future demand.</p>
+</section>
+<section id="watch-me-validate-before-using-coefficients" class="slide level2">
+<h2>Watch me: validate before using coefficients</h2>
+<ul>
+<li>Confirm that <strong>Y</strong> is units and <strong>X</strong> is price.</li>
+<li>Compare a fitted value with the corresponding observed quantity.</li>
+<li>Scan residuals for structure and outliers.</li>
+<li>Check predictions in the proposed price range are non-negative.</li>
+<li>Keep enough coefficient precision to avoid changing close decisions by rounding.</li>
+</ul>
+</section>
+<section id="now-you-try-output-quality-check" class="slide level2">
+<h2>Now you try: output quality check</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_47dd43c1" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Choose two pilot observations. Calculate fitted units and residuals from your coefficients. Compare them with Excel’s regression output. Flag anything that does not agree.</p>
+</section></section>
+<section>
+<section id="formulate-the-business-model" class="title-slide slide level1 center">
+<h1>Formulate the business model</h1>
+
 </section>
 <section id="model-anatomy" class="slide level2">
 <h2>Model anatomy</h2>
@@ -225,395 +300,184 @@ Week 7: Spreadsheet modelling and optimisation
 <thead>
 <tr class="header">
 <th>Component</th>
-<th>Question</th>
+<th>In this case</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td>Evidence</td>
+<td>pilot price and sales</td>
+</tr>
+<tr class="even">
 <td>Inputs</td>
-<td>What is known or assumed?</td>
-</tr>
-<tr class="even">
-<td>Decisions</td>
-<td>What can the business control?</td>
+<td>coefficients, costs, capacity</td>
 </tr>
 <tr class="odd">
+<td>Decision</td>
+<td>listed selling price</td>
+</tr>
+<tr class="even">
 <td>Calculations</td>
-<td>How do inputs and decisions combine?</td>
+<td>units, revenue, cost, profit</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Objective</td>
-<td>What should be maximised, minimised, or targeted?</td>
-</tr>
-<tr class="odd">
-<td>Constraints</td>
-<td>What limits feasible decisions?</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="watch-me-formulate-before-opening-solver" class="slide level2">
-<h2>Watch me: formulate before opening Solver</h2>
-<p>A firm sells a product with unit cost AUD 40 and demand <span class="math inline">q=800-5p</span>.</p>
-<ul>
-<li>Input: unit cost.</li>
-<li>Decision: price <span class="math inline">p</span>.</li>
-<li>Calculation: demand and profit <span class="math inline">(p-40)q</span>.</li>
-<li>Objective: maximise profit.</li>
-<li>Constraints: non-negative price and demand.</li>
-</ul>
-<p>Write this logic in words before entering formulas.</p>
-</section>
-<section id="now-you-try-map-the-decision-problem" class="slide level2">
-<h2>Now you try: map the decision problem</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_e7c80277" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>A café chooses how many staff to roster. More staff increase wage cost but may increase customers served and reduce waiting.</p>
-<p>Identify:</p>
-<ol type="1">
-<li>inputs;</li>
-<li>decision variable;</li>
-<li>calculations;</li>
-<li>objective; and</li>
-<li>at least three constraints or business rules.</li>
-</ol>
-</section>
-<section id="spreadsheet-design-principles" class="slide level2">
-<h2>Spreadsheet design principles</h2>
-<ul>
-<li>Place each input in one labelled cell.</li>
-<li>Reference cells instead of burying numbers in formulas.</li>
-<li>Use units consistently.</li>
-<li>Colour or style inputs and decisions distinctly.</li>
-<li>Add reasonableness checks.</li>
-<li>Keep the objective cell and constraint calculations visible.</li>
-<li>Document assumptions beside the model.</li>
-</ul>
-</section>
-<section id="watch-me-build-the-price-model" class="slide level2">
-<h2>Watch me: build the price model</h2>
-<p>Open <code>week7-modelling-data.xlsx</code>, sheet <strong>Book Example</strong>.</p>
-<p>Trace the cells for:</p>
-<ol type="1">
-<li>price and unit cost;</li>
-<li>demand formula;</li>
-<li>revenue and total cost;</li>
-<li>profit; and</li>
-<li>checks for negative demand.</li>
-</ol>
-<p>Change one input and verify the calculation chain.</p>
-</section>
-<section id="now-you-try-audit-the-model" class="slide level2">
-<h2>Now you try: audit the model</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_194bf6ba" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<ol type="1">
-<li>Identify any hard-coded assumptions inside formulas.</li>
-<li>Add labels and units where needed.</li>
-<li>Test a low and high price.</li>
-<li>Add a check that flags negative demand.</li>
-<li>Explain which cells a decision-maker may safely change.</li>
-</ol>
-</section></section>
-<section>
-<section id="sensitivity-with-data-tables" class="title-slide slide level1 center">
-<h1>Sensitivity with Data Tables</h1>
-
-</section>
-<section id="what-if-analysis" class="slide level2">
-<h2>What-if analysis</h2>
-<p>Sensitivity analysis asks how an output changes when assumptions or decisions change.</p>
-<p>A Data Table:</p>
-<ul>
-<li>repeatedly substitutes trial values;</li>
-<li>records the resulting formula output; and</li>
-<li>reveals thresholds, nonlinearities, and robust regions.</li>
-</ul>
-<p>It explores scenarios; it does not prove assumptions are correct.</p>
-</section>
-<section id="one-way-data-table" class="slide level2">
-<h2>One-way Data Table</h2>
-<p>For a list of trial prices:</p>
-<ol type="1">
-<li>reference the profit cell above the result column;</li>
-<li>select the entire table range;</li>
-<li>choose <code>Data → What-If Analysis → Data Table</code>;</li>
-<li>use the <strong>column input cell</strong> when trial values run down a column.</li>
-</ol>
-</section>
-<section id="watch-me-profit-by-price" class="slide level2">
-<h2>Watch me: profit by price</h2>
-<p>Create a one-way table for prices from AUD 40 to AUD 140.</p>
-<p>Check:</p>
-<ul>
-<li>where profit becomes positive;</li>
-<li>where profit reaches its largest listed value;</li>
-<li>whether profit changes linearly; and</li>
-<li>whether any trial produces impossible demand.</li>
-</ul>
-</section>
-<section id="now-you-try-refine-the-search" class="slide level2">
-<h2>Now you try: refine the search</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_cfd93d0e" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Use a coarse Data Table to locate the promising price region, then create a finer table using smaller increments.</p>
-<p>Report the best listed price, demand, profit, and one limitation of grid search.</p>
-</section>
-<section id="two-way-data-table" class="slide level2">
-<h2>Two-way Data Table</h2>
-<p>A two-way table varies one input across columns and another down rows.</p>
-<ul>
-<li><strong>Row input cell:</strong> corresponds to values across the top row.</li>
-<li><strong>Column input cell:</strong> corresponds to values down the first column.</li>
-<li>The upper-left corner references the output formula.</li>
-</ul>
-</section>
-<section id="watch-me-price-and-cost-sensitivity" class="slide level2">
-<h2>Watch me: price and cost sensitivity</h2>
-<p>Vary price across columns and unit cost down rows.</p>
-<p>Before running the table, predict:</p>
-<ul>
-<li>how higher costs affect profit;</li>
-<li>whether the best price must change; and</li>
-<li>which combinations could produce a loss.</li>
-</ul>
-<p>Then use conditional formatting to reveal the pattern.</p>
-</section>
-<section id="now-you-try-two-way-sensitivity" class="slide level2">
-<h2>Now you try: two-way sensitivity</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_7c0e21c9" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Build the two-way price-by-cost table.</p>
-<ol type="1">
-<li>Identify the correct row and column input cells.</li>
-<li>Find the highest profit in each cost scenario.</li>
-<li>Describe whether the recommended price is robust.</li>
-<li>State one assumption that deserves further testing.</li>
-</ol>
-</section></section>
-<section>
-<section id="goal-seek" class="title-slide slide level1 center">
-<h1>Goal Seek</h1>
-
-</section>
-<section id="work-backwards-from-a-target" class="slide level2">
-<h2>Work backwards from a target</h2>
-<p>Goal Seek changes one input until a formula reaches a specified target.</p>
-<p>Use it when:</p>
-<ul>
-<li>there is one target output;</li>
-<li>one adjustable input; and</li>
-<li>the relationship is represented by a formula.</li>
-</ul>
-<p>It finds a solution, not necessarily a global optimum.</p>
-</section>
-<section id="watch-me-investment-break-even" class="slide level2">
-<h2>Watch me: investment break-even</h2>
-<p>On the <strong>Investment</strong> sheet:</p>
-<ol type="1">
-<li>calculate net present value from the cash flows and discount rate;</li>
-<li>choose <code>Data → What-If Analysis → Goal Seek</code>;</li>
-<li>set the NPV cell to 0 by changing the discount-rate cell; and</li>
-<li>interpret the result as the internal rate of return.</li>
-</ol>
-</section>
-<section id="now-you-try-target-profit" class="slide level2">
-<h2>Now you try: target profit</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_88a79fc9" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Use Goal Seek on the price model to find a price that produces a chosen target profit.</p>
-<ol type="1">
-<li>Record the starting value and solution.</li>
-<li>Try a different starting value.</li>
-<li>Check demand and other business rules.</li>
-<li>Explain why multiple solutions may exist for a nonlinear profit curve.</li>
-</ol>
-</section></section>
-<section>
-<section id="constrained-optimisation-with-solver" class="title-slide slide level1 center">
-<h1>Constrained optimisation with Solver</h1>
-
-</section>
-<section id="when-solver-is-needed" class="slide level2">
-<h2>When Solver is needed</h2>
-<p>Solver can:</p>
-<ul>
-<li>maximise, minimise, or target an objective;</li>
-<li>change one or more decision cells; and</li>
-<li>enforce constraints.</li>
-</ul>
-<p>The mathematical model still comes first. Solver cannot rescue incorrect formulas or missing business rules.</p>
-</section>
-<section id="product-mix-case" class="slide level2">
-<h2>Product-mix case</h2>
-<p>A factory produces Products A and B.</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Resource or value</th>
-<th style="text-align: right;">Product A</th>
-<th style="text-align: right;">Product B</th>
-<th style="text-align: right;">Available</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Profit per unit</td>
-<td style="text-align: right;">AUD 30</td>
-<td style="text-align: right;">AUD 50</td>
-<td style="text-align: right;">—</td>
+<td>highest listed feasible profit</td>
 </tr>
 <tr class="even">
-<td>Assembly hours</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">240</td>
-</tr>
-<tr class="odd">
-<td>Finishing hours</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">180</td>
+<td>Rules</td>
+<td>whole non-negative units, capacity, pilot range</td>
 </tr>
 </tbody>
 </table>
-<p>Choose units of A and B to maximise total profit.</p>
 </section>
-<section id="watch-me-formulate-the-product-mix" class="slide level2">
-<h2>Watch me: formulate the product mix</h2>
-<p>Decision cells: <span class="math inline">A</span> and <span class="math inline">B</span> units.</p>
-<p>Objective:</p>
-<p><span class="math display">\max\ 30A+50B.</span></p>
-<p>Constraints:</p>
-<p><span class="math display">2A+4B\le240,</span> <span class="math display">3A+2B\le180,</span> <span class="math display">A,B\ge0.</span></p>
-<p>Add integer constraints only if partial units are infeasible.</p>
+<section id="watch-me-connect-output-to-inputs" class="slide level2">
+<h2>Watch me: connect output to inputs</h2>
+<p>Open <strong>Decision model</strong>. Paste the ToolPak intercept into cell B7 and price slope into B8. The business assumptions are in B4:B6.</p>
+<p>For a listed price in A13, enter the predicted units formula in B13:</p>
+<p><code>=$B$7+$B$8*A13</code></p>
+<p>Check one prediction by hand. Fill down only after the first row is correct.</p>
 </section>
-<section id="watch-me-configure-solver" class="slide level2">
-<h2>Watch me: configure Solver</h2>
-<ol type="1">
-<li>Set objective to the total-profit cell and choose <strong>Max</strong>.</li>
-<li>Select the A and B decision cells.</li>
-<li>Add both capacity constraints and non-negativity.</li>
-<li>Choose <strong>Simplex LP</strong> for this linear model.</li>
-<li>Solve, keep the solution, and inspect used versus available resources.</li>
-</ol>
-</section>
-<section id="now-you-try-solve-and-validate" class="slide level2">
-<h2>Now you try: solve and validate</h2>
+<section id="now-you-try-label-and-audit-the-model" class="slide level2">
+<h2>Now you try: label and audit the model</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_69a3c7c4" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_6d52d9c5" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Build and solve the product-mix model.</p>
-<ol type="1">
-<li>Report optimal A, B, and profit.</li>
-<li>Identify binding constraints.</li>
-<li>Substitute the decisions back into every constraint.</li>
-<li>Explain why a feasible solution is not automatically optimal.</li>
-<li>State whether integer restrictions are needed.</li>
-</ol>
+<p>Identify which inputs came from data and which are business assumptions. Verify the units; test one low and one high listed price; explain why a prediction outside the pilot range needs extra caution.</p>
 </section>
-<section id="sensitivity-after-optimisation" class="slide level2">
-<h2>Sensitivity after optimisation</h2>
-<p>An optimal decision depends on assumptions.</p>
-<p>Test:</p>
+<section id="watch-me-apply-the-capacity-rule" class="slide level2">
+<h2>Watch me: apply the capacity rule</h2>
+<p>Stock is counted in whole units and cannot exceed capacity. Enter in C13:</p>
+<p><code>=MAX(0,MIN(ROUNDDOWN(B13,0),$B$6))</code></p>
+<p>This rounds predicted demand down, caps units at the capacity in B6, and prevents negative planned sales. Check that this is the intended business rule.</p>
+</section>
+<section id="watch-me-calculate-profit" class="slide level2">
+<h2>Watch me: calculate profit</h2>
 <ul>
-<li>profit per unit;</li>
-<li>resource availability;</li>
-<li>minimum commitments;</li>
-<li>maximum demand; and</li>
-<li>integer requirements.</li>
+<li>Revenue = price times units planned.</li>
+<li>Cost = fixed cost plus unit cost times units planned.</li>
+<li>Profit = revenue minus cost.</li>
 </ul>
-<p>Record whether the recommended decisions change materially.</p>
+<p>In the first scenario row, use <code>=A13*C13</code> in D13, <code>=$B$5+$B$4*C13</code> in E13, and <code>=D13-E13</code> in F13. Check the first row before copying down.</p>
 </section>
-<section id="now-you-try-stress-test-the-recommendation" class="slide level2">
-<h2>Now you try: stress-test the recommendation</h2>
+<section id="now-you-try-complete-the-scenario-model" class="slide level2">
+<h2>Now you try: complete the scenario model</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_085cdcd7" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_c79d2d91" minutes="9" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Change one assumption at a time:</p>
-<ol type="1">
-<li>reduce assembly capacity by 10%;</li>
-<li>increase Product A profit to AUD 40;</li>
-<li>impose a minimum of 20 units of B; and</li>
-<li>impose integer decisions.</li>
-</ol>
-<p>For each scenario, record the new decision and profit. Identify the most decision-sensitive assumption.</p>
+<p>Fill columns B:F for every listed price. Check that units planned are whole, non-negative, never exceed capacity, and that profit agrees with an independent calculation. In column G, flag negative predicted demand or a capacity breach. Name one formula that could be valid in Excel but wrong for the business.</p>
 </section></section>
 <section>
-<section id="communicating-a-model" class="title-slide slide level1 center">
-<h1>Communicating a model</h1>
+<section id="compare-and-challenge-decisions" class="title-slide slide level1 center">
+<h1>Compare and challenge decisions</h1>
 
 </section>
-<section id="from-optimum-to-recommendation" class="slide level2">
-<h2>From optimum to recommendation</h2>
-<p>A useful modelling brief explains:</p>
-<ul>
-<li>recommended decisions and objective value;</li>
-<li>which constraints bind;</li>
-<li>key assumptions and their sources;</li>
-<li>sensitivity to plausible changes;</li>
-<li>implementation considerations; and</li>
-<li>what the model omits.</li>
-</ul>
-<p>An optimum inside the spreadsheet may still be unsuitable in practice.</p>
+<section id="watch-me-find-the-best-listed-scenario" class="slide level2">
+<h2>Watch me: find the best listed scenario</h2>
+<p>Filter or sort the completed rows by predicted profit. Keep the check column visible.</p>
+<p>Compare the highest-profit listed price with its neighbouring listed prices. Report price, predicted units, units planned, expected profit, and whether capacity binds.</p>
+<p>This is a <strong>comparison of listed options</strong>, not a claim that every possible price has been searched.</p>
 </section>
-<section id="now-you-try-decision-memo" class="slide level2">
-<h2>Now you try: decision memo</h2>
+<section id="now-you-try-defend-a-recommendation" class="slide level2">
+<h2>Now you try: defend a recommendation</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_ef1d7272" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_f84938a5" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Write a four-sentence memo for the factory manager:</p>
+<p>Recommend one listed price. Report the nearest alternative and its profit difference, whether capacity changes the sales forecast, and one assumption that could reverse the ranking.</p>
+</section>
+<section id="why-sensitivity-matters" class="slide level2">
+<h2>Why sensitivity matters</h2>
+<p>The regression estimates demand from limited data. Costs and capacity may also change.</p>
+<p>Change <strong>one input at a time</strong>, recalculate the scenario formulas, and record the best listed feasible option. Restore baseline inputs after each trial.</p>
+</section>
+<section id="watch-me-stress-test-one-assumption" class="slide level2">
+<h2>Watch me: stress-test one assumption</h2>
+<p>Increase unit variable cost in B4 from AUD 40 to AUD 50.</p>
+<p>Before changing the cell, predict whether the recommended price is likely to rise, fall, or stay the same. Then recalculate and compare the best listed price and profit with baseline.</p>
+<p>Do not overwrite the ToolPak coefficients while testing a cost assumption.</p>
+</section>
+<section id="now-you-try-two-stress-tests" class="slide level2">
+<h2>Now you try: two stress tests</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_5b24aee3" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Starting from baseline each time:</p>
 <ol type="1">
-<li>recommendation;</li>
-<li>expected profit;</li>
-<li>limiting resources and sensitivity; and</li>
-<li>one operational limitation requiring judgement.</li>
+<li>Set capacity to 200 units.</li>
+<li>Increase unit variable cost to AUD 50.</li>
 </ol>
+<p>For each case, report the best listed price, planned units, and profit. Explain which assumption changes the decision more and why.</p>
+</section>
+<section id="a-model-is-a-conditional-recommendation" class="slide level2">
+<h2>A model is a conditional recommendation</h2>
+<p>The chosen price depends on the pilot reflecting future customers; prices being comparable across store-weeks; a roughly linear relationship within the observed range; and costs and capacity being accurate.</p>
+<p>A small p-value or high <span class="math inline">R^2</span> cannot settle these business assumptions.</p>
+</section></section>
+<section>
+<section id="integrated-classroom-exercise" class="title-slide slide level1 center">
+<h1>Integrated classroom exercise</h1>
+
+</section>
+<section id="group-brief-recommend-a-launch-price" class="slide level2">
+<h2>Group brief: recommend a launch price</h2>
+<p>Prepare a one-page pricing brief for the manager using your workbook. Include:</p>
+<ol type="1">
+<li>the ToolPak equation and one output check;</li>
+<li>a labelled formula model and best listed feasible price;</li>
+<li>one baseline alternative and both sensitivity results; and</li>
+<li>a recommendation, one limitation, and a revisit condition.</li>
+</ol>
+</section>
+<section id="now-you-try-team-working-time" class="slide level2">
+<h2>Now you try: team working time</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_f019553c" minutes="15" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Complete the brief. Each group member should be able to explain where the regression coefficients came from and how the workbook turns them into a decision.</p>
+</section>
+<section id="watch-me-critique-a-decision-memo" class="slide level2">
+<h2>Watch me: critique a decision memo</h2>
+<p>Check whether a memo gives a listed feasible price and units, distinguishes predicted from actual profit, states the capacity rule, compares sensitivity against the same baseline, and avoids unsupported causal or global-optimum claims.</p>
+</section>
+<section id="now-you-try-improve-the-memo" class="slide level2">
+<h2>Now you try: improve the memo</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_cd02ed53" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Swap briefs with another group. Identify one calculation to verify, one claim to qualify, and one action that would make the recommendation more useful. Revise your final paragraph.</p>
+</section></section>
+<section>
+<section id="consolidation" class="title-slide slide level1 center">
+<h1>Consolidation</h1>
+
 </section>
 <section id="common-traps" class="slide level2">
 <h2>Common traps</h2>
 <ul>
-<li>Opening Solver before formulating the problem.</li>
-<li>Hard-coding assumptions inside formulas.</li>
-<li>Swapping row and column input cells in a Data Table.</li>
-<li>Treating Goal Seek as an optimiser.</li>
-<li>Omitting non-negativity or capacity constraints.</li>
-<li>Choosing the wrong Solver method.</li>
-<li>Reporting a solution without checking feasibility and sensitivity.</li>
+<li>Reversing the ToolPak X and Y ranges.</li>
+<li>Copying a rounded coefficient that changes close rankings.</li>
+<li>Applying the regression far outside pilot prices.</li>
+<li>Hard-coding assumptions inside every scenario formula.</li>
+<li>Forgetting fixed cost or capacity.</li>
+<li>Calling the best listed option an unrestricted optimum.</li>
+<li>Treating a prediction or statistical association as guaranteed sales.</li>
 </ul>
 </section>
 <section id="closing-check" class="slide level2">
 <h2>Closing check</h2>
-<p>Can you:</p>
-<ul>
-<li>identify inputs, decisions, objective, and constraints?</li>
-<li>build an auditable spreadsheet model?</li>
-<li>create one- and two-way Data Tables?</li>
-<li>use Goal Seek for a target?</li>
-<li>configure and validate a Solver optimisation?</li>
-<li>communicate a decision with sensitivity and limitations?</li>
-</ul>
+<p>Can you obtain and check a ToolPak regression output; identify inputs, a decision, calculations, an objective, and rules; build and audit a formula-based spreadsheet model; select the best listed feasible scenario; test assumptions; and communicate a recommendation with limitations?</p>
 
 
 </section></section>
