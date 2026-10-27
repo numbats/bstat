@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>etx5900-intensive-quiz-audit – Business Statistics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4edc0b9a93cd65d533108edf6fb614b8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c820cc95dbf51ed583d98bb9992202e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Business Statistics</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> <i class="bi bi-house-fill" role="img">
+</i> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-schedule" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-calendar2-fill" role="img">
+</i> 
+ <span class="menu-text">Schedule</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-schedule">    
+        <li>
+    <a class="dropdown-item" href="../week1/index.html">
+ <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../week2/index.html">
+ <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../week3/index.html">
+ <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../week4/index.html">
+ <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../week5/index.html">
+ <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../week6/index.html">
+ <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../week7/index.html">
+ <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../week8/index.html">
+ <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://edstem.org/au/courses/00000/discussion/"> <i class="bi bi-chat-fill" role="img">
+</i> 
+<span class="menu-text">Discussion</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://learning.monash.edu/course/view.php?id=00000&amp;section=1"> <i class="bi bi-mortarboard-fill" role="img">
+</i> 
+<span class="menu-text">Moodle</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#etx5900-s2-2026-quiz-bank-adaptation-for-the-etx1100-eight-week-intensive" id="toc-etx5900-s2-2026-quiz-bank-adaptation-for-the-etx1100-eight-week-intensive" class="nav-link active" data-scroll-target="#etx5900-s2-2026-quiz-bank-adaptation-for-the-etx1100-eight-week-intensive">ETX5900 S2 2026 quiz bank: adaptation for the ETX1100 eight-week intensive</a>
+  <ul class="collapse">
+  <li><a href="#recommended-question-map" id="toc-recommended-question-map" class="nav-link" data-scroll-target="#recommended-question-map">Recommended question map</a>
+  <ul class="collapse">
+  <li><a href="#small-starter-set-for-each-weekly-quiz" id="toc-small-starter-set-for-each-weekly-quiz" class="nav-link" data-scroll-target="#small-starter-set-for-each-weekly-quiz">Small starter set for each weekly quiz</a></li>
+  </ul></li>
+  <li><a href="#material-outside-the-core-sequence" id="toc-material-outside-the-core-sequence" class="nav-link" data-scroll-target="#material-outside-the-core-sequence">Material outside the core sequence</a></li>
+  <li><a href="#before-any-questions-go-to-students" id="toc-before-any-questions-go-to-students" class="nav-link" data-scroll-target="#before-any-questions-go-to-students">Before any questions go to students</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="etx5900-s2-2026-quiz-bank-adaptation-for-the-etx1100-eight-week-intensive" class="level1">
+<h1>ETX5900 S2 2026 quiz bank: adaptation for the ETX1100 eight-week intensive</h1>
+<p>The <a href="../quiz/ETX5900 Take Home Quizzes (S2-2026).html">source bank</a> has <strong>11 original weeks</strong>, usually 20 questions each. <code>S3 Q7</code> below means Question 7 in <em>source</em> Week 3, not intensive Week 3. It contains marked answers and should remain an instructor source file. <strong>Keep</strong> means the statistical task is suitable; all retained questions still need answers and solution cues removed before student release. <strong>Adapt</strong> means retain the skill but replace data, context, or wording. <strong>Exclude</strong> means omit from the core eight-week quizzes.</p>
+<p>The original <code>Elecmart</code>, <code>Hytex</code>, <code>PlanFinan</code>, <code>Health care</code>, <code>Hospital Quality</code>, and <code>Data for quiz 11</code> workbooks were not found in this project. The embedded tables and image references in the Markdown file do supply some questions without those workbooks. Current ETX1100 workbooks can supply replacement data, but the old numerical answers must be recalculated.</p>
+<section id="recommended-question-map" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-question-map">Recommended question map</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Intensive week</th>
+<th>Source questions and decision</th>
+<th>Skill to assess</th>
+<th>Outcome</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1: Data story</strong></td>
+<td><strong>Keep</strong> S1 Q1–2</td>
+<td>Distinguish population, sample, parameter, and statistic</td>
+<td>LO1; LO3 foundation</td>
+<td>Refresh the context; check that the stated population is unambiguous.</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><strong>Adapt</strong> S1 Q3–10, Q19–20</td>
+<td>Mean, standard deviation, range, quartiles, coefficient of variation, and interpretation</td>
+<td>LO1</td>
+<td>Replace missing <code>Health care</code> data with <code>week1/week1-data.xlsx</code> or a small self-contained table. Choose a few complementary items rather than eight near duplicates.</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td><strong>Adapt</strong> S1 Q11–18</td>
+<td>Filters, pivot tables, counts, conditional averages, relative frequencies</td>
+<td>LO1</td>
+<td>Replace missing <code>Elecmart</code> data; ask for the category <em>and</em> value where useful. State the denominator and unit of observation.</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><strong>Keep/adapt</strong> S2 Q1–2, Q4–6</td>
+<td>Interpret skewness, symmetry, and a boxplot</td>
+<td>LO1</td>
+<td>Preserve Q4’s figure as an ordinary image. Reword Q5–6 to avoid implying equal whisker lengths in every symmetric sample.</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td><strong>Adapt</strong> S2 Q7–10</td>
+<td>Select a histogram and compare numerical variability</td>
+<td>LO1</td>
+<td>Rebuild charts and answers from the current Week 1 workbook. <strong>Do not use S2 Q3 as written:</strong> no option correctly identifies what can be read directly from a boxplot.</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><strong>Adapt</strong> S2 Q11–20</td>
+<td>Compare categorical proportions and use grouped pivot-table counts</td>
+<td>LO1; LO4 foundation</td>
+<td>Replace <code>Elecmart</code>/<code>Health care</code> data. Reduce repeated filter-only questions and ask for a one-sentence interpretation.</td>
+</tr>
+<tr class="odd">
+<td><strong>2: Probability and distributions</strong></td>
+<td><strong>Keep</strong> S3 Q1–8, Q10; <strong>optional</strong> Q9</td>
+<td>Mutually exclusive versus independent events, complements, union, conditional probability, and total probability; Q9 adds Bayes’ rule</td>
+<td>LO2</td>
+<td>Convert image-only probability notation to editable math; verify all numerical keys. Use Q9 only if inverse conditional probability is taught.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Adapt</strong> S3 Q11–14</td>
+<td>Conditional probabilities from a contingency table; comparison of categories</td>
+<td>LO2; LO4 foundation</td>
+<td>Inline hospital tables may be reusable. Make the requested numerator and denominator explicit.</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td><strong>Adapt</strong> S3 Q15–20</td>
+<td>Pivot-table joint and conditional percentages</td>
+<td>LO2; LO4 foundation</td>
+<td>Replace missing <code>Hytex</code>/<code>Elecmart</code> data with <code>week2/week2-categorical-data.xlsx</code>; regenerate keys.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Keep/adapt</strong> S4 Q3</td>
+<td>Properties of the normal distribution</td>
+<td>LO2</td>
+<td>Move this item ahead of the sampling-distribution material; add a business probability or percentile calculation using <code>week2/week2-distributions-data.xlsx</code>.</td>
+</tr>
+<tr class="odd">
+<td><strong>3: Sampling and estimation</strong></td>
+<td><strong>Keep</strong> S4 Q1–2, Q4–10</td>
+<td>Sampling distribution, central limit theorem, standard error, and effect of sample size</td>
+<td>LO3</td>
+<td>Use a few varied items. Qualify the blanket <code>n ≥ 30</code> wording in S4 Q5; sufficient sample size depends on the population shape.</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td><strong>Adapt</strong> S4 Q11–20</td>
+<td>Probabilities and percentiles for sample means</td>
+<td>LO3</td>
+<td>Repair ambiguous normal notation such as <code>N(16, 22)</code> and the incomplete answer in S4 Q13. Prefer Excel probability functions over old table-lookup instructions. S4 Q16 is present but has no Q16 label.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>Keep</strong> S5 Q1–17</td>
+<td>Choose t versus normal methods; calculate and interpret intervals for means and proportions</td>
+<td>LO3</td>
+<td>Keep one or two each for method choice, mean CI, proportion CI, and the effect of confidence level. Replace answer-only items with contextual interpretation.</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td><strong>Adapt</strong> S5 Q18–20</td>
+<td>Confidence intervals for a proportion using spreadsheet data</td>
+<td>LO3</td>
+<td>Recalculate with <code>week3/week3-proportions-data.xlsx</code>; original <code>Elecmart</code> data are missing.</td>
+</tr>
+<tr class="odd">
+<td><strong>4: Testing claims</strong></td>
+<td><strong>Keep/adapt</strong> S7 Q1–7, Q9–18</td>
+<td>State hypotheses for a mean; one- and two-sided t tests; p-values; Type I/II errors</td>
+<td>LO3</td>
+<td>Convert image-only hypotheses to text. Keep a small set of distinct decision and interpretation tasks. Verify all stated test statistics before reuse.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Adapt</strong> S7 Q8, Q20</td>
+<td>Mean tests using Excel data</td>
+<td>LO3</td>
+<td>Replace <code>Elecmart</code> with <code>week4/week4-testing-data.xlsx</code> and regenerate answers.</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td><strong>Keep/adapt</strong> S8 Q1–12, Q14–20</td>
+<td>One-sample proportion tests, p-values, and errors</td>
+<td>LO3</td>
+<td>Select different alternatives and conclusions. Replace dated/medical contexts where they distract from the statistics. Verify normal-approximation conditions and keys.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Exclude as written</strong> S8 Q13</td>
+<td>Intended Type I error for a proportion</td>
+<td>LO3</td>
+<td><code>π ≤ 32</code> and <code>π &gt; 32</code> are impossible for a proportion. Rewrite with values in <code>[0,1]</code> if needed.</td>
+</tr>
+<tr class="odd">
+<td><strong>5: Relationships and simple regression</strong></td>
+<td><strong>Keep/adapt</strong> S9 Q4–7, Q10–15</td>
+<td>Correlation, slope, least-squares prediction, and limits of association</td>
+<td>LO4; LO5</td>
+<td>Most use embedded Excel-output images; extract legible figures or replace them with a small output table. S9 Q12–13 are self-contained concept checks.</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td><strong>Adapt</strong> S9 Q1–3</td>
+<td>Build/interpret simple regression from data</td>
+<td>LO4; LO5</td>
+<td>Replace missing <code>Hytex</code>, <code>PlanFinan</code>, and <code>Elecmart</code> files with <code>week5/week5-regression-data.xlsx</code>; regenerate output and keys.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>Keep/adapt</strong> S10 Q3–4, Q7–8, Q13–18</td>
+<td>Interpret R-squared, slope tests, and least-squares fit</td>
+<td>LO4; LO5</td>
+<td>Retain the best distinct items and readable output. Check one-sided versus two-sided p-value wording.</td>
+</tr>
+<tr class="even">
+<td><strong>6: Multiple regression</strong></td>
+<td><strong>Keep/adapt</strong> S9 Q8–9, Q20; S10 Q5–6, Q9–10, Q19–20</td>
+<td>Interpret a predictor while holding others constant; model fit and coefficient tests</td>
+<td>LO4; LO5</td>
+<td>Use the embedded outputs only after checking legibility and numerical keys; or rebuild from <code>week6/week6-realestate-data.xlsx</code>.</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td><strong>Adapt</strong> S9 Q16–17; S10 Q1–2, Q11–12</td>
+<td>Fit a multiple model, predict, interpret R-squared and partial coefficients</td>
+<td>LO5</td>
+<td>Original <code>PlanFinan</code> workbook is missing. Rebuild with the current Week 6 workbook and validate all answer values.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><strong>Keep/adapt</strong> S9 Q18</td>
+<td>Predict from a supplied multiple-regression equation</td>
+<td>LO5</td>
+<td>This is self-contained and a good case where an indicator/other predictor takes zero.</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td><strong>Exclude as written</strong> S9 Q19</td>
+<td>Intended multiple-regression prediction</td>
+<td>LO5</td>
+<td>With zero personal-training sessions, predicted <em>personal-training expenditure</em> is positive. Change the outcome to total fitness-centre expenditure or write a coherent new case.</td>
+</tr>
+<tr class="even">
+<td><strong>7: Spreadsheet modelling</strong></td>
+<td><strong>No suitable original questions</strong></td>
+<td>Identify inputs, decision cells, objective, constraints; interpret Data Tables, Goal Seek, and Solver output</td>
+<td>LO6</td>
+<td>Write a new quiz tied to <code>week7/week7-modelling-data.xlsx</code>. Include at least one formulation question and one interpretation or sensitivity question.</td>
+</tr>
+<tr class="odd">
+<td><strong>8: Integrated case and revision</strong></td>
+<td><strong>Reuse selected revised questions from intensive Weeks 1–7</strong></td>
+<td>Choose a method, read Excel output, explain uncertainty, prediction, and a business decision</td>
+<td>LO1–LO6</td>
+<td>Use <code>week8/week8-case-data.xlsx</code> for a coherent case. Write new method-selection questions and include LO6, which the old bank never tests.</td>
+</tr>
+</tbody>
+</table>
+<section id="small-starter-set-for-each-weekly-quiz" class="level3">
+<h3 class="anchored" data-anchor-id="small-starter-set-for-each-weekly-quiz">Small starter set for each weekly quiz</h3>
+<p>These are <strong>selection priorities</strong>, not a final student quiz. They favour distinct skills over repeated arithmetic; items marked <code>adapt</code> need new data or a clean output figure.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Intensive quiz</th>
+<th>First questions to select</th>
+<th>What the set covers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>S1 Q1–2; S2 Q1–2, Q4; adapt S1 Q13</td>
+<td>Population versus sample, skewness, visual reading, pivot-table count (LO1; LO3 foundation)</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>S3 Q1–2, Q7, Q10; adapt S3 Q11; S4 Q3</td>
+<td>Event rules, conditional and total probability, contingency table, normal distribution (LO2; LO4 foundation)</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>S4 Q2, Q6, Q9; S5 Q1, Q10, Q15</td>
+<td>CLT, standard error, choosing a mean CI, mean and proportion intervals (LO3)</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>S7 Q1, Q4, Q12, Q14; S8 Q1, Q10, Q14</td>
+<td>Hypotheses, mean/proportion tests, Type I/II errors, p-value decisions (LO3)</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>S9 Q12–13; adapt S9 Q4, Q10; S10 Q18</td>
+<td>Correlation, slope, prediction, least squares (LO4–LO5)</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>S9 Q18; adapt S9 Q20 and S10 Q5, Q9, Q19–20</td>
+<td>Multiple-model prediction, partial coefficients, R-squared, coefficient tests (LO4–LO5)</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td><strong>Write new items</strong></td>
+<td>Formulation, Data Tables, Goal Seek, Solver, and decision interpretation (LO6)</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td><strong>Write an integrated case; draw revised items from 1–7</strong></td>
+<td>Method selection and communication across LO1–LO6</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="material-outside-the-core-sequence" class="level2">
+<h2 class="anchored" data-anchor-id="material-outside-the-core-sequence">Material outside the core sequence</h2>
+<ul>
+<li><strong>S6 Q1–20:</strong> The old Week 6 is a chi-square test block. Exclude its chi-square hypotheses, expected-count calculations, test statistics, critical values, and p-values from the core quizzes unless the chief examiner confirms chi-square remains examinable. The <strong>printed contingency tables</strong> in S6 Q3–12 could instead support new Week 2 or Week 5 questions on conditional percentages and independence as a concept (LO2/LO4); these would be new questions, not unchanged copies.</li>
+<li><strong>S11 Q1–20:</strong> The old Week 11 is seasonal indices, trend forecasts, MAD/MSFE, and spreadsheet forecasting. Exclude from core quizzes because full time-series forecasting is not in the intensive content spine or named 2026 outcomes. A new Week 1 chart-choice question could use a time-series plot, but the original questions mostly ask forecasting methods. Its final Q9 appears after Q20 and should be moved if this bank is ever republished.</li>
+</ul>
+</section>
+<section id="before-any-questions-go-to-students" class="level2">
+<h2 class="anchored" data-anchor-id="before-any-questions-go-to-students">Before any questions go to students</h2>
+<ol type="1">
+<li><strong>Remove answer leakage.</strong> This bank has <code>[x]</code> selections, bold numerical answers, and worked conclusions in stems. Draft clean student versions and keep a separate answer key.</li>
+<li><strong>Replace missing-data items deliberately.</strong> No old named quiz workbooks were found here. Current weekly files are useful replacements, but their variables and answers are not interchangeable with <code>Elecmart</code> or <code>PlanFinan</code>. Recompute every key from the final released dataset.</li>
+<li><strong>Repair known defects.</strong> S2 Q3 has no defensible choice; S4 Q13 has an incomplete answer and S4 Q11–14 have ambiguous distribution notation; S4 Q16 lacks its number; S7 Q19 states a test statistic of <code>0.077</code> although <code>(795−775)/(75/√30) ≈ 1.461</code>; S8 Q13 uses an impossible proportion; S9 Q19 has an incoherent outcome.</li>
+<li><strong>Use questions to assess interpretation.</strong> Prefer one calculation plus a denominator, assumption, or business conclusion to several near-identical number-entry items. Keep a balanced mix of conceptual choice, Excel use, and contextual reasoning in each weekly quiz.</li>
+<li><strong>Audit figures.</strong> Many output screenshots are embedded as base64 images in the source Markdown. Extract and relabel only the figures selected for reuse; replace tiny formula images with editable equations and provide accessible text or tables.</li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/bstat\.numbat\.space");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
