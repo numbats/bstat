@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignment 1: The iPhone 4 reception question – Business Statistics</title>
+<title>Assignment 1: The reception story – Business Statistics</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-4edc0b9a93cd65d533108edf6fb614b8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c820cc95dbf51ed583d98bb9992202e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b4c18ec79483100b2f9cf952b79dba1b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -219,7 +219,7 @@ window.Quarto = {
   <li><a href="#probability-and-reported-issues-20-marks" id="toc-probability-and-reported-issues-20-marks" class="nav-link" data-scroll-target="#probability-and-reported-issues-20-marks">2. Probability and reported issues (20 marks)</a></li>
   <li><a href="#estimate-uncertainty-20-marks" id="toc-estimate-uncertainty-20-marks" class="nav-link" data-scroll-target="#estimate-uncertainty-20-marks">3. Estimate uncertainty (20 marks)</a></li>
   <li><a href="#test-the-mean-reception-loss-claim-25-marks" id="toc-test-the-mean-reception-loss-claim-25-marks" class="nav-link" data-scroll-target="#test-the-mean-reception-loss-claim-25-marks">4. Test the mean reception-loss claim (25 marks)</a></li>
-  <li><a href="#advise-the-product-team-15-marks" id="toc-advise-the-product-team-15-marks" class="nav-link" data-scroll-target="#advise-the-product-team-15-marks">5. Advise the product team (15 marks)</a></li>
+  <li><a href="#advise-corporate-affairs-and-pr-15-marks" id="toc-advise-corporate-affairs-and-pr-15-marks" class="nav-link" data-scroll-target="#advise-corporate-affairs-and-pr-15-marks">5. Advise Corporate Affairs and PR (15 marks)</a></li>
   </ul></li>
   <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   </ul>
@@ -230,7 +230,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assignment 1: The iPhone 4 reception question</h1>
+<h1 class="title">Assignment 1: The reception story</h1>
 <p class="subtitle lead">ETX1100 Business Statistics · Individual written assignment · 20%</p>
 </div>
 
@@ -251,17 +251,19 @@ window.Quarto = {
 <p><strong>Due:</strong> End of Week 4 (20 December 2026). Check Moodle for the submission time and upload location.</p>
 <section id="the-business-case" class="level2">
 <h2 class="anchored" data-anchor-id="the-business-case">The business case</h2>
-<p>In 2010, customers reported reception problems with the iPhone 4. At a July press conference, Steve Jobs presented memorable headline figures: according to <a href="https://www.macrumors.com/2010/07/16/coverage-of-apples-iphone-4-press-conference/">contemporaneous coverage</a>, 0.55% of iPhone 4 customers had contacted AppleCare about antenna or reception issues, while reported return rates were 1.7% for iPhone 4 and 6% for iPhone 3GS. These describe <strong>different outcomes and denominators</strong>. Apple’s <a href="https://www.apple.com/newsroom/2010/07/02Letter-from-Apple-Regarding-iPhone-4/">July 2010 letter about iPhone 4 reception</a> provides further historical context. The business question is: <strong>Which numbers would help a product team judge whether a reception concern warrants action, and what can those numbers actually establish?</strong></p>
-<p>You are an analyst preparing a brief for a fictional product team. Use the <a href="A1-antennagate-simulated.xlsx">simulated assignment workbook</a> to compare the iPhone 4 with the iPhone 3GS. <strong>Every record and measurement in the workbook is simulated for teaching.</strong> None is an Apple, AT&amp;T, or historical customer record. Do not combine workbook estimates with Apple’s reported percentages or present your findings as evidence about the real 2010 phones.</p>
+<p>You are a business analyst. Your company has launched the iPhone 4, and reports of reception signals dropping are attracting growing public criticism. The CEO will address the media in <strong>48 hours</strong>. The Corporate Affairs team has commissioned you to analyse the available evidence and develop a persuasive, statistically defensible narrative. Your findings will inform the CEO’s public statemmeent. You must identify what the data demonstrate, what remains uncertain, and which claims the CEO can reasonably make.</p>
+<p>The company wants to know whether the new model’s experience differs from that of the iPhone 3GS. A low rate of complaints or returns might reassure customers, while a higher rate of dropped calls or greater reception loss might require a more careful response. <strong>A persuasive data story must account for all of these measures, including those that complicate the message.</strong></p>
+<p>Use the <a href="A1-antennagate-simulated.xlsx">simulated assignment workbook</a> to prepare the briefing. <strong>Every customer record and measurement is simulated for teaching.</strong> The scenario is fictional; the workbook contains no actual company or historical customer data.</p>
 </section>
 <section id="data-and-decision" class="level2">
 <h2 class="anchored" data-anchor-id="data-and-decision">Data and decision</h2>
 <p>The workbook has a <strong>Read me</strong> sheet with a data dictionary and two independent datasets:</p>
 <ul>
-<li><strong>Customer survey:</strong> a simple random sample of 400 owners of each model from a fictional customer list. Each row represents one owner. It records whether one observed call dropped and whether the owner reported a reception issue during the previous 30 days. These are different events. Coverage and case use are also recorded.</li>
+<li><strong>Customer survey:</strong> a simple random sample of 2,000 purchasers of each model from the company’s fictional customer list, linked to support and returns records. Each row represents one purchaser. It records whether one observed call dropped, whether the purchaser reported a reception issue to customer support during the previous 30 days, and whether the phone was returned within 30 days for <strong>any reason</strong>. These are different events. Coverage and case use are also recorded.</li>
 <li><strong>Reception tests:</strong> a simple random sample of 100 distinct handsets of each model from fictional production batches, tested under the same simulated network conditions. Each handset has an ungripped and a gripped signal reading in dBm. Calculate <strong>reception loss = ungripped reading − gripped reading</strong>; a larger positive number means a greater loss. The two readings on a handset are paired, while the two model samples are independent.</li>
 </ul>
 <p>The product team’s working rule is that a difference of <strong>3 dB or more in average reception loss</strong> would be operationally important. This is a decision threshold for this fictional exercise, not a real engineering standard.</p>
+<p>In the questions below, <em>owner</em> means an original purchaser, including someone who subsequently returned a phone. The survey deliberately samples the same number from each model. A probability calculated over all 4,000 records describes this <strong>balanced sample</strong>; it is not an estimate of the company’s overall purchaser mix without sales totals for both models.</p>
 </section>
 <section id="your-tasks" class="level2">
 <h2 class="anchored" data-anchor-id="your-tasks">Your tasks</h2>
@@ -269,8 +271,8 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="describe-the-evidence-20-marks">1. Describe the evidence (20 marks)</h3>
 <ol type="1">
 <li>Identify the observational unit, population of interest, sample, and type of the main variables in <strong>each</strong> sheet. Explain why the survey and reception tests answer different questions.</li>
-<li>Produce a compact table of useful summaries by model. Include the sample size, the share of observed calls that dropped, the share of owners reporting an issue, and appropriate summaries of reception loss. Include <strong>two well-labelled charts</strong>: one comparing a customer outcome by model and one showing the distribution of reception loss by model.</li>
-<li>Write a short critique of what a persuasive summary slide could conceal. Address at least one denominator or measurement choice, including why the historical AppleCare percentage is not a call-drop probability, and one possible source of sampling or measurement bias.</li>
+<li>Build a compact <strong>CEO evidence panel</strong> by model. Show the sample size; the rates of dropped calls, customer-support issue reports, and returns; and appropriate summaries of reception loss. Include <strong>two well-labelled charts</strong>: one comparing a customer outcome by model and one showing the distribution of reception loss by model. Use clear denominators and units so the panel could be understood in a media briefing.</li>
+<li>Explain which headline figures would best answer the public concern and what a persuasive summary slide could conceal. In particular, distinguish a support-report rate from a call-drop rate and an all-cause return rate from a reception-related return rate. Identify one possible source of sampling or measurement bias.</li>
 </ol>
 </section>
 <section id="probability-and-reported-issues-20-marks" class="level3">
@@ -301,9 +303,9 @@ window.Quarto = {
 <li>Give a decision and a plain-language conclusion. Distinguish statistical significance from the team’s <strong>3 dB operational threshold</strong>. Explain a Type I error in this setting.</li>
 </ul>
 </section>
-<section id="advise-the-product-team-15-marks" class="level3">
-<h3 class="anchored" data-anchor-id="advise-the-product-team-15-marks">5. Advise the product team (15 marks)</h3>
-<p>Write a <strong>150–250 word executive recommendation</strong>. Bring together the descriptive, probability, interval, and test results. Specify what the team should investigate or communicate next, and identify at least two limitations that prevent a causal or historical claim. Your recommendation should be understandable without reading Excel output.</p>
+<section id="advise-corporate-affairs-and-pr-15-marks" class="level3">
+<h3 class="anchored" data-anchor-id="advise-corporate-affairs-and-pr-15-marks">5. Advise Corporate Affairs and PR (15 marks)</h3>
+<p>Write a <strong>150–250 word media-briefing recommendation</strong> for the Corporate Affairs and PR team. Propose a clear opening message for the CEO and two precise claims that the simulated evidence supports. Bring together the descriptive, probability, interval, and test results, including any result that complicates a reassuring message. Identify <strong>one claim the CEO should avoid</strong>, explain what remains uncertain, and recommend a next investigation or communication step. The team will use this advice to address public concerns, so write for a non-technical audience without overstating what the data prove.</p>
 </section>
 </section>
 <section id="submission" class="level2">
@@ -335,7 +337,7 @@ window.Quarto = {
 <td style="text-align: right;">25</td>
 </tr>
 <tr class="odd">
-<td>Executive recommendation and communication</td>
+<td>Corporate Affairs recommendation and communication</td>
 <td style="text-align: right;">15</td>
 </tr>
 <tr class="even">
