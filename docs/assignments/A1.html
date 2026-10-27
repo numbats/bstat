@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignment 1 (25%) – Business Statistics</title>
+<title>Assignment 1: The iPhone 4 reception question – Business Statistics</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -76,6 +76,49 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -163,15 +206,32 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-business-case" id="toc-the-business-case" class="nav-link active" data-scroll-target="#the-business-case">The business case</a></li>
+  <li><a href="#data-and-decision" id="toc-data-and-decision" class="nav-link" data-scroll-target="#data-and-decision">Data and decision</a></li>
+  <li><a href="#your-tasks" id="toc-your-tasks" class="nav-link" data-scroll-target="#your-tasks">Your tasks</a>
+  <ul class="collapse">
+  <li><a href="#describe-the-evidence-20-marks" id="toc-describe-the-evidence-20-marks" class="nav-link" data-scroll-target="#describe-the-evidence-20-marks">1. Describe the evidence (20 marks)</a></li>
+  <li><a href="#probability-and-reported-issues-20-marks" id="toc-probability-and-reported-issues-20-marks" class="nav-link" data-scroll-target="#probability-and-reported-issues-20-marks">2. Probability and reported issues (20 marks)</a></li>
+  <li><a href="#estimate-uncertainty-20-marks" id="toc-estimate-uncertainty-20-marks" class="nav-link" data-scroll-target="#estimate-uncertainty-20-marks">3. Estimate uncertainty (20 marks)</a></li>
+  <li><a href="#test-the-mean-reception-loss-claim-25-marks" id="toc-test-the-mean-reception-loss-claim-25-marks" class="nav-link" data-scroll-target="#test-the-mean-reception-loss-claim-25-marks">4. Test the mean reception-loss claim (25 marks)</a></li>
+  <li><a href="#advise-the-product-team-15-marks" id="toc-advise-the-product-team-15-marks" class="nav-link" data-scroll-target="#advise-the-product-team-15-marks">5. Advise the product team (15 marks)</a></li>
+  </ul></li>
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assignment 1 (25%)</h1>
+<h1 class="title">Assignment 1: The iPhone 4 reception question</h1>
+<p class="subtitle lead">ETX1100 Business Statistics · Individual written assignment · 20%</p>
 </div>
 
 
@@ -188,12 +248,105 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Your task is to …</p>
-<p>
-<strong>Submission details are not yet available.</strong>
-</p>
+<p><strong>Due:</strong> End of Week 4 (20 December 2026). Check Moodle for the submission time and upload location.</p>
+<section id="the-business-case" class="level2">
+<h2 class="anchored" data-anchor-id="the-business-case">The business case</h2>
+<p>In 2010, customers reported reception problems with the iPhone 4. At a July press conference, Steve Jobs presented memorable headline figures: according to <a href="https://www.macrumors.com/2010/07/16/coverage-of-apples-iphone-4-press-conference/">contemporaneous coverage</a>, 0.55% of iPhone 4 customers had contacted AppleCare about antenna or reception issues, while reported return rates were 1.7% for iPhone 4 and 6% for iPhone 3GS. These describe <strong>different outcomes and denominators</strong>. Apple’s <a href="https://www.apple.com/newsroom/2010/07/02Letter-from-Apple-Regarding-iPhone-4/">July 2010 letter about iPhone 4 reception</a> provides further historical context. The business question is: <strong>Which numbers would help a product team judge whether a reception concern warrants action, and what can those numbers actually establish?</strong></p>
+<p>You are an analyst preparing a brief for a fictional product team. Use the <a href="A1-antennagate-simulated.xlsx">simulated assignment workbook</a> to compare the iPhone 4 with the iPhone 3GS. <strong>Every record and measurement in the workbook is simulated for teaching.</strong> None is an Apple, AT&amp;T, or historical customer record. Do not combine workbook estimates with Apple’s reported percentages or present your findings as evidence about the real 2010 phones.</p>
+</section>
+<section id="data-and-decision" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-decision">Data and decision</h2>
+<p>The workbook has a <strong>Read me</strong> sheet with a data dictionary and two independent datasets:</p>
+<ul>
+<li><strong>Customer survey:</strong> a simple random sample of 400 owners of each model from a fictional customer list. Each row represents one owner. It records whether one observed call dropped and whether the owner reported a reception issue during the previous 30 days. These are different events. Coverage and case use are also recorded.</li>
+<li><strong>Reception tests:</strong> a simple random sample of 100 distinct handsets of each model from fictional production batches, tested under the same simulated network conditions. Each handset has an ungripped and a gripped signal reading in dBm. Calculate <strong>reception loss = ungripped reading − gripped reading</strong>; a larger positive number means a greater loss. The two readings on a handset are paired, while the two model samples are independent.</li>
+</ul>
+<p>The product team’s working rule is that a difference of <strong>3 dB or more in average reception loss</strong> would be operationally important. This is a decision threshold for this fictional exercise, not a real engineering standard.</p>
+</section>
+<section id="your-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="your-tasks">Your tasks</h2>
+<section id="describe-the-evidence-20-marks" class="level3">
+<h3 class="anchored" data-anchor-id="describe-the-evidence-20-marks">1. Describe the evidence (20 marks)</h3>
+<ol type="1">
+<li>Identify the observational unit, population of interest, sample, and type of the main variables in <strong>each</strong> sheet. Explain why the survey and reception tests answer different questions.</li>
+<li>Produce a compact table of useful summaries by model. Include the sample size, the share of observed calls that dropped, the share of owners reporting an issue, and appropriate summaries of reception loss. Include <strong>two well-labelled charts</strong>: one comparing a customer outcome by model and one showing the distribution of reception loss by model.</li>
+<li>Write a short critique of what a persuasive summary slide could conceal. Address at least one denominator or measurement choice, including why the historical AppleCare percentage is not a call-drop probability, and one possible source of sampling or measurement bias.</li>
+</ol>
+</section>
+<section id="probability-and-reported-issues-20-marks" class="level3">
+<h3 class="anchored" data-anchor-id="probability-and-reported-issues-20-marks">2. Probability and reported issues (20 marks)</h3>
+<p>Using the <strong>Customer survey</strong> sheet, construct a contingency table for <code>model</code> and <code>call_dropped</code>. Show counts and relevant proportions. Calculate and interpret, as sample-based probability estimates:</p>
+<ul>
+<li><span class="math inline">P(\text{call dropped}\mid\text{iPhone 4})</span>;</li>
+<li><span class="math inline">P(\text{iPhone 4 and call dropped})</span>;</li>
+<li><span class="math inline">P(\text{reported issue}\mid\text{call dropped})</span>; and</li>
+<li><span class="math inline">P(\text{call dropped or reported issue})</span>.</li>
+</ul>
+<p>State the denominator for each calculation. Compare the conditional call-drop probabilities for the two models and explain why this comparison alone does not establish that the handset model caused the difference. You may use a pivot table or Excel formulas; show enough working to make the calculations auditable.</p>
+</section>
+<section id="estimate-uncertainty-20-marks" class="level3">
+<h3 class="anchored" data-anchor-id="estimate-uncertainty-20-marks">3. Estimate uncertainty (20 marks)</h3>
+<ol type="1">
+<li>Calculate a <strong>95% confidence interval</strong> for the proportion of iPhone 4 owners in the fictional customer population who reported a reception issue in the previous 30 days. State the estimate, standard error, interval, assumptions, and interpretation. Compare the estimate descriptively with the iPhone 3GS sample proportion.</li>
+<li>Calculate a <strong>95% confidence interval</strong> for mean reception loss among iPhone 4 handsets in the fictional test population. State the estimate, standard error, interval, assumptions, and interpretation.</li>
+<li>Explain one way sample size and one way sampling or test design affect how much confidence the team should place in these intervals.</li>
+</ol>
+</section>
+<section id="test-the-mean-reception-loss-claim-25-marks" class="level3">
+<h3 class="anchored" data-anchor-id="test-the-mean-reception-loss-claim-25-marks">4. Test the mean reception-loss claim (25 marks)</h3>
+<p>Use the <strong>Reception tests</strong> sheet to test, at the <strong>5% significance level</strong>, whether the fictional iPhone 4 population has a <strong>greater mean reception loss</strong> than the fictional iPhone 3GS population.</p>
+<ul>
+<li>State the parameter, null and alternative hypotheses, and why a one-sided, independent two-sample test is appropriate. Allow for unequal variances.</li>
+<li>Show the sample means, standard deviations, sample sizes, estimated difference, test statistic or clear Excel test output, and p-value. If using Excel’s <code>T.TEST</code>, check that the observed difference is in the direction of the alternative before interpreting its one-tail p-value.</li>
+<li>Give a decision and a plain-language conclusion. Distinguish statistical significance from the team’s <strong>3 dB operational threshold</strong>. Explain a Type I error in this setting.</li>
+</ul>
+</section>
+<section id="advise-the-product-team-15-marks" class="level3">
+<h3 class="anchored" data-anchor-id="advise-the-product-team-15-marks">5. Advise the product team (15 marks)</h3>
+<p>Write a <strong>150–250 word executive recommendation</strong>. Bring together the descriptive, probability, interval, and test results. Specify what the team should investigate or communicate next, and identify at least two limitations that prevent a causal or historical claim. Your recommendation should be understandable without reading Excel output.</p>
+</section>
+</section>
+<section id="submission" class="level2">
+<h2 class="anchored" data-anchor-id="submission">Submission</h2>
+<p>Submit <strong>one PDF brief (maximum 1,500 words, excluding tables, charts, and references)</strong> and <strong>one Excel workbook</strong> containing your calculations, pivot tables, and charts. The PDF should include the results needed to follow your argument; the Excel file is the audit trail. Label units, denominators, confidence levels, and hypotheses. Cite any external material you use. Work individually and use the supplied data; do not replace them with online figures.</p>
+<p>The assessed content is from <strong>Weeks 1–4</strong>: data description and visualisation (LO1), probability (LO2), and sampling, confidence intervals, and hypothesis testing (LO3). This assignment does not require regression, chi-square testing, or optimisation.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Criterion</th>
+<th style="text-align: right;">Marks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data definitions, summaries, visualisation, and critique</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="even">
+<td>Probability calculations and interpretation</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="odd">
+<td>Confidence intervals and sampling interpretation</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="even">
+<td>Mean comparison test and practical interpretation</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr class="odd">
+<td>Executive recommendation and communication</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>100</strong></td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
