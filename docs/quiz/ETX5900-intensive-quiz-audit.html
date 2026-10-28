@@ -168,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#etx5900-s2-2026-quiz-bank-adaptation-for-the-etx1100-eight-week-intensive" id="toc-etx5900-s2-2026-quiz-bank-adaptation-for-the-etx1100-eight-week-intensive" class="nav-link active" data-scroll-target="#etx5900-s2-2026-quiz-bank-adaptation-for-the-etx1100-eight-week-intensive">ETX5900 S2 2026 quiz bank: adaptation for the ETX1100 eight-week intensive</a>
+  <li><a href="#etx5900-s2-2026-quiz-bank-adaptation-for-the-etx1100etx5900-eight-week-intensive" id="toc-etx5900-s2-2026-quiz-bank-adaptation-for-the-etx1100etx5900-eight-week-intensive" class="nav-link active" data-scroll-target="#etx5900-s2-2026-quiz-bank-adaptation-for-the-etx1100etx5900-eight-week-intensive">ETX5900 S2 2026 quiz bank: adaptation for the ETX1100/ETX5900 eight-week intensive</a>
   <ul class="collapse">
   <li><a href="#recommended-question-map" id="toc-recommended-question-map" class="nav-link" data-scroll-target="#recommended-question-map">Recommended question map</a>
   <ul class="collapse">
@@ -186,10 +186,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="etx5900-s2-2026-quiz-bank-adaptation-for-the-etx1100-eight-week-intensive" class="level1">
-<h1>ETX5900 S2 2026 quiz bank: adaptation for the ETX1100 eight-week intensive</h1>
+<section id="etx5900-s2-2026-quiz-bank-adaptation-for-the-etx1100etx5900-eight-week-intensive" class="level1">
+<h1>ETX5900 S2 2026 quiz bank: adaptation for the ETX1100/ETX5900 eight-week intensive</h1>
 <p>The <a href="../quiz/ETX5900 Take Home Quizzes (S2-2026).html">source bank</a> has <strong>11 original weeks</strong>, usually 20 questions each. <code>S3 Q7</code> below means Question 7 in <em>source</em> Week 3, not intensive Week 3. It contains marked answers and should remain an instructor source file. <strong>Keep</strong> means the statistical task is suitable; all retained questions still need answers and solution cues removed before student release. <strong>Adapt</strong> means retain the skill but replace data, context, or wording. <strong>Exclude</strong> means omit from the core eight-week quizzes.</p>
-<p>The original <code>Elecmart</code>, <code>Hytex</code>, <code>PlanFinan</code>, <code>Health care</code>, <code>Hospital Quality</code>, and <code>Data for quiz 11</code> workbooks were not found in this project. The embedded tables and image references in the Markdown file do supply some questions without those workbooks. Current ETX1100 workbooks can supply replacement data, but the old numerical answers must be recalculated.</p>
+<p>The original <code>Elecmart</code>, <code>Hytex</code>, <code>PlanFinan</code>, <code>Health care</code>, <code>Hospital Quality</code>, and <code>Data for quiz 11</code> workbooks were not found in this project. The embedded tables and image references in the Markdown file do supply some questions without those workbooks. Current intensive workbooks can supply replacement data, but the old numerical answers must be recalculated.</p>
+<p>This is an <strong>instructor selection review</strong>, not a released quiz or answer key. Follow <code>AGENTS.md</code>, <code>course_info.R</code>, and the current weekly slides and workbooks when adapting items. The eight weekly quizzes are individual and together carry 15% of the ETX1100 assessment. Weeks 1–4 provide the scope for the Week 4 written assignment; regression and business modelling begin later. The outcome tags below use the ETX1100 outcomes as planning labels. Confirm the official ETX5900 outcome wording before using them as its formal assessment map.</p>
+<p><strong>Excel boundary:</strong> the Analysis ToolPak is the only analysis add-in in the current course. Ordinary worksheet formulas and probability functions, PivotTables, charts, filters, and manual scenario comparisons remain appropriate. Where an item requires a fitted regression, align its output and instructions with <strong>Data &gt; Data Analysis &gt; Regression</strong>. Do not require Solver, Goal Seek, What-If Data Tables, or programming-based optimisation. A ToolPak regression question alone assesses LO5; an LO6 item must also test how the fitted relationship enters a business decision model.</p>
 <section id="recommended-question-map" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-question-map">Recommended question map</h2>
 <table class="caption-top table">
@@ -320,7 +322,7 @@ ul.task-list li input[type="checkbox"] {
 <td><strong>Adapt</strong> S7 Q8, Q20</td>
 <td>Mean tests using Excel data</td>
 <td>LO3</td>
-<td>Replace <code>Elecmart</code> with <code>week4/week4-testing-data.xlsx</code> and regenerate answers.</td>
+<td>Replace <code>Elecmart</code> with <code>week4/week4-testing-data.xlsx</code> and regenerate answers. Include a distinct one-sided, unequal-variance two-sample interpretation item to support the Week 4 assignment method without copying its dataset or answer.</td>
 </tr>
 <tr class="odd">
 <td>4</td>
@@ -348,7 +350,7 @@ ul.task-list li input[type="checkbox"] {
 <td><strong>Adapt</strong> S9 Q1–3</td>
 <td>Build/interpret simple regression from data</td>
 <td>LO4; LO5</td>
-<td>Replace missing <code>Hytex</code>, <code>PlanFinan</code>, and <code>Elecmart</code> files with <code>week5/week5-regression-data.xlsx</code>; regenerate output and keys.</td>
+<td>Replace missing <code>Hytex</code>, <code>PlanFinan</code>, and <code>Elecmart</code> files with <code>week5/week5-regression-data.xlsx</code>; regenerate ToolPak Regression output and keys.</td>
 </tr>
 <tr class="odd">
 <td>5</td>
@@ -369,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
 <td><strong>Adapt</strong> S9 Q16–17; S10 Q1–2, Q11–12</td>
 <td>Fit a multiple model, predict, interpret R-squared and partial coefficients</td>
 <td>LO5</td>
-<td>Original <code>PlanFinan</code> workbook is missing. Rebuild with the current Week 6 workbook and validate all answer values.</td>
+<td>Original <code>PlanFinan</code> workbook is missing. Rebuild ToolPak Regression output with the current Week 6 workbook and validate all answer values.</td>
 </tr>
 <tr class="even">
 <td>6</td>
@@ -386,18 +388,18 @@ ul.task-list li input[type="checkbox"] {
 <td>With zero personal-training sessions, predicted <em>personal-training expenditure</em> is positive. Change the outcome to total fitness-centre expenditure or write a coherent new case.</td>
 </tr>
 <tr class="even">
-<td><strong>7: Spreadsheet modelling</strong></td>
-<td><strong>No suitable original questions</strong></td>
-<td>Identify inputs, decision cells, objective, constraints; interpret Data Tables, Goal Seek, and Solver output</td>
-<td>LO6</td>
-<td>Write a new quiz tied to <code>week7/week7-modelling-data.xlsx</code>. Include at least one formulation question and one interpretation or sensitivity question.</td>
+<td><strong>7: ToolPak-supported business decision</strong></td>
+<td><strong>No original LO6 decision-model questions</strong>; adapt a source regression-output skill only as a component of a new case</td>
+<td>Read and check ToolPak price–demand coefficients; identify data-derived and business inputs, listed-price decision, formulas, objective and rules; apply whole-unit and capacity limits; compare predicted profit and one-at-a-time sensitivity</td>
+<td>LO6; LO5 application</td>
+<td>Write new items tied to <code>week7/week7-modelling-data.xlsx</code>. Ask for the best <strong>listed feasible</strong> price, a nearby alternative, and a limit on the recommendation. Do not claim a global optimum.</td>
 </tr>
 <tr class="odd">
 <td><strong>8: Integrated case and revision</strong></td>
-<td><strong>Reuse selected revised questions from intensive Weeks 1–7</strong></td>
-<td>Choose a method, read Excel output, explain uncertainty, prediction, and a business decision</td>
+<td><strong>Reuse selected revised questions from intensive Weeks 1–7 and write linked items</strong></td>
+<td>Choose a method, read Excel output, explain uncertainty and prediction, and justify a business decision</td>
 <td>LO1–LO6</td>
-<td>Use <code>week8/week8-case-data.xlsx</code> for a coherent case. Write new method-selection questions and include LO6, which the old bank never tests.</td>
+<td>Use <code>week8/week8-case-data.xlsx</code> for the supermarket case and a short Week 7 pricing-model revisit. Include LO6; the old bank has no complete decision-model item.</td>
 </tr>
 </tbody>
 </table>
@@ -450,13 +452,13 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td>7</td>
-<td><strong>Write new items</strong></td>
-<td>Formulation, Data Tables, Goal Seek, Solver, and decision interpretation (LO6)</td>
+<td><strong>Write new linked items from the Week 7 pilot and decision-model sheets</strong></td>
+<td>ToolPak coefficient interpretation, formula audit, capacity rule, best listed feasible price, baseline comparison, one-at-a-time sensitivity and limitations (LO6; LO5 application)</td>
 </tr>
 <tr class="even">
 <td>8</td>
 <td><strong>Write an integrated case; draw revised items from 1–7</strong></td>
-<td>Method selection and communication across LO1–LO6</td>
+<td>Method selection and communication across LO1–LO6, including a ToolPak-supported pricing decision</td>
 </tr>
 </tbody>
 </table>
@@ -467,6 +469,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><strong>S6 Q1–20:</strong> The old Week 6 is a chi-square test block. Exclude its chi-square hypotheses, expected-count calculations, test statistics, critical values, and p-values from the core quizzes unless the chief examiner confirms chi-square remains examinable. The <strong>printed contingency tables</strong> in S6 Q3–12 could instead support new Week 2 or Week 5 questions on conditional percentages and independence as a concept (LO2/LO4); these would be new questions, not unchanged copies.</li>
 <li><strong>S11 Q1–20:</strong> The old Week 11 is seasonal indices, trend forecasts, MAD/MSFE, and spreadsheet forecasting. Exclude from core quizzes because full time-series forecasting is not in the intensive content spine or named 2026 outcomes. A new Week 1 chart-choice question could use a time-series plot, but the original questions mostly ask forecasting methods. Its final Q9 appears after Q20 and should be moved if this bank is ever republished.</li>
+<li><strong>Legacy Excel decision tools:</strong> The old ETF business-modelling source uses Solver, Goal Seek and What-If Data Tables; these are outside the implemented Week 7 plan. Do not import their output-reading or procedure questions into Quiz 7 or Quiz 8. Use ToolPak regression and ordinary Excel formulas to compare only the listed feasible scenarios.</li>
 </ul>
 </section>
 <section id="before-any-questions-go-to-students" class="level2">
@@ -477,6 +480,8 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Repair known defects.</strong> S2 Q3 has no defensible choice; S4 Q13 has an incomplete answer and S4 Q11–14 have ambiguous distribution notation; S4 Q16 lacks its number; S7 Q19 states a test statistic of <code>0.077</code> although <code>(795−775)/(75/√30) ≈ 1.461</code>; S8 Q13 uses an impossible proportion; S9 Q19 has an incoherent outcome.</li>
 <li><strong>Use questions to assess interpretation.</strong> Prefer one calculation plus a denominator, assumption, or business conclusion to several near-identical number-entry items. Keep a balanced mix of conceptual choice, Excel use, and contextual reasoning in each weekly quiz.</li>
 <li><strong>Audit figures.</strong> Many output screenshots are embedded as base64 images in the source Markdown. Extract and relabel only the figures selected for reuse; replace tiny formula images with editable equations and provide accessible text or tables.</li>
+<li><strong>Check week and tool alignment.</strong> Week 4 items must stay within description, probability, sampling, intervals and tests; reserve regression for Weeks 5–6 and the Week 7 decision model for Week 7 or Week 8 integration. For any required Excel regression, state ToolPak X and Y ranges clearly and check the resulting coefficients and units.</li>
+<li><strong>Audit LO6 directly.</strong> A Quiz 7 item should make students distinguish ToolPak estimates from cost and capacity assumptions, apply the non-negative whole-unit capacity rule, calculate revenue, cost and profit, and choose among listed prices. Add a sensitivity or limitation item that resets each trial to the same baseline. No source-bank question by itself covers this workflow.</li>
 </ol>
 
 
