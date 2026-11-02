@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.20">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -38,14 +38,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-fc5af5b8b0f4ab430dcbfafb178114fa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-70361e7c7413d257e16cd85e985e9bdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c820cc95dbf51ed583d98bb9992202e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-708e8158c1e7289c69a3261040824756.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -122,19 +123,18 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Business Statistics</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -199,6 +199,7 @@ window.Quarto = {
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
+            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -207,7 +208,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -230,7 +231,7 @@ window.Quarto = {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -252,31 +253,40 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Due:</strong> Sunday 20 December 2026 at 11:59 pm (Melbourne time). Check Moodle for the submission location.</p>
+<p><strong>Due:</strong> Monday 04 January 2027 at 11:55 pm (Melbourne time). Check Moodle for the submission location.</p>
 <section id="the-business-case" class="level2">
 <h2 class="anchored" data-anchor-id="the-business-case">The business case</h2>
-<p>You are a business analyst. Your company has launched a new phone (iPhone 4), and reports of reception signals dropping are attracting growing public criticism. The CEO will address the media in <strong>48 hours</strong>. The Corporate Affairs team has commissioned you to analyse the available evidence and develop a persuasive, statistically defensible narrative. Your findings will inform the CEO’s public statemmeent. You must identify what the data demonstrate, what remains uncertain, and which claims the CEO can reasonably make.</p>
-<p>The company wants to know whether the new model’s experience differs from that of the previous iPhone 3GS. A low rate of complaints or returns might reassure customers, while a higher rate of dropped calls or greater reception loss might require a more careful response. <strong>A persuasive data story must account for all of these measures, including those that complicate the message.</strong></p>
-<p>Use the <a href="A1-reception-data.xlsx">assignment data workbook</a> to prepare the briefing. <strong>Every customer record and measurement is simulated for teaching.</strong> The scenario is fictional; the workbook contains no actual company or historical customer data.</p>
+<p>You are a business analyst. Your company has launched iPhone 4, and reports of reception signals dropping are attracting growing public criticism. Customers noticed that when the iPhone was held in a specific way, the reception bars dropped off.</p>
+<p>The CEO will address the media in <strong>48 hours</strong>. The Corporate Affairs team has commissioned you to analyse the available evidence and develop a persuasive, statistically defensible narrative. Your findings will inform the CEO’s public statement. You must identify what the data demonstrate, what remains uncertain, and which claims the CEO can reasonably make.</p>
+<p>The company wants to know whether the iPhone 4 experience differs from that of the previous iPhone 3GS. A low rate of complaints or returns might reassure customers, while a higher rate of dropped calls or greater reception loss might require a more careful response. <strong>A persuasive data story must account for all of these measures.</strong></p>
+<p>Use the <a href="A1-reception-data.xlsx">assignment data workbook</a> to prepare the briefing. The scenario is fictional; the workbook contains no actual company or historical customer data.</p>
 </section>
 <section id="data-and-decision" class="level2">
 <h2 class="anchored" data-anchor-id="data-and-decision">Data and decision</h2>
 <p>The workbook has a <strong>READ ME</strong> sheet with a data dictionary and two independent datasets:</p>
 <ul>
-<li><strong>Customer survey:</strong> a simple random sample of 2,000 customers of each model from the company’s fictional customer list, linked to support and returns records. Each row represents one purchaser. It records whether one observed call dropped, whether the purchaser reported a reception issue to customer support during the previous 30 days, and whether the phone was returned within 30 days for <strong>any reason</strong>. These are different events. Coverage and case use are also recorded.</li>
-<li><strong>Reception tests:</strong> a simple random sample of 100 distinct handsets of each model (3 and 4) from fictional production batches, tested under the same network conditions. Each handset has an ungripped and a gripped signal reading in dBm. Calculate <strong>reception loss = ungripped reading − gripped reading</strong>; a larger positive number means a greater loss. The two readings on a handset are paired, while the two model samples are independent.</li>
+<li><p><strong>Customer survey:</strong> a simple random sample of 2,000 customers of each model from the company’s customer list, linked to support and returns records. Each row represents one customer. It records whether one observed call dropped, whether the purchaser reported a reception issue to customer support during the previous 30 days, and whether the phone was returned within 30 days for <strong>any reason</strong>. These are different events. Coverage and case use are also recorded.</p></li>
+<li><p><strong>Reception tests:</strong> a simple random sample of 100 distinct handsets of each model (iPhone 3GS and 4) tested under the same network conditions. Each handset has signal reading measured in decibel-milliwatts (dBm) when placed on a flat surface (ungripped) and held in a position as if making a call (gripped). Calculate <strong>reception loss = ungripped reading − gripped reading</strong>; a larger positive number means a greater loss.</p></li>
 </ul>
-<p>The product team’s working rule is that a difference of <strong>3 dB or more in average reception loss</strong> would be operationally important. This is our decision threshold.</p>
-<p>In the questions below, <em>owner</em> means an original purchaser, including someone who subsequently returned a phone. The survey deliberately samples the same number from each model. A probability calculated over all 4,000 records describes this <strong>balanced sample</strong></p>
+<p>The product team’s working rule is that an <strong>average reception loss greater than 3 dB for iPhone 4 handsets</strong> would be operationally important. This is the decision threshold for the test below. Reception loss is a difference between two dBm readings, so its unit is <strong>dB</strong>.</p>
+<p>In the questions below, <em>owner</em> means an original customer, including someone who subsequently returned a phone. The survey deliberately samples the same number from each model.</p>
 </section>
 <section id="your-tasks" class="level2">
 <h2 class="anchored" data-anchor-id="your-tasks">Your tasks</h2>
 <section id="describe-the-evidence-20-marks" class="level3">
 <h3 class="anchored" data-anchor-id="describe-the-evidence-20-marks">1. Describe the evidence (20 marks)</h3>
 <ol type="1">
-<li>Identify the observational unit, population of interest, sample, and type of the main variables in <strong>each</strong> sheet. Explain why the survey and reception tests answer different questions.</li>
-<li>Build a compact <strong>CEO evidence panel</strong> by model. Show the sample size; the rates of dropped calls, customer-support issue reports, and returns; and appropriate summaries of reception loss. Include <strong>two well-labelled charts</strong>: one comparing a customer outcome by model and one showing the distribution of reception loss by model. Use clear denominators and units so the panel could be understood in a media briefing.</li>
-<li>Explain which headline figures would best answer the public concern and what a persuasive summary slide could conceal. In particular, distinguish a support-report rate from a call-drop rate and an all-cause return rate from a reception-related return rate. Identify one possible source of sampling or measurement bias.</li>
+<li><p>Identify the observational unit, population of interest, sample, and type of the main variables in <strong>each</strong> sheet. Explain why the survey and reception tests answer different questions.</p></li>
+<li><p>Build a compact <strong>CEO evidence table</strong> by phone model. Show the sample size; the rates of dropped calls. Include appropriate description statistics of reception loss. Importantly, distinguish between</p></li>
+</ol>
+<ul>
+<li>customers who only reported a reception issue in the last 30 days</li>
+<li>customers who only returned the phone for any reason</li>
+</ul>
+<p>Use clear denominators and units so the table could be understood in a media briefing.</p>
+<p>Support your table with <strong>two well-labelled charts</strong>: one comparing a drop our rates by model and one showing the distribution of reception loss by model.</p>
+<ol start="3" type="1">
+<li>Explain which headline figures would best answer the public concern. Identify one possible source of sampling or measurement bias.</li>
 </ol>
 </section>
 <section id="probability-and-reported-issues-20-marks" class="level3">
@@ -300,11 +310,11 @@ window.Quarto = {
 </section>
 <section id="test-the-mean-reception-loss-claim-25-marks" class="level3">
 <h3 class="anchored" data-anchor-id="test-the-mean-reception-loss-claim-25-marks">4. Test the mean reception-loss claim (25 marks)</h3>
-<p>Use the <strong>Reception tests</strong> sheet to test, at the <strong>5% significance level</strong>, whether the fictional iPhone 4 population has a <strong>greater mean reception loss</strong> than the fictional iPhone 3GS population.</p>
+<p>Use the <strong>Reception tests</strong> sheet to test, at the <strong>5% significance level</strong>, whether the fictional iPhone 4 population has a <strong>mean reception loss greater than the 3 dB decision threshold</strong>.</p>
 <ul>
-<li>State the parameter, null and alternative hypotheses, and why a one-sided, independent two-sample test is appropriate. Allow for unequal variances.</li>
-<li>Show the sample means, standard deviations, sample sizes, estimated difference, test statistic or clear Excel test output, and p-value. If using Excel’s <code>T.TEST</code>, check that the observed difference is in the direction of the alternative before interpreting its one-tail p-value.</li>
-<li>Give a decision and a plain-language conclusion. Distinguish statistical significance from the team’s <strong>3 dB operational threshold</strong>. Explain a Type I error in this setting.</li>
+<li>State the parameter, null and alternative hypotheses, and explain why a one-sample, one-sided test is appropriate.</li>
+<li>Show the iPhone 4 sample size, mean, standard deviation, standard error, test statistic, degrees of freedom, and p-value. Make your calculations auditable in Excel.</li>
+<li>Give a decision and a plain-language conclusion about the <strong>3 dB threshold</strong>. Explain what the result does and does not say about the two phone models, and describe a Type I error in this setting.</li>
 </ul>
 </section>
 <section id="advise-corporate-affairs-and-pr-15-marks" class="level3">
@@ -328,7 +338,7 @@ window.Quarto = {
 <p>I understand the ease and temptation of uploading the workbook and getting an immediate answer, however this approach won’t help you learn the content in the long term. Instead, I urge you to consider the following uses:</p>
 </blockquote>
 <blockquote class="blockquote">
-<p>You may use AI &amp; Generative AI tools for the translation of the question e.g.&nbsp; “Don’t give me the answer, please reword/breakdown/walk me through the question so I understand clearly what I need to do”</p>
+<p>You may use AI &amp; Generative AI tools for the translation of the question e.g. “Don’t give me the answer, please reword/breakdown/walk me through the question so I understand clearly what I need to do”</p>
 </blockquote>
 <blockquote class="blockquote">
 <p>You may use AI &amp; Generative AI tools for hints on how to approach the question “Don’t give me the answer, provide me some scaffolded hints on how to approach this question”</p>
@@ -364,7 +374,7 @@ window.Quarto = {
 <td style="text-align: right;">20</td>
 </tr>
 <tr class="even">
-<td>Mean comparison test and practical interpretation</td>
+<td>One-sample mean threshold test and interpretation</td>
 <td style="text-align: right;">25</td>
 </tr>
 <tr class="odd">
@@ -461,7 +471,8 @@ window.Quarto = {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -470,8 +481,69 @@ window.Quarto = {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -485,6 +557,7 @@ window.Quarto = {
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -647,44 +720,54 @@ window.Quarto = {
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -782,6 +865,9 @@ window.Quarto = {
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
 
