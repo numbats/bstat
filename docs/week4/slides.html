@@ -6,15 +6,15 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.20">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.11.9">
 
   <meta name="author" content="Week 4: Testing business claims">
   <meta name="dcterms.date" content="2026-12-15">
   <title>Business Statistics – ETX1100/ETX5900 Business Statistics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
   <style>
@@ -36,7 +36,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-6bc5865dcfecb006383e69f0f2fc01d0.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ecfa366c05ac1ff1a677a8c5facd037d.css">
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
@@ -171,13 +171,13 @@ Week 4: Testing business claims
 </div>
 
 </section><section id="TOC">
-<nav role="doc-toc"> 
+<nav role="doc-toc" aria-labelledby="toc-title">
 <h2 id="toc-title">Outline</h2>
 <ul>
 <li><a href="#/from-a-claim-to-a-decision" id="/toc-from-a-claim-to-a-decision">From a claim to a decision</a></li>
 <li><a href="#/testing-one-population-mean" id="/toc-testing-one-population-mean">Testing one population mean</a></li>
 <li><a href="#/testing-a-population-proportion" id="/toc-testing-a-population-proportion">Testing a population proportion</a></li>
-<li><a href="#/comparing-two-independent-means" id="/toc-comparing-two-independent-means">Comparing two independent means</a></li>
+<li><a href="#/testing-a-decision-threshold-for-one-mean" id="/toc-testing-a-decision-threshold-for-one-mean">Testing a decision threshold for one mean</a></li>
 <li><a href="#/decisions-and-their-consequences" id="/toc-decisions-and-their-consequences">Decisions and their consequences</a></li>
 </ul>
 </nav>
@@ -185,8 +185,8 @@ Week 4: Testing business claims
 <section id="todays-question" class="slide level2">
 <h2>Today’s question</h2>
 <p><strong>When does a sample provide enough evidence to challenge a business claim?</strong></p>
-<p>Follow one ETF lecture sequence: claim → hypotheses → sampling model → test statistic → p-value → decision → business meaning. Apply it to one mean, a proportion, and a difference between two independent means.</p>
-<!-- Lecture spine: ETF Seminar Week 6 pp. 12–36, then Seminar Week 7 pp. 14–21. Demonstrations: ETF Workshop Week 6 pp. 5–13 and Workshop Week 7 pp. 6–15. Two-sample unequal-variance material adapts this framework to the current A1 requirement. -->
+<p>Follow one ETF lecture sequence: claim → hypotheses → sampling model → test statistic → p-value → decision → business meaning. Apply it to a mean, a proportion, and a one-sample decision threshold.</p>
+<!-- Lecture spine: ETF Seminar Week 6 pp. 12–36, then Seminar Week 7 pp. 14–21. Demonstrations: ETF Workshop Week 6 pp. 5–13 and Workshop Week 7 pp. 6–15. The one-sample threshold example applies the same t-test framework to the current A1 skill. -->
 </section>
 <section>
 <section id="from-a-claim-to-a-decision" class="title-slide slide level1 center">
@@ -252,7 +252,7 @@ Week 4: Testing business claims
 <h2>Now you try: translate four claims</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_22baa893" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_9a65fdc9" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>Write the parameter, <span class="math inline">H_0</span>, <span class="math inline">H_1</span> and tail for: average delivery time above 30 minutes; mean price different from $1.2m; invoice error rate below 5%; and more than half of customers using an app.</p>
@@ -266,7 +266,7 @@ Week 4: Testing business claims
 <li>Compare p-value with the chosen <span class="math inline">\alpha</span>.</li>
 <li>Report a contextual conclusion, effect size and important limitations.</li>
 </ol>
-<p>The same order works for a mean, a proportion and a difference.</p>
+<p>The same order works for a mean, a proportion and a mean tested against a decision threshold.</p>
 </section>
 <section id="a-right-tail-p-value-is-an-area" class="slide level2">
 <h2>A right-tail p-value is an area</h2>
@@ -300,7 +300,7 @@ Week 4: Testing business claims
 </tr>
 <tr class="even">
 <td><span class="math inline">\mu&gt;\mu_0</span></td>
-<td><code>=1-T.DIST(t,df,TRUE)</code></td>
+<td><code>=T.DIST(-t,df,TRUE)</code></td>
 </tr>
 <tr class="odd">
 <td><span class="math inline">\mu\ne\mu_0</span></td>
@@ -325,7 +325,7 @@ Week 4: Testing business claims
 <h2>Now you try: student spending</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_12c68471" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_6a195cbc" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>A random sample of 40 students has mean monthly discretionary spending $283 and SD $17.85. Test at 5% whether the population mean <strong>exceeds $275</strong>. Show the five steps and an Excel p-value formula. State what the sample does and does not establish.</p>
@@ -339,7 +339,7 @@ Week 4: Testing business claims
 <h2>Now you try: change only the claim</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f7dc38de" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_0c7eb4d7" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>Revisit the spending sample with <span class="math inline">H_1:\mu\ne275</span>. Identify which entries in your worksheet change and compare the two conclusions.</p>
@@ -390,66 +390,53 @@ Week 4: Testing business claims
 <h2>Now you try: invoice accuracy</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_3373cd87" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_7d7ec57d" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>An audit finds 288 accurate invoices among 300. Test at 5% whether the population accuracy rate is <strong>below 98%</strong>. Show the count check, statistic, Excel formula, decision and one-sentence business conclusion.</p>
 </section></section>
 <section>
-<section id="comparing-two-independent-means" class="title-slide slide level1 center">
-<h1>Comparing two independent means</h1>
+<section id="testing-a-decision-threshold-for-one-mean" class="title-slide slide level1 center">
+<h1>Testing a decision threshold for one mean</h1>
 
 </section>
-<section id="a-difference-has-its-own-question" class="slide level2">
-<h2>A difference has its own question</h2>
-<p>Suppose we compare population mean sale prices for properties <strong>inside</strong> and <strong>outside</strong> a school zone. Define <span class="math inline">\mu_Y</span> and <span class="math inline">\mu_N</span> for the two groups and estimate</p>
-<p><span class="math display">\hat\Delta=\bar x_Y-\bar x_N.</span></p>
-<p>For a directional claim that school-zone prices are higher, use <span class="math inline">H_0:\mu_Y-\mu_N=0</span> and <span class="math inline">H_1:\mu_Y-\mu_N&gt;0</span>. The order of subtraction controls the tail.</p>
+<section id="a-threshold-is-a-population-claim" class="slide level2">
+<h2>A threshold is a population claim</h2>
+<p>A business team may specify a minimum mean value that would change its decision. Let <span class="math inline">\mu</span> be the population mean and <span class="math inline">\mu_0</span> the threshold.</p>
+<p>To ask whether the mean <strong>exceeds</strong> that threshold, write <span class="math inline">H_0:\mu\le\mu_0</span> and <span class="math inline">H_1:\mu&gt;\mu_0</span>. Calculate the test statistic at the boundary <span class="math inline">\mu_0</span>. This is a right-sided, <strong>one-sample</strong> t test.</p>
 </section>
-<section id="why-the-two-sample-standard-error-is-different" class="slide level2">
-<h2>Why the two-sample standard error is different</h2>
-<p>Two independent groups contribute uncertainty:</p>
-<p><span class="math display">SE(\bar x_Y-\bar x_N)=
-\sqrt{\frac{s_Y^2}{n_Y}+\frac{s_N^2}{n_N}}.</span></p>
-<p>The Welch statistic is <span class="math inline">t=(\hat\Delta-0)/SE</span>. Its degrees of freedom account for both group sizes and variances; Excel’s unequal-variance ToolPak test calculates them. Independence matters <strong>within and between</strong> groups.</p>
+<section id="calculate-the-statistic-from-raw-observations" class="slide level2">
+<h2>Calculate the statistic from raw observations</h2>
+<p>For <span class="math inline">n</span> independent observations of one numerical outcome:</p>
+<p><span class="math display">\bar x=\text{sample mean},\qquad
+SE=\frac{s}{\sqrt n},\qquad
+t=\frac{\bar x-\mu_0}{SE},\qquad df=n-1.</span></p>
+<p>In Excel use <code>COUNT</code>, <code>AVERAGE</code> and <code>STDEV.S</code> for the sample summaries, then calculate <span class="math inline">SE</span> and <span class="math inline">t</span> in labelled cells. For a right-sided test, the p-value is <code>=T.DIST(-t_cell,df_cell,TRUE)</code>. The t distribution is symmetric, so this left-tail calculation equals the right-tail area without subtracting a number close to 1.</p>
 </section>
-<section id="watch-me-prepare-the-realestate-comparison" class="slide level2">
-<h2>Watch me: prepare the RealEstate comparison</h2>
-<p>Open the <strong>RealEstate</strong> sheet of <code>week4-proportions-data.xlsx</code>.</p>
+<section id="watch-me-a-property-price-threshold" class="slide level2">
+<h2>Watch me: a property-price threshold</h2>
+<p>In <code>week4-proportions-data.xlsx</code>, the <code>RealEstate</code> sheet records <code>Price</code> in <strong>AUD thousands</strong>. Test whether population mean price exceeds <strong>AUD 1.2 million</strong>; use 1200 as the workbook benchmark.</p>
 <ol type="1">
-<li>Identify <code>Price</code> and <code>SchoolZone</code>, their units and any missing rows.</li>
-<li>Filter <code>SchoolZone=Yes</code> and <code>SchoolZone=No</code>; copy each group’s prices to a separate labelled column on a working sheet.</li>
-<li>Use <code>COUNT</code>, <code>AVERAGE</code> and <code>STDEV.S</code> on each price column.</li>
-<li>Calculate <span class="math inline">\bar x_Y-\bar x_N</span> and the Welch standard error.</li>
-<li>Compare the difference with a business-relevant dollar threshold before discussing the test.</li>
+<li>State <span class="math inline">H_0:\mu\le1200</span> and <span class="math inline">H_1:\mu&gt;1200</span>.</li>
+<li>Obtain <span class="math inline">n</span>, <span class="math inline">\bar x</span> and <span class="math inline">s</span> with <code>COUNT</code>, <code>AVERAGE</code> and <code>STDEV.S</code>.</li>
+<li>Calculate <span class="math inline">SE=s/\sqrt n</span>, <span class="math inline">t=(\bar x-1200)/SE</span> and <span class="math inline">df=n-1</span>.</li>
+<li>Use <code>T.DIST</code> for the right-tail p-value; decide at 5% and conclude in context.</li>
 </ol>
-<p>The source ETF real-estate workshop compares groups descriptively; this test extends that demonstration for the current assignment skill.</p>
 </section>
-<section id="excel-toolpak-unequal-variances" class="slide level2">
-<h2>Excel ToolPak: unequal variances</h2>
-<p>Check <strong>Data → Data Analysis</strong> is available. Choose <strong>t-Test: Two-Sample Assuming Unequal Variances</strong>.</p>
-<ul>
-<li>Select the two price columns as Variable 1 and Variable 2, with labels if included.</li>
-<li>Enter <strong>0</strong> for hypothesised mean difference and the preselected <span class="math inline">\alpha</span>.</li>
-<li>Read the group means, <code>t</code> statistic, <code>df</code> and one-tail p-value.</li>
-<li>Match Variable 1 minus Variable 2 to your alternative; the ToolPak’s one-tail field must correspond to the observed direction.</li>
-</ul>
-<p>As a formula check, <code>=T.TEST(yes_range,no_range,1,3)</code> gives a one-tailed unequal-variance p-value. <code>T.TEST</code> does not encode which direction you intended, so verify the sign of the mean difference separately.</p>
-</section>
-<section id="now-you-try-run-and-audit-welch" class="slide level2">
-<h2>Now you try: run and audit Welch</h2>
+<section id="now-you-try-a-different-property-group" class="slide level2">
+<h2>Now you try: a different property group</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_8650d42e" minutes="12" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_a3ec364c" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Using the RealEstate workbook, test whether mean school-zone price <strong>exceeds</strong> mean non-school-zone price at 5%.</p>
-<p>Report <code>n</code>, mean and SD for each group; the mean difference and its units; Welch <code>t</code>, <code>df</code> and one-tail p-value; and a plain-language conclusion. Confirm that the ToolPak groups are in the order named in your hypotheses.</p>
+<p>Filter <code>SchoolZone=No</code> and use only those prices. At 5%, test whether the population mean for this group exceeds <strong>AUD 1.0 million</strong>.</p>
+<p>Show the sample size, mean, SD, standard error, <span class="math inline">t</span>, degrees of freedom, Excel p-value, decision and plain-language conclusion. State which population your filtered sample could represent.</p>
 </section>
-<section id="independent-groups-and-a-paired-design" class="slide level2">
-<h2>Independent groups and a paired design</h2>
-<p>The school-zone groups contain different properties, so the independent two-sample test is appropriate. When the <strong>same units</strong> are measured before and after a change, analyse their within-unit differences instead.</p>
-<p>Do not pair unrelated rows merely because they appear on the same line of a spreadsheet.</p>
+<section id="what-this-test-does-not-compare" class="slide level2">
+<h2>What this test does not compare</h2>
+<p>A one-sample test compares <strong>one population mean</strong> with a fixed benchmark. It does not test whether two model or property-group means differ, even when both groups appear in a descriptive chart.</p>
+<p>The benchmark and the chosen significance level should be set before inspecting the data. A statistically clear result still depends on the sampling design, measurement quality and whether the business benchmark is meaningful.</p>
 </section></section>
 <section>
 <section id="decisions-and-their-consequences" class="title-slide slide level1 center">
@@ -495,7 +482,7 @@ Week 4: Testing business claims
 <h2>Now you try: business consequences</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_358bc7a1" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_63a0d08a" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>For the invoice-accuracy test, describe both errors in everyday language. Which error would be more costly to an operations manager, and why? How would that judgment affect the chosen significance level?</p>
@@ -503,13 +490,13 @@ Week 4: Testing business claims
 <section id="statistical-versus-practical-significance" class="slide level2">
 <h2>Statistical versus practical significance</h2>
 <p>A small p-value concerns <strong>evidence against the null</strong>. It does not say the effect is large enough to matter.</p>
-<p>Report the observed difference, its units, a confidence interval when appropriate, and a business threshold. For two groups, ask whether a plausible difference is large enough to change a decision. A large sample can make a small difference statistically significant.</p>
+<p>Report the observed estimate, its units, a confidence interval when appropriate, and the business threshold. The threshold itself is a judgment about what matters; the test quantifies evidence that a population mean exceeds it. Sampling and measurement limitations still matter.</p>
 </section>
 <section id="now-you-try-challenge-the-headline" class="slide level2">
 <h2>Now you try: challenge the headline</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_1e3d8a5e" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_5fc8baed" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>A report says, “Waiting time fell by 0.2 minutes, <span class="math inline">p&lt;0.001</span>, so the redesign was a major success.” Identify what the p-value supports, what further information you need, and a more defensible headline.</p>
@@ -517,13 +504,13 @@ Week 4: Testing business claims
 <section id="a1-preparation-keep-the-measures-separate" class="slide level2">
 <h2>A1 preparation: keep the measures separate</h2>
 <p>The current assignment asks you to distinguish four different outcomes: <strong>dropped calls</strong>, <strong>support reports</strong>, <strong>all-cause returns</strong>, and <strong>measured handset reception loss</strong>. They have different units and denominators.</p>
-<p>For the independent two-sample mean test, define the direction of the reception-loss difference, use the unequal-variance method, then compare statistical evidence with the stated <strong>3 dB</strong> practical threshold. A business conclusion also needs sampling and measurement caveats.</p>
+<p>For the one-sample mean test, calculate each iPhone 4 handset’s loss, then ask whether the population mean exceeds the stated <strong>3 dB</strong> threshold. Calculate the t statistic and right-tail p-value from the sample summaries. The descriptive comparison with 3GS is a separate question and this test does not establish a model difference.</p>
 </section>
 <section id="final-audit-of-an-excel-testing-worksheet" class="slide level2">
 <h2>Final audit of an Excel testing worksheet</h2>
 <p>Can another person trace the population and event, raw rows, group counts, inputs, assumptions, hypotheses, formula or ToolPak command, tail, decision and conclusion?</p>
 <p><strong>Claim → method → Excel execution → validation → plain-language conclusion.</strong> Keep the effect size and practical threshold visible beside the p-value.</p>
-<!-- Source map for editing: ETF Seminar Week 6 pp. 12–36; ETF Workshop Week 6 pp. 5–13; ETF Seminar Week 7 pp. 14–21; ETF Workshop Week 7 pp. 6–15. Figure is extracted from ETF Seminar Week 6 p. 22. Welch section is a current ETX extension using the existing RealEstate workbook; it does not reproduce A1 answers. -->
+<!-- Source map for editing: ETF Seminar Week 6 pp. 12–36; ETF Workshop Week 6 pp. 5–13; ETF Seminar Week 7 pp. 14–21; ETF Workshop Week 7 pp. 6–15. Figure is extracted from ETF Seminar Week 6 p. 22. The one-sample threshold demonstration uses the existing RealEstate workbook, without reproducing A1 answers. -->
 
 
 </section></section>
@@ -562,7 +549,7 @@ Week 4: Testing business claims
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"\u003ci class=\"fas fa-gear\">\u003c/i>","content":"\u003cul class=\"slide-menu-items\">\n\u003cli class=\"slide-tool-item active\" data-item=\"0\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\">\u003ckbd>f\u003c/kbd> Fullscreen\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"1\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\">\u003ckbd>s\u003c/kbd> Speaker View\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"2\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\">\u003ckbd>o\u003c/kbd> Slide Overview\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"3\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\">\u003ckbd>e\u003c/kbd> PDF Export Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"4\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\">\u003ckbd>r\u003c/kbd> Scroll View Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"5\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\">\u003ckbd>b\u003c/kbd> Toggle Chalkboard\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"6\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\">\u003ckbd>c\u003c/kbd> Toggle Notes Canvas\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"7\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\">\u003ckbd>d\u003c/kbd> Download Drawings\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"8\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\">\u003ckbd>?\u003c/kbd> Keyboard Help\u003c/a>\u003c/li>\n\u003c/ul>"}],"openButton":true,"openButtonLabel":"Slide menu"},
 'chalkboard': {"buttons":true},
 'smaller': false,
  
@@ -974,7 +961,8 @@ Week 4: Testing business claims
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
           // Inspect non-navigation links and adorn them if external
-         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          window.quartoDecorateExternalLinks = function (root) {
+         var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
           for (var i=0; i<links.length; i++) {
             const link = links[i];
             if (!isInternal(link.href)) {
@@ -983,8 +971,69 @@ Week 4: Testing business claims
               if (link.dataset.originalHref !== undefined) {
                 link.href = link.dataset.originalHref;
               }
+              if (!link.classList.contains('no-external-icon')) {
+              }
             }
           }
+          };
+          window.quartoDecorateExternalLinks(window.document);
+        // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+        // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+        const hideOnEscAndFocusOut = {
+          name: 'hideOnEscAndFocusOut',
+          defaultValue: true,
+          fn(instance) {
+            const dismiss = () => {
+              // A show scheduled by the trigger delay would otherwise reopen it
+              instance.clearDelayTimeouts();
+              instance.hide();
+            };
+            const onKeyDown = (event) => {
+              if (event.key !== 'Escape') {
+                return;
+              }
+              // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+              // except an open reveal.js slide menu, which Esc should close too.
+              // The menu handles keys only when its keyboard option is on.
+              const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+                window.Reveal.getConfig().menu?.keyboard !== false;
+              if (!menuHandlesEsc) {
+                event.stopPropagation();
+              }
+              if (instance.popper.contains(window.document.activeElement)) {
+                // Disabled while refocusing so the focus trigger does not reopen it
+                instance.disable();
+                instance.reference.focus();
+                instance.enable();
+              }
+              dismiss();
+            };
+            const onFocusOut = (event) => {
+              const target = event.relatedTarget;
+              if (target && !instance.reference.contains(target) &&
+                  !instance.popper.contains(target)) {
+                dismiss();
+              }
+            };
+            // On the trigger too: a click trigger (code-annotations: select) has no
+            // blur handling. Attached for the instance's lifetime so leaving the
+            // trigger also cancels a show still pending on the trigger delay.
+            instance.reference.addEventListener('focusout', onFocusOut);
+            return {
+              onShow() {
+                window.document.addEventListener('keydown', onKeyDown, true);
+                instance.popper.addEventListener('focusout', onFocusOut);
+              },
+              onHide() {
+                window.document.removeEventListener('keydown', onKeyDown, true);
+                instance.popper.removeEventListener('focusout', onFocusOut);
+              },
+              onDestroy() {
+                instance.reference.removeEventListener('focusout', onFocusOut);
+              },
+            };
+          },
+        };
         function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
           const config = {
             allowHTML: true,
@@ -998,6 +1047,7 @@ Week 4: Testing business claims
             interactiveBorder: 10,
             theme: 'light-border',
             placement: 'bottom-start',
+            plugins: [hideOnEscAndFocusOut],
           };
           if (contentFn) {
             config.content = contentFn;
