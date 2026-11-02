@@ -174,194 +174,189 @@ Week 4: Testing business claims
 <nav role="doc-toc"> 
 <h2 id="toc-title">Outline</h2>
 <ul>
-<li><a href="#/from-claims-to-hypotheses" id="/toc-from-claims-to-hypotheses">From claims to hypotheses</a></li>
-<li><a href="#/tests-for-a-population-mean" id="/toc-tests-for-a-population-mean">Tests for a population mean</a></li>
-<li><a href="#/tests-for-a-population-proportion" id="/toc-tests-for-a-population-proportion">Tests for a population proportion</a></li>
-<li><a href="#/decisions-errors-and-importance" id="/toc-decisions-errors-and-importance">Decisions, errors, and importance</a></li>
-<li><a href="#/integrated-evidence-brief" id="/toc-integrated-evidence-brief">Integrated evidence brief</a></li>
+<li><a href="#/from-a-claim-to-a-decision" id="/toc-from-a-claim-to-a-decision">From a claim to a decision</a></li>
+<li><a href="#/testing-one-population-mean" id="/toc-testing-one-population-mean">Testing one population mean</a></li>
+<li><a href="#/testing-a-population-proportion" id="/toc-testing-a-population-proportion">Testing a population proportion</a></li>
+<li><a href="#/comparing-two-independent-means" id="/toc-comparing-two-independent-means">Comparing two independent means</a></li>
+<li><a href="#/decisions-and-their-consequences" id="/toc-decisions-and-their-consequences">Decisions and their consequences</a></li>
 </ul>
 </nav>
 </section>
-<section id="todays-journey" class="slide level2">
-<h2>Today’s journey</h2>
-<ol type="1">
-<li>Translate a business claim into hypotheses.</li>
-<li>Use one five-step testing process.</li>
-<li>Test population means and proportions in Excel.</li>
-<li>Interpret p-values, decisions, and possible errors.</li>
-<li>Separate statistical evidence from practical importance.</li>
-</ol>
-<!-- Springboards: ETF W6 seminar/workshop and ETF W7 proportion-testing seminar/workshop. -->
+<section id="todays-question" class="slide level2">
+<h2>Today’s question</h2>
+<p><strong>When does a sample provide enough evidence to challenge a business claim?</strong></p>
+<p>Follow one ETF lecture sequence: claim → hypotheses → sampling model → test statistic → p-value → decision → business meaning. Apply it to one mean, a proportion, and a difference between two independent means.</p>
+<!-- Lecture spine: ETF Seminar Week 6 pp. 12–36, then Seminar Week 7 pp. 14–21. Demonstrations: ETF Workshop Week 6 pp. 5–13 and Workshop Week 7 pp. 6–15. Two-sample unequal-variance material adapts this framework to the current A1 requirement. -->
 </section>
 <section>
-<section id="from-claims-to-hypotheses" class="title-slide slide level1 center">
-<h1>From claims to hypotheses</h1>
+<section id="from-a-claim-to-a-decision" class="title-slide slide level1 center">
+<h1>From a claim to a decision</h1>
 
 </section>
-<section id="retrieval-check" class="slide level2">
-<h2>Retrieval check</h2>
+<section id="why-test-a-hypothesis" class="slide level2">
+<h2>Why test a hypothesis?</h2>
+<p>A sample estimate rarely equals a stated benchmark exactly. A test asks whether the difference is <strong>too large to explain readily by sampling variation</strong>, assuming the benchmark is true.</p>
 <ul>
-<li>What does a confidence interval estimate?</li>
-<li>What is a standard error?</li>
-<li>When do we use <span class="math inline">t</span> rather than <span class="math inline">z</span> for a mean?</li>
-<li>Why must hypotheses refer to population parameters rather than sample statistics?</li>
+<li>The <strong>null hypothesis</strong> states the benchmark.</li>
+<li>The <strong>alternative hypothesis</strong> states the direction of evidence sought.</li>
+<li>The <strong>significance level</strong> <span class="math inline">\alpha</span> is the preselected threshold for a false rejection.</li>
+<li>The <strong>p-value</strong> measures how extreme the observed statistic is under the null model.</li>
 </ul>
 </section>
-<section id="what-hypothesis-testing-does" class="slide level2">
-<h2>What hypothesis testing does</h2>
-<p>Hypothesis testing asks whether sample evidence is difficult to reconcile with a stated population benchmark.</p>
-<ul>
-<li>Begin with a business claim.</li>
-<li>Assume a null benchmark temporarily.</li>
-<li>Measure how far the sample result is from that benchmark.</li>
-<li>Quantify extremeness with a p-value.</li>
-<li>Make a decision with a pre-selected significance level.</li>
-</ul>
-</section>
-<section id="the-five-step-workflow" class="slide level2">
-<h2>The five-step workflow</h2>
-<ol type="1">
-<li>State <span class="math inline">H_0</span> and <span class="math inline">H_1</span>.</li>
-<li>Calculate the test statistic.</li>
-<li>Calculate the p-value in the correct tail or tails.</li>
-<li>Compare the p-value with <span class="math inline">\alpha</span>.</li>
-<li>State a contextual conclusion about <span class="math inline">H_1</span>.</li>
-</ol>
-</section>
-<section id="null-and-alternative-hypotheses" class="slide level2">
-<h2>Null and alternative hypotheses</h2>
-<ul>
-<li><span class="math inline">H_0</span> contains equality and represents the benchmark.</li>
-<li><span class="math inline">H_1</span> expresses the claim being investigated.</li>
-<li>Right-sided: <span class="math inline">H_1:\theta&gt;\theta_0</span>.</li>
-<li>Left-sided: <span class="math inline">H_1:\theta&lt;\theta_0</span>.</li>
-<li>Two-sided: <span class="math inline">H_1:\theta\ne\theta_0</span>.</li>
-</ul>
-<p>Choose direction from the question before seeing the result.</p>
-</section>
-<section id="watch-me-translate-a-click-through-claim" class="slide level2">
-<h2>Watch me: translate a click-through claim</h2>
-<p>An analyst claims the population mean click-through rate is below 12 clicks per minute.</p>
-<p><span class="math display">H_0:\mu=12,\qquad H_1:\mu&lt;12.</span></p>
-<p>The parameter is <span class="math inline">\mu</span>, not the observed <span class="math inline">\bar{x}</span>. The word <strong>below</strong> makes this a left-sided test.</p>
-</section>
-<section id="now-you-try-write-the-hypotheses" class="slide level2">
-<h2>Now you try: write the hypotheses</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_527918cf" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Write hypotheses and identify the tail for each claim:</p>
-<ol type="1">
-<li>Average delivery time exceeds 30 minutes.</li>
-<li>Mean transaction value differs from AUD 85.</li>
-<li>Fewer than 4% of invoices contain an error.</li>
-<li>More than half of customers use the loyalty app.</li>
-</ol>
-</section></section>
-<section>
-<section id="tests-for-a-population-mean" class="title-slide slide level1 center">
-<h1>Tests for a population mean</h1>
-
-</section>
-<section id="test-statistic-for-a-mean" class="slide level2">
-<h2>Test statistic for a mean</h2>
-<p>When <span class="math inline">\sigma</span> is unknown:</p>
-<p><span class="math display">t=\frac{\bar{x}-\mu_0}{s/\sqrt n},\qquad df=n-1.</span></p>
-<p>The statistic is the observed difference measured in standard errors. Its sign indicates direction; its magnitude indicates distance from <span class="math inline">H_0</span>.</p>
-</section>
-<section id="p-values-and-tails-in-excel" class="slide level2">
-<h2>P-values and tails in Excel</h2>
+<section id="state-the-hypotheses-before-looking" class="slide level2">
+<h2>State the hypotheses before looking</h2>
 <table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
 <thead>
 <tr class="header">
+<th>Business claim</th>
+<th>Null</th>
 <th>Alternative</th>
-<th>Excel p-value</th>
+<th>Tail</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">H_1:\mu&lt;\mu_0</span></td>
-<td><code>T.DIST(t,df,TRUE)</code></td>
+<td>Average wait exceeds 30 minutes</td>
+<td><span class="math inline">H_0:\mu=30</span></td>
+<td><span class="math inline">H_1:\mu&gt;30</span></td>
+<td>right</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">H_1:\mu&gt;\mu_0</span></td>
-<td><code>1-T.DIST(t,df,TRUE)</code></td>
+<td>Mean sale price differs from $1.2m</td>
+<td><span class="math inline">H_0:\mu=1.2</span></td>
+<td><span class="math inline">H_1:\mu\ne1.2</span></td>
+<td>two</td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">H_1:\mu\ne\mu_0</span></td>
-<td><code>T.DIST.2T(ABS(t),df)</code></td>
+<td>Fewer than 5% of invoices have errors</td>
+<td><span class="math inline">H_0:\pi=0.05</span></td>
+<td><span class="math inline">H_1:\pi&lt;0.05</span></td>
+<td>left</td>
 </tr>
 </tbody>
 </table>
-<p>Using <code>ABS</code> with <code>T.DIST.2T</code> avoids separate positive/negative formulas.</p>
+<p>The parameter is a <strong>population</strong> mean or proportion, not the observed sample statistic. The equality belongs in the null.</p>
 </section>
-<section id="what-a-p-value-means" class="slide level2">
-<h2>What a p-value means</h2>
-<p>The p-value is the probability—assuming <span class="math inline">H_0</span> is true—of obtaining a test statistic at least as extreme as the one observed, in the direction specified by <span class="math inline">H_1</span>.</p>
-<p>It is not:</p>
-<ul>
-<li>the probability that <span class="math inline">H_0</span> is true;</li>
-<li>the size or importance of an effect; or</li>
-<li>the probability that the result occurred “by chance”.</li>
-</ul>
+<section id="watch-me-click-through-claim" class="slide level2">
+<h2>Watch me: click-through claim</h2>
+<p>ETF’s workshop asks whether a population click-through mean is <strong>below 12 clicks per minute</strong>. Before using the data, write <span class="math inline">H_0:\mu=12</span> and <span class="math inline">H_1:\mu&lt;12</span>.</p>
+<p>The word <em>below</em> specifies the left tail. The observed sample mean determines the statistic, but it must not determine which alternative we choose.</p>
 </section>
-<section id="watch-me-test-click-through-rate" class="slide level2">
-<h2>Watch me: test click-through rate</h2>
-<p>Given <span class="math inline">n=45</span>, <span class="math inline">\bar{x}=10.8</span>, <span class="math inline">s=3.2</span>, <span class="math inline">\mu_0=12</span>, and <span class="math inline">\alpha=0.05</span>:</p>
-<ol type="1">
-<li><span class="math inline">t=(10.8-12)/(3.2/\sqrt{45})</span>;</li>
-<li>use <code>=T.DIST(t,44,TRUE)</code>;</li>
-<li>compare the p-value with 0.05; and</li>
-<li>conclude about the population mean click-through rate.</li>
-</ol>
-</section>
-<section id="now-you-try-discretionary-spending" class="slide level2">
-<h2>Now you try: discretionary spending</h2>
+<section id="now-you-try-translate-four-claims" class="slide level2">
+<h2>Now you try: translate four claims</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_987d329d" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_22baa893" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>A random sample of 40 students has <span class="math inline">\bar{x}=283</span> and <span class="math inline">s=17.85</span>. Test at <span class="math inline">\alpha=0.05</span> whether population mean monthly discretionary spending exceeds AUD 275.</p>
-<p>Complete all five steps, show the Excel p-value formula, and state the conclusion without saying “accept <span class="math inline">H_0</span>”.</p>
+<p>Write the parameter, <span class="math inline">H_0</span>, <span class="math inline">H_1</span> and tail for: average delivery time above 30 minutes; mean price different from $1.2m; invoice error rate below 5%; and more than half of customers using an app.</p>
 </section>
-<section id="one-sided-versus-two-sided" class="slide level2">
-<h2>One-sided versus two-sided</h2>
-<p>A two-sided test considers evidence in both directions and uses both tails. A one-sided test concentrates the rejection region in one pre-specified direction.</p>
-<p>Do not choose one-sided after observing the sample. That inflates the chance of finding a convenient result.</p>
+<section id="the-five-step-testing-workflow" class="slide level2">
+<h2>The five-step testing workflow</h2>
+<ol type="1">
+<li>Define the population parameter and write <span class="math inline">H_0</span> and <span class="math inline">H_1</span>.</li>
+<li>Check the sampling design and assumptions; calculate the statistic.</li>
+<li>Calculate the p-value in the tail specified by <span class="math inline">H_1</span>.</li>
+<li>Compare p-value with the chosen <span class="math inline">\alpha</span>.</li>
+<li>Report a contextual conclusion, effect size and important limitations.</li>
+</ol>
+<p>The same order works for a mean, a proportion and a difference.</p>
+</section>
+<section id="a-right-tail-p-value-is-an-area" class="slide level2">
+<h2>A right-tail p-value is an area</h2>
+
+<img data-src="figures/etf-right-tail.png" style="width:76.0%" class="r-stretch quarto-figure-center"><p class="caption">ETF Seminar Week 6: the p-value is the tail area at least as extreme as the observed statistic, assuming the null model.</p><p>For a left-sided claim, use the left tail; for a two-sided claim, count both tails. A p-value is <strong>not</strong> the probability that <span class="math inline">H_0</span> is true.</p>
+</section></section>
+<section>
+<section id="testing-one-population-mean" class="title-slide slide level1 center">
+<h1>Testing one population mean</h1>
+
+</section>
+<section id="from-estimate-to-t-statistic" class="slide level2">
+<h2>From estimate to t statistic</h2>
+<p>When the population SD is unknown, use the sample SD:</p>
+<p><span class="math display">t=\frac{\bar x-\mu_0}{s/\sqrt n}, \qquad df=n-1.</span></p>
+<p>The numerator is the observed difference from the null benchmark. The denominator is the standard error of the sample mean. Check independence and whether the t approximation is reasonable for the data.</p>
+</section>
+<section id="excel-choose-the-correct-tail" class="slide level2">
+<h2>Excel: choose the correct tail</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Alternative</th>
+<th>Excel formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\mu&lt;\mu_0</span></td>
+<td><code>=T.DIST(t,df,TRUE)</code></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\mu&gt;\mu_0</span></td>
+<td><code>=1-T.DIST(t,df,TRUE)</code></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\mu\ne\mu_0</span></td>
+<td><code>=T.DIST.2T(ABS(t),df)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Keep the signed statistic visible. <code>ABS</code> belongs only in the two-sided tail formula.</p>
+</section>
+<section id="watch-me-etf-click-through-example" class="slide level2">
+<h2>Watch me: ETF click-through example</h2>
+<p>A random sample has <code>n=45</code>, <span class="math inline">\bar x=10.8</span> and <code>s=3.2</code> clicks per minute. Test <span class="math inline">H_1:\mu&lt;12</span> at <span class="math inline">\alpha=0.05</span>.</p>
+<ol type="1">
+<li>Put the inputs in labelled Excel cells.</li>
+<li>Compute <code>=(10.8-12)/(3.2/SQRT(45))</code>.</li>
+<li>Use <code>=T.DIST(t_cell,44,TRUE)</code>.</li>
+<li>Compare the p-value with 0.05 and state the conclusion in clicks per minute.</li>
+</ol>
+<p>ETF Workshop Week 6 supplies the business context; keep your worksheet formulas auditable.</p>
+</section>
+<section id="now-you-try-student-spending" class="slide level2">
+<h2>Now you try: student spending</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_12c68471" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>A random sample of 40 students has mean monthly discretionary spending $283 and SD $17.85. Test at 5% whether the population mean <strong>exceeds $275</strong>. Show the five steps and an Excel p-value formula. State what the sample does and does not establish.</p>
+</section>
+<section id="one-sided-and-two-sided-are-different-questions" class="slide level2">
+<h2>One-sided and two-sided are different questions</h2>
+<p>A two-sided alternative asks whether the population mean <strong>differs</strong> in either direction. The statistic stays the same, but the p-value includes both tails.</p>
+<p>Choose the question before inspecting the result. Changing the tail to obtain a smaller p-value invalidates the planned error rate.</p>
 </section>
 <section id="now-you-try-change-only-the-claim" class="slide level2">
 <h2>Now you try: change only the claim</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_443126e7" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_f7dc38de" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Using the same spending sample, test whether the mean <strong>differs from</strong> AUD 275.</p>
-<ol type="1">
-<li>Which steps change?</li>
-<li>Does the test statistic change?</li>
-<li>Which p-value formula changes?</li>
-<li>Compare the one- and two-sided conclusions.</li>
-</ol>
+<p>Revisit the spending sample with <span class="math inline">H_1:\mu\ne275</span>. Identify which entries in your worksheet change and compare the two conclusions.</p>
 </section></section>
 <section>
-<section id="tests-for-a-population-proportion" class="title-slide slide level1 center">
-<h1>Tests for a population proportion</h1>
+<section id="testing-a-population-proportion" class="title-slide slide level1 center">
+<h1>Testing a population proportion</h1>
 
 </section>
-<section id="large-sample-proportion-test" class="slide level2">
-<h2>Large-sample proportion test</h2>
-<p>For <span class="math inline">H_0:\pi=\pi_0</span>:</p>
+<section id="count-an-event-then-test-a-proportion" class="slide level2">
+<h2>Count an event, then test a proportion</h2>
+<p>For <span class="math inline">H_0:\pi=\pi_0</span>, first count successes <code>x</code> from <code>n</code> observations and calculate <span class="math inline">\hat p=x/n</span>. The large-sample test statistic is</p>
 <p><span class="math display">z=\frac{\hat p-\pi_0}{\sqrt{\pi_0(1-\pi_0)/n}}.</span></p>
-<p>Check:</p>
-<p><span class="math display">n\pi_0\ge5,\qquad n(1-\pi_0)\ge5.</span></p>
-<p>The null value <span class="math inline">\pi_0</span> appears in the test standard error.</p>
+<p>Check <span class="math inline">n\pi_0\ge5</span> and <span class="math inline">n(1-\pi_0)\ge5</span>. A <strong>test</strong> uses the null value <span class="math inline">\pi_0</span> in its standard error; an interval uses <span class="math inline">\hat p</span>.</p>
 </section>
-<section id="proportion-p-values-in-excel" class="slide level2">
-<h2>Proportion p-values in Excel</h2>
+<section id="excel-normal-tail-areas" class="slide level2">
+<h2>Excel: Normal tail areas</h2>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -371,83 +366,100 @@ Week 4: Testing business claims
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">H_1:\pi&lt;\pi_0</span></td>
-<td><code>NORM.S.DIST(z,TRUE)</code></td>
+<td><span class="math inline">\pi&lt;\pi_0</span></td>
+<td><code>=NORM.S.DIST(z,TRUE)</code></td>
 </tr>
 <tr class="even">
-<td><span class="math inline">H_1:\pi&gt;\pi_0</span></td>
-<td><code>1-NORM.S.DIST(z,TRUE)</code></td>
+<td><span class="math inline">\pi&gt;\pi_0</span></td>
+<td><code>=1-NORM.S.DIST(z,TRUE)</code></td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">H_1:\pi\ne\pi_0</span></td>
-<td><code>2*(1-NORM.S.DIST(ABS(z),TRUE))</code></td>
+<td><span class="math inline">\pi\ne\pi_0</span></td>
+<td><code>=2*(1-NORM.S.DIST(ABS(z),TRUE))</code></td>
 </tr>
 </tbody>
 </table>
-<p>The tail follows the alternative hypothesis, not merely the sign of <span class="math inline">z</span>.</p>
+<p>Use a clearly labelled success count and denominator. Check that the selected tail agrees with the claim.</p>
 </section>
-<section id="watch-me-transaction-success-rate" class="slide level2">
-<h2>Watch me: transaction success rate</h2>
-<p>A bank benchmarks error-free processing at 95%. In a random sample of 250 transactions, 229 succeed.</p>
-<ol type="1">
-<li><span class="math inline">\hat p=229/250=0.916</span>.</li>
-<li>Test <span class="math inline">H_0:\pi=0.95</span> against <span class="math inline">H_1:\pi&lt;0.95</span>.</li>
-<li>Verify the large-count condition using <span class="math inline">\pi_0</span>.</li>
-<li>Calculate <span class="math inline">z</span> and its left-tail p-value.</li>
-<li>Conclude at <span class="math inline">\alpha=0.10</span>.</li>
-</ol>
+<section id="watch-me-etf-bank-transaction-example" class="slide level2">
+<h2>Watch me: ETF bank transaction example</h2>
+<p>ETF’s workshop gives a 95% error-free benchmark and <strong>229 successes among 250</strong> randomly sampled transactions.</p>
+<p>Test <span class="math inline">H_0:\pi=0.95</span> against <span class="math inline">H_1:\pi&lt;0.95</span> at <span class="math inline">\alpha=0.10</span>. In Excel, calculate <span class="math inline">\hat p</span>, the two null expected counts, <code>z</code> and the left-tail p-value. Interpret the decision as evidence about the bank’s population success rate.</p>
 </section>
 <section id="now-you-try-invoice-accuracy" class="slide level2">
 <h2>Now you try: invoice accuracy</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_c96b3072" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_3373cd87" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>A company claims at least 98% of invoices are accurate. A random audit finds 288 accurate invoices out of 300.</p>
-<p>Test at <span class="math inline">\alpha=0.05</span> whether the population accuracy rate is below 98%.</p>
-<p>Include the assumption check, statistic, Excel p-value, decision, and business conclusion.</p>
-</section>
-<section id="confidence-intervals-and-tests-agree" class="slide level2">
-<h2>Confidence intervals and tests agree</h2>
-<p>For a two-sided test at significance <span class="math inline">\alpha</span>:</p>
-<ul>
-<li>reject <span class="math inline">H_0:\theta=\theta_0</span> when the corresponding <span class="math inline">(1-\alpha)</span> confidence interval excludes <span class="math inline">\theta_0</span>;</li>
-<li>fail to reject when it includes <span class="math inline">\theta_0</span>.</li>
-</ul>
-<p>The interval also communicates plausible effect sizes, which the p-value alone does not.</p>
-</section>
-<section id="now-you-try-interval-cross-check" class="slide level2">
-<h2>Now you try: interval cross-check</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_e92d1788" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>For the invoice sample:</p>
-<ol type="1">
-<li>construct a 95% confidence interval for <span class="math inline">\pi</span>;</li>
-<li>compare it with the 98% benchmark;</li>
-<li>explain why this is a two-sided cross-check, while the original claim was left-sided; and</li>
-<li>identify what the interval adds to the decision.</li>
-</ol>
+<p>An audit finds 288 accurate invoices among 300. Test at 5% whether the population accuracy rate is <strong>below 98%</strong>. Show the count check, statistic, Excel formula, decision and one-sentence business conclusion.</p>
 </section></section>
 <section>
-<section id="decisions-errors-and-importance" class="title-slide slide level1 center">
-<h1>Decisions, errors, and importance</h1>
+<section id="comparing-two-independent-means" class="title-slide slide level1 center">
+<h1>Comparing two independent means</h1>
 
 </section>
-<section id="decision-language" class="slide level2">
-<h2>Decision language</h2>
-<p>If p-value <span class="math inline">&lt;\alpha</span>:</p>
-<blockquote>
-<p>Reject <span class="math inline">H_0</span>; there is sufficient evidence that …</p>
-</blockquote>
-<p>If p-value <span class="math inline">\ge\alpha</span>:</p>
-<blockquote>
-<p>Fail to reject <span class="math inline">H_0</span>; there is insufficient evidence that …</p>
-</blockquote>
-<p>“Fail to reject” is not proof that the null is true.</p>
+<section id="a-difference-has-its-own-question" class="slide level2">
+<h2>A difference has its own question</h2>
+<p>Suppose we compare population mean sale prices for properties <strong>inside</strong> and <strong>outside</strong> a school zone. Define <span class="math inline">\mu_Y</span> and <span class="math inline">\mu_N</span> for the two groups and estimate</p>
+<p><span class="math display">\hat\Delta=\bar x_Y-\bar x_N.</span></p>
+<p>For a directional claim that school-zone prices are higher, use <span class="math inline">H_0:\mu_Y-\mu_N=0</span> and <span class="math inline">H_1:\mu_Y-\mu_N&gt;0</span>. The order of subtraction controls the tail.</p>
+</section>
+<section id="why-the-two-sample-standard-error-is-different" class="slide level2">
+<h2>Why the two-sample standard error is different</h2>
+<p>Two independent groups contribute uncertainty:</p>
+<p><span class="math display">SE(\bar x_Y-\bar x_N)=
+\sqrt{\frac{s_Y^2}{n_Y}+\frac{s_N^2}{n_N}}.</span></p>
+<p>The Welch statistic is <span class="math inline">t=(\hat\Delta-0)/SE</span>. Its degrees of freedom account for both group sizes and variances; Excel’s unequal-variance ToolPak test calculates them. Independence matters <strong>within and between</strong> groups.</p>
+</section>
+<section id="watch-me-prepare-the-realestate-comparison" class="slide level2">
+<h2>Watch me: prepare the RealEstate comparison</h2>
+<p>Open the <strong>RealEstate</strong> sheet of <code>week4-proportions-data.xlsx</code>.</p>
+<ol type="1">
+<li>Identify <code>Price</code> and <code>SchoolZone</code>, their units and any missing rows.</li>
+<li>Filter <code>SchoolZone=Yes</code> and <code>SchoolZone=No</code>; copy each group’s prices to a separate labelled column on a working sheet.</li>
+<li>Use <code>COUNT</code>, <code>AVERAGE</code> and <code>STDEV.S</code> on each price column.</li>
+<li>Calculate <span class="math inline">\bar x_Y-\bar x_N</span> and the Welch standard error.</li>
+<li>Compare the difference with a business-relevant dollar threshold before discussing the test.</li>
+</ol>
+<p>The source ETF real-estate workshop compares groups descriptively; this test extends that demonstration for the current assignment skill.</p>
+</section>
+<section id="excel-toolpak-unequal-variances" class="slide level2">
+<h2>Excel ToolPak: unequal variances</h2>
+<p>Check <strong>Data → Data Analysis</strong> is available. Choose <strong>t-Test: Two-Sample Assuming Unequal Variances</strong>.</p>
+<ul>
+<li>Select the two price columns as Variable 1 and Variable 2, with labels if included.</li>
+<li>Enter <strong>0</strong> for hypothesised mean difference and the preselected <span class="math inline">\alpha</span>.</li>
+<li>Read the group means, <code>t</code> statistic, <code>df</code> and one-tail p-value.</li>
+<li>Match Variable 1 minus Variable 2 to your alternative; the ToolPak’s one-tail field must correspond to the observed direction.</li>
+</ul>
+<p>As a formula check, <code>=T.TEST(yes_range,no_range,1,3)</code> gives a one-tailed unequal-variance p-value. <code>T.TEST</code> does not encode which direction you intended, so verify the sign of the mean difference separately.</p>
+</section>
+<section id="now-you-try-run-and-audit-welch" class="slide level2">
+<h2>Now you try: run and audit Welch</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_8650d42e" minutes="12" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Using the RealEstate workbook, test whether mean school-zone price <strong>exceeds</strong> mean non-school-zone price at 5%.</p>
+<p>Report <code>n</code>, mean and SD for each group; the mean difference and its units; Welch <code>t</code>, <code>df</code> and one-tail p-value; and a plain-language conclusion. Confirm that the ToolPak groups are in the order named in your hypotheses.</p>
+</section>
+<section id="independent-groups-and-a-paired-design" class="slide level2">
+<h2>Independent groups and a paired design</h2>
+<p>The school-zone groups contain different properties, so the independent two-sample test is appropriate. When the <strong>same units</strong> are measured before and after a change, analyse their within-unit differences instead.</p>
+<p>Do not pair unrelated rows merely because they appear on the same line of a spreadsheet.</p>
+</section></section>
+<section>
+<section id="decisions-and-their-consequences" class="title-slide slide level1 center">
+<h1>Decisions and their consequences</h1>
+
+</section>
+<section id="what-a-decision-can-say" class="slide level2">
+<h2>What a decision can say</h2>
+<p>If <span class="math inline">p&lt;\alpha</span>, <strong>reject <span class="math inline">H_0</span></strong> and describe the evidence for <span class="math inline">H_1</span>. If <span class="math inline">p\ge\alpha</span>, <strong>fail to reject <span class="math inline">H_0</span></strong>: the sample does not give sufficient evidence for <span class="math inline">H_1</span> at that threshold.</p>
+<p>Failure to reject does not prove equality. The p-value does not measure the chance that the null is true.</p>
 </section>
 <section id="type-i-and-type-ii-errors" class="slide level2">
 <h2>Type I and Type II errors</h2>
@@ -463,120 +475,55 @@ Week 4: Testing business claims
 <tr class="odd">
 <td>Reject <span class="math inline">H_0</span></td>
 <td>Type I error</td>
-<td>correct</td>
+<td>correct rejection</td>
 </tr>
 <tr class="even">
 <td>Fail to reject <span class="math inline">H_0</span></td>
-<td>correct</td>
+<td>correct non-rejection</td>
 <td>Type II error</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li><span class="math inline">P(\text{Type I error})=\alpha</span>.</li>
-<li>Reducing <span class="math inline">\alpha</span> makes rejection harder and can increase Type II risk if other factors stay fixed.</li>
-</ul>
+<p>A Type I error has probability <span class="math inline">\alpha</span> when the null assumptions hold. Reducing <span class="math inline">\alpha</span> makes rejection harder and can increase Type II risk when other factors remain fixed.</p>
 </section>
-<section id="watch-me-errors-in-context" class="slide level2">
-<h2>Watch me: errors in context</h2>
-<p>For <span class="math inline">H_1:\mu&gt;275</span>:</p>
-<ul>
-<li><strong>Type I:</strong> conclude mean spending exceeds AUD 275 when it does not.</li>
-<li><strong>Type II:</strong> fail to find evidence that mean spending exceeds AUD 275 when it actually does.</li>
-</ul>
-<p>Name the real-world cost of each error before choosing <span class="math inline">\alpha</span>.</p>
+<section id="watch-me-name-errors-in-context" class="slide level2">
+<h2>Watch me: name errors in context</h2>
+<p>For the bank test, a <strong>Type I error</strong> means concluding that population transaction success is below 95% when it is not. A <strong>Type II error</strong> means missing a real shortfall below 95%.</p>
+<p>Explain whose decision changes if either error occurs. The costs of the errors help select <span class="math inline">\alpha</span> before viewing the sample.</p>
 </section>
 <section id="now-you-try-business-consequences" class="slide level2">
 <h2>Now you try: business consequences</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_bb88ebf7" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_358bc7a1" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>For the invoice-accuracy test:</p>
-<ol type="1">
-<li>describe Type I and Type II errors in context;</li>
-<li>identify who bears the cost of each;</li>
-<li>recommend whether 10%, 5%, or 1% significance is most defensible; and</li>
-<li>justify the recommendation without calculating a new test.</li>
-</ol>
+<p>For the invoice-accuracy test, describe both errors in everyday language. Which error would be more costly to an operations manager, and why? How would that judgment affect the chosen significance level?</p>
 </section>
 <section id="statistical-versus-practical-significance" class="slide level2">
 <h2>Statistical versus practical significance</h2>
-<ul>
-<li>Statistical significance asks whether the result is difficult to explain by sampling variation under <span class="math inline">H_0</span>.</li>
-<li>Practical significance asks whether the effect is large enough to matter.</li>
-<li>Large samples can make tiny effects statistically significant.</li>
-<li>Report an effect estimate and confidence interval alongside the p-value.</li>
-</ul>
+<p>A small p-value concerns <strong>evidence against the null</strong>. It does not say the effect is large enough to matter.</p>
+<p>Report the observed difference, its units, a confidence interval when appropriate, and a business threshold. For two groups, ask whether a plausible difference is large enough to change a decision. A large sample can make a small difference statistically significant.</p>
 </section>
 <section id="now-you-try-challenge-the-headline" class="slide level2">
 <h2>Now you try: challenge the headline</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_2f08501a" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_1e3d8a5e" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>A report says, “Waiting time fell by 0.2 minutes, <span class="math inline">p&lt;0.001</span>, so the redesign was a major success.”</p>
-<p>Identify:</p>
-<ol type="1">
-<li>what the p-value supports;</li>
-<li>what it does not support;</li>
-<li>additional quantities needed; and</li>
-<li>a more defensible conclusion.</li>
-</ol>
-</section></section>
-<section>
-<section id="integrated-evidence-brief" class="title-slide slide level1 center">
-<h1>Integrated evidence brief</h1>
-
+<p>A report says, “Waiting time fell by 0.2 minutes, <span class="math inline">p&lt;0.001</span>, so the redesign was a major success.” Identify what the p-value supports, what further information you need, and a more defensible headline.</p>
 </section>
-<section id="watch-me-audit-a-testing-worksheet" class="slide level2">
-<h2>Watch me: audit a testing worksheet</h2>
-<p>Check that the spreadsheet separates:</p>
-<ul>
-<li>inputs and units;</li>
-<li>hypotheses and chosen <span class="math inline">\alpha</span>;</li>
-<li>assumption checks;</li>
-<li>statistic and p-value;</li>
-<li>decision; and</li>
-<li>contextual conclusion.</li>
-</ul>
-<p>Trace formulas to ensure the sample statistic, benchmark, and tail are consistent.</p>
+<section id="a1-preparation-keep-the-measures-separate" class="slide level2">
+<h2>A1 preparation: keep the measures separate</h2>
+<p>The current assignment asks you to distinguish four different outcomes: <strong>dropped calls</strong>, <strong>support reports</strong>, <strong>all-cause returns</strong>, and <strong>measured handset reception loss</strong>. They have different units and denominators.</p>
+<p>For the independent two-sample mean test, define the direction of the reception-loss difference, use the unequal-variance method, then compare statistical evidence with the stated <strong>3 dB</strong> practical threshold. A business conclusion also needs sampling and measurement caveats.</p>
 </section>
-<section id="now-you-try-complete-the-evidence-brief" class="slide level2">
-<h2>Now you try: complete the evidence brief</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_01abf0b0" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Choose either a mean claim from <code>week4-testing-data.xlsx</code> or a product-trial proportion from <code>week4-proportions-data.xlsx</code>.</p>
-<p>Produce a one-page brief containing the five test steps, an interval or effect estimate, one possible error, and a two-sentence recommendation.</p>
-</section>
-<section id="common-traps" class="slide level2">
-<h2>Common traps</h2>
-<ul>
-<li>Writing hypotheses with <span class="math inline">\bar{x}</span> or <span class="math inline">\hat p</span>.</li>
-<li>Putting equality in <span class="math inline">H_1</span>.</li>
-<li>Choosing the tail after seeing the data.</li>
-<li>Using <span class="math inline">\hat p</span> rather than <span class="math inline">\pi_0</span> in a test standard error.</li>
-<li>Saying a p-value is the probability that <span class="math inline">H_0</span> is true.</li>
-<li>Saying “accept <span class="math inline">H_0</span>”.</li>
-<li>Treating statistical significance as business importance.</li>
-</ul>
-</section>
-<section id="closing-check" class="slide level2">
-<h2>Closing check</h2>
-<p>Can you:</p>
-<ul>
-<li>translate a claim into directional hypotheses?</li>
-<li>complete the five-step process for a mean or proportion?</li>
-<li>select the correct Excel tail?</li>
-<li>state a decision and conclusion precisely?</li>
-<li>describe Type I and Type II errors in context?</li>
-<li>distinguish evidence strength from effect importance?</li>
-</ul>
+<section id="final-audit-of-an-excel-testing-worksheet" class="slide level2">
+<h2>Final audit of an Excel testing worksheet</h2>
+<p>Can another person trace the population and event, raw rows, group counts, inputs, assumptions, hypotheses, formula or ToolPak command, tail, decision and conclusion?</p>
+<p><strong>Claim → method → Excel execution → validation → plain-language conclusion.</strong> Keep the effect size and practical threshold visible beside the p-value.</p>
+<!-- Source map for editing: ETF Seminar Week 6 pp. 12–36; ETF Workshop Week 6 pp. 5–13; ETF Seminar Week 7 pp. 14–21; ETF Workshop Week 7 pp. 6–15. Figure is extracted from ETF Seminar Week 6 p. 22. Welch section is a current ETX extension using the existing RealEstate workbook; it does not reproduce A1 answers. -->
 
 
 </section></section>

@@ -679,214 +679,221 @@
     "text": "Upcoming assessments\n\nWeek 5: Quiz 5 — due Sun 10 Jan 2027 at 17:00\nWeek 6: Quiz 6 — due Sun 17 Jan 2027 at 17:00\nWeek 7: Quiz 7 — due Sun 24 Jan 2027 at 17:00"
   },
   {
-    "objectID": "week4/slides.html#todays-journey",
-    "href": "week4/slides.html#todays-journey",
+    "objectID": "week4/slides.html#todays-question",
+    "href": "week4/slides.html#todays-question",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Today’s journey",
-    "text": "Today’s journey\n\nTranslate a business claim into hypotheses.\nUse one five-step testing process.\nTest population means and proportions in Excel.\nInterpret p-values, decisions, and possible errors.\nSeparate statistical evidence from practical importance."
+    "section": "Today’s question",
+    "text": "Today’s question\nWhen does a sample provide enough evidence to challenge a business claim?\nFollow one ETF lecture sequence: claim → hypotheses → sampling model → test statistic → p-value → decision → business meaning. Apply it to one mean, a proportion, and a difference between two independent means."
   },
   {
-    "objectID": "week4/slides.html#retrieval-check",
-    "href": "week4/slides.html#retrieval-check",
+    "objectID": "week4/slides.html#why-test-a-hypothesis",
+    "href": "week4/slides.html#why-test-a-hypothesis",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Retrieval check",
-    "text": "Retrieval check\n\nWhat does a confidence interval estimate?\nWhat is a standard error?\nWhen do we use t rather than z for a mean?\nWhy must hypotheses refer to population parameters rather than sample statistics?"
+    "section": "Why test a hypothesis?",
+    "text": "Why test a hypothesis?\nA sample estimate rarely equals a stated benchmark exactly. A test asks whether the difference is too large to explain readily by sampling variation, assuming the benchmark is true.\n\nThe null hypothesis states the benchmark.\nThe alternative hypothesis states the direction of evidence sought.\nThe significance level \\alpha is the preselected threshold for a false rejection.\nThe p-value measures how extreme the observed statistic is under the null model."
   },
   {
-    "objectID": "week4/slides.html#what-hypothesis-testing-does",
-    "href": "week4/slides.html#what-hypothesis-testing-does",
+    "objectID": "week4/slides.html#state-the-hypotheses-before-looking",
+    "href": "week4/slides.html#state-the-hypotheses-before-looking",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "What hypothesis testing does",
-    "text": "What hypothesis testing does\nHypothesis testing asks whether sample evidence is difficult to reconcile with a stated population benchmark.\n\nBegin with a business claim.\nAssume a null benchmark temporarily.\nMeasure how far the sample result is from that benchmark.\nQuantify extremeness with a p-value.\nMake a decision with a pre-selected significance level."
+    "section": "State the hypotheses before looking",
+    "text": "State the hypotheses before looking\n\n\n\n\n\n\n\n\n\nBusiness claim\nNull\nAlternative\nTail\n\n\n\n\nAverage wait exceeds 30 minutes\nH_0:\\mu=30\nH_1:\\mu&gt;30\nright\n\n\nMean sale price differs from $1.2m\nH_0:\\mu=1.2\nH_1:\\mu\\ne1.2\ntwo\n\n\nFewer than 5% of invoices have errors\nH_0:\\pi=0.05\nH_1:\\pi&lt;0.05\nleft\n\n\n\nThe parameter is a population mean or proportion, not the observed sample statistic. The equality belongs in the null."
   },
   {
-    "objectID": "week4/slides.html#the-five-step-workflow",
-    "href": "week4/slides.html#the-five-step-workflow",
+    "objectID": "week4/slides.html#watch-me-click-through-claim",
+    "href": "week4/slides.html#watch-me-click-through-claim",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "The five-step workflow",
-    "text": "The five-step workflow\n\nState H_0 and H_1.\nCalculate the test statistic.\nCalculate the p-value in the correct tail or tails.\nCompare the p-value with \\alpha.\nState a contextual conclusion about H_1."
+    "section": "Watch me: click-through claim",
+    "text": "Watch me: click-through claim\nETF’s workshop asks whether a population click-through mean is below 12 clicks per minute. Before using the data, write H_0:\\mu=12 and H_1:\\mu&lt;12.\nThe word below specifies the left tail. The observed sample mean determines the statistic, but it must not determine which alternative we choose."
   },
   {
-    "objectID": "week4/slides.html#null-and-alternative-hypotheses",
-    "href": "week4/slides.html#null-and-alternative-hypotheses",
+    "objectID": "week4/slides.html#now-you-try-translate-four-claims",
+    "href": "week4/slides.html#now-you-try-translate-four-claims",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Null and alternative hypotheses",
-    "text": "Null and alternative hypotheses\n\nH_0 contains equality and represents the benchmark.\nH_1 expresses the claim being investigated.\nRight-sided: H_1:\\theta&gt;\\theta_0.\nLeft-sided: H_1:\\theta&lt;\\theta_0.\nTwo-sided: H_1:\\theta\\ne\\theta_0.\n\nChoose direction from the question before seeing the result."
+    "section": "Now you try: translate four claims",
+    "text": "Now you try: translate four claims\n\n\n\n\n\nWrite the parameter, H_0, H_1 and tail for: average delivery time above 30 minutes; mean price different from $1.2m; invoice error rate below 5%; and more than half of customers using an app."
   },
   {
-    "objectID": "week4/slides.html#watch-me-translate-a-click-through-claim",
-    "href": "week4/slides.html#watch-me-translate-a-click-through-claim",
+    "objectID": "week4/slides.html#the-five-step-testing-workflow",
+    "href": "week4/slides.html#the-five-step-testing-workflow",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: translate a click-through claim",
-    "text": "Watch me: translate a click-through claim\nAn analyst claims the population mean click-through rate is below 12 clicks per minute.\nH_0:\\mu=12,\\qquad H_1:\\mu&lt;12.\nThe parameter is \\mu, not the observed \\bar{x}. The word below makes this a left-sided test."
+    "section": "The five-step testing workflow",
+    "text": "The five-step testing workflow\n\nDefine the population parameter and write H_0 and H_1.\nCheck the sampling design and assumptions; calculate the statistic.\nCalculate the p-value in the tail specified by H_1.\nCompare p-value with the chosen \\alpha.\nReport a contextual conclusion, effect size and important limitations.\n\nThe same order works for a mean, a proportion and a difference."
   },
   {
-    "objectID": "week4/slides.html#now-you-try-write-the-hypotheses",
-    "href": "week4/slides.html#now-you-try-write-the-hypotheses",
+    "objectID": "week4/slides.html#a-right-tail-p-value-is-an-area",
+    "href": "week4/slides.html#a-right-tail-p-value-is-an-area",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: write the hypotheses",
-    "text": "Now you try: write the hypotheses\n\n\n\n\n\nWrite hypotheses and identify the tail for each claim:\n\nAverage delivery time exceeds 30 minutes.\nMean transaction value differs from AUD 85.\nFewer than 4% of invoices contain an error.\nMore than half of customers use the loyalty app."
+    "section": "A right-tail p-value is an area",
+    "text": "A right-tail p-value is an area\n\nETF Seminar Week 6: the p-value is the tail area at least as extreme as the observed statistic, assuming the null model.For a left-sided claim, use the left tail; for a two-sided claim, count both tails. A p-value is not the probability that H_0 is true."
   },
   {
-    "objectID": "week4/slides.html#test-statistic-for-a-mean",
-    "href": "week4/slides.html#test-statistic-for-a-mean",
+    "objectID": "week4/slides.html#from-estimate-to-t-statistic",
+    "href": "week4/slides.html#from-estimate-to-t-statistic",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Test statistic for a mean",
-    "text": "Test statistic for a mean\nWhen \\sigma is unknown:\nt=\\frac{\\bar{x}-\\mu_0}{s/\\sqrt n},\\qquad df=n-1.\nThe statistic is the observed difference measured in standard errors. Its sign indicates direction; its magnitude indicates distance from H_0."
+    "section": "From estimate to t statistic",
+    "text": "From estimate to t statistic\nWhen the population SD is unknown, use the sample SD:\nt=\\frac{\\bar x-\\mu_0}{s/\\sqrt n}, \\qquad df=n-1.\nThe numerator is the observed difference from the null benchmark. The denominator is the standard error of the sample mean. Check independence and whether the t approximation is reasonable for the data."
   },
   {
-    "objectID": "week4/slides.html#p-values-and-tails-in-excel",
-    "href": "week4/slides.html#p-values-and-tails-in-excel",
+    "objectID": "week4/slides.html#excel-choose-the-correct-tail",
+    "href": "week4/slides.html#excel-choose-the-correct-tail",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "P-values and tails in Excel",
-    "text": "P-values and tails in Excel\n\n\n\nAlternative\nExcel p-value\n\n\n\n\nH_1:\\mu&lt;\\mu_0\nT.DIST(t,df,TRUE)\n\n\nH_1:\\mu&gt;\\mu_0\n1-T.DIST(t,df,TRUE)\n\n\nH_1:\\mu\\ne\\mu_0\nT.DIST.2T(ABS(t),df)\n\n\n\nUsing ABS with T.DIST.2T avoids separate positive/negative formulas."
+    "section": "Excel: choose the correct tail",
+    "text": "Excel: choose the correct tail\n\n\n\nAlternative\nExcel formula\n\n\n\n\n\\mu&lt;\\mu_0\n=T.DIST(t,df,TRUE)\n\n\n\\mu&gt;\\mu_0\n=1-T.DIST(t,df,TRUE)\n\n\n\\mu\\ne\\mu_0\n=T.DIST.2T(ABS(t),df)\n\n\n\nKeep the signed statistic visible. ABS belongs only in the two-sided tail formula."
   },
   {
-    "objectID": "week4/slides.html#what-a-p-value-means",
-    "href": "week4/slides.html#what-a-p-value-means",
+    "objectID": "week4/slides.html#watch-me-etf-click-through-example",
+    "href": "week4/slides.html#watch-me-etf-click-through-example",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "What a p-value means",
-    "text": "What a p-value means\nThe p-value is the probability—assuming H_0 is true—of obtaining a test statistic at least as extreme as the one observed, in the direction specified by H_1.\nIt is not:\n\nthe probability that H_0 is true;\nthe size or importance of an effect; or\nthe probability that the result occurred “by chance”."
+    "section": "Watch me: ETF click-through example",
+    "text": "Watch me: ETF click-through example\nA random sample has n=45, \\bar x=10.8 and s=3.2 clicks per minute. Test H_1:\\mu&lt;12 at \\alpha=0.05.\n\nPut the inputs in labelled Excel cells.\nCompute =(10.8-12)/(3.2/SQRT(45)).\nUse =T.DIST(t_cell,44,TRUE).\nCompare the p-value with 0.05 and state the conclusion in clicks per minute.\n\nETF Workshop Week 6 supplies the business context; keep your worksheet formulas auditable."
   },
   {
-    "objectID": "week4/slides.html#watch-me-test-click-through-rate",
-    "href": "week4/slides.html#watch-me-test-click-through-rate",
+    "objectID": "week4/slides.html#now-you-try-student-spending",
+    "href": "week4/slides.html#now-you-try-student-spending",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: test click-through rate",
-    "text": "Watch me: test click-through rate\nGiven n=45, \\bar{x}=10.8, s=3.2, \\mu_0=12, and \\alpha=0.05:\n\nt=(10.8-12)/(3.2/\\sqrt{45});\nuse =T.DIST(t,44,TRUE);\ncompare the p-value with 0.05; and\nconclude about the population mean click-through rate."
+    "section": "Now you try: student spending",
+    "text": "Now you try: student spending\n\n\n\n\n\nA random sample of 40 students has mean monthly discretionary spending $283 and SD $17.85. Test at 5% whether the population mean exceeds $275. Show the five steps and an Excel p-value formula. State what the sample does and does not establish."
   },
   {
-    "objectID": "week4/slides.html#now-you-try-discretionary-spending",
-    "href": "week4/slides.html#now-you-try-discretionary-spending",
+    "objectID": "week4/slides.html#one-sided-and-two-sided-are-different-questions",
+    "href": "week4/slides.html#one-sided-and-two-sided-are-different-questions",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: discretionary spending",
-    "text": "Now you try: discretionary spending\n\n\n\n\n\nA random sample of 40 students has \\bar{x}=283 and s=17.85. Test at \\alpha=0.05 whether population mean monthly discretionary spending exceeds AUD 275.\nComplete all five steps, show the Excel p-value formula, and state the conclusion without saying “accept H_0”."
-  },
-  {
-    "objectID": "week4/slides.html#one-sided-versus-two-sided",
-    "href": "week4/slides.html#one-sided-versus-two-sided",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "One-sided versus two-sided",
-    "text": "One-sided versus two-sided\nA two-sided test considers evidence in both directions and uses both tails. A one-sided test concentrates the rejection region in one pre-specified direction.\nDo not choose one-sided after observing the sample. That inflates the chance of finding a convenient result."
+    "section": "One-sided and two-sided are different questions",
+    "text": "One-sided and two-sided are different questions\nA two-sided alternative asks whether the population mean differs in either direction. The statistic stays the same, but the p-value includes both tails.\nChoose the question before inspecting the result. Changing the tail to obtain a smaller p-value invalidates the planned error rate."
   },
   {
     "objectID": "week4/slides.html#now-you-try-change-only-the-claim",
     "href": "week4/slides.html#now-you-try-change-only-the-claim",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Now you try: change only the claim",
-    "text": "Now you try: change only the claim\n\n\n\n\n\nUsing the same spending sample, test whether the mean differs from AUD 275.\n\nWhich steps change?\nDoes the test statistic change?\nWhich p-value formula changes?\nCompare the one- and two-sided conclusions."
+    "text": "Now you try: change only the claim\n\n\n\n\n\nRevisit the spending sample with H_1:\\mu\\ne275. Identify which entries in your worksheet change and compare the two conclusions."
   },
   {
-    "objectID": "week4/slides.html#large-sample-proportion-test",
-    "href": "week4/slides.html#large-sample-proportion-test",
+    "objectID": "week4/slides.html#count-an-event-then-test-a-proportion",
+    "href": "week4/slides.html#count-an-event-then-test-a-proportion",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Large-sample proportion test",
-    "text": "Large-sample proportion test\nFor H_0:\\pi=\\pi_0:\nz=\\frac{\\hat p-\\pi_0}{\\sqrt{\\pi_0(1-\\pi_0)/n}}.\nCheck:\nn\\pi_0\\ge5,\\qquad n(1-\\pi_0)\\ge5.\nThe null value \\pi_0 appears in the test standard error."
+    "section": "Count an event, then test a proportion",
+    "text": "Count an event, then test a proportion\nFor H_0:\\pi=\\pi_0, first count successes x from n observations and calculate \\hat p=x/n. The large-sample test statistic is\nz=\\frac{\\hat p-\\pi_0}{\\sqrt{\\pi_0(1-\\pi_0)/n}}.\nCheck n\\pi_0\\ge5 and n(1-\\pi_0)\\ge5. A test uses the null value \\pi_0 in its standard error; an interval uses \\hat p."
   },
   {
-    "objectID": "week4/slides.html#proportion-p-values-in-excel",
-    "href": "week4/slides.html#proportion-p-values-in-excel",
+    "objectID": "week4/slides.html#excel-normal-tail-areas",
+    "href": "week4/slides.html#excel-normal-tail-areas",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Proportion p-values in Excel",
-    "text": "Proportion p-values in Excel\n\n\n\nAlternative\nExcel p-value\n\n\n\n\nH_1:\\pi&lt;\\pi_0\nNORM.S.DIST(z,TRUE)\n\n\nH_1:\\pi&gt;\\pi_0\n1-NORM.S.DIST(z,TRUE)\n\n\nH_1:\\pi\\ne\\pi_0\n2*(1-NORM.S.DIST(ABS(z),TRUE))\n\n\n\nThe tail follows the alternative hypothesis, not merely the sign of z."
+    "section": "Excel: Normal tail areas",
+    "text": "Excel: Normal tail areas\n\n\n\nAlternative\nExcel p-value\n\n\n\n\n\\pi&lt;\\pi_0\n=NORM.S.DIST(z,TRUE)\n\n\n\\pi&gt;\\pi_0\n=1-NORM.S.DIST(z,TRUE)\n\n\n\\pi\\ne\\pi_0\n=2*(1-NORM.S.DIST(ABS(z),TRUE))\n\n\n\nUse a clearly labelled success count and denominator. Check that the selected tail agrees with the claim."
   },
   {
-    "objectID": "week4/slides.html#watch-me-transaction-success-rate",
-    "href": "week4/slides.html#watch-me-transaction-success-rate",
+    "objectID": "week4/slides.html#watch-me-etf-bank-transaction-example",
+    "href": "week4/slides.html#watch-me-etf-bank-transaction-example",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: transaction success rate",
-    "text": "Watch me: transaction success rate\nA bank benchmarks error-free processing at 95%. In a random sample of 250 transactions, 229 succeed.\n\n\\hat p=229/250=0.916.\nTest H_0:\\pi=0.95 against H_1:\\pi&lt;0.95.\nVerify the large-count condition using \\pi_0.\nCalculate z and its left-tail p-value.\nConclude at \\alpha=0.10."
+    "section": "Watch me: ETF bank transaction example",
+    "text": "Watch me: ETF bank transaction example\nETF’s workshop gives a 95% error-free benchmark and 229 successes among 250 randomly sampled transactions.\nTest H_0:\\pi=0.95 against H_1:\\pi&lt;0.95 at \\alpha=0.10. In Excel, calculate \\hat p, the two null expected counts, z and the left-tail p-value. Interpret the decision as evidence about the bank’s population success rate."
   },
   {
     "objectID": "week4/slides.html#now-you-try-invoice-accuracy",
     "href": "week4/slides.html#now-you-try-invoice-accuracy",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Now you try: invoice accuracy",
-    "text": "Now you try: invoice accuracy\n\n\n\n\n\nA company claims at least 98% of invoices are accurate. A random audit finds 288 accurate invoices out of 300.\nTest at \\alpha=0.05 whether the population accuracy rate is below 98%.\nInclude the assumption check, statistic, Excel p-value, decision, and business conclusion."
+    "text": "Now you try: invoice accuracy\n\n\n\n\n\nAn audit finds 288 accurate invoices among 300. Test at 5% whether the population accuracy rate is below 98%. Show the count check, statistic, Excel formula, decision and one-sentence business conclusion."
   },
   {
-    "objectID": "week4/slides.html#confidence-intervals-and-tests-agree",
-    "href": "week4/slides.html#confidence-intervals-and-tests-agree",
+    "objectID": "week4/slides.html#a-difference-has-its-own-question",
+    "href": "week4/slides.html#a-difference-has-its-own-question",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Confidence intervals and tests agree",
-    "text": "Confidence intervals and tests agree\nFor a two-sided test at significance \\alpha:\n\nreject H_0:\\theta=\\theta_0 when the corresponding (1-\\alpha) confidence interval excludes \\theta_0;\nfail to reject when it includes \\theta_0.\n\nThe interval also communicates plausible effect sizes, which the p-value alone does not."
+    "section": "A difference has its own question",
+    "text": "A difference has its own question\nSuppose we compare population mean sale prices for properties inside and outside a school zone. Define \\mu_Y and \\mu_N for the two groups and estimate\n\\hat\\Delta=\\bar x_Y-\\bar x_N.\nFor a directional claim that school-zone prices are higher, use H_0:\\mu_Y-\\mu_N=0 and H_1:\\mu_Y-\\mu_N&gt;0. The order of subtraction controls the tail."
   },
   {
-    "objectID": "week4/slides.html#now-you-try-interval-cross-check",
-    "href": "week4/slides.html#now-you-try-interval-cross-check",
+    "objectID": "week4/slides.html#why-the-two-sample-standard-error-is-different",
+    "href": "week4/slides.html#why-the-two-sample-standard-error-is-different",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: interval cross-check",
-    "text": "Now you try: interval cross-check\n\n\n\n\n\nFor the invoice sample:\n\nconstruct a 95% confidence interval for \\pi;\ncompare it with the 98% benchmark;\nexplain why this is a two-sided cross-check, while the original claim was left-sided; and\nidentify what the interval adds to the decision."
+    "section": "Why the two-sample standard error is different",
+    "text": "Why the two-sample standard error is different\nTwo independent groups contribute uncertainty:\nSE(\\bar x_Y-\\bar x_N)=\n\\sqrt{\\frac{s_Y^2}{n_Y}+\\frac{s_N^2}{n_N}}.\nThe Welch statistic is t=(\\hat\\Delta-0)/SE. Its degrees of freedom account for both group sizes and variances; Excel’s unequal-variance ToolPak test calculates them. Independence matters within and between groups."
   },
   {
-    "objectID": "week4/slides.html#decision-language",
-    "href": "week4/slides.html#decision-language",
+    "objectID": "week4/slides.html#watch-me-prepare-the-realestate-comparison",
+    "href": "week4/slides.html#watch-me-prepare-the-realestate-comparison",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Decision language",
-    "text": "Decision language\nIf p-value &lt;\\alpha:\n\nReject H_0; there is sufficient evidence that …\n\nIf p-value \\ge\\alpha:\n\nFail to reject H_0; there is insufficient evidence that …\n\n“Fail to reject” is not proof that the null is true."
+    "section": "Watch me: prepare the RealEstate comparison",
+    "text": "Watch me: prepare the RealEstate comparison\nOpen the RealEstate sheet of week4-proportions-data.xlsx.\n\nIdentify Price and SchoolZone, their units and any missing rows.\nFilter SchoolZone=Yes and SchoolZone=No; copy each group’s prices to a separate labelled column on a working sheet.\nUse COUNT, AVERAGE and STDEV.S on each price column.\nCalculate \\bar x_Y-\\bar x_N and the Welch standard error.\nCompare the difference with a business-relevant dollar threshold before discussing the test.\n\nThe source ETF real-estate workshop compares groups descriptively; this test extends that demonstration for the current assignment skill."
+  },
+  {
+    "objectID": "week4/slides.html#excel-toolpak-unequal-variances",
+    "href": "week4/slides.html#excel-toolpak-unequal-variances",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Excel ToolPak: unequal variances",
+    "text": "Excel ToolPak: unequal variances\nCheck Data → Data Analysis is available. Choose t-Test: Two-Sample Assuming Unequal Variances.\n\nSelect the two price columns as Variable 1 and Variable 2, with labels if included.\nEnter 0 for hypothesised mean difference and the preselected \\alpha.\nRead the group means, t statistic, df and one-tail p-value.\nMatch Variable 1 minus Variable 2 to your alternative; the ToolPak’s one-tail field must correspond to the observed direction.\n\nAs a formula check, =T.TEST(yes_range,no_range,1,3) gives a one-tailed unequal-variance p-value. T.TEST does not encode which direction you intended, so verify the sign of the mean difference separately."
+  },
+  {
+    "objectID": "week4/slides.html#now-you-try-run-and-audit-welch",
+    "href": "week4/slides.html#now-you-try-run-and-audit-welch",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Now you try: run and audit Welch",
+    "text": "Now you try: run and audit Welch\n\n\n\n\n\nUsing the RealEstate workbook, test whether mean school-zone price exceeds mean non-school-zone price at 5%.\nReport n, mean and SD for each group; the mean difference and its units; Welch t, df and one-tail p-value; and a plain-language conclusion. Confirm that the ToolPak groups are in the order named in your hypotheses."
+  },
+  {
+    "objectID": "week4/slides.html#independent-groups-and-a-paired-design",
+    "href": "week4/slides.html#independent-groups-and-a-paired-design",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Independent groups and a paired design",
+    "text": "Independent groups and a paired design\nThe school-zone groups contain different properties, so the independent two-sample test is appropriate. When the same units are measured before and after a change, analyse their within-unit differences instead.\nDo not pair unrelated rows merely because they appear on the same line of a spreadsheet."
+  },
+  {
+    "objectID": "week4/slides.html#what-a-decision-can-say",
+    "href": "week4/slides.html#what-a-decision-can-say",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "What a decision can say",
+    "text": "What a decision can say\nIf p&lt;\\alpha, reject H_0 and describe the evidence for H_1. If p\\ge\\alpha, fail to reject H_0: the sample does not give sufficient evidence for H_1 at that threshold.\nFailure to reject does not prove equality. The p-value does not measure the chance that the null is true."
   },
   {
     "objectID": "week4/slides.html#type-i-and-type-ii-errors",
     "href": "week4/slides.html#type-i-and-type-ii-errors",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Type I and Type II errors",
-    "text": "Type I and Type II errors\n\n\n\nDecision\nH_0 true\nH_0 false\n\n\n\n\nReject H_0\nType I error\ncorrect\n\n\nFail to reject H_0\ncorrect\nType II error\n\n\n\n\nP(\\text{Type I error})=\\alpha.\nReducing \\alpha makes rejection harder and can increase Type II risk if other factors stay fixed."
+    "text": "Type I and Type II errors\n\n\n\nDecision\nH_0 true\nH_0 false\n\n\n\n\nReject H_0\nType I error\ncorrect rejection\n\n\nFail to reject H_0\ncorrect non-rejection\nType II error\n\n\n\nA Type I error has probability \\alpha when the null assumptions hold. Reducing \\alpha makes rejection harder and can increase Type II risk when other factors remain fixed."
   },
   {
-    "objectID": "week4/slides.html#watch-me-errors-in-context",
-    "href": "week4/slides.html#watch-me-errors-in-context",
+    "objectID": "week4/slides.html#watch-me-name-errors-in-context",
+    "href": "week4/slides.html#watch-me-name-errors-in-context",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: errors in context",
-    "text": "Watch me: errors in context\nFor H_1:\\mu&gt;275:\n\nType I: conclude mean spending exceeds AUD 275 when it does not.\nType II: fail to find evidence that mean spending exceeds AUD 275 when it actually does.\n\nName the real-world cost of each error before choosing \\alpha."
+    "section": "Watch me: name errors in context",
+    "text": "Watch me: name errors in context\nFor the bank test, a Type I error means concluding that population transaction success is below 95% when it is not. A Type II error means missing a real shortfall below 95%.\nExplain whose decision changes if either error occurs. The costs of the errors help select \\alpha before viewing the sample."
   },
   {
     "objectID": "week4/slides.html#now-you-try-business-consequences",
     "href": "week4/slides.html#now-you-try-business-consequences",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Now you try: business consequences",
-    "text": "Now you try: business consequences\n\n\n\n\n\nFor the invoice-accuracy test:\n\ndescribe Type I and Type II errors in context;\nidentify who bears the cost of each;\nrecommend whether 10%, 5%, or 1% significance is most defensible; and\njustify the recommendation without calculating a new test."
+    "text": "Now you try: business consequences\n\n\n\n\n\nFor the invoice-accuracy test, describe both errors in everyday language. Which error would be more costly to an operations manager, and why? How would that judgment affect the chosen significance level?"
   },
   {
     "objectID": "week4/slides.html#statistical-versus-practical-significance",
     "href": "week4/slides.html#statistical-versus-practical-significance",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Statistical versus practical significance",
-    "text": "Statistical versus practical significance\n\nStatistical significance asks whether the result is difficult to explain by sampling variation under H_0.\nPractical significance asks whether the effect is large enough to matter.\nLarge samples can make tiny effects statistically significant.\nReport an effect estimate and confidence interval alongside the p-value."
+    "text": "Statistical versus practical significance\nA small p-value concerns evidence against the null. It does not say the effect is large enough to matter.\nReport the observed difference, its units, a confidence interval when appropriate, and a business threshold. For two groups, ask whether a plausible difference is large enough to change a decision. A large sample can make a small difference statistically significant."
   },
   {
     "objectID": "week4/slides.html#now-you-try-challenge-the-headline",
     "href": "week4/slides.html#now-you-try-challenge-the-headline",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Now you try: challenge the headline",
-    "text": "Now you try: challenge the headline\n\n\n\n\n\nA report says, “Waiting time fell by 0.2 minutes, p&lt;0.001, so the redesign was a major success.”\nIdentify:\n\nwhat the p-value supports;\nwhat it does not support;\nadditional quantities needed; and\na more defensible conclusion."
+    "text": "Now you try: challenge the headline\n\n\n\n\n\nA report says, “Waiting time fell by 0.2 minutes, p&lt;0.001, so the redesign was a major success.” Identify what the p-value supports, what further information you need, and a more defensible headline."
   },
   {
-    "objectID": "week4/slides.html#watch-me-audit-a-testing-worksheet",
-    "href": "week4/slides.html#watch-me-audit-a-testing-worksheet",
+    "objectID": "week4/slides.html#a1-preparation-keep-the-measures-separate",
+    "href": "week4/slides.html#a1-preparation-keep-the-measures-separate",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: audit a testing worksheet",
-    "text": "Watch me: audit a testing worksheet\nCheck that the spreadsheet separates:\n\ninputs and units;\nhypotheses and chosen \\alpha;\nassumption checks;\nstatistic and p-value;\ndecision; and\ncontextual conclusion.\n\nTrace formulas to ensure the sample statistic, benchmark, and tail are consistent."
+    "section": "A1 preparation: keep the measures separate",
+    "text": "A1 preparation: keep the measures separate\nThe current assignment asks you to distinguish four different outcomes: dropped calls, support reports, all-cause returns, and measured handset reception loss. They have different units and denominators.\nFor the independent two-sample mean test, define the direction of the reception-loss difference, use the unequal-variance method, then compare statistical evidence with the stated 3 dB practical threshold. A business conclusion also needs sampling and measurement caveats."
   },
   {
-    "objectID": "week4/slides.html#now-you-try-complete-the-evidence-brief",
-    "href": "week4/slides.html#now-you-try-complete-the-evidence-brief",
+    "objectID": "week4/slides.html#final-audit-of-an-excel-testing-worksheet",
+    "href": "week4/slides.html#final-audit-of-an-excel-testing-worksheet",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: complete the evidence brief",
-    "text": "Now you try: complete the evidence brief\n\n\n\n\n\nChoose either a mean claim from week4-testing-data.xlsx or a product-trial proportion from week4-proportions-data.xlsx.\nProduce a one-page brief containing the five test steps, an interval or effect estimate, one possible error, and a two-sentence recommendation."
-  },
-  {
-    "objectID": "week4/slides.html#common-traps",
-    "href": "week4/slides.html#common-traps",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Common traps",
-    "text": "Common traps\n\nWriting hypotheses with \\bar{x} or \\hat p.\nPutting equality in H_1.\nChoosing the tail after seeing the data.\nUsing \\hat p rather than \\pi_0 in a test standard error.\nSaying a p-value is the probability that H_0 is true.\nSaying “accept H_0”.\nTreating statistical significance as business importance."
-  },
-  {
-    "objectID": "week4/slides.html#closing-check",
-    "href": "week4/slides.html#closing-check",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Closing check",
-    "text": "Closing check\nCan you:\n\ntranslate a claim into directional hypotheses?\ncomplete the five-step process for a mean or proportion?\nselect the correct Excel tail?\nstate a decision and conclusion precisely?\ndescribe Type I and Type II errors in context?\ndistinguish evidence strength from effect importance?"
+    "section": "Final audit of an Excel testing worksheet",
+    "text": "Final audit of an Excel testing worksheet\nCan another person trace the population and event, raw rows, group counts, inputs, assumptions, hypotheses, formula or ToolPak command, tail, decision and conclusion?\nClaim → method → Excel execution → validation → plain-language conclusion. Keep the effect size and practical threshold visible beside the p-value."
   },
   {
     "objectID": "week3/solution/index.html",
@@ -966,221 +973,179 @@
     "text": "Upcoming assessments\n\nWeek 3: Quiz 3 — due Sun 13 Dec 2026 at 17:00\nWeek 4: Quiz 4 — due Sun 20 Dec 2026 at 17:00; Written assignment — due Sun 20 Dec 2026 at 11:59 pm\nWeek 5: Quiz 5 — due Sun 10 Jan 2027 at 17:00"
   },
   {
-    "objectID": "week2/slides.html#todays-journey",
-    "href": "week2/slides.html#todays-journey",
+    "objectID": "week2/slides.html#todays-question",
+    "href": "week2/slides.html#todays-question",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Today’s journey",
-    "text": "Today’s journey\n\nTranslate business uncertainty into events and probabilities.\nBuild contingency tables and distinguish joint, marginal, and conditional probability.\nAssess whether two events are independent.\nUse Normal and Student’s t distributions in Excel.\nFinish with an integrated marketing-and-risk case."
+    "section": "Today’s question",
+    "text": "Today’s question\nHow likely is a business event, and which other information changes that probability?\nWe move from last week’s frequencies to events, rules, two-way tables and conditional probabilities. We then use a smooth probability model for a continuous measurement."
   },
   {
-    "objectID": "week2/slides.html#retrieval-check",
-    "href": "week2/slides.html#retrieval-check",
+    "objectID": "week2/slides.html#probability-turns-a-count-into-a-chance",
+    "href": "week2/slides.html#probability-turns-a-count-into-a-chance",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Retrieval check",
-    "text": "Retrieval check\n\nIs Have Tried categorical or numerical?\nIs Income categorical or numerical?\nWhat does one row of the Marketing worksheet represent?\nWhy should a business question come before an Excel calculation?"
+    "section": "Probability turns a count into a chance",
+    "text": "Probability turns a count into a chance\nETF defines probability as a numerical value representing the chance, likelihood or possibility that an event will occur. It lies between 0 and 1.\nAn event is one or more outcomes of an experiment. A sample space S collects all possible simple outcomes. For one fair die roll, S={1,2,3,4,5,6} and P(S)=1.\nA sample frequency can estimate a probability when the sample and observation process are suitable. Always name the population or process the estimate describes."
   },
   {
-    "objectID": "week2/slides.html#probability-measures-uncertainty",
-    "href": "week2/slides.html#probability-measures-uncertainty",
+    "objectID": "week2/slides.html#and-or-not",
+    "href": "week2/slides.html#and-or-not",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Probability measures uncertainty",
-    "text": "Probability measures uncertainty\n\nAn experiment is a process with an uncertain outcome.\nThe sample space S contains all possible outcomes.\nAn event is one or more outcomes of interest.\n0 \\leq P(A) \\leq 1 and P(S)=1.\nProbabilities can be expressed as proportions or percentages."
+    "section": "AND, OR, NOT",
+    "text": "AND, OR, NOT\n\n\n\nLanguage\nNotation\nMeaning\n\n\n\n\nA and B\nA \\cap B\nBoth events occur\n\n\nA or B\nA \\cup B\nAt least one occurs, including both\n\n\nNot A\nA^c\nA does not occur\n\n\n\nThe addition rule removes the double-counted intersection:\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B).\nIf A and B cannot occur together, they are mutually exclusive and P(A\\cap B)=0."
   },
   {
-    "objectID": "week2/slides.html#and-or-and-not",
-    "href": "week2/slides.html#and-or-and-not",
+    "objectID": "week2/slides.html#the-intersection-is-counted-once",
+    "href": "week2/slides.html#the-intersection-is-counted-once",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "AND, OR, and NOT",
-    "text": "AND, OR, and NOT\n\n\n\nBusiness wording\nNotation\nMeaning\n\n\n\n\nA and B\nA\\cap B\nboth occur\n\n\nA or B\nA\\cup B\nat least one occurs\n\n\nnot A\nA^c\ncomplement of A\n\n\n\nP(A^c)=1-P(A)\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B)"
+    "section": "The intersection is counted once",
+    "text": "The intersection is counted once\n\nIntersection of two events from ETF’s probability lecture.The shaded overlap is A\\cap B. When adding P(A) and P(B), that region is included twice, so the union formula subtracts it once."
   },
   {
-    "objectID": "week2/slides.html#mutually-exclusive-is-not-independent",
-    "href": "week2/slides.html#mutually-exclusive-is-not-independent",
+    "objectID": "week2/slides.html#watch-me-a-die-roll",
+    "href": "week2/slides.html#watch-me-a-die-roll",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Mutually exclusive is not independent",
-    "text": "Mutually exclusive is not independent\n\nMutually exclusive: A and B cannot occur together, so P(A\\cap B)=0.\nIndependent: learning that B occurred does not change the probability of A.\nNon-trivial mutually exclusive events are dependent: observing one rules out the other."
+    "section": "Watch me: a die roll",
+    "text": "Watch me: a die roll\nLet A be “even” and B be “less than 5.” From the six equally likely outcomes:\n\nA={2,4,6} and B={1,2,3,4}.\nThe intersection is {2,4}.\nP(A\\cup B)=3/6+4/6-2/6=5/6.\n\nThe same result comes from listing {1,2,3,4,6}. ETF uses this check to distinguish or from and."
   },
   {
-    "objectID": "week2/slides.html#watch-me-translate-a-business-question",
-    "href": "week2/slides.html#watch-me-translate-a-business-question",
+    "objectID": "week2/slides.html#now-you-try-translate-the-event",
+    "href": "week2/slides.html#now-you-try-translate-the-event",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: translate a business question",
-    "text": "Watch me: translate a business question\nFor an online order, define:\n\nA: delivery is late;\nB: customer requests a refund.\n\nTranslate:\n\n“late and refunded” as A\\cap B;\n“late or refunded” as A\\cup B;\n“not late” as A^c; and\n“refunded given late” as P(B\\mid A)."
+    "section": "Now you try: translate the event",
+    "text": "Now you try: translate the event\n\n\n\n\n\nFor a randomly selected business invoice, let A be “paid late” and B be “contains an error.” Write in words: A\\cap B, A\\cup B and A^c. If P(A)=0.12, P(B)=0.08 and P(A\\cap B)=0.03, calculate the union. Explain the subtraction."
   },
   {
-    "objectID": "week2/slides.html#now-you-try-events-and-rules",
-    "href": "week2/slides.html#now-you-try-events-and-rules",
+    "objectID": "week2/slides.html#mutually-exclusive-and-independent",
+    "href": "week2/slides.html#mutually-exclusive-and-independent",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: events and rules",
-    "text": "Now you try: events and rules\n\n\n\n\n\nLet C mean a customer clicks an advertisement and P mean they purchase.\n\nTranslate “clicked but did not purchase”.\nTranslate “clicked or purchased”.\nIf P(C)=0.30, P(P)=0.12, and P(C\\cap P)=0.08, calculate P(C\\cup P).\nExplain why click and purchase are not mutually exclusive."
+    "section": "Mutually exclusive and independent",
+    "text": "Mutually exclusive and independent\nThese are different ideas:\n\nMutually exclusive: the events cannot happen together.\nIndependent: knowing one occurred does not change the probability of the other.\n\nIf two nonzero-probability events are mutually exclusive, observing one rules out the other. They are therefore not independent. We test independence through conditional probabilities after building a table."
   },
   {
-    "objectID": "week2/slides.html#two-categorical-variables",
-    "href": "week2/slides.html#two-categorical-variables",
+    "objectID": "week2/slides.html#from-one-variable-to-two",
+    "href": "week2/slides.html#from-one-variable-to-two",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Two categorical variables",
-    "text": "Two categorical variables\nA contingency table cross-classifies observations by two categorical variables.\n\nCell: joint frequency or probability.\nMargin: total for one variable.\nGrand total: all observations.\nPercent of grand total supports joint and marginal probability.\nRow or column percentages support conditional probability."
+    "section": "From one variable to two",
+    "text": "From one variable to two\nA contingency table counts observations across two categorical variables. ETF Seminar Week 3 extends a one-way PivotTable into a two-way table.\nFor the Week 2 Marketing workbook, place Have Tried in rows and Income in columns. Count Person ID in Values. The row totals, column totals and grand total determine which denominator belongs to each question."
   },
   {
     "objectID": "week2/slides.html#watch-me-build-the-marketing-table",
     "href": "week2/slides.html#watch-me-build-the-marketing-table",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Watch me: build the Marketing table",
-    "text": "Watch me: build the Marketing table\nOpen week2-categorical-data.xlsx and select Marketing.\nCreate a PivotTable:\n\nput Income in Rows;\nput Have Tried in Columns;\ncount Person ID in Values; and\nshow the counts as % of Grand Total.\n\nCheck that all cells sum to 100%."
+    "text": "Watch me: build the Marketing table\n\nSelect the Marketing table and choose Insert &gt; PivotTable.\nDrag Have Tried to Rows, Income to Columns, and Person ID to Values as Count.\nMake a copy showing % of Grand Total for joint and marginal probabilities.\nMake a second copy showing % of Row Total to condition on Have Tried.\nCheck one cell with COUNTIFS and one marginal count with COUNTIF.\n\nA table percentage without its denominator is not yet an interpretable probability."
   },
   {
-    "objectID": "week2/slides.html#joint-and-marginal-probability",
-    "href": "week2/slides.html#joint-and-marginal-probability",
+    "objectID": "week2/slides.html#joint-and-marginal-probabilities",
+    "href": "week2/slides.html#joint-and-marginal-probabilities",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Joint and marginal probability",
-    "text": "Joint and marginal probability\n\nA joint probability refers to two events together: P(A\\cap B).\nA marginal probability refers to one variable and is read from a row or column total.\n\nAlways state the denominator:\nP(A)=\\frac{\\text{observations satisfying }A}{\\text{all observations}}."
+    "section": "Joint and marginal probabilities",
+    "text": "Joint and marginal probabilities\nA joint probability describes a pair of categories, the intersecting cell divided by the grand total. A marginal probability describes one variable, the relevant row or column total divided by the grand total.\nETF’s workshop asks for both “has not tried” and “earns above AUD 50,000 and has not tried.” The first is marginal; the second is joint. The words in the question point to different cells."
   },
   {
-    "objectID": "week2/slides.html#now-you-try-marketing-probabilities",
-    "href": "week2/slides.html#now-you-try-marketing-probabilities",
+    "objectID": "week2/slides.html#now-you-try-read-the-correct-cell",
+    "href": "week2/slides.html#now-you-try-read-the-correct-cell",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: marketing probabilities",
-    "text": "Now you try: marketing probabilities\n\n\n\n\n\nUsing the PivotTable, calculate and label:\n\nP(\\text{not tried});\nP(\\text{income}&gt;50{,}000\\cap\\text{not tried});\nP(\\text{income}&gt;50{,}000\\cup\\text{not tried}).\n\nFor each answer, identify whether it is marginal, joint, or union probability."
+    "section": "Now you try: read the correct cell",
+    "text": "Now you try: read the correct cell\n\n\n\n\n\nUsing your PivotTable, estimate (1) P(\\text{not tried}) and (2) P(\\text{income above 50,000 and not tried}). State the numerator and the all-respondent denominator for each. Check one result with an Excel count formula."
   },
   {
-    "objectID": "week2/slides.html#conditional-probability",
-    "href": "week2/slides.html#conditional-probability",
+    "objectID": "week2/slides.html#conditional-probability-changes-the-denominator",
+    "href": "week2/slides.html#conditional-probability-changes-the-denominator",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Conditional probability",
-    "text": "Conditional probability\nConditional probability changes the denominator:\nP(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}.\nRead P(A\\mid B) as “the probability of A, given B”. The event after the vertical bar defines the group being considered."
+    "section": "Conditional probability changes the denominator",
+    "text": "Conditional probability changes the denominator\nETF describes conditional probability as the probability of one event given information that another event has occurred:\nP(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\n=\\frac{\\text{count of both A and B}}{\\text{count of B}},\\qquad P(B)&gt;0.\nThe condition, after the vertical bar, defines the smaller group. P(A\\mid B) generally differs from P(B\\mid A)."
   },
   {
     "objectID": "week2/slides.html#watch-me-condition-on-not-tried",
     "href": "week2/slides.html#watch-me-condition-on-not-tried",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Watch me: condition on “not tried”",
-    "text": "Watch me: condition on “not tried”\nTo calculate\nP(\\text{income}&gt;50{,}000\\mid\\text{not tried}),\neither:\n\ndivide the relevant joint probability by P(\\text{not tried}); or\nshow PivotTable values as % of Column Total if Have Tried is in columns.\n\nVerify that each conditioning column sums to 100%."
+    "text": "Watch me: condition on “not tried”\nETF Workshop Week 3 asks: among respondents who have not tried the product, what proportion earn above AUD 50,000?\nUse the count of “not tried and above 50,000” as numerator. Divide by the not-tried row total. In a PivotTable, % of Row Total gives this when Have Tried is in rows. Say the denominator aloud before reading the percentage."
   },
   {
     "objectID": "week2/slides.html#now-you-try-reverse-the-condition",
     "href": "week2/slides.html#now-you-try-reverse-the-condition",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Now you try: reverse the condition",
-    "text": "Now you try: reverse the condition\n\n\n\n\n\nCalculate both:\n\nP(\\text{not tried}\\mid\\text{income}&gt;50{,}000);\nP(\\text{income}&gt;50{,}000\\mid\\text{not tried}).\n\nExplain why these are different questions. Which denominator is used in each calculation?"
+    "text": "Now you try: reverse the condition\n\n\n\n\n\nFind the proportion who have not tried the product among respondents earning above AUD 50,000. Change the denominator, not just the wording. Explain why this result need not equal the previous conditional probability."
   },
   {
-    "objectID": "week2/slides.html#independence",
-    "href": "week2/slides.html#independence",
+    "objectID": "week2/slides.html#union-probabilities-from-a-table",
+    "href": "week2/slides.html#union-probabilities-from-a-table",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Independence",
-    "text": "Independence\nEvents A and B are independent when any equivalent condition holds:\nP(A\\mid B)=P(A),\nP(B\\mid A)=P(B),\nP(A\\cap B)=P(A)P(B).\nA small difference may arise from sampling variation; it is not proof of causation."
+    "section": "Union probabilities from a table",
+    "text": "Union probabilities from a table\nFor A = “has tried” and B = “lives alone,” add the two marginal counts and subtract their overlapping cell once. Divide the result by the grand total.\nThe same answer can be checked by counting every respondent who meets A or B. This is particularly useful when a business question combines two warning indicators."
   },
   {
-    "objectID": "week2/slides.html#watch-me-tried-product-and-gender",
-    "href": "week2/slides.html#watch-me-tried-product-and-gender",
+    "objectID": "week2/slides.html#independence-compare-conditional-and-marginal",
+    "href": "week2/slides.html#independence-compare-conditional-and-marginal",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: tried product and gender",
-    "text": "Watch me: tried product and gender\nCreate a second PivotTable for Gender and Have Tried.\nCompare:\nP(\\text{tried}\\mid\\text{female})\\quad\\text{with}\\quad P(\\text{tried}).\nNarrate the conclusion as an association in this sample, not a causal effect."
+    "section": "Independence: compare conditional and marginal",
+    "text": "Independence: compare conditional and marginal\nEvents A and B are independent if learning B does not change A’s probability:\nP(A\\mid B)=P(A), \\quad\\text{equivalently}\\quad\nP(A\\cap B)=P(A)P(B).\nCompare the conditional “tried” rates across income categories with the overall “tried” rate. A sample difference suggests association; it does not establish causation or by itself constitute a formal test."
   },
   {
-    "objectID": "week2/slides.html#now-you-try-assess-independence",
-    "href": "week2/slides.html#now-you-try-assess-independence",
+    "objectID": "week2/slides.html#now-you-try-one-paragraph-of-evidence",
+    "href": "week2/slides.html#now-you-try-one-paragraph-of-evidence",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: assess independence",
-    "text": "Now you try: assess independence\n\n\n\n\n\nUse Live Alone and Have Tried.\n\nConstruct the contingency table.\nCompare an appropriate conditional probability with its marginal probability.\nDecide whether independence looks plausible.\nWrite one sentence that avoids causal language."
+    "section": "Now you try: one paragraph of evidence",
+    "text": "Now you try: one paragraph of evidence\n\n\n\n\n\nChoose two categories in Marketing. Report a joint probability, a conditional probability and an independence comparison. Name each denominator and finish with one cautious business sentence."
   },
   {
-    "objectID": "week2/slides.html#from-data-to-a-probability-model",
-    "href": "week2/slides.html#from-data-to-a-probability-model",
+    "objectID": "week2/slides.html#a-histogram-is-observed-data-a-model-is-an-assumption",
+    "href": "week2/slides.html#a-histogram-is-observed-data-a-model-is-an-assumption",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "From data to a probability model",
-    "text": "From data to a probability model\n\nA histogram describes observed data.\nA probability density curve models possible values of a continuous variable.\nProbability is represented by area under the curve.\nTotal area is 1.\nFor a continuous variable, probability at one exact value is effectively 0."
+    "section": "A histogram is observed data; a model is an assumption",
+    "text": "A histogram is observed data; a model is an assumption\nA histogram groups the measurements we actually saw. ETF Seminar Week 4 then introduces a smooth probability density f(x) to represent a proposed distribution of future or population values.\nArea under the curve is probability. The total area is 1. A model can be useful for risk calculations, but first check whether its shape is credible for the business variable."
   },
   {
     "objectID": "week2/slides.html#the-normal-distribution",
     "href": "week2/slides.html#the-normal-distribution",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "The Normal distribution",
-    "text": "The Normal distribution\nIf X\\sim N(\\mu,\\sigma), the distribution is:\n\nsymmetric and bell-shaped;\ncentred at mean \\mu; and\nspread according to standard deviation \\sigma.\n\nApproximately 68%, 95%, and 99.7% lie within one, two, and three standard deviations of the mean."
+    "text": "The Normal distribution\n\nETF’s smooth density schematic used to introduce continuous probability.A Normal distribution is symmetric and bell-shaped, described by a mean and standard deviation. ETF writes X\\sim N(\\text{mean},\\text{SD}). Mean, median and mode coincide. Roughly 68%, 95% and 99.7% fall within one, two and three SDs of the mean."
   },
   {
-    "objectID": "week2/slides.html#excels-normal-functions",
-    "href": "week2/slides.html#excels-normal-functions",
+    "objectID": "week2/slides.html#excel-functions-answer-three-different-questions",
+    "href": "week2/slides.html#excel-functions-answer-three-different-questions",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Excel’s Normal functions",
-    "text": "Excel’s Normal functions\n\n\n\nQuestion\nExcel function\n\n\n\n\nP(X\\le x)\nNORM.DIST(x, mean, sd, TRUE)\n\n\nP(X&gt;x)\n1-NORM.DIST(x, mean, sd, TRUE)\n\n\npercentile with lower-tail probability p\nNORM.INV(p, mean, sd)\n\n\nstandard Normal percentile\nNORM.S.INV(p)\n\n\n\nFor an interval, subtract two cumulative probabilities."
+    "section": "Excel functions answer three different questions",
+    "text": "Excel functions answer three different questions\n\n\n\nBusiness question\nExcel expression when X\\sim N(\\mu,\\sigma)\n\n\n\n\nBelow x?\n=NORM.DIST(x,mean,sd,TRUE)\n\n\nAbove x?\n=1-NORM.DIST(x,mean,sd,TRUE)\n\n\nWhich x has cumulative probability q?\n=NORM.INV(q,mean,sd)\n\n\n\nThe fourth argument TRUE requests a cumulative probability. For a continuous variable, “less than” and “less than or equal to” have the same probability."
   },
   {
-    "objectID": "week2/slides.html#watch-me-blood-pressure-risk",
-    "href": "week2/slides.html#watch-me-blood-pressure-risk",
+    "objectID": "week2/slides.html#watch-me-a-service-threshold",
+    "href": "week2/slides.html#watch-me-a-service-threshold",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: blood pressure risk",
-    "text": "Watch me: blood pressure risk\nAssume adult systolic blood pressure is Normal with mean 124 and standard deviation 10.\n\nBelow 117: =NORM.DIST(117,124,10,TRUE)\nAbove 140: =1-NORM.DIST(140,124,10,TRUE)\nHighest 15% cutoff: =NORM.INV(0.85,124,10)\n\nSketch and shade the requested area before typing the formula."
+    "section": "Watch me: a service threshold",
+    "text": "Watch me: a service threshold\nETF Seminar Week 4 uses X\\sim N(10,3) to illustrate the Excel function: P(X&lt;5)=NORM.DIST(5,10,3,TRUE). The complement gives P(X&gt;5).\nBefore pressing Enter, sketch which tail is needed. Check that a probability is between 0 and 1 and that a threshold below the mean has cumulative probability below 0.5."
   },
   {
-    "objectID": "week2/slides.html#now-you-try-service-time",
-    "href": "week2/slides.html#now-you-try-service-time",
+    "objectID": "week2/slides.html#now-you-try-blood-pressure-risk",
+    "href": "week2/slides.html#now-you-try-blood-pressure-risk",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: service time",
-    "text": "Now you try: service time\n\n\n\n\n\nAssume service time is Normal with mean 8 minutes and standard deviation 1.5 minutes.\n\nFind P(X&lt;6).\nFind P(X&gt;10).\nFind P(7&lt;X&lt;9).\nFind the 90th percentile.\nFor each, sketch the relevant area and write the Excel formula."
+    "section": "Now you try: blood-pressure risk",
+    "text": "Now you try: blood-pressure risk\n\n\n\n\n\nETF Workshop Week 4 assumes adult systolic blood pressure is Normal with mean 124 mmHg and SD 10 mmHg. In Excel, find the probabilities below 117 and above 140, then the reading that marks the highest 15%. State each event before choosing NORM.DIST or NORM.INV."
   },
   {
-    "objectID": "week2/slides.html#standardising-a-value",
-    "href": "week2/slides.html#standardising-a-value",
+    "objectID": "week2/slides.html#standard-normal-and-students-t",
+    "href": "week2/slides.html#standard-normal-and-students-t",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Standardising a value",
-    "text": "Standardising a value\nThe standard score\nz=\\frac{x-\\mu}{\\sigma}\ncounts how many standard deviations x is above or below the mean.\n\nz&gt;0: above the mean.\nz&lt;0: below the mean.\nMagnitude describes distance from the mean in standard-deviation units."
+    "section": "Standard Normal and Student’s t",
+    "text": "Standard Normal and Student’s t\nA standard Normal has mean 0 and SD 1. Standardisation puts unlike measurements on a common scale:\nz=\\frac{x-\\mu}{\\sigma}.\nETF introduces the t distribution because estimating an unknown population SD from a sample adds uncertainty. It resembles the standard Normal but has heavier tails for small degrees of freedom; as degrees of freedom grow, the two become close. Week 3 uses these critical values for intervals."
   },
   {
-    "objectID": "week2/slides.html#now-you-try-compare-unlike-measures",
-    "href": "week2/slides.html#now-you-try-compare-unlike-measures",
+    "objectID": "week2/slides.html#check-the-model-before-the-calculation",
+    "href": "week2/slides.html#check-the-model-before-the-calculation",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: compare unlike measures",
-    "text": "Now you try: compare unlike measures\n\n\n\n\n\nA store’s weekly sales are 1.4 standard deviations above the chain mean. Its profit is 0.6 standard deviations above the chain mean.\n\nWhich result is more unusual relative to its distribution?\nWhy can standard scores compare variables measured in different units?\nDoes the comparison prove the store is well managed?"
+    "section": "Check the model before the calculation",
+    "text": "Check the model before the calculation\nThe ETF price example is right-skewed. A symmetric Normal curve may be a poor model for those raw prices. Use a stated Normal assumption when a problem gives it; otherwise inspect the histogram, possible outliers, units and sampling context.\nA precise Excel probability from an unsuitable model can be misleading."
   },
   {
-    "objectID": "week2/slides.html#students-t-distribution",
-    "href": "week2/slides.html#students-t-distribution",
+    "objectID": "week2/slides.html#closing-chain",
+    "href": "week2/slides.html#closing-chain",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Student’s t distribution",
-    "text": "Student’s t distribution\n\nThe t distribution is symmetric and centred at zero.\nIt has heavier tails than the standard Normal distribution.\nIts shape depends on degrees of freedom, commonly df=n-1.\nIt is used when estimating a mean and the population standard deviation is unknown.\nAs df increases, t approaches the standard Normal distribution."
-  },
-  {
-    "objectID": "week2/slides.html#watch-me-choose-the-distribution",
-    "href": "week2/slides.html#watch-me-choose-the-distribution",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: choose the distribution",
-    "text": "Watch me: choose the distribution\nAsk in order:\n\nAre we modelling individual values or a sample statistic?\nIs a Normal model for the population stated or defensible?\nIs the population standard deviation known?\nIf estimating a mean with unknown \\sigma, what are the degrees of freedom?\n\nThe method follows the information available—not the desired answer."
-  },
-  {
-    "objectID": "week2/slides.html#now-you-try-method-selection",
-    "href": "week2/slides.html#now-you-try-method-selection",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: method selection",
-    "text": "Now you try: method selection\n\n\n\n\n\nChoose Normal, standard Normal, t, or “not enough information”:\n\nFind a percentile of stated Normal delivery times.\nStandardise one delivery time when \\mu and \\sigma are known.\nEstimate a population mean from n=18 observations when \\sigma is unknown.\nModel a severely skewed individual outcome with no distributional assumption."
-  },
-  {
-    "objectID": "week2/slides.html#watch-me-from-question-to-conclusion",
-    "href": "week2/slides.html#watch-me-from-question-to-conclusion",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: from question to conclusion",
-    "text": "Watch me: from question to conclusion\nFor “Are high-income respondents more likely to have tried the product?”:\n\ndefine the two events;\nbuild the correct PivotTable;\nchoose conditional probabilities with clear denominators;\ncompare them; and\nstate the sample association and its limitation.\n\nThe conclusion should answer the business question, not narrate menu clicks."
-  },
-  {
-    "objectID": "week2/slides.html#now-you-try-marketing-evidence-brief",
-    "href": "week2/slides.html#now-you-try-marketing-evidence-brief",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: marketing evidence brief",
-    "text": "Now you try: marketing evidence brief\n\n\n\n\n\nUsing the Marketing worksheet, choose one demographic variable and answer:\n\nIs product trial associated with that variable?\nWhich joint, marginal, and conditional probabilities support your answer?\nIs independence plausible?\nWhat can and cannot be concluded from these observational data?\n\nPrepare a three-sentence briefing and one clearly labelled table."
-  },
-  {
-    "objectID": "week2/slides.html#common-traps",
-    "href": "week2/slides.html#common-traps",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Common traps",
-    "text": "Common traps\n\nTreating “and” as addition without subtracting overlap.\nReversing P(A\\mid B) and P(B\\mid A).\nComparing conditional probabilities with different, hidden denominators.\nCalling mutually exclusive events independent.\nUsing NORM.DIST without checking the tail or interval requested.\nTreating a model assumption as an empirical fact."
-  },
-  {
-    "objectID": "week2/slides.html#closing-check",
-    "href": "week2/slides.html#closing-check",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Closing check",
-    "text": "Closing check\nCan you:\n\ntranslate business language into event notation?\ndistinguish joint, marginal, union, and conditional probability?\ntest the idea of independence using a contingency table?\nchoose the correct Excel Normal function and tail?\nexplain when a t distribution becomes relevant?\ncommunicate association without claiming causation?"
+    "section": "Closing chain",
+    "text": "Closing chain\nBusiness event → sample space or model → denominator or tail → Excel calculation → validation → plain-language interpretation.\nNext week we ask how much a probability or mean estimated from one sample might change with another sample."
   },
   {
     "objectID": "week1/solution/index.html",
@@ -1222,14 +1187,14 @@
     "href": "week1/index.html",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "",
-    "text": "Explain the role of statistics in evidence-based business decisions.\nClassify categorical and numerical variables and cross-sectional and time-series data.\nDistinguish populations, samples, parameters and statistics.\nRecognise sampling bias and the value of representative random samples.\nUse core Excel formulas and data-handling tools through integrated “Watch me, now you try” activities.\nCalculate and interpret the mean, median and mode."
+    "text": "Explain the role of statistics in evidence-based business decisions.\nClassify categorical and numerical variables and cross-sectional and time-series data.\nDistinguish populations, samples, parameters and statistics.\nRecognise sampling bias and the value of representative random samples.\nUse Excel formulas, filters and PivotTables to create an auditable summary.\nCreate and critique bar charts, histograms and box plots for business data.\nCalculate and interpret the mean, median, standard deviation and interquartile range."
   },
   {
     "objectID": "week1/index.html#what-you-will-learn-this-week",
     "href": "week1/index.html#what-you-will-learn-this-week",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "",
-    "text": "Explain the role of statistics in evidence-based business decisions.\nClassify categorical and numerical variables and cross-sectional and time-series data.\nDistinguish populations, samples, parameters and statistics.\nRecognise sampling bias and the value of representative random samples.\nUse core Excel formulas and data-handling tools through integrated “Watch me, now you try” activities.\nCalculate and interpret the mean, median and mode."
+    "text": "Explain the role of statistics in evidence-based business decisions.\nClassify categorical and numerical variables and cross-sectional and time-series data.\nDistinguish populations, samples, parameters and statistics.\nRecognise sampling bias and the value of representative random samples.\nUse Excel formulas, filters and PivotTables to create an auditable summary.\nCreate and critique bar charts, histograms and box plots for business data.\nCalculate and interpret the mean, median, standard deviation and interquartile range."
   },
   {
     "objectID": "week1/index.html#class-workbook",
@@ -1327,7 +1292,7 @@
     "href": "assignments/A1.html#submission",
     "title": "Individual written assignment",
     "section": "Submission",
-    "text": "Submission\nSubmit one PDF brief (maximum 1,500 words, excluding tables, charts, and references) and one Excel workbook containing your calculations, pivot tables, and charts. The PDF should include the results needed to follow your argument; the Excel file is the audit trail. Label units, denominators, confidence levels, and hypotheses. Work individually and use the supplied data\n\nAI usage and declaration\n??\nThe assessed content is from Weeks 1–4: data description and visualisation (LO1), probability (LO2), and sampling, confidence intervals, and hypothesis testing (LO3).\n\n\nRubric\n\n\n\nCriterion\nMarks\n\n\n\n\nData definitions, summaries, visualisation, and critique\n20\n\n\nProbability calculations and interpretation\n20\n\n\nConfidence intervals and sampling interpretation\n20\n\n\nMean comparison test and practical interpretation\n25\n\n\nCorporate Affairs recommendation and communication\n15\n\n\nTotal\n100"
+    "text": "Submission\nVia Moodle link\n\nAI statment\n\n\n\n\n\n\nAI & Generative AI tools may be used for this assessment / task per the guidelines provided in the free-text explanation\n\nI understand the ease and temptation of uploading the workbook and getting an immediate answer, however this approach won’t help you learn the content in the long term. Instead, I urge you to consider the following uses:\n\n\nYou may use AI & Generative AI tools for the translation of the question e.g.  “Don’t give me the answer, please reword/breakdown/walk me through the question so I understand clearly what I need to do”\n\n\nYou may use AI & Generative AI tools for hints on how to approach the question “Don’t give me the answer, provide me some scaffolded hints on how to approach this question”\n\n\nOnce you are done, you may use AI & Generative AI tools to summarise your knowledge gaps and provide similar exercises for practice so you can work on your weak spots “Give me a bulleted list of key concepts where I struggled with” “Provide me 5 similar practice questions using the same dataset, don’t give me the answers yet”\n\n\n\n\nThe assessed content is from Weeks 1–4: data description and visualisation (LO1), probability (LO2), and sampling, confidence intervals, and hypothesis testing (LO3).\n\n\nRubric\n\n\n\nCriterion\nMarks\n\n\n\n\nData definitions, summaries, visualisation, and critique\n20\n\n\nProbability calculations and interpretation\n20\n\n\nConfidence intervals and sampling interpretation\n20\n\n\nMean comparison test and practical interpretation\n25\n\n\nCorporate Affairs recommendation and communication\n15\n\n\nTotal\n100"
   },
   {
     "objectID": "index.html",
@@ -1372,361 +1337,242 @@
     "text": "Assessment summary\n\n\n\nAssessment task\nWeight\nTiming\nMode\n\n\n\n\nWeekly classroom exercises\n15%\nEnd of each class\nGroup\n\n\nWeekly quizzes (best 5 of 8)\n15%\nSundays at 17:00\nIndividual\n\n\nWritten assignment\n20%\nSun 20 Dec 2026 at 11:59 pm\nIndividual\n\n\nExamination\n50%\nExamination period\nIndividual"
   },
   {
-    "objectID": "week1/slides.html#todays-journey",
-    "href": "week1/slides.html#todays-journey",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Today’s journey",
-    "text": "Today’s journey\n\nGet oriented to the unit and its eight-week rhythm.\nInstall and prepare the desktop version of Microsoft Excel.\nLearn the parts of Excel that we will use each week.\nDevelop a shared statistical vocabulary for data and variables.\nUse mean, median, and mode to describe a typical value."
-  },
-  {
     "objectID": "week1/slides.html#welcome-to-business-statistics",
     "href": "week1/slides.html#welcome-to-business-statistics",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Welcome to Business Statistics",
-    "text": "Welcome to Business Statistics\n\nBusiness statistics turns data into evidence for decisions.\nThe unit combines statistical reasoning, business context, and Excel.\nEach topic will follow the same broad workflow:\nbusiness question → method → Excel → validation → conclusion"
+    "text": "Welcome to Business Statistics\n\nBusiness statistics turns data into evidence for decisions.\nThis unit combines statistical reasoning, business context and Excel.\nWe will use the same workflow throughout:\n\nBusiness question → method → Excel → validation → plain-language conclusion"
   },
   {
     "objectID": "week1/slides.html#what-will-we-learn",
     "href": "week1/slides.html#what-will-we-learn",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "What will we learn?",
-    "text": "What will we learn?\nBy the end of the unit, you should be able to:\n\nclassify and visualise business data;\ncalculate and interpret probabilities;\nreason from samples and test business claims;\nanalyse relationships between variables;\nbuild simple and multiple regression models; and\nformulate and solve business-modelling problems in Excel."
+    "text": "What will we learn?\nAcross the eight weeks, you will learn to:\n\nclassify and visualise business data;\ncalculate and interpret probabilities;\nreason from samples and test business claims;\nanalyse relationships between variables;\nbuild simple and multiple regression models; and\nformulate and solve business modelling problems in Excel."
   },
   {
-    "objectID": "week1/slides.html#the-eight-week-pathway",
-    "href": "week1/slides.html#the-eight-week-pathway",
+    "objectID": "week1/slides.html#the-eight-week-pathway-first-half",
+    "href": "week1/slides.html#the-eight-week-pathway-first-half",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "The eight-week pathway",
-    "text": "The eight-week pathway\n\nData stories and descriptive statistics\nProbability and distributions\nSampling and estimation\nTesting business claims\nRelationships and simple regression\nMultiple regression\nToolPak-supported spreadsheet business modelling\nIntegrated case and revision"
+    "section": "The eight-week pathway: first half",
+    "text": "The eight-week pathway: first half\n\nWeek 1 · 24 Nov 2026: From business question to an effective data story\nWeek 2 · 01 Dec 2026: Probability and distributions\nWeek 3 · 08 Dec 2026: Sampling and estimation: confidence intervals for means and proportions\nWeek 4 · 15 Dec 2026: Testing business claims: hypothesis tests for means and proportions"
+  },
+  {
+    "objectID": "week1/slides.html#the-eight-week-pathway-second-half",
+    "href": "week1/slides.html#the-eight-week-pathway-second-half",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "The eight-week pathway: second half",
+    "text": "The eight-week pathway: second half\n\nWeek 5 · 05 Jan 2027: Relationships and simple linear regression\nWeek 6 · 12 Jan 2027: Multiple regression and model evaluation\nWeek 7 · 19 Jan 2027: Spreadsheet business modelling with the Analysis ToolPak\nWeek 8 · 29 Jan 2027: Integrated business case, communication and revision"
   },
   {
     "objectID": "week1/slides.html#how-each-three-hour-class-works",
     "href": "week1/slides.html#how-each-three-hour-class-works",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "How each three-hour class works",
-    "text": "How each three-hour class works\n\nRetrieval quiz and business motivation\nShort conceptual blocks\nWatch me: the instructor live-codes a small, narrated example.\nNow you try: students immediately complete a closely related task.\nCompare, debug, and explain the result before introducing the next idea.\nFinish with interpretation and a misconception check.\n\nThere is no separate workshop: explanation and application are integrated throughout the class. Come ready to work in Excel rather than only watch."
+    "text": "How each three-hour class works\n\nA business question motivates the lecture explanation.\nWatch me: follow a short narrated Excel demonstration.\nNow you try: apply the same idea to a related task.\nCompare, debug and explain the result before the next concept.\nFinish by stating what the evidence supports and where it is limited.\n\nExplanation and supervised Excel practice are integrated in one class. Bring desktop Excel and your own working copy of the weekly workbook."
   },
   {
     "objectID": "week1/slides.html#assessment-at-a-glance",
     "href": "week1/slides.html#assessment-at-a-glance",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Assessment at a glance",
-    "text": "Assessment at a glance\n\n\n\nAssessment\nWeight\nTiming\n\n\n\n\nWeekly classroom exercises\n15%\nIn class each week\n\n\nWeekly quizzes\n15%\nEnd of each week\n\n\nWritten assignment\n20%\nEnd of Week 4\n\n\nExamination\n50%\nExamination period"
+    "text": "Assessment at a glance\n\nWeekly classroom exercises — 15%: group work, due at the end of each class.\nWeekly quizzes — 15%: individual; best 5 of 8 count, due Sundays at 17:00.\nWritten assignment — 20%: individual; due Sun 20 Dec 2026 at 11:59 pm. It assesses material available by the end of Week 4.\nFinal examination — 50%: individual; held in the examination period and covers the full unit.\n\nCheck Moodle for submission and examination arrangements."
   },
   {
-    "objectID": "week1/slides.html#week-1-priorities",
-    "href": "week1/slides.html#week-1-priorities",
+    "objectID": "week1/slides.html#where-to-find-the-materials",
+    "href": "week1/slides.html#where-to-find-the-materials",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Week 1 priorities",
-    "text": "Week 1 priorities\nBy the end of this week, you should be able to:\n\nnavigate the unit resources and weekly workflow;\nconfirm that desktop Excel and its add-ins are ready;\ndistinguish data, observations, and variables;\nclassify common business variables;\ndistinguish populations from samples; and\ncalculate and interpret mean, median, and mode."
+    "section": "Where to find the materials",
+    "text": "Where to find the materials\n\nThe course website has the weekly schedule, slide decks and workbooks.\nMoodle carries official announcements, quizzes and submission details.\nKeep an editable Excel working copy; the posted workbook remains your starting point.\nCheck the current unit information when planning your assessment work."
   },
   {
-    "objectID": "week1/slides.html#where-to-find-help",
-    "href": "week1/slides.html#where-to-find-help",
+    "objectID": "week1/slides.html#todays-question",
+    "href": "week1/slides.html#todays-question",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Where to find help",
-    "text": "Where to find help\n\nUse the course website for the weekly schedule and learning materials.\nUse Moodle for official announcements, assessment, and submission details.\nUse the discussion forum for content questions that may help the whole class.\nUse the published consultation and contact channels for personal matters.\n\nAlways check the current ETX1100 information rather than logistics inherited from ETF or ETB slides."
+    "section": "Today’s question",
+    "text": "Today’s question\nHow can a business turn a worksheet of observations into a defensible data story?\n\nDefine the question, population and variables.\nChoose a summary and chart for each variable.\nBuild the summary in Excel and check its denominator and units.\nExplain what the evidence shows and what it cannot show."
   },
   {
-    "objectID": "week1/slides.html#install-desktop-excel-before-class",
-    "href": "week1/slides.html#install-desktop-excel-before-class",
+    "objectID": "week1/slides.html#what-is-business-statistics",
+    "href": "week1/slides.html#what-is-business-statistics",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Install desktop Excel before class",
-    "text": "Install desktop Excel before class\n\nInstall the current desktop version of Microsoft Excel through Monash Microsoft 365.\nSign in with your Monash account and install all available updates.\nDo not rely only on Excel for the web: some analysis and modelling tools differ or are unavailable.\nBring a laptop on which you can open, edit, and save .xlsx files."
+    "section": "What is business statistics?",
+    "text": "What is business statistics?\nETF defines business statistics as the application of statistical tools and methods to analyse data for evidence-based business decisions.\nA business question comes first. For example: Do property prices differ between homes inside and outside a school zone? The answer needs a clear unit, a relevant population, useful measurements and a conclusion with limitations."
   },
   {
-    "objectID": "week1/slides.html#enable-the-analysis-toolpak",
-    "href": "week1/slides.html#enable-the-analysis-toolpak",
+    "objectID": "week1/slides.html#variable-observation-and-data",
+    "href": "week1/slides.html#variable-observation-and-data",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Enable the Analysis ToolPak",
-    "text": "Enable the Analysis ToolPak\nWindows\nFile → Options → Add-ins → Manage Excel Add-ins → Go\nmacOS\nTools → Excel Add-ins\nEnable Analysis ToolPak. Verify that Data Analysis appears on the Data ribbon."
-  },
-  {
-    "objectID": "week1/slides.html#workbook-anatomy",
-    "href": "week1/slides.html#workbook-anatomy",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Workbook anatomy",
-    "text": "Workbook anatomy\n\nA workbook is the Excel file.\nA worksheet is one tab within the workbook.\nA cell is identified by its column letter and row number, such as C4.\nThe Name Box reports the active cell.\nThe Formula Bar shows or edits the active cell’s contents.\nCells may contain text, numbers, dates, or formulas."
-  },
-  {
-    "objectID": "week1/slides.html#ribbons-we-will-use",
-    "href": "week1/slides.html#ribbons-we-will-use",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Ribbons we will use",
-    "text": "Ribbons we will use\n\nHome: formatting, editing, and number display\nInsert: tables, PivotTables, and charts\nFormulas: functions and formula auditing\nData: sorting, filtering, and Data Analysis\n\nThe goal is not to memorise every command; it is to know where to look."
-  },
-  {
-    "objectID": "week1/slides.html#get-the-week-1-workbook",
-    "href": "week1/slides.html#get-the-week-1-workbook",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Get the Week 1 workbook",
-    "text": "Get the Week 1 workbook\nDownload the Week 1 Excel workbook, save a working copy, and open it in desktop Excel.\nIt contains two worksheets:\n\nStores: store identifiers, sales, profit, and 24-hour status\nRealEstate: property prices and property characteristics\n\nKeep the original file unchanged so you can restart an activity if needed."
-  },
-  {
-    "objectID": "week1/slides.html#watch-me-orient-to-the-workbook",
-    "href": "week1/slides.html#watch-me-orient-to-the-workbook",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: orient to the workbook",
-    "text": "Watch me: orient to the workbook\nFollow as the instructor:\n\nmoves between Stores and RealEstate;\nselects a cell and reads its address and contents;\nidentifies headers, observations, and variables;\nresizes a column and formats currency; and\nsaves a clearly named working copy.\n\nNarrate each action and its purpose rather than clicking silently."
-  },
-  {
-    "objectID": "week1/slides.html#now-you-try-find-your-way-around",
-    "href": "week1/slides.html#now-you-try-find-your-way-around",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: find your way around",
-    "text": "Now you try: find your way around\n\n\n\n\n\nIn Stores:\n\nSelect the profit recorded for Store 10. What is its cell address?\nUse the Name Box to move directly to D51.\nIdentify what the value in that cell means.\nFreeze the header row.\nSave your workbook as week1-yourname.xlsx.\n\nCompare with a neighbour before we check together."
-  },
-  {
-    "objectID": "week1/slides.html#formulas-and-cell-references",
-    "href": "week1/slides.html#formulas-and-cell-references",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Formulas and cell references",
-    "text": "Formulas and cell references\n\nBegin every formula with =.\nUse +, -, *, /, and ^ for basic operations.\nRefer to a cell by address: =C4*D4.\nCopy formulas with the fill handle rather than retyping them.\nCheck that copied references point to the intended cells."
-  },
-  {
-    "objectID": "week1/slides.html#functions-and-ranges",
-    "href": "week1/slides.html#functions-and-ranges",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Functions and ranges",
-    "text": "Functions and ranges\n\nA function follows the pattern =FUNCTION(inputs).\nA colon denotes a consecutive range: A2:A20.\nA comma separates inputs where a function needs more than one.\nUseful first examples:\n\n=SUM(A2:A20)\n=COUNT(A2:A20)\n=AVERAGE(A2:A20)"
-  },
-  {
-    "objectID": "week1/slides.html#watch-me-formula-reference-fill",
-    "href": "week1/slides.html#watch-me-formula-reference-fill",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: formula, reference, fill",
-    "text": "Watch me: formula, reference, fill\nIn a new column of Stores, calculate profit as a percentage of sales:\n=C2/B2\nThen:\n\nformat the result as a percentage;\nuse the fill handle to copy the formula down; and\ninspect how the cell references change."
-  },
-  {
-    "objectID": "week1/slides.html#now-you-try-build-and-check-a-formula",
-    "href": "week1/slides.html#now-you-try-build-and-check-a-formula",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: build and check a formula",
-    "text": "Now you try: build and check a formula\n\n\n\n\n\nCreate a column named Profit per $100 sales.\n\nWrite a formula using Sales and Profit.\nCopy it to all stores.\nCheck the first, middle, and final rows.\nExplain why checking only the first result is risky."
-  },
-  {
-    "objectID": "week1/slides.html#watch-me-look-up-store-50",
-    "href": "week1/slides.html#watch-me-look-up-store-50",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: look up Store 50",
-    "text": "Watch me: look up Store 50\nUse the unique Store ID to return Store 50’s sales:\n=VLOOKUP(50,$A$2:$D$76,2,FALSE)\n\n50 is the value to find.\n$A$2:$D$76 is the lookup table.\n2 identifies the Sales column within that table.\nFALSE requires an exact match."
-  },
-  {
-    "objectID": "week1/slides.html#now-you-try-complete-the-lookup",
-    "href": "week1/slides.html#now-you-try-complete-the-lookup",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: complete the lookup",
-    "text": "Now you try: complete the lookup\n\n\n\n\n\nUsing VLOOKUP, find for Store 50:\n\nprofit;\nwhether it opens 24 hours; and\nthe result returned for Store 500.\n\nChange only the argument that needs to change. Be ready to explain any error."
-  },
-  {
-    "objectID": "week1/slides.html#watch-me-a-flexible-lookup",
-    "href": "week1/slides.html#watch-me-a-flexible-lookup",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: a flexible lookup",
-    "text": "Watch me: a flexible lookup\nUse MATCH to locate a store and INDEX to return the required value:\n=INDEX(B2:B76,MATCH(50,A2:A76,0))\n\nMATCH returns the position of Store 50.\nINDEX returns the Sales value at that position.\n0 requests an exact match.\n\nThis separates the lookup column from the result column."
-  },
-  {
-    "objectID": "week1/slides.html#now-you-try-change-the-question",
-    "href": "week1/slides.html#now-you-try-change-the-question",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: change the question",
-    "text": "Now you try: change the question\n\n\n\n\n\nUsing INDEX and MATCH:\n\nreturn the profit for Store 74;\nreturn its 24-hour status; and\nverify both results against the original row.\n\nWhich parts of the formula changed, and which stayed fixed?"
-  },
-  {
-    "objectID": "week1/slides.html#watch-me-make-a-business-flag",
-    "href": "week1/slides.html#watch-me-make-a-business-flag",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: make a business flag",
-    "text": "Watch me: make a business flag\nUse IF to classify whether a store has at least $1 million in sales:\n=IF(B2&gt;=1000000,\"Yes\",\"No\")\nAn IF function requires:\n\na logical test;\nthe value returned when true; and\nthe value returned when false."
-  },
-  {
-    "objectID": "week1/slides.html#now-you-try-classify-and-handle-errors",
-    "href": "week1/slides.html#now-you-try-classify-and-handle-errors",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: classify and handle errors",
-    "text": "Now you try: classify and handle errors\n\n\n\n\n\n\nCreate a flag for stores with profit of at least $300,000.\nCopy it down and check both a Yes and a No case.\nWrap the Store 500 lookup in IFERROR so it displays Store not found.\n\n=IFERROR(lookup_formula,\"Store not found\")"
-  },
-  {
-    "objectID": "week1/slides.html#watch-me-filter-the-stores",
-    "href": "week1/slides.html#watch-me-filter-the-stores",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: filter the stores",
-    "text": "Watch me: filter the stores\nOn the Data ribbon, turn on Filter and display only stores that:\n\ndo not open 24 hours; and\nhave sales above $1 million.\n\nNotice that filtering hides observations; it does not delete them."
-  },
-  {
-    "objectID": "week1/slides.html#now-you-try-answer-with-filters",
-    "href": "week1/slides.html#now-you-try-answer-with-filters",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: answer with filters",
-    "text": "Now you try: answer with filters\n\n\n\n\n\nUse filters to answer:\n\nHow many stores have profit below $200,000?\nAmong them, how many open 24 hours?\nWhich store in this subset has the greatest sales?\n\nClear every filter when finished and confirm that all 75 stores return."
-  },
-  {
-    "objectID": "week1/slides.html#watch-me-conditional-summaries",
-    "href": "week1/slides.html#watch-me-conditional-summaries",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: conditional summaries",
-    "text": "Watch me: conditional summaries\nUse the Stores data to calculate:\n\nnumber of stores: =COUNTA(A2:A76);\nnumber open 24 hours: =COUNTIF(D2:D76,\"Yes\"); and\ntheir total profit: =SUMIF(D2:D76,\"Yes\",C2:C76).\n\nThe criterion determines which observations contribute to the result."
-  },
-  {
-    "objectID": "week1/slides.html#now-you-try-change-the-criterion",
-    "href": "week1/slides.html#now-you-try-change-the-criterion",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: change the criterion",
-    "text": "Now you try: change the criterion\n\n\n\n\n\nCalculate:\n\nthe number of stores that do not open 24 hours;\ntheir total sales;\ntheir total profit; and\none manual check that makes your results plausible.\n\nWrite a one-sentence business interpretation, not just three numbers."
-  },
-  {
-    "objectID": "week1/slides.html#watch-me-first-pivottable",
-    "href": "week1/slides.html#watch-me-first-pivottable",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: first PivotTable",
-    "text": "Watch me: first PivotTable\nCreate a PivotTable from Stores:\n\nplace Open 24 Hrs? in Rows;\ncount Store ID in Values;\nsum Sales in Values; and\nformat the sales totals as currency.\n\nA PivotTable groups observations and calculates summaries without changing the source data."
-  },
-  {
-    "objectID": "week1/slides.html#now-you-try-summarise-realestate",
-    "href": "week1/slides.html#now-you-try-summarise-realestate",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: summarise RealEstate",
-    "text": "Now you try: summarise RealEstate\n\n\n\n\n\nCreate a PivotTable from RealEstate:\n\nplace SchoolZone in Rows;\ncount the properties;\ncalculate average Price ($000s); and\nformat and rename the value fields clearly.\n\nWhich group has the higher average price? Does this establish that school zone caused the difference?"
-  },
-  {
-    "objectID": "week1/slides.html#excel-readiness-check",
-    "href": "week1/slides.html#excel-readiness-check",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Excel readiness check",
-    "text": "Excel readiness check\nBefore moving on, can you:\n\nfind a worksheet and a cell from an address?\ndistinguish a typed value from a formula?\nexplain what a range such as B2:B101 represents?\nuse a lookup, IF, and IFERROR?\nfilter observations and clear the filter?\nuse COUNTIF, SUMIF, and a PivotTable?\nlocate Data Analysis?\nsave your workbook using a meaningful filename?"
-  },
-  {
-    "objectID": "week1/slides.html#from-a-business-question-to-data",
-    "href": "week1/slides.html#from-a-business-question-to-data",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "From a business question to data",
-    "text": "From a business question to data\nConsider: What influences the selling price of a house?\n\nThe business question determines what we need to observe.\nEach row can represent one house.\nEach column records a characteristic of those houses.\nThe appropriate statistical method depends on the kinds of variables involved."
-  },
-  {
-    "objectID": "week1/slides.html#variables-observations-and-data",
-    "href": "week1/slides.html#variables-observations-and-data",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Variables, observations, and data",
-    "text": "Variables, observations, and data\n\nA variable is a characteristic that can differ between items or individuals.\nAn observation is one item or individual on which variables are recorded.\nData are the observed values of those variables.\n\nFor a house:\n\nvariables might include suburb, number of bedrooms, and selling price;\none observation is one house; and\nthe recorded suburb, bedroom count, and price are its data values."
-  },
-  {
-    "objectID": "week1/slides.html#the-first-classification-decision",
-    "href": "week1/slides.html#the-first-classification-decision",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "The first classification decision",
-    "text": "The first classification decision\nVariables are broadly classified as:\n\nCategorical (qualitative): values indicate groups or labels.\nNumerical (quantitative): values represent counts or measurements for which arithmetic is meaningful.\n\nA number used as a label—such as a postcode—is still categorical."
-  },
-  {
-    "objectID": "week1/slides.html#categorical-variables",
-    "href": "week1/slides.html#categorical-variables",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Categorical variables",
-    "text": "Categorical variables\nNominal\n\nCategories have no natural ordering.\nExamples: payment method, suburb, product category.\n\nOrdinal\n\nCategories have a meaningful order.\nExamples: poor/fair/good/excellent; low/medium/high risk.\n\nThe gaps between ordinal categories are not necessarily equal."
-  },
-  {
-    "objectID": "week1/slides.html#numerical-variables",
-    "href": "week1/slides.html#numerical-variables",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Numerical variables",
-    "text": "Numerical variables\nDiscrete\n\nProduced by counting.\nOften takes separate whole-number values.\nExamples: number of purchases, complaints, or bedrooms.\n\nContinuous\n\nProduced by measuring.\nCan potentially take any value within an interval.\nExamples: waiting time, revenue, weight, or distance."
-  },
-  {
-    "objectID": "week1/slides.html#cross-sectional-and-time-series-data",
-    "href": "week1/slides.html#cross-sectional-and-time-series-data",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Cross-sectional and time-series data",
-    "text": "Cross-sectional and time-series data\nCross-sectional data\n\nObservations on multiple entities at one time or during one period.\nExample: sales across 50 stores in November.\n\nTime-series data\n\nRepeated observations of the same quantity through time.\nExample: monthly sales for one store from January to December."
-  },
-  {
-    "objectID": "week1/slides.html#descriptive-and-inferential-statistics",
-    "href": "week1/slides.html#descriptive-and-inferential-statistics",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Descriptive and inferential statistics",
-    "text": "Descriptive and inferential statistics\n\nDescriptive statistics organise, summarise, and present observed data.\nInferential statistics use sample evidence to learn about a wider population.\n\nThis week begins with description; later weeks develop inference."
+    "section": "Variable, observation and data",
+    "text": "Variable, observation and data\n\nA variable is a characteristic of an item or individual.\nData are the observed values of variables.\nAn observation is one item or individual measured.\n\nIn the RealEstate sheet of the Week 1 workbook, one row is one property. Price ($000s), Beds, SchoolZone and Auction are variables. A price of 1100 means AUD 1.1 million."
   },
   {
     "objectID": "week1/slides.html#population-sample-parameter-statistic",
     "href": "week1/slides.html#population-sample-parameter-statistic",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Population, sample, parameter, statistic",
-    "text": "Population, sample, parameter, statistic\n\nPopulation: the complete group relevant to the question.\nSample: the subset actually observed.\nParameter: a numerical feature of the population.\nStatistic: a numerical feature calculated from the sample.\n\nA representative sample supports credible conclusions about the population."
+    "text": "Population, sample, parameter, statistic\n\nPopulation: all members of the group about which we want a conclusion.\nSample: a subset selected for analysis, ideally representative of that population.\nParameter: a numerical description of the population, usually unknown.\nStatistic: a numerical description computed from the sample.\n\nA mean calculated from 329 sampled properties is a statistic. It is evidence about a population mean only if the sample and population are defined and the sampling process is credible."
   },
   {
-    "objectID": "week1/slides.html#watch-me-classify-the-first-variables",
-    "href": "week1/slides.html#watch-me-classify-the-first-variables",
+    "objectID": "week1/slides.html#descriptive-and-inferential-statistics",
+    "href": "week1/slides.html#descriptive-and-inferential-statistics",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: classify the first variables",
-    "text": "Watch me: classify the first variables\nIn RealEstate, classify:\n\nPrice ($000s);\nBeds;\nSchoolZone; and\nAuction.\n\nFor each decision, ask whether the values are labels, ordered categories, counts, or measurements."
+    "section": "Descriptive and inferential statistics",
+    "text": "Descriptive and inferential statistics\n\n\n\n\n\n\n\n\nWhat we do\nPurpose\nExample\n\n\n\n\nDescribe\nCollect, summarise and present observed data\nReport the sample median price and a box plot\n\n\nInfer\nUse sample data to draw a conclusion about a population\nEstimate the population mean price\n\n\n\nToday we build the description. Weeks 3–4 use sampling to quantify the uncertainty in inference."
   },
   {
-    "objectID": "week1/slides.html#now-you-try-complete-the-classification",
-    "href": "week1/slides.html#now-you-try-complete-the-classification",
+    "objectID": "week1/slides.html#classify-the-variable-before-choosing-a-chart",
+    "href": "week1/slides.html#classify-the-variable-before-choosing-a-chart",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: complete the classification",
-    "text": "Now you try: complete the classification\n\n\n\n\n\nClassify the remaining RealEstate variables as nominal, ordinal, discrete, or continuous:\n\nBaths;\nCars;\nArea (sqm);\nNew; and\nSubdivided.\n\nIs the worksheet cross-sectional or time-series? Justify your answer."
+    "section": "Classify the variable before choosing a chart",
+    "text": "Classify the variable before choosing a chart\n\n\n\n\n\n\n\n\n\nType\nMeaning\nExample\nFirst chart choice\n\n\n\n\nNominal categorical\nLabels without an order\nAuction Yes/No\nBar chart\n\n\nOrdinal categorical\nLabels with an order\nPoor/Fair/Good\nOrdered bar chart\n\n\nDiscrete numerical\nA count\nBeds\nBar chart\n\n\nContinuous numerical\nA measurement\nPrice ($000s)\nHistogram or box plot\n\n\n\nCross-sectional data describe different units at a time; time-series data follow a quantity through time. Put time on the horizontal axis of a line chart."
   },
   {
-    "objectID": "week1/slides.html#now-you-try-build-a-data-dictionary",
-    "href": "week1/slides.html#now-you-try-build-a-data-dictionary",
+    "objectID": "week1/slides.html#watch-me-classify-the-realestate-sheet",
+    "href": "week1/slides.html#watch-me-classify-the-realestate-sheet",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: build a data dictionary",
-    "text": "Now you try: build a data dictionary\n\n\n\n\n\nFor each column in the Week 1 workbook, record:\n\n\n\n\n\n\n\n\n\nVariable\nBusiness meaning\nUnit/categories\nVariable type\n\n\n\n\nExample: Price\nSelling price of property\nAUD thousands\nContinuous\n\n\n\nA data dictionary prevents avoidable mistakes before analysis begins."
+    "section": "Watch me: classify the RealEstate sheet",
+    "text": "Watch me: classify the RealEstate sheet\nOpen RealEstate. Ask for each column:\n\nWhat does one row represent?\nIs the entry a label, count or measurement?\nWhich question could a chart answer?\nIs a number an identifier, a category code or a true quantity?\n\nBeds is a count even though Excel stores it as a number. SchoolZone is categorical even if we later encode Yes and No as 1 and 0."
   },
   {
-    "objectID": "week1/slides.html#what-is-a-typical-value",
-    "href": "week1/slides.html#what-is-a-typical-value",
+    "objectID": "week1/slides.html#now-you-try-classify-stores",
+    "href": "week1/slides.html#now-you-try-classify-stores",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "What is a “typical” value?",
-    "text": "What is a “typical” value?\nMeasures of central tendency answer slightly different versions of this question:\n\nMean: the arithmetic balance point or average.\nMedian: the middle ordered value.\nMode: the most frequently occurring value or category.\n\nThe most appropriate measure depends on the variable and its distribution."
+    "section": "Now you try: classify Stores",
+    "text": "Now you try: classify Stores\n\n\n\n\n\nOpen Stores. Identify the observational unit, the type of Sales, Profit and Open 24 Hrs?, and one sensible chart for each. State a possible population before you discuss inference."
   },
   {
-    "objectID": "week1/slides.html#mean",
-    "href": "week1/slides.html#mean",
+    "objectID": "week1/slides.html#cells-formulas-and-ranges",
+    "href": "week1/slides.html#cells-formulas-and-ranges",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Mean",
-    "text": "Mean\nFor observations x_1, x_2, \\ldots, x_n, the sample mean is\n\n\\bar{x}=\\frac{x_1+x_2+\\cdots+x_n}{n}.\n\n\nExcel: =AVERAGE(range)\nUses every numerical observation.\nCommonly used in later statistical analysis.\nSensitive to unusually large or small values."
+    "section": "Cells, formulas and ranges",
+    "text": "Cells, formulas and ranges\nETF’s Excel introduction starts with three rules:\n\nA cell address combines a column letter and row number: B2.\nA formula begins with =; for example, =C2/B2.\nA colon identifies a consecutive range: B2:B76.\n\nFunctions such as =AVERAGE(B2:B76), =COUNTIF(D2:D76,\"Yes\") and =STDEV.S(B2:B76) calculate summaries. Check that each range contains the intended records."
   },
   {
-    "objectID": "week1/slides.html#median",
-    "href": "week1/slides.html#median",
+    "objectID": "week1/slides.html#watch-me-make-an-auditable-rate",
+    "href": "week1/slides.html#watch-me-make-an-auditable-rate",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Median",
-    "text": "Median\nThe median is the middle value after sorting observations from smallest to largest.\n\nExcel: =MEDIAN(range)\nHalf the observations are at or below it and half are at or above it.\nResistant to extreme values.\nOften informative for skewed variables such as income or house prices."
+    "section": "Watch me: make an auditable rate",
+    "text": "Watch me: make an auditable rate\nIn Stores, Sales is column B and Profit is column C. Put Profit margin in a blank column and enter =C2/B2 for the first store. Format as a percentage, fill down and inspect the last row.\nA rate has a numerator, denominator and meaning. Profit/Sales answers a different question from profit in dollars. Keep the original data and the formula visible."
   },
   {
-    "objectID": "week1/slides.html#mode",
-    "href": "week1/slides.html#mode",
+    "objectID": "week1/slides.html#now-you-try-compare-stores-fairly",
+    "href": "week1/slides.html#now-you-try-compare-stores-fairly",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Mode",
-    "text": "Mode\nThe mode is the value that occurs most frequently.\n\nExcel for a single numerical mode: =MODE.SNGL(range)\nParticularly meaningful for categorical or discrete data.\nA dataset can have no mode or more than one mode.\nFor continuous data, the most populated interval may be more useful than one repeated value."
+    "section": "Now you try: compare stores fairly",
+    "text": "Now you try: compare stores fairly\n\n\n\n\n\nCalculate the profit margin for every store. Identify a store with high profit in dollars and a store with high profit margin. Write one sentence explaining why the rankings can differ."
   },
   {
-    "objectID": "week1/slides.html#watch-me-price-centre",
-    "href": "week1/slides.html#watch-me-price-centre",
+    "objectID": "week1/slides.html#filters-and-pivottables",
+    "href": "week1/slides.html#filters-and-pivottables",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: price centre",
-    "text": "Watch me: price centre\nIn RealEstate, calculate for Price ($000s):\n\n=AVERAGE(A2:A330);\n=MEDIAN(A2:A330); and\n=MODE.SNGL(A2:A330).\n\nThen translate each result into a sentence about property prices. The formula is not the conclusion."
+    "section": "Filters and PivotTables",
+    "text": "Filters and PivotTables\n\nData &gt; Filter isolates records without deleting other observations.\nInsert &gt; PivotTable counts or summarises groups from the full table.\nCOUNTIF and COUNTIFS provide an independent check of a count.\n\nThe Excel work should follow the question: choose a numerator, choose the right denominator, then calculate and label the result."
   },
   {
-    "objectID": "week1/slides.html#now-you-try-compare-centre-in-stores",
-    "href": "week1/slides.html#now-you-try-compare-centre-in-stores",
+    "objectID": "week1/slides.html#frequency-and-relative-frequency",
+    "href": "week1/slides.html#frequency-and-relative-frequency",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: compare centre in Stores",
-    "text": "Now you try: compare centre in Stores\n\n\n\n\n\nFor both Sales and Profit:\n\ncalculate the mean, median, and mode where applicable;\ncompare the mean with the median;\nidentify whether the mode is informative; and\nrecommend the most useful measure of a typical store.\n\nAdd one temporarily extreme value to a copy of the data. Which measure changes more: mean or median?"
+    "section": "Frequency and relative frequency",
+    "text": "Frequency and relative frequency\nA frequency is a count. A relative frequency is that count divided by the relevant total.\nFor a chart of Auction by Yes/No, each bar can show either a count or a percentage of all sampled properties. For a comparison within school-zone groups, divide by each group’s number of properties. State the denominator in the title or note."
   },
   {
-    "objectID": "week1/slides.html#mean-median-or-mode",
-    "href": "week1/slides.html#mean-median-or-mode",
+    "objectID": "week1/slides.html#watch-me-pivottable-to-bar-chart",
+    "href": "week1/slides.html#watch-me-pivottable-to-bar-chart",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Mean, median, or mode?",
-    "text": "Mean, median, or mode?\nWhen choosing a measure, ask:\n\nIs the variable categorical or numerical?\nIs a natural ordering available?\nAre extreme values pulling the mean?\nDo repeated values or a dominant category matter?\nWhich measure answers the business question most honestly?\n\nDo not report a measure merely because Excel can calculate it."
+    "section": "Watch me: PivotTable to bar chart",
+    "text": "Watch me: PivotTable to bar chart\nETF Seminar Week 2 demonstrates this sequence with Real Estate data:\n\nSelect the RealEstate table and choose Insert &gt; PivotTable.\nDrag Auction to Rows and Values; summarise Values by Count.\nFor a percentage, choose Show Values As &gt; % of Grand Total.\nSelect the summary and choose Insert &gt; Column or Bar Chart.\nAdd a descriptive title, a percentage axis label and the sample size.\n\nA bar chart compares categories. A pie chart can show shares of one whole, but grouped bars make two model or customer groups easier to compare."
   },
   {
-    "objectID": "week1/slides.html#closing-check",
-    "href": "week1/slides.html#closing-check",
+    "objectID": "week1/slides.html#now-you-try-create-and-explain-a-rate-chart",
+    "href": "week1/slides.html#now-you-try-create-and-explain-a-rate-chart",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Closing check",
-    "text": "Closing check\n\nMean: uses all numerical values but is sensitive to extremes.\nMedian: identifies the middle and is resistant to extremes.\nMode: identifies the most common value or category.\n\nFor the Week 1 data, calculate all applicable measures and write one sentence explaining which measure best represents a typical observation."
+    "section": "Now you try: create and explain a rate chart",
+    "text": "Now you try: create and explain a rate chart\n\n\n\n\n\nUse a PivotTable to compare the within-group Auction rate for SchoolZone = Yes and No. Make a labelled bar chart in Excel. Audit one bar with COUNTIFS divided by the correct group total, then explain the comparison without claiming causation."
+  },
+  {
+    "objectID": "week1/slides.html#visual-integrity-is-part-of-the-result",
+    "href": "week1/slides.html#visual-integrity-is-part-of-the-result",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Visual integrity is part of the result",
+    "text": "Visual integrity is part of the result\nThe ETF visualisation lecture asks whether a nonexpert can understand the graph. Check:\n\nPurpose, informative title and readable labels.\nUnits and denominator.\nComparable axis scale; start a bar chart at zero.\nA legend when there is more than one series.\nNo distorted sizes or selective categories.\n\nA clear chart still needs a sentence stating its main pattern and a limitation."
+  },
+  {
+    "objectID": "week1/slides.html#one-number-cannot-describe-a-distribution",
+    "href": "week1/slides.html#one-number-cannot-describe-a-distribution",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "One number cannot describe a distribution",
+    "text": "One number cannot describe a distribution\nNumerical description has three parts:\n\nCentre: mean and median describe a typical value.\nSpread: standard deviation and IQR describe variability.\nShape: symmetry, skewness and unusual values affect interpretation.\n\nETF Seminar Week 4 uses all three when comparing house prices by school zone. A chart shows features a single average can hide."
+  },
+  {
+    "objectID": "week1/slides.html#mean-median-and-mode",
+    "href": "week1/slides.html#mean-median-and-mode",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Mean, median and mode",
+    "text": "Mean, median and mode\n\nMean: sum of observations divided by their number, =AVERAGE(range). It uses every value and is affected by extreme prices.\nMedian: the middle ordered value, =MEDIAN(range). Half the values are at or below it.\nMode: the most frequent value, =MODE.SNGL(range). For prices with few repeats, a modal interval in a histogram is often more useful.\n\nIf a few very expensive houses pull the mean above the median, describe the distribution as right-skewed before choosing the headline statistic."
+  },
+  {
+    "objectID": "week1/slides.html#spread-standard-deviation-and-iqr",
+    "href": "week1/slides.html#spread-standard-deviation-and-iqr",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Spread: standard deviation and IQR",
+    "text": "Spread: standard deviation and IQR\nThe sample standard deviation measures how observations vary around the sample mean: =STDEV.S(range). It uses all values but responds to outliers.\nThe interquartile range is IQR = Q3 - Q1, the spread of the middle 50%. Use =QUARTILE.EXC(range,1) and =QUARTILE.EXC(range,3) for the ETF convention, and label that choice. Excel also has QUARTILE.INC; use one convention consistently.\nThe range, MAX - MIN, relies only on the two extremes. Give units for every spread statistic."
+  },
+  {
+    "objectID": "week1/slides.html#what-a-histogram-shows",
+    "href": "week1/slides.html#what-a-histogram-shows",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "What a histogram shows",
+    "text": "What a histogram shows\nA histogram groups a continuous variable into adjacent intervals. Its bars touch, and their pattern can reveal skewness, a long tail or unusual values. ETF groups Real Estate prices in AUD 500,000 bins, then sets the chart’s gap width to zero.\n\n\nETF Real Estate price histogram. The data are grouped into equal-width price bins."
+  },
+  {
+    "objectID": "week1/slides.html#what-a-box-plot-shows",
+    "href": "week1/slides.html#what-a-box-plot-shows",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "What a box plot shows",
+    "text": "What a box plot shows\nThe box spans Q1 to Q3, with the median inside. Whiskers and separate points show the range and unusual values under Excel’s box-plot rule. A side-by-side box plot compares centre, spread and outliers on one scale.\n\n\nETF comparison of property-price distributions inside and outside a school zone."
+  },
+  {
+    "objectID": "week1/slides.html#watch-me-group-summaries-and-a-box-plot",
+    "href": "week1/slides.html#watch-me-group-summaries-and-a-box-plot",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Watch me: group summaries and a box plot",
+    "text": "Watch me: group summaries and a box plot\nIn RealEstate, compare Price ($000s) for SchoolZone Yes and No. ETF Workshop Week 4 uses Data &gt; Data Analysis &gt; Descriptive Statistics for mean, median and sample standard deviation. Add Q1 and Q3 with formulas.\nFor the chart, put the two price groups in adjacent columns with clear headers, then choose Insert &gt; Statistical Chart &gt; Box & Whisker. Label the vertical axis Price (AUD thousands). The ToolPak provides summaries; the ordinary Excel chart displays the distribution."
+  },
+  {
+    "objectID": "week1/slides.html#now-you-try-compare-two-distributions",
+    "href": "week1/slides.html#now-you-try-compare-two-distributions",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Now you try: compare two distributions",
+    "text": "Now you try: compare two distributions\n\n\n\n\n\nCompare price for New = Yes and No. Produce a small table of COUNT, AVERAGE, MEDIAN, STDEV.S, Q1 and Q3, then make a side-by-side box plot. Which group has the higher typical price? Which has more spread? Identify one visible limitation."
+  },
+  {
+    "objectID": "week1/slides.html#build-a-one-slide-data-story",
+    "href": "week1/slides.html#build-a-one-slide-data-story",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Build a one-slide data story",
+    "text": "Build a one-slide data story\nA business data story has a repeatable order:\nQuestion → unit and population → chart and numerical summary → check → plain-language claim → limitation.\nFor the school-zone comparison, a higher sample median is a description of the observed properties. It does not by itself show that school-zone status caused the price difference; property size and location may also matter."
+  },
+  {
+    "objectID": "week1/slides.html#now-you-try-briefing-panel",
+    "href": "week1/slides.html#now-you-try-briefing-panel",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Now you try: briefing panel",
+    "text": "Now you try: briefing panel\n\n\n\n\n\nCreate a compact panel for the Real Estate question with one labelled categorical chart, one numerical distribution chart, two summary numbers and a two-sentence conclusion. Make the Excel working auditable from raw rows to chart."
+  },
+  {
+    "objectID": "week1/slides.html#optional-excel-practice",
+    "href": "week1/slides.html#optional-excel-practice",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Optional Excel practice",
+    "text": "Optional Excel practice\nThe Stores sheet also supports ETF Workshop Week 1 practice with VLOOKUP, INDEX/MATCH, IF, IFERROR, filters, COUNTIF and SUMIF. Use these when a business question needs a lookup or conditional summary. They are useful tools, but the core Week 1 story is choosing, constructing and interpreting summaries and charts."
+  },
+  {
+    "objectID": "week1/slides.html#close-what-must-be-true-of-your-chart",
+    "href": "week1/slides.html#close-what-must-be-true-of-your-chart",
+    "title": "ETX1100/ETX5900 Business Statistics",
+    "section": "Close: what must be true of your chart?",
+    "text": "Close: what must be true of your chart?\n\nThe chart type fits the variable.\nThe groups, counts and denominators are explicit.\nThe units, labels and scales are readable.\nThe written claim matches the plotted evidence.\nThe original rows and formulas remain available for checking."
   },
   {
     "objectID": "week2/index.html",
@@ -1799,235 +1645,193 @@
     "text": "Retrieval and closing checks\nHave Tried is nominal categorical; Income is an ordered category in bands, even though it describes money. Each Marketing row is one respondent. The business question determines which event is the outcome and which denominator belongs in the calculation. Joint probability uses an intersection; marginal probability ignores the other variable; union uses either event; conditional probability changes the reference group. Independence would require conditional and marginal rates to agree in the population. For Excel Normal areas, use NORM.DIST for a left cumulative area, subtract from 1 for a right tail, and NORM.INV for a percentile. A \\(t\\) distribution becomes relevant for mean inference with unknown population SD, under suitable sampling assumptions."
   },
   {
-    "objectID": "week3/slides.html#todays-journey",
-    "href": "week3/slides.html#todays-journey",
+    "objectID": "week3/slides.html#todays-question",
+    "href": "week3/slides.html#todays-question",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Today’s journey",
-    "text": "Today’s journey\n\nConnect population questions to random samples.\nRecognise bias and sampling variation.\nUse the law of large numbers and central limit theorem.\nBuild confidence intervals for means and proportions.\nExplain precision, confidence, and limitations in business language."
+    "section": "Today’s question",
+    "text": "Today’s question\nWhat can one sample tell us about a population, and how uncertain is that estimate?\nThe lecture follows the ETF sequence: sampling design → sampling distribution → standard error → confidence interval. We apply the same logic to a mean and a proportion."
   },
   {
-    "objectID": "week3/slides.html#retrieval-check",
-    "href": "week3/slides.html#retrieval-check",
+    "objectID": "week3/slides.html#the-direction-of-inference",
+    "href": "week3/slides.html#the-direction-of-inference",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Retrieval check",
-    "text": "Retrieval check\n\nWhat is the difference between a parameter and a statistic?\nWhat does P(A\\mid B) do to the denominator?\nWhen is a t distribution useful?\nWhy does a large dataset not automatically represent its target population?"
+    "section": "The direction of inference",
+    "text": "The direction of inference\nA population contains the units about which we want a conclusion. We observe a sample, compute a statistic, and use it to estimate a population parameter.\n\n\n\nPopulation parameter\nSample statistic\n\n\n\n\nMean \\mu\nMean \\bar x\n\n\nStandard deviation \\sigma\nStandard deviation s\n\n\nProportion \\pi\nProportion \\hat p=x/n\n\n\n\nA number in Excel is a sample statistic until the population and sampling method justify a broader claim."
   },
   {
-    "objectID": "week3/slides.html#population-to-sample-and-back",
-    "href": "week3/slides.html#population-to-sample-and-back",
+    "objectID": "week3/slides.html#why-sample-selection-matters",
+    "href": "week3/slides.html#why-sample-selection-matters",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Population to sample and back",
-    "text": "Population to sample and back\n\nDefine the target population.\nSelect a sample using a defensible process.\nCalculate a sample statistic.\nUse the statistic to estimate a population parameter.\nQuantify uncertainty and communicate limitations.\n\nInference is only as credible as both the sampling process and the analysis."
+    "section": "Why sample selection matters",
+    "text": "Why sample selection matters\nETF’s simple random sample gives each population member an equal chance of selection. The goal is to reduce bias, systematic favouring of some outcomes.\nAn in-app food-delivery poll misses nonusers. A train survey only at 8–9 am Friday may miss other travellers. A large sample from the wrong frame can still give an invalid population conclusion."
   },
   {
-    "objectID": "week3/slides.html#notation-for-means",
-    "href": "week3/slides.html#notation-for-means",
+    "objectID": "week3/slides.html#watch-me-diagnose-a-sample",
+    "href": "week3/slides.html#watch-me-diagnose-a-sample",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Notation for means",
-    "text": "Notation for means\n\n\n\nPopulation parameter\nSample statistic\n\n\n\n\nmean \\mu\nmean \\bar{x}\n\n\nstandard deviation \\sigma\nstandard deviation s\n\n\n\nGreek letters describe the population; Roman letters describe the observed sample."
+    "section": "Watch me: diagnose a sample",
+    "text": "Watch me: diagnose a sample\nA customer-list survey estimates a population defined by the list. Check:\n\nWho is in the target population?\nWho could actually be selected?\nHow were units selected?\nWho did not respond or was not measured?\nCould the recorded variable differ from the intended one?\n\nThis check belongs beside every interval, because a narrow numerical interval cannot repair selection or measurement bias."
   },
   {
-    "objectID": "week3/slides.html#notation-for-proportions",
-    "href": "week3/slides.html#notation-for-proportions",
+    "objectID": "week3/slides.html#now-you-try-improve-a-survey",
+    "href": "week3/slides.html#now-you-try-improve-a-survey",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Notation for proportions",
-    "text": "Notation for proportions\n\nPopulation proportion: \\pi.\nSample count with the characteristic: X.\nSample size: n.\nSample proportion:\n\n\\hat p=\\frac{X}{n}.\nA proportion must lie between 0 and 1."
+    "section": "Now you try: improve a survey",
+    "text": "Now you try: improve a survey\n\n\n\n\n\nA retailer emails only loyalty-card members to estimate all customers’ satisfaction. Identify the target population, sampling frame and likely bias. Propose one practical improvement and state which limitation remains."
   },
   {
-    "objectID": "week3/slides.html#sampling-bias",
-    "href": "week3/slides.html#sampling-bias",
+    "objectID": "week3/slides.html#the-sampling-distribution",
+    "href": "week3/slides.html#the-sampling-distribution",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Sampling bias",
-    "text": "Sampling bias\nBias is a systematic tendency to over- or under-represent the target quantity.\nCommon sources include:\n\nundercoverage;\nvoluntary response;\nnon-response;\nconvenience sampling; and\nleading or ambiguous measurement.\n\nIncreasing n reduces random variation, not systematic bias."
+    "section": "The sampling distribution",
+    "text": "The sampling distribution\nETF defines the sampling distribution of \\bar x as the distribution of all possible sample means from all possible samples of a fixed size n.\nWe observe only one mean, but another random sample would usually give another value. Across repeated samples, the mean of \\bar x is the population mean \\mu; the SD of \\bar x is the standard error:\nSE(\\bar x)=\\frac{\\sigma}{\\sqrt n}.\nThis is a statement about variation between sample means, not variation between individual observations."
   },
   {
-    "objectID": "week3/slides.html#watch-me-diagnose-a-survey",
-    "href": "week3/slides.html#watch-me-diagnose-a-survey",
+    "objectID": "week3/slides.html#shape-and-the-central-limit-theorem",
+    "href": "week3/slides.html#shape-and-the-central-limit-theorem",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: diagnose a survey",
-    "text": "Watch me: diagnose a survey\nAn app asks active users, “How satisfied are you with our excellent new design?”\nIdentify:\n\ntarget population;\nsampling frame;\nlikely missing users;\nwording bias; and\na more credible design."
+    "section": "Shape and the Central Limit Theorem",
+    "text": "Shape and the Central Limit Theorem\nIf the population is Normal, the sample mean is Normal for any sample size. For a sufficiently large independent sample, the Central Limit Theorem makes the distribution of \\bar x approximately Normal even when the individual data are not Normal.\nETF uses n\\ge 30 as a useful classroom guide, with a separate check for severe skewness or outliers. Larger n reduces SE because of the square root in the denominator."
   },
   {
-    "objectID": "week3/slides.html#now-you-try-redesign-the-evidence",
-    "href": "week3/slides.html#now-you-try-redesign-the-evidence",
+    "objectID": "week3/slides.html#watch-me-change-sample-size",
+    "href": "week3/slides.html#watch-me-change-sample-size",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: redesign the evidence",
-    "text": "Now you try: redesign the evidence\n\n\n\n\n\nA smartwatch company emails only customers who completed a workout yesterday and asks whether its product increases exercise.\n\nIdentify two sources of bias.\nExplain why a very large response does not fix them.\nPropose a sampling and measurement plan.\nState the population to which your conclusion would apply."
+    "section": "Watch me: change sample size",
+    "text": "Watch me: change sample size\nSuppose \\sigma=24 units. Compare the standard error of a mean from n=36 and n=144.\nThe formulas are 24/SQRT(36) and 24/SQRT(144). Quadrupling the sample size halves the standard error. It does not remove selection bias."
   },
   {
-    "objectID": "week3/slides.html#statistics-vary-from-sample-to-sample",
-    "href": "week3/slides.html#statistics-vary-from-sample-to-sample",
+    "objectID": "week3/slides.html#now-you-try-separate-spread-from-precision",
+    "href": "week3/slides.html#now-you-try-separate-spread-from-precision",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Statistics vary from sample to sample",
-    "text": "Statistics vary from sample to sample\nIf we repeatedly take random samples of the same size, we get different values of \\bar{x} and \\hat p.\nA sampling distribution describes those possible statistic values—not the distribution of individual observations.\nThis sampling variation is the uncertainty quantified by standard errors and confidence intervals."
-  },
-  {
-    "objectID": "week3/slides.html#law-of-large-numbers",
-    "href": "week3/slides.html#law-of-large-numbers",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Law of large numbers",
-    "text": "Law of large numbers\nAs a random sample grows, the sample mean tends to settle closer to the population mean.\n\nIt does not say every larger sample is closer.\nIt does not repair biased sampling.\nIt describes long-run behaviour under repeated random sampling."
-  },
-  {
-    "objectID": "week3/slides.html#central-limit-theorem",
-    "href": "week3/slides.html#central-limit-theorem",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Central limit theorem",
-    "text": "Central limit theorem\nFor sufficiently large random samples, the sampling distribution of the mean is approximately Normal:\n\\bar X\\approx N\\left(\\mu,\\frac{\\sigma}{\\sqrt n}\\right).\nThe approximation concerns sample means, even when individual observations are not Normal."
-  },
-  {
-    "objectID": "week3/slides.html#standard-error-of-a-mean",
-    "href": "week3/slides.html#standard-error-of-a-mean",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Standard error of a mean",
-    "text": "Standard error of a mean\nThe standard deviation of the sampling distribution is the standard error:\nSE(\\bar X)=\\frac{\\sigma}{\\sqrt n}\\quad\\text{or estimated by}\\quad\\frac{s}{\\sqrt n}.\nAs n quadruples, the standard error halves. Precision improves with the square root of sample size."
-  },
-  {
-    "objectID": "week3/slides.html#watch-me-compare-sample-sizes",
-    "href": "week3/slides.html#watch-me-compare-sample-sizes",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: compare sample sizes",
-    "text": "Watch me: compare sample sizes\nSuppose \\sigma=20.\n\nAt n=25, SE=20/\\sqrt{25}=4.\nAt n=100, SE=20/\\sqrt{100}=2.\n\nThe population variability did not change; uncertainty in the sample mean did."
-  },
-  {
-    "objectID": "week3/slides.html#now-you-try-sampling-variation",
-    "href": "week3/slides.html#now-you-try-sampling-variation",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: sampling variation",
-    "text": "Now you try: sampling variation\n\n\n\n\n\nAssume transaction values have \\sigma=48.\n\nCalculate SE(\\bar X) for n=36 and n=144.\nWhich sample mean is more precise?\nHow much must n change to halve the standard error?\nWould either calculation remove non-response bias?"
-  },
-  {
-    "objectID": "week3/slides.html#sampling-distribution-of-a-proportion",
-    "href": "week3/slides.html#sampling-distribution-of-a-proportion",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Sampling distribution of a proportion",
-    "text": "Sampling distribution of a proportion\nFor a sufficiently large random sample:\n\\hat p\\approx N\\left(\\pi,\\sqrt{\\frac{\\pi(1-\\pi)}{n}}\\right).\nFor estimation, check using the observed proportion:\nn\\hat p\\ge5,\\qquad n(1-\\hat p)\\ge5."
+    "section": "Now you try: separate spread from precision",
+    "text": "Now you try: separate spread from precision\n\n\n\n\n\nA sample SD is 18 units. Calculate s/\\sqrt n for n=25 and n=100. Explain in a sentence why the sample SD and the standard error answer different questions."
   },
   {
     "objectID": "week3/slides.html#point-estimate-plus-margin-of-error",
     "href": "week3/slides.html#point-estimate-plus-margin-of-error",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Point estimate plus margin of error",
-    "text": "Point estimate plus margin of error\nEvery confidence interval has the same architecture:\n\\text{estimate}\\pm\\text{critical value}\\times\\text{standard error}.\n\nThe point estimate identifies the centre.\nThe margin of error quantifies sampling uncertainty.\nThe confidence level controls the long-run coverage rate."
+    "text": "Point estimate plus margin of error\nETF calls the observed \\bar x a point estimate. Because it varies from sample to sample, report a range of plausible values for \\mu:\n\\text{confidence interval}=\\text{estimate}\\ \\pm\\ \\text{critical value}\\times SE.\nThe confidence level describes the long-run success of this sampling-and-interval procedure. For 95% confidence, 2.5% of the reference distribution lies in each tail."
   },
   {
-    "objectID": "week3/slides.html#known-versus-unknown-sigma",
-    "href": "week3/slides.html#known-versus-unknown-sigma",
+    "objectID": "week3/slides.html#the-middle-95",
+    "href": "week3/slides.html#the-middle-95",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Known versus unknown \\sigma",
-    "text": "Known versus unknown \\sigma\nFor a population mean:\n\\bar{x}\\pm z^*\\frac{\\sigma}{\\sqrt n}\\qquad(\\sigma\\text{ known}),\n\\bar{x}\\pm t^*\\frac{s}{\\sqrt n}\\qquad(\\sigma\\text{ unknown},\\ df=n-1).\nIn business applications, \\sigma is usually unknown, so the t interval is common."
+    "section": "The middle 95%",
+    "text": "The middle 95%\n\nETF confidence-area diagram: the central 95 percent and two 2.5 percent tails.The diagram explains why Excel uses the 97.5th percentile for the upper critical value. The centre is the interval’s coverage target across repeated samples."
   },
   {
-    "objectID": "week3/slides.html#critical-values-in-excel",
-    "href": "week3/slides.html#critical-values-in-excel",
+    "objectID": "week3/slides.html#known-population-sd-use-z",
+    "href": "week3/slides.html#known-population-sd-use-z",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Critical values in Excel",
-    "text": "Critical values in Excel\nFor confidence level 1-\\alpha:\n\nz^*: =NORM.S.INV(1-alpha/2)\nt^*: =T.INV(1-alpha/2,n-1)\n\nFor 95% confidence, z^*\\approx1.96. A t^* value is larger for small samples and approaches 1.96 as n grows."
+    "section": "Known population SD: use z",
+    "text": "Known population SD: use z\nWhen \\sigma is genuinely known and the sampling conditions hold:\n\\bar x\\pm z^*\\frac{\\sigma}{\\sqrt n},\n\\qquad z^*=\\texttt{NORM.S.INV}(0.975)\\approx1.960\n\\quad\\text{for 95\\% confidence.}\nThe units of the interval match the units of \\bar x. The standard error becomes smaller as n grows."
   },
   {
-    "objectID": "week3/slides.html#watch-me-audit-balances-known-sigma",
-    "href": "week3/slides.html#watch-me-audit-balances-known-sigma",
+    "objectID": "week3/slides.html#unknown-population-sd-use-t",
+    "href": "week3/slides.html#unknown-population-sd-use-t",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: audit balances, known \\sigma",
-    "text": "Watch me: audit balances, known \\sigma\nAn audit sample has n=80, \\bar{x}=86.05, and known \\sigma=22.38.\nIn Excel:\n\ncompute =NORM.S.INV(0.975);\ncompute =22.38/SQRT(80);\nmultiply for the margin of error; and\ncalculate lower and upper bounds.\n\nInterpret the interval for the population mean balance."
+    "section": "Unknown population SD: use t",
+    "text": "Unknown population SD: use t\nUsually \\sigma is unknown, so ETF replaces it with the sample SD s and uses a t critical value with n-1 degrees of freedom:\n\\bar x\\pm t^*_{n-1}\\frac{s}{\\sqrt n},\n\\qquad t^*_{n-1}=\\texttt{T.INV}(0.975,n-1).\nIn Excel, T.INV.2T(0.05,n-1) gives the same positive 95% critical value. The t distribution’s extra tail area reflects estimating the SD."
   },
   {
-    "objectID": "week3/slides.html#now-you-try-audit-balances-unknown-sigma",
-    "href": "week3/slides.html#now-you-try-audit-balances-unknown-sigma",
+    "objectID": "week3/slides.html#watch-me-an-audit-interval",
+    "href": "week3/slides.html#watch-me-an-audit-interval",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: audit balances, unknown \\sigma",
-    "text": "Now you try: audit balances, unknown \\sigma\n\n\n\n\n\nUse n=80, \\bar{x}=86.05, and s=24.02.\n\nConstruct a 95% t interval.\nIdentify df and the Excel critical-value formula.\nState the margin of error.\nInterpret the interval in dollars and in context."
+    "section": "Watch me: an audit interval",
+    "text": "Watch me: an audit interval\nETF Workshop Week 5 asks about mean outstanding customer balances. A random sample has n=80 and \\bar x=\\$86.05.\n\nIf a historical population SD of \\$22.38 is truly known, use z^*\\sigma/\\sqrt{80}.\nIf only the sample SD \\$24.02 is known, use t^*_{79}s/\\sqrt{80}.\n\nBuild separate labelled cells for estimate, SD, n, critical value, SE, lower and upper bounds. The choice of critical value follows the source of the SD."
   },
   {
-    "objectID": "week3/slides.html#interpreting-confidence-correctly",
-    "href": "week3/slides.html#interpreting-confidence-correctly",
+    "objectID": "week3/slides.html#now-you-try-two-intervals-one-question",
+    "href": "week3/slides.html#now-you-try-two-intervals-one-question",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Interpreting confidence correctly",
-    "text": "Interpreting confidence correctly\nA 95% confidence method captures the fixed population parameter in about 95% of repeated random samples.\nFor the interval already calculated, say:\n\nWe are 95% confident that the population mean lies between the calculated bounds.\n\nDo not say 95% of individual observations lie inside the interval."
+    "section": "Now you try: two intervals, one question",
+    "text": "Now you try: two intervals, one question\n\n\n\n\n\nUse the audit figures in Week 3 estimation data. Construct both 95% intervals in Excel and explain which SD assumption each uses. Compare their widths without calling either interval a range for 95% of individual balances."
   },
   {
-    "objectID": "week3/slides.html#now-you-try-confidence-versus-precision",
-    "href": "week3/slides.html#now-you-try-confidence-versus-precision",
+    "objectID": "week3/slides.html#from-raw-rows-to-the-mean-interval",
+    "href": "week3/slides.html#from-raw-rows-to-the-mean-interval",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: confidence versus precision",
-    "text": "Now you try: confidence versus precision\n\n\n\n\n\nRepeat the audit interval at 90% and 99% confidence.\n\nRank the three intervals by width.\nExplain the confidence–precision trade-off.\nPredict what happens if n decreases.\nIdentify one aspect of data quality that interval width does not capture."
+    "section": "From raw rows to the mean interval",
+    "text": "From raw rows to the mean interval\nThe RealEstate sheet in Week 3 proportions data holds 329 properties. For a price interval, do not start with an unlabeled supplied number:\n\nn = COUNT(A2:A330)\n\\bar x = AVERAGE(A2:A330)\ns = STDEV.S(A2:A330)\n\nCheck Price units before writing the conclusion. If comparing school-zone groups, use group-specific data and denominators, and do not treat overlap of separate intervals as a formal test of a difference."
   },
   {
-    "objectID": "week3/slides.html#interval-for-a-population-proportion",
-    "href": "week3/slides.html#interval-for-a-population-proportion",
+    "objectID": "week3/slides.html#watch-me-change-confidence-and-sample-size",
+    "href": "week3/slides.html#watch-me-change-confidence-and-sample-size",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Interval for a population proportion",
-    "text": "Interval for a population proportion\nWhen the large-count condition is satisfied:\n\\hat p\\pm z^*\\sqrt{\\frac{\\hat p(1-\\hat p)}{n}}.\nThe standard error uses \\hat p because the unknown \\pi is the quantity being estimated."
+    "section": "Watch me: change confidence and sample size",
+    "text": "Watch me: change confidence and sample size\nWith the same point estimate and SD, change 95% to 90% and 99%. A higher confidence level gives a larger critical value and wider interval.\nThen change n while holding the SD fixed. More observations reduce the standard error. These are precision effects; neither change fixes a biased sample."
   },
   {
-    "objectID": "week3/slides.html#watch-me-recruitment-service-use",
-    "href": "week3/slides.html#watch-me-recruitment-service-use",
+    "objectID": "week3/slides.html#now-you-try-audit-the-conclusion",
+    "href": "week3/slides.html#now-you-try-audit-the-conclusion",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: recruitment-service use",
-    "text": "Watch me: recruitment-service use\nOf 600 surveyed employers, 126 used a recruitment service recently.\n\n\\hat p=126/600=0.21.\nCheck 600(0.21) and 600(0.79).\nUse z^*=1.96 for 95% confidence.\nCalculate the standard error and bounds.\nFormat the result as percentages."
+    "section": "Now you try: audit the conclusion",
+    "text": "Now you try: audit the conclusion\n\n\n\n\n\nWrite a 95% mean-interval conclusion for a named population. Then correct this claim: “95% of the individual balances lie inside our confidence interval.” Explain which distribution the interval describes."
   },
   {
-    "objectID": "week3/slides.html#now-you-try-product-trial-proportion",
-    "href": "week3/slides.html#now-you-try-product-trial-proportion",
+    "objectID": "week3/slides.html#a-proportion-estimates-how-common-an-event-is",
+    "href": "week3/slides.html#a-proportion-estimates-how-common-an-event-is",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: product trial proportion",
-    "text": "Now you try: product trial proportion\n\n\n\n\n\nOpen week3-proportions-data.xlsx, sheet Marketing.\n\nFind n, the count who have tried the product, and \\hat p.\nCheck the large-count condition.\nConstruct a 95% confidence interval for \\pi.\nDoes the interval suggest that more than half the market has tried it?\nState a conclusion and one sampling limitation."
+    "section": "A proportion estimates how common an event is",
+    "text": "A proportion estimates how common an event is\nETF uses \\pi for a population proportion and \\hat p=x/n for the sample proportion, where x is the count with a named characteristic.\nFor a shopper outcome, define both the event and the denominator. \\hat p lies between 0 and 1. A sample proportion also varies across repeated samples."
   },
   {
-    "objectID": "week3/slides.html#compare-groups-carefully",
-    "href": "week3/slides.html#compare-groups-carefully",
+    "objectID": "week3/slides.html#the-proportion-standard-error",
+    "href": "week3/slides.html#the-proportion-standard-error",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Compare groups carefully",
-    "text": "Compare groups carefully\nSeparate confidence intervals can describe subgroup proportions, but visual overlap is not a formal test of a difference.\nBefore comparing groups, ask:\n\nWere both groups sampled credibly?\nAre sample sizes adequate?\nAre categories defined consistently?\nIs the practical difference meaningful?"
+    "section": "The proportion standard error",
+    "text": "The proportion standard error\nFor a large enough sample, the distribution of \\hat p is approximately Normal. For an interval, use the observed proportion in the estimated SE:\n\\widehat{SE}(\\hat p)=\n\\sqrt{\\frac{\\hat p(1-\\hat p)}{n}}.\nETF’s classroom check requires both n\\hat p\\ge5 and n(1-\\hat p)\\ge5. These are counts of observed successes and failures. A rare event near the threshold deserves a cautious interpretation."
   },
   {
-    "objectID": "week3/slides.html#now-you-try-subgroup-intervals",
-    "href": "week3/slides.html#now-you-try-subgroup-intervals",
+    "objectID": "week3/slides.html#the-95-proportion-interval",
+    "href": "week3/slides.html#the-95-proportion-interval",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: subgroup intervals",
-    "text": "Now you try: subgroup intervals\n\n\n\n\n\nFor female and male respondents separately:\n\ncalculate n, X, and \\hat p for product trial;\nconstruct a 95% interval for each population proportion;\ncompare centres and widths; and\nwrite a cautious conclusion without claiming causation."
+    "section": "The 95% proportion interval",
+    "text": "The 95% proportion interval\n\\hat p\\pm z^*\n\\sqrt{\\frac{\\hat p(1-\\hat p)}{n}},\n\\qquad z^*=\\texttt{NORM.S.INV}(0.975).\nThe result is a proportion. Multiply endpoints by 100 to report percentages, and use the same denominator in the estimate and standard error. This familiar interval is an approximation, especially for very rare outcomes."
   },
   {
-    "objectID": "week3/slides.html#watch-me-build-an-excel-template",
-    "href": "week3/slides.html#watch-me-build-an-excel-template",
+    "objectID": "week3/slides.html#watch-me-marketing-from-raw-records",
+    "href": "week3/slides.html#watch-me-marketing-from-raw-records",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Watch me: build an Excel template",
-    "text": "Watch me: build an Excel template\nCreate labelled input cells for:\n\nestimate, standard deviation or count, n, and confidence level;\ncritical value and standard error;\nmargin of error; and\nlower and upper bounds.\n\nKeep inputs visually separate from formulas. Add an assumption check and a plain-language conclusion beneath the calculations."
+    "section": "Watch me: Marketing from raw records",
+    "text": "Watch me: Marketing from raw records\nIn Marketing, each row is a respondent and Have Tried is column E. ETF’s seminar asks for the proportion who have tried the product.\nCount Yes with COUNTIF(E2:E857,\"Yes\"), count respondents with COUNTA(A2:A857), calculate \\hat p=x/n, check x and n-x, then build the interval cell by cell. A PivotTable can check the count; the formulas make the interval auditable."
   },
   {
-    "objectID": "week3/slides.html#now-you-try-scenario-analysis",
-    "href": "week3/slides.html#now-you-try-scenario-analysis",
+    "objectID": "week3/slides.html#now-you-try-change-the-population",
+    "href": "week3/slides.html#now-you-try-change-the-population",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Now you try: scenario analysis",
-    "text": "Now you try: scenario analysis\n\n\n\n\n\nUsing your template, hold the estimate fixed and compare:\n\n90%, 95%, and 99% confidence;\nsample sizes n=50, 200, and 800; and\nmean versus proportion standard errors.\n\nWrite two general rules a manager could use when planning a study."
+    "section": "Now you try: change the population",
+    "text": "Now you try: change the population\n\n\n\n\n\nEstimate the proportion of female respondents who have tried the product. Filter or use COUNTIFS for the numerator and COUNTIF for the female denominator. Construct a 95% interval and write a sentence that names the female customer population, not all customers."
   },
   {
-    "objectID": "week3/slides.html#common-traps",
-    "href": "week3/slides.html#common-traps",
+    "objectID": "week3/slides.html#interpreting-95-confidence",
+    "href": "week3/slides.html#interpreting-95-confidence",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Common traps",
-    "text": "Common traps\n\nConfusing the distribution of observations with the sampling distribution.\nAssuming large n removes selection or measurement bias.\nUsing z when \\sigma is unknown without justification.\nForgetting the square root of n.\nInterpreting a confidence interval as containing most individual values.\nReporting bounds without units, population, or business meaning."
+    "section": "Interpreting 95% confidence",
+    "text": "Interpreting 95% confidence\nA defensible conclusion says: “Using this sampling procedure, we are 95% confident that the population proportion [or mean] is between the two reported bounds.”\nIt does not assign 95% probability to a fixed parameter after the sample is observed. It does not make the sample representative. State sampling, independence, approximation and measurement limitations alongside the number."
   },
   {
-    "objectID": "week3/slides.html#closing-check",
-    "href": "week3/slides.html#closing-check",
+    "objectID": "week3/slides.html#closing-workflow",
+    "href": "week3/slides.html#closing-workflow",
     "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Closing check",
-    "text": "Closing check\nCan you:\n\ndistinguish bias from random sampling variation?\nexplain the law of large numbers and central limit theorem?\ncalculate and interpret a standard error?\nchoose a mean or proportion interval and its critical value?\nexplain how confidence level and sample size affect width?\ncommunicate an interval as evidence, not certainty?"
+    "section": "Closing workflow",
+    "text": "Closing workflow\nPopulation and event → sampling design → count or mean from raw rows → standard error and conditions → critical value → interval → interpretation and limitation.\nNext week, a hypothesis test asks whether the data provide enough evidence for a particular claim about that parameter."
   },
   {
     "objectID": "week4/index.html",
     "href": "week4/index.html",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "",
-    "text": "Translate business claims into null and alternative hypotheses.\nConduct one- and two-sided tests for population means and proportions.\nInterpret p-values, decisions and conclusions in context.\nExplain Type I and Type II errors and practical significance."
+    "text": "Translate business claims into null and alternative hypotheses.\nConduct one- and two-sided tests for population means and proportions.\nCompare two independent means with Excel’s unequal-variance t-test.\nInterpret p-values, decisions and conclusions in context.\nExplain Type I and Type II errors and compare statistical with practical significance."
   },
   {
     "objectID": "week4/index.html#what-you-will-learn-this-week",
     "href": "week4/index.html#what-you-will-learn-this-week",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "",
-    "text": "Translate business claims into null and alternative hypotheses.\nConduct one- and two-sided tests for population means and proportions.\nInterpret p-values, decisions and conclusions in context.\nExplain Type I and Type II errors and practical significance."
+    "text": "Translate business claims into null and alternative hypotheses.\nConduct one- and two-sided tests for population means and proportions.\nCompare two independent means with Excel’s unequal-variance t-test.\nInterpret p-values, decisions and conclusions in context.\nExplain Type I and Type II errors and compare statistical with practical significance."
   },
   {
     "objectID": "week4/index.html#class-workbooks",
