@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.10.20">
 
-  <meta name="author" content="Week 3: Sampling and estimation">
+  <meta name="author" content="Week 3: Sampling and confidence intervals">
   <meta name="dcterms.date" content="2026-12-08">
   <title>Business Statistics – ETX1100/ETX5900 Business Statistics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -161,7 +161,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Week 3: Sampling and estimation 
+Week 3: Sampling and confidence intervals 
 </div>
 </div>
 </div>
@@ -174,52 +174,27 @@ Week 3: Sampling and estimation
 <nav role="doc-toc"> 
 <h2 id="toc-title">Outline</h2>
 <ul>
-<li><a href="#/samples-and-sampling" id="/toc-samples-and-sampling">Samples and sampling</a></li>
-<li><a href="#/sampling-distributions" id="/toc-sampling-distributions">Sampling distributions</a></li>
-<li><a href="#/confidence-intervals-for-means" id="/toc-confidence-intervals-for-means">Confidence intervals for means</a></li>
-<li><a href="#/confidence-intervals-for-proportions" id="/toc-confidence-intervals-for-proportions">Confidence intervals for proportions</a></li>
-<li><a href="#/reusable-estimation-workflow" id="/toc-reusable-estimation-workflow">Reusable estimation workflow</a></li>
+<li><a href="#/from-population-to-sample" id="/toc-from-population-to-sample">From population to sample</a></li>
+<li><a href="#/why-statistics-vary" id="/toc-why-statistics-vary">Why statistics vary</a></li>
+<li><a href="#/intervals-for-a-mean" id="/toc-intervals-for-a-mean">Intervals for a mean</a></li>
+<li><a href="#/intervals-for-a-proportion" id="/toc-intervals-for-a-proportion">Intervals for a proportion</a></li>
 </ul>
 </nav>
 </section>
-<section id="todays-journey" class="slide level2">
-<h2>Today’s journey</h2>
-<ol type="1">
-<li>Connect population questions to random samples.</li>
-<li>Recognise bias and sampling variation.</li>
-<li>Use the law of large numbers and central limit theorem.</li>
-<li>Build confidence intervals for means and proportions.</li>
-<li>Explain precision, confidence, and limitations in business language.</li>
-</ol>
-<!-- Springboards: ETF W5 seminar/workshop and ETF W7 confidence-interval material. -->
+<section id="todays-question" class="slide level2">
+<h2>Today’s question</h2>
+<p><strong>What can one sample tell us about a population, and how uncertain is that estimate?</strong></p>
+<p>The lecture follows the ETF sequence: sampling design → sampling distribution → standard error → confidence interval. We apply the same logic to a mean and a proportion.</p>
+<!-- Lecture spine: ETF Seminar Week 5 pp. 6–28 and Seminar Week 7 pp. 6–13. Workshop inserts: ETF Workshop Week 5 pp. 6–7 and Workshop Week 7 pp. 13–15. -->
 </section>
 <section>
-<section id="samples-and-sampling" class="title-slide slide level1 center">
-<h1>Samples and sampling</h1>
+<section id="from-population-to-sample" class="title-slide slide level1 center">
+<h1>From population to sample</h1>
 
 </section>
-<section id="retrieval-check" class="slide level2">
-<h2>Retrieval check</h2>
-<ul>
-<li>What is the difference between a parameter and a statistic?</li>
-<li>What does <span class="math inline">P(A\mid B)</span> do to the denominator?</li>
-<li>When is a <span class="math inline">t</span> distribution useful?</li>
-<li>Why does a large dataset not automatically represent its target population?</li>
-</ul>
-</section>
-<section id="population-to-sample-and-back" class="slide level2">
-<h2>Population to sample and back</h2>
-<ol type="1">
-<li>Define the <strong>target population</strong>.</li>
-<li>Select a sample using a defensible process.</li>
-<li>Calculate a sample statistic.</li>
-<li>Use the statistic to estimate a population parameter.</li>
-<li>Quantify uncertainty and communicate limitations.</li>
-</ol>
-<p>Inference is only as credible as both the sampling process and the analysis.</p>
-</section>
-<section id="notation-for-means" class="slide level2">
-<h2>Notation for means</h2>
+<section id="the-direction-of-inference" class="slide level2">
+<h2>The direction of inference</h2>
+<p>A <strong>population</strong> contains the units about which we want a conclusion. We observe a <strong>sample</strong>, compute a <strong>statistic</strong>, and use it to estimate a population <strong>parameter</strong>.</p>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -229,330 +204,200 @@ Week 3: Sampling and estimation
 </thead>
 <tbody>
 <tr class="odd">
-<td>mean <span class="math inline">\mu</span></td>
-<td>mean <span class="math inline">\bar{x}</span></td>
+<td>Mean <span class="math inline">\mu</span></td>
+<td>Mean <span class="math inline">\bar x</span></td>
 </tr>
 <tr class="even">
-<td>standard deviation <span class="math inline">\sigma</span></td>
-<td>standard deviation <span class="math inline">s</span></td>
+<td>Standard deviation <span class="math inline">\sigma</span></td>
+<td>Standard deviation <code>s</code></td>
+</tr>
+<tr class="odd">
+<td>Proportion <span class="math inline">\pi</span></td>
+<td>Proportion <span class="math inline">\hat p=x/n</span></td>
 </tr>
 </tbody>
 </table>
-<p>Greek letters describe the population; Roman letters describe the observed sample.</p>
+<p>A number in Excel is a sample statistic until the population and sampling method justify a broader claim.</p>
 </section>
-<section id="notation-for-proportions" class="slide level2">
-<h2>Notation for proportions</h2>
-<ul>
-<li>Population proportion: <span class="math inline">\pi</span>.</li>
-<li>Sample count with the characteristic: <span class="math inline">X</span>.</li>
-<li>Sample size: <span class="math inline">n</span>.</li>
-<li>Sample proportion:</li>
-</ul>
-<p><span class="math display">\hat p=\frac{X}{n}.</span></p>
-<p>A proportion must lie between 0 and 1.</p>
+<section id="why-sample-selection-matters" class="slide level2">
+<h2>Why sample selection matters</h2>
+<p>ETF’s simple random sample gives each population member an equal chance of selection. The goal is to reduce <strong>bias</strong>, systematic favouring of some outcomes.</p>
+<p>An in-app food-delivery poll misses nonusers. A train survey only at 8–9 am Friday may miss other travellers. A large sample from the wrong frame can still give an invalid population conclusion.</p>
 </section>
-<section id="sampling-bias" class="slide level2">
-<h2>Sampling bias</h2>
-<p>Bias is a systematic tendency to over- or under-represent the target quantity.</p>
-<p>Common sources include:</p>
-<ul>
-<li>undercoverage;</li>
-<li>voluntary response;</li>
-<li>non-response;</li>
-<li>convenience sampling; and</li>
-<li>leading or ambiguous measurement.</li>
-</ul>
-<p>Increasing <span class="math inline">n</span> reduces random variation, not systematic bias.</p>
+<section id="watch-me-diagnose-a-sample" class="slide level2">
+<h2>Watch me: diagnose a sample</h2>
+<p>A customer-list survey estimates a population defined by the list. Check:</p>
+<ol type="1">
+<li>Who is in the target population?</li>
+<li>Who could actually be selected?</li>
+<li>How were units selected?</li>
+<li>Who did not respond or was not measured?</li>
+<li>Could the recorded variable differ from the intended one?</li>
+</ol>
+<p>This check belongs beside every interval, because a narrow numerical interval cannot repair selection or measurement bias.</p>
 </section>
-<section id="watch-me-diagnose-a-survey" class="slide level2">
-<h2>Watch me: diagnose a survey</h2>
-<p>An app asks active users, “How satisfied are you with our excellent new design?”</p>
-<p>Identify:</p>
-<ul>
-<li>target population;</li>
-<li>sampling frame;</li>
-<li>likely missing users;</li>
-<li>wording bias; and</li>
-<li>a more credible design.</li>
-</ul>
-</section>
-<section id="now-you-try-redesign-the-evidence" class="slide level2">
-<h2>Now you try: redesign the evidence</h2>
+<section id="now-you-try-improve-a-survey" class="slide level2">
+<h2>Now you try: improve a survey</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f78966a1" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_90c63f88" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>A smartwatch company emails only customers who completed a workout yesterday and asks whether its product increases exercise.</p>
-<ol type="1">
-<li>Identify two sources of bias.</li>
-<li>Explain why a very large response does not fix them.</li>
-<li>Propose a sampling and measurement plan.</li>
-<li>State the population to which your conclusion would apply.</li>
-</ol>
+<p>A retailer emails only loyalty-card members to estimate all customers’ satisfaction. Identify the target population, sampling frame and likely bias. Propose one practical improvement and state which limitation remains.</p>
 </section></section>
 <section>
-<section id="sampling-distributions" class="title-slide slide level1 center">
-<h1>Sampling distributions</h1>
+<section id="why-statistics-vary" class="title-slide slide level1 center">
+<h1>Why statistics vary</h1>
 
 </section>
-<section id="statistics-vary-from-sample-to-sample" class="slide level2">
-<h2>Statistics vary from sample to sample</h2>
-<p>If we repeatedly take random samples of the same size, we get different values of <span class="math inline">\bar{x}</span> and <span class="math inline">\hat p</span>.</p>
-<p>A <strong>sampling distribution</strong> describes those possible statistic values—not the distribution of individual observations.</p>
-<p>This sampling variation is the uncertainty quantified by standard errors and confidence intervals.</p>
+<section id="the-sampling-distribution" class="slide level2">
+<h2>The sampling distribution</h2>
+<p>ETF defines the <strong>sampling distribution of <span class="math inline">\bar x</span></strong> as the distribution of all possible sample means from all possible samples of a fixed size <code>n</code>.</p>
+<p>We observe only one mean, but another random sample would usually give another value. Across repeated samples, the mean of <span class="math inline">\bar x</span> is the population mean <span class="math inline">\mu</span>; the SD of <span class="math inline">\bar x</span> is the <strong>standard error</strong>:</p>
+<p><span class="math display">SE(\bar x)=\frac{\sigma}{\sqrt n}.</span></p>
+<p>This is a statement about variation <strong>between sample means</strong>, not variation between individual observations.</p>
 </section>
-<section id="law-of-large-numbers" class="slide level2">
-<h2>Law of large numbers</h2>
-<p>As a random sample grows, the sample mean tends to settle closer to the population mean.</p>
-<ul>
-<li>It does not say every larger sample is closer.</li>
-<li>It does not repair biased sampling.</li>
-<li>It describes long-run behaviour under repeated random sampling.</li>
-</ul>
+<section id="shape-and-the-central-limit-theorem" class="slide level2">
+<h2>Shape and the Central Limit Theorem</h2>
+<p>If the population is Normal, the sample mean is Normal for any sample size. For a sufficiently large independent sample, the Central Limit Theorem makes the distribution of <span class="math inline">\bar x</span> approximately Normal even when the individual data are not Normal.</p>
+<p>ETF uses <span class="math inline">n\ge 30</span> as a useful classroom guide, with a separate check for severe skewness or outliers. Larger <code>n</code> reduces <code>SE</code> because of the square root in the denominator.</p>
 </section>
-<section id="central-limit-theorem" class="slide level2">
-<h2>Central limit theorem</h2>
-<p>For sufficiently large random samples, the sampling distribution of the mean is approximately Normal:</p>
-<p><span class="math display">\bar X\approx N\left(\mu,\frac{\sigma}{\sqrt n}\right).</span></p>
-<p>The approximation concerns <strong>sample means</strong>, even when individual observations are not Normal.</p>
+<section id="watch-me-change-sample-size" class="slide level2">
+<h2>Watch me: change sample size</h2>
+<p>Suppose <span class="math inline">\sigma=24</span> units. Compare the standard error of a mean from <code>n=36</code> and <code>n=144</code>.</p>
+<p>The formulas are <code>24/SQRT(36)</code> and <code>24/SQRT(144)</code>. Quadrupling the sample size halves the standard error. It does <strong>not</strong> remove selection bias.</p>
 </section>
-<section id="standard-error-of-a-mean" class="slide level2">
-<h2>Standard error of a mean</h2>
-<p>The standard deviation of the sampling distribution is the standard error:</p>
-<p><span class="math display">SE(\bar X)=\frac{\sigma}{\sqrt n}\quad\text{or estimated by}\quad\frac{s}{\sqrt n}.</span></p>
-<p>As <span class="math inline">n</span> quadruples, the standard error halves. Precision improves with the square root of sample size.</p>
-</section>
-<section id="watch-me-compare-sample-sizes" class="slide level2">
-<h2>Watch me: compare sample sizes</h2>
-<p>Suppose <span class="math inline">\sigma=20</span>.</p>
-<ul>
-<li>At <span class="math inline">n=25</span>, <span class="math inline">SE=20/\sqrt{25}=4</span>.</li>
-<li>At <span class="math inline">n=100</span>, <span class="math inline">SE=20/\sqrt{100}=2</span>.</li>
-</ul>
-<p>The population variability did not change; uncertainty in the sample mean did.</p>
-</section>
-<section id="now-you-try-sampling-variation" class="slide level2">
-<h2>Now you try: sampling variation</h2>
+<section id="now-you-try-separate-spread-from-precision" class="slide level2">
+<h2>Now you try: separate spread from precision</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_c33ddb69" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_7a2bf7e2" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Assume transaction values have <span class="math inline">\sigma=48</span>.</p>
-<ol type="1">
-<li>Calculate <span class="math inline">SE(\bar X)</span> for <span class="math inline">n=36</span> and <span class="math inline">n=144</span>.</li>
-<li>Which sample mean is more precise?</li>
-<li>How much must <span class="math inline">n</span> change to halve the standard error?</li>
-<li>Would either calculation remove non-response bias?</li>
-</ol>
-</section>
-<section id="sampling-distribution-of-a-proportion" class="slide level2">
-<h2>Sampling distribution of a proportion</h2>
-<p>For a sufficiently large random sample:</p>
-<p><span class="math display">\hat p\approx N\left(\pi,\sqrt{\frac{\pi(1-\pi)}{n}}\right).</span></p>
-<p>For estimation, check using the observed proportion:</p>
-<p><span class="math display">n\hat p\ge5,\qquad n(1-\hat p)\ge5.</span></p>
+<p>A sample SD is 18 units. Calculate <span class="math inline">s/\sqrt n</span> for <code>n=25</code> and <code>n=100</code>. Explain in a sentence why the sample SD and the standard error answer different questions.</p>
 </section></section>
 <section>
-<section id="confidence-intervals-for-means" class="title-slide slide level1 center">
-<h1>Confidence intervals for means</h1>
+<section id="intervals-for-a-mean" class="title-slide slide level1 center">
+<h1>Intervals for a mean</h1>
 
 </section>
 <section id="point-estimate-plus-margin-of-error" class="slide level2">
 <h2>Point estimate plus margin of error</h2>
-<p>Every confidence interval has the same architecture:</p>
-<p><span class="math display">\text{estimate}\pm\text{critical value}\times\text{standard error}.</span></p>
+<p>ETF calls the observed <span class="math inline">\bar x</span> a <strong>point estimate</strong>. Because it varies from sample to sample, report a range of plausible values for <span class="math inline">\mu</span>:</p>
+<p><span class="math display">\text{confidence interval}=\text{estimate}\ \pm\ \text{critical value}\times SE.</span></p>
+<p>The confidence level describes the long-run success of this sampling-and-interval procedure. For 95% confidence, 2.5% of the reference distribution lies in each tail.</p>
+</section>
+<section id="the-middle-95" class="slide level2">
+<h2>The middle 95%</h2>
+
+<img data-src="figures/etf-confidence-area.png" style="width:69.0%" alt="Bell curve with middle 95 percent shaded and 2.5 percent in each outer tail." class="r-stretch quarto-figure-center"><p class="caption">ETF confidence-area diagram: the central 95 percent and two 2.5 percent tails.</p><p>The diagram explains why Excel uses the <strong>97.5th percentile</strong> for the upper critical value. The centre is the interval’s coverage target across repeated samples.</p>
+<!-- Extracted from ETF1100 Seminar Week 5, p. 22. -->
+</section>
+<section id="known-population-sd-use-z" class="slide level2">
+<h2>Known population SD: use z</h2>
+<p>When <span class="math inline">\sigma</span> is genuinely known and the sampling conditions hold:</p>
+<p><span class="math display">\bar x\pm z^*\frac{\sigma}{\sqrt n},
+\qquad z^*=\texttt{NORM.S.INV}(0.975)\approx1.960
+\quad\text{for 95\% confidence.}</span></p>
+<p>The units of the interval match the units of <span class="math inline">\bar x</span>. The standard error becomes smaller as <code>n</code> grows.</p>
+</section>
+<section id="unknown-population-sd-use-t" class="slide level2">
+<h2>Unknown population SD: use t</h2>
+<p>Usually <span class="math inline">\sigma</span> is unknown, so ETF replaces it with the sample SD <code>s</code> and uses a t critical value with <code>n-1</code> degrees of freedom:</p>
+<p><span class="math display">\bar x\pm t^*_{n-1}\frac{s}{\sqrt n},
+\qquad t^*_{n-1}=\texttt{T.INV}(0.975,n-1).</span></p>
+<p>In Excel, <code>T.INV.2T(0.05,n-1)</code> gives the same positive 95% critical value. The t distribution’s extra tail area reflects estimating the SD.</p>
+</section>
+<section id="watch-me-an-audit-interval" class="slide level2">
+<h2>Watch me: an audit interval</h2>
+<p>ETF Workshop Week 5 asks about mean outstanding customer balances. A random sample has <code>n=80</code> and <span class="math inline">\bar x=\$86.05</span>.</p>
 <ul>
-<li>The point estimate identifies the centre.</li>
-<li>The margin of error quantifies sampling uncertainty.</li>
-<li>The confidence level controls the long-run coverage rate.</li>
+<li>If a historical <strong>population</strong> SD of <span class="math inline">\$22.38</span> is truly known, use <span class="math inline">z^*\sigma/\sqrt{80}</span>.</li>
+<li>If only the <strong>sample</strong> SD <span class="math inline">\$24.02</span> is known, use <span class="math inline">t^*_{79}s/\sqrt{80}</span>.</li>
 </ul>
+<p>Build separate labelled cells for estimate, SD, <code>n</code>, critical value, SE, lower and upper bounds. The choice of critical value follows the source of the SD.</p>
 </section>
-<section id="known-versus-unknown-sigma" class="slide level2">
-<h2>Known versus unknown <span class="math inline">\sigma</span></h2>
-<p>For a population mean:</p>
-<p><span class="math display">\bar{x}\pm z^*\frac{\sigma}{\sqrt n}\qquad(\sigma\text{ known}),</span></p>
-<p><span class="math display">\bar{x}\pm t^*\frac{s}{\sqrt n}\qquad(\sigma\text{ unknown},\ df=n-1).</span></p>
-<p>In business applications, <span class="math inline">\sigma</span> is usually unknown, so the <span class="math inline">t</span> interval is common.</p>
-</section>
-<section id="critical-values-in-excel" class="slide level2">
-<h2>Critical values in Excel</h2>
-<p>For confidence level <span class="math inline">1-\alpha</span>:</p>
-<ul>
-<li><span class="math inline">z^*</span>: <code>=NORM.S.INV(1-alpha/2)</code></li>
-<li><span class="math inline">t^*</span>: <code>=T.INV(1-alpha/2,n-1)</code></li>
-</ul>
-<p>For 95% confidence, <span class="math inline">z^*\approx1.96</span>. A <span class="math inline">t^*</span> value is larger for small samples and approaches 1.96 as <span class="math inline">n</span> grows.</p>
-</section>
-<section id="watch-me-audit-balances-known-sigma" class="slide level2">
-<h2>Watch me: audit balances, known <span class="math inline">\sigma</span></h2>
-<p>An audit sample has <span class="math inline">n=80</span>, <span class="math inline">\bar{x}=86.05</span>, and known <span class="math inline">\sigma=22.38</span>.</p>
-<p>In Excel:</p>
-<ol type="1">
-<li>compute <code>=NORM.S.INV(0.975)</code>;</li>
-<li>compute <code>=22.38/SQRT(80)</code>;</li>
-<li>multiply for the margin of error; and</li>
-<li>calculate lower and upper bounds.</li>
-</ol>
-<p>Interpret the interval for the <strong>population mean balance</strong>.</p>
-</section>
-<section id="now-you-try-audit-balances-unknown-sigma" class="slide level2">
-<h2>Now you try: audit balances, unknown <span class="math inline">\sigma</span></h2>
+<section id="now-you-try-two-intervals-one-question" class="slide level2">
+<h2>Now you try: two intervals, one question</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_4c745176" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_18c68be5" minutes="9" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Use <span class="math inline">n=80</span>, <span class="math inline">\bar{x}=86.05</span>, and <span class="math inline">s=24.02</span>.</p>
-<ol type="1">
-<li>Construct a 95% <span class="math inline">t</span> interval.</li>
-<li>Identify <span class="math inline">df</span> and the Excel critical-value formula.</li>
-<li>State the margin of error.</li>
-<li>Interpret the interval in dollars and in context.</li>
-</ol>
+<p>Use the audit figures in <a href="week3-estimation-data.xlsx">Week 3 estimation data</a>. Construct both 95% intervals in Excel and explain which SD assumption each uses. Compare their widths without calling either interval a range for 95% of individual balances.</p>
 </section>
-<section id="interpreting-confidence-correctly" class="slide level2">
-<h2>Interpreting confidence correctly</h2>
-<p>A 95% confidence method captures the fixed population parameter in about 95% of repeated random samples.</p>
-<p>For the interval already calculated, say:</p>
-<blockquote>
-<p>We are 95% confident that the population mean lies between the calculated bounds.</p>
-</blockquote>
-<p>Do not say 95% of individual observations lie inside the interval.</p>
+<section id="from-raw-rows-to-the-mean-interval" class="slide level2">
+<h2>From raw rows to the mean interval</h2>
+<p>The <code>RealEstate</code> sheet in <a href="week3-proportions-data.xlsx">Week 3 proportions data</a> holds 329 properties. For a price interval, do not start with an unlabeled supplied number:</p>
+<ul>
+<li><code>n = COUNT(A2:A330)</code></li>
+<li><span class="math inline">\bar x = AVERAGE(A2:A330)</span></li>
+<li><code>s = STDEV.S(A2:A330)</code></li>
+</ul>
+<p>Check <code>Price</code> units before writing the conclusion. If comparing school-zone groups, use group-specific data and denominators, and do not treat overlap of separate intervals as a formal test of a difference.</p>
 </section>
-<section id="now-you-try-confidence-versus-precision" class="slide level2">
-<h2>Now you try: confidence versus precision</h2>
+<section id="watch-me-change-confidence-and-sample-size" class="slide level2">
+<h2>Watch me: change confidence and sample size</h2>
+<p>With the same point estimate and SD, change 95% to 90% and 99%. A higher confidence level gives a larger critical value and wider interval.</p>
+<p>Then change <code>n</code> while holding the SD fixed. More observations reduce the standard error. These are <strong>precision</strong> effects; neither change fixes a biased sample.</p>
+</section>
+<section id="now-you-try-audit-the-conclusion" class="slide level2">
+<h2>Now you try: audit the conclusion</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_997fc7e2" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_3f3974fb" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Repeat the audit interval at 90% and 99% confidence.</p>
-<ol type="1">
-<li>Rank the three intervals by width.</li>
-<li>Explain the confidence–precision trade-off.</li>
-<li>Predict what happens if <span class="math inline">n</span> decreases.</li>
-<li>Identify one aspect of data quality that interval width does not capture.</li>
-</ol>
+<p>Write a 95% mean-interval conclusion for a named population. Then correct this claim: “95% of the individual balances lie inside our confidence interval.” Explain which distribution the interval describes.</p>
 </section></section>
 <section>
-<section id="confidence-intervals-for-proportions" class="title-slide slide level1 center">
-<h1>Confidence intervals for proportions</h1>
+<section id="intervals-for-a-proportion" class="title-slide slide level1 center">
+<h1>Intervals for a proportion</h1>
 
 </section>
-<section id="interval-for-a-population-proportion" class="slide level2">
-<h2>Interval for a population proportion</h2>
-<p>When the large-count condition is satisfied:</p>
-<p><span class="math display">\hat p\pm z^*\sqrt{\frac{\hat p(1-\hat p)}{n}}.</span></p>
-<p>The standard error uses <span class="math inline">\hat p</span> because the unknown <span class="math inline">\pi</span> is the quantity being estimated.</p>
+<section id="a-proportion-estimates-how-common-an-event-is" class="slide level2">
+<h2>A proportion estimates how common an event is</h2>
+<p>ETF uses <span class="math inline">\pi</span> for a population proportion and <span class="math inline">\hat p=x/n</span> for the sample proportion, where <code>x</code> is the count with a named characteristic.</p>
+<p>For a shopper outcome, define both the <strong>event</strong> and the <strong>denominator</strong>. <span class="math inline">\hat p</span> lies between 0 and 1. A sample proportion also varies across repeated samples.</p>
 </section>
-<section id="watch-me-recruitment-service-use" class="slide level2">
-<h2>Watch me: recruitment-service use</h2>
-<p>Of 600 surveyed employers, 126 used a recruitment service recently.</p>
-<ol type="1">
-<li><span class="math inline">\hat p=126/600=0.21</span>.</li>
-<li>Check <span class="math inline">600(0.21)</span> and <span class="math inline">600(0.79)</span>.</li>
-<li>Use <span class="math inline">z^*=1.96</span> for 95% confidence.</li>
-<li>Calculate the standard error and bounds.</li>
-<li>Format the result as percentages.</li>
-</ol>
+<section id="the-proportion-standard-error" class="slide level2">
+<h2>The proportion standard error</h2>
+<p>For a large enough sample, the distribution of <span class="math inline">\hat p</span> is approximately Normal. For an interval, use the observed proportion in the estimated SE:</p>
+<p><span class="math display">\widehat{SE}(\hat p)=
+\sqrt{\frac{\hat p(1-\hat p)}{n}}.</span></p>
+<p>ETF’s classroom check requires both <span class="math inline">n\hat p\ge5</span> and <span class="math inline">n(1-\hat p)\ge5</span>. These are counts of observed successes and failures. A rare event near the threshold deserves a cautious interpretation.</p>
 </section>
-<section id="now-you-try-product-trial-proportion" class="slide level2">
-<h2>Now you try: product trial proportion</h2>
+<section id="the-95-proportion-interval" class="slide level2">
+<h2>The 95% proportion interval</h2>
+<p><span class="math display">\hat p\pm z^*
+\sqrt{\frac{\hat p(1-\hat p)}{n}},
+\qquad z^*=\texttt{NORM.S.INV}(0.975).</span></p>
+<p>The result is a proportion. Multiply endpoints by 100 to report percentages, and use the same denominator in the estimate and standard error. This familiar interval is an approximation, especially for very rare outcomes.</p>
+</section>
+<section id="watch-me-marketing-from-raw-records" class="slide level2">
+<h2>Watch me: Marketing from raw records</h2>
+<p>In <code>Marketing</code>, each row is a respondent and <code>Have Tried</code> is column E. ETF’s seminar asks for the proportion who have tried the product.</p>
+<p>Count <code>Yes</code> with <code>COUNTIF(E2:E857,"Yes")</code>, count respondents with <code>COUNTA(A2:A857)</code>, calculate <span class="math inline">\hat p=x/n</span>, check <code>x</code> and <code>n-x</code>, then build the interval cell by cell. A PivotTable can check the count; the formulas make the interval auditable.</p>
+</section>
+<section id="now-you-try-change-the-population" class="slide level2">
+<h2>Now you try: change the population</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_164b4e63" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_2154c87a" minutes="9" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Open <code>week3-proportions-data.xlsx</code>, sheet <strong>Marketing</strong>.</p>
-<ol type="1">
-<li>Find <span class="math inline">n</span>, the count who have tried the product, and <span class="math inline">\hat p</span>.</li>
-<li>Check the large-count condition.</li>
-<li>Construct a 95% confidence interval for <span class="math inline">\pi</span>.</li>
-<li>Does the interval suggest that more than half the market has tried it?</li>
-<li>State a conclusion and one sampling limitation.</li>
-</ol>
+<p>Estimate the proportion of <strong>female respondents</strong> who have tried the product. Filter or use <code>COUNTIFS</code> for the numerator and <code>COUNTIF</code> for the female denominator. Construct a 95% interval and write a sentence that names the female customer population, not all customers.</p>
 </section>
-<section id="compare-groups-carefully" class="slide level2">
-<h2>Compare groups carefully</h2>
-<p>Separate confidence intervals can describe subgroup proportions, but visual overlap is not a formal test of a difference.</p>
-<p>Before comparing groups, ask:</p>
-<ul>
-<li>Were both groups sampled credibly?</li>
-<li>Are sample sizes adequate?</li>
-<li>Are categories defined consistently?</li>
-<li>Is the practical difference meaningful?</li>
-</ul>
+<section id="interpreting-95-confidence" class="slide level2">
+<h2>Interpreting 95% confidence</h2>
+<p>A defensible conclusion says: “Using this sampling procedure, we are 95% confident that the population proportion [or mean] is between the two reported bounds.”</p>
+<p>It does <strong>not</strong> assign 95% probability to a fixed parameter after the sample is observed. It does <strong>not</strong> make the sample representative. State sampling, independence, approximation and measurement limitations alongside the number.</p>
 </section>
-<section id="now-you-try-subgroup-intervals" class="slide level2">
-<h2>Now you try: subgroup intervals</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_33591e48" minutes="9" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>For female and male respondents separately:</p>
-<ol type="1">
-<li>calculate <span class="math inline">n</span>, <span class="math inline">X</span>, and <span class="math inline">\hat p</span> for product trial;</li>
-<li>construct a 95% interval for each population proportion;</li>
-<li>compare centres and widths; and</li>
-<li>write a cautious conclusion without claiming causation.</li>
-</ol>
-</section></section>
-<section>
-<section id="reusable-estimation-workflow" class="title-slide slide level1 center">
-<h1>Reusable estimation workflow</h1>
-
-</section>
-<section id="watch-me-build-an-excel-template" class="slide level2">
-<h2>Watch me: build an Excel template</h2>
-<p>Create labelled input cells for:</p>
-<ul>
-<li>estimate, standard deviation or count, <span class="math inline">n</span>, and confidence level;</li>
-<li>critical value and standard error;</li>
-<li>margin of error; and</li>
-<li>lower and upper bounds.</li>
-</ul>
-<p>Keep inputs visually separate from formulas. Add an assumption check and a plain-language conclusion beneath the calculations.</p>
-</section>
-<section id="now-you-try-scenario-analysis" class="slide level2">
-<h2>Now you try: scenario analysis</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_959839f5" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Using your template, hold the estimate fixed and compare:</p>
-<ol type="1">
-<li>90%, 95%, and 99% confidence;</li>
-<li>sample sizes <span class="math inline">n=50</span>, <span class="math inline">200</span>, and <span class="math inline">800</span>; and</li>
-<li>mean versus proportion standard errors.</li>
-</ol>
-<p>Write two general rules a manager could use when planning a study.</p>
-</section>
-<section id="common-traps" class="slide level2">
-<h2>Common traps</h2>
-<ul>
-<li>Confusing the distribution of observations with the sampling distribution.</li>
-<li>Assuming large <span class="math inline">n</span> removes selection or measurement bias.</li>
-<li>Using <span class="math inline">z</span> when <span class="math inline">\sigma</span> is unknown without justification.</li>
-<li>Forgetting the square root of <span class="math inline">n</span>.</li>
-<li>Interpreting a confidence interval as containing most individual values.</li>
-<li>Reporting bounds without units, population, or business meaning.</li>
-</ul>
-</section>
-<section id="closing-check" class="slide level2">
-<h2>Closing check</h2>
-<p>Can you:</p>
-<ul>
-<li>distinguish bias from random sampling variation?</li>
-<li>explain the law of large numbers and central limit theorem?</li>
-<li>calculate and interpret a standard error?</li>
-<li>choose a mean or proportion interval and its critical value?</li>
-<li>explain how confidence level and sample size affect width?</li>
-<li>communicate an interval as evidence, not certainty?</li>
-</ul>
+<section id="closing-workflow" class="slide level2">
+<h2>Closing workflow</h2>
+<p><strong>Population and event → sampling design → count or mean from raw rows → standard error and conditions → critical value → interval → interpretation and limitation.</strong></p>
+<p>Next week, a hypothesis test asks whether the data provide enough evidence for a particular claim about that parameter.</p>
+<!-- Source map for editing: ETF Seminar Week 5 pp. 6–28; Seminar Week 7 pp. 6–13; Workshop Week 5 pp. 6–7; Workshop Week 7 pp. 13–15. The current ETX estimation and Marketing workbooks are used for class execution. -->
 
 
 </section></section>

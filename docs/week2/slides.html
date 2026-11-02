@@ -174,427 +174,244 @@ Week 2: Probability and distributions
 <nav role="doc-toc"> 
 <h2 id="toc-title">Outline</h2>
 <ul>
-<li><a href="#/probability-language" id="/toc-probability-language">Probability language</a></li>
-<li><a href="#/contingency-tables" id="/toc-contingency-tables">Contingency tables</a></li>
-<li><a href="#/continuous-probability-distributions" id="/toc-continuous-probability-distributions">Continuous probability distributions</a></li>
-<li><a href="#/integrated-application" id="/toc-integrated-application">Integrated application</a></li>
+<li><a href="#/events-and-probability-rules" id="/toc-events-and-probability-rules">Events and probability rules</a></li>
+<li><a href="#/two-way-categorical-tables" id="/toc-two-way-categorical-tables">Two-way categorical tables</a></li>
+<li><a href="#/continuous-probability-models" id="/toc-continuous-probability-models">Continuous probability models</a></li>
 </ul>
 </nav>
 </section>
-<section id="todays-journey" class="slide level2">
-<h2>Today’s journey</h2>
-<ol type="1">
-<li>Translate business uncertainty into events and probabilities.</li>
-<li>Build contingency tables and distinguish joint, marginal, and conditional probability.</li>
-<li>Assess whether two events are independent.</li>
-<li>Use Normal and Student’s <span class="math inline">t</span> distributions in Excel.</li>
-<li>Finish with an integrated marketing-and-risk case.</li>
-</ol>
-<!-- Springboards: ETF W3 seminar/workshop; ETF W4 probability-distribution block/workshop; ETX 2025 W2. -->
+<section id="todays-question" class="slide level2">
+<h2>Today’s question</h2>
+<p><strong>How likely is a business event, and which other information changes that probability?</strong></p>
+<p>We move from last week’s frequencies to events, rules, two-way tables and conditional probabilities. We then use a smooth probability model for a continuous measurement.</p>
+<!-- Lecture spine: ETF Seminar Week 3 pp. 5–30 and Seminar Week 4 pp. 34–49. Workshop inserts: ETF Workshop Week 3 pp. 3–6 and Workshop Week 4 pp. 10–11. -->
 </section>
 <section>
-<section id="probability-language" class="title-slide slide level1 center">
-<h1>Probability language</h1>
+<section id="events-and-probability-rules" class="title-slide slide level1 center">
+<h1>Events and probability rules</h1>
 
 </section>
-<section id="retrieval-check" class="slide level2">
-<h2>Retrieval check</h2>
-<ul>
-<li>Is <code>Have Tried</code> categorical or numerical?</li>
-<li>Is <code>Income</code> categorical or numerical?</li>
-<li>What does one row of the Marketing worksheet represent?</li>
-<li>Why should a business question come before an Excel calculation?</li>
-</ul>
+<section id="probability-turns-a-count-into-a-chance" class="slide level2">
+<h2>Probability turns a count into a chance</h2>
+<p>ETF defines probability as a <strong>numerical value representing the chance, likelihood or possibility that an event will occur</strong>. It lies between 0 and 1.</p>
+<p>An <strong>event</strong> is one or more outcomes of an experiment. A <strong>sample space</strong> <code>S</code> collects all possible simple outcomes. For one fair die roll, <code>S={1,2,3,4,5,6}</code> and <code>P(S)=1</code>.</p>
+<p>A sample frequency can estimate a probability when the sample and observation process are suitable. Always name the population or process the estimate describes.</p>
 </section>
-<section id="probability-measures-uncertainty" class="slide level2">
-<h2>Probability measures uncertainty</h2>
-<ul>
-<li>An <strong>experiment</strong> is a process with an uncertain outcome.</li>
-<li>The <strong>sample space</strong> <span class="math inline">S</span> contains all possible outcomes.</li>
-<li>An <strong>event</strong> is one or more outcomes of interest.</li>
-<li><span class="math inline">0 \leq P(A) \leq 1</span> and <span class="math inline">P(S)=1</span>.</li>
-<li>Probabilities can be expressed as proportions or percentages.</li>
-</ul>
-</section>
-<section id="and-or-and-not" class="slide level2">
-<h2>AND, OR, and NOT</h2>
+<section id="and-or-not" class="slide level2">
+<h2>AND, OR, NOT</h2>
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th>Business wording</th>
+<th>Language</th>
 <th>Notation</th>
 <th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">A</span> <strong>and</strong> <span class="math inline">B</span></td>
-<td><span class="math inline">A\cap B</span></td>
-<td>both occur</td>
+<td>A <strong>and</strong> B</td>
+<td><span class="math inline">A \cap B</span></td>
+<td>Both events occur</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">A</span> <strong>or</strong> <span class="math inline">B</span></td>
-<td><span class="math inline">A\cup B</span></td>
-<td>at least one occurs</td>
+<td>A <strong>or</strong> B</td>
+<td><span class="math inline">A \cup B</span></td>
+<td>At least one occurs, including both</td>
 </tr>
 <tr class="odd">
-<td><strong>not</strong> <span class="math inline">A</span></td>
-<td><span class="math inline">A^c</span></td>
-<td>complement of <span class="math inline">A</span></td>
+<td><strong>Not</strong> A</td>
+<td><code>A^c</code></td>
+<td>A does not occur</td>
 </tr>
 </tbody>
 </table>
-<p><span class="math display">P(A^c)=1-P(A)</span></p>
-<p><span class="math display">P(A\cup B)=P(A)+P(B)-P(A\cap B)</span></p>
+<p>The addition rule removes the double-counted intersection:</p>
+<p><span class="math display">P(A\cup B)=P(A)+P(B)-P(A\cap B).</span></p>
+<p>If A and B cannot occur together, they are <strong>mutually exclusive</strong> and <span class="math inline">P(A\cap B)=0</span>.</p>
 </section>
-<section id="mutually-exclusive-is-not-independent" class="slide level2">
-<h2>Mutually exclusive is not independent</h2>
+<section id="the-intersection-is-counted-once" class="slide level2">
+<h2>The intersection is counted once</h2>
+
+<img data-src="figures/etf-intersection.png" style="width:62.0%" alt="Venn diagram with overlapping circles A and B; their intersection is shaded inside sample space S." class="r-stretch quarto-figure-center"><p class="caption">Intersection of two events from ETF’s probability lecture.</p><p>The shaded overlap is <span class="math inline">A\cap B</span>. When adding <code>P(A)</code> and <code>P(B)</code>, that region is included twice, so the union formula subtracts it once.</p>
+<!-- Extracted from ETF1100 Seminar Week 3, p. 13. -->
+</section>
+<section id="watch-me-a-die-roll" class="slide level2">
+<h2>Watch me: a die roll</h2>
+<p>Let <code>A</code> be “even” and <code>B</code> be “less than 5.” From the six equally likely outcomes:</p>
 <ul>
-<li><strong>Mutually exclusive:</strong> <span class="math inline">A</span> and <span class="math inline">B</span> cannot occur together, so <span class="math inline">P(A\cap B)=0</span>.</li>
-<li><strong>Independent:</strong> learning that <span class="math inline">B</span> occurred does not change the probability of <span class="math inline">A</span>.</li>
-<li>Non-trivial mutually exclusive events are dependent: observing one rules out the other.</li>
+<li><code>A={2,4,6}</code> and <code>B={1,2,3,4}</code>.</li>
+<li>The intersection is <code>{2,4}</code>.</li>
+<li><span class="math inline">P(A\cup B)=3/6+4/6-2/6=5/6</span>.</li>
 </ul>
+<p>The same result comes from listing <code>{1,2,3,4,6}</code>. ETF uses this check to distinguish <strong>or</strong> from <strong>and</strong>.</p>
 </section>
-<section id="watch-me-translate-a-business-question" class="slide level2">
-<h2>Watch me: translate a business question</h2>
-<p>For an online order, define:</p>
-<ul>
-<li><span class="math inline">A</span>: delivery is late;</li>
-<li><span class="math inline">B</span>: customer requests a refund.</li>
-</ul>
-<p>Translate:</p>
-<ol type="1">
-<li>“late and refunded” as <span class="math inline">A\cap B</span>;</li>
-<li>“late or refunded” as <span class="math inline">A\cup B</span>;</li>
-<li>“not late” as <span class="math inline">A^c</span>; and</li>
-<li>“refunded given late” as <span class="math inline">P(B\mid A)</span>.</li>
-</ol>
-</section>
-<section id="now-you-try-events-and-rules" class="slide level2">
-<h2>Now you try: events and rules</h2>
+<section id="now-you-try-translate-the-event" class="slide level2">
+<h2>Now you try: translate the event</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_bac05d20" minutes="4" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_650c72a1" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Let <span class="math inline">C</span> mean a customer clicks an advertisement and <span class="math inline">P</span> mean they purchase.</p>
-<ol type="1">
-<li>Translate “clicked but did not purchase”.</li>
-<li>Translate “clicked or purchased”.</li>
-<li>If <span class="math inline">P(C)=0.30</span>, <span class="math inline">P(P)=0.12</span>, and <span class="math inline">P(C\cap P)=0.08</span>, calculate <span class="math inline">P(C\cup P)</span>.</li>
-<li>Explain why click and purchase are not mutually exclusive.</li>
-</ol>
+<p>For a randomly selected business invoice, let A be “paid late” and B be “contains an error.” Write in words: <span class="math inline">A\cap B</span>, <span class="math inline">A\cup B</span> and <code>A^c</code>. If <code>P(A)=0.12</code>, <code>P(B)=0.08</code> and <span class="math inline">P(A\cap B)=0.03</span>, calculate the union. Explain the subtraction.</p>
+</section>
+<section id="mutually-exclusive-and-independent" class="slide level2">
+<h2>Mutually exclusive and independent</h2>
+<p>These are different ideas:</p>
+<ul>
+<li><strong>Mutually exclusive:</strong> the events cannot happen together.</li>
+<li><strong>Independent:</strong> knowing one occurred does not change the probability of the other.</li>
+</ul>
+<p>If two nonzero-probability events are mutually exclusive, observing one rules out the other. They are therefore not independent. We test independence through conditional probabilities after building a table.</p>
 </section></section>
 <section>
-<section id="contingency-tables" class="title-slide slide level1 center">
-<h1>Contingency tables</h1>
+<section id="two-way-categorical-tables" class="title-slide slide level1 center">
+<h1>Two-way categorical tables</h1>
 
 </section>
-<section id="two-categorical-variables" class="slide level2">
-<h2>Two categorical variables</h2>
-<p>A contingency table cross-classifies observations by two categorical variables.</p>
-<ul>
-<li><strong>Cell:</strong> joint frequency or probability.</li>
-<li><strong>Margin:</strong> total for one variable.</li>
-<li><strong>Grand total:</strong> all observations.</li>
-<li>Percent of grand total supports joint and marginal probability.</li>
-<li>Row or column percentages support conditional probability.</li>
-</ul>
+<section id="from-one-variable-to-two" class="slide level2">
+<h2>From one variable to two</h2>
+<p>A <strong>contingency table</strong> counts observations across two categorical variables. ETF Seminar Week 3 extends a one-way PivotTable into a two-way table.</p>
+<p>For the <a href="week2-categorical-data.xlsx">Week 2 Marketing workbook</a>, place <code>Have Tried</code> in rows and <code>Income</code> in columns. Count <code>Person ID</code> in Values. The row totals, column totals and grand total determine which denominator belongs to each question.</p>
 </section>
 <section id="watch-me-build-the-marketing-table" class="slide level2">
 <h2>Watch me: build the Marketing table</h2>
-<p>Open <code>week2-categorical-data.xlsx</code> and select <strong>Marketing</strong>.</p>
-<p>Create a PivotTable:</p>
 <ol type="1">
-<li>put <code>Income</code> in Rows;</li>
-<li>put <code>Have Tried</code> in Columns;</li>
-<li>count <code>Person ID</code> in Values; and</li>
-<li>show the counts as <strong>% of Grand Total</strong>.</li>
+<li>Select the <code>Marketing</code> table and choose <strong>Insert &gt; PivotTable</strong>.</li>
+<li>Drag <code>Have Tried</code> to <strong>Rows</strong>, <code>Income</code> to <strong>Columns</strong>, and <code>Person ID</code> to <strong>Values</strong> as <strong>Count</strong>.</li>
+<li>Make a copy showing <strong>% of Grand Total</strong> for joint and marginal probabilities.</li>
+<li>Make a second copy showing <strong>% of Row Total</strong> to condition on <code>Have Tried</code>.</li>
+<li>Check one cell with <code>COUNTIFS</code> and one marginal count with <code>COUNTIF</code>.</li>
 </ol>
-<p>Check that all cells sum to 100%.</p>
+<p>A table percentage without its denominator is not yet an interpretable probability.</p>
 </section>
-<section id="joint-and-marginal-probability" class="slide level2">
-<h2>Joint and marginal probability</h2>
-<ul>
-<li>A <strong>joint probability</strong> refers to two events together: <span class="math inline">P(A\cap B)</span>.</li>
-<li>A <strong>marginal probability</strong> refers to one variable and is read from a row or column total.</li>
-</ul>
-<p>Always state the denominator:</p>
-<p><span class="math display">P(A)=\frac{\text{observations satisfying }A}{\text{all observations}}.</span></p>
+<section id="joint-and-marginal-probabilities" class="slide level2">
+<h2>Joint and marginal probabilities</h2>
+<p>A <strong>joint probability</strong> describes a pair of categories, the intersecting cell divided by the grand total. A <strong>marginal probability</strong> describes one variable, the relevant row or column total divided by the grand total.</p>
+<p>ETF’s workshop asks for both “has not tried” and “earns above AUD 50,000 <strong>and</strong> has not tried.” The first is marginal; the second is joint. The words in the question point to different cells.</p>
 </section>
-<section id="now-you-try-marketing-probabilities" class="slide level2">
-<h2>Now you try: marketing probabilities</h2>
+<section id="now-you-try-read-the-correct-cell" class="slide level2">
+<h2>Now you try: read the correct cell</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_22739e16" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_57696990" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Using the PivotTable, calculate and label:</p>
-<ol type="1">
-<li><span class="math inline">P(\text{not tried})</span>;</li>
-<li><span class="math inline">P(\text{income}&gt;50{,}000\cap\text{not tried})</span>;</li>
-<li><span class="math inline">P(\text{income}&gt;50{,}000\cup\text{not tried})</span>.</li>
-</ol>
-<p>For each answer, identify whether it is marginal, joint, or union probability.</p>
+<p>Using your PivotTable, estimate (1) <span class="math inline">P(\text{not tried})</span> and (2) <span class="math inline">P(\text{income above 50,000 and not tried})</span>. State the numerator and the <strong>all-respondent</strong> denominator for each. Check one result with an Excel count formula.</p>
 </section>
-<section id="conditional-probability" class="slide level2">
-<h2>Conditional probability</h2>
-<p>Conditional probability changes the denominator:</p>
-<p><span class="math display">P(A\mid B)=\frac{P(A\cap B)}{P(B)}.</span></p>
-<p>Read <span class="math inline">P(A\mid B)</span> as “the probability of <span class="math inline">A</span>, given <span class="math inline">B</span>”. The event after the vertical bar defines the group being considered.</p>
+<section id="conditional-probability-changes-the-denominator" class="slide level2">
+<h2>Conditional probability changes the denominator</h2>
+<p>ETF describes conditional probability as the probability of one event <strong>given information that another event has occurred</strong>:</p>
+<p><span class="math display">P(A\mid B)=\frac{P(A\cap B)}{P(B)}
+=\frac{\text{count of both A and B}}{\text{count of B}},\qquad P(B)&gt;0.</span></p>
+<p>The condition, after the vertical bar, defines the smaller group. <span class="math inline">P(A\mid B)</span> generally differs from <span class="math inline">P(B\mid A)</span>.</p>
 </section>
 <section id="watch-me-condition-on-not-tried" class="slide level2">
 <h2>Watch me: condition on “not tried”</h2>
-<p>To calculate</p>
-<p><span class="math display">P(\text{income}&gt;50{,}000\mid\text{not tried}),</span></p>
-<p>either:</p>
-<ul>
-<li>divide the relevant joint probability by <span class="math inline">P(\text{not tried})</span>; or</li>
-<li>show PivotTable values as <strong>% of Column Total</strong> if <code>Have Tried</code> is in columns.</li>
-</ul>
-<p>Verify that each conditioning column sums to 100%.</p>
+<p>ETF Workshop Week 3 asks: among respondents who <strong>have not tried</strong> the product, what proportion earn above AUD 50,000?</p>
+<p>Use the count of “not tried <strong>and</strong> above 50,000” as numerator. Divide by the <strong>not-tried row total</strong>. In a PivotTable, <code>% of Row Total</code> gives this when <code>Have Tried</code> is in rows. Say the denominator aloud before reading the percentage.</p>
 </section>
 <section id="now-you-try-reverse-the-condition" class="slide level2">
 <h2>Now you try: reverse the condition</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_12915129" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_b24febb0" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Calculate both:</p>
-<ol type="1">
-<li><span class="math inline">P(\text{not tried}\mid\text{income}&gt;50{,}000)</span>;</li>
-<li><span class="math inline">P(\text{income}&gt;50{,}000\mid\text{not tried})</span>.</li>
-</ol>
-<p>Explain why these are different questions. Which denominator is used in each calculation?</p>
+<p>Find the proportion who <strong>have not tried</strong> the product among respondents earning above AUD 50,000. Change the denominator, not just the wording. Explain why this result need not equal the previous conditional probability.</p>
 </section>
-<section id="independence" class="slide level2">
-<h2>Independence</h2>
-<p>Events <span class="math inline">A</span> and <span class="math inline">B</span> are independent when any equivalent condition holds:</p>
-<p><span class="math display">P(A\mid B)=P(A),</span></p>
-<p><span class="math display">P(B\mid A)=P(B),</span></p>
-<p><span class="math display">P(A\cap B)=P(A)P(B).</span></p>
-<p>A small difference may arise from sampling variation; it is not proof of causation.</p>
+<section id="union-probabilities-from-a-table" class="slide level2">
+<h2>Union probabilities from a table</h2>
+<p>For <code>A</code> = “has tried” and <code>B</code> = “lives alone,” add the two marginal counts and subtract their overlapping cell once. Divide the result by the grand total.</p>
+<p>The same answer can be checked by counting every respondent who meets <strong>A or B</strong>. This is particularly useful when a business question combines two warning indicators.</p>
 </section>
-<section id="watch-me-tried-product-and-gender" class="slide level2">
-<h2>Watch me: tried product and gender</h2>
-<p>Create a second PivotTable for <code>Gender</code> and <code>Have Tried</code>.</p>
-<p>Compare:</p>
-<p><span class="math display">P(\text{tried}\mid\text{female})\quad\text{with}\quad P(\text{tried}).</span></p>
-<p>Narrate the conclusion as an association in this sample, not a causal effect.</p>
+<section id="independence-compare-conditional-and-marginal" class="slide level2">
+<h2>Independence: compare conditional and marginal</h2>
+<p>Events A and B are independent if learning B does not change A’s probability:</p>
+<p><span class="math display">P(A\mid B)=P(A), \quad\text{equivalently}\quad
+P(A\cap B)=P(A)P(B).</span></p>
+<p>Compare the conditional “tried” rates across income categories with the overall “tried” rate. A sample difference suggests association; it does not establish causation or by itself constitute a formal test.</p>
 </section>
-<section id="now-you-try-assess-independence" class="slide level2">
-<h2>Now you try: assess independence</h2>
+<section id="now-you-try-one-paragraph-of-evidence" class="slide level2">
+<h2>Now you try: one paragraph of evidence</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f17e5bac" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_5082f70a" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Use <code>Live Alone</code> and <code>Have Tried</code>.</p>
-<ol type="1">
-<li>Construct the contingency table.</li>
-<li>Compare an appropriate conditional probability with its marginal probability.</li>
-<li>Decide whether independence looks plausible.</li>
-<li>Write one sentence that avoids causal language.</li>
-</ol>
+<p>Choose two categories in <code>Marketing</code>. Report a joint probability, a conditional probability and an independence comparison. Name each denominator and finish with one cautious business sentence.</p>
 </section></section>
 <section>
-<section id="continuous-probability-distributions" class="title-slide slide level1 center">
-<h1>Continuous probability distributions</h1>
+<section id="continuous-probability-models" class="title-slide slide level1 center">
+<h1>Continuous probability models</h1>
 
 </section>
-<section id="from-data-to-a-probability-model" class="slide level2">
-<h2>From data to a probability model</h2>
-<ul>
-<li>A histogram describes observed data.</li>
-<li>A probability density curve models possible values of a continuous variable.</li>
-<li>Probability is represented by <strong>area under the curve</strong>.</li>
-<li>Total area is 1.</li>
-<li>For a continuous variable, probability at one exact value is effectively 0.</li>
-</ul>
+<section id="a-histogram-is-observed-data-a-model-is-an-assumption" class="slide level2">
+<h2>A histogram is observed data; a model is an assumption</h2>
+<p>A histogram groups the measurements we actually saw. ETF Seminar Week 4 then introduces a smooth <strong>probability density</strong> <code>f(x)</code> to represent a proposed distribution of future or population values.</p>
+<p><strong>Area under the curve is probability.</strong> The total area is 1. A model can be useful for risk calculations, but first check whether its shape is credible for the business variable.</p>
 </section>
 <section id="the-normal-distribution" class="slide level2">
 <h2>The Normal distribution</h2>
-<p>If <span class="math inline">X\sim N(\mu,\sigma)</span>, the distribution is:</p>
-<ul>
-<li>symmetric and bell-shaped;</li>
-<li>centred at mean <span class="math inline">\mu</span>; and</li>
-<li>spread according to standard deviation <span class="math inline">\sigma</span>.</li>
-</ul>
-<p>Approximately 68%, 95%, and 99.7% lie within one, two, and three standard deviations of the mean.</p>
+
+<img data-src="figures/etf-normal-curve.png" style="width:60.0%" alt="Symmetric bell-shaped density curve centred at its mean." class="r-stretch quarto-figure-center"><p class="caption">ETF’s smooth density schematic used to introduce continuous probability.</p><p>A Normal distribution is symmetric and bell-shaped, described by a mean and standard deviation. ETF writes <span class="math inline">X\sim N(\text{mean},\text{SD})</span>. Mean, median and mode coincide. Roughly 68%, 95% and 99.7% fall within one, two and three SDs of the mean.</p>
+<!-- Extracted from ETF1100 Seminar Week 4, p. 35. -->
 </section>
-<section id="excels-normal-functions" class="slide level2">
-<h2>Excel’s Normal functions</h2>
+<section id="excel-functions-answer-three-different-questions" class="slide level2">
+<h2>Excel functions answer three different questions</h2>
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th>Question</th>
-<th>Excel function</th>
+<th>Business question</th>
+<th>Excel expression when <span class="math inline">X\sim N(\mu,\sigma)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">P(X\le x)</span></td>
-<td><code>NORM.DIST(x, mean, sd, TRUE)</code></td>
+<td>Below x?</td>
+<td><code>=NORM.DIST(x,mean,sd,TRUE)</code></td>
 </tr>
 <tr class="even">
-<td><span class="math inline">P(X&gt;x)</span></td>
-<td><code>1-NORM.DIST(x, mean, sd, TRUE)</code></td>
+<td>Above x?</td>
+<td><code>=1-NORM.DIST(x,mean,sd,TRUE)</code></td>
 </tr>
 <tr class="odd">
-<td>percentile with lower-tail probability <span class="math inline">p</span></td>
-<td><code>NORM.INV(p, mean, sd)</code></td>
-</tr>
-<tr class="even">
-<td>standard Normal percentile</td>
-<td><code>NORM.S.INV(p)</code></td>
+<td>Which x has cumulative probability q?</td>
+<td><code>=NORM.INV(q,mean,sd)</code></td>
 </tr>
 </tbody>
 </table>
-<p>For an interval, subtract two cumulative probabilities.</p>
+<p>The fourth argument <code>TRUE</code> requests a cumulative probability. For a continuous variable, “less than” and “less than or equal to” have the same probability.</p>
 </section>
-<section id="watch-me-blood-pressure-risk" class="slide level2">
-<h2>Watch me: blood pressure risk</h2>
-<p>Assume adult systolic blood pressure is Normal with mean 124 and standard deviation 10.</p>
-<ul>
-<li>Below 117: <code>=NORM.DIST(117,124,10,TRUE)</code></li>
-<li>Above 140: <code>=1-NORM.DIST(140,124,10,TRUE)</code></li>
-<li>Highest 15% cutoff: <code>=NORM.INV(0.85,124,10)</code></li>
-</ul>
-<p>Sketch and shade the requested area before typing the formula.</p>
+<section id="watch-me-a-service-threshold" class="slide level2">
+<h2>Watch me: a service threshold</h2>
+<p>ETF Seminar Week 4 uses <span class="math inline">X\sim N(10,3)</span> to illustrate the Excel function: <code>P(X&lt;5)=NORM.DIST(5,10,3,TRUE)</code>. The complement gives <code>P(X&gt;5)</code>.</p>
+<p>Before pressing Enter, sketch which tail is needed. Check that a probability is between 0 and 1 and that a threshold below the mean has cumulative probability below 0.5.</p>
 </section>
-<section id="now-you-try-service-time" class="slide level2">
-<h2>Now you try: service time</h2>
+<section id="now-you-try-blood-pressure-risk" class="slide level2">
+<h2>Now you try: blood-pressure risk</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_75b1d1ee" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_b6200fd4" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>Assume service time is Normal with mean 8 minutes and standard deviation 1.5 minutes.</p>
-<ol type="1">
-<li>Find <span class="math inline">P(X&lt;6)</span>.</li>
-<li>Find <span class="math inline">P(X&gt;10)</span>.</li>
-<li>Find <span class="math inline">P(7&lt;X&lt;9)</span>.</li>
-<li>Find the 90th percentile.</li>
-<li>For each, sketch the relevant area and write the Excel formula.</li>
-</ol>
+<p>ETF Workshop Week 4 assumes adult systolic blood pressure is Normal with mean 124 mmHg and SD 10 mmHg. In Excel, find the probabilities <strong>below 117</strong> and <strong>above 140</strong>, then the reading that marks the highest 15%. State each event before choosing <code>NORM.DIST</code> or <code>NORM.INV</code>.</p>
 </section>
-<section id="standardising-a-value" class="slide level2">
-<h2>Standardising a value</h2>
-<p>The standard score</p>
-<p><span class="math display">z=\frac{x-\mu}{\sigma}</span></p>
-<p>counts how many standard deviations <span class="math inline">x</span> is above or below the mean.</p>
-<ul>
-<li><span class="math inline">z&gt;0</span>: above the mean.</li>
-<li><span class="math inline">z&lt;0</span>: below the mean.</li>
-<li>Magnitude describes distance from the mean in standard-deviation units.</li>
-</ul>
+<section id="standard-normal-and-students-t" class="slide level2">
+<h2>Standard Normal and Student’s t</h2>
+<p>A <strong>standard Normal</strong> has mean 0 and SD 1. Standardisation puts unlike measurements on a common scale:</p>
+<p><span class="math display">z=\frac{x-\mu}{\sigma}.</span></p>
+<p>ETF introduces the <strong>t distribution</strong> because estimating an unknown population SD from a sample adds uncertainty. It resembles the standard Normal but has heavier tails for small degrees of freedom; as degrees of freedom grow, the two become close. Week 3 uses these critical values for intervals.</p>
 </section>
-<section id="now-you-try-compare-unlike-measures" class="slide level2">
-<h2>Now you try: compare unlike measures</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_c40a5cba" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>A store’s weekly sales are <span class="math inline">1.4</span> standard deviations above the chain mean. Its profit is <span class="math inline">0.6</span> standard deviations above the chain mean.</p>
-<ol type="1">
-<li>Which result is more unusual relative to its distribution?</li>
-<li>Why can standard scores compare variables measured in different units?</li>
-<li>Does the comparison prove the store is well managed?</li>
-</ol>
+<section id="check-the-model-before-the-calculation" class="slide level2">
+<h2>Check the model before the calculation</h2>
+<p>The ETF price example is right-skewed. A symmetric Normal curve may be a poor model for those raw prices. Use a stated Normal assumption when a problem gives it; otherwise inspect the histogram, possible outliers, units and sampling context.</p>
+<p>A precise Excel probability from an unsuitable model can be misleading.</p>
 </section>
-<section id="students-t-distribution" class="slide level2">
-<h2>Student’s <span class="math inline">t</span> distribution</h2>
-<ul>
-<li>The <span class="math inline">t</span> distribution is symmetric and centred at zero.</li>
-<li>It has heavier tails than the standard Normal distribution.</li>
-<li>Its shape depends on degrees of freedom, commonly <span class="math inline">df=n-1</span>.</li>
-<li>It is used when estimating a mean and the population standard deviation is unknown.</li>
-<li>As <span class="math inline">df</span> increases, <span class="math inline">t</span> approaches the standard Normal distribution.</li>
-</ul>
-</section>
-<section id="watch-me-choose-the-distribution" class="slide level2">
-<h2>Watch me: choose the distribution</h2>
-<p>Ask in order:</p>
-<ol type="1">
-<li>Are we modelling individual values or a sample statistic?</li>
-<li>Is a Normal model for the population stated or defensible?</li>
-<li>Is the population standard deviation known?</li>
-<li>If estimating a mean with unknown <span class="math inline">\sigma</span>, what are the degrees of freedom?</li>
-</ol>
-<p>The method follows the information available—not the desired answer.</p>
-</section>
-<section id="now-you-try-method-selection" class="slide level2">
-<h2>Now you try: method selection</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f35148a4" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Choose Normal, standard Normal, <span class="math inline">t</span>, or “not enough information”:</p>
-<ol type="1">
-<li>Find a percentile of stated Normal delivery times.</li>
-<li>Standardise one delivery time when <span class="math inline">\mu</span> and <span class="math inline">\sigma</span> are known.</li>
-<li>Estimate a population mean from <span class="math inline">n=18</span> observations when <span class="math inline">\sigma</span> is unknown.</li>
-<li>Model a severely skewed individual outcome with no distributional assumption.</li>
-</ol>
-</section></section>
-<section>
-<section id="integrated-application" class="title-slide slide level1 center">
-<h1>Integrated application</h1>
-
-</section>
-<section id="watch-me-from-question-to-conclusion" class="slide level2">
-<h2>Watch me: from question to conclusion</h2>
-<p>For “Are high-income respondents more likely to have tried the product?”:</p>
-<ol type="1">
-<li>define the two events;</li>
-<li>build the correct PivotTable;</li>
-<li>choose conditional probabilities with clear denominators;</li>
-<li>compare them; and</li>
-<li>state the sample association and its limitation.</li>
-</ol>
-<p>The conclusion should answer the business question, not narrate menu clicks.</p>
-</section>
-<section id="now-you-try-marketing-evidence-brief" class="slide level2">
-<h2>Now you try: marketing evidence brief</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_438b1fdf" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Using the Marketing worksheet, choose one demographic variable and answer:</p>
-<ol type="1">
-<li>Is product trial associated with that variable?</li>
-<li>Which joint, marginal, and conditional probabilities support your answer?</li>
-<li>Is independence plausible?</li>
-<li>What can and cannot be concluded from these observational data?</li>
-</ol>
-<p>Prepare a three-sentence briefing and one clearly labelled table.</p>
-</section>
-<section id="common-traps" class="slide level2">
-<h2>Common traps</h2>
-<ul>
-<li>Treating “and” as addition without subtracting overlap.</li>
-<li>Reversing <span class="math inline">P(A\mid B)</span> and <span class="math inline">P(B\mid A)</span>.</li>
-<li>Comparing conditional probabilities with different, hidden denominators.</li>
-<li>Calling mutually exclusive events independent.</li>
-<li>Using <code>NORM.DIST</code> without checking the tail or interval requested.</li>
-<li>Treating a model assumption as an empirical fact.</li>
-</ul>
-</section>
-<section id="closing-check" class="slide level2">
-<h2>Closing check</h2>
-<p>Can you:</p>
-<ul>
-<li>translate business language into event notation?</li>
-<li>distinguish joint, marginal, union, and conditional probability?</li>
-<li>test the idea of independence using a contingency table?</li>
-<li>choose the correct Excel Normal function and tail?</li>
-<li>explain when a <span class="math inline">t</span> distribution becomes relevant?</li>
-<li>communicate association without claiming causation?</li>
-</ul>
+<section id="closing-chain" class="slide level2">
+<h2>Closing chain</h2>
+<p><strong>Business event → sample space or model → denominator or tail → Excel calculation → validation → plain-language interpretation.</strong></p>
+<p>Next week we ask how much a probability or mean estimated from one sample might change with another sample.</p>
+<!-- Source map for editing: ETF Seminar Week 3 pp. 7–26; Seminar Week 4 pp. 34–49; Workshop Week 3 pp. 3–6; Workshop Week 4 pp. 10–11. The current ETX Marketing workbook replaces historical ETF workbook instructions. -->
 
 
 </section></section>

@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.10.20">
 
-  <meta name="author" content="Week 1: From business questions to data">
+  <meta name="author" content="Week 1: Describing and visualising data">
   <meta name="dcterms.date" content="2026-11-24">
   <title>Business Statistics – ETX1100/ETX5900 Business Statistics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -37,22 +37,6 @@
     }
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-6bc5865dcfecb006383e69f0f2fc01d0.css">
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -161,7 +145,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Week 1: From business questions to data 
+Week 1: Describing and visualising data 
 </div>
 </div>
 </div>
@@ -174,565 +158,161 @@ Week 1: From business questions to data
 <nav role="doc-toc"> 
 <h2 id="toc-title">Outline</h2>
 <ul>
-<li><a href="#/housekeeping-and-unit-orientation" id="/toc-housekeeping-and-unit-orientation">Housekeeping and unit orientation</a></li>
-<li><a href="#/excel-setup-and-orientation" id="/toc-excel-setup-and-orientation">Excel setup and orientation</a></li>
-<li><a href="#/statistical-language-and-variable-types" id="/toc-statistical-language-and-variable-types">Statistical language and variable types</a></li>
-<li><a href="#/mean-median-and-mode" id="/toc-mean-median-and-mode">Mean, median, and mode</a></li>
+<li><a href="#/unit-orientation" id="/toc-unit-orientation">Unit orientation</a></li>
+<li><a href="#/from-business-question-to-data" id="/toc-from-business-question-to-data">From business question to data</a></li>
+<li><a href="#/excel-as-the-analysis-workspace" id="/toc-excel-as-the-analysis-workspace">Excel as the analysis workspace</a></li>
+<li><a href="#/describe-categorical-data" id="/toc-describe-categorical-data">Describe categorical data</a></li>
+<li><a href="#/describe-numerical-data" id="/toc-describe-numerical-data">Describe numerical data</a></li>
 </ul>
 </nav>
 </section>
-<section id="todays-journey" class="slide level2">
-<h2>Today’s journey</h2>
-<ol type="1">
-<li>Get oriented to the unit and its eight-week rhythm.</li>
-<li>Install and prepare the desktop version of Microsoft Excel.</li>
-<li>Learn the parts of Excel that we will use each week.</li>
-<li>Develop a shared statistical vocabulary for data and variables.</li>
-<li>Use mean, median, and mode to describe a typical value.</li>
-</ol>
-<!-- Primary springboards: ETF W1; ETB W1; ETF W4 central-tendency block. -->
-</section>
 <section>
-<section id="housekeeping-and-unit-orientation" class="title-slide slide level1 center">
-<h1>Housekeeping and unit orientation</h1>
-<!-- Source map: current ETX course_info.R and unit requirements; structure adapted from ETF W1 and ETB W1. -->
+<section id="unit-orientation" class="title-slide slide level1 center">
+<h1>Unit orientation</h1>
+
 </section>
 <section id="welcome-to-business-statistics" class="slide level2">
 <h2>Welcome to Business Statistics</h2>
 <ul>
-<li><p>Business statistics turns data into evidence for decisions.</p></li>
-<li><p>The unit combines statistical reasoning, business context, and Excel.</p></li>
-<li><p>Each topic will follow the same broad workflow:</p>
-<p><strong>business question → method → Excel → validation → conclusion</strong></p></li>
+<li>Business statistics turns data into evidence for decisions.</li>
+<li>This unit combines statistical reasoning, business context and Excel.</li>
+<li>We will use the same workflow throughout:</li>
 </ul>
+<p><strong>Business question → method → Excel → validation → plain-language conclusion</strong></p>
 </section>
 <section id="what-will-we-learn" class="slide level2">
 <h2>What will we learn?</h2>
-<p>By the end of the unit, you should be able to:</p>
+<p>Across the eight weeks, you will learn to:</p>
 <ul>
 <li>classify and visualise business data;</li>
 <li>calculate and interpret probabilities;</li>
 <li>reason from samples and test business claims;</li>
 <li>analyse relationships between variables;</li>
 <li>build simple and multiple regression models; and</li>
-<li>formulate and solve business-modelling problems in Excel.</li>
+<li>formulate and solve business modelling problems in Excel.</li>
 </ul>
 </section>
-<section id="the-eight-week-pathway" class="slide level2">
-<h2>The eight-week pathway</h2>
-<ol type="1">
-<li>Data stories and descriptive statistics</li>
-<li>Probability and distributions</li>
-<li>Sampling and estimation</li>
-<li>Testing business claims</li>
-<li>Relationships and simple regression</li>
-<li>Multiple regression</li>
-<li>ToolPak-supported spreadsheet business modelling</li>
-<li>Integrated case and revision</li>
-</ol>
+<section id="the-eight-week-pathway-first-half" class="slide level2">
+<h2>The eight-week pathway: first half</h2>
+<ul>
+<li><strong>Week 1 · 24 Nov 2026:</strong> From business question to an effective data story</li>
+<li><strong>Week 2 · 01 Dec 2026:</strong> Probability and distributions</li>
+<li><strong>Week 3 · 08 Dec 2026:</strong> Sampling and estimation: confidence intervals for means and proportions</li>
+<li><strong>Week 4 · 15 Dec 2026:</strong> Testing business claims: hypothesis tests for means and proportions</li>
+</ul>
+</section>
+<section id="the-eight-week-pathway-second-half" class="slide level2">
+<h2>The eight-week pathway: second half</h2>
+<ul>
+<li><strong>Week 5 · 05 Jan 2027:</strong> Relationships and simple linear regression</li>
+<li><strong>Week 6 · 12 Jan 2027:</strong> Multiple regression and model evaluation</li>
+<li><strong>Week 7 · 19 Jan 2027:</strong> Spreadsheet business modelling with the Analysis ToolPak</li>
+<li><strong>Week 8 · 29 Jan 2027:</strong> Integrated business case, communication and revision</li>
+</ul>
 </section>
 <section id="how-each-three-hour-class-works" class="slide level2">
 <h2>How each three-hour class works</h2>
 <ul>
-<li>Retrieval quiz and business motivation</li>
-<li>Short conceptual blocks</li>
-<li><strong>Watch me:</strong> the instructor live-codes a small, narrated example.</li>
-<li><strong>Now you try:</strong> students immediately complete a closely related task.</li>
-<li>Compare, debug, and explain the result before introducing the next idea.</li>
-<li>Finish with interpretation and a misconception check.</li>
+<li>A business question motivates the lecture explanation.</li>
+<li><strong>Watch me:</strong> follow a short narrated Excel demonstration.</li>
+<li><strong>Now you try:</strong> apply the same idea to a related task.</li>
+<li>Compare, debug and explain the result before the next concept.</li>
+<li>Finish by stating what the evidence supports and where it is limited.</li>
 </ul>
-<p>There is no separate workshop: explanation and application are integrated throughout the class. Come ready to work in Excel rather than only watch.</p>
+<p>Explanation and supervised Excel practice are integrated in one class. Bring desktop Excel and your own working copy of the weekly workbook.</p>
 </section>
 <section id="assessment-at-a-glance" class="slide level2">
 <h2>Assessment at a glance</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Assessment</th>
-<th style="text-align: right;">Weight</th>
-<th>Timing</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Weekly classroom exercises</td>
-<td style="text-align: right;">15%</td>
-<td>In class each week</td>
-</tr>
-<tr class="even">
-<td>Weekly quizzes</td>
-<td style="text-align: right;">15%</td>
-<td>End of each week</td>
-</tr>
-<tr class="odd">
-<td>Written assignment</td>
-<td style="text-align: right;">20%</td>
-<td>End of Week 4</td>
-</tr>
-<tr class="even">
-<td>Examination</td>
-<td style="text-align: right;">50%</td>
-<td>Examination period</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="week-1-priorities" class="slide level2">
-<h2>Week 1 priorities</h2>
-<p>By the end of this week, you should be able to:</p>
 <ul>
-<li>navigate the unit resources and weekly workflow;</li>
-<li>confirm that desktop Excel and its add-ins are ready;</li>
-<li>distinguish data, observations, and variables;</li>
-<li>classify common business variables;</li>
-<li>distinguish populations from samples; and</li>
-<li>calculate and interpret mean, median, and mode.</li>
+<li><strong>Weekly classroom exercises — 15%:</strong> group work, due at the end of each class.</li>
+<li><strong>Weekly quizzes — 15%:</strong> individual; best 5 of 8 count, due Sundays at 17:00.</li>
+<li><strong><a href="../assignments/A1.html">Written assignment</a> — 20%:</strong> individual; due Sun 20 Dec 2026 at 11:59 pm. It assesses material available by the end of Week 4.</li>
+<li><strong>Final examination — 50%:</strong> individual; held in the examination period and covers the full unit.</li>
 </ul>
+<p>Check Moodle for submission and examination arrangements.</p>
 </section>
-<section id="where-to-find-help" class="slide level2">
-<h2>Where to find help</h2>
+<section id="where-to-find-the-materials" class="slide level2">
+<h2>Where to find the materials</h2>
 <ul>
-<li>Use the course website for the weekly schedule and learning materials.</li>
-<li>Use Moodle for official announcements, assessment, and submission details.</li>
-<li>Use the discussion forum for content questions that may help the whole class.</li>
-<li>Use the published consultation and contact channels for personal matters.</li>
+<li>The course website has the weekly schedule, slide decks and workbooks.</li>
+<li>Moodle carries official announcements, quizzes and submission details.</li>
+<li>Keep an editable Excel working copy; the posted workbook remains your starting point.</li>
+<li>Check the current unit information when planning your assessment work.</li>
 </ul>
-<p>Always check the current ETX1100 information rather than logistics inherited from ETF or ETB slides.</p>
+<!-- Unit structure and assessment are based on the earlier Week 1 orientation slides, updated against course_info.R, the current A1 brief and the 2026 ETX1100 unit document. -->
+</section>
+<section id="todays-question" class="slide level2">
+<h2>Today’s question</h2>
+<p><strong>How can a business turn a worksheet of observations into a defensible data story?</strong></p>
+<ol type="1">
+<li>Define the question, population and variables.</li>
+<li>Choose a summary and chart for each variable.</li>
+<li>Build the summary in Excel and check its denominator and units.</li>
+<li>Explain what the evidence shows and what it cannot show.</li>
+</ol>
+<!-- Lecture spine: ETF Seminar Week 1, slides 13 and 19–23; Seminar Week 2, pp. 8–22; Seminar Week 4, pp. 6–33. Workshop inserts: ETF Workshop Weeks 1, 2 and 4. -->
 </section></section>
 <section>
-<section id="excel-setup-and-orientation" class="title-slide slide level1 center">
-<h1>Excel setup and orientation</h1>
-<!-- Source map: ETF W1 Seminar slides 24-34 and Workshop W1; ETB W1 Excel Basics; legacy ETX W1 procedural practice. -->
+<section id="from-business-question-to-data" class="title-slide slide level1 center">
+<h1>From business question to data</h1>
+
 </section>
-<section id="install-desktop-excel-before-class" class="slide level2">
-<h2>Install desktop Excel before class</h2>
+<section id="what-is-business-statistics" class="slide level2">
+<h2>What is business statistics?</h2>
+<p>ETF defines business statistics as <strong>the application of statistical tools and methods to analyse data for evidence-based business decisions</strong>.</p>
+<p>A business question comes first. For example: <em>Do property prices differ between homes inside and outside a school zone?</em> The answer needs a clear unit, a relevant population, useful measurements and a conclusion with limitations.</p>
+</section>
+<section id="variable-observation-and-data" class="slide level2">
+<h2>Variable, observation and data</h2>
 <ul>
-<li>Install the current desktop version of Microsoft Excel through Monash Microsoft 365.</li>
-<li>Sign in with your Monash account and install all available updates.</li>
-<li>Do not rely only on Excel for the web: some analysis and modelling tools differ or are unavailable.</li>
-<li>Bring a laptop on which you can open, edit, and save <code>.xlsx</code> files.</li>
+<li>A <strong>variable</strong> is a characteristic of an item or individual.</li>
+<li><strong>Data</strong> are the observed values of variables.</li>
+<li>An <strong>observation</strong> is one item or individual measured.</li>
 </ul>
-</section>
-<section id="enable-the-analysis-toolpak" class="slide level2">
-<h2>Enable the Analysis ToolPak</h2>
-<p><strong>Windows</strong></p>
-<p><code>File → Options → Add-ins → Manage Excel Add-ins → Go</code></p>
-<p><strong>macOS</strong></p>
-<p><code>Tools → Excel Add-ins</code></p>
-<p>Enable <strong>Analysis ToolPak</strong>. Verify that <strong>Data Analysis</strong> appears on the Data ribbon.</p>
-</section>
-<section id="workbook-anatomy" class="slide level2">
-<h2>Workbook anatomy</h2>
-<ul>
-<li>A <strong>workbook</strong> is the Excel file.</li>
-<li>A <strong>worksheet</strong> is one tab within the workbook.</li>
-<li>A <strong>cell</strong> is identified by its column letter and row number, such as <code>C4</code>.</li>
-<li>The <strong>Name Box</strong> reports the active cell.</li>
-<li>The <strong>Formula Bar</strong> shows or edits the active cell’s contents.</li>
-<li>Cells may contain text, numbers, dates, or formulas.</li>
-</ul>
-</section>
-<section id="ribbons-we-will-use" class="slide level2">
-<h2>Ribbons we will use</h2>
-<ul>
-<li><strong>Home:</strong> formatting, editing, and number display</li>
-<li><strong>Insert:</strong> tables, PivotTables, and charts</li>
-<li><strong>Formulas:</strong> functions and formula auditing</li>
-<li><strong>Data:</strong> sorting, filtering, and Data Analysis</li>
-</ul>
-<p>The goal is not to memorise every command; it is to know where to look.</p>
-</section>
-<section id="get-the-week-1-workbook" class="slide level2">
-<h2>Get the Week 1 workbook</h2>
-<p><a href="week1-data.xlsx">Download the Week 1 Excel workbook</a>, save a working copy, and open it in desktop Excel.</p>
-<p>It contains two worksheets:</p>
-<ul>
-<li><strong>Stores:</strong> store identifiers, sales, profit, and 24-hour status</li>
-<li><strong>RealEstate:</strong> property prices and property characteristics</li>
-</ul>
-<p>Keep the original file unchanged so you can restart an activity if needed.</p>
-</section>
-<section id="watch-me-orient-to-the-workbook" class="slide level2">
-<h2>Watch me: orient to the workbook</h2>
-<p>Follow as the instructor:</p>
-<ol type="1">
-<li>moves between <strong>Stores</strong> and <strong>RealEstate</strong>;</li>
-<li>selects a cell and reads its address and contents;</li>
-<li>identifies headers, observations, and variables;</li>
-<li>resizes a column and formats currency; and</li>
-<li>saves a clearly named working copy.</li>
-</ol>
-<p>Narrate each action and its purpose rather than clicking silently.</p>
-</section>
-<section id="now-you-try-find-your-way-around" class="slide level2">
-<h2>Now you try: find your way around</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_e00c99dd" minutes="3" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>In <strong>Stores</strong>:</p>
-<ol type="1">
-<li>Select the profit recorded for Store 10. What is its cell address?</li>
-<li>Use the Name Box to move directly to <code>D51</code>.</li>
-<li>Identify what the value in that cell means.</li>
-<li>Freeze the header row.</li>
-<li>Save your workbook as <code>week1-yourname.xlsx</code>.</li>
-</ol>
-<p>Compare with a neighbour before we check together.</p>
-</section>
-<section id="formulas-and-cell-references" class="slide level2">
-<h2>Formulas and cell references</h2>
-<ul>
-<li>Begin every formula with <code>=</code>.</li>
-<li>Use <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, and <code>^</code> for basic operations.</li>
-<li>Refer to a cell by address: <code>=C4*D4</code>.</li>
-<li>Copy formulas with the fill handle rather than retyping them.</li>
-<li>Check that copied references point to the intended cells.</li>
-</ul>
-</section>
-<section id="functions-and-ranges" class="slide level2">
-<h2>Functions and ranges</h2>
-<ul>
-<li><p>A function follows the pattern <code>=FUNCTION(inputs)</code>.</p></li>
-<li><p>A colon denotes a consecutive range: <code>A2:A20</code>.</p></li>
-<li><p>A comma separates inputs where a function needs more than one.</p></li>
-<li><p>Useful first examples:</p>
-<ul>
-<li><code>=SUM(A2:A20)</code></li>
-<li><code>=COUNT(A2:A20)</code></li>
-<li><code>=AVERAGE(A2:A20)</code></li>
-</ul></li>
-</ul>
-</section>
-<section id="watch-me-formula-reference-fill" class="slide level2">
-<h2>Watch me: formula, reference, fill</h2>
-<p>In a new column of <strong>Stores</strong>, calculate profit as a percentage of sales:</p>
-<p><code>=C2/B2</code></p>
-<p>Then:</p>
-<ol type="1">
-<li>format the result as a percentage;</li>
-<li>use the fill handle to copy the formula down; and</li>
-<li>inspect how the cell references change.</li>
-</ol>
-</section>
-<section id="now-you-try-build-and-check-a-formula" class="slide level2">
-<h2>Now you try: build and check a formula</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_d8067ff5" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Create a column named <strong>Profit per $100 sales</strong>.</p>
-<ol type="1">
-<li>Write a formula using Sales and Profit.</li>
-<li>Copy it to all stores.</li>
-<li>Check the first, middle, and final rows.</li>
-<li>Explain why checking only the first result is risky.</li>
-</ol>
-</section>
-<section id="watch-me-look-up-store-50" class="slide level2">
-<h2>Watch me: look up Store 50</h2>
-<p>Use the unique <strong>Store ID</strong> to return Store 50’s sales:</p>
-<p><code>=VLOOKUP(50,$A$2:$D$76,2,FALSE)</code></p>
-<ul>
-<li><code>50</code> is the value to find.</li>
-<li><code>$A$2:$D$76</code> is the lookup table.</li>
-<li><code>2</code> identifies the Sales column within that table.</li>
-<li><code>FALSE</code> requires an exact match.</li>
-</ul>
-</section>
-<section id="now-you-try-complete-the-lookup" class="slide level2">
-<h2>Now you try: complete the lookup</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_a10dea0c" minutes="4" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Using <code>VLOOKUP</code>, find for Store 50:</p>
-<ol type="1">
-<li>profit;</li>
-<li>whether it opens 24 hours; and</li>
-<li>the result returned for Store 500.</li>
-</ol>
-<p>Change only the argument that needs to change. Be ready to explain any error.</p>
-</section>
-<section id="watch-me-a-flexible-lookup" class="slide level2">
-<h2>Watch me: a flexible lookup</h2>
-<p>Use <code>MATCH</code> to locate a store and <code>INDEX</code> to return the required value:</p>
-<p><code>=INDEX(B2:B76,MATCH(50,A2:A76,0))</code></p>
-<ul>
-<li><code>MATCH</code> returns the position of Store 50.</li>
-<li><code>INDEX</code> returns the Sales value at that position.</li>
-<li><code>0</code> requests an exact match.</li>
-</ul>
-<p>This separates the lookup column from the result column.</p>
-</section>
-<section id="now-you-try-change-the-question" class="slide level2">
-<h2>Now you try: change the question</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_1bf3033e" minutes="4" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Using <code>INDEX</code> and <code>MATCH</code>:</p>
-<ol type="1">
-<li>return the profit for Store 74;</li>
-<li>return its 24-hour status; and</li>
-<li>verify both results against the original row.</li>
-</ol>
-<p>Which parts of the formula changed, and which stayed fixed?</p>
-</section>
-<section id="watch-me-make-a-business-flag" class="slide level2">
-<h2>Watch me: make a business flag</h2>
-<p>Use <code>IF</code> to classify whether a store has at least $1 million in sales:</p>
-<p><code>=IF(B2&gt;=1000000,"Yes","No")</code></p>
-<p>An <code>IF</code> function requires:</p>
-<ol type="1">
-<li>a logical test;</li>
-<li>the value returned when true; and</li>
-<li>the value returned when false.</li>
-</ol>
-</section>
-<section id="now-you-try-classify-and-handle-errors" class="slide level2">
-<h2>Now you try: classify and handle errors</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_83789d8b" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<ol type="1">
-<li>Create a flag for stores with profit of at least $300,000.</li>
-<li>Copy it down and check both a <strong>Yes</strong> and a <strong>No</strong> case.</li>
-<li>Wrap the Store 500 lookup in <code>IFERROR</code> so it displays <code>Store not found</code>.</li>
-</ol>
-<p><code>=IFERROR(lookup_formula,"Store not found")</code></p>
-</section>
-<section id="watch-me-filter-the-stores" class="slide level2">
-<h2>Watch me: filter the stores</h2>
-<p>On the <strong>Data</strong> ribbon, turn on <strong>Filter</strong> and display only stores that:</p>
-<ul>
-<li>do not open 24 hours; and</li>
-<li>have sales above $1 million.</li>
-</ul>
-<p>Notice that filtering hides observations; it does not delete them.</p>
-</section>
-<section id="now-you-try-answer-with-filters" class="slide level2">
-<h2>Now you try: answer with filters</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_aa70b06c" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Use filters to answer:</p>
-<ol type="1">
-<li>How many stores have profit below $200,000?</li>
-<li>Among them, how many open 24 hours?</li>
-<li>Which store in this subset has the greatest sales?</li>
-</ol>
-<p>Clear every filter when finished and confirm that all 75 stores return.</p>
-</section>
-<section id="watch-me-conditional-summaries" class="slide level2">
-<h2>Watch me: conditional summaries</h2>
-<p>Use the <strong>Stores</strong> data to calculate:</p>
-<ul>
-<li>number of stores: <code>=COUNTA(A2:A76)</code>;</li>
-<li>number open 24 hours: <code>=COUNTIF(D2:D76,"Yes")</code>; and</li>
-<li>their total profit: <code>=SUMIF(D2:D76,"Yes",C2:C76)</code>.</li>
-</ul>
-<p>The criterion determines which observations contribute to the result.</p>
-</section>
-<section id="now-you-try-change-the-criterion" class="slide level2">
-<h2>Now you try: change the criterion</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f5281950" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Calculate:</p>
-<ol type="1">
-<li>the number of stores that do <strong>not</strong> open 24 hours;</li>
-<li>their total sales;</li>
-<li>their total profit; and</li>
-<li>one manual check that makes your results plausible.</li>
-</ol>
-<p>Write a one-sentence business interpretation, not just three numbers.</p>
-</section>
-<section id="watch-me-first-pivottable" class="slide level2">
-<h2>Watch me: first PivotTable</h2>
-<p>Create a PivotTable from <strong>Stores</strong>:</p>
-<ul>
-<li>place <strong>Open 24 Hrs?</strong> in Rows;</li>
-<li>count <strong>Store ID</strong> in Values;</li>
-<li>sum <strong>Sales</strong> in Values; and</li>
-<li>format the sales totals as currency.</li>
-</ul>
-<p>A PivotTable groups observations and calculates summaries without changing the source data.</p>
-</section>
-<section id="now-you-try-summarise-realestate" class="slide level2">
-<h2>Now you try: summarise RealEstate</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_d2cfc221" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Create a PivotTable from <strong>RealEstate</strong>:</p>
-<ol type="1">
-<li>place <strong>SchoolZone</strong> in Rows;</li>
-<li>count the properties;</li>
-<li>calculate average <strong>Price ($000s)</strong>; and</li>
-<li>format and rename the value fields clearly.</li>
-</ol>
-<p>Which group has the higher average price? Does this establish that school zone caused the difference?</p>
-</section>
-<section id="excel-readiness-check" class="slide level2">
-<h2>Excel readiness check</h2>
-<p>Before moving on, can you:</p>
-<ul>
-<li>find a worksheet and a cell from an address?</li>
-<li>distinguish a typed value from a formula?</li>
-<li>explain what a range such as <code>B2:B101</code> represents?</li>
-<li>use a lookup, <code>IF</code>, and <code>IFERROR</code>?</li>
-<li>filter observations and clear the filter?</li>
-<li>use <code>COUNTIF</code>, <code>SUMIF</code>, and a PivotTable?</li>
-<li>locate Data Analysis?</li>
-<li>save your workbook using a meaningful filename?</li>
-</ul>
-</section></section>
-<section>
-<section id="statistical-language-and-variable-types" class="title-slide slide level1 center">
-<h1>Statistical language and variable types</h1>
-<!-- Source map: ETF W1 Seminar slides 13-23; ETB W1 terminology and sampling-bias sequence; legacy ETX W1 practice. -->
-</section>
-<section id="from-a-business-question-to-data" class="slide level2">
-<h2>From a business question to data</h2>
-<p>Consider: <strong>What influences the selling price of a house?</strong></p>
-<ul>
-<li>The business question determines what we need to observe.</li>
-<li>Each row can represent one house.</li>
-<li>Each column records a characteristic of those houses.</li>
-<li>The appropriate statistical method depends on the kinds of variables involved.</li>
-</ul>
-</section>
-<section id="variables-observations-and-data" class="slide level2">
-<h2>Variables, observations, and data</h2>
-<ul>
-<li>A <strong>variable</strong> is a characteristic that can differ between items or individuals.</li>
-<li>An <strong>observation</strong> is one item or individual on which variables are recorded.</li>
-<li><strong>Data</strong> are the observed values of those variables.</li>
-</ul>
-<p>For a house:</p>
-<ul>
-<li>variables might include suburb, number of bedrooms, and selling price;</li>
-<li>one observation is one house; and</li>
-<li>the recorded suburb, bedroom count, and price are its data values.</li>
-</ul>
-</section>
-<section id="the-first-classification-decision" class="slide level2">
-<h2>The first classification decision</h2>
-<p>Variables are broadly classified as:</p>
-<ul>
-<li><strong>Categorical (qualitative):</strong> values indicate groups or labels.</li>
-<li><strong>Numerical (quantitative):</strong> values represent counts or measurements for which arithmetic is meaningful.</li>
-</ul>
-<p>A number used as a label—such as a postcode—is still categorical.</p>
-</section>
-<section id="categorical-variables" class="slide level2">
-<h2>Categorical variables</h2>
-<p><strong>Nominal</strong></p>
-<ul>
-<li>Categories have no natural ordering.</li>
-<li>Examples: payment method, suburb, product category.</li>
-</ul>
-<p><strong>Ordinal</strong></p>
-<ul>
-<li>Categories have a meaningful order.</li>
-<li>Examples: poor/fair/good/excellent; low/medium/high risk.</li>
-</ul>
-<p>The gaps between ordinal categories are not necessarily equal.</p>
-</section>
-<section id="numerical-variables" class="slide level2">
-<h2>Numerical variables</h2>
-<p><strong>Discrete</strong></p>
-<ul>
-<li>Produced by counting.</li>
-<li>Often takes separate whole-number values.</li>
-<li>Examples: number of purchases, complaints, or bedrooms.</li>
-</ul>
-<p><strong>Continuous</strong></p>
-<ul>
-<li>Produced by measuring.</li>
-<li>Can potentially take any value within an interval.</li>
-<li>Examples: waiting time, revenue, weight, or distance.</li>
-</ul>
-</section>
-<section id="cross-sectional-and-time-series-data" class="slide level2">
-<h2>Cross-sectional and time-series data</h2>
-<p><strong>Cross-sectional data</strong></p>
-<ul>
-<li>Observations on multiple entities at one time or during one period.</li>
-<li>Example: sales across 50 stores in November.</li>
-</ul>
-<p><strong>Time-series data</strong></p>
-<ul>
-<li>Repeated observations of the same quantity through time.</li>
-<li>Example: monthly sales for one store from January to December.</li>
-</ul>
-</section>
-<section id="descriptive-and-inferential-statistics" class="slide level2">
-<h2>Descriptive and inferential statistics</h2>
-<ul>
-<li><strong>Descriptive statistics</strong> organise, summarise, and present observed data.</li>
-<li><strong>Inferential statistics</strong> use sample evidence to learn about a wider population.</li>
-</ul>
-<p>This week begins with description; later weeks develop inference.</p>
+<p>In the <code>RealEstate</code> sheet of the <a href="week1-data.xlsx">Week 1 workbook</a>, one row is one property. <code>Price ($000s)</code>, <code>Beds</code>, <code>SchoolZone</code> and <code>Auction</code> are variables. A price of 1100 means AUD 1.1 million.</p>
 </section>
 <section id="population-sample-parameter-statistic" class="slide level2">
 <h2>Population, sample, parameter, statistic</h2>
 <ul>
-<li><strong>Population:</strong> the complete group relevant to the question.</li>
-<li><strong>Sample:</strong> the subset actually observed.</li>
-<li><strong>Parameter:</strong> a numerical feature of the population.</li>
-<li><strong>Statistic:</strong> a numerical feature calculated from the sample.</li>
+<li><strong>Population:</strong> all members of the group about which we want a conclusion.</li>
+<li><strong>Sample:</strong> a subset selected for analysis, ideally representative of that population.</li>
+<li><strong>Parameter:</strong> a numerical description of the population, usually unknown.</li>
+<li><strong>Statistic:</strong> a numerical description computed from the sample.</li>
 </ul>
-<p>A representative sample supports credible conclusions about the population.</p>
+<p>A mean calculated from 329 sampled properties is a <strong>statistic</strong>. It is evidence about a population mean only if the sample and population are defined and the sampling process is credible.</p>
 </section>
-<section id="watch-me-classify-the-first-variables" class="slide level2">
-<h2>Watch me: classify the first variables</h2>
-<p>In <strong>RealEstate</strong>, classify:</p>
-<ul>
-<li><code>Price ($000s)</code>;</li>
-<li><code>Beds</code>;</li>
-<li><code>SchoolZone</code>; and</li>
-<li><code>Auction</code>.</li>
-</ul>
-<p>For each decision, ask whether the values are labels, ordered categories, counts, or measurements.</p>
+<section id="descriptive-and-inferential-statistics" class="slide level2">
+<h2>Descriptive and inferential statistics</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>What we do</th>
+<th>Purpose</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Describe</strong></td>
+<td>Collect, summarise and present observed data</td>
+<td>Report the sample median price and a box plot</td>
+</tr>
+<tr class="even">
+<td><strong>Infer</strong></td>
+<td>Use sample data to draw a conclusion about a population</td>
+<td>Estimate the population mean price</td>
+</tr>
+</tbody>
+</table>
+<p>Today we build the description. Weeks 3–4 use sampling to quantify the uncertainty in inference.</p>
 </section>
-<section id="now-you-try-complete-the-classification" class="slide level2">
-<h2>Now you try: complete the classification</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_16e96d2e" minutes="4" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>Classify the remaining <strong>RealEstate</strong> variables as nominal, ordinal, discrete, or continuous:</p>
-<ul>
-<li><code>Baths</code>;</li>
-<li><code>Cars</code>;</li>
-<li><code>Area (sqm)</code>;</li>
-<li><code>New</code>; and</li>
-<li><code>Subdivided</code>.</li>
-</ul>
-<p>Is the worksheet cross-sectional or time-series? Justify your answer.</p>
-</section>
-<section id="now-you-try-build-a-data-dictionary" class="slide level2">
-<h2>Now you try: build a data dictionary</h2>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_1b044c28" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
-</div>
-</div>
-<p>For each column in the Week 1 workbook, record:</p>
+<section id="classify-the-variable-before-choosing-a-chart" class="slide level2">
+<h2>Classify the variable before choosing a chart</h2>
 <table class="caption-top">
 <colgroup>
 <col style="width: 25%">
@@ -742,117 +322,227 @@ Week 1: From business questions to data
 </colgroup>
 <thead>
 <tr class="header">
-<th>Variable</th>
-<th>Business meaning</th>
-<th>Unit/categories</th>
-<th>Variable type</th>
+<th>Type</th>
+<th>Meaning</th>
+<th>Example</th>
+<th>First chart choice</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Example: <code>Price</code></td>
-<td>Selling price of property</td>
-<td>AUD thousands</td>
-<td>Continuous</td>
+<td>Nominal categorical</td>
+<td>Labels without an order</td>
+<td><code>Auction</code> Yes/No</td>
+<td>Bar chart</td>
+</tr>
+<tr class="even">
+<td>Ordinal categorical</td>
+<td>Labels with an order</td>
+<td>Poor/Fair/Good</td>
+<td>Ordered bar chart</td>
+</tr>
+<tr class="odd">
+<td>Discrete numerical</td>
+<td>A count</td>
+<td><code>Beds</code></td>
+<td>Bar chart</td>
+</tr>
+<tr class="even">
+<td>Continuous numerical</td>
+<td>A measurement</td>
+<td><code>Price ($000s)</code></td>
+<td>Histogram or box plot</td>
 </tr>
 </tbody>
 </table>
-<p>A data dictionary prevents avoidable mistakes before analysis begins.</p>
-</section></section>
-<section>
-<section id="mean-median-and-mode" class="title-slide slide level1 center">
-<h1>Mean, median, and mode</h1>
-<!-- Source map: ETF W4 central-tendency block; ETB W3 numerical-variables block; legacy ETX W1 worked descriptive examples. -->
+<p><strong>Cross-sectional</strong> data describe different units at a time; <strong>time-series</strong> data follow a quantity through time. Put time on the horizontal axis of a line chart.</p>
 </section>
-<section id="what-is-a-typical-value" class="slide level2">
-<h2>What is a “typical” value?</h2>
-<p>Measures of central tendency answer slightly different versions of this question:</p>
-<ul>
-<li><strong>Mean:</strong> the arithmetic balance point or average.</li>
-<li><strong>Median:</strong> the middle ordered value.</li>
-<li><strong>Mode:</strong> the most frequently occurring value or category.</li>
-</ul>
-<p>The most appropriate measure depends on the variable and its distribution.</p>
+<section id="watch-me-classify-the-realestate-sheet" class="slide level2">
+<h2>Watch me: classify the RealEstate sheet</h2>
+<p>Open <code>RealEstate</code>. Ask for each column:</p>
+<ol type="1">
+<li>What does one row represent?</li>
+<li>Is the entry a label, count or measurement?</li>
+<li>Which question could a chart answer?</li>
+<li>Is a number an identifier, a category code or a true quantity?</li>
+</ol>
+<p><code>Beds</code> is a count even though Excel stores it as a number. <code>SchoolZone</code> is categorical even if we later encode Yes and No as 1 and 0.</p>
 </section>
-<section id="mean" class="slide level2">
-<h2>Mean</h2>
-<p>For observations <span class="math inline">x_1, x_2, \ldots, x_n</span>, the sample mean is</p>
-<p><span class="math display">
-\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}.
-</span></p>
-<ul>
-<li>Excel: <code>=AVERAGE(range)</code></li>
-<li>Uses every numerical observation.</li>
-<li>Commonly used in later statistical analysis.</li>
-<li>Sensitive to unusually large or small values.</li>
-</ul>
-</section>
-<section id="median" class="slide level2">
-<h2>Median</h2>
-<p>The median is the middle value after sorting observations from smallest to largest.</p>
-<ul>
-<li>Excel: <code>=MEDIAN(range)</code></li>
-<li>Half the observations are at or below it and half are at or above it.</li>
-<li>Resistant to extreme values.</li>
-<li>Often informative for skewed variables such as income or house prices.</li>
-</ul>
-</section>
-<section id="mode" class="slide level2">
-<h2>Mode</h2>
-<p>The mode is the value that occurs most frequently.</p>
-<ul>
-<li>Excel for a single numerical mode: <code>=MODE.SNGL(range)</code></li>
-<li>Particularly meaningful for categorical or discrete data.</li>
-<li>A dataset can have no mode or more than one mode.</li>
-<li>For continuous data, the most populated interval may be more useful than one repeated value.</li>
-</ul>
-</section>
-<section id="watch-me-price-centre" class="slide level2">
-<h2>Watch me: price centre</h2>
-<p>In <strong>RealEstate</strong>, calculate for <code>Price ($000s)</code>:</p>
-<ul>
-<li><code>=AVERAGE(A2:A330)</code>;</li>
-<li><code>=MEDIAN(A2:A330)</code>; and</li>
-<li><code>=MODE.SNGL(A2:A330)</code>.</li>
-</ul>
-<p>Then translate each result into a sentence about property prices. The formula is not the conclusion.</p>
-</section>
-<section id="now-you-try-compare-centre-in-stores" class="slide level2">
-<h2>Now you try: compare centre in Stores</h2>
+<section id="now-you-try-classify-stores" class="slide level2">
+<h2>Now you try: classify Stores</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_9381cfff" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_d6f8fca4" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
-<p>For both <strong>Sales</strong> and <strong>Profit</strong>:</p>
-<ol type="1">
-<li>calculate the mean, median, and mode where applicable;</li>
-<li>compare the mean with the median;</li>
-<li>identify whether the mode is informative; and</li>
-<li>recommend the most useful measure of a typical store.</li>
-</ol>
-<p>Add one temporarily extreme value to a copy of the data. Which measure changes more: mean or median?</p>
+<p>Open <code>Stores</code>. Identify the observational unit, the type of <code>Sales</code>, <code>Profit</code> and <code>Open 24 Hrs?</code>, and one sensible chart for each. State a possible population before you discuss inference.</p>
+</section></section>
+<section>
+<section id="excel-as-the-analysis-workspace" class="title-slide slide level1 center">
+<h1>Excel as the analysis workspace</h1>
+
 </section>
-<section id="mean-median-or-mode" class="slide level2">
-<h2>Mean, median, or mode?</h2>
-<p>When choosing a measure, ask:</p>
-<ol type="1">
-<li>Is the variable categorical or numerical?</li>
-<li>Is a natural ordering available?</li>
-<li>Are extreme values pulling the mean?</li>
-<li>Do repeated values or a dominant category matter?</li>
-<li>Which measure answers the business question most honestly?</li>
-</ol>
-<p>Do not report a measure merely because Excel can calculate it.</p>
-</section>
-<section id="closing-check" class="slide level2">
-<h2>Closing check</h2>
+<section id="cells-formulas-and-ranges" class="slide level2">
+<h2>Cells, formulas and ranges</h2>
+<p>ETF’s Excel introduction starts with three rules:</p>
 <ul>
-<li><strong>Mean:</strong> uses all numerical values but is sensitive to extremes.</li>
-<li><strong>Median:</strong> identifies the middle and is resistant to extremes.</li>
-<li><strong>Mode:</strong> identifies the most common value or category.</li>
+<li>A cell address combines a column letter and row number: <code>B2</code>.</li>
+<li>A formula begins with <code>=</code>; for example, <code>=C2/B2</code>.</li>
+<li>A colon identifies a consecutive range: <code>B2:B76</code>.</li>
 </ul>
-<p>For the Week 1 data, calculate all applicable measures and write one sentence explaining which measure best represents a typical observation.</p>
+<p>Functions such as <code>=AVERAGE(B2:B76)</code>, <code>=COUNTIF(D2:D76,"Yes")</code> and <code>=STDEV.S(B2:B76)</code> calculate summaries. Check that each range contains the intended records.</p>
+</section>
+<section id="watch-me-make-an-auditable-rate" class="slide level2">
+<h2>Watch me: make an auditable rate</h2>
+<p>In <code>Stores</code>, <code>Sales</code> is column B and <code>Profit</code> is column C. Put <strong>Profit margin</strong> in a blank column and enter <code>=C2/B2</code> for the first store. Format as a percentage, fill down and inspect the last row.</p>
+<p>A rate has a numerator, denominator and meaning. <code>Profit/Sales</code> answers a different question from profit in dollars. Keep the original data and the formula visible.</p>
+</section>
+<section id="now-you-try-compare-stores-fairly" class="slide level2">
+<h2>Now you try: compare stores fairly</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_31c6f47e" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Calculate the profit margin for every store. Identify a store with high profit in dollars and a store with high profit margin. Write one sentence explaining why the rankings can differ.</p>
+</section>
+<section id="filters-and-pivottables" class="slide level2">
+<h2>Filters and PivotTables</h2>
+<ul>
+<li><strong>Data &gt; Filter</strong> isolates records without deleting other observations.</li>
+<li><strong>Insert &gt; PivotTable</strong> counts or summarises groups from the full table.</li>
+<li><code>COUNTIF</code> and <code>COUNTIFS</code> provide an independent check of a count.</li>
+</ul>
+<p>The Excel work should follow the question: choose a numerator, choose the right denominator, then calculate and label the result.</p>
+</section></section>
+<section>
+<section id="describe-categorical-data" class="title-slide slide level1 center">
+<h1>Describe categorical data</h1>
+
+</section>
+<section id="frequency-and-relative-frequency" class="slide level2">
+<h2>Frequency and relative frequency</h2>
+<p>A <strong>frequency</strong> is a count. A <strong>relative frequency</strong> is that count divided by the relevant total.</p>
+<p>For a chart of <code>Auction</code> by Yes/No, each bar can show either a count or a percentage of all sampled properties. For a comparison <strong>within</strong> school-zone groups, divide by each group’s number of properties. State the denominator in the title or note.</p>
+</section>
+<section id="watch-me-pivottable-to-bar-chart" class="slide level2">
+<h2>Watch me: PivotTable to bar chart</h2>
+<p>ETF Seminar Week 2 demonstrates this sequence with Real Estate data:</p>
+<ol type="1">
+<li>Select the <code>RealEstate</code> table and choose <strong>Insert &gt; PivotTable</strong>.</li>
+<li>Drag <code>Auction</code> to <strong>Rows</strong> and <strong>Values</strong>; summarise Values by <strong>Count</strong>.</li>
+<li>For a percentage, choose <strong>Show Values As &gt; % of Grand Total</strong>.</li>
+<li>Select the summary and choose <strong>Insert &gt; Column or Bar Chart</strong>.</li>
+<li>Add a descriptive title, a percentage axis label and the sample size.</li>
+</ol>
+<p>A bar chart compares categories. A pie chart can show shares of one whole, but grouped bars make two model or customer groups easier to compare.</p>
+</section>
+<section id="now-you-try-create-and-explain-a-rate-chart" class="slide level2">
+<h2>Now you try: create and explain a rate chart</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_ba91fb8c" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Use a PivotTable to compare the <strong>within-group Auction rate</strong> for <code>SchoolZone</code> = Yes and No.&nbsp;Make a labelled bar chart in Excel. Audit one bar with <code>COUNTIFS</code> divided by the correct group total, then explain the comparison without claiming causation.</p>
+</section>
+<section id="visual-integrity-is-part-of-the-result" class="slide level2">
+<h2>Visual integrity is part of the result</h2>
+<p>The ETF visualisation lecture asks whether a nonexpert can understand the graph. Check:</p>
+<ul>
+<li>Purpose, informative title and readable labels.</li>
+<li>Units and denominator.</li>
+<li>Comparable axis scale; start a bar chart at zero.</li>
+<li>A legend when there is more than one series.</li>
+<li>No distorted sizes or selective categories.</li>
+</ul>
+<p>A clear chart still needs a sentence stating its main pattern and a limitation.</p>
+</section></section>
+<section>
+<section id="describe-numerical-data" class="title-slide slide level1 center">
+<h1>Describe numerical data</h1>
+
+</section>
+<section id="one-number-cannot-describe-a-distribution" class="slide level2">
+<h2>One number cannot describe a distribution</h2>
+<p>Numerical description has three parts:</p>
+<ol type="1">
+<li><strong>Centre:</strong> mean and median describe a typical value.</li>
+<li><strong>Spread:</strong> standard deviation and IQR describe variability.</li>
+<li><strong>Shape:</strong> symmetry, skewness and unusual values affect interpretation.</li>
+</ol>
+<p>ETF Seminar Week 4 uses all three when comparing house prices by school zone. A chart shows features a single average can hide.</p>
+</section>
+<section id="mean-median-and-mode" class="slide level2">
+<h2>Mean, median and mode</h2>
+<ul>
+<li><strong>Mean:</strong> sum of observations divided by their number, <code>=AVERAGE(range)</code>. It uses every value and is affected by extreme prices.</li>
+<li><strong>Median:</strong> the middle ordered value, <code>=MEDIAN(range)</code>. Half the values are at or below it.</li>
+<li><strong>Mode:</strong> the most frequent value, <code>=MODE.SNGL(range)</code>. For prices with few repeats, a modal interval in a histogram is often more useful.</li>
+</ul>
+<p>If a few very expensive houses pull the mean above the median, describe the distribution as right-skewed before choosing the headline statistic.</p>
+</section>
+<section id="spread-standard-deviation-and-iqr" class="slide level2">
+<h2>Spread: standard deviation and IQR</h2>
+<p>The <strong>sample standard deviation</strong> measures how observations vary around the sample mean: <code>=STDEV.S(range)</code>. It uses all values but responds to outliers.</p>
+<p>The <strong>interquartile range</strong> is <code>IQR = Q3 - Q1</code>, the spread of the middle 50%. Use <code>=QUARTILE.EXC(range,1)</code> and <code>=QUARTILE.EXC(range,3)</code> for the ETF convention, and label that choice. Excel also has <code>QUARTILE.INC</code>; use one convention consistently.</p>
+<p>The range, <code>MAX - MIN</code>, relies only on the two extremes. Give units for every spread statistic.</p>
+</section>
+<section id="what-a-histogram-shows" class="slide level2">
+<h2>What a histogram shows</h2>
+<p>A histogram groups a continuous variable into adjacent intervals. Its bars touch, and their pattern can reveal skewness, a long tail or unusual values. ETF groups Real Estate prices in AUD 500,000 bins, then sets the chart’s gap width to zero.</p>
+
+<!-- Extracted from ETF1100 Seminar Week 4, p. 34. -->
+<img data-src="figures/etf-price-histogram.png" style="width:74.0%" alt="Relative-frequency histogram of house prices in thousands of dollars, with most observations between 500 and 1499 and a long right tail." class="r-stretch quarto-figure-center"><p class="caption">ETF Real Estate price histogram. The data are grouped into equal-width price bins.</p></section>
+<section id="what-a-box-plot-shows" class="slide level2">
+<h2>What a box plot shows</h2>
+<p>The box spans Q1 to Q3, with the median inside. Whiskers and separate points show the range and unusual values under Excel’s box-plot rule. A side-by-side box plot compares centre, spread and outliers on one scale.</p>
+
+<!-- Extracted from ETF1100 Seminar Week 4, p. 33. -->
+<img data-src="figures/etf-school-zone-boxplots.png" style="width:75.0%" alt="Two Excel box plots of house prices; the inside-school-zone group has a higher median and several high-price outliers." class="r-stretch quarto-figure-center"><p class="caption">ETF comparison of property-price distributions inside and outside a school zone.</p></section>
+<section id="watch-me-group-summaries-and-a-box-plot" class="slide level2">
+<h2>Watch me: group summaries and a box plot</h2>
+<p>In <code>RealEstate</code>, compare <code>Price ($000s)</code> for <code>SchoolZone</code> Yes and No.&nbsp;ETF Workshop Week 4 uses <strong>Data &gt; Data Analysis &gt; Descriptive Statistics</strong> for mean, median and sample standard deviation. Add Q1 and Q3 with formulas.</p>
+<p>For the chart, put the two price groups in adjacent columns with clear headers, then choose <strong>Insert &gt; Statistical Chart &gt; Box &amp; Whisker</strong>. Label the vertical axis <strong>Price (AUD thousands)</strong>. The ToolPak provides summaries; the ordinary Excel chart displays the distribution.</p>
+</section>
+<section id="now-you-try-compare-two-distributions" class="slide level2">
+<h2>Now you try: compare two distributions</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_9b16b61f" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Compare price for <code>New</code> = Yes and No.&nbsp;Produce a small table of <code>COUNT</code>, <code>AVERAGE</code>, <code>MEDIAN</code>, <code>STDEV.S</code>, Q1 and Q3, then make a side-by-side box plot. Which group has the higher typical price? Which has more spread? Identify one visible limitation.</p>
+</section>
+<section id="build-a-one-slide-data-story" class="slide level2">
+<h2>Build a one-slide data story</h2>
+<p>A business data story has a repeatable order:</p>
+<p><strong>Question → unit and population → chart and numerical summary → check → plain-language claim → limitation.</strong></p>
+<p>For the school-zone comparison, a higher sample median is a description of the observed properties. It does not by itself show that school-zone status caused the price difference; property size and location may also matter.</p>
+</section>
+<section id="now-you-try-briefing-panel" class="slide level2">
+<h2>Now you try: briefing panel</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_24e6e997" minutes="8" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Create a compact panel for the Real Estate question with one labelled categorical chart, one numerical distribution chart, two summary numbers and a two-sentence conclusion. Make the Excel working auditable from raw rows to chart.</p>
+</section>
+<section id="optional-excel-practice" class="slide level2">
+<h2>Optional Excel practice</h2>
+<p>The <code>Stores</code> sheet also supports ETF Workshop Week 1 practice with <code>VLOOKUP</code>, <code>INDEX</code>/<code>MATCH</code>, <code>IF</code>, <code>IFERROR</code>, filters, <code>COUNTIF</code> and <code>SUMIF</code>. Use these when a business question needs a lookup or conditional summary. They are useful tools, but the core Week 1 story is choosing, constructing and interpreting summaries and charts.</p>
+</section>
+<section id="close-what-must-be-true-of-your-chart" class="slide level2">
+<h2>Close: what must be true of your chart?</h2>
+<ul>
+<li>The chart type fits the variable.</li>
+<li>The groups, counts and denominators are explicit.</li>
+<li>The units, labels and scales are readable.</li>
+<li>The written claim matches the plotted evidence.</li>
+<li>The original rows and formulas remain available for checking.</li>
+</ul>
+<!-- Source map for editing: ETF Seminar Week 1 slides 13, 19–23, 27–34; Seminar Week 2 pp. 8–22, 27–30; Seminar Week 4 pp. 6–33; Workshop Week 1 slides 2–10; Workshop Week 2 pp. 3–8; Workshop Week 4 pp. 3–9. Current ETX workbooks replace the historical ETF files. -->
 
 
 </section></section>
