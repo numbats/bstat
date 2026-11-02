@@ -963,7 +963,7 @@
     "href": "week3/index.html#upcoming-assessments",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Upcoming assessments",
-    "text": "Upcoming assessments\n\nWeek 3: Quiz 3 — due Sun 13 Dec 2026 at 17:00\nWeek 4: Quiz 4 — due Sun 20 Dec 2026 at 17:00; Written assignment — due Fri 18 Dec 2026 at 11:59 pm\nWeek 5: Quiz 5 — due Sun 10 Jan 2027 at 17:00"
+    "text": "Upcoming assessments\n\nWeek 3: Quiz 3 — due Sun 13 Dec 2026 at 17:00\nWeek 4: Quiz 4 — due Sun 20 Dec 2026 at 17:00; Written assignment — due Sun 20 Dec 2026 at 11:59 pm\nWeek 5: Quiz 5 — due Sun 10 Jan 2027 at 17:00"
   },
   {
     "objectID": "week2/slides.html#todays-journey",
@@ -1299,7 +1299,7 @@
     "href": "assignments/A1.html",
     "title": "Individual written assignment",
     "section": "",
-    "text": "Due: Friday 18 December 2026 at 11:59 pm (Melbourne time). Check Moodle for the submission location."
+    "text": "Due: Sunday 20 December 2026 at 11:59 pm (Melbourne time). Check Moodle for the submission location."
   },
   {
     "objectID": "assignments/A1.html#the-business-case",
@@ -1362,14 +1362,14 @@
     "href": "index.html#weekly-schedule",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Weekly schedule",
-    "text": "Weekly schedule\nThe integrated three-hour workshop meets on Tuesdays in Weeks 1–7. Week 8 meets on Friday 29 January 2027, 15:00–18:00. Class dates, times and assessment deadlines are below. All times are Melbourne time.\n\n\n\nWeek\nClass date\nClass time\nTopic\nClassroom activity\nAssessments\n\n\n\n\n1\nTue 24 Nov 2026\n13:00–16:00\nFrom business question to an effective data story\nExercise 1 — end of class\nQuiz 1 — due Sun 29 Nov 2026 at 17:00\n\n\n2\nTue 01 Dec 2026\n13:00–16:00\nProbability and distributions\nExercise 2 — end of class\nQuiz 2 — due Sun 06 Dec 2026 at 17:00\n\n\n3\nTue 08 Dec 2026\n13:00–16:00\nSampling and estimation: confidence intervals for means and proportions\nExercise 3 — end of class\nQuiz 3 — due Sun 13 Dec 2026 at 17:00\n\n\n4\nTue 15 Dec 2026\n13:00–16:00\nTesting business claims: hypothesis tests for means and proportions\nExercise 4 — end of class\nQuiz 4 — due Sun 20 Dec 2026 at 17:00; Written assignment — due Fri 18 Dec 2026 at 11:59 pm\n\n\n—\n21–28 Dec 2026\n—\nMid-semester break\n\n\n\n\n5\nTue 05 Jan 2027\n13:00–16:00\nRelationships and simple linear regression\nExercise 5 — end of class\nQuiz 5 — due Sun 10 Jan 2027 at 17:00\n\n\n6\nTue 12 Jan 2027\n13:00–16:00\nMultiple regression and model evaluation\nExercise 6 — end of class\nQuiz 6 — due Sun 17 Jan 2027 at 17:00\n\n\n7\nTue 19 Jan 2027\n13:00–16:00\nSpreadsheet business modelling with the Analysis ToolPak\nExercise 7 — end of class\nQuiz 7 — due Sun 24 Jan 2027 at 17:00\n\n\n8\nFri 29 Jan 2027\n15:00–18:00\nIntegrated business case, communication and revision\nExercise 8 — end of class\nQuiz 8 — due Sun 31 Jan 2027 at 17:00"
+    "text": "Weekly schedule\nThe integrated three-hour workshop meets on Tuesdays in Weeks 1–7. Week 8 meets on Friday 29 January 2027, 15:00–18:00. Class dates, times and assessment deadlines are below. All times are Melbourne time.\n\n\n\nWeek\nClass date\nClass time\nTopic\nClassroom activity\nAssessments\n\n\n\n\n1\nTue 24 Nov 2026\n13:00–16:00\nFrom business question to an effective data story\nExercise 1 — end of class\nQuiz 1 — due Sun 29 Nov 2026 at 17:00\n\n\n2\nTue 01 Dec 2026\n13:00–16:00\nProbability and distributions\nExercise 2 — end of class\nQuiz 2 — due Sun 06 Dec 2026 at 17:00\n\n\n3\nTue 08 Dec 2026\n13:00–16:00\nSampling and estimation: confidence intervals for means and proportions\nExercise 3 — end of class\nQuiz 3 — due Sun 13 Dec 2026 at 17:00\n\n\n4\nTue 15 Dec 2026\n13:00–16:00\nTesting business claims: hypothesis tests for means and proportions\nExercise 4 — end of class\nQuiz 4 — due Sun 20 Dec 2026 at 17:00; Written assignment — due Sun 20 Dec 2026 at 11:59 pm\n\n\n—\n21–28 Dec 2026\n—\nMid-semester break\n\n\n\n\n5\nTue 05 Jan 2027\n13:00–16:00\nRelationships and simple linear regression\nExercise 5 — end of class\nQuiz 5 — due Sun 10 Jan 2027 at 17:00\n\n\n6\nTue 12 Jan 2027\n13:00–16:00\nMultiple regression and model evaluation\nExercise 6 — end of class\nQuiz 6 — due Sun 17 Jan 2027 at 17:00\n\n\n7\nTue 19 Jan 2027\n13:00–16:00\nSpreadsheet business modelling with the Analysis ToolPak\nExercise 7 — end of class\nQuiz 7 — due Sun 24 Jan 2027 at 17:00\n\n\n8\nFri 29 Jan 2027\n15:00–18:00\nIntegrated business case, communication and revision\nExercise 8 — end of class\nQuiz 8 — due Sun 31 Jan 2027 at 17:00"
   },
   {
     "objectID": "index.html#assessment-summary",
     "href": "index.html#assessment-summary",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Assessment summary",
-    "text": "Assessment summary\n\n\n\nAssessment task\nWeight\nTiming\nMode\n\n\n\n\nWeekly classroom exercises\n15%\nEnd of each class\nGroup\n\n\nWeekly quizzes (best 5 of 8)\n15%\nSundays at 17:00\nIndividual\n\n\nWritten assignment\n20%\nFri 18 Dec 2026 at 11:59 pm\nIndividual\n\n\nExamination\n50%\nExamination period\nIndividual"
+    "text": "Assessment summary\n\n\n\nAssessment task\nWeight\nTiming\nMode\n\n\n\n\nWeekly classroom exercises\n15%\nEnd of each class\nGroup\n\n\nWeekly quizzes (best 5 of 8)\n15%\nSundays at 17:00\nIndividual\n\n\nWritten assignment\n20%\nSun 20 Dec 2026 at 11:59 pm\nIndividual\n\n\nExamination\n50%\nExamination period\nIndividual"
   },
   {
     "objectID": "week1/slides.html#todays-journey",
@@ -1761,7 +1761,7 @@
     "href": "week2/index.html#upcoming-assessments",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Upcoming assessments",
-    "text": "Upcoming assessments\n\nWeek 2: Quiz 2 — due Sun 06 Dec 2026 at 17:00\nWeek 3: Quiz 3 — due Sun 13 Dec 2026 at 17:00\nWeek 4: Quiz 4 — due Sun 20 Dec 2026 at 17:00; Written assignment — due Fri 18 Dec 2026 at 11:59 pm"
+    "text": "Upcoming assessments\n\nWeek 2: Quiz 2 — due Sun 06 Dec 2026 at 17:00\nWeek 3: Quiz 3 — due Sun 13 Dec 2026 at 17:00\nWeek 4: Quiz 4 — due Sun 20 Dec 2026 at 17:00; Written assignment — due Sun 20 Dec 2026 at 11:59 pm"
   },
   {
     "objectID": "week2/solution/index.html",
@@ -2048,7 +2048,7 @@
     "href": "week4/index.html#upcoming-assessments",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Upcoming assessments",
-    "text": "Upcoming assessments\n\nWeek 4: Quiz 4 — due Sun 20 Dec 2026 at 17:00; Written assignment — due Fri 18 Dec 2026 at 11:59 pm\nWeek 5: Quiz 5 — due Sun 10 Jan 2027 at 17:00\nWeek 6: Quiz 6 — due Sun 17 Jan 2027 at 17:00"
+    "text": "Upcoming assessments\n\nWeek 4: Quiz 4 — due Sun 20 Dec 2026 at 17:00; Written assignment — due Sun 20 Dec 2026 at 11:59 pm\nWeek 5: Quiz 5 — due Sun 10 Jan 2027 at 17:00\nWeek 6: Quiz 6 — due Sun 17 Jan 2027 at 17:00"
   },
   {
     "objectID": "week4/solution/index.html",
