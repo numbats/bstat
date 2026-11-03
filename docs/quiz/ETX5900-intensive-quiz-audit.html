@@ -77,6 +77,49 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -192,6 +235,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The <a href="../quiz/ETX5900 Take Home Quizzes (S2-2026).html">source bank</a> has <strong>11 original weeks</strong>, usually 20 questions each. <code>S3 Q7</code> below means Question 7 in <em>source</em> Week 3, not intensive Week 3. It contains marked answers and should remain an instructor source file. <strong>Keep</strong> means the statistical task is suitable; all retained questions still need answers and solution cues removed before student release. <strong>Adapt</strong> means retain the skill but replace data, context, or wording. <strong>Exclude</strong> means omit from the core eight-week quizzes.</p>
 <p>The original <code>Elecmart</code>, <code>Hytex</code>, <code>PlanFinan</code>, <code>Health care</code>, <code>Hospital Quality</code>, and <code>Data for quiz 11</code> workbooks were not found in this project. The embedded tables and image references in the Markdown file do supply some questions without those workbooks. Current intensive workbooks can supply replacement data, but the old numerical answers must be recalculated.</p>
 <p>This is an <strong>instructor selection review</strong>, not a released quiz or answer key. Follow <code>AGENTS.md</code>, <code>course_info.R</code>, and the current weekly slides and workbooks when adapting items. The eight weekly quizzes are individual and together carry 15% of the ETX1100 assessment. Weeks 1–4 provide the scope for the Week 4 written assignment; regression and business modelling begin later. The outcome tags below use the ETX1100 outcomes as planning labels. Confirm the official ETX5900 outcome wording before using them as its formal assessment map.</p>
+<p><strong>Current Week 5 decision:</strong> teach and assess the chi-square test of independence as a categorical-relationship application of LO4. Quiz 5 may assess hypotheses, expected counts, cell contributions, degrees of freedom, <code>CHISQ.TEST</code>, conditions, and a contextual decision. Quiz 4 and the written assignment remain limited to the material taught through Week 4. The source-bank S6 label is its old week number, not the intensive week.</p>
 <p><strong>Excel boundary:</strong> the Analysis ToolPak is the only analysis add-in in the current course. Ordinary worksheet formulas and probability functions, PivotTables, charts, filters, and manual scenario comparisons remain appropriate. Where an item requires a fitted regression, align its output and instructions with <strong>Data &gt; Data Analysis &gt; Regression</strong>. Do not require Solver, Goal Seek, What-If Data Tables, or programming-based optimisation. A ToolPak regression question alone assesses LO5; an LO6 item must also test how the fitted relationship enters a business decision model.</p>
 <section id="recommended-question-map" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-question-map">Recommended question map</h2>
@@ -340,7 +384,35 @@ ul.task-list li input[type="checkbox"] {
 <td><code>π ≤ 32</code> and <code>π &gt; 32</code> are impossible for a proportion. Rewrite with values in <code>[0,1]</code> if needed.</td>
 </tr>
 <tr class="odd">
-<td><strong>5: Relationships and simple regression</strong></td>
+<td><strong>5: Chi-square and simple regression</strong></td>
+<td><strong>Adapt</strong> S6 Q1–2</td>
+<td>Frame independence and association hypotheses for two categorical variables</td>
+<td>LO4</td>
+<td>Replace the TV/storybook context with the current <code>week5/week5-chi-square-data.xlsx</code> cases or a new self-contained table. Remove marked answers.</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td><strong>Adapt</strong> S6 Q3–6</td>
+<td>Calculate an expected count and one cell’s contribution to <span class="math inline">\chi^2</span></td>
+<td>LO4</td>
+<td>The embedded defect-rate table is self-contained, but use fresh data for the released quiz. Show row, column and grand totals; recalculate the key from the final table.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>Adapt</strong> S6 Q7–8, Q13–14</td>
+<td>Calculate the test statistic or interpret a p-value and conclusion</td>
+<td>LO4</td>
+<td>Prefer <code>CHISQ.TEST</code> and a contextual conclusion over several critical-value lookups. The two source spokesperson tables differ; do not mix their keys. State the significance level and avoid causal wording.</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td><strong>Adapt</strong> S6 Q9–12</td>
+<td>Recognise degrees of freedom and the right-tail decision rule</td>
+<td>LO4</td>
+<td>Select at most one distinct item if needed. Rewrite around an Excel p-value; check expected counts and independent observations.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
 <td><strong>Keep/adapt</strong> S9 Q4–7, Q10–15</td>
 <td>Correlation, slope, least-squares prediction, and limits of association</td>
 <td>LO4; LO5</td>
@@ -443,8 +515,8 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td>5</td>
-<td>S9 Q12–13; adapt S9 Q4, Q10; S10 Q18</td>
-<td>Correlation, slope, prediction, least squares (LO4–LO5)</td>
+<td>Adapt S6 Q1 and Q3 or Q5; write a <code>CHISQ.TEST</code> decision item from the Week 5 categorical workbook; S9 Q12–13; adapt S9 Q4 or Q10</td>
+<td>Independence hypotheses, expected counts, p-value and interpretation, then correlation, slope or prediction (LO4–LO5). Keep both categorical testing and simple regression in the final set.</td>
 </tr>
 <tr class="even">
 <td>6</td>
@@ -468,7 +540,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="material-outside-the-core-sequence" class="level2">
 <h2 class="anchored" data-anchor-id="material-outside-the-core-sequence">Material outside the core sequence</h2>
 <ul>
-<li><strong>S6 Q1–20:</strong> The old Week 6 is a chi-square test block. Exclude its chi-square hypotheses, expected-count calculations, test statistics, critical values, and p-values from the core quizzes unless the chief examiner confirms chi-square remains examinable. The <strong>printed contingency tables</strong> in S6 Q3–12 could instead support new Week 2 or Week 5 questions on conditional percentages and independence as a concept (LO2/LO4); these would be new questions, not unchanged copies.</li>
+<li><strong>S6 Q15–20:</strong> These refer to <code>Hytex</code>, <code>Elecmart</code> and <code>PlanFinan</code> workbooks absent from this project. The skill is now in scope for Quiz 5, but these numerical items need new data and independently calculated keys. Avoid letting the source bank’s 20 chi-square items crowd out simple regression in Quiz 5.</li>
 <li><strong>S11 Q1–20:</strong> The old Week 11 is seasonal indices, trend forecasts, MAD/MSFE, and spreadsheet forecasting. Exclude from core quizzes because full time-series forecasting is not in the intensive content spine or named 2026 outcomes. A new Week 1 chart-choice question could use a time-series plot, but the original questions mostly ask forecasting methods. Its final Q9 appears after Q20 and should be moved if this bank is ever republished.</li>
 <li><strong>Legacy Excel decision tools:</strong> The old ETF business-modelling source uses Solver, Goal Seek and What-If Data Tables; these are outside the implemented Week 7 plan. Do not import their output-reading or procedure questions into Quiz 7 or Quiz 8. Use ToolPak regression and ordinary Excel formulas to compare only the listed feasible scenarios.</li>
 </ul>
@@ -481,7 +553,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Repair known defects.</strong> S2 Q3 has no defensible choice; S4 Q13 has an incomplete answer and S4 Q11–14 have ambiguous distribution notation; S4 Q16 lacks its number; S7 Q19 states a test statistic of <code>0.077</code> although <code>(795−775)/(75/√30) ≈ 1.461</code>; S8 Q13 uses an impossible proportion; S9 Q19 has an incoherent outcome.</li>
 <li><strong>Use questions to assess interpretation.</strong> Prefer one calculation plus a denominator, assumption, or business conclusion to several near-identical number-entry items. Keep a balanced mix of conceptual choice, Excel use, and contextual reasoning in each weekly quiz.</li>
 <li><strong>Audit figures.</strong> Many output screenshots are embedded as base64 images in the source Markdown. Extract and relabel only the figures selected for reuse; replace tiny formula images with editable equations and provide accessible text or tables.</li>
-<li><strong>Check week and tool alignment.</strong> Week 4 items must stay within description, probability, sampling, intervals and tests; reserve regression for Weeks 5–6 and the Week 7 decision model for Week 7 or Week 8 integration. For any required Excel regression, state ToolPak X and Y ranges clearly and check the resulting coefficients and units.</li>
+<li><strong>Check week and tool alignment.</strong> Week 4 items must stay within description, probability, sampling, intervals and mean/proportion tests. Introduce chi-square and simple regression in Week 5, multiple regression in Week 6, and the decision model in Week 7. For chi-square, name the observed and expected count ranges, exclude totals, check expected counts, and verify that <code>CHISQ.TEST</code> agrees with the summed contributions and right-tail probability. For any required Excel regression, state ToolPak X and Y ranges clearly and check the resulting coefficients and units.</li>
 <li><strong>Audit LO6 directly.</strong> A Quiz 7 item should make students distinguish ToolPak estimates from cost and capacity assumptions, apply the non-negative whole-unit capacity rule, calculate revenue, cost and profit, and choose among listed prices. Add a sensitivity or limitation item that resets each trial to the same baseline. No source-bank question by itself covers this workflow.</li>
 </ol>
 

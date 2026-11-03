@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.11.9">
 
-  <meta name="author" content="Week 5: Relationships and simple regression">
+  <meta name="author" content="Week 5: Chi-square and simple regression">
   <meta name="dcterms.date" content="2027-01-05">
   <title>Business Statistics – ETX1100/ETX5900 Business Statistics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -161,7 +161,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Week 5: Relationships and simple regression 
+Week 5: Chi-square and simple regression 
 </div>
 </div>
 </div>
@@ -175,6 +175,7 @@ Week 5: Relationships and simple regression
 <h2 id="toc-title">Outline</h2>
 <ul>
 <li><a href="#/what-does-related-mean" id="/toc-what-does-related-mean">What does “related” mean?</a></li>
+<li><a href="#/testing-categorical-independence" id="/toc-testing-categorical-independence">Testing categorical independence</a></li>
 <li><a href="#/numerical-relationships" id="/toc-numerical-relationships">Numerical relationships</a></li>
 <li><a href="#/simple-linear-regression" id="/toc-simple-linear-regression">Simple linear regression</a></li>
 <li><a href="#/validation-and-responsible-prediction" id="/toc-validation-and-responsible-prediction">Validation and responsible prediction</a></li>
@@ -185,13 +186,16 @@ Week 5: Relationships and simple regression
 <section id="todays-journey" class="slide level2">
 <h2>Today’s journey</h2>
 <ol type="1">
-<li>Revisit relationships between categorical variables.</li>
+<li>Test independence between categorical variables.</li>
 <li>Visualise and quantify numerical relationships.</li>
 <li>Distinguish association from causation.</li>
 <li>Build and interpret a simple linear regression in Excel.</li>
 <li>Predict responsibly and diagnose limitations.</li>
 </ol>
-<!-- Springboards: ETF W7 relationships block and ETF W8 seminar/workshop. -->
+<!-- Categorical spine: ETF Seminar W3 contingency tables and independence,
+ETF Workshop W3 Marketing PivotTable, ETF Seminar W7 relationships bridge.
+Formal chi-square working is newly adapted from legacy ETX5900 W4 workshop;
+ETF W3/W7 do not teach the full test. Numerical spine: ETF W7/W8. -->
 </section>
 <section>
 <section id="what-does-related-mean" class="title-slide slide level1 center">
@@ -226,7 +230,7 @@ Week 5: Relationships and simple regression
 <tr class="odd">
 <td>categorical</td>
 <td>categorical</td>
-<td>contingency table, conditional probability</td>
+<td>contingency table, conditional probability, chi-square test of independence</td>
 </tr>
 <tr class="even">
 <td>numerical</td>
@@ -264,7 +268,7 @@ Week 5: Relationships and simple regression
 <h2>Now you try: explain the association</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_125a3786" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_94bf475e" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>A loyalty-app sample finds 72% high satisfaction among users and 61% among non-users.</p>
@@ -273,6 +277,82 @@ Week 5: Relationships and simple regression
 <li>Explain why the two percentages are conditional.</li>
 <li>Give two plausible confounders.</li>
 <li>Rewrite “the app increases satisfaction” as a defensible conclusion.</li>
+</ol>
+</section></section>
+<section>
+<section id="testing-categorical-independence" class="title-slide slide level1 center">
+<h1>Testing categorical independence</h1>
+
+</section>
+<section id="from-percentages-to-a-population-claim" class="slide level2">
+<h2>From percentages to a population claim</h2>
+<p>Different sample percentages suggest association. A <strong>chi-square test of independence</strong> asks whether the differences are large enough, relative to sampling variation, to support an association in the population.</p>
+<ul>
+<li><span class="math inline">H_0</span>: the two categorical variables are independent in the population.</li>
+<li><span class="math inline">H_1</span>: they are associated in the population.</li>
+</ul>
+<p>Use counts from a random or otherwise defensible sample of independent observations. Each person or unit belongs in one cell only.</p>
+</section>
+<section id="expected-counts-under-independence" class="slide level2">
+<h2>Expected counts under independence</h2>
+<p>For row <span class="math inline">i</span> and column <span class="math inline">j</span>, the count expected under <span class="math inline">H_0</span> is</p>
+<p><span class="math display">E_{ij}=\frac{(\text{row }i\text{ total})(\text{column }j\text{ total})}{n}.</span></p>
+<p>Compare <strong>observed counts</strong> <span class="math inline">O_{ij}</span> with these expected counts. A large difference is evidence against independence. Check that all expected counts are at least 5 for the approximation used here.</p>
+</section>
+<section id="watch-me-support-channel-and-resolution" class="slide level2">
+<h2>Watch me: support channel and resolution</h2>
+<p>Open <code>week5-chi-square-data.xlsx</code>, sheet <strong>Service</strong>. Each row is one customer case.</p>
+<ol type="1">
+<li>PivotTable: <code>Channel</code> in rows, <code>Resolved</code> in columns, count <code>Case ID</code>.</li>
+<li>Copy the four counts to a range and add row and column totals.</li>
+<li>Compare within-channel resolution rates; calculate expected counts.</li>
+<li>Check that every expected count is at least 5.</li>
+</ol>
+</section>
+<section id="now-you-try-expected-counts" class="slide level2">
+<h2>Now you try: expected counts</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_ad63da29" minutes="6" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>Using the <strong>Service</strong> table:</p>
+<ol type="1">
+<li>State <span class="math inline">H_0</span> and <span class="math inline">H_1</span> in context.</li>
+<li>Calculate the expected count for online cases that were resolved.</li>
+<li>Complete the other three expected counts in Excel.</li>
+<li>Explain why row or column totals must not be included in the test ranges.</li>
+</ol>
+</section>
+<section id="test-statistic" class="slide level2">
+<h2>Test statistic</h2>
+<p><span class="math display">\chi^2=\sum_{i=1}^{r}\sum_{j=1}^{c}\frac{(O_{ij}-E_{ij})^2}{E_{ij}},
+\qquad df=(r-1)(c-1).</span></p>
+<p>For each cell, calculate <code>=(observed-expected)^2/expected</code>; sum the contributions. The result is always non-negative and grows as observed counts move away from expected counts.</p>
+</section>
+<section id="excel-p-value-and-conclusion" class="slide level2">
+<h2>Excel p-value and conclusion</h2>
+<p>Use <code>=CHISQ.TEST(observed_range,expected_range)</code> for the right-tail p-value. The ranges must have the same shape and exclude totals.</p>
+<p>At 5%, reject <span class="math inline">H_0</span> when <span class="math inline">p&lt;0.05</span>. Otherwise, the data do not give sufficient evidence of association. Do not claim independence has been proved.</p>
+</section>
+<section id="watch-me-audit-the-excel-result" class="slide level2">
+<h2>Watch me: audit the Excel result</h2>
+<p>For the <strong>Service</strong> table, check that <code>=CHISQ.DIST.RT(test_statistic,df)</code> agrees with <code>=CHISQ.TEST(observed_range,expected_range)</code>. The sum of contributions gives the test statistic.</p>
+<p>Ask whether the result is statistically persuasive <strong>and</strong> whether the observed percentage gap matters for the service decision. Neither a small p-value nor this observational table establishes that the channel caused resolution.</p>
+</section>
+<section id="now-you-try-loyalty-and-renewal" class="slide level2">
+<h2>Now you try: loyalty and renewal</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_16482187" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+</div>
+</div>
+<p>On <strong>Loyalty</strong>, count <code>Renewed</code> within each <code>Tier</code> using a PivotTable.</p>
+<ol type="1">
+<li>Compare renewal percentages by tier and state the hypotheses.</li>
+<li>Build expected counts and check the minimum.</li>
+<li>Calculate <span class="math inline">df</span>, <span class="math inline">\chi^2</span> and the <code>CHISQ.TEST</code> p-value.</li>
+<li>Conclude at 5% and name one design limitation.</li>
 </ol>
 </section></section>
 <section>
@@ -327,7 +407,7 @@ Week 5: Relationships and simple regression
 <h2>Now you try: age and market price</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_2f4184fb" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_6670017e" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>On <strong>HouseSize</strong>:</p>
@@ -353,7 +433,7 @@ Week 5: Relationships and simple regression
 <h2>Now you try: correlation critique</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_ec1726ee" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_3ff3978a" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>For each statement, identify the problem:</p>
@@ -408,7 +488,7 @@ Week 5: Relationships and simple regression
 <h2>Now you try: interpret IncomeSpend</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_9edd76e4" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_3001c78d" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>From the Excel output:</p>
@@ -446,7 +526,7 @@ Week 5: Relationships and simple regression
 <h2>Now you try: HouseSize regression</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_fb91bf43" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_357eb8d1" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>Regress market price (AUD thousands) on house age.</p>
@@ -488,7 +568,7 @@ Week 5: Relationships and simple regression
 <h2>Now you try: model audit</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_03cd9c54" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_42475b9e" minutes="7" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>Audit the IncomeSpend model:</p>
@@ -514,7 +594,7 @@ Week 5: Relationships and simple regression
 <h2>Now you try: prediction guardrails</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_385e50d0" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_ea550ee5" minutes="5" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>Before predicting spending for a household income of AUD 500,000:</p>
@@ -546,7 +626,7 @@ Week 5: Relationships and simple regression
 <h2>Now you try: choose the better predictor</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_8a51ced8" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_f0562d2b" minutes="10" seconds="0" warn-when="30" update-every="1" tabindex="0" style="right:2.8em;bottom:1.2em;--countdown-font-size:1.1em;"></countdown-timer>
 </div>
 </div>
 <p>Using <strong>HouseSize</strong>, compare separate simple regressions of market price on:</p>
@@ -573,6 +653,7 @@ Week 5: Relationships and simple regression
 <p>Can you:</p>
 <ul>
 <li>select tools for categorical and numerical relationships?</li>
+<li>calculate expected counts and interpret a chi-square independence test?</li>
 <li>interpret a scatterplot and correlation together?</li>
 <li>build a simple regression in Excel?</li>
 <li>interpret intercept, slope, <span class="math inline">R^2</span>, and slope p-value?</li>

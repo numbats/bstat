@@ -4286,6 +4286,8 @@ window.Quarto = {
   <ul>
   <li><a href="#categorical-and-numerical-association" id="toc-categorical-and-numerical-association" class="nav-link active" data-scroll-target="#categorical-and-numerical-association">Categorical and numerical association</a>
   <ul class="collapse">
+  <li><a href="#chi-square-service-demonstration-and-expected-count-activity" id="toc-chi-square-service-demonstration-and-expected-count-activity" class="nav-link" data-scroll-target="#chi-square-service-demonstration-and-expected-count-activity">Chi-square: Service demonstration and expected-count activity</a></li>
+  <li><a href="#chi-square-loyalty-workshop-transfer" id="toc-chi-square-loyalty-workshop-transfer" class="nav-link" data-scroll-target="#chi-square-loyalty-workshop-transfer">Chi-square: Loyalty workshop transfer</a></li>
   <li><a href="#watch-me-categorical-relationship-now-you-try-explain-the-association" id="toc-watch-me-categorical-relationship-now-you-try-explain-the-association" class="nav-link" data-scroll-target="#watch-me-categorical-relationship-now-you-try-explain-the-association">Watch me: categorical relationship / Now you try: explain the association</a></li>
   <li><a href="#watch-me-income-and-spending-now-you-try-age-and-market-price" id="toc-watch-me-income-and-spending-now-you-try-age-and-market-price" class="nav-link" data-scroll-target="#watch-me-income-and-spending-now-you-try-age-and-market-price">Watch me: income and spending / Now you try: age and market price</a></li>
   <li><a href="#now-you-try-correlation-critique" id="toc-now-you-try-correlation-critique" class="nav-link" data-scroll-target="#now-you-try-correlation-critique">Now you try: correlation critique</a></li>
@@ -4311,7 +4313,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Week 5 — instructor solutions</h1>
-<p class="subtitle lead">Relationships and simple linear regression</p>
+<p class="subtitle lead">Chi-square testing and simple linear regression</p>
 </div>
 
 
@@ -4334,12 +4336,12 @@ window.Quarto = {
 </header>
 
 
-<p>Numbers use the current <a href="../week5-regression-data.xlsx">Week 5 regression workbook</a>. Regression output is rounded here for communication; retain full Excel precision for predictions and residual checks.</p>
+<p>Numbers use the current <a href="../week5-chi-square-data.xlsx">categorical relationships workbook</a> and <a href="../week5-regression-data.xlsx">regression workbook</a>. Regression output is rounded here for communication; retain full Excel precision for predictions and residual checks.</p>
 <p><a href="week5-solutions.xlsx">Download the Week 5 worked Excel workbook</a>.</p>
 <section id="categorical-and-numerical-association" class="level2">
 <h2 class="anchored" data-anchor-id="categorical-and-numerical-association">Categorical and numerical association</h2>
-<section id="watch-me-categorical-relationship-now-you-try-explain-the-association" class="level3">
-<h3 class="anchored" data-anchor-id="watch-me-categorical-relationship-now-you-try-explain-the-association">Watch me: categorical relationship / Now you try: explain the association</h3>
+<section id="chi-square-service-demonstration-and-expected-count-activity" class="level3">
+<h3 class="anchored" data-anchor-id="chi-square-service-demonstration-and-expected-count-activity">Chi-square: Service demonstration and expected-count activity</h3>
 <div class="callout callout-style-default callout-solution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -4353,14 +4355,48 @@ window.Quarto = {
 <div id="callout-1" class="callout-1-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <div class="unilur-solution" data-unilur-collapse="false">
-<p>The outcome is high satisfaction and the groups are app users and non-users. The given rates, <strong>72%</strong> and <strong>61%</strong>, are conditional because each uses its own group as denominator. The observed gap is <strong>11 percentage points</strong>. Plausible confounders include age, prior satisfaction, loyalty or spending. A defensible sentence is: “High satisfaction was 11 percentage points more common among sampled app users; this observational comparison does not establish that using the app increased satisfaction.” A contingency table with group counts would show precision and support further analysis.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Channel</th>
+<th style="text-align: right;">Resolved: Yes</th>
+<th style="text-align: right;">Resolved: No</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Resolution rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Online</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">67.5%</td>
+</tr>
+<tr class="even">
+<td>Phone</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">50.0%</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">57.0%</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(H_0\)</span>: resolution and channel are independent in the population; <span class="math inline">\(H_1\)</span>: they are associated. Expected counts in row order are <strong>45.6, 34.4, 68.4, 51.6</strong>. For example, online/resolved is <span class="math inline">\(80(114)/200=45.6\)</span>. Every expected count exceeds 5. The test statistic is <strong>5.99755</strong>, <span class="math inline">\(df=(2-1)(2-1)=1\)</span>, and the right-tail p-value is <strong>0.01433</strong>. At 5%, reject <span class="math inline">\(H_0\)</span>: these sampled cases support an association between channel and resolution. The observed resolution gap is <strong>17.5 percentage points</strong>. The table does not show that changing channel causes a change in resolution. Including totals in the <code>CHISQ.TEST</code> ranges would duplicate information and invalidate the calculation.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="watch-me-income-and-spending-now-you-try-age-and-market-price" class="level3">
-<h3 class="anchored" data-anchor-id="watch-me-income-and-spending-now-you-try-age-and-market-price">Watch me: income and spending / Now you try: age and market price</h3>
+<section id="chi-square-loyalty-workshop-transfer" class="level3">
+<h3 class="anchored" data-anchor-id="chi-square-loyalty-workshop-transfer">Chi-square: Loyalty workshop transfer</h3>
 <div class="callout callout-style-default callout-solution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -4374,15 +4410,55 @@ window.Quarto = {
 <div id="callout-2" class="callout-2-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <div class="unilur-solution" data-unilur-collapse="false">
-<p>For <code>IncomeSpend</code>, put Income on X and Spend on Y. <code>=CORREL(B2:B806,C2:C806)</code> gives <strong>0.7421</strong>, a moderately strong positive linear association. Income ranges from <strong>AUD 15,006 to 99,960</strong>. The scatterplot should be checked for departures from a straight-line trend and unusual residuals before describing prediction quality.</p>
-<p>For <code>HouseSize</code>, plot market price (AUD thousands) against house age. <code>=CORREL(C2:C24,A2:A24)</code> gives <strong>−0.5766</strong> (since <span class="math inline">\(R^2=0.3325\)</span> and the fitted slope is negative). The plot supports a negative linear summary, though the <strong>23</strong> properties show substantial spread. Check the scatterplot before assuming linearity.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tier</th>
+<th style="text-align: right;">Renewed: Yes</th>
+<th style="text-align: right;">Renewed: No</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Renewal rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bronze</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">47.5%</td>
+</tr>
+<tr class="even">
+<td>Silver</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">65.0%</td>
+</tr>
+<tr class="odd">
+<td>Gold</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">82.5%</td>
+</tr>
+<tr class="even">
+<td>Total</td>
+<td style="text-align: right;">156</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: right;">65.0%</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(H_0\)</span>: tier and renewal are independent in the population; <span class="math inline">\(H_1\)</span>: they are associated. Because each tier has 80 of the 240 customers, the expected counts in each row are <strong>52 yes</strong> and <strong>28 no</strong>. Minimum expected count is <strong>28</strong>. Sum the six contributions to get <span class="math inline">\(\chi^2=\mathbf{21.53846}\)</span> with <span class="math inline">\(df=(3-1)(2-1)=2\)</span>. <code>CHISQ.TEST</code> returns <strong>0.00002104</strong>. At 5%, reject <span class="math inline">\(H_0\)</span>: the data support an association between tier and renewal. Tier membership may reflect prior spending, tenure, or other differences, so the table alone does not identify a causal effect of tier.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="now-you-try-correlation-critique" class="level3">
-<h3 class="anchored" data-anchor-id="now-you-try-correlation-critique">Now you try: correlation critique</h3>
+<section id="watch-me-categorical-relationship-now-you-try-explain-the-association" class="level3">
+<h3 class="anchored" data-anchor-id="watch-me-categorical-relationship-now-you-try-explain-the-association">Watch me: categorical relationship / Now you try: explain the association</h3>
 <div class="callout callout-style-default callout-solution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -4394,6 +4470,49 @@ window.Quarto = {
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="unilur-solution" data-unilur-collapse="false">
+<p>The outcome is high satisfaction and the groups are app users and non-users. The given rates, <strong>72%</strong> and <strong>61%</strong>, are conditional because each uses its own group as denominator. The observed gap is <strong>11 percentage points</strong>. Plausible confounders include age, prior satisfaction, loyalty or spending. A defensible sentence is: “High satisfaction was 11 percentage points more common among sampled app users; this observational comparison does not establish that using the app increased satisfaction.” A contingency table with group counts would show precision and support further analysis.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="watch-me-income-and-spending-now-you-try-age-and-market-price" class="level3">
+<h3 class="anchored" data-anchor-id="watch-me-income-and-spending-now-you-try-age-and-market-price">Watch me: income and spending / Now you try: age and market price</h3>
+<div class="callout callout-style-default callout-solution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Solution</span><strong>Solution 4 </strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="unilur-solution" data-unilur-collapse="false">
+<p>For <code>IncomeSpend</code>, put Income on X and Spend on Y. <code>=CORREL(B2:B806,C2:C806)</code> gives <strong>0.7421</strong>, a moderately strong positive linear association. Income ranges from <strong>AUD 15,006 to 99,960</strong>. The scatterplot should be checked for departures from a straight-line trend and unusual residuals before describing prediction quality.</p>
+<p>For <code>HouseSize</code>, plot market price (AUD thousands) against house age. <code>=CORREL(C2:C24,A2:A24)</code> gives <strong>−0.5766</strong> (since <span class="math inline">\(R^2=0.3325\)</span> and the fitted slope is negative). The plot supports a negative linear summary, though the <strong>23</strong> properties show substantial spread. Check the scatterplot before assuming linearity.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="now-you-try-correlation-critique" class="level3">
+<h3 class="anchored" data-anchor-id="now-you-try-correlation-critique">Now you try: correlation critique</h3>
+<div class="callout callout-style-default callout-solution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Solution</span><strong>Solution 5 </strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <div class="unilur-solution" data-unilur-collapse="false">
 <ol type="1">
@@ -4410,16 +4529,16 @@ window.Quarto = {
 <section id="watch-me-regression-in-excel-now-you-try-interpret-incomespend" class="level3">
 <h3 class="anchored" data-anchor-id="watch-me-regression-in-excel-now-you-try-interpret-incomespend">Watch me: regression in Excel / Now you try: interpret IncomeSpend</h3>
 <div class="callout callout-style-default callout-solution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Solution</span><strong>Solution 4 </strong>
+<span class="screen-reader-only">Solution</span><strong>Solution 6 </strong>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <div class="unilur-solution" data-unilur-collapse="false">
 <p>In Data &gt; Data Analysis &gt; Regression, set Spend as Y and Income as X, select Labels and residual output. The fitted equation is <span class="math inline">\(\widehat{Spend}=\mathbf{8254.58+0.295615\,Income}\)</span>, both money variables in AUD. At zero income the line predicts AUD 8,254.58, but zero is outside the observed income range and the intercept should not be used as a practical forecast. For an AUD 1 income increase, predicted mean spend increases by about <strong>AUD 0.296</strong>, conditional on this simple model; for AUD 10,000, by <strong>AUD 2,956.15</strong>. The positive slope matches the positive correlation. <span class="math inline">\(R^2=\mathbf{0.5508}\)</span> and the two-sided slope p-value is about <strong><span class="math inline">\(1.11\times10^{-141}\)</span></strong>.</p>
@@ -4431,16 +4550,16 @@ window.Quarto = {
 <section id="watch-me-predict-from-the-line-now-you-try-housesize-regression" class="level3">
 <h3 class="anchored" data-anchor-id="watch-me-predict-from-the-line-now-you-try-housesize-regression">Watch me: predict from the line / Now you try: HouseSize regression</h3>
 <div class="callout callout-style-default callout-solution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Solution</span><strong>Solution 5 </strong>
+<span class="screen-reader-only">Solution</span><strong>Solution 7 </strong>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <div class="unilur-solution" data-unilur-collapse="false">
 <p>The demonstration equation <span class="math inline">\(8254.575+0.296\,Income\)</span> is rounded; for an in-range income of AUD 60,000 it predicts about <strong>AUD 26,015</strong>. This is a fitted mean, not a promise about an individual’s spend. Using the unrounded fitted slope gives about AUD 25,991.5; the difference illustrates why coefficient precision matters.</p>
@@ -4456,16 +4575,16 @@ window.Quarto = {
 <section id="watch-me-inspect-residuals-now-you-try-model-audit" class="level3">
 <h3 class="anchored" data-anchor-id="watch-me-inspect-residuals-now-you-try-model-audit">Watch me: inspect residuals / Now you try: model audit</h3>
 <div class="callout callout-style-default callout-solution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Solution</span><strong>Solution 6 </strong>
+<span class="screen-reader-only">Solution</span><strong>Solution 8 </strong>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <div class="unilur-solution" data-unilur-collapse="false">
 <p>For the age model, calculate fitted prices from the equation and residuals as actual minus fitted. Plot residual against fitted value; mark large residuals, including the observed range of roughly <strong>−271 to +399 AUD thousands</strong>. Return to the original row before treating any point as erroneous. IncomeSpend residuals range roughly <strong>−AUD 18,494 to +AUD 15,685</strong>; a strength is its clear positive relationship, while a limitation is considerable individual scatter and omitted factors such as household size. Use the line for approximate in-range mean prediction, with uncertainty; no causal claim follows from these observational data.</p>
@@ -4477,16 +4596,16 @@ window.Quarto = {
 <section id="now-you-try-prediction-guardrails" class="level3">
 <h3 class="anchored" data-anchor-id="now-you-try-prediction-guardrails">Now you try: prediction guardrails</h3>
 <div class="callout callout-style-default callout-solution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Solution</span><strong>Solution 7 </strong>
+<span class="screen-reader-only">Solution</span><strong>Solution 9 </strong>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <div class="unilur-solution" data-unilur-collapse="false">
 <p><strong>AUD 500,000</strong> income is far above the observed <strong>AUD 15,006–99,960</strong> range. The calculation is extrapolation. Income and spending may not remain linear at that level, so collect comparable high-income observations or use a model validated for that range before making a decision.</p>
@@ -4498,16 +4617,16 @@ window.Quarto = {
 <section id="watch-me-a-defensible-regression-brief-now-you-try-choose-the-better-predictor" class="level3">
 <h3 class="anchored" data-anchor-id="watch-me-a-defensible-regression-brief-now-you-try-choose-the-better-predictor">Watch me: a defensible regression brief / Now you try: choose the better predictor</h3>
 <div class="callout callout-style-default callout-solution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Solution</span><strong>Solution 8 </strong>
+<span class="screen-reader-only">Solution</span><strong>Solution 10 </strong>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <div class="unilur-solution" data-unilur-collapse="false">
 <table class="caption-top table">
