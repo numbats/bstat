@@ -138,1604 +138,711 @@
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-001.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 1</figcaption>
+<p><img data-src="figures/business-modelling/page-001.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 1</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 1. Companion PowerPoint slide 1.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image1.jpg
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 1.
 EDITABLE TEXT TRANSCRIPTION:
-ETX1100/ETX5900 Business Statistics
-Week 7 Part 1: Correlation and Regression Analysis
-Part 2: Time Series Analysis & Forecasting
-Workshop Lead: Alyssa Hu
+ETF1100 Business Statistics
+Seminar
+Week 10: Introduction to Business Modelling
+Date: 11 May 2026 | Chief Examiner: Alyssa Hu
 -->
 </section>
 <section id="source-page-002" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-002.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 2</figcaption>
+<p><img data-src="figures/business-modelling/page-002.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 2</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 2. Companion PowerPoint slide 2.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 2.
 EDITABLE TEXT TRANSCRIPTION:
-Updates and Reminders
-• Next week, our workshop will be dedicated to
-summary and revision including practice problems
-• The teaching team will indicate pre-exam consultation
-schedule on Moodle
-• The mock exam and past exams are available under
-Module 8
-• There is a Chatbot (All Day TA) and you can practice
-unit-related questions using the Intelligent Quiz tab
+Reminders/FAQs
+Please make sure you are reading unit announcements!
+Weekly recordings and assignments: Moodle > Learning tab > Week 10
+
+
+How can I ask questions outside of class time?
+• All Day TA chatbot                 Moodle > Learning > Week 10 > Overview
+• Weekly Q&A Discussion Forum
+• Join student consultation hours    Moodle > Unit Information
+
+
+• ETF1100.Caulfield-x@monash.edu for personal/sensitive
+  communication
 -->
 </section>
 <section id="source-page-003" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-003.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 3</figcaption>
+<p><img data-src="figures/business-modelling/page-003.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 3</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 3. Companion PowerPoint slide 3.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 3.
 EDITABLE TEXT TRANSCRIPTION:
-Week 7: Learning Outcomes
-Multiple Linear Regression:
-• Understand the concept of omitted variable bias
-• Compare and evaluate slope coefficients in a simple and multiple linear regression
-• Perform hypothesis tests to check for a significant relationship between independent
-variables and the dependent variable.
-• Understand measures by which we judge the fit of a regression model
-• Predict with multiple regression model
-Time Series:
-• Identifying time series components: trend, seasonal, cycle and irregular
-• Modeling the trend and seasonality components.
-• Understand and apply MAD and MSFE
-• Forecasting out of sample values using the time series regression model to aid
-decision-making in business
-Textbook references:
-Berenson et al Basic Business Statistics 5th edition,
-Chapter 13, Sections 13.1, 13.2, 13.4; Chapter 14, Sections 14.1, 14.2, 14.4
+Case Study Statistics
+• Some students requested summary statistics for the case study:
+  • Mean: 88.34%, with standard deviation 13.23%
+  • Median: 92.50%
+  • Keep up the great work!
 -->
 </section>
 <section id="source-page-004" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-004.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 4</figcaption>
+<p><img data-src="figures/business-modelling/page-004.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 4</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 4. Companion PowerPoint slide 4.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image2.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 4.
 EDITABLE TEXT TRANSCRIPTION:
-Simple Linear Regression Pitfalls
-So far, we’ve only included a SINGLE independent variable.
-Omitting other relevant                                      Area
-variables from the regression
-𝜷𝟏
-model may result in biased
-estimates of the regression                              Baths
-coefficient (omitted variable         Price
-bias).
-Cars
-e.g. Larger properties (in land
-area) tend to have larger                                    Beds
-dwelling size and therefore,
-more beds, baths and cars.
+Overview
+• Last week, we continued learning about the multiple linear regression
+  model (MLR). This included testing for significant coefficients and
+  overall model fit, evaluating models, and handling categorical
+  variables.
+• This week, we will focus on spreadsheet-based business modelling,
+  which can help us solve optimisation problems.
+• We will use the Week 10 Seminar Data.
 -->
 </section>
 <section id="source-page-005" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-005.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 5</figcaption>
+<p><img data-src="figures/business-modelling/page-005.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 5</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 5. Companion PowerPoint slide 5.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image2.emf
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 5.
 EDITABLE TEXT TRANSCRIPTION:
-Simple Linear Regression Pitfalls
-We could estimate several simple linear regressions:
-Intercept Slope
-Area            539.357     1.093
-Beds            261.501 264.855
-Baths           661.001 288.180
-Cars            845.000 200.464
-These results seemingly give you area, beds, baths and cars premiums (i.e.
-how these variables increase the price).
-But they are misleading because of the interconnected relations between
-variables!
+Learning Outcomes
+• Developing skills in spreadsheet modeling of business problems
+• Solving optimisation problems in a business setting using Excel
+• Exploring methods for sensitivity analysis
+• Developing an understanding for how simulation can be used to
+  address business problems
 -->
 </section>
 <section id="source-page-006" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-006.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 6</figcaption>
+<p><img data-src="figures/business-modelling/page-006.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 6</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 6. Companion PowerPoint slide 6.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image4.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 6.
 EDITABLE TEXT TRANSCRIPTION:
-Multiple Linear Regression (MLR)
-The dependent variable Y may depend on several independent variables…
-𝑌" = 𝛽# + 𝛽$ 𝑋$ + 𝛽% 𝑋% + ⋯ + 𝛽& 𝑋& + 𝜀"
-Independent variables 𝑋$ , 𝑋% , … , 𝑋& are related to 𝑌. But some of the
-independent variables may also be related.
-We can generate a multiple regression output in Excel. But be careful:
-Our interpretation for 𝜷𝟏 , 𝜷𝟐 , … , 𝜷𝒌 is different from simple
-linear regression!
+Motivation
+Spreadsheet-based business modelling techniques have many
+applications in business and economics:
+ • Determining optimal price of product
+ • Balancing marketing mix
+ • Investing decisions
+ • Identifying production level at different manufacturing plants
+ • Simplifying logistics with location and number of warehouses
 -->
 </section>
 <section id="source-page-007" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-007.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 7</figcaption>
+<p><img data-src="figures/business-modelling/page-007.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 7</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 7. Companion PowerPoint slide 7.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image5.png, figures/etx5900/components/image6.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 7.
 EDITABLE TEXT TRANSCRIPTION:
-Multiple Linear Regression (MLR)
-𝑌+" = 𝑏# + 𝑏$ 𝑋$ + 𝑏% 𝑋% + ⋯ + 𝑏& 𝑋&
-𝑏! : The predicted value of 𝑌 when all 𝑋 variables are zero
-Not meaningful when the range value of any 𝑋 variables does not include 0
-𝑏" : The change in predicted 𝑌 when 𝑋" value increases by one unit, holding other
-𝑋 variables fixed.
-…
-𝑏# : The change in predicted 𝑌 when 𝑋# value increases by one unit, holding other
-𝑋 variables fixed.
-Important: The slope estimates in MLR are marginal effects, i.e. the effect of a single X input
-holding other 𝑋 variables fixed.
-(In SLR, the slope tells you the total effect of X on Y because there were no other variables to
-control for.)
+What is optimisation?
+Process of finding the best decisions for a particular measure of
+performance
+
+In defining “best decision” and “performance”, we need to have:
+• Known input parameters
+• A set of decisions – things that the business can control
+• Some constraints on the decision
+• An objective or criteria to reach
+
+                These can be formulated to a model.
 -->
 </section>
 <section id="source-page-008" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-008.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 8</figcaption>
+<p><img data-src="figures/business-modelling/page-008.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 8</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 8. Companion PowerPoint slide 8.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 8.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Real Estate Data Multiple Linear Regression
-Using the Real Estate data, answer the following questions:
-•   Generate a multiple linear regression output using Microsoft Excel
-•   Interpret the slope coefficients for Beds and Area
-•   Compare the simple and multiple linear coefficients from your outputs
-•   Test whether the number of bedrooms has a positive impact on Price
-•   Select the best model using hypothesis testing
-•   Interpret the coefficient of multiple determination
-•   Test for the significance of the overall multiple linear regression model
-•   Predict the price of a property that is 720sqm in area, with 4 bedrooms, 2 bathrooms & 2
-car spaces
+Example:
+A business firm wants to determine a selling price for Product A. The
+unit cost of Product A is known to be $40 and the demand curve is
+known to be 𝑦 = 800 − 5𝑥.
+   • 𝑥: selling price per unit of Product A
+   • 𝑦: quarterly demand for Product A
+Thus,
+• Known input parameters: 40 (unit cost), -5 (marginal effect of price
+   on demand), 800 (maximum demand)
+• A set of decisions – things that the business can control: 𝑥
+• Some constraints on the decision: 𝑥 ≥ 40, so that profit 𝑧 ≥ 0
+• An objective or criteria: maximize quarterly profit 𝑧 = 𝑥 − 40 𝑦
 -->
 </section>
 <section id="source-page-009" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-009.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 9</figcaption>
+<p><img data-src="figures/business-modelling/page-009.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 9</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 9. Companion PowerPoint slide 9.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image3.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 9.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Generate a multiple linear regression
-Input X range now covers multiple
-columns.
-Note, all X’s must be stored in
-consecutive columns in your
-spreadsheet.
+How can we use Excel to model this?
+1. Excel’s Data Table Function
+   It explores how the objective changes if decisions or input
+   parameters change. Returns table of calculations/results.
+2. Excel’s Solver
+   It runs constrained optimisation that solves a maximization or
+   minimization problem subject to constraints. Returns best feasible
+   solution.
 -->
 </section>
 <section id="source-page-010" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-010.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 10</figcaption>
+<p><img data-src="figures/business-modelling/page-010.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 10</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 10. Companion PowerPoint slide 10.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image4.emf
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 10.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Multiple Regression Output
-SUMMARY OUTPUT
-Regression Sta-s-cs
-MulFple R            0.777331023
-R Square              0.60424352
-Adjusted R Square    0.599357637
-Standard Error       265.1623433
-ObservaFons                  329
-ANOVA
-df            SS          MS             F     Signiﬁcance F
-Regression                     4   34781849.65 8695462.413   123.671317 6.00458E-64
-Residual                     324   22780786.12 70311.06828
-Total                        328   57562635.78
-Coeﬃcients Standard Error   t Stat     P-value    Lower 95%   Upper 95%
-Intercept           86.84134712 61.99609571 1.400755098 0.162244312 -35.12436376 208.807058
-Beds                47.42619189 22.86632063 2.074063102 0.038862943 2.440987277 92.41139651
-Baths               216.5331552 21.40811948 10.11453413 4.42491E-21 174.4166884 258.6496221
-Cars                14.54447501   22.7739893 0.638644149 0.523505634 -30.25908501 59.34803502
-Area                 0.83126655 0.075739751 10.97530081 4.85461E-24 0.682262771 0.980270329
+How can we use Excel to model this?
+Setting up the mathematical formula in Excel:
+
+
+
+•   Inputs
+•   Decision
+•   Necessary Calculations
+•   Objective
+
+
+
+See demo and recording.
 -->
 </section>
 <section id="source-page-011" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-011.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 11</figcaption>
+<p><img data-src="figures/business-modelling/page-011.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 11</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 11. Companion PowerPoint slide 11.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image4.emf, figures/etx5900/components/image9.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 11.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Multiple Regression Output
-SUMMARY OUTPUT                      $
-𝑷𝒓𝒊𝒄𝒆𝒊 = 𝟖𝟔. 𝟖𝟒𝟏 + 𝟒𝟕. 𝟒𝟐𝟔𝐵𝑒𝑑𝑠" + 𝟐𝟏𝟔. 𝟓𝟑𝟑𝐵𝑎𝑡ℎ" +𝟏𝟒. 𝟓𝟒𝟒𝐶𝑎𝑟𝑠" + 𝟎. 𝟖𝟑𝟏𝐴𝑟𝑒𝑎"
-Regression Sta-s-cs
-MulFple R            0.777331023
-R Square              0.60424352
-Adjusted R Square    0.599357637
-Standard Error       265.1623433
-ObservaFons                  329
-ANOVA
-df             SS          MS             F     Signiﬁcance F
-Regression                     4    34781849.65 8695462.413   123.671317 6.00458E-64
-Residual                     324    22780786.12 70311.06828
-Total                        328    57562635.78
-Coeﬃcients Standard Error   t Stat     P-value    Lower 95%   Upper 95%
-Intercept           86.84134712 61.99609571 1.400755098 0.162244312 -35.12436376 208.807058
-Beds                47.42619189 22.86632063 2.074063102 0.038862943 2.440987277 92.41139651
-Baths               216.5331552 21.40811948 10.11453413 4.42491E-21 174.4166884 258.6496221
-Cars                14.54447501   22.7739893 0.638644149 0.523505634 -30.25908501 59.34803502
-Area                 0.83126655 0.075739751 10.97530081 4.85461E-24 0.682262771 0.980270329
+Data Table
+Next, let’s try different prices using Data Table:
+
+
+
+
+See demo and recording.
 -->
 </section>
 <section id="source-page-012" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-012.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 12</figcaption>
+<p><img data-src="figures/business-modelling/page-012.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 12</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 12. Companion PowerPoint slide 12.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image10.png, figures/etx5900/components/image11.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 12.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Interpretation of the slope coefficients
-+ B = 𝟖𝟔. 𝟖𝟒𝟏 + 𝟒𝟕. 𝟒𝟐𝟔𝐵𝑒𝑑𝑠B + 𝟐𝟏𝟔. 𝟓𝟑𝟑𝐵𝑎𝑡ℎB +𝟏𝟒. 𝟓𝟒𝟒𝐶𝑎𝑟𝑠B + 𝟎. 𝟖𝟑𝟏𝐴𝑟𝑒𝑎B
-𝑃𝑟𝑖𝑐𝑒
-Interpret 𝑏" (slope coefficient for beds) and 𝑏A (slope coefficient for area) .
+Data Table
+Highlight your data table (without the heading labels), then go to Data >
+What-if Analysis > Data Table
+
+
+
+
+ See demo and recording.
 -->
 </section>
 <section id="source-page-013" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-013.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 13</figcaption>
+<p><img data-src="figures/business-modelling/page-013.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 13</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 13. Companion PowerPoint slide 13.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image10.png, figures/etx5900/components/image11.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 13.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Interpretation of the slope coefficients
-+ B = 𝟖𝟔. 𝟖𝟒𝟏 + 𝟒𝟕. 𝟒𝟐𝟔𝐵𝑒𝑑𝑠B + 𝟐𝟏𝟔. 𝟓𝟑𝟑𝐵𝑎𝑡ℎB +𝟏𝟒. 𝟓𝟒𝟒𝐶𝑎𝑟𝑠B + 𝟎. 𝟖𝟑𝟏𝐴𝑟𝑒𝑎B
-𝑃𝑟𝑖𝑐𝑒
-Interpret 𝑏" (slope coefficient for beds) and 𝑏A (slope coefficient for area) .
-The estimated premium (increase in price) of an additional bedroom, given the baths, cars
-and area features remain fixed, is $47,426 on average.
-Ø If you are comparing two properties with exactly the same land size, car spaces, and
-bathrooms, a property with 4 bedrooms is expected to cost $47,426 more than a
-property with 3 bedrooms.
-The estimated premium (increase in price) of an additional square metre of land area,
-given the beds, baths and cars features remain fixed, is $831 on average.
-Ø If you are comparing two properties with exactly the same number of beds, baths, and
-car spaces, the property that is 780 sqm is expected to cost $ 8,310 more than the
-property that is 770 sqm.
+Data Table
+Output:
+
+
+
+
+•Pricing below $40 generate loss
+•Profit is non-linearly related to price
+•Over this crude grid, the maximum profit of $18,000 is achieved at
+price $100 per unit
+See demo and recording.
 -->
 </section>
 <section id="source-page-014" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-014.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 14</figcaption>
+<p><img data-src="figures/business-modelling/page-014.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 14</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 14. Companion PowerPoint slide 14.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image5.emf
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 14.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Compare SLR and MLR
-Simple                Mul)ple
-Intercept    Slope     Intercept   Slope
-Area       539.357     1.093                 0.831
-Beds       261.501   264.855                47.426
-86.841
-Baths      661.001   288.180                216.533
-Cars       845.000   200.464                14.544
-• Simple linear regression overestimates all four premiums
-• Bathrooms remain the premium feature with >$200k premium for an
-additional bathroom, given other features remain fixed
-• Car spaces in the simple linear regression yield a large premium (>$200k),
-but became negligible after other factors are accounted for (<$15k)
+Data Table
+Next, let’s try different costs as well:
+
+
+
+
+See demo and recording.
 -->
 </section>
 <section id="source-page-015" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-015.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 15</figcaption>
+<p><img data-src="figures/business-modelling/page-015.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 15</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 15. Companion PowerPoint slide 15.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image13.png, figures/etx5900/components/image14.png, figures/etx5900/components/image15.png, figures/etx5900/components/image16.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 15.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Testing for Significance of the Slope
-Similar to what we did with simple linear regression:
-𝐻# says there is no linear relationship between 𝑋& and 𝑌
-𝐻$ is where we can test for a linear relationship
-𝐻!: 𝛽" = 0                      𝐻!: 𝛽" = 0 (or: 𝐻!: 𝛽" ≥ 0)               𝐻!: 𝛽" = 0 (or 𝐻!: 𝛽" ≤ 0)
-𝐻#: 𝛽" ≠ 0                      𝐻#: 𝛽" < 0                               𝐻#: 𝛽" > 0
-Test if there is a linear relationship   Test if 𝑋# has a negative linear effect   Test if 𝑋# has a positive linear effect
-between 𝑋# and 𝑌                                on 𝑌                                      on 𝑌
-(two-tailed test)                         (left-tailed test)                       (right-tailed test)
+Data Table
+Highlight your data table (without the heading labels), then go to Data
+> What-if Analysis > Data Table
+
+
+
+
+See demo and recording.
 -->
 </section>
 <section id="source-page-016" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-016.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 16</figcaption>
+<p><img data-src="figures/business-modelling/page-016.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 16</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 16. Companion PowerPoint slide 16.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image6.emf, figures/etx5900/components/image26.png, figures/etx5900/components/image18.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 16.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Testing for Significance of the Slope
-We want to test whether the number of bedrooms has a positive impact on Price
-Coeﬃcients Standard Error   t Stat     P-value    Lower 95%   Upper 95%
-𝛽! Intercept      86.84134712  61.99609571 1.400755098 0.162244312 -35.12436376 208.807058
-𝛽" Beds           47.42619189  22.86632063 2.074063102 0.038862943 2.440987277 92.41139651
-𝛽# Baths          216.5331552  21.40811948 10.11453413 4.42491E-21 174.4166884 258.6496221
-𝛽$ Cars           14.54447501   22.7739893 0.638644149 0.523505634 -30.25908501 59.34803502
-𝛽% Area            0.83126655  0.075739751 10.97530081 4.85461E-24 0.682262771 0.980270329
-p−value for a two−tailed test
-Be careful! Excel reports two-tailed p-values. What type of test are we doing?
+Data Table
+Output:
+
+                            • Optimal price of $100/unit for
+                              cost of $40, $45, and $50
+                            • Optimal price of $110/unit for
+                              cost of $55 and $60
+                            • Note that as cost goes up, the
+                              maximum profit at the optimal
+                              price decreases.
+
+
+See demo and recording.
 -->
 </section>
 <section id="source-page-017" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-017.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 17</figcaption>
+<p><img data-src="figures/business-modelling/page-017.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 17</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 17. Companion PowerPoint slide 17.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image6.emf, figures/etx5900/components/image26.png, figures/etx5900/components/image19.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 17.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Testing for Significance of the Slope
-We want to test whether the number of bedrooms has a positive impact on Price
-Coeﬃcients Standard Error   t Stat     P-value    Lower 95%   Upper 95%
-𝛽! Intercept      86.84134712  61.99609571 1.400755098 0.162244312 -35.12436376 208.807058
-𝛽" Beds           47.42619189  22.86632063 2.074063102 0.038862943 2.440987277 92.41139651
-𝛽# Baths          216.5331552  21.40811948 10.11453413 4.42491E-21 174.4166884 258.6496221
-𝛽$ Cars           14.54447501   22.7739893 0.638644149 0.523505634 -30.25908501 59.34803502
-𝛽% Area            0.83126655  0.075739751 10.97530081 4.85461E-24 0.682262771 0.980270329
-𝐻! : 𝛽" = 0 (No relationship between Price and Beds)
-𝐻" : 𝛽" > 0 (Beds has a positive impact on Price)
-a = 0.05, t-statistic is 2.074
-p-value = 0.03886/2 = 0.01943 < 0.05.
-Therefore, we reject 𝐻!
-There is sufficient evidence at the 5% level of significance that the number of bedrooms has a
-positive impact on property prices
+Solver
+We note that if we keep increasing the possible prices and costs, the
+table can become unwieldy. Instead of having to write out all possible
+values, we can call on Solver to get an optimal solution under
+constraint.
+
+Data > Analysis Tools > Check “Solver Add-in”
+
+
+
+
+See demo and recording.
 -->
 </section>
 <section id="source-page-018" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-018.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 18</figcaption>
+<p><img data-src="figures/business-modelling/page-018.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 18</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 18. Companion PowerPoint slide 18.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image20.png, figures/etx5900/components/image21.png, figures/etx5900/components/image22.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 18.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Select the Best Model with Hypothesis Testing
-• Hypothesis testing for the regression coefficients can be used to select the best model, as
-not all independent variables are necessary.
-• After fitting a regression with all potential independent variables, remove statistically
-insignificant variables from the model.
-𝐻" : 𝛽# = 0 (no relationship between the dependent variable and the independent variable 𝑋# )
-𝐻$ : 𝛽# ≠ 0 (the independent variable 𝑋# , affects the dependent variable)
-Reject 𝐻! ∶ 𝛽" = 0 when p-value < 𝛼            Do not reject 𝐻! ∶ 𝛽" = 0 when p-value > 𝛼
-• Variable 𝑋" affects the dependent variable   • No relationship between dependent variable & 𝑋"
-• Keep 𝑋" in the model                         • Consider to remove 𝑋" from the model
+Solver
+Using Solver:
+
+
+
+
+See demo and recording.
 -->
 </section>
 <section id="source-page-019" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-019.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 19</figcaption>
+<p><img data-src="figures/business-modelling/page-019.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 19</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 19. Companion PowerPoint slide 19.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 19.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Model Reduction
-Since Cars has no significant impact on Price, we can consider removing it
-from the model:
-•   Create a new sheet of data
-•   Remove Cars by right clicking on column D and select Delete
-•   Estimate the model again with the remaining inputs
-•   Excel requires all explanatory variables (X’s) to be in consecutive columns
+Solver
+Using Solver
+
+
+
+
+See demo and recording.
 -->
 </section>
 <section id="source-page-020" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-020.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 20</figcaption>
+<p><img data-src="figures/business-modelling/page-020.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 20</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 20. Companion PowerPoint slide 20.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image7.emf
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 20.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Model Reduction
-Reduced model:           SUMMARY OUTPUT
-Regression Sta-s-cs
-MulFple R            0.777010504
-R Square             0.603745323
-Adjusted R Square    0.600087588
-Standard Error       264.9206769
-ObservaFons                  329
-ANOVA
-df            SS          MS            F     Signiﬁcance F
-Regression                     3   34753172.13 11584390.71 165.0598646 5.26039E-65
-Residual                     325   22809463.64 70182.96505
-Total                        328   57562635.78
-Coeﬃcients Standard Error  t Stat     P-value   Lower 95%   Upper 95%
-Coefficients of the      Intercept           94.29534357 60.83202476 1.550093786 0.12209221 -25.37889511 213.9695822
-remaining factors did    Beds                51.36298726 21.99969527 2.334713579 0.020166972 8.083205065 94.64276946
-Baths               217.7596943 21.30236672 10.22232399 1.87828E-21 175.8517596 259.667629
-not change drastically   Area                 0.83592956 0.075318289 11.09862655 1.74896E-24 0.687756637 0.984102482
+Example: Marketing Mix
+Suppose the owner of a pizza company wants to figure out how much
+to spend on advertising through pamphlets.
+
+We are given the following information:
+• Profit = (Price x Quantity) - Total Cost
+• Total Cost = Variable Cost + Fixed Cost
+• Fixed Cost = 700 + Pamphlet Price x Number of Pamphlets
+• Variable Cost = (Wage/5 + Cost of Ingredients) x Pizza Quantity
+• Pizza Quantity = 120 + (0.2 x Number of Pamphlets) – (0.0003 x
+  Number of Pamphlets2)
+• Price = 25, Wage = 20, Pamphlet Price = 2, Cost of Ingredients = 3
 -->
 </section>
 <section id="source-page-021" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-021.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 21</figcaption>
+<p><img data-src="figures/business-modelling/page-021.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 21</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 21. Companion PowerPoint slide 21.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 21.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Coefficient of Multiple Determination (R2)                 21
-Let’s proceed with this reduced model:
-Proportion of the variation in Y that is explained by the set of independent variables?
+Example: Marketing Mix
+Let’s get this into our spreadsheet. Formulas included for reference.
+
+
+
+
+See demo and recording.
 -->
 </section>
 <section id="source-page-022" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-022.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 22</figcaption>
+<p><img data-src="figures/business-modelling/page-022.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 22</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 22. Companion PowerPoint slide 22.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 22.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Coefficient of Multiple Determination (R2)                 22
-Let’s proceed with this reduced model:
-Proportion of the variation in Y that is explained by the set of independent variables?
-R2 = 0.6037
-Ø About 60% of the variation in price is explained by the reduced model (with variables beds,
-baths and area).
-Ø About 40% of the variation in price remains unexplained.
-Note: R2 is higher for the multiple regression model than for each of the simple linear
-regression models. Every time a variable is added, R2 accounts for more of the variability in the
-dependent (response) variable.
+Example: Marketing Mix – Data Table
+Suppose we vary both pamphlet number and price. Using the cells in
+this screenshot, which cell is the row input cell? Column input cell?
+
+
+
+
+See demo and recording.
+                                                 PollEv.com​/alyssahu
 -->
 </section>
 <section id="source-page-023" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-023.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 23</figcaption>
+<p><img data-src="figures/business-modelling/page-023.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 23</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 23. Companion PowerPoint slide 23.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image24.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 23.
 EDITABLE TEXT TRANSCRIPTION:
-Test for the Significance of the Overall Multiple Regression Model
-We can ask if there is an overall fit, i.e. Is the linear relationship between the
-response variable Y and the explanatory variables 𝑋$ , 𝑋% , . . . , 𝑋& valid?
-Or
-Is there a significant relationship between the dependent variable and the entire
-set of independent variables?
-The hypotheses:
-No linear relationship between
-the dependent variable and the
-H0: 𝛽1 = 𝛽2 = … = 𝛽𝑘 = 0                           independent variables
-H1: At least one 𝛽𝑖 ≠ 0
-Linear relationship between
-• What does this mean?                    the dependent variable and
-the independent variables
+Example: Marketing Mix – Data Table
+This is our final data table:
+
+
+
+
+• Lower pamphlet price → lower fixed cost → optimal profit is higher.
+• At $2 per pamphlet, the profit maximising number of pamphlets is
+  150. At $0.5 per pamphlet, the optimal number of pamphlets is 300.
+See demo and recording.
 -->
 </section>
 <section id="source-page-024" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-024.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 24</figcaption>
+<p><img data-src="figures/business-modelling/page-024.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 24</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 24. Companion PowerPoint slide 24.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 24.
 EDITABLE TEXT TRANSCRIPTION:
-24
-Test for the Significance of the Overall Multiple Regression Model
-• If H0 is rejected,
-this means that the explanatory variables as a group provides at least some
-power to explain the variation in the response variable Y.
-• If H0 is not rejected
-this means that this set of explanatory variables has no power to explain the
-variation in the response variable Y.
-We use the F-test to test the significance of the overall multiple regression
-model. The F-test is a formal procedure for testing whether the explained
-variation is large compared to the unexplained variation.
+Example: Marketing Mix
+Suppose the pizza company can advertise on Facebook as well as via
+pamphlets. Facebook ads are more expensive than pamphlets (see
+fixed cost) but tends to sell more pizza (see pizza quantity).
+We are given the following updated information:
+• Fixed Cost = 700 + (Pamphlet Price x Number of Pamphlets) +
+  (Facebook Price x Number of Facebook Ads)
+• Pizza Quantity = 120 + (0.2 x Number of Pamphlets) – (0.0003 x
+  Number of Pamphlets2) + (0.3 x Number of Facebook Ads) –
+  (0.0003 x Number of Facebook Ads2)
+• Facebook Ad Price = 5
+What if we use both Facebook ads and pamphlets?
 -->
 </section>
 <section id="source-page-025" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-025.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 25</figcaption>
+<p><img data-src="figures/business-modelling/page-025.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 25</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 25. Companion PowerPoint slide 25.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image7.emf, figures/etx5900/components/image25.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 25.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Hypothesis Test for Overall Fit (F-test)
-At the 5% level of significance, test if there is a significant linear relationship between Price and
-the three independent variables of beds, baths, and area.
-SUMMARY OUTPUT
-Step 1:
-𝐻$ :                                   Regression Sta-s-cs
-𝐻% :                            MulFple R            0.777010504
-R Square             0.603745323
-Step 2:                         Adjusted R Square    0.600087588
-α = 0.05                        Standard Error       264.9206769
-F statistic = ?                 ObservaFons                  329
-Step 3:                         ANOVA
-df            SS          MS            F     Signiﬁcance F
-P-value = ?                     Regression                     3   34753172.13 11584390.71 165.0598646 5.26039E-65
-Residual                     325   22809463.64 70182.96505
-Step 4:
-Total                        328   57562635.78
-Decision:
-Reject H0 if p-value < α                            Coeﬃcients Standard Error  t Stat     P-value   Lower 95%   Upper 95%
-Intercept           94.29534357 60.83202476 1.550093786 0.12209221 -25.37889511 213.9695822
-Fail to reject H0 otherwise     Beds                51.36298726 21.99969527 2.334713579 0.020166972 8.083205065 94.64276946
-Step 5:                         Baths               217.7596943 21.30236672 10.22232399 1.87828E-21 175.8517596 259.667629
-Area                 0.83592956 0.075318289 11.09862655 1.74896E-24 0.687756637 0.984102482
-Conclusion
+Example: Marketing Mix - Solver
+
+
+
+
+See demo and recording.
 -->
 </section>
 <section id="source-page-026" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-026.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 26</figcaption>
+<p><img data-src="figures/business-modelling/page-026.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 26</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 26. Companion PowerPoint slide 26.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image27.png, figures/etx5900/components/image7.emf
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 26.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Hypothesis Test for Overall Fit (F-test)
-At the 5% level of significance, test if there is a significant linear relationship between Price and
-the three independent variables of beds, baths, and area.
-SUMMARY OUTPUT
-Step 1:
-𝐻$ : 𝛽% = 𝛽& = 𝛽' = 0                             Regression Sta-s-cs
-𝐻% : 𝑎𝑡 𝑙𝑒𝑎𝑠𝑡 𝑜𝑛𝑒 𝛽" ≠ 0                   MulFple R            0.777010504
-(where 𝑖 = 1,2,3)                R Square             0.603745323
-Adjusted R Square    0.600087588
-Step 2: α = 0.05, F statistic: 165.060     Standard Error       264.9206769
-ObservaFons                  329
-Step 3:
-p-value (Significance F) = 5.260 x 10-65   ANOVA
-df            SS          MS            F     Signiﬁcance F
-Step 4: Reject H0 if p-value < α           Regression                     3   34753172.13 11584390.71 165.0598646 5.26039E-65
-5.260 x 10-65 < 0.05 , reject H0           Residual                     325   22809463.64 70182.96505
-Total                        328   57562635.78
-Step 5: There is sufficient evidence at
-5% significance level to conclude that                         Coeﬃcients Standard Error  t Stat     P-value   Lower 95%   Upper 95%
-the linear relationship between Price      Intercept           94.29534357 60.83202476 1.550093786 0.12209221 -25.37889511 213.9695822
-and the combination of beds, bath,         Beds                51.36298726 21.99969527 2.334713579 0.020166972 8.083205065 94.64276946
-and area is valid (i.e., at least one of   Baths               217.7596943 21.30236672 10.22232399 1.87828E-21 175.8517596 259.667629
-the independent variables is related       Area                 0.83592956 0.075318289 11.09862655 1.74896E-24 0.687756637 0.984102482
-to Price).
+Example: Marketing Mix - Solver
+What happens if we get rid of the Facebook ads? Only lose about $7!
+
+
+
+
+See demo and recording.
 -->
 </section>
 <section id="source-page-027" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-027.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 27</figcaption>
+<p><img data-src="figures/business-modelling/page-027.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 27</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 27. Companion PowerPoint slide 27.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image28.png, figures/etx5900/components/image29.png, figures/etx5900/components/image30.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 27.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Prediction using Regression Model
-𝑌+" = 𝛽G# + 𝛽G$ 𝑋$ + 𝛽G% 𝑋% + … + 𝛽G& 𝑋&   OR   𝑌+" = 𝑏# + 𝑏$ 𝑋$ + 𝑏% 𝑋% + … + 𝑏& 𝑋&
-• 𝑌+" allows us to use information on 𝑋′𝑠 to predict Y.
-• Plug in the value of X for each independent variable, multiply it with the
-corresponding estimated coefficient, then take the total sum to get 𝑌+" !
-Best practices for prediction:
-Ø Make a prediction for the dependent variable only after confirming the
-significance of the regression coefficients through hypothesis testing!
-Ø Make prediction for values of 𝑋 9 𝑠 that are inside the range of 𝑿′𝒔 values in
-the original sample.
+Example: Investment Decisions
+An investor considers purchasing a
+café. He presents you with the
+following timeline and the net cashflow
+(expected profit) per year:
+  • Year 0: Purchase café for
+    $650000.
+  • Year 1: Cashflow around $40000.
+  • Cashflow will increase by 4% per
+    year after that.
+  • Year 10: Sell café for $800000.
+See demo and recording.
 -->
 </section>
 <section id="source-page-028" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-028.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 28</figcaption>
+<p><img data-src="figures/business-modelling/page-028.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 28</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 28. Companion PowerPoint slide 28.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 28.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Real Estate Data - Prediction
-• From the regression model, we can predict the price of a property
-• Consider a 720sqm property, with 4 bedrooms, 2 bathrooms & 2 car spaces
-• We can use the =SUMPRODUCT() function
+Example: Investment Decisions
+Is this a good investment or a “lemon”? Let’s look at net present value
+(NPV) and internal rate of return (IRR) to compare investments.
+NPV accounts for “time value” of money (i.e. inflation, lost opportunity).
+               10
+              𝐶𝑡
+     𝑁𝑃𝑉 = ෍
+             1+𝑟 𝑡                         Example of Excel commands:
+              𝑡=0
+      𝐶𝑡 : cashflow in period 𝑡
+ 𝑟: discount rate (return that could
+be earned on alternate investment)
+
+IRR is the discount rate that makes NPV equal to 0 (that is, the
+projected discounted cashflows equal to the initial investment amount).
 -->
 </section>
 <section id="source-page-029" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-029.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 29</figcaption>
+<p><img data-src="figures/business-modelling/page-029.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 29</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 29. Companion PowerPoint slide 29.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image8.png, figures/etx5900/components/image56.png, figures/etx5900/components/image57.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 29.
 EDITABLE TEXT TRANSCRIPTION:
-Guided Example: Real Estate Data - Prediction
-• From the regression model, we can predict the price of a property
-• Consider a 720sqm property, with 4 bedrooms, 2 bathrooms & 2 car spaces
-• We can use the =SUMPRODUCT() function to get approximately $1,337,136
-Estimates of                                      The input
-𝜷9 𝒔 from                                         𝑿9 𝒔 for the
-regression                                        prediction
+Example: Investment Decisions – GoalSeek
+ • The investor is currently considering
+   another investment opportunity which
+   has an IRR of 9%.
+ • If the purchase price of $650,000 is
+   negotiable, what price would yield an
+   IRR of at least 9%? (That is, the price
+   such that r = 9% and NPV = 0.)
+ • We will use our final Excel function
+   ‘Goal Seek’ which finds the input value
+   needed to hit a target output value.
 -->
 </section>
 <section id="source-page-030" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-030.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 30</figcaption>
+<p><img data-src="figures/business-modelling/page-030.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 30</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 30. Companion PowerPoint slide 30.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 30.
 EDITABLE TEXT TRANSCRIPTION:
-Task 1: Climate change
-Climate change and a country’s carbon footprint are contentious issues faced by many governments.
-Limiting or reducing carbon dioxide (CO2) emissions is seen as a priority by climate change activists.
-Here we attempt to predict CO2 emissions (million metric tonnes) for 14 countries based upon their
-GDP (in US $trillion) and population density (people per square kilometre). Refer to the Emissions
-data worksheet.
-a. State the estimated multiple regression equation. Define any symbols used. Predict the CO2
-emissions for a country with GDP of $1 trillion and a population density of 50 people per square
-kilometre. Is this a valid prediction?
-b. Interpret the slope coefficient population density in the estimated equation. Is it as expected?
-c. State the coefficient of determination and interpret its meaning in the context of the question.
-d. At the 5% level of significance, test if there is a significant linear relationship between CO2
-emissions and the two independent variables. (Test for the Significance of the Overall Multiple
-Regression Model)
-e. At the 5% level of significance, whether each independent variable makes a contribution to the
-regression model
+Example: Investment Decisions – GoalSeek
+ Data > What-if Analysis > Goal Seek
+ ‘Set cell’: NPV cell
+ ‘To value’: 0
+ ‘By changing cell’: Year 0 cashflow
+
+ Goal Seek returns a year 0 cashflow
+ of $613,663. So, we should try to
+ negotiate the price down to $613,663
+ to make this investment worthwhile.
+
+ See demo and recording.
 -->
 </section>
 <section id="source-page-031" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-031.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 31</figcaption>
+<p><img data-src="figures/business-modelling/page-031.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 31</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 31. Companion PowerPoint slide 31.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image12.png, figures/etx5900/components/image33.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 31.
 EDITABLE TEXT TRANSCRIPTION:
-Task 1: Climate change
-+
-𝐸𝑚𝑖𝑠𝑠𝑖𝑜𝑛𝑠 = 151.393 + 204.640𝐺𝐷𝑃 − 0.164𝑃𝑜𝑝𝐷𝑒𝑛𝑠
+Summarising Week 10 Seminar
+❖ Spreadsheet modelling
+  ▪ Ideas to solve business problems through simulation, sensitivity
+    analysis and optimization using Excel
+❖ Excel tools for simulation and optimization
+  ▪ Data Table
+  ▪ Solver
+  ▪ Goal Seek
 -->
 </section>
 <section id="source-page-032" class="slide level2">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-032.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 32</figcaption>
+<p><img data-src="figures/business-modelling/page-032.jpg" style="height:6.3in"></p>
+<figcaption>ETF1100 Week 10 Seminar source PDF, page 32</figcaption>
 </figure>
 </div>
 <!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 32. Companion PowerPoint slide 32.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image34.png
+SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 32.
 EDITABLE TEXT TRANSCRIPTION:
-Task 1: Climate change
-𝑌! = 151.393 + 204.640𝑋& − 0.164𝑋'
-𝑌! : estimated CO2 emissions (million metric tonnes)
-𝑋& : GDP (trillion $)
-𝑋' : population density (people per square km)
-𝑌! = 151.3935 + 204.6397 ∗ 1 − 0.16385*50
-𝑌! = 347.84 million metric tonnes
-Validity: The prediction is valid because GDP = $1 trillion and population density
-= 50 people per square kilometre is within the range of the data.
--->
-</section>
-<section id="source-page-033" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-033.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 33</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 33. Companion PowerPoint slide 33.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Climate change
-b. Interpret the slope coefficient population density in the estimated equation. Is it as
-expected?
-b1 = -0.164
-Interpretation: On average, when population density increases by 1 person per kilometre, the
-CO2 emissions is estimated to decrease by 0.164 million metric tonnes, holding constant the
-GDP.
-As expected?
-It is not as expected because we would expect CO2 emissions to increase as population
-density increases. However, our sample indicates otherwise. This can be due to the fact that
-in the dataset there are some countries with a relatively low population density but very high
-CO2 emissions (e.g., Russia and US).
--->
-</section>
-<section id="source-page-034" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-034.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 34</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 34. Companion PowerPoint slide 34.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image12.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Climate change
-c. State the coefficient of determination and interpret its meaning in the context of the question.
-R2 = 53.74%
-Approximately, 53.74% of the
-variation in CO2 emissions is
-explained by the regression
-model.
-The remaining 46.26% of the
-variation in CO2 emissions is
-left unexplained by the model.
--->
-</section>
-<section id="source-page-035" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-035.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 35</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 35. Companion PowerPoint slide 35.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image12.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Climate change
-d. At the 5% level of significance, test if there is a significant linear relationship between CO2 emissions and the
-two independent variables.
-Step 1:
-Step 2:
-Step 3:
-Step 4:
-Step 5:
--->
-</section>
-<section id="source-page-036" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-036.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 36</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 36. Companion PowerPoint slide 36.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image35.png, figures/etx5900/components/image12.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Climate change
-d. At the 5% level of significance, test if there is a significant linear relationship between CO2 emissions and the
-two independent variables.
-Step 1:
-𝐻" : 𝛽$ = 𝛽% = 0
-𝐻$ : 𝑎𝑡 𝑙𝑒𝑎𝑠𝑡 𝑜𝑛𝑒 𝛽& ≠ 0 (where i=1,2)
-Step 2:   α = 5%, F statistic: 6.3885
-Step 3:
-P-value (Significance F) = 0.0144
-Step 4:     Reject H0 if p-value < α
-0.0144 < 0.05, reject H0
-Step 5: There is sufficient evidence at 5% level of significance to conclude that the linear relationship
-between CO2 emissions and the combination of GDP and population density is valid (at least one of the
-independent variables is related to CO2 emissions).
--->
-</section>
-<section id="source-page-037" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-037.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 37</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 37. Companion PowerPoint slide 37.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image12.png, figures/etx5900/components/image36.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Climate change
-e. At the 5% level of significance, test
-whether each independent variable
-makes a significant contribution to the
-regression model.
-Hint: Hypotheses will look like
-𝐻$ : 𝛽# = 0      𝐻% : 𝛽# ≠ 0
-Replace k with the variable name (or number)
-For GDP:
-t-statistic = 3.5605
-p-value = 0.00447 < 0.05
-Reject H0
-There is sufficient evidence at the 5%
-level of significance that GDP contributes
-significantly to the explanation of CO2
-emissions.
--->
-</section>
-<section id="source-page-038" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-038.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 38</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 38. Companion PowerPoint slide 38.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image12.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Climate change
-For Population density:
-t-statistic = -0.1057
-p-value = 0.9177 > 0.05
-Do not reject H0
-There is insufficient evidence at the 5% level
-of significance that population density
-contributes significantly to the explanation
-of CO2 emissions
--->
-</section>
-<section id="source-page-039" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-039.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 39</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 39. Companion PowerPoint slide 39.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image13.jpeg
-EDITABLE TEXT TRANSCRIPTION:
-Correlation NOT Causation
-• Unless the data is obtained in a carefully controlled experiment - not the case here -
-we can never make definitive statements about causation in regression analysis.
-• The reason for this is that we can almost never rule out the possibility that some
-other variable is causing the variation in both of the observed variables.
-Example:
-• Obtain the data on all the fires in Melbourne for the last ten years.
-• The number of fire fighters at a fire correlates highly with the
-corresponding damage in dollars.
-• Can we conclude that fire fighters cause the damage???
-No, of course not! Both variables result from and are correlated
-with the overall size of the fire.
-39
--->
-</section>
-<section id="source-page-040" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-040.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 40</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 40. Companion PowerPoint slide 40.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image14.jpg
-EDITABLE TEXT TRANSCRIPTION:
-Part II: Time Series Analysis & Forecasting
--->
-</section>
-<section id="source-page-041" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-041.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 41</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 41. Companion PowerPoint slide 41.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-41
-Data and Variable Classification
-DATA /
-VARIABLES
-QUANTITATIVE
-QUALITATIVE
-(numeric)
-(categorical)
-Discrete
-NOMINAL                   ORDINAL                                     Continuous
-(Counts)
-DATA                                                      DATA
-can also be                                               can also be
-CROSS -                                         PRIMARY                  SECONDARY
-TIME-SERIES
-SECTIONAL
--->
-</section>
-<section id="source-page-042" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-042.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 42</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 42. Companion PowerPoint slide 42.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Time Series Model Components
-Time Series
-Trend component               Seasonal component          Cyclical component     Irregular component
-Overall, persistent long-                                                         Erratic or residual
-Regular periodic          Repeating swings or
-term upward or downward                                                                fluctuations
-fluctuation, usually within   movements over more
-movement, often over                                                             (also called random
-several years              a 12-month period            than one year
-component)
-42
--->
-</section>
-<section id="source-page-043" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-043.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 43</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 43. Companion PowerPoint slide 43.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image60.png, figures/etx5900/components/image17.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Trend Modelling & Forecasting in an Exchange-Rate Time Series
-The graph shows monthly values of the exchange rate between the Japanese Yen and the Australian dollar from
-January 2018 to September 2022. Superimposed on the graph are linear and quadratic curves fitted to this data.
-43
--->
-</section>
-<section id="source-page-044" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-044.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 44</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 44. Companion PowerPoint slide 44.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image40.png, figures/etx5900/components/image90.png, figures/etx5900/components/image41.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Trend Modelling & Forecasting in an Exchange-Rate Time Series
-The equations for these linear and quadratic fitted curves are:
-Linear fitted curve: 𝑦: = 58.210 + 0.37𝑡
-Quadratic fitted curve: 𝑦: = 61.798 + 0.00525𝑡 + 0.00629𝑡 $
-Where 𝑦: is the estimated exchange rate in months, and t is time in months with t=1 corresponding to January
-2018.
-a) The two equations were used to forecast the exchange rates in the last 3 months of 2022. What is the
-linear and quadratic forecasts for December 2022?
-b) The forecasts for the last three months of 2022 were later compared to the actual values as shown
-below. Calculate the mean absolute deviation for each forecast, showing your working.
-∑+ |' (),|        Month               Actual               Linear forecast     Quadratic forecast
-MAD = ()* ,
-*           Oct-22              79.22                79.68               83.27
-𝑌+ = actual
-𝐹+ = forecast             Nov-22              80.14                80.05               84.01
-Dec-22              79.99                80.41               84.76
--->
-</section>
-<section id="source-page-045" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-045.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 45</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 45. Companion PowerPoint slide 45.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image42.png, figures/etx5900/components/image43.png, figures/etx5900/components/image130.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Trend Modelling & Forecasting in an Exchange-Rate Time Series
-The equations for these linear and quadratic fitted curves are:
-Linear fitted curve: 𝑦R = 58.210 + 0.37𝑡
-Quadratic fitted curve:𝑦R = 61.798 + 0.00525𝑡 + 0.00629𝑡 &
-Where 𝑦R is the estimated exchange rate in months , and t is time in months with t=1 corresponding to January 2018.
-a) The two equations were used to forecast the exchange rates in the last 3 months of 2022. What is
-the linear and quadratic forecasts for December 2022.
-Linear forecast:                                  Quadratic forecast:
-t = 60                                            t = 60
-𝑦R = 58.210 + (0.370 ∗ 60)                        𝑦R = 61.798 + (0.00525 ∗ 60) + (0.00629 ∗ 60& )
-𝑦R = 80.41                                        𝑦R = 84.76
--->
-</section>
-<section id="source-page-046" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-046.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 46</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 46. Companion PowerPoint slide 46.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image141.png, figures/etx5900/components/image150.png, figures/etx5900/components/image160.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Trend Modelling & Forecasting in an Exchange-Rate Time Series
-b) The forecasts for the last three months of 2022 were later compared to the actual values as shown
-below. Calculate the mean absolute deviation for each forecast, showing your working.
-Month         Actual                 Linear forecast      Quadratic forecast
-Oct-22        79.22                  79.68                83.27
-Nov-22        80.14                  80.05                84.01
-Dec-22        79.99                  80.41                84.76
-∑+
-()* |',(),|
-MAD=
-*
-MAD (Linear Forecast)                              MAD (Quadratic Forecast)
-,-.$$(,-./0 1 0!.#2(0!.!3 1|,-.—(0!.2#|            ,-.$$(04.$, 1 0!.#2(02.!# 1|,-.—(02.,/|
-=                      4
-=                       4
-!.2/1!.!-1!.2$                                      2.!314.0,12.,/,
-=                  = 0.323                         =                    =4.229
-4                                                    4                                        46
--->
-</section>
-<section id="source-page-047" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-047.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 47</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 47. Companion PowerPoint slide 47.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 3: Chocolate Bars
-A confectionery company tracks quarterly sales of its popular chocolate bars (in thousands).
-Using historical data from Q1 2017 (t=1), the following linear trend model was used to forecast
-sales:
-T=24.369+1.76t
-Assuming a multiplicative model, the seasonal indices have been calculated.
-a. Using trend and seasonality, forecast the sales for the first quarter of 2022.
-b. Interpret the seasonal index for the first quarter.
-Q1        0.996
-c. Interpret the seasonal index for the fourth quarter.                   Q2        0.915
-Q3        0.934
-Q4        1.155
--->
-</section>
-<section id="source-page-048" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-048.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 48</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 48. Companion PowerPoint slide 48.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image44.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 3: Chocolate Bars
-a. Using trend and seasonality, forecast the sales for the first           Q1          0.996
-quarter of 2022.                                                           Q2          0.915
-𝐹𝑡 = 𝑇\ ∗ 𝑆\                                      Q3          0.934
-Q4          1.155
-T21=24.369+1.76t = 24.369+1.76*21 = 61.329
-S1 = 0.996
-𝐹21 = 𝑇]" ∗ 𝑆" = 61.329 * 0.996 = 61.08 (thousands)
-b. Interpret the seasonal index for the first quarter.
-The sales of chocolate bars in the first quarter is 0.4% below the trend line projection on
-average.
-c. Interpret the seasonal index for the fourth quarter.
-The sales of chocolate bars in the fourth quarter is 15.5% above the trend line projection on
-average.
--->
-</section>
-<section id="source-page-049" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-049.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 49</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 49. Companion PowerPoint slide 49.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image23.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 4: Target Quarterly Sales Revenue
-a. Draw a time series plot using the data provided. It shows the quarterly
-sales revenue for Target from Quarter 1 of 2000 to Q3 of 2016
-b. Describe the components present in the time series chart.
-c. The linear trend model is given by the equation: 𝑦HI = 𝑏# + 𝑏$ 𝑡. Produce
-the regression results and state the linear trend equation.
-d. Interpret the intercept and slope coefficients.
--->
-</section>
-<section id="source-page-050" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-050.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 50</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 50. Companion PowerPoint slide 50.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Revenue ($ million)
-10,000    15,000   20,000   25,000
-20
-00     0   5,000
-Q
-20 1
-00
-Q
-20 3
-01
-Q
-20 1
-01
-Q
-20 3
-02
-Q
-20 1
-02
-Q
-20 3
-03
-Q
-20 1
-03
-Q
-20 3
-04
-Q
-20 1
-04
-Q
-20 3
-05
-Q
-20 1
-05
-Q
-20 3
-06
-Q
-20 1
-06
-Q
-20 3
-07
-Q
-20 1
-07
-Q
-20 3
-08
-Draw a time series plot using the data provided. It shows the quarterly sales
-Q
-20 1
-08
-Q
-20 3
-09
-Q
-Year-Quarter
-20 1
-09
-Q
-20 3
-10
-Q
-20 1
-10
-Q
-20 3
-11
-Q
-20 1
-11
-Q
-Quarterly Sales Revenue for Target
-20 3
-12
-Q
-20 1
-12
-Q
-20 3
-13
-Q
-20 1
-13
-Q
-20 3
-14
-Q
-Task 4: Target Quarterly Sales Revenue
-20 1
-14
-Q
-20 3
-15
-Q
-20 1
-15
-Q
-20 3
-16
-Q
-20 1
-16
-Q3
-revenue for Target from Quarter 1 of 2000 to Q3 of 2016
--->
-</section>
-<section id="source-page-051" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-051.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 51</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 51. Companion PowerPoint slide 51.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image31.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 4: Target Quarterly Sales Revenue
-Describe the components present in the time series chart.
-• There is long-term upward trend
-• There is a seasonal component
-present with a very high peak
-every fourth quarter.
-• The shapes of ups and downs
-vary each year, indicating the
-presence of an irregular
-component.
--->
-</section>
-<section id="source-page-052" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-052.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 52</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 52. Companion PowerPoint slide 52.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image300.png, figures/etx5900/components/image46.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 4: Target Quarterly Sales Revenue
-The linear trend model is given by the equation:
-𝑦HI = 𝑏# + 𝑏$ 𝑡
-Produce the regression results and state the linear trend equation.
-SUMMARY OUTPUT
-Regression Statistics
-Multiple R                   0.80                𝑌+I = 9,514 + 156𝑡
-R Square                     0.64
-Adjusted R Square            0.64
-Standard Error              2275
-Observations                   67
-Standard
-Coefficients   Error   t Stat P-value Lower 95% Upper 95%
-Intercept                   9514    562.17 16.92 1.65E-25       8391    10637
-Time                         156     14.37 10.84 3.27E-16        127       184
--->
-</section>
-<section id="source-page-053" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-053.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 53</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 53. Companion PowerPoint slide 53.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image47.png, figures/etx5900/components/image48.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 4: Target Quarterly Sales Revenue
-𝑌+I = 9,514 + 156𝑡
-𝑏# = 9,514: The predicted trend value for sales revenue when Time = 0 is
-$9,514million.
-𝑏$ = 156: The estimated average growth in sales revenue is $156 million per
-quarter.
-Quarterly Sales Revenue for Target
-25,000
-• This model is not really adequate.
-20,000
-Revenue ($ million)
-15,000                                                                                                                                                                                                                                                                                                                                                       • There are periods where the predicted
-10,000                                                                                                                                                                                                                                                                                                                                                         and actual values are quite different.
-5,000
-0
-• At least part of the reason is due to
-200 0Q1   200 0Q3   200 1Q1   200 1Q3   200 2Q1   200 2Q3   200 3Q1   200 3Q3   200 4Q1   200 4Q3   200 5Q1   200 5Q3   200 6Q1   200 6Q3   200 7Q1   200 7Q3   200 8Q1   200 8Q3   200 9Q1   200 9Q3   201 0Q1   201 0Q3   201 1Q1   201 1Q3   201 2Q1   201 2Q3   201 3Q1   201 3Q3   201 4Q1   201 4Q3   201 5Q1   201 5Q3   201 6Q1   201 6Q3     seasonality.
-Year-Quarter
--->
-</section>
-<section id="source-page-054" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-054.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 54</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 54. Companion PowerPoint slide 54.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image32.png, figures/etx5900/components/image50.png, figures/etx5900/components/image51.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 5: Forecast, MAD and MSFE
-Two forecasting procedures were applied in order to forecast the sales for the four quarters
-of 2024. The forecasts and the actual sales are given in the following table (Retail sales and
-forecasts in $million):
-∑+   |' () |
-MAD= ()* *, ,
-a.   For each forecasting procedure, calculate the Mean Absolute deviation
-∑+
-()*(',(),)
--
-(MAD) and the Mean Square Forecast Error (MSFE).                              MSFE=      *
-b.   Based on these measures, which is the best forecasting method? Explain.
-c.   Let’s pretend for a moment that in part a) you found that the MAD measure
-indicated that Forecast 1 was the most accurate, but the MSFE measure
-indicated that Forecast 2 was the most accurate. Explain how you would decide
-which measure of accuracy was the right one to base your decision on.
--->
-</section>
-<section id="source-page-055" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-055.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 55</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 55. Companion PowerPoint slide 55.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image140.png, figures/etx5900/components/image180.png, figures/etx5900/components/image190.png, figures/etx5900/components/image32.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 5: Forecast, MAD and MSFE
-For each forecasting procedure, calculate the Mean Absolute deviation (MAD) and the
-Mean Square Forecast Error (MSFE).
-∑+
-()* |',(),|
-MAD=
-*
-MAD (Forecast 1)                           MAD (Forecast 2)
-4!(4#.$ 1 4#(40 1|2!(2$.,|1|2-(32.$|       4!($0./ 1 4#(44., 1|2!(4/.#|1|2-(22.2|
-=                    2
-=                     2
-= 4.025                                    = 3.15
-55
--->
-</section>
-<section id="source-page-056" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-056.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 56</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 56. Companion PowerPoint slide 56.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image200.png, figures/etx5900/components/image210.png, figures/etx5900/components/image220.png, figures/etx5900/components/image32.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 5: Forecast, MAD and MSFE
-For each forecasting procedure, calculate the Mean Absolute deviation (MAD) and the
-Mean Square Forecast Error (MSFE).
-∑+  (' () )-
-MSFE= ()* , ,
-*
-MSFE (Forecast 1)                              MSFE (Forecast 2)
-(4!(4#.$)-1(4#(40)-(2!(2$.,)-1(2-(32.$)-       (4!($0./)-1(4#(44.,)-1(2!(4/.#)-1(2-(22.2)-
-=                      2
-=                        2
-= 21.12                                        = 11.41
-56
--->
-</section>
-<section id="source-page-057" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-057.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 7, page 57</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop7_solutions_fullpage.pdf, page 57. Companion PowerPoint slide 57.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 5: Forecast, MAD and MSFE
-b. Based on these measures, which is the best forecasting method? Explain.
-Both error measures are lower for forecast 2, so based on the 2024 figures, forecast 2 is the
-more accurate forecasting method.
-c. Let’s pretend for a moment that in part a) you found that the MAD measure indicated
-that Forecast 1 was the most accurate, but the MSFE measure indicated that Forecast 2 was
-the most accurate. Explain how you would decide which measure of accuracy was the right
-one to base your decision on.
-We choose MSFE if it is important to avoid (even a few) large errors as it penalizes large errors
-heavily. Otherwise, use MAD as it weights all errors equally and aims for consistent average
-accuracy.
-The choice depends on whether large forecast errors are acceptable in your context.
+Closing Reminders
+Meet for workshop tomorrow 6pm on Zoom.
+Attend your allocated tutorial time on Wed/Thurs – tutorial quiz.
+Sunday May 17 by 11:55pm – submit post workshop quiz.
+Questions? Please use All Day TA, weekly forum, join
+ consultation hours, or email ETF1100.Caulfield-x@monash.edu
 -->
 
 
