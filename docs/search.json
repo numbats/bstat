@@ -389,21 +389,21 @@
     "href": "week7/index.html",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "",
-    "text": "Fit and interpret a multiple regression model.\nCompare regression models and assess overall fit.\nIdentify time-series components and follow the source forecasting examples."
+    "text": "Build spreadsheet models for business problems.\nUse Excel Data Tables for sensitivity analysis and Solver for optimisation.\nExplore simulation as a tool for business decisions."
   },
   {
     "objectID": "week7/index.html#what-you-will-learn-this-week",
     "href": "week7/index.html#what-you-will-learn-this-week",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "",
-    "text": "Fit and interpret a multiple regression model.\nCompare regression models and assess overall fit.\nIdentify time-series components and follow the source forecasting examples."
+    "text": "Build spreadsheet models for business problems.\nUse Excel Data Tables for sensitivity analysis and Solver for optimisation.\nExplore simulation as a tool for business decisions."
   },
   {
     "objectID": "week7/index.html#slides",
     "href": "week7/index.html#slides",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Slides",
-    "text": "Slides\nOpen the interactive slides. The downloadable PDF is an annotation copy. Both reproduce all 57 pages of the ETX5900 source workshop, including worked solutions. Historical dates and instructions on reproduced pages are superseded by the current schedule on this site and Moodle."
+    "text": "Slides\nOpen the interactive slides. The downloadable PDF reproduces all 32 pages of the ETF1100 Week 10 Seminar source. Check the current schedule and Moodle for live logistics."
   },
   {
     "objectID": "week7/index.html#slides-for-the-week",
@@ -2664,399 +2664,224 @@
     "href": "week7/slides.html#source-page-001",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 1"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 1"
   },
   {
     "objectID": "week7/slides.html#source-page-002",
     "href": "week7/slides.html#source-page-002",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 2"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 2"
   },
   {
     "objectID": "week7/slides.html#source-page-003",
     "href": "week7/slides.html#source-page-003",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 3"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 3"
   },
   {
     "objectID": "week7/slides.html#source-page-004",
     "href": "week7/slides.html#source-page-004",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 4"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 4"
   },
   {
     "objectID": "week7/slides.html#source-page-005",
     "href": "week7/slides.html#source-page-005",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 5"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 5"
   },
   {
     "objectID": "week7/slides.html#source-page-006",
     "href": "week7/slides.html#source-page-006",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 6"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 6"
   },
   {
     "objectID": "week7/slides.html#source-page-007",
     "href": "week7/slides.html#source-page-007",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 7"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 7"
   },
   {
     "objectID": "week7/slides.html#source-page-008",
     "href": "week7/slides.html#source-page-008",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 8"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 8"
   },
   {
     "objectID": "week7/slides.html#source-page-009",
     "href": "week7/slides.html#source-page-009",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 9"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 9"
   },
   {
     "objectID": "week7/slides.html#source-page-010",
     "href": "week7/slides.html#source-page-010",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 10"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 10"
   },
   {
     "objectID": "week7/slides.html#source-page-011",
     "href": "week7/slides.html#source-page-011",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 11"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 11"
   },
   {
     "objectID": "week7/slides.html#source-page-012",
     "href": "week7/slides.html#source-page-012",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 12"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 12"
   },
   {
     "objectID": "week7/slides.html#source-page-013",
     "href": "week7/slides.html#source-page-013",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 13"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 13"
   },
   {
     "objectID": "week7/slides.html#source-page-014",
     "href": "week7/slides.html#source-page-014",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 14"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 14"
   },
   {
     "objectID": "week7/slides.html#source-page-015",
     "href": "week7/slides.html#source-page-015",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 15"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 15"
   },
   {
     "objectID": "week7/slides.html#source-page-016",
     "href": "week7/slides.html#source-page-016",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 16"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 16"
   },
   {
     "objectID": "week7/slides.html#source-page-017",
     "href": "week7/slides.html#source-page-017",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 17"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 17"
   },
   {
     "objectID": "week7/slides.html#source-page-018",
     "href": "week7/slides.html#source-page-018",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 18"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 18"
   },
   {
     "objectID": "week7/slides.html#source-page-019",
     "href": "week7/slides.html#source-page-019",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 19"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 19"
   },
   {
     "objectID": "week7/slides.html#source-page-020",
     "href": "week7/slides.html#source-page-020",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 20"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 20"
   },
   {
     "objectID": "week7/slides.html#source-page-021",
     "href": "week7/slides.html#source-page-021",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 21"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 21"
   },
   {
     "objectID": "week7/slides.html#source-page-022",
     "href": "week7/slides.html#source-page-022",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 22"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 22"
   },
   {
     "objectID": "week7/slides.html#source-page-023",
     "href": "week7/slides.html#source-page-023",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 23"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 23"
   },
   {
     "objectID": "week7/slides.html#source-page-024",
     "href": "week7/slides.html#source-page-024",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 24"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 24"
   },
   {
     "objectID": "week7/slides.html#source-page-025",
     "href": "week7/slides.html#source-page-025",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 25"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 25"
   },
   {
     "objectID": "week7/slides.html#source-page-026",
     "href": "week7/slides.html#source-page-026",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 26"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 26"
   },
   {
     "objectID": "week7/slides.html#source-page-027",
     "href": "week7/slides.html#source-page-027",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 27"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 27"
   },
   {
     "objectID": "week7/slides.html#source-page-028",
     "href": "week7/slides.html#source-page-028",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 28"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 28"
   },
   {
     "objectID": "week7/slides.html#source-page-029",
     "href": "week7/slides.html#source-page-029",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 29"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 29"
   },
   {
     "objectID": "week7/slides.html#source-page-030",
     "href": "week7/slides.html#source-page-030",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 30"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 30"
   },
   {
     "objectID": "week7/slides.html#source-page-031",
     "href": "week7/slides.html#source-page-031",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 31"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 31"
   },
   {
     "objectID": "week7/slides.html#source-page-032",
     "href": "week7/slides.html#source-page-032",
     "title": "Business Statistics",
     "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 32"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-033",
-    "href": "week7/slides.html#source-page-033",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 33"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-034",
-    "href": "week7/slides.html#source-page-034",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 34"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-035",
-    "href": "week7/slides.html#source-page-035",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 35"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-036",
-    "href": "week7/slides.html#source-page-036",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 36"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-037",
-    "href": "week7/slides.html#source-page-037",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 37"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-038",
-    "href": "week7/slides.html#source-page-038",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 38"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-039",
-    "href": "week7/slides.html#source-page-039",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 39"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-040",
-    "href": "week7/slides.html#source-page-040",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 40"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-041",
-    "href": "week7/slides.html#source-page-041",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 41"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-042",
-    "href": "week7/slides.html#source-page-042",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 42"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-043",
-    "href": "week7/slides.html#source-page-043",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 43"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-044",
-    "href": "week7/slides.html#source-page-044",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 44"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-045",
-    "href": "week7/slides.html#source-page-045",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 45"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-046",
-    "href": "week7/slides.html#source-page-046",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 46"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-047",
-    "href": "week7/slides.html#source-page-047",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 47"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-048",
-    "href": "week7/slides.html#source-page-048",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 48"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-049",
-    "href": "week7/slides.html#source-page-049",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 49"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-050",
-    "href": "week7/slides.html#source-page-050",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 50"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-051",
-    "href": "week7/slides.html#source-page-051",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 51"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-052",
-    "href": "week7/slides.html#source-page-052",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 52"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-053",
-    "href": "week7/slides.html#source-page-053",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 53"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-054",
-    "href": "week7/slides.html#source-page-054",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 54"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-055",
-    "href": "week7/slides.html#source-page-055",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 55"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-056",
-    "href": "week7/slides.html#source-page-056",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 56"
-  },
-  {
-    "objectID": "week7/slides.html#source-page-057",
-    "href": "week7/slides.html#source-page-057",
-    "title": "Business Statistics",
-    "section": "",
-    "text": "ETX5900 source PDF, Week 7, page 57"
+    "text": "ETF1100 Week 10 Seminar source PDF, page 32"
   },
   {
     "objectID": "week8/index.html",
