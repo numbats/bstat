@@ -151,15 +151,14 @@ submit <- function(schedule = NULL, assignment) {
 show_slides <- function(week) {
   qmd_file <- here::here(paste0("week", week, "/slides.qmd"))
   if (fs::file_exists(qmd_file)) {
-    pdf_file <- paste0("https://", acronym, ".numbat.space/week", week, "/slides.pdf")
-    embed <- paste0(
-      "<iframe src='https://docs.google.com/gview?url=", pdf_file,
-      "&embedded=true' width='100%' height='465'></iframe>"
+    buttons <- paste0(
+      "<div class='slide-actions'>",
+      "<a href='slides.pdf' class='slide-download-pdf' download>",
+      "Download PDF slides</a>",
+      "<a href='slides.html' class='slide-open-html'>",
+      "Open interactive slides</a>",
+      "</div>"
     )
-    button <- paste0(
-      "<a href='", pdf_file,
-      "' class='badge badge-small badge-red'>Download PDF</a>"
-    )
-    cat(paste0("## Slides for the week\n\n", embed, "\n", button))
+    cat(buttons)
   }
 }
