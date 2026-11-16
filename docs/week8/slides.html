@@ -9,6 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.11.9">
 
+  <meta name="dcterms.date" content="2027-01-29">
   <title>Business Statistics – slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -34,7 +35,23 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ecfa366c05ac1ff1a677a8c5facd037d.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d7d650050b1ce3e072e4f0f18efcf387.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -136,956 +153,434 @@
 
 <section id="source-page-001" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-001.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 1</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 1.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-000.jpg
-EDITABLE TEXT TRANSCRIPTION:
-ETX1100/ETX5900 Business Statistics
-Week 8: Revision Workshop
-Workshop Lead: Alyssa Hu
-1
--->
-</section>
+<h3 id="etx1100etx5900-business-statistics">ETX1100/ETX5900 Business Statistics</h3>
+<p>Week 8: Revision Workshop Workshop Lead: Alyssa Hu 1</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=1">Workshop8_solutions.pdf, page 1</a></em></p>
+
+<img data-src="figures/etx5900/components/pdf-image-000.jpg" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 1.</p></section>
 <section id="source-page-002" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-002.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 2</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 2.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-001.jpg
-EDITABLE TEXT TRANSCRIPTION:
-Exam Format
-• Online supervised eExam
-• Closed book exam with authorised materials (see next few slides)
-• Exam timetable: 11 February at 10AM
-• Time limit: 2 hours and 10 minutes
-• Attempt all questions. The exam is marked out of a total of 50 marks.
-• The exam is 50% of the unit’s assessment value.
-Important:
-It is your responsibility to be prepared for the exam conditions. Please read
-this page carefully to understand what an eExam entails:
-https://www.monash.edu/students/admin/assessments/exams/off-
-campus#tabs__2545550
--->
-</section>
+<h3 id="exam-format">Exam Format</h3>
+<ul>
+<li>Online supervised eExam</li>
+<li>Closed book exam with authorised materials (see next few slides)</li>
+<li>Exam timetable: 11 February at 10AM</li>
+<li>Time limit: 2 hours and 10 minutes</li>
+<li>Attempt all questions. The exam is marked out of a total of 50 marks.</li>
+<li>The exam is 50% of the unit’s assessment value. Important: It is your responsibility to be prepared for the exam conditions. Please read this page carefully to understand what an eExam entails: https://www.monash.edu/students/admin/assessments/exams/off- campus#tabs__2545550</li>
+</ul>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=2">Workshop8_solutions.pdf, page 2</a></em></p>
+
+<img data-src="figures/etx5900/components/pdf-image-001.jpg" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 2.</p></section>
 <section id="source-page-003" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-003.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 3</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 3.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Exam Format
-Part B (30 marks)
-Part A (20 marks)    3 short answer questions
-• ETX1100: 20 MCQs   (10 marks each)
-• ETX5900: 10 MCQs   • Write your answers on paper
-& 10 numerical     • Show all working on paper
-questions          • You are given time to upload
-answers using a QR code (30 minutes
-to upload - after the exam is over)
-3
--->
+<h3 id="exam-format-1">Exam Format</h3>
+<p>Part B (30 marks) Part A (20 marks) 3 short answer questions - ETX1100: 20 MCQs (10 marks each) - ETX5900: 10 MCQs • Write your answers on paper &amp; 10 numerical • Show all working on paper questions • You are given time to upload answers using a QR code (30 minutes to upload - after the exam is over) 3</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=3">Workshop8_solutions.pdf, page 3</a></em></p>
 </section>
 <section id="source-page-004" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-004.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 4</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 4.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-002.png
-EDITABLE TEXT TRANSCRIPTION:
-Authorised Materials
-You are not allowed to use a secondary device during your
-exam.
-In this assessment, you must not use generative artificial
-intelligence (AI) to generate any materials or content in relation to
-the assessment task.
-When your exam duration has ended, you are not permitted to
-write or edit any of your answer sheets. Please note you must
-remain under exam conditions and are not permitted to adjust your
-answer sheets during the upload process once you have submitted
-your exam.
-4
--->
-</section>
+<h3 id="authorised-materials">Authorised Materials</h3>
+<p>You are not allowed to use a secondary device during your exam. In this assessment, you must not use generative artificial intelligence (AI) to generate any materials or content in relation to the assessment task. When your exam duration has ended, you are not permitted to write or edit any of your answer sheets. Please note you must remain under exam conditions and are not permitted to adjust your answer sheets during the upload process once you have submitted your exam. 4</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=4">Workshop8_solutions.pdf, page 4</a></em></p>
+
+<img data-src="figures/etx5900/components/pdf-image-002.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 4.</p></section>
 <section id="source-page-005" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-005.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 5</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 5.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Authorised Materials
-Notes
-You are allowed ONE printed or hand-written A4 sheet of double-
-sided notes. It must be a physical sheet, not a computer file.
-Excel file:
-• An empty Excel file with Monash watermarks will be provided
-within the exam link on the day of the exam.
-• Download the provided Excel file to help with the calculations.
-• You cannot have any opened Excel files when starting the exam
-OR open any other Excel files during the exam.
--->
+<h3 id="authorised-materials-1">Authorised Materials</h3>
+<p>Notes You are allowed ONE printed or hand-written A4 sheet of double- sided notes. It must be a physical sheet, not a computer file. Excel file: - An empty Excel file with Monash watermarks will be provided within the exam link on the day of the exam. - Download the provided Excel file to help with the calculations. - You cannot have any opened Excel files when starting the exam OR open any other Excel files during the exam.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=5">Workshop8_solutions.pdf, page 5</a></em></p>
 </section>
 <section id="source-page-006" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-006.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 6</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 6.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Materials Not Allowed
-Reminders:
-• Soft copy files are not allowed.
-• You are not allowed to use a second device.
-• You are not allowed to log into any website or engage in
-any online communication.
-• You are not allowed to open any Excel file other than the
-one provided in the exam.
-• You are not allowed to use any online translation
-software.
-• You are not allowed to use AI.
--->
+<h3 id="materials-not-allowed">Materials Not Allowed</h3>
+<p>Reminders: - Soft copy files are not allowed. - You are not allowed to use a second device. - You are not allowed to log into any website or engage in any online communication. - You are not allowed to open any Excel file other than the one provided in the exam. - You are not allowed to use any online translation software. - You are not allowed to use AI.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=6">Workshop8_solutions.pdf, page 6</a></em></p>
 </section>
 <section id="source-page-007" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-007.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 7</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 7.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-003.jpg
-EDITABLE TEXT TRANSCRIPTION:
-Exam Preparation
-✓There is NO hurdle requirement for this unit.
-Refer to the following for revision:
-✓Workshop material (pre-recorded and live) and all quizzes
-✓Textbook questions as listed on Moodle. Solutions are provided.
-✓Mock exam and past exams
--->
-</section>
+<h3 id="exam-preparation">Exam Preparation</h3>
+<p>✓There is NO hurdle requirement for this unit. Refer to the following for revision: ✓Workshop material (pre-recorded and live) and all quizzes ✓Textbook questions as listed on Moodle. Solutions are provided. ✓Mock exam and past exams</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=7">Workshop8_solutions.pdf, page 7</a></em></p>
+
+<img data-src="figures/etx5900/components/pdf-image-003.jpg" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 7.</p></section>
 <section id="source-page-008" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-008.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 8</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 8.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Material Covered in the Final Exam
-Weeks 2 – 8
-Week 2: Basic Probability and Introduction to Normal Distribution
-Week 3: Sampling Distribution and Confidence Interval Estimation
-Week 4: Hypothesis Testing I: Chi-Square Test of Independence
-Week 5: Hypothesis Testing II: Population Mean and Proportion
-Week 6: Correlation and Regression Analysis I
-Week 7: Correlation & Regression Analysis II; Time Series Analysis &
-Forecasting
-Week 8: Revision
-8
--->
+<h3 id="material-covered-in-the-final-exam">Material Covered in the Final Exam</h3>
+<p>Weeks 2 – 8 Week 2: Basic Probability and Introduction to Normal Distribution Week 3: Sampling Distribution and Confidence Interval Estimation Week 4: Hypothesis Testing I: Chi-Square Test of Independence Week 5: Hypothesis Testing II: Population Mean and Proportion Week 6: Correlation and Regression Analysis I Week 7: Correlation &amp; Regression Analysis II; Time Series Analysis &amp; Forecasting Week 8: Revision 8</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=8">Workshop8_solutions.pdf, page 8</a></em></p>
 </section>
 <section id="source-page-009" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-009.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 9</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 9.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-004.png
-EDITABLE TEXT TRANSCRIPTION:
-Pre-Exam Consultation and Announcements
-• Check Moodle regularly for important announcements
-• Please check your marks on the grade book carefully
-• Pre-exam consultation times to be posted on Moodle
-All the best for the exam!
-9
--->
-</section>
+<h3 id="pre-exam-consultation-and-announcements">Pre-Exam Consultation and Announcements</h3>
+<ul>
+<li>Check Moodle regularly for important announcements</li>
+<li>Please check your marks on the grade book carefully</li>
+<li>Pre-exam consultation times to be posted on Moodle All the best for the exam! 9</li>
+</ul>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=9">Workshop8_solutions.pdf, page 9</a></em></p>
+
+<img data-src="figures/etx5900/components/pdf-image-004.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 9.</p></section>
 <section id="source-page-010" class="slide level2">
 <h2></h2>
+<h3 id="practice-questions">Practice Questions</h3>
+<p>Let’s try some questions together!</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=10">Workshop8_solutions.pdf, page 10</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-010.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 10</figcaption>
+<p><img data-src="figures/etx5900/components/pdf-image-005.jpg" style="width:100.0%"></p>
+<figcaption>Visual from source page 10.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 10.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-005.jpg, figures/etx5900/components/pdf-image-006.jpg
-EDITABLE TEXT TRANSCRIPTION:
-Practice Questions
-Let’s try some questions together!
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/pdf-image-006.jpg" style="width:100.0%"></p>
+<figcaption>Visual from source page 10.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-011" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-011.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 11</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 11.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Question 1
-The sales manager of a clothing company claims that the mean
-spending by customers is less than $80. A sample of 50 customers
-has a mean spending of $76.25 and a standard deviation of $15.25.
-We wish to perform an appropriate hypothesis test at the 5% level
-of significance.
-a) State the hypotheses
-b) What is the p-value?
-c) Interpret the results in the context of the question.
-d) Is there evidence to support the manager’s claim?
-e) What is a potential error in the test above?
--->
+<h3 id="question-1">Question 1</h3>
+<p>The sales manager of a clothing company claims that the mean spending by customers is less than $80. A sample of 50 customers has a mean spending of $76.25 and a standard deviation of $15.25. We wish to perform an appropriate hypothesis test at the 5% level of significance. a) State the hypotheses b) What is the p-value? c) Interpret the results in the context of the question. d) Is there evidence to support the manager’s claim? e) What is a potential error in the test above?</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=11">Workshop8_solutions.pdf, page 11</a></em></p>
 </section>
 <section id="source-page-012" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-012.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 12</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 12.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-007.png
-EDITABLE TEXT TRANSCRIPTION:
-Question 1_solution
-The sales manager of a clothing company reports that the mean spending by
-customers is less than $80. A sample of 50 customers has a mean spending of
-$76.25 and a standard deviation of $15.25. We wish to perform an
-appropriate hypothesis test at the 5% level of significance. (Note: Include all
-steps to get full marks.)
-a) State the hypotheses
-H0: µ = 80
-H1: µ < 80
-b) What is the p-value?
+<h3 id="question-1_solution">Question 1_solution</h3>
+<p>The sales manager of a clothing company reports that the mean spending by customers is less than $80. A sample of 50 customers has a mean spending of $76.25 and a standard deviation of $15.25. We wish to perform an appropriate hypothesis test at the 5% level of significance. (Note: Include all steps to get full marks.) a) State the hypotheses <span class="math display">
+H0: \mu{} = 80
+</span> H1: µ &lt; 80 b) What is the p-value? <span class="math display">
 Test statistic =        = -1.739
-P-value = P(t<-1.739) = T.DIST(-1.739,49,TRUE) =0.044176
--->
-</section>
+</span> <span class="math display">
+P-value = P(t&lt;-1.739) = T.DIST(-1.739,49,TRUE) =0.044176
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=12">Workshop8_solutions.pdf, page 12</a></em></p>
+
+<img data-src="figures/etx5900/components/pdf-image-007.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 12.</p></section>
 <section id="source-page-013" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-013.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 13</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 13.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Question 1_solution
-c) Interpret the results in the context of the question.
-We reject the null as the p-value is less than 0.05. There is sufficient evidence at
-the 5% level of significance that the true mean spending is less than $80.
-d) Is there evidence to support the manager’s claim?
-Yes, as per our result in part c, there is evidence to support the manager’s claim.
-e) What is a potential error in the test above? Interpret the error in the context
-of the question.
-Type 1 error where H0 is true and we reject it.
-We conclude that the true mean spending is less than $80 when it actually is not.
--->
+<h3 id="question-1_solution-1">Question 1_solution</h3>
+<ol start="3" type="a">
+<li>Interpret the results in the context of the question. We reject the null as the p-value is less than 0.05. There is sufficient evidence at the 5% level of significance that the true mean spending is less than $80. d) Is there evidence to support the manager’s claim? Yes, as per our result in part c, there is evidence to support the manager’s claim. e) What is a potential error in the test above? Interpret the error in the context of the question. Type 1 error where H0 is true and we reject it. We conclude that the true mean spending is less than $80 when it actually is not.</li>
+</ol>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=13">Workshop8_solutions.pdf, page 13</a></em></p>
 </section>
 <section id="source-page-014" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-014.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 14</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 14.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Question 2
-A market researcher states that she is 95% confident that
-the true mean monthly sales of a product are between
-$180,000 and $200,000. Explain the meaning of this
-statement.
--->
+<h3 id="question-2">Question 2</h3>
+<p>A market researcher states that she is 95% confident that the true mean monthly sales of a product are between $180,000 and $200,000. Explain the meaning of this statement.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=14">Workshop8_solutions.pdf, page 14</a></em></p>
 </section>
 <section id="source-page-015" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-015.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 15</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 15.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Question 2_solution
-A market researcher states that she is 95% confident that
-the true mean monthly sales of a product are between
-$180,000 and $200,000. Explain the meaning of this
-statement.
-If all possible samples of the same size n are taken,
-and we calculate the confidence intervals,
-95% of the intervals include the true population average
-monthly sales of the product within the interval developed.
--->
+<h3 id="question-2_solution">Question 2_solution</h3>
+<p>A market researcher states that she is 95% confident that the true mean monthly sales of a product are between $180,000 and $200,000. Explain the meaning of this statement. If all possible samples of the same size n are taken, and we calculate the confidence intervals, 95% of the intervals include the true population average monthly sales of the product within the interval developed.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=15">Workshop8_solutions.pdf, page 15</a></em></p>
 </section>
 <section id="source-page-016" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-016.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 16</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 16.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Question 3
-The Excel output below contains observations on variables related to the sales
-price ($) of houses in Shallowhaven. The variables are house size (square feet)
-and number of bedrooms.           Regression Statistics
-Multiple R           0.723195
-a. State the estimated multiple          R Square             0.523011
-regression equation. Define any Adjusted R Square          0.516522
-symbols used.                    Standard Error            28933.13
-Observations                   150
-b. Interpret the meaning of the
-slopes in the estimated          ANOVA
-df             SS            MS           F        Significance F
-equation.                        Regression                        2   1.34931E+11    67465519362    80.5918     2.34595E-24
-Residual                        147   1.23058E+11    837126119.5
-c. At the 5% level of significance, Total                           149   2.57989E+11
-test if there is a significant
-positive linear relationship                            Coefficients Standard Error     t Stat      P-value     Lower 95%       Upper 95%
-Intercept                59884.907      7812.5844      7.6651853   2.23E-12        44445.418    75324.3970
-between house price and          House_Size               32.778057      6.3373394       5.172211   7.45E-07        20.253996     45.302118
-number of bedrooms.
-Number_Bedrooms     17834.123      5250.0616      3.3969359   0.000877         7458.776     28209.469
--->
+<h3 id="question-3">Question 3</h3>
+<p>The Excel output below contains observations on variables related to the sales price ($) of houses in Shallowhaven. The variables are house size (square feet) and number of bedrooms. Regression Statistics Multiple R 0.723195 a. State the estimated multiple R Square 0.523011 regression equation. Define any Adjusted R Square 0.516522 symbols used. Standard Error 28933.13 Observations 150 b. Interpret the meaning of the slopes in the estimated ANOVA df SS MS F Significance F equation. Regression 2 1.34931E+11 67465519362 80.5918 2.34595E-24 Residual 147 1.23058E+11 837126119.5 c.&nbsp;At the 5% level of significance, Total 149 2.57989E+11 test if there is a significant positive linear relationship Coefficients Standard Error t Stat P-value Lower 95% Upper 95% Intercept 59884.907 7812.5844 7.6651853 2.23E-12 44445.418 75324.3970 between house price and House_Size 32.778057 6.3373394 5.172211 7.45E-07 20.253996 45.302118 number of bedrooms. Number_Bedrooms 17834.123 5250.0616 3.3969359 0.000877 7458.776 28209.469</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=16">Workshop8_solutions.pdf, page 16</a></em></p>
 </section>
 <section id="source-page-017" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-017.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 17</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 17.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Question 3_solutions
-a) State the estimated multiple regression equation. Define any symbols used.
+<h3 id="question-3_solutions">Question 3_solutions</h3>
+<ol type="a">
+<li>State the estimated multiple regression equation. Define any symbols used. <span class="math display">
 Ŷ = 59884.907 + 32.778057X1 + 17834.123X2
-where X1is house size (square feet), X2is number of bedrooms and ŷ is the
-estimated sales price of houses ($)
-b) Interpret the meaning of the slopes in the estimated equation.
-b1 = 32.778057: On average, sales prices of houses are expected to increase by
-$32.78 for each extra square foot in size, holding constant the number of
-bedrooms.
-b2 = 17834.123: On average, sales prices of houses are expected to increase by
-$17,834.12 for each extra bedroom, holding constant the house size.
--->
+</span> where X1is house size (square feet), X2is number of bedrooms and ŷ is the estimated sales price of houses ($) b) Interpret the meaning of the slopes in the estimated equation. b1 = 32.778057: On average, sales prices of houses are expected to increase by $32.78 for each extra square foot in size, holding constant the number of bedrooms. b2 = 17834.123: On average, sales prices of houses are expected to increase by $17,834.12 for each extra bedroom, holding constant the house size.</li>
+</ol>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=17">Workshop8_solutions.pdf, page 17</a></em></p>
 </section>
 <section id="source-page-018" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-018.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 18</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 18.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Question 3_solutions
-c) At the 5% level of significance, test if there is a significant positive linear relationship
-between house price ($) and number of bedrooms.
-Step 1:
-Regression Statistics
-H 0: β 2 = 0                                         Multiple R                    0.723195
-R Square                      0.523011
-H 1: β 2 > 0
-Adjusted R Square           0.516522
-Standard Error              28933.13
-Step 2:                                              Observations                     150
+<h3 id="question-3_solutions-1">Question 3_solutions</h3>
+<ol start="3" type="a">
+<li>At the 5% level of significance, test if there is a significant positive linear relationship between house price ($) and number of bedrooms. Step 1: Regression Statistics <span class="math display">
+H 0: \beta{} 2 = 0                                         Multiple R                    0.723195
+</span> R Square 0.523011 <span class="math display">
+H 1: \beta{} 2 &gt; 0
+</span> Adjusted R Square 0.516522 Standard Error 28933.13 Step 2: Observations 150 <span class="math display">
 Level of Significance = 0.05          ANOVA
-df               SS          MS            F      Significance F
+</span> df SS MS F Significance F <span class="math display">
 t-statistic = 3.397                   Regression                   2    1.34931E+11 67465519362     80.5918     2.34595E-24
-Residual                  147     1.23058E+11  837126119.5
-Step 3: p-value = 0.000877/2 ≈ 0      Total                     149     2.57989E+11
-Step 4:                                               Coefficients   Standard Error   t Stat      P-value    Lower 95%       Upper 95%
-Reject H0 if p-value < α.             Intercept
-House_Size
-59884.907
-32.778057
-7812.5844
-6.3373394
-7.6651853
-5.172211
-2.23E-12
-7.45E-07
-44445.418
-20.253996
-75324.3970
-45.302118
-Since 0 < 0.05, reject H0.            Number_Bedrooms   17834.123         5250.0616    3.3969359   0.000877         7458.776    28209.469
-Step 5:
-There is sufficient evidence at the 5% level of significance to conclude that there is a positive
-linear relationship between sales price of houses ($) and the number of bedrooms.
--->
+</span> Residual 147 1.23058E+11 837126119.5 <span class="math display">
+Step 3: p-value = 0.000877/2 \approx{} 0      Total                     149     2.57989E+11
+</span> Step 4: Coefficients Standard Error t Stat P-value Lower 95% Upper 95% <span class="math display">
+Reject H0 if p-value &lt; \alpha{}.             Intercept
+</span> House_Size 59884.907 32.778057 7812.5844 6.3373394 7.6651853 5.172211 2.23E-12 7.45E-07 44445.418 20.253996 75324.3970 45.302118 Since 0 &lt; 0.05, reject H0. Number_Bedrooms 17834.123 5250.0616 3.3969359 0.000877 7458.776 28209.469 Step 5: There is sufficient evidence at the 5% level of significance to conclude that there is a positive linear relationship between sales price of houses ($) and the number of bedrooms.</li>
+</ol>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=18">Workshop8_solutions.pdf, page 18</a></em></p>
 </section>
 <section id="source-page-019" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-019.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 19</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 19.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Before we head into the break…
-19
--->
+<h3 id="before-we-head-into-the-break">Before we head into the break…</h3>
+<p>19</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=19">Workshop8_solutions.pdf, page 19</a></em></p>
 </section>
 <section id="source-page-020" class="slide level2">
 <h2></h2>
+<h3 id="student-evaluation-of-teaching-and-units-setu">Student Evaluation of Teaching and Units (SETU)</h3>
+<p>Monash University</p>
+<p>Every completed survey is one entry into the draw for a $50 gift card (terms and conditions apply). The more units you review, the more chances you have to win.</p>
+<ul>
+<li>Your feedback is completely anonymous.</li>
+<li>Educators read all your feedback; your name and student ID are removed.</li>
+<li>University leadership see a summary of all feedback.</li>
+<li>Give specific feedback so your voice shapes change.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=20">Workshop8_solutions.pdf, page 20</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-020.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 20</figcaption>
+<p><img data-src="figures/etx5900/components/pdf-image-008.jpg" style="width:100.0%"></p>
+<figcaption>Visual from source page 20.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 20.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-008.jpg
-EDITABLE TEXT TRANSCRIPTION:
-No extractable text; use the PDF page image.
--->
+</div><div class="column" style="width:50%;">
+
+</div></div>
 </section>
 <section id="source-page-021" class="slide level2">
 <h2></h2>
+<h3 id="what-is-setu">What is SETU?</h3>
+<p>Share confidential feedback about what is working well in your classes and what could be better. Complete the Student Evaluation of Teaching and Units (SETU) survey so educators and University leaders hear your voice.</p>
+<p>Every completed survey is one entry into the draw for a $50 gift card (terms and conditions apply). The more units you review, the more chances you have to win.</p>
+<ul>
+<li>Your feedback is completely anonymous.</li>
+<li>Educators read all your feedback; your name and student ID are removed.</li>
+<li>University leadership see a summary of all feedback.</li>
+<li>Give specific feedback so your voice shapes change.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=21">Workshop8_solutions.pdf, page 21</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-021.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 21</figcaption>
+<p><img data-src="figures/etx5900/components/pdf-image-009.jpg" style="width:100.0%"></p>
+<figcaption>Visual from source page 21.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 21.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-009.jpg
-EDITABLE TEXT TRANSCRIPTION:
-No extractable text; use the PDF page image.
--->
+</div><div class="column" style="width:50%;">
+
+</div></div>
 </section>
 <section id="source-page-022" class="slide level2">
 <h2></h2>
+<h3 id="ways-to-participate">3 ways to participate</h3>
+<ol type="1">
+<li>Access SETU from Moodle, in the right-hand block under your units.</li>
+<li>Use the link in your email from evaluations@e19.e.monash.edu.</li>
+<li>Access SETU via Learn HQ. Search “Access SETU Monash” via Google.</li>
+</ol>
+<p>Share anonymous unit feedback. Start the survey. Scan the QR code to complete the survey.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=22">Workshop8_solutions.pdf, page 22</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-022.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 22</figcaption>
+<p><img data-src="figures/etx5900/components/pdf-image-010.jpg" style="width:100.0%"></p>
+<figcaption>Visual from source page 22.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 22.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-010.jpg
-EDITABLE TEXT TRANSCRIPTION:
-No extractable text; use the PDF page image.
--->
+</div><div class="column" style="width:50%;">
+
+</div></div>
 </section>
 <section id="source-page-023" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-023.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 23</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 23.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Question 4
-A popular weekly magazine asserts that fewer than 40% of households in
-Australia claim to have changed their lifestyles because of escalating
-energy prices.
-Recently, a survey of 180 households was conducted including this
-question, and 63 of these households claimed to have made lifestyle
-changes due to escalating energy prices.
-a) Assuming the data obtained is a random sample, is there evidence to
-support the magazine’s claim at the 10% level of significance. Use the
-p-value method.
-b) Would the result of the test have been different if you had used a 5%
-significance level? Explain.
-c) Obtain a 90% confidence interval for the true proportion of Australian
-households that claim to have made lifestyle changes due to escalating
-energy prices.
--->
+<h3 id="question-4">Question 4</h3>
+<p>A popular weekly magazine asserts that fewer than 40% of households in Australia claim to have changed their lifestyles because of escalating energy prices. Recently, a survey of 180 households was conducted including this question, and 63 of these households claimed to have made lifestyle changes due to escalating energy prices. a) Assuming the data obtained is a random sample, is there evidence to support the magazine’s claim at the 10% level of significance. Use the p-value method. b) Would the result of the test have been different if you had used a 5% significance level? Explain. c) Obtain a 90% confidence interval for the true proportion of Australian households that claim to have made lifestyle changes due to escalating energy prices.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=23">Workshop8_solutions.pdf, page 23</a></em></p>
 </section>
 <section id="source-page-024" class="slide level2">
 <h2></h2>
+<h3 id="question-4_solutions">Question 4_solutions</h3>
+<ol type="a">
+<li>Assuming the data obtained is a random sample, is there evidence to support the magazine’s claim at the 10% level of significance. Use the p-value method. Let X = number of households that made lifestyle change due to increasing energy prices Rule of thumb check: n π = 180x0.40=72 and n(1- π) = 80(0.60)=108 are both &gt; 5 The normal approximation is reasonable. Step 1: Hypothesis: <span class="math display">
+H0: \pi{} = 0.40 (or \pi{} \geq{} 0.40)      n=180;       X=63; p=63/180 = 0.35; \alpha{}=0.10
+</span> <span class="math display">
+H1: \pi{} &lt; 0.40
+</span> Step 2: Test Statistic: <span class="math display">
+For \pi{} always use Z
+</span></li>
+</ol>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=24">Workshop8_solutions.pdf, page 24</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-024.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 24</figcaption>
+<p><img data-src="figures/etx5900/components/pdf-image-011.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 24.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 24.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-011.png, figures/etx5900/components/pdf-image-012.png
-EDITABLE TEXT TRANSCRIPTION:
-Question 4_solutions
-a) Assuming the data obtained is a random sample, is there evidence to support
-the magazine’s claim at the 10% level of significance. Use the p-value method.
-Let X = number of households that made lifestyle change due to increasing
-energy prices
-Rule of thumb check: n π = 180x0.40=72 and n(1- π) = 80(0.60)=108 are both > 5
-The normal approximation is reasonable.
-Step 1: Hypothesis:
-H0: π = 0.40 (or π ≥ 0.40)      n=180;       X=63; p=63/180 = 0.35; α=0.10
-H1: π < 0.40
-Step 2: Test Statistic:
-For π always use Z
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/pdf-image-012.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 24.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-025" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-025.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 25</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 25.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Question 4_solutions
-Step 3: p – value
-So, P(Z<-1.37)
+<h3 id="question-4_solutions-1">Question 4_solutions</h3>
+<p>Step 3: p – value So, P(Z&lt;-1.37) <span class="math display">
 =0.0853 =NORM.S.DIST(-1.37,true)
-Step 4: Decision Rule
-Reject H0 if p-value < α;
-Since 0.0853 < 0.10, we can reject H0.
-Step 5: Conclusion
-There is sufficient evidence at the 10% level of significance that the true
-proportion of households who have made the change to lifestyle due to
-increasing energy prices is less than 40%.
-The data supports the magazine’s claim.
--->
+</span> Step 4: Decision Rule <span class="math display">
+Reject H0 if p-value &lt; \alpha{};
+</span> Since 0.0853 &lt; 0.10, we can reject H0. Step 5: Conclusion There is sufficient evidence at the 10% level of significance that the true proportion of households who have made the change to lifestyle due to increasing energy prices is less than 40%. The data supports the magazine’s claim.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=25">Workshop8_solutions.pdf, page 25</a></em></p>
 </section>
 <section id="source-page-026" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-026.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 26</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 26.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-013.jpg
-EDITABLE TEXT TRANSCRIPTION:
-Question 4_solutions
-b) Would the result of the test have been different if you had used a 5%
-significance level? Explain.
-Yes.
-Since 0.0853 > 0.05, we CANNOT reject H0
-There is insufficient evidence at the 5% level of significance that the true
-proportion of households who have made the change to lifestyle due to
-increasing energy prices is less than 40%.
-There is no evidence to support the magazine’s claim at the 5%
-significance level.
--->
-</section>
+<h3 id="question-4_solutions-2">Question 4_solutions</h3>
+<ol start="2" type="a">
+<li>Would the result of the test have been different if you had used a 5% significance level? Explain. Yes. Since 0.0853 &gt; 0.05, we CANNOT reject H0 There is insufficient evidence at the 5% level of significance that the true proportion of households who have made the change to lifestyle due to increasing energy prices is less than 40%. There is no evidence to support the magazine’s claim at the 5% significance level.</li>
+</ol>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=26">Workshop8_solutions.pdf, page 26</a></em></p>
+
+<img data-src="figures/etx5900/components/pdf-image-013.jpg" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 26.</p></section>
 <section id="source-page-027" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-027.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 27</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 27.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-014.png
-EDITABLE TEXT TRANSCRIPTION:
-Question 4_solutions
-c) Obtain a 90% confidence interval for the true proportion of Australian households
-that claim to have made lifestyle changes due to escalating energy prices.
-Since np=180*0.35=63 and n(1-p)=180(1-0.35) = 117 are both >5, the normal approximation is
-reasonable.
-0.35 – 1.645 * 0.03555 < π < 0.35 + 1.645 * 0.03555
-0.2915 < π < 0.40848
-We are 90% confident that the true proportion of households who have made the
-change to lifestyle due to increasing energy prices is estimated to lie, on average
-between 29.15% and 40.85%
--->
-</section>
+<h3 id="question-4_solutions-3">Question 4_solutions</h3>
+<ol start="3" type="a">
+<li>Obtain a 90% confidence interval for the true proportion of Australian households that claim to have made lifestyle changes due to escalating energy prices. Since np=180*0.35=63 and n(1-p)=180(1-0.35) = 117 are both &gt;5, the normal approximation is reasonable. <span class="math display">
+0.35 – 1.645 * 0.03555 &lt; \pi{} &lt; 0.35 + 1.645 * 0.03555
+</span> <span class="math display">
+0.2915 &lt; \pi{} &lt; 0.40848
+</span> We are 90% confident that the true proportion of households who have made the change to lifestyle due to increasing energy prices is estimated to lie, on average between 29.15% and 40.85%</li>
+</ol>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=27">Workshop8_solutions.pdf, page 27</a></em></p>
+
+<img data-src="figures/etx5900/components/pdf-image-014.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 27.</p></section>
 <section id="source-page-028" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-028.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 28</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 28.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Quiz Question 5
-A manufacturer of energy-efficient washing machines advertises that their machines use
-an average of 112 litres of water per cycle. Some environmental groups are concerned that
-the machines may, in practice, use more water than advertised.
-To investigate, a consumer group randomly selects 16 households using this washing
-machine model and records water usage per cycle. The sample mean is 115.3 litres, with a
-sample standard deviation of 6.4 litres. Assume the water usage per cycle is approximately
-normally distributed. Perform an appropriate hypothesis test at the 5% level of significance
-using the p-value method.
-State the hypotheses?
-A. H0: μ = 112; H1: μ > 112
-B. H0: μ = 112; H1: μ < 112
-C. H0: π = 112; H1: π > 112
-D. H0: π = 112; H1: π < 112
--->
+<h3 id="quiz-question-5">Quiz Question 5</h3>
+<p>A manufacturer of energy-efficient washing machines advertises that their machines use an average of 112 litres of water per cycle. Some environmental groups are concerned that the machines may, in practice, use more water than advertised. To investigate, a consumer group randomly selects 16 households using this washing machine model and records water usage per cycle. The sample mean is 115.3 litres, with a sample standard deviation of 6.4 litres. Assume the water usage per cycle is approximately normally distributed. Perform an appropriate hypothesis test at the 5% level of significance using the p-value method. State the hypotheses? <span class="math display">
+A. H0: \mu{} = 112; H1: \mu{} &gt; 112
+</span> <span class="math display">
+B. H0: \mu{} = 112; H1: \mu{} &lt; 112
+</span> <span class="math display">
+C. H0: \pi{} = 112; H1: \pi{} &gt; 112
+</span> <span class="math display">
+D. H0: \pi{} = 112; H1: \pi{} &lt; 112
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=28">Workshop8_solutions.pdf, page 28</a></em></p>
 </section>
 <section id="source-page-029" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-029.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 29</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 29.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Quiz -Question 5
-A manufacturer of energy-efficient washing machines advertises that their machines use
-an average of 112 litres of water per cycle. Some environmental groups are concerned that
-the machines may, in practice, use more water than advertised.
-To investigate, a consumer group randomly selects 16 households using this washing
-machine model and records water usage per cycle. The sample mean is 115.3 litres, with a
-sample standard deviation of 6.4 litres. Assume the water usage per cycle is approximately
-normally distributed. Perform an appropriate hypothesis test at the 5% level of significance
-using the p-value method.
-State the hypotheses?
-A. H0: μ=112; H1: μ>112
-B. H0: μ=112; H1: μ<112
-C. H0: π=112; H1: π>112
-D. H0: π=112; H1: π<112
--->
+<h3 id="quiz--question-5">Quiz -Question 5</h3>
+<p>A manufacturer of energy-efficient washing machines advertises that their machines use an average of 112 litres of water per cycle. Some environmental groups are concerned that the machines may, in practice, use more water than advertised. To investigate, a consumer group randomly selects 16 households using this washing machine model and records water usage per cycle. The sample mean is 115.3 litres, with a sample standard deviation of 6.4 litres. Assume the water usage per cycle is approximately normally distributed. Perform an appropriate hypothesis test at the 5% level of significance using the p-value method. State the hypotheses? <span class="math display">
+A. H0: \mu{}=112; H1: \mu{}&gt;112
+</span> <span class="math display">
+B. H0: \mu{}=112; H1: \mu{}&lt;112
+</span> <span class="math display">
+C. H0: \pi{}=112; H1: \pi{}&gt;112
+</span> <span class="math display">
+D. H0: \pi{}=112; H1: \pi{}&lt;112
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=29">Workshop8_solutions.pdf, page 29</a></em></p>
 </section>
 <section id="source-page-030" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-030.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 30</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 30.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Quiz Question 6
-A manufacturer of energy-efficient washing machines advertises that their machines use
-an average of 112 litres of water per cycle. Some environmental groups are concerned that
-the machines may, in practice, use more water than advertised.
-To investigate, a consumer group randomly selects 16 households using this washing
-machine model and records water usage per cycle. The sample mean is 115.3 litres, with a
-sample standard deviation of 6.4 litres. Assume the water usage per cycle is approximately
-normally distributed. Perform an appropriate hypothesis test at the 5% level of significance
-using the p-value method. State your answer to 4 decimals.
-The test statistic is _______ and the p-value is ________
--->
+<h3 id="quiz-question-6">Quiz Question 6</h3>
+<p>A manufacturer of energy-efficient washing machines advertises that their machines use an average of 112 litres of water per cycle. Some environmental groups are concerned that the machines may, in practice, use more water than advertised. To investigate, a consumer group randomly selects 16 households using this washing machine model and records water usage per cycle. The sample mean is 115.3 litres, with a sample standard deviation of 6.4 litres. Assume the water usage per cycle is approximately normally distributed. Perform an appropriate hypothesis test at the 5% level of significance using the p-value method. State your answer to 4 decimals. The test statistic is _______ and the p-value is ________</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=30">Workshop8_solutions.pdf, page 30</a></em></p>
 </section>
 <section id="source-page-031" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-031.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 31</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 31.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Quiz –Question 6
-A manufacturer of energy-efficient washing machines advertises that their machines use an
-average of 112 litres of water per cycle. Some environmental groups are concerned that the
-machines may, in practice, use more water than advertised.
-To investigate, a consumer group randomly selects 16 households using this washing
-machine model and records water usage per cycle. The sample mean is 115.3 litres, with a
-sample standard deviation of 6.4 litres. Assume the water usage per cycle is approximately
-normally distributed. Perform an appropriate hypothesis test at the 5% level of significance
-using the p-value method. State your answer to 4 decimals.
-Question 2                  Formula
-The test statistic is 2.0625                mu                   112
-Xbar                115.3
-and the p-value is 0.0285                   s                     6.4
-alpha                0.05
-n                      16
-Test Statistic    2.06250 (xbar -mu)/ (s/sqrt(n))
-Can also use 1-T.DIST(test stat,df,true)   P-value          0.028461 T.DIST.RT(test stat, df = n-1)
--->
+<h3 id="quiz-question-6-1">Quiz –Question 6</h3>
+<p>A manufacturer of energy-efficient washing machines advertises that their machines use an average of 112 litres of water per cycle. Some environmental groups are concerned that the machines may, in practice, use more water than advertised. To investigate, a consumer group randomly selects 16 households using this washing machine model and records water usage per cycle. The sample mean is 115.3 litres, with a sample standard deviation of 6.4 litres. Assume the water usage per cycle is approximately normally distributed. Perform an appropriate hypothesis test at the 5% level of significance using the p-value method. State your answer to 4 decimals. Question 2 Formula The test statistic is 2.0625 mu 112 Xbar 115.3 and the p-value is 0.0285 s 6.4 alpha 0.05 n 16 Test Statistic 2.06250 (xbar -mu)/ (s/sqrt(n)) Can also use 1-T.DIST(test stat,df,true) P-value 0.028461 T.DIST.RT(test stat, df = n-1)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=31">Workshop8_solutions.pdf, page 31</a></em></p>
 </section>
 <section id="source-page-032" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-032.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 32</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 32.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Quiz Question 7
-An electric car manufacturer claims that their new battery model increases average driving
-range by more than 5 km after a full overnight charge. To evaluate this claim, an independent
-reviewer tests the battery on 17 vehicles. The sample shows an average increase of 5.8 km,
-with a standard deviation of 1.2 km. Assume the increase in range is approximately normally
-distributed. Use a significance level of 0.05.
-If the test statistic is 2.582, which of the following is the correct decision and conclusion
-regarding the manufacturer's claim?
-A. Fail to reject the null hypothesis; there is not enough evidence to support the
-manufacturer's claim.
-B. Reject the null hypothesis; the average range increase is significantly less than 5 km.
-C. Reject the null hypothesis; there is sufficient evidence that the battery increases range by
-more than 5 km.
-D. Fail to reject the null hypothesis; the average range increase is exactly 5 km.
--->
+<h3 id="quiz-question-7">Quiz Question 7</h3>
+<p>An electric car manufacturer claims that their new battery model increases average driving range by more than 5 km after a full overnight charge. To evaluate this claim, an independent reviewer tests the battery on 17 vehicles. The sample shows an average increase of 5.8 km, with a standard deviation of 1.2 km. Assume the increase in range is approximately normally distributed. Use a significance level of 0.05. If the test statistic is 2.582, which of the following is the correct decision and conclusion regarding the manufacturer’s claim? A. Fail to reject the null hypothesis; there is not enough evidence to support the manufacturer’s claim. B. Reject the null hypothesis; the average range increase is significantly less than 5 km. C. Reject the null hypothesis; there is sufficient evidence that the battery increases range by more than 5 km. D. Fail to reject the null hypothesis; the average range increase is exactly 5 km.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=32">Workshop8_solutions.pdf, page 32</a></em></p>
 </section>
 <section id="source-page-033" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-033.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 33</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 33.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Quiz –Question 7
-An electric car manufacturer claims that their new
-battery model increases average driving range by
-more than 5 km after a full overnight charge. To            A. Fail to reject the null hypothesis;
-evaluate this claim, an independent reviewer tests          there is not enough evidence to
-the battery on 17 vehicles. The sample shows an             support the
-average increase of 5.8 km, with a standard deviation       manufacturer's claim.
-of 1.2 km. Assume the increase in range is
-approximately normally distributed. Use a                   B. Reject the null hypothesis; the
-significance level of 0.05.
-average range increase is significantly
-If the test statistic is 2.582, which of the following is   less than 5 km.
-the correct decision and conclusion regarding the
-manufacturer's claim?                                       C. Reject the null hypothesis; there is
-sufficient evidence that the battery
-n                       17                                  increases range by more than 5 km.
-Test Stat            2.582
-P-value            0.01003 T.DIST.RT(test stat, df = n-1)   D. Fail to reject the null hypothesis; the
-average range increase is exactly 5 km.
-Can also use 1-T.DIST(test stat,df,true)
--->
+<h3 id="quiz-question-7-1">Quiz –Question 7</h3>
+<p>An electric car manufacturer claims that their new battery model increases average driving range by more than 5 km after a full overnight charge. To A. Fail to reject the null hypothesis; evaluate this claim, an independent reviewer tests there is not enough evidence to the battery on 17 vehicles. The sample shows an support the average increase of 5.8 km, with a standard deviation manufacturer’s claim. of 1.2 km. Assume the increase in range is approximately normally distributed. Use a B. Reject the null hypothesis; the significance level of 0.05. average range increase is significantly If the test statistic is 2.582, which of the following is less than 5 km. the correct decision and conclusion regarding the manufacturer’s claim? C. Reject the null hypothesis; there is sufficient evidence that the battery n 17 increases range by more than 5 km. Test Stat 2.582 P-value 0.01003 T.DIST.RT(test stat, df = n-1) D. Fail to reject the null hypothesis; the average range increase is exactly 5 km. Can also use 1-T.DIST(test stat,df,true)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=33">Workshop8_solutions.pdf, page 33</a></em></p>
 </section>
 <section id="source-page-034" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-034.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 34</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 34.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Quiz Question 8
-The amount of time (in minutes) customers spend in a self-service petrol
-station follows a normal distribution with a mean of 12 minutes and a standard
-deviation of 3 minutes.
-The probability that a randomly selected customer spends more than 16
-minutes at the station is ________ (State your final answer to 4 decimal places)
--->
+<h3 id="quiz-question-8">Quiz Question 8</h3>
+<p>The amount of time (in minutes) customers spend in a self-service petrol station follows a normal distribution with a mean of 12 minutes and a standard deviation of 3 minutes. The probability that a randomly selected customer spends more than 16 minutes at the station is ________ (State your final answer to 4 decimal places)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=34">Workshop8_solutions.pdf, page 34</a></em></p>
 </section>
 <section id="source-page-035" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-035.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 35</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 35.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Quiz –Question 8
-The amount of time (in minutes) customers spend in a self-service petrol station
-follows a normal distribution with a mean of 12 minutes and a standard
-deviation of 3 minutes. What is the probability that a randomly selected
-customer spends more than 16 minutes at the station?
-The probability that a randomly selected customer spends more than 16 minutes
-at the station is 0.0912 (State your final answer to 4 decimal places).
-Question 4
-mu                 12
-sigma               3
-x                  16
-P(X>x)       0.091211 1- NORM.DIST(x, mu, sigma, cumulative)
--->
+<h3 id="quiz-question-8-1">Quiz –Question 8</h3>
+<p>The amount of time (in minutes) customers spend in a self-service petrol station follows a normal distribution with a mean of 12 minutes and a standard deviation of 3 minutes. What is the probability that a randomly selected customer spends more than 16 minutes at the station? The probability that a randomly selected customer spends more than 16 minutes at the station is 0.0912 (State your final answer to 4 decimal places). Question 4 mu 12 sigma 3 x 16 P(X&gt;x) 0.091211 1- NORM.DIST(x, mu, sigma, cumulative)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=35">Workshop8_solutions.pdf, page 35</a></em></p>
 </section>
 <section id="source-page-036" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-036.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 36</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 36.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Quiz Question 9
-The amount of time (in minutes) customers spend in a self-service petrol station
-follows a normal distribution with a mean of 12 minutes and a standard
-deviation of 3 minutes.
-The minimum number of minutes a customer must spend at the station to be in
-the top 10% of all customers is _____ minutes (State your final answer to 2
-decimal places).
--->
+<h3 id="quiz-question-9">Quiz Question 9</h3>
+<p>The amount of time (in minutes) customers spend in a self-service petrol station follows a normal distribution with a mean of 12 minutes and a standard deviation of 3 minutes. The minimum number of minutes a customer must spend at the station to be in the top 10% of all customers is _____ minutes (State your final answer to 2 decimal places).</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=36">Workshop8_solutions.pdf, page 36</a></em></p>
 </section>
 <section id="source-page-037" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-037.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 37</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 37.
-TEXT SOURCE: PDF text layer.
-EDITABLE TEXT TRANSCRIPTION:
-Quiz –Question 9
-The amount of time (in minutes) customers spend in a self-service petrol station
-follows a normal distribution with a mean of 12 minutes and a standard
-deviation of 3 minutes. What is the minimum number of minutes a customer
-must spend at the station to be in the top 10% of all customers?
-The minimum number of minutes a customer must spend at the station to be in
-the top 10% of all customers is 15.84 minutes (State your final answer to 2
-decimal places).
-Question 5
-mu                  12
-sigma                3
-P(X>x*)            0.1 Need to enter 0.9 as ‘probability’!
-X             15.84465 NORM.INV(probability, mu, sigma)
--->
+<h3 id="quiz-question-9-1">Quiz –Question 9</h3>
+<p>The amount of time (in minutes) customers spend in a self-service petrol station follows a normal distribution with a mean of 12 minutes and a standard deviation of 3 minutes. What is the minimum number of minutes a customer must spend at the station to be in the top 10% of all customers? The minimum number of minutes a customer must spend at the station to be in the top 10% of all customers is 15.84 minutes (State your final answer to 2 decimal places). Question 5 mu 12 sigma 3 P(X&gt;x*) 0.1 Need to enter 0.9 as ‘probability’! X 15.84465 NORM.INV(probability, mu, sigma)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=37">Workshop8_solutions.pdf, page 37</a></em></p>
 </section>
 <section id="source-page-038" class="slide level2">
 <h2></h2>
+<h3 id="please-complete-the-setus">Please complete the SETUs</h3>
+<p>38</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=38">Workshop8_solutions.pdf, page 38</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-038.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 38</figcaption>
+<p><img data-src="figures/etx5900/components/pdf-image-015.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 38.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 38.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-015.png, figures/etx5900/components/pdf-image-016.png
-EDITABLE TEXT TRANSCRIPTION:
-Please complete the SETUs
-38
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/pdf-image-016.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 38.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-039" class="slide level2">
 <h2></h2>
+<h3 id="ways-to-participate-1">3 ways to participate</h3>
+<ol type="1">
+<li>Access SETU from Moodle, in the right-hand block under your units.</li>
+<li>Use the link in your email from evaluations@e19.e.monash.edu.</li>
+<li>Access SETU via Learn HQ. Search “Access SETU Monash” via Google.</li>
+</ol>
+<p>Share anonymous unit feedback. Start the survey. Scan the QR code to complete the survey.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop8_solutions.pdf#page=39">Workshop8_solutions.pdf, page 39</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-039.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 8, page 39</figcaption>
+<p><img data-src="figures/etx5900/components/pdf-image-017.jpg" style="width:100.0%"></p>
+<figcaption>Visual from source page 39.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop8_solutions.pdf, page 39.
-TEXT SOURCE: PDF text layer.
-COMPONENT IMAGES: figures/etx5900/components/pdf-image-017.jpg
-EDITABLE TEXT TRANSCRIPTION:
-No extractable text; use the PDF page image.
--->
+</div><div class="column" style="width:50%;">
+
+</div></div>
 
 
 </section>
@@ -1288,6 +783,13 @@ No extractable text; use the PDF page image.
       });
     </script>
     <script>
+    // Give section dividers a background that fills the letterboxed slide.
+    document.querySelectorAll('section.section-slide').forEach(function (slide) {
+      if (!slide.hasAttribute('data-background-color')) {
+        slide.setAttribute('data-background-color', '#006dae');
+      }
+    });
+
     // Copy over background colors to new div
     divs = document.querySelectorAll('[data-background-color]');
 
@@ -1421,6 +923,61 @@ No extractable text; use the PDF page image.
     // Move progress bar
     menu_div = document.querySelector(".progress");
     document.querySelector(".slides").appendChild(menu_div);
+    </script>
+
+    <script>
+    // Show a manually started countdown on slides with data-timing="seconds".
+    (function () {
+      let interval;
+
+      function showCountdown(slide) {
+        clearInterval(interval);
+        if (!slide) return;
+        const duration = Number(slide.dataset.timing);
+        if (!Number.isFinite(duration) || duration <= 0) return;
+
+        let timer = slide.querySelector('.slide-countdown');
+        if (!timer) {
+          timer = document.createElement('div');
+          timer.className = 'slide-countdown';
+          timer.innerHTML = '<span role="timer"></span><button type="button">Start</button>';
+          slide.appendChild(timer);
+        }
+        const clock = timer.querySelector('[role="timer"]');
+        const button = timer.querySelector('button');
+        const format = seconds => String(Math.floor(seconds / 60)).padStart(2, '0') + ':' +
+          String(seconds % 60).padStart(2, '0');
+        clock.textContent = format(Math.ceil(duration));
+        button.hidden = false;
+        timer.onclick = function (event) {
+          if (button.hidden) return;
+          event.stopPropagation();
+          button.hidden = true;
+          const end = Date.now() + duration * 1000;
+          function update() {
+            const remaining = Math.max(0, Math.ceil((end - Date.now()) / 1000));
+            clock.textContent = format(remaining);
+            if (remaining === 0) clearInterval(interval);
+          }
+          update();
+          interval = setInterval(update, 250);
+        };
+      }
+
+      Reveal.on('slidechanged', event => showCountdown(event.currentSlide));
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' || event.repeat) return;
+        if (event.target instanceof Element &&
+            event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+        const slide = Reveal.getCurrentSlide();
+        const button = slide && slide.querySelector('.slide-countdown button');
+        if (!button || button.hidden) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        button.click();
+      }, true);
+      showCountdown(Reveal.getCurrentSlide());
+    })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">

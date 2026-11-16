@@ -9,6 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.11.9">
 
+  <meta name="dcterms.date" content="2026-12-01">
   <title>Business Statistics – slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -34,7 +35,23 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ecfa366c05ac1ff1a677a8c5facd037d.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d7d650050b1ce3e072e4f0f18efcf387.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -136,1236 +153,595 @@
 
 <section id="source-page-001" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-001.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 1</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 1. Companion PowerPoint slide 1.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image1.png
-EDITABLE TEXT TRANSCRIPTION:
-ETX1100/5900 Business Statistics
-Week 2
-Probability: Concepts & Applications
-Introduction to the Normal Distribution
--->
-</section>
+<h3 id="etx11005900-business-statistics">ETX1100/5900 Business Statistics</h3>
+<p>Week 2 Probability: Concepts &amp; Applications Introduction to the Normal Distribution</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=1">Workshop_slides_Week_2_with_solutions.pdf, page 1</a></em></p>
+
+<img data-src="figures/etx5900/components/image1.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 1.</p></section>
 <section id="source-page-002" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-002.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 2</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 2. Companion PowerPoint slide 2.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Learning Outcomes for Week 2
-Fundamentals of Probability
-Understand and calculate the concept of probability
-Interpret probabilities:
-Marginal probability
-Joint probability
-Conditional probability
-Evaluate the relationship between variables
-Introduction to the Normal Distribution
-Understand the concept of a continuous random variable
-Analyse the characteristics of a normal distribution
-Calculate and interpret probabilities for continuous random variables using Excel
--->
+<h3 id="learning-outcomes-for-week-2">Learning Outcomes for Week 2</h3>
+<p>Fundamentals of Probability Understand and calculate the concept of probability Interpret probabilities: Marginal probability Joint probability Conditional probability Evaluate the relationship between variables Introduction to the Normal Distribution Understand the concept of a continuous random variable Analyse the characteristics of a normal distribution Calculate and interpret probabilities for continuous random variables using Excel</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=2">Workshop_slides_Week_2_with_solutions.pdf, page 2</a></em></p>
 </section>
 <section id="source-page-003" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-003.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 3</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 3. Companion PowerPoint slide 3.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Learning Outcomes for Week 2
-Understand the concept of probability
-Calculate and interpret probabilities:
-Marginal probability
-Joint probability
-Conditional probability
-Apply the concepts of probability for categorical data analysis
-Evaluate the relationship between variables
-Textbook references:
-Berenson et al Basic Business Statistics 5th edition,
-Chapter 4 Sections 4.1 and 4.2
-Chapter 6 Sections 6.1-6.2
--->
+<h3 id="learning-outcomes-for-week-2-1">Learning Outcomes for Week 2</h3>
+<p>Understand the concept of probability Calculate and interpret probabilities: Marginal probability Joint probability Conditional probability Apply the concepts of probability for categorical data analysis Evaluate the relationship between variables Textbook references: Berenson et al Basic Business Statistics 5th edition, Chapter 4 Sections 4.1 and 4.2 Chapter 6 Sections 6.1-6.2</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=3">Workshop_slides_Week_2_with_solutions.pdf, page 3</a></em></p>
 </section>
 <section id="source-page-004" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-004.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 4</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 4. Companion PowerPoint slide 4.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image3.png
-EDITABLE TEXT TRANSCRIPTION:
-What is PROBABILITY?
-Probability = quantification of chance / likelihood of an occurrence
-Probability statements:
-Event A has zero probability P(A) = 0   There is no chance that event A will occur
-Event B has probability of one P(B)=1  Event B will occur with 100% certainty
-Probability of all possible events add to 1
-Eg Experiment: Toss a fair coin
-P𝐻𝑒𝑎𝑑=0.5        P𝑇𝑎𝑖𝑙=0.5
-What is the total probability? 𝑷𝑯𝒆𝒂𝒅+𝑷𝑻𝒂𝒊𝒍=𝟏
--->
-</section>
+<h3 id="what-is-probability">What is PROBABILITY?</h3>
+<p>Probability = quantification of chance / likelihood of an occurrence Probability statements: Event A has zero probability <span class="math inline">P(A) = 0 \rightarrow</span> There is no chance that event A will occur Event B has probability of one <span class="math inline">P(B)=1 \rightarrow</span> Event B will occur with 100% certainty Probability of all possible events add to 1 Eg Experiment: Toss a fair coin <span class="math display">
+PHead=0.5          PTail=0.5
+</span> What is the total probability? <span class="math inline">P(\text{Head}) + P(\text{Tail}) = 1</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=4">Workshop_slides_Week_2_with_solutions.pdf, page 4</a></em></p>
+
+<img data-src="figures/etx5900/components/image3.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 4.</p></section>
 <section id="source-page-005" class="slide level2">
 <h2></h2>
+<h3 id="union">Union</h3>
+<p><span class="math inline">P(A \text{ or } B)</span> or <span class="math inline">P(A \cup B)</span> describes either A OR B <span class="math display">
+PA or B =PA+PB-PrA and B
+</span> Note: <span class="math inline">P(A)</span> and <span class="math inline">P(B)</span> are referred to as marginal probabilities Intersection (Joint probability) &amp; Union Intersection (joint probability) Helps us understand the nature of the relationship between two events <span class="math inline">P(A \text{ and } B)</span> or <span class="math inline">P(A \cap B)</span> - known as “JOINT” probability</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=5">Workshop_slides_Week_2_with_solutions.pdf, page 5</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-005.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 5</figcaption>
+<p><img data-src="figures/etx5900/components/image30.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 5.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 5. Companion PowerPoint slide 5.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image30.png, figures/etx5900/components/image4.png
-EDITABLE TEXT TRANSCRIPTION:
-Union
-P(A or B) or P𝐴∪𝐵 describes either A OR B
-P𝐴 𝑜𝑟 𝐵 =𝑃𝐴+𝑃𝐵−Pr𝐴 𝑎𝑛𝑑 𝐵
-Note: P(A) and P(B) are referred to as marginal probabilities
-Intersection (Joint probability) & Union
-Intersection (joint probability)
-Helps us understand the nature of the relationship between two events
-P(A and B) or P𝐴∩𝐵  - known as “JOINT” probability
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image4.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 5.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-006" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-006.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 6</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 6. Companion PowerPoint slide 6.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image8.png
-EDITABLE TEXT TRANSCRIPTION:
-Conditional Probability
-Conditional Probability
-Probability of an event (A) given that (conditional on)  another event (B) having occurred.
-P(A given B) or P (A|B) is known as conditional probability
-Conditional Probability=Joint probability of the two eventsMarginal probability of the condition
-𝐏𝐀𝐁=𝐏(𝐀∩𝐁)𝐏(𝐁)
--->
-</section>
+<h3 id="conditional-probability">Conditional Probability</h3>
+<p>Conditional Probability Probability of an event (A) given that (conditional on) another event (B) having occurred. P(A given B) or P (A|B) is known as conditional probability Conditional Probability=Joint probability of the two eventsMarginal probability of the condition <span class="math display">
+PAB=P(A∩B)P(B)
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=6">Workshop_slides_Week_2_with_solutions.pdf, page 6</a></em></p>
+
+<img data-src="figures/etx5900/components/image8.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 6.</p></section>
 <section id="source-page-007" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-007.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 7</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 7. Companion PowerPoint slide 7.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image10.png
-EDITABLE TEXT TRANSCRIPTION:
-Mutually Exclusive and Independent Events
-Mutually exclusive:
-Definition: Events that cannot occur together
-We know that P(A or B) = P(A) + P(B) – P(A and B). For mutually exclusive events, P(A and B) = 0
-Example: Toss a fair coin P(Not Head) = P(Tail) = 1-P(Head)
-Independent:
-Definition: Probability of one event occurring unaffected by the outcome of the other
-Event A is independent of event B if:
-P(A|B) = P(A)   OR    P𝐴∩𝐵=P𝐴×P(𝐵)
--->
-</section>
+<h3 id="mutually-exclusive-and-independent-events">Mutually Exclusive and Independent Events</h3>
+<p>Mutually exclusive: Definition: Events that cannot occur together We know that P(A or B) = P(A) + P(B) – P(A and B). For mutually exclusive events, P(A and B) = 0 Example: Toss a fair coin P(Not Head) = P(Tail) = 1-P(Head) Independent: Definition: Probability of one event occurring unaffected by the outcome of the other Event A is independent of event B if: <span class="math display">
+P(A|B) = P(A)   OR    PA∩B=PA\times{}P(B)
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=7">Workshop_slides_Week_2_with_solutions.pdf, page 7</a></em></p>
+
+<img data-src="figures/etx5900/components/image10.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 7.</p></section>
 <section id="source-page-008" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-008.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 8</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 8. Companion PowerPoint slide 8.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Frequency Table
-Open“Heart Disease” sheet in Week 2 Workshop Data.xlsx.  It contains data on the diagnosis of heart disease and exercise levels. Generate 2 relative frequency tables
-Exercise level
-Medical condition
-What information do the tables convey?
--->
+<h3 id="frequency-table">Frequency Table</h3>
+<p>Open“Heart Disease” sheet in Week 2 Workshop Data.xlsx. It contains data on the diagnosis of heart disease and exercise levels. Generate 2 relative frequency tables Exercise level Medical condition What information do the tables convey?</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=8">Workshop_slides_Week_2_with_solutions.pdf, page 8</a></em></p>
 </section>
 <section id="source-page-009" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-009.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 9</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 9. Companion PowerPoint slide 9.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image2.png
-EDITABLE TEXT TRANSCRIPTION:
-Instructions:
-Exercise Level
-Place the cursor in any cell within the data
-Drag & drop Exercise under  1. Rows & 2. Values.
-Right-click on Exercise entries > Value Field Setting >
-Summarize value by > Count;
-Show Values As > % of Column Total
-Medical Condition
-Place the cursor in any cell within the data
-Drag & drop Heart Disease under  1. Rows & 2. Values.
-Right-click on Heart Disease entries > Value Field Setting >
-Summarize value by > Count;
-Show Values As > % of Column Total
--->
-</section>
+<h3 id="instructions">Instructions:</h3>
+<p>Exercise Level Place the cursor in any cell within the data Drag &amp; drop Exercise under 1. Rows &amp; 2. Values. Right-click on Exercise entries &gt; Value Field Setting &gt; Summarize value by &gt; Count; Show Values As &gt; % of Column Total Medical Condition Place the cursor in any cell within the data Drag &amp; drop Heart Disease under 1. Rows &amp; 2. Values. Right-click on Heart Disease entries &gt; Value Field Setting &gt; Summarize value by &gt; Count; Show Values As &gt; % of Column Total</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=9">Workshop_slides_Week_2_with_solutions.pdf, page 9</a></em></p>
+
+<img data-src="figures/etx5900/components/image2.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 9.</p></section>
 <section id="source-page-010" class="slide level2">
 <h2></h2>
+<h3 id="relative-frequency-tables">Relative Frequency Tables:</h3>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=10">Workshop_slides_Week_2_with_solutions.pdf, page 10</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-010.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 10</figcaption>
+<p><img data-src="figures/etx5900/components/image5.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 10.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 10. Companion PowerPoint slide 10.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image5.png, figures/etx5900/components/image6.png
-EDITABLE TEXT TRANSCRIPTION:
-Relative Frequency Tables:
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image6.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 10.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-011" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-011.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 11</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 11. Companion PowerPoint slide 11.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image7.png
-EDITABLE TEXT TRANSCRIPTION:
-Calculating Joint Probabilities
-Construct a two-way frequency table (contingency table/Pivot table) by placing Heart Disease in rows and Exercise in Columns. Display as “count”
-Count of Heart Disease
-Exercise Level
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-2996
-1741
-4737
-Yes
-220
-43
-263
-Grand Total
-3216
-1784
-5000
-Probabilities
-Exercise Level
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-Yes
-Grand Total
-Convert to probabilities
--->
-</section>
+<h3 id="calculating-joint-probabilities">Calculating Joint Probabilities</h3>
+<p>Construct a two-way frequency table (contingency table/Pivot table) by placing Heart Disease in rows and Exercise in Columns. Display as “count” Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 2996 1741 4737 Yes 220 43 263 Grand Total 3216 1784 5000 Probabilities Exercise Level Heart Disease Minimal Moderate Grand Total No Yes Grand Total Convert to probabilities</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=11">Workshop_slides_Week_2_with_solutions.pdf, page 11</a></em></p>
+
+<img data-src="figures/etx5900/components/image7.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 11.</p></section>
 <section id="source-page-012" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-012.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 12</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 12. Companion PowerPoint slide 12.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image7.png
-EDITABLE TEXT TRANSCRIPTION:
-Calculating Joint Probabilities: Manual Calculations
-Construct a two-way frequency table (contingency table/Pivot table) by placing Heart Disease in rows and Exercise in Columns. Display as “count”
-Count of Heart Disease
-Exercise Level
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-2996
-1741
-4737
-Yes
-220
-43
-263
-Grand Total
-3216
-1784
-5000
-Probabilities
-Exercise Level
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
+<h3 id="calculating-joint-probabilities-manual-calculations">Calculating Joint Probabilities: Manual Calculations</h3>
+<p>Construct a two-way frequency table (contingency table/Pivot table) by placing Heart Disease in rows and Exercise in Columns. Display as “count” Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 2996 1741 4737 Yes 220 43 263 Grand Total 3216 1784 5000 Probabilities Exercise Level Heart Disease Minimal Moderate Grand Total No <span class="math display">
 =2996/5000
+</span> <span class="math display">
 =1741/5000
+</span> <span class="math display">
 =4737/5000
-Yes
+</span> Yes <span class="math display">
 =220/5000
+</span> <span class="math display">
 =43/5000
+</span> <span class="math display">
 =263/5000
-Grand Total
+</span> Grand Total <span class="math display">
 =3216/5000
+</span> <span class="math display">
 =1784/5000
-1
--->
-</section>
+</span> 1</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=12">Workshop_slides_Week_2_with_solutions.pdf, page 12</a></em></p>
+
+<img data-src="figures/etx5900/components/image7.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 12.</p></section>
 <section id="source-page-013" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-013.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 13</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 13. Companion PowerPoint slide 13.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image7.png
-EDITABLE TEXT TRANSCRIPTION:
-Pivot table: % of Grand Total
-Construct a pivot table by placing Heart Disease in rows and Exercise in Columns. Display as “% of Grand Total”
-Count of Heart Disease
-Exercise Level
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-59.92%
-34.82%
-94.74%
-Yes
-4.40%
-0.86%
-5.26%
-Grand Total
-64.32%
-35.68%
-100.00%
--->
-</section>
+<h3 id="pivot-table-of-grand-total">Pivot table: % of Grand Total</h3>
+<p>Construct a pivot table by placing Heart Disease in rows and Exercise in Columns. Display as “% of Grand Total” Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00%</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=13">Workshop_slides_Week_2_with_solutions.pdf, page 13</a></em></p>
+
+<img data-src="figures/etx5900/components/image7.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 13.</p></section>
 <section id="source-page-014" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-014.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 14</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 14. Companion PowerPoint slide 14.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Heart Disease and Exercise Level
-Count of Heart Disease
-Exercise Level
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-59.92%
-34.82%
-94.74%
-Yes
-4.40%
-0.86%
-5.26%
-Grand Total
-64.32%
-35.68%
-100.00%
-1. If you choose someone at random from the population, what is the probability that they
-have no heart disease
-do a moderate amount of exercise
-do a moderate amount of exercise and have no heart disease
-do a moderate amount of exercise or have no heart disease
-2. Are Heart Disease and Exercise levels mutually exclusive events?
--->
+<h3 id="task-1-heart-disease-and-exercise-level">Task 1: Heart Disease and Exercise Level</h3>
+<p>Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00% 1. If you choose someone at random from the population, what is the probability that they have no heart disease do a moderate amount of exercise do a moderate amount of exercise and have no heart disease do a moderate amount of exercise or have no heart disease 2. Are Heart Disease and Exercise levels mutually exclusive events?</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=14">Workshop_slides_Week_2_with_solutions.pdf, page 14</a></em></p>
 </section>
 <section id="source-page-015" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-015.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 15</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 15. Companion PowerPoint slide 15.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Heart Disease and Exercise Level
-3. Construct a new Pivot Table for Heart Disease and Exercise Level. Change the display settings to % Row Total. Use this table and answer the following questions:
-a. Write a probability statement that describes the value of 83.65% from your table?
-b. Interpret this value
-4. Are exercise levels and heart disease independent? Provide evidence to support your answer.
-5. A lower proportion of heart disease patients do moderate exercise compared to those who do not have heart disease. Construct a pivot table and provide probability statements to support this.
-6. The probability of heart disease reduces with moderate exercise compared to minimum exercise. Construct a pivot table and provide probability statements to support this.
--->
+<h3 id="task-1-heart-disease-and-exercise-level-1">Task 1: Heart Disease and Exercise Level</h3>
+<ol start="3" type="1">
+<li>Construct a new Pivot Table for Heart Disease and Exercise Level. Change the display settings to % Row Total. Use this table and answer the following questions: a. Write a probability statement that describes the value of 83.65% from your table? b. Interpret this value</li>
+<li>Are exercise levels and heart disease independent? Provide evidence to support your answer.</li>
+<li>A lower proportion of heart disease patients do moderate exercise compared to those who do not have heart disease. Construct a pivot table and provide probability statements to support this.</li>
+<li>The probability of heart disease reduces with moderate exercise compared to minimum exercise. Construct a pivot table and provide probability statements to support this.</li>
+</ol>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=15">Workshop_slides_Week_2_with_solutions.pdf, page 15</a></em></p>
 </section>
 <section id="source-page-016" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-016.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 16</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 16. Companion PowerPoint slide 16.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Solutions for Task 1: Question 1
-Count of Heart Disease
-Exercise Level
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-59.92%
-34.82%
-94.74%
-Yes
-4.40%
-0.86%
-5.26%
-Grand Total
-64.32%
-35.68%
-100.00%
-1. If you choose someone at random from the population, what is the probability that they
-have no heart disease
+<h3 id="solutions-for-task-1-question-1">Solutions for Task 1: Question 1</h3>
+<p>Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00% 1. If you choose someone at random from the population, what is the probability that they have no heart disease <span class="math display">
 P(No Heart Disease) =  94.74%
-do a moderate amount of exercise
+</span> do a moderate amount of exercise <span class="math display">
 P(Moderate) =  35.68%
--->
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=16">Workshop_slides_Week_2_with_solutions.pdf, page 16</a></em></p>
 </section>
 <section id="source-page-017" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-017.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 17</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 17. Companion PowerPoint slide 17.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Solutions for Task 1: Question 1
-Count of Heart Disease
-Exercise Level
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-59.92%
-34.82%
-94.74%
-Yes
-4.40%
-0.86%
-5.26%
-Grand Total
-64.32%
-35.68%
-100.00%
-1. If you choose someone at random from the population, what is the probability that they
-do a moderate amount of exercise and have no heart disease
-P(Moderate and No Heart Disease) =  34.82%
-do a moderate amount of exercise or have no heart disease
-P(Moderate or No Heart Disease)
-= P(Moderate) + P(No Heart Disease) – P(Moderate and No Heart Disease)
+<h3 id="solutions-for-task-1-question-1-1">Solutions for Task 1: Question 1</h3>
+<p>Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00% 1. If you choose someone at random from the population, what is the probability that they do a moderate amount of exercise and have no heart disease P(Moderate and No Heart Disease) = 34.82% do a moderate amount of exercise or have no heart disease P(Moderate or No Heart Disease) = P(Moderate) + P(No Heart Disease) – P(Moderate and No Heart Disease) <span class="math display">
 = 35.68% + 94.74% - 34.82% = 95.6%
--->
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=17">Workshop_slides_Week_2_with_solutions.pdf, page 17</a></em></p>
 </section>
 <section id="source-page-018" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-018.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 18</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 18. Companion PowerPoint slide 18.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Solutions for Task 1: Question 2
-Count of Heart Disease
-Exercise Level
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-59.92%
-34.82%
-94.74%
-Yes
-4.40%
-0.86%
-5.26%
-Grand Total
-64.32%
-35.68%
-100.00%
-2. Are Heart Disease and Exercise levels mutually exclusive events?
-Definition of mutually exclusive events: Events that cannot occur together
-If A and B are mutually exclusive, P(A and B) = 0
-P(Heart Disease and Minimal) = 4.4%
-P(Heart Disease and Moderate) = 0.86%
-Therefore Heart Disease and Exercise are not mutually exclusive.
--->
+<h3 id="solutions-for-task-1-question-2">Solutions for Task 1: Question 2</h3>
+<p>Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00% 2. Are Heart Disease and Exercise levels mutually exclusive events? Definition of mutually exclusive events: Events that cannot occur together If A and B are mutually exclusive, P(A and B) = 0 P(Heart Disease and Minimal) = 4.4% P(Heart Disease and Moderate) = 0.86% Therefore Heart Disease and Exercise are not mutually exclusive.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=18">Workshop_slides_Week_2_with_solutions.pdf, page 18</a></em></p>
 </section>
 <section id="source-page-019" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-019.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 19</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 19. Companion PowerPoint slide 19.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image9.png
-EDITABLE TEXT TRANSCRIPTION:
-Solutions for Task 1: Question 3
-Q3a. Write a probability statement to describe the highlighted value.
-Pr𝑀𝑖𝑛𝑖𝑚𝑎𝑙𝐻𝑒𝑎𝑟𝑡 𝐷𝑖𝑠𝑒𝑎𝑠𝑒=83.65%
-Q3b. Interpret this value.
-If you only consider heart disease patients, 83.65% of them do minimal exercise
-OR
-Approximately 83.65% of patients with heart disease, do minimal exercise.
-Count of Heart Disease
-Exercise
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-63.25%
-36.75%
-100.00%
-Yes
-83.65%
-16.35%
-100.00%
-Grand Total
-64.32%
-35.68%
-100.00%
--->
-</section>
+<h3 id="solutions-for-task-1-question-3">Solutions for Task 1: Question 3</h3>
+<p>Q3a. Write a probability statement to describe the highlighted value. <span class="math display">
+PrMinimalHeart Disease=83.65%
+</span> Q3b. Interpret this value. If you only consider heart disease patients, 83.65% of them do minimal exercise OR Approximately 83.65% of patients with heart disease, do minimal exercise. Count of Heart Disease Exercise Heart Disease Minimal Moderate Grand Total No 63.25% 36.75% 100.00% Yes 83.65% 16.35% 100.00% Grand Total 64.32% 35.68% 100.00%</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=19">Workshop_slides_Week_2_with_solutions.pdf, page 19</a></em></p>
+
+<img data-src="figures/etx5900/components/image9.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 19.</p></section>
 <section id="source-page-020" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-020.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 20</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 20. Companion PowerPoint slide 20.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image11.png
-EDITABLE TEXT TRANSCRIPTION:
-Solutions for task 1: Question 4
-Are Exercise level and heart disease independent?
-Exercise level and heart disease are NOT independent
-There is a relationship between exercise and heart health!
-Count of Heart Disease
-Exercise
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-63.25%
-36.75%
-100.00%
-Yes
-83.65%
-16.35%
-100.00%
-Grand Total
-64.32%
-35.68%
-100.00%
-Are exercise levels and heart disease independent? Provide evidence to support your answer.
+<h3 id="solutions-for-task-1-question-4">Solutions for task 1: Question 4</h3>
+<p>Are Exercise level and heart disease independent? Exercise level and heart disease are NOT independent There is a relationship between exercise and heart health! Count of Heart Disease Exercise Heart Disease Minimal Moderate Grand Total No 63.25% 36.75% 100.00% Yes 83.65% 16.35% 100.00% Grand Total 64.32% 35.68% 100.00% Are exercise levels and heart disease independent? Provide evidence to support your answer. <span class="math display">
 P(Moderate|No Heart Disease) = 36.75%
+</span> <span class="math display">
 P(Moderate|Heart Disease) = 16.35%
+</span> <span class="math display">
 P(Moderate) = 35.68%
-Is P(Moderate|No Heart Disease) = P(Moderate)??
-Conditional probability ≠ marginal probability
-Count of Heart Disease
-Exercise
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-59.92%
-34.82%
-94.74%
-Yes
-4.40%
-0.86%
-5.26%
-Grand Total
-64.32%
-35.68%
-100.00%
--->
-</section>
+</span> Is P(Moderate|No Heart Disease) = P(Moderate)?? Conditional probability ≠ marginal probability Count of Heart Disease Exercise Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00%</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=20">Workshop_slides_Week_2_with_solutions.pdf, page 20</a></em></p>
+
+<img data-src="figures/etx5900/components/image11.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 20.</p></section>
 <section id="source-page-021" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-021.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 21</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 21. Companion PowerPoint slide 21.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-A lower proportion of heart disease patients do moderate exercise compared to those who do not have heart disease. Construct a pivot table and provide probability statements to this statement.
-P(Moderate|No Heart Disease)
+<h3 id="a-lower-proportion-of-heart-disease-patients-do-moderate-exercise-compared-to-those-who-do-not-have-heart-disease.-construct-a-pivot-table-and-provide-probability-statements-to-this-statement.">A lower proportion of heart disease patients do moderate exercise compared to those who do not have heart disease. Construct a pivot table and provide probability statements to this statement.</h3>
+<p>P(Moderate|No Heart Disease) <span class="math display">
 = 36.75%
-P(Moderate|Heart Disease)
+</span> P(Moderate|Heart Disease) <span class="math display">
 = 16.35%
-What does this imply?
-A smaller proportion of heart disease patients do moderate exercise compared to those who do not have heart disease.
-Application of what you have learned:
-People with healthy hearts tend to do more exercise!
-Solutions for Task 1: Question 5
-Count of Heart Disease
-Exercise
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-63.25%
-36.75%
-100.00%
-Yes
-83.65%
-16.35%
-100.00%
-Grand Total
-64.32%
-35.68%
-100.00%
--->
+</span> What does this imply? A smaller proportion of heart disease patients do moderate exercise compared to those who do not have heart disease. Application of what you have learned: People with healthy hearts tend to do more exercise! Solutions for Task 1: Question 5 Count of Heart Disease Exercise Heart Disease Minimal Moderate Grand Total No 63.25% 36.75% 100.00% Yes 83.65% 16.35% 100.00% Grand Total 64.32% 35.68% 100.00%</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=21">Workshop_slides_Week_2_with_solutions.pdf, page 21</a></em></p>
 </section>
 <section id="source-page-022" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-022.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 22</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 22. Companion PowerPoint slide 22.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Solutions for Task 1: Question 6
-The probability of heart disease reduces with moderate exercise compared to minimum exercise. Construct a pivot table and provide probability statements to this statement.
-The condition here is exercise.
+<h3 id="solutions-for-task-1-question-6">Solutions for Task 1: Question 6</h3>
+<p>The probability of heart disease reduces with moderate exercise compared to minimum exercise. Construct a pivot table and provide probability statements to this statement. The condition here is exercise. <span class="math display">
 P(Heart Disease|Minimum) = 6.84%
+</span> <span class="math display">
 P(Heart Disease|Moderate) = 2.41%
-Application of what you have learned:
-The probability of heart disease reduces with moderate exercise!
-Count of Heart Disease
-Exercise
-Heart Disease
-Minimal
-Moderate
-Grand Total
-No
-93.16%
-97.59%
-94.74%
-Yes
-6.84%
-2.41%
-5.26%
-Grand Total
-100.00%
-100.00%
-100.00%
--->
+</span> Application of what you have learned: The probability of heart disease reduces with moderate exercise! Count of Heart Disease Exercise Heart Disease Minimal Moderate Grand Total No 93.16% 97.59% 94.74% Yes 6.84% 2.41% 5.26% Grand Total 100.00% 100.00% 100.00%</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=22">Workshop_slides_Week_2_with_solutions.pdf, page 22</a></em></p>
 </section>
 <section id="source-page-023" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-023.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 23</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 23. Companion PowerPoint slide 23.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-A company is interested in analyzing the efficacy of launching a new brand of frozen food products. They wish to study the various demographics of customers who have and have not tried their products using the Marketing worksheet in the dataset Week 3 Workshop Data.xlsx.
-This data contains 6 variables:
-Person ID = the unique identifier of each person/respondent in the data.
-Raw Income = the income of the respondent.
-Gender = the gender (male or female) of the respondent.
-Live Alone = whether the respondent lives alone.
-Have Tried = whether the respondent has tried the new product or not.
-Income Category = the income range of the respondent.
-Task 2: Marketing (to be completed in your own time)
--->
+<h3 id="a-company-is-interested-in-analyzing-the-efficacy-of-launching-a-new-brand-of-frozen-food-products.-they-wish-to-study-the-various-demographics-of-customers-who-have-and-have-not-tried-their-products-using-the-marketing-worksheet-in-the-dataset-week-3-workshop-data.xlsx.">A company is interested in analyzing the efficacy of launching a new brand of frozen food products. They wish to study the various demographics of customers who have and have not tried their products using the Marketing worksheet in the dataset Week 3 Workshop Data.xlsx.</h3>
+<p>This data contains 6 variables: Person ID = the unique identifier of each person/respondent in the data. Raw Income = the income of the respondent. Gender = the gender (male or female) of the respondent. Live Alone = whether the respondent lives alone. Have Tried = whether the respondent has tried the new product or not. Income Category = the income range of the respondent. Task 2: Marketing (to be completed in your own time)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=23">Workshop_slides_Week_2_with_solutions.pdf, page 23</a></em></p>
 </section>
 <section id="source-page-024" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-024.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 24</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 24. Companion PowerPoint slide 24.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Instructions:
-Construct contingency tables to analyse the relationship between “Have Tried” and 3 other variables: Live Alone, Income & Gender. Use these tables to answer the following questions. Include probability statements and contextual interpretations in your answers.
-What is the proportion of customers who live alone?
-What is the proportion of customers who have tried the frozen food product and live alone?
-What is the probability that a randomly selected customer earns more than $50,000?
-What is the probability that a randomly selected customer earns more than $50,000 and has tried the frozen food product?
-What proportion of customers who live alone have tried the frozen food product?
-What proportion of customers who have tried the frozen food product, live alone?
-Are there more males or females who have tried the frozen food product?
-Task 2: Marketing (to be completed in your own time)
--->
+<h3 id="instructions-1">Instructions:</h3>
+<p>Construct contingency tables to analyse the relationship between “Have Tried” and 3 other variables: Live Alone, Income &amp; Gender. Use these tables to answer the following questions. Include probability statements and contextual interpretations in your answers. What is the proportion of customers who live alone? What is the proportion of customers who have tried the frozen food product and live alone? What is the probability that a randomly selected customer earns more than $50,000? What is the probability that a randomly selected customer earns more than $50,000 and has tried the frozen food product? What proportion of customers who live alone have tried the frozen food product? What proportion of customers who have tried the frozen food product, live alone? Are there more males or females who have tried the frozen food product? Task 2: Marketing (to be completed in your own time)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=24">Workshop_slides_Week_2_with_solutions.pdf, page 24</a></em></p>
 </section>
 <section id="source-page-025" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-025.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 25</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 25. Companion PowerPoint slide 25.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image12.png
-EDITABLE TEXT TRANSCRIPTION:
-What is the proportion of customers who live alone?
+<h3 id="what-is-the-proportion-of-customers-who-live-alone">What is the proportion of customers who live alone?</h3>
+<p><span class="math display">
 P(Live Alone = Yes) = 16.94%
-16.94% of the customers live alone.
-Solutions for Task 2a (to be completed in your own time)
--->
-</section>
+</span> 16.94% of the customers live alone. Solutions for Task 2a (to be completed in your own time)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=25">Workshop_slides_Week_2_with_solutions.pdf, page 25</a></em></p>
+
+<img data-src="figures/etx5900/components/image12.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 25.</p></section>
 <section id="source-page-026" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-026.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 26</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 26. Companion PowerPoint slide 26.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image13.png
-EDITABLE TEXT TRANSCRIPTION:
-What is the proportion of customers who have tried the frozen food product and live alone?
-P(Have Tried = Yes AND Live Alone = Yes) = 12.62%
-12.62% of the customers have tried the frozen food and live alone.
-Solutions for Task 2b (to be completed in your own time)
--->
-</section>
+<h3 id="what-is-the-proportion-of-customers-who-have-tried-the-frozen-food-product-and-live-alone">What is the proportion of customers who have tried the frozen food product and live alone?</h3>
+<p>P(Have Tried = Yes AND Live Alone = Yes) = 12.62% 12.62% of the customers have tried the frozen food and live alone. Solutions for Task 2b (to be completed in your own time)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=26">Workshop_slides_Week_2_with_solutions.pdf, page 26</a></em></p>
+
+<img data-src="figures/etx5900/components/image13.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 26.</p></section>
 <section id="source-page-027" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-027.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 27</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 27. Companion PowerPoint slide 27.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image14.png
-EDITABLE TEXT TRANSCRIPTION:
-What is the probability that a randomly selected customer earns more than $50,000?
-P(Income > 50,000) = 21.14% + 7.24% + 5.84% = 34.23%
-34.23% of the customers earn more than $50,000.
-Solutions for Task 2c (to be completed in your own time)
--->
-</section>
+<h3 id="what-is-the-probability-that-a-randomly-selected-customer-earns-more-than-50000">What is the probability that a randomly selected customer earns more than $50,000?</h3>
+<p><span class="math display">
+P(Income &gt; 50,000) = 21.14% + 7.24% + 5.84% = 34.23%
+</span> 34.23% of the customers earn more than $50,000. Solutions for Task 2c (to be completed in your own time)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=27">Workshop_slides_Week_2_with_solutions.pdf, page 27</a></em></p>
+
+<img data-src="figures/etx5900/components/image14.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 27.</p></section>
 <section id="source-page-028" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-028.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 28</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 28. Companion PowerPoint slide 28.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image15.png
-EDITABLE TEXT TRANSCRIPTION:
-What is the probability that a randomly selected customer earns more than $50,000 and has tried the frozen food product?
-P(Income > 50,000 AND Have Tried = Yes) = 13.08% + 4.67% + 4.21% = 21.96%
-21.96% of the customers earn more than $50,000 and has tried the frozen food product.
-Solutions for Task 2d (to be completed in your own time)
--->
-</section>
+<h3 id="what-is-the-probability-that-a-randomly-selected-customer-earns-more-than-50000-and-has-tried-the-frozen-food-product">What is the probability that a randomly selected customer earns more than $50,000 and has tried the frozen food product?</h3>
+<p>P(Income &gt; 50,000 AND Have Tried = Yes) = 13.08% + 4.67% + 4.21% = 21.96% 21.96% of the customers earn more than $50,000 and has tried the frozen food product. Solutions for Task 2d (to be completed in your own time)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=28">Workshop_slides_Week_2_with_solutions.pdf, page 28</a></em></p>
+
+<img data-src="figures/etx5900/components/image15.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 28.</p></section>
 <section id="source-page-029" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-029.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 29</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 29. Companion PowerPoint slide 29.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image16.png
-EDITABLE TEXT TRANSCRIPTION:
-What proportion of customers who live alone have tried the frozen food product?
-P(Have Tried = Yes | Live Alone = Yes) = 74.48%
-74.48% of customers who live alone, have tried the frozen food.
-Solutions for Task 2e (to be completed in your own time)
--->
-</section>
+<h3 id="what-proportion-of-customers-who-live-alone-have-tried-the-frozen-food-product">What proportion of customers who live alone have tried the frozen food product?</h3>
+<p>P(Have Tried = Yes | Live Alone = Yes) = 74.48% 74.48% of customers who live alone, have tried the frozen food. Solutions for Task 2e (to be completed in your own time)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=29">Workshop_slides_Week_2_with_solutions.pdf, page 29</a></em></p>
+
+<img data-src="figures/etx5900/components/image16.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 29.</p></section>
 <section id="source-page-030" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-030.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 30</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 30. Companion PowerPoint slide 30.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image17.png
-EDITABLE TEXT TRANSCRIPTION:
-Solutions for Task 2f (to be completed in your own time)
-What proportion of customers who have tried the frozen food product, live alone?
-P(Live Alone = Yes | Have Tried = Yes) = 21.82%
-21.82% of customers who have tried the frozen food product, live alone.
--->
-</section>
+<h3 id="solutions-for-task-2f-to-be-completed-in-your-own-time">Solutions for Task 2f (to be completed in your own time)</h3>
+<p>What proportion of customers who have tried the frozen food product, live alone? P(Live Alone = Yes | Have Tried = Yes) = 21.82% 21.82% of customers who have tried the frozen food product, live alone.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=30">Workshop_slides_Week_2_with_solutions.pdf, page 30</a></em></p>
+
+<img data-src="figures/etx5900/components/image17.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 30.</p></section>
 <section id="source-page-031" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-031.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 31</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 31. Companion PowerPoint slide 31.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image18.png
-EDITABLE TEXT TRANSCRIPTION:
-Solutions for Task 2g (to be completed in your own time)
-Are there more males or females who have tried the frozen food product?
-P(Male | Have Tried = Yes) > P(Female | Have Tried= Yes) 56.36% > 43.64%
-Therefore, there are more males who have tried the frozen food product than females.
--->
-</section>
+<h3 id="solutions-for-task-2g-to-be-completed-in-your-own-time">Solutions for Task 2g (to be completed in your own time)</h3>
+<p>Are there more males or females who have tried the frozen food product? P(Male | Have Tried = Yes) &gt; P(Female | Have Tried= Yes) 56.36% &gt; 43.64% Therefore, there are more males who have tried the frozen food product than females.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=31">Workshop_slides_Week_2_with_solutions.pdf, page 31</a></em></p>
+
+<img data-src="figures/etx5900/components/image18.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 31.</p></section>
 <section id="source-page-032" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-032.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 32</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 32. Companion PowerPoint slide 32.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Motherboard
-Digital World manufactures motherboards and has factories in China and Australia. Information about their production is provided in the Motherboard worksheet in the dataset Week 2 Workshop Data.xlsx.
-The company wishes to investigate the quality of the motherboards being manufactured from each of the factories.
-Use the following notation in all your answers:
-D: a motherboard is defective   G: a motherboard is good (not defective) C: motherboard manufactured in China   A: motherboard manufactured in Australia
--->
+<h3 id="motherboard">Motherboard</h3>
+<p>Digital World manufactures motherboards and has factories in China and Australia. Information about their production is provided in the Motherboard worksheet in the dataset Week 2 Workshop Data.xlsx. The company wishes to investigate the quality of the motherboards being manufactured from each of the factories. Use the following notation in all your answers: D: a motherboard is defective G: a motherboard is good (not defective) C: motherboard manufactured in China A: motherboard manufactured in Australia</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=32">Workshop_slides_Week_2_with_solutions.pdf, page 32</a></em></p>
 </section>
 <section id="source-page-033" class="slide level2">
 <h2></h2>
+<h3 id="challenge">Challenge</h3>
+<p>You are encouraged to work in groups.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=33">Workshop_slides_Week_2_with_solutions.pdf, page 33</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-033.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 33</figcaption>
+<p><img data-src="figures/etx5900/components/image19.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 33.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 33. Companion PowerPoint slide 33.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image19.png, figures/etx5900/components/image20.png
-EDITABLE TEXT TRANSCRIPTION:
-Challenge
-You are encouraged to work in groups.
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image20.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 33.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-034" class="slide level2">
 <h2></h2>
+<h3 id="please-download-and-install-the-slido-app-on-all-computers-you-use">Please download and install the Slido app on all computers you use</h3>
+<p>How many motherboards are produced in China? ⓘ Start presenting to display the poll results on this slide.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=34">Workshop_slides_Week_2_with_solutions.pdf, page 34</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-034.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 34</figcaption>
+<p><img data-src="figures/etx5900/components/image21.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 34.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 34. Companion PowerPoint slide 34.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image21.png, figures/etx5900/components/image23.png, figures/etx5900/components/image25.png
-EDITABLE TEXT TRANSCRIPTION:
-Please download and install the Slido app on all computers you use
-How many motherboards are produced in China?
-ⓘ Start presenting to display the poll results on this slide.
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image23.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 34.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image25.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 34.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-035" class="slide level2">
 <h2></h2>
+<h3 id="please-download-and-install-the-slido-app-on-all-computers-you-use-1">Please download and install the Slido app on all computers you use</h3>
+<p>What is the probability that a randomly selected defective motherboard is from China? ⓘ Start presenting to display the poll results on this slide.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=35">Workshop_slides_Week_2_with_solutions.pdf, page 35</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-035.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 35</figcaption>
+<p><img data-src="figures/etx5900/components/image21.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 35.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 35. Companion PowerPoint slide 35.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image21.png, figures/etx5900/components/image23.png, figures/etx5900/components/image25.png
-EDITABLE TEXT TRANSCRIPTION:
-Please download and install the Slido app on all computers you use
-What is the probability that a randomly selected defective motherboard is from China?
-ⓘ Start presenting to display the poll results on this slide.
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image23.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 35.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image25.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 35.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-036" class="slide level2">
 <h2></h2>
+<h3 id="please-download-and-install-the-slido-app-on-all-computers-you-use-2">Please download and install the Slido app on all computers you use</h3>
+<p>What is the probability that a randomly selected motherboard from China is defective? ⓘ Start presenting to display the poll results on this slide.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=36">Workshop_slides_Week_2_with_solutions.pdf, page 36</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-036.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 36</figcaption>
+<p><img data-src="figures/etx5900/components/image21.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 36.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 36. Companion PowerPoint slide 36.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image21.png, figures/etx5900/components/image23.png, figures/etx5900/components/image25.png
-EDITABLE TEXT TRANSCRIPTION:
-Please download and install the Slido app on all computers you use
-What is the probability that a randomly selected motherboard from China is defective?
-ⓘ Start presenting to display the poll results on this slide.
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image23.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 36.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image25.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 36.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-037" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-037.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 37</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 37. Companion PowerPoint slide 37.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image27.png
-EDITABLE TEXT TRANSCRIPTION:
-Solutions
-How many motherboards are produced in China? 65
-What is the probability that a randomly selected defective motherboard is from China?
+<h3 id="solutions">Solutions</h3>
+<p>How many motherboards are produced in China? 65 What is the probability that a randomly selected defective motherboard is from China? <span class="math display">
 P(C|D) = 33.33%
-33.33% of defective motherboards are from China.
--->
-</section>
+</span> 33.33% of defective motherboards are from China.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=37">Workshop_slides_Week_2_with_solutions.pdf, page 37</a></em></p>
+
+<img data-src="figures/etx5900/components/image27.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 37.</p></section>
 <section id="source-page-038" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-038.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 38</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 38. Companion PowerPoint slide 38.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image28.png
-EDITABLE TEXT TRANSCRIPTION:
-Solutions for Task 3c
-What is the probability that a randomly selected motherboard from China is defective?
+<h3 id="solutions-for-task-3c">Solutions for Task 3c</h3>
+<p>What is the probability that a randomly selected motherboard from China is defective? <span class="math display">
 P(D|C) = 3.08%
-3.08% of motherboards from China are defective.
--->
-</section>
+</span> 3.08% of motherboards from China are defective.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=38">Workshop_slides_Week_2_with_solutions.pdf, page 38</a></em></p>
+
+<img data-src="figures/etx5900/components/image28.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 38.</p></section>
 <section id="source-page-039" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-039.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 39</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 39. Companion PowerPoint slide 39.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image29.jpeg
-EDITABLE TEXT TRANSCRIPTION:
-No extractable text; use the PDF page image.
--->
-</section>
+<h3 id="part-2-of-the-workshop-normal-distribution">Part 2 of the workshop: Normal Distribution</h3>
+<ul>
+<li>Probability is the area under a probability density function (PDF).</li>
+<li>The normal distribution: shape, location and distribution.</li>
+<li>How to specify a particular normal distribution.</li>
+<li>The effect of changing the mean and standard deviation.</li>
+<li>Finding areas under the standard normal curve using Excel.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=39">Workshop_slides_Week_2_with_solutions.pdf, page 39</a></em></p>
+
+<img data-src="figures/etx5900/components/image29.jpeg" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 39.</p></section>
 <section id="source-page-040" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-040.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 40</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 40. Companion PowerPoint slide 40.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Probability: as the area under a Probability density function (pdf)
-The normal distribution: shape, location and distribution.
-How to specify a particular normal distribution
-The effect of changing the mean and standard deviation
-Finding areas under the standard normal curve: Using Excel
-Part 2 of the workshop: Normal Distribution
--->
+<h3 id="probability-as-the-area-under-a-probability-density-function-pdf">Probability: as the area under a Probability density function (pdf)</h3>
+<p>The normal distribution: shape, location and distribution. How to specify a particular normal distribution The effect of changing the mean and standard deviation Finding areas under the standard normal curve: Using Excel Part 2 of the workshop: Normal Distribution</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=40">Workshop_slides_Week_2_with_solutions.pdf, page 40</a></em></p>
 </section>
 <section id="source-page-041" class="slide level2">
 <h2></h2>
+<h3 id="probability-distribution">Probability Distribution</h3>
+<p>The histogram is a picture of the probability density in crude form Probability density describes how “dense” the distribution is over a data range Allows us to calculate the probability related to the variable of interest In statistics, we use a smooth mathematical function to model the probability density function (pdf) The area under the curve represents the probability</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=41">Workshop_slides_Week_2_with_solutions.pdf, page 41</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-041.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 41</figcaption>
+<p><img data-src="figures/etx5900/components/image31.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 41.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 41. Companion PowerPoint slide 41.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image31.png, figures/etx5900/components/image32.png
-EDITABLE TEXT TRANSCRIPTION:
-Probability Distribution
-The histogram is a picture of the probability density in crude form
-Probability density describes how “dense” the distribution is over a data range
-Allows us to calculate the probability related to the variable of interest
-In statistics, we use a smooth mathematical function to model the probability density function (pdf)
-The area under the curve represents the probability
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image32.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 41.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-042" class="slide level2">
 <h2></h2>
+<h3 id="probability-distribution-normal-distribution">Probability Distribution: Normal Distribution</h3>
+<p>The most common distribution in statistics is the normal distribution It is a symmetric (bell-shaped) distribution The normal distribution has two features: Mean and Stdev Normal Distribution Notation: <span class="math inline">X \sim N(\text{Mean}, \text{Stdev})</span> or <span class="math inline">X \sim N(\mu, \sigma)</span> <span class="math display">
+Skewness = 0
+</span> <span class="math display">
+Mean = Median = Mode
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=42">Workshop_slides_Week_2_with_solutions.pdf, page 42</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-042.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 42</figcaption>
+<p><img data-src="figures/etx5900/components/image220.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 42.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 42. Companion PowerPoint slide 42.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image220.png, figures/etx5900/components/image32.png
-EDITABLE TEXT TRANSCRIPTION:
-Probability Distribution: Normal Distribution
-The most common distribution in statistics is the normal distribution
-It is a symmetric (bell-shaped) distribution
-The normal distribution has two features: Mean and Stdev
-Normal Distribution
-Notation: 𝑿 ~ 𝑵𝑴𝒆𝒂𝒏,𝑺𝒕𝒅𝒆𝒗
-𝑿 ~ 𝑵𝝁,𝝈
-Skewness = 0
-Mean = Median = Mode
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image32.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 42.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-043" class="slide level2">
 <h2></h2>
+<h3 id="standard-normal-distribution">STANDARD Normal Distribution</h3>
+<p>A special case: STANDARD normal distribution <span class="math display">
+Mean = 0 and Stdev = 1
+</span> Used in statistics to assess statistical uncertainty Standard Normal Distribution Notation: <span class="math inline">Z \sim N(0,1)</span> <span class="math display">
+Skewness = 0
+</span> <span class="math display">
+Mean = Median = Mode
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=43">Workshop_slides_Week_2_with_solutions.pdf, page 43</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-043.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 43</figcaption>
+<p><img data-src="figures/etx5900/components/image300.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 43.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 43. Companion PowerPoint slide 43.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image300.png, figures/etx5900/components/image33.png
-EDITABLE TEXT TRANSCRIPTION:
-STANDARD Normal Distribution
-A special case: STANDARD normal distribution
-Mean = 0 and Stdev = 1
-Used in statistics to assess statistical uncertainty
-Standard Normal Distribution
-Notation: 𝑍 ~ 𝑁(0,1)
-Skewness = 0
-Mean = Median = Mode
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image33.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 43.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-044" class="slide level2">
 <h2></h2>
+<h3 id="normal-distribution-standard-normal-distribution">Normal Distribution &amp; Standard normal distribution</h3>
+<p><span class="math inline">X \sim N(\text{Mean}, \text{Stdev})</span> and <span class="math inline">Z \sim N(0,1)</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=44">Workshop_slides_Week_2_with_solutions.pdf, page 44</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-044.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 44</figcaption>
+<p><img data-src="figures/etx5900/components/image91.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 44.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 44. Companion PowerPoint slide 44.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image91.png, figures/etx5900/components/image32.png, figures/etx5900/components/image121.png, figures/etx5900/components/image33.png
-EDITABLE TEXT TRANSCRIPTION:
-Normal Distribution & Standard normal distribution
-𝑋 ~ 𝑁(𝑀𝑒𝑎𝑛,𝑆𝑡𝑑𝑒𝑣)
-𝑍 ~ 𝑁(0,1)
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image32.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 44.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image121.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 44.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image33.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 44.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-045" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-045.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 45</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 45. Companion PowerPoint slide 46.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Standard normal distribution: Excel
-Question 1
-P(Z<0)
+<h3 id="standard-normal-distribution-excel">Standard normal distribution: Excel</h3>
+<p>Question 1 P(Z&lt;0) <span class="math display">
 =NORM.S.DIST(0,TRUE)
-Question 2
-P(Z>0)
+</span> Question 2 P(Z&gt;0) <span class="math display">
 =1-NORM.S.DIST(0,TRUE)
-Question 3
-P(Z<-1)
+</span> Question 3 P(Z&lt;-1) <span class="math display">
 =NORM.S.DIST(-1,TRUE)
-Question 4
-P(-1>Z>1.5)
-=NORM.S.DIST(1.5,TRUE)-NORM.S.DIST(-1,TRUE)
-Question 5
-P(Z>2)
+</span> Question 4 P(-1&gt;Z&gt;1.5) =NORM.S.DIST(1.5,TRUE)-NORM.S.DIST(-1,TRUE) Question 5 P(Z&gt;2) <span class="math display">
 =1-NORM.S.DIST(2,TRUE)
-0.5
-0.5
-0.158655254
-0.0.774538
-0.02275
--->
+</span> 0.5 0.5 0.158655254 0.0.774538 0.02275</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=45">Workshop_slides_Week_2_with_solutions.pdf, page 45</a></em></p>
 </section>
 <section id="source-page-046" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-046.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 46</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 46. Companion PowerPoint slide 47.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image34.png
-EDITABLE TEXT TRANSCRIPTION:
-Standard normal distribution: Excel
-Question 6
-Suppose Z has a standard normal distribution. For some value of z∗, the probability P(Z<z∗)=0.2843. Find z∗.
-To find z*
+<h3 id="standard-normal-distribution-excel-1">Standard normal distribution: Excel</h3>
+<p>Question 6 Suppose Z has a standard normal distribution. For some value of z∗, the probability P(Z&lt;z∗)=0.2843. Find z∗. To find z* <span class="math display">
 =norm.s.inv(0.2843) = -0.57011
-Question 7
-Suppose Z has a standard normal distribution. For some value of z∗, the probability P(Z>z∗)=0.2843. Find z∗.
+</span> Question 7 Suppose Z has a standard normal distribution. For some value of z∗, the probability P(Z&gt;z∗)=0.2843. Find z∗. <span class="math display">
 =Norm.s.inv(1-0.2843) = 0.57011
--->
-</section>
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=46">Workshop_slides_Week_2_with_solutions.pdf, page 46</a></em></p>
+
+<img data-src="figures/etx5900/components/image34.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 46.</p></section>
 <section id="source-page-047" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-047.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 2, page 47</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_2_with_solutions.pdf, page 47. Companion PowerPoint slide 48.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Checklist: General Probability & Normal Distribution
-Use contingency table to calculate marginal, joint and conditional probabilities
-% of Grand Total
-% of Column Total
-% of Row Total
-Interpreting the relationship between two categorical variables
-Rule of Independence
-Probability: as the area under a Probability density function (pdf)
-The normal distribution: shape, location and distribution.
-How to specify a particular normal distribution
-The effect of changing the mean and standard deviation
-Finding areas under the standard normal curve: Using Excel
--->
+<h3 id="checklist-general-probability-normal-distribution">Checklist: General Probability &amp; Normal Distribution</h3>
+<p>Use contingency table to calculate marginal, joint and conditional probabilities % of Grand Total % of Column Total % of Row Total Interpreting the relationship between two categorical variables Rule of Independence Probability: as the area under a Probability density function (pdf) The normal distribution: shape, location and distribution. How to specify a particular normal distribution The effect of changing the mean and standard deviation Finding areas under the standard normal curve: Using Excel</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=47">Workshop_slides_Week_2_with_solutions.pdf, page 47</a></em></p>
 
 
 </section>
@@ -1568,6 +944,13 @@ Finding areas under the standard normal curve: Using Excel
       });
     </script>
     <script>
+    // Give section dividers a background that fills the letterboxed slide.
+    document.querySelectorAll('section.section-slide').forEach(function (slide) {
+      if (!slide.hasAttribute('data-background-color')) {
+        slide.setAttribute('data-background-color', '#006dae');
+      }
+    });
+
     // Copy over background colors to new div
     divs = document.querySelectorAll('[data-background-color]');
 
@@ -1701,6 +1084,61 @@ Finding areas under the standard normal curve: Using Excel
     // Move progress bar
     menu_div = document.querySelector(".progress");
     document.querySelector(".slides").appendChild(menu_div);
+    </script>
+
+    <script>
+    // Show a manually started countdown on slides with data-timing="seconds".
+    (function () {
+      let interval;
+
+      function showCountdown(slide) {
+        clearInterval(interval);
+        if (!slide) return;
+        const duration = Number(slide.dataset.timing);
+        if (!Number.isFinite(duration) || duration <= 0) return;
+
+        let timer = slide.querySelector('.slide-countdown');
+        if (!timer) {
+          timer = document.createElement('div');
+          timer.className = 'slide-countdown';
+          timer.innerHTML = '<span role="timer"></span><button type="button">Start</button>';
+          slide.appendChild(timer);
+        }
+        const clock = timer.querySelector('[role="timer"]');
+        const button = timer.querySelector('button');
+        const format = seconds => String(Math.floor(seconds / 60)).padStart(2, '0') + ':' +
+          String(seconds % 60).padStart(2, '0');
+        clock.textContent = format(Math.ceil(duration));
+        button.hidden = false;
+        timer.onclick = function (event) {
+          if (button.hidden) return;
+          event.stopPropagation();
+          button.hidden = true;
+          const end = Date.now() + duration * 1000;
+          function update() {
+            const remaining = Math.max(0, Math.ceil((end - Date.now()) / 1000));
+            clock.textContent = format(remaining);
+            if (remaining === 0) clearInterval(interval);
+          }
+          update();
+          interval = setInterval(update, 250);
+        };
+      }
+
+      Reveal.on('slidechanged', event => showCountdown(event.currentSlide));
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' || event.repeat) return;
+        if (event.target instanceof Element &&
+            event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+        const slide = Reveal.getCurrentSlide();
+        const button = slide && slide.querySelector('.slide-countdown button');
+        if (!button || button.hidden) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        button.click();
+      }, true);
+      showCountdown(Reveal.getCurrentSlide());
+    })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">

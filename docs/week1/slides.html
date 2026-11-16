@@ -9,7 +9,8 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.11.9">
 
-  <title>Business Statistics – slides</title>
+  <meta name="dcterms.date" content="2026-11-24">
+  <title>Business Statistics – Describing and visualising data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +35,23 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ecfa366c05ac1ff1a677a8c5facd037d.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d7d650050b1ce3e072e4f0f18efcf387.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -128,1174 +145,882 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
+<section id="title-slide" data-background-image="../site_libs/quarto-contrib/quarto-project/quarto-monash/presentation/_images/background/bg-02.png" data-background-position="center" data-background-size="contain" class="quarto-title-block center">
+<div id="title-slide-text">
 
-<section id="source-page-001" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-001.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 1</figcaption>
-</figure>
+  <h1 class="title">Describing and visualising data</h1>
+  <p class="subtitle">ETX1100/5900 | Business Statistics</p>
+
+<div class="quarto-title-authors">
 </div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 1. Companion PowerPoint slide 1.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image1.png
-EDITABLE TEXT TRANSCRIPTION:
-ETX1100/ETX5900 Business Statistics
-Week 1
-Descriptive Statistics
--->
+
+  <p class="date">24 November 2026</p>
+
+</div>
+
 </section>
-<section id="source-page-002" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-002.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 2</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 2. Companion PowerPoint slide 2.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-ing Outcomes:
-Learning Outcomes:
-1. Understand the unit structure, people and resources available
-2. Extend your knowledge of Descriptive Statistics
-3. Identify and visualise different data types using Microsoft Excel
--->
+<section id="welcome" class="slide level2 section-slide">
+<h2>Welcome</h2>
 </section>
-<section id="source-page-003" class="slide level2">
-<h2></h2>
+<section id="hello-im-fonti" class="slide level2">
+<h2>Hello! I’m Fonti</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<ul>
+<li>Your Chief Examiner! (CE)</li>
+<li>fonti.kar@monash.edu</li>
+<li>BSc, MRes, PhD</li>
+<li>Open-source software engineer (UNSW)</li>
+<li>Biodiversity Data Analyst (CSIRO)</li>
+<li>Analytics Lead at non-profit</li>
+<li>Australian Grains Industry (ANU)</li>
+</ul>
+</div><div class="column" style="width:35%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-003.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 3</figcaption>
+<p><img data-src="../team/FK.jpg" class="presenter-photo"></p>
+<figcaption>Fonti Kar</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 3. Companion PowerPoint slide 3.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Contact details
-Chief Examiner: Charanjit Kaur
-Workshop Lead: Charanjit Kaur (weeks 1-4), Alyssa Hu (Weeks 5-8)
-Workshop Support: Miriam Marembo, Madhu Prasanna, Susama Mahnaz and
-Song Li
-For all questions
-•   email to ETX5900.allcampuses-x@monash.edu
-•   Please use your student email and refer to the email etiquette instructions when drafting an email
-For questions on content
-• Ask the chatbot, Post on the Q&A platform or Ask during consultations
--->
+</div></div>
 </section>
-<section id="source-page-004" class="slide level2">
-<h2></h2>
+<section id="it-takes-a-village" class="slide level2">
+<h2>It takes a village…</h2>
+<p>Course content:</p>
+<div class="columns">
+<div class="column team-member" style="width:25%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-004.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 4</figcaption>
+<p><img data-src="../team/CK.jpeg" class="team-photo"></p>
+<figcaption>Charanjit Kaur</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 4. Companion PowerPoint slide 4.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image2.png
-EDITABLE TEXT TRANSCRIPTION:
-Your Learning                                                               4
-The most important member of the teaching team is YOU!
-Preparation BEFORE the workshop (Own Time):
-• Watch weekly pre-recorded videos and review accompanying slides.
-Live Workshops (Real Time):
-• Attend and actively engage in your workshops. Otherwise, you will lose valuable marks
-as a result. Don’t be late for workshops!
-AFTER the workshop (Wrap Up):
-• Review all material and complete the post-workshop quiz. You have two one-hour
-attempts. One week to complete.
-Try to keep up to date – it is easy to fall behind, but challenging to catch up
--->
+</div><div class="column team-member" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../team/AH.jpeg" class="team-photo"></p>
+<figcaption>Alyssa Hu</figcaption>
+</figure>
+</div>
+</div><div class="column team-member" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../team/NT.jpg" class="team-photo"></p>
+<figcaption>Nithya Tharmaseelan</figcaption>
+</figure>
+</div>
+</div><div class="column team-member" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../team/OM.jpg" class="team-photo"></p>
+<figcaption>Ole Maneesoonthorn</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
-<section id="source-page-005" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-005.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 5</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 5. Companion PowerPoint slide 5.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image4.png
-EDITABLE TEXT TRANSCRIPTION:
-Recommended Text
-Basic Business Statistics: Concepts and
-Applications, Berenson et al, Australian 5th edition,
-Pearson, 2018, ISBN 9781488620201.
-• This textbook is available online via the Monash
-Library here.
-•   An e-book can be purchased using the link here
-•   An e-book can be rented using the link here
--->
+<section id="it-takes-a-village-1" class="slide level2">
+<h2>It takes a village…</h2>
+<p>On the ground:</p>
+<ul>
+<li>Susama (Consultations: XX - XX )</li>
+<li></li>
+<li></li>
+</ul>
 </section>
-<section id="source-page-006" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-006.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 6</figcaption>
-</figure>
+<section id="now-your-turn" class="slide level2" data-timing="300">
+<h2>Now, your turn!</h2>
+<ul>
+<li>Introduce yourself to your neighbours</li>
+<li>Sign into ed-ie.com via on your device (phone or laptop)</li>
+<li>How to use ed-ie</li>
+</ul>
+<div class="callout callout-none no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>“What do you want want to get out of this unit? (no wrong answers!)”</p>
+<p>LINK PLACEHOLDER / QR code</p>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 6. Companion PowerPoint slide 6.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image5.png, figures/etx5900/components/image6.png
-EDITABLE TEXT TRANSCRIPTION:
-Assessment task       Value              Due date                              Group or      learning
-Individual    Outcomes
-Assessed
-Work shop                    15%                                              Individual
-participation and     Best 6 out of 8                    ln-cllass
-iin-class quiz                                                                              AIIII
-Take H om e Quizzes           20%        Quizzes open every Tuesday at 11.55   !Individual   AIIII
-Best 6 out of 7   pm,after the w orks hop and dose at
-11.55 pm on the following Tuesday.
-2 attempts f o r each Quiz
-60 minutes for each attempt.
-Assi gnme nt          15%                19th o f January 2025,. 1l1:55 pm     !Individual   1,. 2, 3 and 6
-(lndlividuall)
-Final exam            50%                TBC: 9-:ll3 Feb 2026                  !Individual   AIIII
--->
+</div>
+</div>
 </section>
-<section id="source-page-007" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-007.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 7</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 7. Companion PowerPoint slide 7.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image7.png
-EDITABLE TEXT TRANSCRIPTION:
-Learning Support
-1. In-person and Zoom Consultations
-2. One update/reminder every Wednesday morning (update for the previous week and
-preparation for the following week).
-3. Two personalised emails from the Chief Examiner outlining your performance feedback
-(the first after Week 4 and the second after the assignment is marked).
-4. List of recommended textbook questions every week. Solutions provided.
--->
+<section id="todays-roadmap" class="slide level2">
+<h2>Today’s roadmap</h2>
+<ul>
+<li>Unit overview
+<ul>
+<li>Assessments</li>
+<li>AI and tips on how to thrive</li>
+<li>How workshops will run</li>
+</ul></li>
+<li>Your Excel toolbelt</li>
+<li>10 MINUTE BREAK</li>
+<li>Taxonomy of statistics
+<ul>
+<li>Statistical lingo</li>
+</ul></li>
+<li>Data viz</li>
+<li>In-class exercise</li>
+</ul>
 </section>
-<section id="source-page-008" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-008.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 8</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 8. Companion PowerPoint slide 8.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image8.png
-EDITABLE TEXT TRANSCRIPTION:
-uild a Future in Data
-Build a Future in Data
-Job Keyword                    # jobs
-(17/07/2024)
-“data”                         24,721
-“marketing” and “data”         5,052
-“finance” and “data”           5,389
-“human resources” and “data”   6,559
-“logistics” and “data”         1,139
-Job Keyword                         Annual wages
-17/7/2024
-“business analytics”           2,555          Accountant                          $89,637
-“data science”                 3,069
-Marketing analyst                   $100,980
-Financial analyst                   $110,756
-Source: seek.com                                         Source: au.talent.com
--->
+<section id="unit-overview" class="slide level2 section-slide">
+<h2>Unit overview</h2>
 </section>
-<section id="source-page-009" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-009.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 9</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 9. Companion PowerPoint slide 9.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Descriptive Statistics
-9
-Textbook references: Berenson et al Basic Business Statistics, 5th edition.
-Chapter 1: all
-Chapter 2: 2.1, 2.2 (excluding stem and leaf plots), 2.3 (excluding polygons and cumulative percentage
-polygons), 2.4, 2.5, 2.6
-Chapter 3: 3.1 (excluding the geometric mean), 3.2 (excluding the Chebyshev Rule), 3.4, 3.6
-Learning Objectives:
-Interpret business data using descriptive statistics techniques, including the use of Excel
-spreadsheet functions.
--->
+<section id="unit-learning-outcomes" class="slide level2">
+<h2>Unit learning outcomes</h2>
+<ol type="1">
+<li><p>classify the different data types and apply appropriate visualisation tools for effective data presentation (Week 1)</p></li>
+<li><p>apply probability calculations and interpretations in a given business problem (Week 2)</p></li>
+<li><p>apply the concept of random sampling to interpret statistics calculated from business data and conduct hypothesis testing (Week 3 - 4)</p></li>
+<li><p>analyse relationships between business data using appropriate tools (Week 5)</p></li>
+<li><p>build the simple and multiple regression model in Excel and communicate the results in relevant business contexts (Week 5 -6)</p></li>
+<li><p>formulate and solve basic business modelling problems in Excel. (Week 7 and throughout)</p></li>
+</ol>
 </section>
-<section id="source-page-010" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-010.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 10</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 10. Companion PowerPoint slide 10.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Branches of Statistics
-Collecting, summarizing &
-Descriptive                       presenting data
-Statistics
-Using sample data to draw
-Inferential                 conclusions about the population
-Cross                Observations are collected at any one time
-(e.g. average screen time spent by users aged 18
-Sectional                    across media platforms in 2022)
-Data Types
-observations are collected at successive points in
-Time Series        time (e.g. average screen time spent by users aged 18
-across media platforms from 2010 – 2022)
-10
--->
+<section id="assessments" class="slide level2">
+<h2>Assessments</h2>
+<ul>
+<li>Weekly Take home quiz due on the following Monday*</li>
+<li>W4 quiz due on Sunday</li>
+</ul>
+<table class="caption-top">
+<colgroup>
+<col style="width: 3%">
+<col style="width: 12%">
+<col style="width: 43%">
+<col style="width: 26%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Week</th>
+<th>Date</th>
+<th>Topic</th>
+<th>Assessment</th>
+<th>In class Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>24/11/2026</td>
+<td>Describing and visualising data</td>
+<td>Quiz 1</td>
+<td>Exercises 1</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>1/12/2026</td>
+<td>Probability and distributions</td>
+<td>Quiz 2</td>
+<td>Exercises 2</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>08/12/2026</td>
+<td>Sampling and estimation</td>
+<td>Quiz 3</td>
+<td>Exercises 3</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>15/12/2026</td>
+<td>Testing business claims</td>
+<td>Quiz* 4</td>
+<td>Exercises 4</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>21 – 28/12/2026</td>
+<td>Mid Semester Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>05/01/2027</td>
+<td>Relationships and introduction to simple regression</td>
+<td>Quiz 5<br><br>Written Assignment</td>
+<td>Exercises 5</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>12/01/2027</td>
+<td>Multiple regression and model evaluation</td>
+<td>Quiz 6</td>
+<td>Exercises 6</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>19/01/2027</td>
+<td>Introduction to time series and forecasting</td>
+<td>Quiz 7</td>
+<td>Exercises 7</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>*29/01/2027</td>
+<td>Integrated business case, communication, and revision</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="source-page-011" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-011.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 11</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 11. Companion PowerPoint slide 11.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Types of Variables
-Types of Variables
-Categorical (Qualitative)                        Numerical (Quantitative)
-Nominal                Ordinal                       Discrete       Continuous
-11
--->
+<section id="the-ai-elephant-in-the-room" class="slide level2">
+<h2>The (AI) elephant in the room</h2>
+<ul>
+<li>GenAI</li>
+<li>Monash policy on AI usage</li>
+<li>Skipping to the end, neuroscience of learning</li>
+<li>My priority: I want to see you win (but I need you to try as well)</li>
+</ul>
+<!-- Ronny Chieng's video -->
+<blockquote>
+<p>Your education is in your hands</p>
+</blockquote>
 </section>
-<section id="source-page-012" class="slide level2">
-<h2></h2>
+<section id="how-to-thrive-with-ai" class="slide level2">
+<h2>How to thrive (with AI)</h2>
+<ul>
+<li><strong>Be curious</strong>
+<ul>
+<li>Anything unclear - ask away!</li>
+<li>Discuss with fellow students, tutors, post a question on ed-ie.com</li>
+<li>Question everything</li>
+</ul></li>
+<li><strong>Participate</strong> in class actively
+<ul>
+<li>Consider putting your phone on silent unless you need to be on call</li>
+<li>Take notes <!-- Neuroscience paper --></li>
+</ul></li>
+<li><strong>Engage</strong> with learning materials (quizes + exercises)
+<ul>
+<li>Read materials</li>
+<li>Doing materials with friends &gt; with AI</li>
+<li>Revise notes</li>
+</ul></li>
+<li><strong>Practice</strong>
+<ul>
+<li>You’re learning a new skill, you’re suppose to suck at the start</li>
+<li>Find those weak spots</li>
+<li>Fill them with readings, research, AI suggested exercises</li>
+</ul></li>
+</ul>
+</section>
+<section id="we-have-your-back" class="slide level2">
+<h2>We have your back</h2>
+<ul>
+<li><p>No such thing as a “dumb” question</p></li>
+<li><p>We are learning too</p></li>
+<li><p>In-person and Zoom Consultations</p>
+<ul>
+<li>Fonti - Before class XX - XX</li>
+<li>Susama -</li>
+</ul></li>
+<li><p>Question? fonti.kar@monash.edu with subject <strong>ETX1100/5900</strong></p></li>
+<li><p>Monash Student Wellbeing support</p></li>
+</ul>
+</section>
+<section id="recommended-text" class="slide level2">
+<h2>Recommended Text</h2>
+<p>Basic Business Statistics: Concepts and Applications, Berenson et al, Australian 5th edition, Pearson, 2018, ISBN 9781488620201.</p>
+<ul>
+<li>This textbook is available online via the Monash Library here.</li>
+</ul>
+</section>
+<section id="your-excel-toolbelt" class="slide level2 section-slide">
+<h2>Your Excel toolbelt</h2>
+</section>
+<section id="lets-get-your-set-up-with-excel" class="slide level2">
+<h2>Let’s get your set up with Excel</h2>
+<h3 id="access-microsoft-365-free">Access Microsoft 365 <strong>FREE!</strong></h3>
+<ol type="1">
+<li>Go to <a href="https://m365.cloud.microsoft/apps">Microsoft Online</a>, enter your Monash email address and select Next.</li>
+<li>Enter your Monash account details into the Monash login page.</li>
+<li>You’ll be redirected to Microsoft Office Online.</li>
+<li>In the top-right corner, click Install apps.</li>
+<li>Select Microsoft 365 apps from the drop-down menu.</li>
+<li>Install Office on your device, though we only need Excel only</li>
+</ol>
+</section>
+<section id="toolpak---an-add-on-for-excel" class="slide level2">
+<h2><code>ToolPak</code> - an add on for Excel</h2>
+<p><strong>Windows</strong></p>
+<ol type="1">
+<li>Click the <code>File</code> menu &gt; Options to Add-Ins category</li>
+<li>In the Manage box, select Excel Add-ins to Go.</li>
+<li>In the Add-Ins box, check the Analysis ToolPak check box to OK.</li>
+</ol>
+<p><strong>Mac</strong></p>
+<ol type="1">
+<li>Go <code>Tools</code> in the top navbar menu &gt; <code>Excel Add-ins</code>.</li>
+<li>In the Add-Ins available box, check the <code>Analysis ToolPak</code> check box and click OK.</li>
+</ol>
+</section>
+<section id="excel-orientation-cells-and-references" class="slide level2">
+<h2>Excel orientation: cells and references</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p>An Excel <strong>cell</strong> holds a number, text or formula. Its <strong>column letter</strong> and <strong>row number</strong> give its address: <code>A1</code> contains <code>6</code> here.</p>
+<p>The <strong>Name Box</strong> shows the selected address; the <strong>formula bar</strong> shows its contents.</p>
+</div><div class="column" style="width:48%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-012.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 12</figcaption>
+<p><img data-src="figures/excel-primer/cell-reference.png" style="width:100.0%"></p>
+<figcaption>Excel cell A1 and formula bar</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 12. Companion PowerPoint slide 12.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image9.png, figures/etx5900/components/image10.png
-EDITABLE TEXT TRANSCRIPTION:
-Basic Concepts: Population and Sample
-Sample:
-A subset of the population selected for analysis
-• Often chosen randomly
-• Preferably representative of the population
-Statistic:
-A numerical measure that describes a
-characteristic of a sample
-Population:
-All members of a group about which you want to draw a
-conclusion.                                                         Parameter:
-A numerical measure that describes a
-(e.g. All voters in an election, all Telstra shareholders, all
-characteristic of a population.
-invoices submitted to Medicare for reimbursement, etc.)
--->
+</div></div>
+</section>
+<section id="excel-orientation-write-an-formula" class="slide level2">
+<h2>Excel orientation: Write an formula</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<ul>
+<li>Begin a formula with <code>=</code></li>
+<li>Arithmetic operators include
+<ul>
+<li><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> and <code>^</code>.</li>
+</ul></li>
+<li>Enter <code>=A1*B1</code> in <code>C1</code> to multiply values in <code>A1</code> and <code>B1</code>
+<ul>
+<li>Can also click on the cells to refer to them</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:48%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/excel-primer/arithmetic-formula.png" style="width:100.0%"></p>
+<figcaption>Multiplication in Excel</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="excel-orientation-fill-a-formula-into-adjacent-cells" class="slide level2">
+<h2>Excel orientation: Fill a formula into adjacent cells</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<ul>
+<li><p>Enter <code>=A1*B1</code> in <code>C1</code>.</p></li>
+<li><p>Double click on the <strong>fill handle</strong> at the cell’s bottom-right corner to copy the formula down.</p></li>
+<li><p>Alternatively, you can drag the formula down</p></li>
+<li><p>Relative references adjust: <code>C2</code> gets <code>=A2*B2</code>; <code>C5</code> gets <code>=A5*B5</code> and displays <code>50</code>.</p></li>
+</ul>
+</div><div class="column" style="width:48%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/excel-primer/fill-handle.png" style="width:100.0%"></p>
+<figcaption>Filled formulas in column C</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="excel-orientation-use-a-built-in-function" class="slide level2">
+<h2>Excel orientation: Use a built-in function</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<ul>
+<li><p>A <strong>function</strong> performs a calculation using inputs in parentheses.</p></li>
+<li><p><code>=SQRT(C4)</code> returns the square root of the value in <code>C4</code>. Here <code>C4</code> is <code>36</code>, so the result is <code>6</code>.</p></li>
+<li><p>Find available functions under <code>Formulas</code> &gt; <code>Insert Function</code></p></li>
+</ul>
+</div><div class="column" style="width:48%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/excel-primer/sqrt-function.png" style="width:100.0%"></p>
+<figcaption>SQRT function beside cell C4</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="excel-orientation-give-a-function-a-cell-range" class="slide level2">
+<h2>Excel orientation: Give a function a cell range</h2>
+<ul>
+<li>Rather than giving a single value in a cell, we want to refer to a range of values</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p>A colon denotes a consecutive <strong>cell range</strong>: <code>A1:A5</code> includes five cells.</p>
+<p><code>=SUM(A1:A5)</code> adds 1 through 5 to give <strong>15</strong>. <code>A:A</code> refers to all of column A.</p>
+</div><div class="column" style="width:48%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/excel-primer/sum-range.png" style="width:50.0%"></p>
+<figcaption>SUM over the A1:A5 range</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="break" class="slide level2 section-slide" data-timing="600">
+<h2>Break</h2>
+</section>
+<section id="taxonomy-of-statistics" class="slide level2 section-slide">
+<h2>Taxonomy of statistics</h2>
+</section>
+<section id="statistics" class="slide level2">
+<h2>Statistics</h2>
+<blockquote>
+<p>…is the discipline that concerns the collection, organization, analysis, interpretation, and presentation of data.</p>
+</blockquote>
+<ul>
+<li>Data can be anything! e.g.&nbsp;surveys, election votes, stock market, health data</li>
+</ul>
+</section>
+<section id="data-collection" class="slide level2">
+<h2>Data collection</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<ul>
+<li>Population
+<ul>
+<li>All members of a group about which you want to draw a conclusion.</li>
+<li>e.g.&nbsp;All voters in an election, all Telstra shareholders, all invoices submitted to Medicare for rebate</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:48%;">
+<p><img data-src="figures/diagram/population.png"></p>
+</div></div>
+</section>
+<section id="branches-of-statistics" class="slide level2">
+<h2>Branches of Statistics</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<ul>
+<li>Descriptive
+<ul>
+<li>Summarise, describe, simplify <strong>data at hand</strong></li>
+<li>e.g.&nbsp;The average speed was 37.58 km/h for the men’s 100m sprint in 2024</li>
+</ul></li>
+<li>Inferential
+<ul>
+<li>To infer/make educated guess about the wider <strong>population</strong></li>
+<li>e.g.&nbsp;Using the average running speed for 30 men in Caufield, we estimated the population average for men in VIC.</li>
+</ul></li>
+</ul>
+</div><div class="column branches-chart" style="width:48%;">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+
+<pre class="mermaid mermaid-js">flowchart TD
+  Statistics --&gt; B[Descriptive]
+  Statistics --&gt; C[Inferential]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="descriptive-statistic" class="slide level2">
+<h2>Descriptive Statistic</h2>
+<!-- 9 Textbook references: Berenson et al Basic Business Statistics, 5th edition. Chapter 1: all Chapter 2: 2.1, 2.2 (excluding stem and leaf plots), 2.3 (excluding polygons and cumulative percentage polygons), 2.4, 2.5, 2.6 Chapter 3: 3.1 (excluding the geometric mean), 3.2 (excluding the Chebyshev Rule), 3.4, 3.6 Learning Objectives: Interpret business data using descriptive statistics techniques, including the use of Excel spreadsheet functions. -->
+</section>
+<section id="types-of-variables" class="slide level2">
+<h2>Types of Variables</h2>
+<p>Types of Variables Categorical (Qualitative) Numerical (Quantitative) Nominal Ordinal Discrete Continuous 11</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=11">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 11</a></em></p>
+</section>
+<section id="basic-concepts-population-and-sample" class="slide level2">
+<h2>Basic Concepts: Population and Sample</h2>
+<p>Sample: A subset of the population selected for analysis - Often chosen randomly - Preferably representative of the population Statistic: A numerical measure that describes a characteristic of a sample Population: All members of a group about which you want to draw a conclusion. Parameter: A numerical measure that describes a (e.g.&nbsp;All voters in an election, all Telstra shareholders, all characteristic of a population. invoices submitted to Medicare for reimbursement, etc.)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=12">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 12</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image9.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 12.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image10.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 12.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-013" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-013.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 13</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 13. Companion PowerPoint slide 13.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Describing Numerical Data
-Numerical
-Data
-Central
-Quartiles                                  Variation                                 Shape
-Tendency
-Arithmetic                                                         Interquartile               Standard    Coefficient
-Median        Mode       Percentiles   Range                        Variance                                 Skewness
-Mean                                                                Range                    Deviation   of Variation
-Are there any
-What is the typical or the central                         How much variation in the distribution?                  unusual values
-value?                                                                                               that contribute to
-13                                                      the distribution?
--->
+<h3 id="describing-numerical-data">Describing Numerical Data</h3>
+<p>Numerical Data Central Quartiles Variation Shape Tendency Arithmetic Interquartile Standard Coefficient Median Mode Percentiles Range Variance Skewness Mean Range Deviation of Variation Are there any What is the typical or the central How much variation in the distribution? unusual values value? that contribute to 13 the distribution?</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=13">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 13</a></em></p>
 </section>
-<section id="source-page-014" class="slide level2">
-<h2></h2>
+<section id="common-descriptive-statistics-excel-functions" class="slide level2">
+<h2>Common descriptive statistics Excel functions</h2>
+<p>Some functions we will use over this course. <code>A:A</code> means “with all values in column A”</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Excel formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td><code>=AVERAGE(A:A)</code></td>
+</tr>
+<tr class="even">
+<td>Median</td>
+<td><code>=MEDIAN(A:A)</code></td>
+</tr>
+<tr class="odd">
+<td>Sample standard deviation</td>
+<td><code>=STDEV.S(A:A)</code></td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td><code>=MIN(A:A)</code></td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td><code>=MAX(A:A)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="variance-and-standard-deviation">Variance and Standard Deviation</h3>
+<p>Variance is the mean squared deviation from the mean. Population variance is <span class="math inline">\sigma^2</span>; sample variance is <span class="math inline">s^2</span> (an estimate of population variance). - Variance has squared units, which can be hard to interpret. Standard deviation is the square root of variance. Population standard deviation is <span class="math inline">\sigma</span>; sample standard deviation is <span class="math inline">s</span>. - Advantage: Easier to interpret as units are the same as the original data 14</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=14">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 14</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-014.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 14</figcaption>
+<p><img data-src="figures/etx5900/components/image11.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 14.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 14. Companion PowerPoint slide 14.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image11.png, figures/etx5900/components/image12.png
-EDITABLE TEXT TRANSCRIPTION:
-Variance and Standard Deviation
-Variance: Mean of the squared deviations from the mean
-Population variance: 𝝈𝟐
-Sample variance: 𝒔𝟐 (Best estimate of population variance)
-• Disadvantage: Hard to interpret (the units are squared!)
-Standard Deviation: Defined as the square root of variance ( 𝑉𝑎𝑟 )
-Population standard deviation: 𝝈
-Sample standard deviation: 𝒔 (Best estimate of population std dev)
-• Advantage: Easier to interpret as units are the same as the original data
-14
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image12.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 14.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-015" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-015.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 15</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 15. Companion PowerPoint slide 15.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image13.png
-EDITABLE TEXT TRANSCRIPTION:
-Variance and Standard Deviation - example
-Otis Elevator Company uses 1-inch-diameter elevator rails.
-There are two potential suppliers. To decide between the suppliers, the manager obtains a
-sample of 10 rails from each supplier.
-Which supplier is
-preferred?
-15
--->
-</section>
+<h3 id="variance-and-standard-deviation---example">Variance and Standard Deviation - example</h3>
+<p>Otis Elevator Company uses 1-inch-diameter elevator rails. There are two potential suppliers. To decide between the suppliers, the manager obtains a sample of 10 rails from each supplier. Which supplier is preferred? 15</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=15">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 15</a></em></p>
+
+<img data-src="figures/etx5900/components/image13.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 15.</p></section>
 <section id="source-page-016" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-016.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 16</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 16. Companion PowerPoint slide 16.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image14.png
-EDITABLE TEXT TRANSCRIPTION:
-Otis Elevator Company
-Mean and median: 1 inch for both suppliers
-Variance: Supplier 2 > Supplier 1 (0.001200 > 0.000133)
-• Supplier 1 preferred: less variation around the mean.
-• However, variances are difficult to interpret because their units are inches squared, not inches.
-Standard deviation: Supplier 2 > Supplier 1 (0.0346 > 0.0115)
-• Supplier 1’s standard deviation is about 1/3 of Supplier 2’s standard deviation. Quite a disparity!
-Given that Otis wants 1-inch diameter rails, Supplier 1 is preferred.
-16
--->
-</section>
+<h3 id="otis-elevator-company">Otis Elevator Company</h3>
+<p>Mean and median: 1 inch for both suppliers Variance: Supplier 2 &gt; Supplier 1 (0.001200 &gt; 0.000133) - Supplier 1 preferred: less variation around the mean. - However, variances are difficult to interpret because their units are inches squared, not inches. Standard deviation: Supplier 2 &gt; Supplier 1 (0.0346 &gt; 0.0115) - Supplier 1’s standard deviation is about 1/3 of Supplier 2’s standard deviation. Quite a disparity! Given that Otis wants 1-inch diameter rails, Supplier 1 is preferred. 16</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=16">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 16</a></em></p>
+
+<img data-src="figures/etx5900/components/image14.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 16.</p></section>
 <section id="source-page-017" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-017.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 17</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 17. Companion PowerPoint slide 17.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image15.png
-EDITABLE TEXT TRANSCRIPTION:
-Variance and Standard Deviation
-Although each value in the data set is used in the calculation, there are several
-disadvantages:
-• Sensitive to extreme values (outliers)
-• Measures of absolute variation, not relative variation
-• We cannot compare values that have different units
-17
--->
-</section>
+<h3 id="variance-and-standard-deviation-1">Variance and Standard Deviation</h3>
+<p>Although each value in the data set is used in the calculation, there are several disadvantages: - Sensitive to extreme values (outliers) - Measures of absolute variation, not relative variation - We cannot compare values that have different units 17</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=17">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 17</a></em></p>
+
+<img data-src="figures/etx5900/components/image15.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 17.</p></section>
 <section id="source-page-018" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-018.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 18</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 18. Companion PowerPoint slide 18.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image16.png
-EDITABLE TEXT TRANSCRIPTION:
-Coefficient of variation (CV)
-• Measures relative variation (relative to the mean)
-• Very useful for comparing the variation of two or more data sets, which are:
-✓ Measured in different units and/or
-✓ Are of different magnitudes
-• The CV is always expressed as a percentage (%)
-𝑆𝑡𝑎𝑛𝑑𝑎𝑟𝑑 𝑑𝑒𝑣𝑖𝑎𝑡𝑖𝑜𝑛
-CV =                           x 100%
-𝑀𝑒𝑎𝑛
-18
--->
-</section>
+<h3 id="coefficient-of-variation-cv-exclude">Coefficient of variation (CV) EXCLUDE</h3>
+<ul>
+<li>Measures relative variation (relative to the mean)</li>
+<li>Very useful for comparing the variation of two or more data sets, which are: check Measured in different units and/or check Are of different magnitudes</li>
+<li>The CV is always expressed as a percentage: <span class="math inline">CV=(s/\bar{x})\times100\%</span>.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=18">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 18</a></em></p>
+
+<img data-src="figures/etx5900/components/image16.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 18.</p></section>
 <section id="source-page-019" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-019.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 19</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 19. Companion PowerPoint slide 19.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Coefficient of variation (CV)
-Stock A
-– Mean price last year: $50
-Standard deviation: $5
+<h3 id="coefficient-of-variation-cv">Coefficient of variation (CV)</h3>
+<p>Stock A - Mean price last year: $50 Standard deviation: $5 <span class="math display">
 CVA = 5/50 * 100% = 10%
-Stock B
-– Mean price last year: $100
-Standard deviation:    $5
+</span> Stock B - Mean price last year: $100 Standard deviation: $5 <span class="math display">
 CVB = 5/100 * 100% = 5%
-Same standard deviation, but stock B is less variable - relative to its mean.
-19
--->
+</span> Same standard deviation, but stock B is less variable - relative to its mean. 19</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=19">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 19</a></em></p>
 </section>
 <section id="source-page-020" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-020.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 20</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 20. Companion PowerPoint slide 20.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Visualising Data
-Nominal & Ordinal                                    Discrete Data                    Continuous data
-Bar Chart              Pie Chart                          Bar Chart              Histogram                   Box plot
-Great for
-Great for
-illustrating
-illustrating                            Great for illustrating the distribution
-relativity
-portions or
-particularly for
-shares
-ordinal data
-https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization
-https://www.jmp.com/en_au/statistics-knowledge-portal/exploratory-data-analysis/types-of-graphs.html
-https://piktochart.com/blog/types-of-graphs/
-https://www.easel.ly/blog/types-of-graphs-and-charts-for-visualizing-data/
--->
-</section>
-<section id="source-page-021" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-021.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 21</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 21. Companion PowerPoint slide 21.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Getting ready with Excel: Data Analysis ToolPak
-Windows:
-Click the File tab → Options → Add-Ins category
-In the Manage box, select Excel Add-ins → Go.
-In the Add-Ins box, check the Analysis ToolPak check box → OK.
-MAC
-Click the Tools menu → Excel Add-ins.
-In the Add-Ins available box, select the Analysis ToolPak check box →
-OK.
-21
--->
-</section>
-<section id="source-page-022" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-022.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 22</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 22. Companion PowerPoint slide 22.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image19.png
-EDITABLE TEXT TRANSCRIPTION:
-Having Fun with Data Types
-Form groups of three. In your groups, find 12 hidden words in the 15 × 15 word
-search grid.
-After finding the words, classify each one into the appropriate data type.
-Use the four-column table provided below the crossword and fill in the words.
-• Nominal Data (3 words)
-• Ordinal Data (3 words)
-• Discrete Data (3 words)
-• Continuous Data (3 words)
-You have 5 minutes to complete this challenge!
-Timer
-22
-This Photo by Unknown Author is
--->
+<h3 id="visualising-data">Visualising Data</h3>
+<p>Nominal &amp; Ordinal Discrete Data Continuous data Bar Chart Pie Chart Bar Chart Histogram Box plot Great for Great for illustrating illustrating Great for illustrating the distribution relativity portions or particularly for shares ordinal data https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization https://www.jmp.com/en_au/statistics-knowledge-portal/exploratory-data-analysis/types-of-graphs.html https://piktochart.com/blog/types-of-graphs/ https://www.easel.ly/blog/types-of-graphs-and-charts-for-visualizing-data/</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=20">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 20</a></em></p>
 </section>
 <section id="source-page-023" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-023.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 23</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 23. Companion PowerPoint slide 24.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data
-We wish to compare the distribution of house prices for properties
-within/outside school zone
-Refer to the workshop data set under Module 1. Refer to the Price column
-and answer the following questions.
-a. Generate summary statistics of house prices for properties within/outside
-the school zone
-b. Draw two frequency percentage histograms.
-c. Draw two box plots
-24
--->
+<h3 id="task-1-real-estate-data">Task 1: Real Estate Data</h3>
+<p>We wish to compare the distribution of house prices for properties within/outside school zone Refer to the workshop data set under Module 1. Refer to the Price column and answer the following questions. a. Generate summary statistics of house prices for properties within/outside the school zone b. Draw two frequency percentage histograms. c.&nbsp;Draw two box plots 24</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=23">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 23</a></em></p>
 </section>
 <section id="source-page-024" class="slide level2">
 <h2></h2>
+<h3 id="instructions-for-summary-statistics">Instructions for Summary Statistics</h3>
+<ol start="5" type="1">
+<li>Highlight the relevant column and check ‘Labels in the first row’</li>
+<li>Click on Data tab and choose 3. Select Descriptive Statistics 6. Check ‘output range’ box and select a</li>
+<li>Click on Data Analysis 4. Click ‘OK’ blank cell</li>
+<li>Check the ‘Summary statistics’ box</li>
+<li>Click OK 5 6 7 8 1 2 3 4 25</li>
+</ol>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=24">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 24</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-024.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 24</figcaption>
+<p><img data-src="figures/etx5900/components/image21.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 24.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 24. Companion PowerPoint slide 25.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image21.png, figures/etx5900/components/image22.png, figures/etx5900/components/image23.png
-EDITABLE TEXT TRANSCRIPTION:
-Instructions for Summary Statistics
-5. Highlight the relevant column and check
-‘Labels in the first row’
-1. Click on Data tab and choose   3. Select Descriptive Statistics   6. Check ‘output range’ box and select a
-2. Click on Data Analysis         4. Click ‘OK’                      blank cell
-7. Check the ‘Summary statistics’ box
-8. Click OK
-5         6     7   8
-1                        2
-3               4
-25
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image22.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 24.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image23.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 24.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-025" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-025.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 25</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 25. Companion PowerPoint slide 26.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image24.emf
-EDITABLE TEXT TRANSCRIPTION:
-Average house prices
-Let’s compare the distribution of house prices within/outside school zone
-Price (School Zone) Price (Outside School Zone)
-Mean                        1258.79                     1046.04
-Median                      1225.50                       980.00
-Var                       178200.41                   130871.38
-Stdev                         422.14                      361.76
-Skewness                        1.76                        2.74
-Q1                            987.25                      858.00
-Q3                          1405.25                     1180.00
-IQR                           418.00                      322.00
-Range                       3195.00                     2430.00
-26
--->
+<h3 id="average-house-prices">Average house prices</h3>
+<p>Let’s compare the distribution of house prices within/outside school zone Price (School Zone) Price (Outside School Zone) Mean 1258.79 1046.04 Median 1225.50 980.00 Var 178200.41 130871.38 Stdev 422.14 361.76 Skewness 1.76 2.74 Q1 987.25 858.00 Q3 1405.25 1180.00 IQR 418.00 322.00 Range 3195.00 2430.00 26</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=25">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 25</a></em></p>
 </section>
 <section id="source-page-026" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-026.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 26</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 26. Companion PowerPoint slide 27.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image24.emf
-EDITABLE TEXT TRANSCRIPTION:
-Average house prices
-Let’s compare the distribution of house prices within/outside school zone
-Price (School Zone) Price (Outside School Zone)
-Mean                        1258.79                     1046.04
-Median                      1225.50                       980.00
-Var                       178200.41                   130871.38
-Stdev                         422.14                      361.76
-Skewness                        1.76                        2.74
-Q1                            987.25                      858.00
-Q3                          1405.25                     1180.00
-IQR                           418.00                      322.00
-Range                       3195.00                     2430.00
-Houses in the school zone tend to be more expensive, with higher
-mean and median                                                              27
--->
+<h3 id="average-house-prices-1">Average house prices</h3>
+<p>Let’s compare the distribution of house prices within/outside school zone Price (School Zone) Price (Outside School Zone) Mean 1258.79 1046.04 Median 1225.50 980.00 Var 178200.41 130871.38 Stdev 422.14 361.76 Skewness 1.76 2.74 Q1 987.25 858.00 Q3 1405.25 1180.00 IQR 418.00 322.00 Range 3195.00 2430.00 Houses in the school zone tend to be more expensive, with higher mean and median 27</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=26">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 26</a></em></p>
 </section>
 <section id="source-page-027" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-027.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 27</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 27. Companion PowerPoint slide 28.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image24.emf
-EDITABLE TEXT TRANSCRIPTION:
-Measures of Variability
-Price (School Zone) Price (Outside School Zone)
-•    Range
-Mean                  1258.79                     1046.04
-•    Inter-quartile   Median                1225.50                       980.00
-range (IQR)      Var                 178200.41                   130871.38
-Stdev                   422.14                      361.76
-•    Variance
-Skewness                   1.76                        2.74
-•    Standard         Q1                      987.25                      858.00
-deviation        Q3                    1405.25                     1180.00
-IQR                     418.00                      322.00
-•    Coefficient of
-Variation (CV)   Range                 3195.00                     2430.00
-What do these statistics measure?
-28
--->
+<h3 id="measures-of-variability">Measures of Variability</h3>
+<p>Price (School Zone) Price (Outside School Zone) - Range Mean 1258.79 1046.04 - Inter-quartile Median 1225.50 980.00 range (IQR) Var 178200.41 130871.38 Stdev 422.14 361.76 - Variance Skewness 1.76 2.74 - Standard Q1 987.25 858.00 deviation Q3 1405.25 1180.00 IQR 418.00 322.00 - Coefficient of Variation (CV) Range 3195.00 2430.00 What do these statistics measure? 28</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=27">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 27</a></em></p>
 </section>
 <section id="source-page-028" class="slide level2">
 <h2></h2>
+<h3 id="measures-of-variability-1">Measures of Variability</h3>
+<p>Range to The difference between the maximum and the minimum values. It relies just on the two most extreme values in the dataset. =MAX(…)-MIN(…) Interquartile Range (IQR) to the spread of the middle 50% of the data. IQR =Q3 -Q1 Q1 =QUARTILE.EXC(…,1) Q3 =QUARTILE.EXC(…,3) Variance: average of the squared deviations (distance) from the mean =VAR.S(…) Standard Deviation = Variance . =STDEV.S(…) Standard deviation Coefficient of Variation (cv): measures relative variation = Mean x 100% 29</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=28">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 28</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-028.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 28</figcaption>
+<p><img data-src="figures/etx5900/components/image24.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 28.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 28. Companion PowerPoint slide 29.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image24.png, figures/etx5900/components/image25.png
-EDITABLE TEXT TRANSCRIPTION:
-Measures of Variability
-Range → The difference between the maximum and the minimum values. It relies just on the
-two most extreme values in the dataset.                           =MAX(…)-MIN(…)
-Interquartile Range (IQR) → the spread of the middle 50% of the data. IQR =Q3 -Q1
-Q1 =QUARTILE.EXC(…,1)                      Q3 =QUARTILE.EXC(…,3)
-Variance: average of the squared deviations (distance) from the mean                  =VAR.S(…)
-Standard Deviation = Variance .                                                      =STDEV.S(…)
-𝑆𝑡𝑎𝑛𝑑𝑎𝑟𝑑 𝑑𝑒𝑣𝑖𝑎𝑡𝑖𝑜𝑛
-Coefficient of Variation (cv): measures relative variation   =
-𝑀𝑒𝑎𝑛
-x 100%
-29
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image25.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 28.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-029" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-029.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 29</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 29. Companion PowerPoint slide 30.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image24.emf
-EDITABLE TEXT TRANSCRIPTION:
-Variability of house price
-Price (School Zone) Price (Outside School Zone)
-Mean                           1258.79                     1046.04
-Median                         1225.50                       980.00
-Var                          178200.41                   130871.38
-Stdev                            422.14                      361.76
-Skewness                           1.76                        2.74
-Q1                               987.25                      858.00
-Q3                             1405.25                     1180.00
-IQR                              418.00                      322.00
-Range                          3195.00                     2430.00
-There is a greater degree of absolute variability of houses in the school zone and only
-slightly lower relative variability.
-Range: $3.195m vs $2.43m; IQR:$418k vs $322k; standard deviation: $422k vs $362k
-CV: 33.54% vs 34.45% (standard deviation/mean *100%)                                30
--->
+<h3 id="variability-of-house-price">Variability of house price</h3>
+<p>Price (School Zone) Price (Outside School Zone) Mean 1258.79 1046.04 Median 1225.50 980.00 Var 178200.41 130871.38 Stdev 422.14 361.76 Skewness 1.76 2.74 Q1 987.25 858.00 Q3 1405.25 1180.00 IQR 418.00 322.00 Range 3195.00 2430.00 There is a greater degree of absolute variability of houses in the school zone and only slightly lower relative variability. Range: $3.195m vs $2.43m; IQR:$418k vs $322k; standard deviation: $422k vs $362k CV: 33.54% vs 34.45% (standard deviation/mean *100%) 30</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=29">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 29</a></em></p>
 </section>
 <section id="source-page-030" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-030.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 30</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 30. Companion PowerPoint slide 31.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Shape of Distributions
-Skewness measures how symmetric the distribution is
-• Positive statistic → positive skewed, right tail longer than the left tail
-• Negative statistic → negative skewed, left tail longer than the right tail
-Left-Skewed                       Symmetric                            Right-Skewed
-(Skewness < 0)                   (Skewness = 0)                        (Skewness > 0)
-Mean < Median                    Mean = Median                       Mean > Median
-Some very “low” values           An equal number of “low” &            Some very “high” values
-The mean is pulled left toward     “high” values. The mean stays      The mean is pulled right toward
-the “tail” of the distribution    in the centre of the distribution     the “tail” of the distribution
--->
+<h3 id="shape-of-distributions">Shape of Distributions</h3>
+<p>Skewness measures how symmetric the distribution is - Positive statistic to positive skewed, right tail longer than the left tail - Negative statistic to negative skewed, left tail longer than the right tail Left-Skewed Symmetric Right-Skewed <span class="math display">
+(Skewness &lt; 0)                   (Skewness = 0)                        (Skewness &gt; 0)
+</span> Mean &lt; Median Mean = Median Mean &gt; Median Some very “low” values An equal number of “low” &amp; Some very “high” values The mean is pulled left toward “high” values. The mean stays The mean is pulled right toward the “tail” of the distribution in the centre of the distribution the “tail” of the distribution</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=30">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 30</a></em></p>
 </section>
 <section id="source-page-031" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-031.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 31</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 31. Companion PowerPoint slide 32.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Visualization of Numerical Data using Box Plot
-Max          A graphical representation of the data
-based on the 5-number summary.
-Refer to page 121 of the textbook.
-Q3
-Mean
-Median
-Q1
-Min
-32
--->
+<h3 id="visualization-of-numerical-data-using-box-plot">Visualization of Numerical Data using Box Plot</h3>
+<p>Max A graphical representation of the data based on the 5-number summary. Refer to page 121 of the textbook. Q3 Mean Median Q1 Min 32</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=31">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 31</a></em></p>
 </section>
 <section id="source-page-032" class="slide level2">
 <h2></h2>
+<h3 id="shape-of-distributions-and-box-plots">Shape of Distributions and Box Plots</h3>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=32">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 32</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-032.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 32</figcaption>
+<p><img data-src="figures/etx5900/components/image26.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 32.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 32. Companion PowerPoint slide 33.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image26.png, figures/etx5900/components/image27.png, figures/etx5900/components/image28.png, figures/etx5900/components/image29.png, figures/etx5900/components/image30.png, figures/etx5900/components/image31.png
-EDITABLE TEXT TRANSCRIPTION:
-Shape of Distributions and Box Plots
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image27.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 32.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image28.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 32.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image29.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 32.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image30.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 32.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image31.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 32.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-033" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-033.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 33</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 33. Companion PowerPoint slide 34.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image24.emf
-EDITABLE TEXT TRANSCRIPTION:
-Example: Shape of the house price distribution
-Price (School Zone) Price (Outside School Zone)
-Mean                          1258.79                     1046.04
-Median                        1225.50                       980.00
-Var                         178200.41                   130871.38
-Stdev                           422.14                      361.76
-Skewness                          1.76                        2.74
-Q1                              987.25                      858.00
-Q3                            1405.25                     1180.00
-IQR                             418.00                      322.00
-Range                         3195.00                     2430.00
-• Both distributions are positively skewed.
-• There are some properties that are very highly priced
-34
--->
+<h3 id="example-shape-of-the-house-price-distribution">Example: Shape of the house price distribution</h3>
+<p>Price (School Zone) Price (Outside School Zone) Mean 1258.79 1046.04 Median 1225.50 980.00 Var 178200.41 130871.38 Stdev 422.14 361.76 Skewness 1.76 2.74 Q1 987.25 858.00 Q3 1405.25 1180.00 IQR 418.00 322.00 Range 3195.00 2430.00 - Both distributions are positively skewed. - There are some properties that are very highly priced 34</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=33">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 33</a></em></p>
 </section>
 <section id="source-page-034" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-034.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 34</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 34. Companion PowerPoint slide 35.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Visualization of Numerical Data using Histograms
-House Prices School Zone                     Histogram of House Prices (Outside School Zone)
-0.3                                           16
-14
-0.25
-12
-0.2                                           10
-Percentage
-8
-0.15
-6
-0.1
-4
-2
-0.05
-0
-0
-Prices ($)
-35
--->
+<h3 id="visualization-of-numerical-data-using-histograms">Visualization of Numerical Data using Histograms</h3>
+<p>House Prices School Zone Histogram of House Prices (Outside School Zone) 0.3 16 14 0.25 12 0.2 10 Percentage 8 0.15 6 0.1 4 2 0.05 0 0 Prices ($) 35</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=34">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 34</a></em></p>
 </section>
 <section id="source-page-035" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-035.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 35</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 35. Companion PowerPoint slide 36.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image32.png
-EDITABLE TEXT TRANSCRIPTION:
-Visualization of Numerical Data using Box Plot
-Insert > Histogram >
-Box and Whisker
-You can plot
-multiple data series
-on the same plot
-As long as they are
-of the same units!
-36
--->
-</section>
+<h3 id="visualization-of-numerical-data-using-box-plot-1">Visualization of Numerical Data using Box Plot</h3>
+<p>Insert &gt; Histogram &gt; Box and Whisker You can plot multiple data series on the same plot As long as they are of the same units! 36</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=35">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 35</a></em></p>
+
+<img data-src="figures/etx5900/components/image32.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 35.</p></section>
 <section id="source-page-036" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-036.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 36</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 36. Companion PowerPoint slide 37.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image220.png
-EDITABLE TEXT TRANSCRIPTION:
-Visualization of Numerical Data using Box Plot
-• Houses outside the school
-zone tend to be less
-expensive
-• The distribution is less
-variable in absolute terms
-(tighter box) for houses
-outside the zone and only
-marginally higher (or almost
-the same) in terms of relative
-variability
-• There are relatively more
-positive outliers for houses
-within the school zone.
-37
--->
-</section>
+<h3 id="visualization-of-numerical-data-using-box-plot-2">Visualization of Numerical Data using Box Plot</h3>
+<ul>
+<li>Houses outside the school zone tend to be less expensive</li>
+<li>The distribution is less variable in absolute terms (tighter box) for houses outside the zone and only marginally higher (or almost the same) in terms of relative variability</li>
+<li>There are relatively more positive outliers for houses within the school zone. 37</li>
+</ul>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=36">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 36</a></em></p>
+
+<img data-src="figures/etx5900/components/image220.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 36.</p></section>
 <section id="source-page-037" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-037.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 37</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 37. Companion PowerPoint slide 38.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Visualisation_Real Estate Data
-Refer to the RealEstate worksheet
-Variable                Type of Data         Type of graph
-Price ($’000)         Numeric (continuous)
-No of bedrooms           Numeric (discrete)
-1. Construct relative frequency tables for the number of bedrooms
-2. Draw an appropriate graph.
--->
+<h3 id="task-2-visualisation_real-estate-data">Task 2: Visualisation_Real Estate Data</h3>
+<p>Refer to the RealEstate worksheet Variable Type of Data Type of graph Price ($’000) Numeric (continuous) No of bedrooms Numeric (discrete) 1. Construct relative frequency tables for the number of bedrooms 2. Draw an appropriate graph.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=37">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 37</a></em></p>
 </section>
 <section id="source-page-038" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-038.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 38</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 38. Companion PowerPoint slide 39.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image33.png
-EDITABLE TEXT TRANSCRIPTION:
-Solutions
-Refer to chart
-1. Construct a relative frequency table for the variable “No of Bedrooms”
-2. Draw an appropriate graph.
-Relative
-Beds Frequency                                                     Distribution of number of bedrooms
-Frequency                            45.00%
-2       29       8.81%                              40.00%
-35.00%
-3      138       41.95%                             30.00%
-Percentage
-4      108       32.83%                             25.00%
-20.00%
-5       45       13.68%
-15.00%
-6        8       2.43%                              10.00%
-8        1       0.30%                              5.00%
-0.00%    2        3          4           5        6   8
-Grand                                                                            Number of bedrooms
-329      100.00%
-Total
--->
-</section>
+<h3 id="solutions">Solutions</h3>
+<p>Refer to chart 1. Construct a relative frequency table for the variable “No of Bedrooms” 2. Draw an appropriate graph. Relative Beds Frequency Distribution of number of bedrooms Frequency 45.00% 2 29 8.81% 40.00% 35.00% 3 138 41.95% 30.00% Percentage 4 108 32.83% 25.00% 20.00% 5 45 13.68% 15.00% 6 8 2.43% 10.00% 8 1 0.30% 5.00% 0.00% 2 3 4 5 6 8 Grand Number of bedrooms 329 100.00% Total</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=38">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 38</a></em></p>
+
+<img data-src="figures/etx5900/components/image33.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 38.</p></section>
 <section id="source-page-039" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-039.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 39</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 39. Companion PowerPoint slide 40.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 3: Visualisation for Continuous Data_Price
-1. Construct a relative frequency table for the variable “Price”
-2. Draw an appropriate graph.
-Bin Range       Frequency    Relative Frequency
-500-999
-1000-1499
-1500-1999
-2000-2499
-2500-2999
-3000-3499
-3500-3999
--->
+<h3 id="task-3-visualisation-for-continuous-data_price">Task 3: Visualisation for Continuous Data_Price</h3>
+<ol type="1">
+<li>Construct a relative frequency table for the variable “Price”</li>
+<li>Draw an appropriate graph. Bin Range Frequency Relative Frequency 500-999 1000-1499 1500-1999 2000-2499 2500-2999 3000-3499 3500-3999</li>
+</ol>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=39">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 39</a></em></p>
 </section>
 <section id="source-page-040" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-040.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 40</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 40. Companion PowerPoint slide 41.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image34.png
-EDITABLE TEXT TRANSCRIPTION:
-1. H i g h l i g h t o n e d a t a cel l
-2. Insert ➔ Pivot table (in Mac Data ➔ Pivot table)
-2. I n ser t ➔ P i v o t t a b l e (in M a c Data ➔ P i v o t t ab l e )
-3 . S e l e c t e xi s t i n g w o r k s h e e t
-4 . S p e c i f y t h e c el l l o c a t i o n             ➔OK
-5 . D r ag a n d d r o p p r i c e t o t h e ' R o w s ' q u a d r a n t
-6 . D r ag a n d d r o p p r i c e ag ai n t o t h e ' v a l u e s ' q u a d r a n t
-P i v o t T a b l e
-•         .
-..   L
-.
-•           •
-Price
-($'o00)
-l   I 1100         •
-4     1095
-••                                                        •
-•                                                                •
-•     1150
-•
-•     1087
-•
-870
-•
-120 0
-•
--->
-</section>
+<h3 id="h-i-g-h-l-i-g-h-t-o-n-e-d-a-t-a-cel-l">1. H i g h l i g h t o n e d a t a cel l</h3>
+<ol start="2" type="1">
+<li>Insert to Pivot table (in Mac Data to Pivot table)</li>
+<li>I n ser t to P i v o t t a b l e (in M a c Data to P i v o t t ab l e ) 3 . S e l e c t e xi s t i n g w o r k s h e e t 4 . S p e c i f y t h e c el l l o c a t i o n toOK 5 . D r ag a n d d r o p p r i c e t o t h e ’ R o w s ’ q u a d r a n t 6 . D r ag a n d d r o p p r i c e ag ai n t o t h e ’ v a l u e s ’ q u a d r a n t P i v o t T a b l e</li>
+</ol>
+<ul>
+<li>. .. L</li>
+<li><ul>
+<li>Price ($’o00) l I 1100 - 4 1095 – -</li>
+</ul></li>
+<li><ul>
+<li></li>
+</ul></li>
+<li>1150</li>
+<li>1087 870 120 0</li>
+</ul>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=40">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 40</a></em></p>
+
+<img data-src="figures/etx5900/components/image34.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 40.</p></section>
 <section id="source-page-041" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-041.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 41</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 41. Companion PowerPoint slide 42.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image35.png
-EDITABLE TEXT TRANSCRIPTION:
-C h a n g e t h e v a l u e fi e ld                  S e l e c t ' V a l u e fi e l d                S h o w v alu e s a s - > % o f                   R i g h t c li c k o n a n y o f t h e
-s e t t i n g s ' s u m o f P r i c e' to           se t ti n g s ' -> s u m m a r i s e                          G r a n d Total                       v a l u e s in t h e fi r s t c o l u m n
-C o u n t o f Price                      v a l u e fi e l d b y - > c o u n t                                                                            ( P r i c e $ ' 0 0 0}
-P r ic e ($'o00)
-0 . 3 0%
-550                   0 . 3 0%
-5 70                  0 . 3 0%
-0 . 3 0%
-0 . 3 0%
-•••
-64 S
-0 . 3 0%
-0 . 3 0%
-65 0                  0. 61%
-0 . 3 0%
-0.61%
-...
-0 . 3 0%
-0 . 3 0%
-0 . 3 0%
-S e l e c t G r o u p (T he w i n d o w        C h a n g e : s t a r t i n g a t 50 0,                                                                                   Final Table
-T h i s is t h e c r i t e r i a f o r g r o u p i n g
-o n t h e r i g h t w i l l p o p up)         end inR at 3 7 0 0 , bv 500
-G ro up in g                                   X                                                              Price ($'000)          • C o u nt o f Price ($'000)
-A uto                                                                                                         500-999                                    31.61
-Au to
-1000-1499                                   52.58%
-St art ing at:   505                                 5 t a rt i n g at:   500                         1500-1999                                  10.64
-.Ending at:      3700                                                                                 2000-2499                                   2.74%
-E n d i n g at:      3700
-By:              , o oo                                                                               2500-2999                                   1.52
-By:
-3000-3499                                   0.61%
-Cancel                                                                    350()..3999
-Can c el         G ra nd T o b i
--->
-</section>
+<h3 id="c-h-a-n-g-e-t-h-e-v-a-l-u-e-fi-e-ld-s-e-l-e-c-t-v-a-l-u-e-fi-e-l-d-s-h-o-w-v-alu-e-s-a-s---o-f-r-i-g-h-t-c-li-c-k-o-n-a-n-y-o-f-t-h-e">C h a n g e t h e v a l u e fi e ld S e l e c t ’ V a l u e fi e l d S h o w v alu e s a s - &gt; % o f R i g h t c li c k o n a n y o f t h e</h3>
+<p>s e t t i n g s ’ s u m o f P r i c e’ to se t ti n g s ’ -&gt; s u m m a r i s e G r a n d Total v a l u e s in t h e fi r s t c o l u m n C o u n t o f Price v a l u e fi e l d b y - &gt; c o u n t ( P r i c e $ ’ 0 0 0} P r ic e ($’o00) 0 . 3 0% 550 0 . 3 0% 5 70 0 . 3 0% 0 . 3 0% 0 . 3 0% — 64 S 0 . 3 0% 0 . 3 0% 65 0 0. 61% 0 . 3 0% 0.61% … 0 . 3 0% 0 . 3 0% 0 . 3 0% S e l e c t G r o u p (T he w i n d o w C h a n g e : s t a r t i n g a t 50 0, Final Table T h i s is t h e c r i t e r i a f o r g r o u p i n g o n t h e r i g h t w i l l p o p up) end inR at 3 7 0 0 , bv 500 G ro up in g X Price ($’000) - C o u nt o f Price ($’000) A uto 500-999 31.61 Au to 1000-1499 52.58% St art ing at: 505 5 t a rt i n g at: 500 1500-1999 10.64 .Ending at: 3700 2000-2499 2.74% E n d i n g at: 3700 By: , o oo 2500-2999 1.52 By: 3000-3499 0.61% Cancel 350()..3999 Can c el G ra nd T o b i</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=41">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 41</a></em></p>
+
+<img data-src="figures/etx5900/components/image35.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 41.</p></section>
 <section id="source-page-042" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-042.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 42</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 42. Companion PowerPoint slide 43.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image36.png
-EDITABLE TEXT TRANSCRIPTION:
-1. Highlight the pivot table
-1. Highlight the p ivot tab le
-2. Insert a bar char t
-3. To change the bar chart to a histo gram, click on any o f the bars in the bar chart
-4. Right click and Select f o r ma t data series
-5. Change the gap w i dth to O (zero)
-OlstnbtJtJonof pncl!
-Format Data Series   X
-I 11
--->
-</section>
+<h3 id="highlight-the-pivot-table">1. Highlight the pivot table</h3>
+<ol type="1">
+<li>Highlight the p ivot tab le</li>
+<li>Insert a bar char t</li>
+<li>To change the bar chart to a histo gram, click on any o f the bars in the bar chart</li>
+<li>Right click and Select f o r ma t data series</li>
+<li>Change the gap w i dth to O (zero) OlstnbtJtJonof pncl! Format Data Series X I 11</li>
+</ol>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=42">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 42</a></em></p>
+
+<img data-src="figures/etx5900/components/image36.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 42.</p></section>
 <section id="source-page-043" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-043.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 43</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 43. Companion PowerPoint slide 44.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image37.png
-EDITABLE TEXT TRANSCRIPTION:
-Solutions for Task 3
-Relative
-Bin Range Frequency
-Frequency
-500-999      104        31.61%
-1000-1499    173        52.58%
-1500-1999     35        10.64%
-2000-2499     9         2.74%
-2500-2999     5         1.52%
-3000-3499     2         0.61%
-3500-3999     1         0.30%
--->
-</section>
+<h3 id="solutions-for-task-3">Solutions for Task 3</h3>
+<p>Relative Bin Range Frequency Frequency 500-999 104 31.61% 1000-1499 173 52.58% 1500-1999 35 10.64% 2000-2499 9 2.74% 2500-2999 5 1.52% 3000-3499 2 0.61% 3500-3999 1 0.30%</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=43">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 43</a></em></p>
+
+<img data-src="figures/etx5900/components/image37.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 43.</p></section>
 <section id="source-page-044" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-044.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 1, page 44</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 44. Companion PowerPoint slide 45.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Key Takeaways
-Key Takeaways
-• Basic Statistical Concepts
-• Data need not be numeric, it can be categorical and discrete
-• Constructing frequency tables of data using Pivot Tables
-• Charting different types of data
--->
+<h3 id="key-takeaways">Key Takeaways</h3>
+<p>Key Takeaways - Basic Statistical Concepts - Data need not be numeric, it can be categorical and discrete - Constructing frequency tables of data using Pivot Tables - Charting different types of data</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=44">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 44</a></em></p>
 
 
 </section>
@@ -1498,6 +1223,13 @@ Key Takeaways
       });
     </script>
     <script>
+    // Give section dividers a background that fills the letterboxed slide.
+    document.querySelectorAll('section.section-slide').forEach(function (slide) {
+      if (!slide.hasAttribute('data-background-color')) {
+        slide.setAttribute('data-background-color', '#006dae');
+      }
+    });
+
     // Copy over background colors to new div
     divs = document.querySelectorAll('[data-background-color]');
 
@@ -1631,6 +1363,61 @@ Key Takeaways
     // Move progress bar
     menu_div = document.querySelector(".progress");
     document.querySelector(".slides").appendChild(menu_div);
+    </script>
+
+    <script>
+    // Show a manually started countdown on slides with data-timing="seconds".
+    (function () {
+      let interval;
+
+      function showCountdown(slide) {
+        clearInterval(interval);
+        if (!slide) return;
+        const duration = Number(slide.dataset.timing);
+        if (!Number.isFinite(duration) || duration <= 0) return;
+
+        let timer = slide.querySelector('.slide-countdown');
+        if (!timer) {
+          timer = document.createElement('div');
+          timer.className = 'slide-countdown';
+          timer.innerHTML = '<span role="timer"></span><button type="button">Start</button>';
+          slide.appendChild(timer);
+        }
+        const clock = timer.querySelector('[role="timer"]');
+        const button = timer.querySelector('button');
+        const format = seconds => String(Math.floor(seconds / 60)).padStart(2, '0') + ':' +
+          String(seconds % 60).padStart(2, '0');
+        clock.textContent = format(Math.ceil(duration));
+        button.hidden = false;
+        timer.onclick = function (event) {
+          if (button.hidden) return;
+          event.stopPropagation();
+          button.hidden = true;
+          const end = Date.now() + duration * 1000;
+          function update() {
+            const remaining = Math.max(0, Math.ceil((end - Date.now()) / 1000));
+            clock.textContent = format(remaining);
+            if (remaining === 0) clearInterval(interval);
+          }
+          update();
+          interval = setInterval(update, 250);
+        };
+      }
+
+      Reveal.on('slidechanged', event => showCountdown(event.currentSlide));
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' || event.repeat) return;
+        if (event.target instanceof Element &&
+            event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+        const slide = Reveal.getCurrentSlide();
+        const button = slide && slide.querySelector('.slide-countdown button');
+        if (!button || button.hidden) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        button.click();
+      }, true);
+      showCountdown(Reveal.getCurrentSlide());
+    })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">

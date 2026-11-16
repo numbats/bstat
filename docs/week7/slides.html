@@ -9,6 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.11.9">
 
+  <meta name="dcterms.date" content="2027-01-19">
   <title>Business Statistics – slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -33,8 +34,90 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ecfa366c05ac1ff1a677a8c5facd037d.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d7d650050b1ce3e072e4f0f18efcf387.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -135,715 +218,464 @@
 
 
 <section id="source-page-001" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-001.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 1</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 1.
-EDITABLE TEXT TRANSCRIPTION:
-ETF1100 Business Statistics
-Seminar
-Week 10: Introduction to Business Modelling
-Date: 11 May 2026 | Chief Examiner: Alyssa Hu
--->
+<h2>Introduction to time series</h2>
+<h3 id="etx1100-etx5900-week-7">ETX1100 / ETX5900 — Week 7</h3>
+<p>Linear trends, seasonal indices and mean absolute deviation (MAD).</p>
+<p>The teaching content is adapted from the ETB1100 Business Statistics Seminar Week 11 deck (14 October 2026). Use the current course schedule and Moodle for class and assessment details.</p>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=1">ETB1100 Seminar Week 11, page 1</a>.</em></p>
 </section>
 <section id="source-page-002" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-002.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 2</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 2.
-EDITABLE TEXT TRANSCRIPTION:
-Reminders/FAQs
-Please make sure you are reading unit announcements!
-Weekly recordings and assignments: Moodle > Learning tab > Week 10
-
-
-How can I ask questions outside of class time?
-• All Day TA chatbot                 Moodle > Learning > Week 10 > Overview
-• Weekly Q&A Discussion Forum
-• Join student consultation hours    Moodle > Unit Information
-
-
-• ETF1100.Caulfield-x@monash.edu for personal/sensitive
-  communication
--->
+<h2>Source reminders (historical)</h2>
+<p>The original seminar’s reminders were:</p>
+<ul>
+<li>No more post-workshop exercises.</li>
+<li>Submit the in-tutorial exercise on Week 10 regression predictor tests.</li>
+<li>Written Assignment Parts A and B were due <strong>16 October 2026 at 11:55 pm</strong>. The source directed students to Special Consideration for extenuating circumstances and noted late penalties otherwise.</li>
+<li>The source Week 12 revision module was dedicated to the final exam.</li>
+</ul>
+<p><strong>These are historical ETB1100 arrangements.</strong> Use the current ETX1100/ETX5900 schedule and Moodle for live deadlines and activities.</p>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=2">ETB1100 Seminar Week 11, page 2</a>.</em></p>
 </section>
 <section id="source-page-003" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-003.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 3</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 3.
-EDITABLE TEXT TRANSCRIPTION:
-Case Study Statistics
-• Some students requested summary statistics for the case study:
-  • Mean: 88.34%, with standard deviation 13.23%
-  • Median: 92.50%
-  • Keep up the great work!
--->
+<h2>Source schedule (historical)</h2>
+<ul>
+<li>Week 11, 12–16 October 2026: time-series seminar, workshop and tutorial exercise.</li>
+<li>Week 12, 19–23 October 2026: revision, consultation and exam practice.</li>
+<li>26 October–12 November 2026: pre-exam consultation hours.</li>
+<li>13 November 2026: ETB1100 exam; the source directed students to Allocate+.</li>
+</ul>
+<p><strong>This source timetable does not set the current intensive’s class or assessment dates.</strong></p>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=3">ETB1100 Seminar Week 11, page 3</a>.</em></p>
 </section>
 <section id="source-page-004" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-004.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 4</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 4.
-EDITABLE TEXT TRANSCRIPTION:
-Overview
-• Last week, we continued learning about the multiple linear regression
-  model (MLR). This included testing for significant coefficients and
-  overall model fit, evaluating models, and handling categorical
-  variables.
-• This week, we will focus on spreadsheet-based business modelling,
-  which can help us solve optimisation problems.
-• We will use the Week 10 Seminar Data.
--->
+<h2>Overview</h2>
+<p>We have used regression to study relationships between variables and checked residuals to assess model fit. This week, <strong>time itself</strong> becomes the explanatory variable.</p>
+<p>We will work through trend forecasts, seasonal adjustments and forecast accuracy together.</p>
+<p><em>Adapted from <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=4">ETB1100 Seminar Week 11, page 4</a>.</em></p>
 </section>
 <section id="source-page-005" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-005.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 5</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 5.
-EDITABLE TEXT TRANSCRIPTION:
-Learning Outcomes
-• Developing skills in spreadsheet modeling of business problems
-• Solving optimisation problems in a business setting using Excel
-• Exploring methods for sensitivity analysis
-• Developing an understanding for how simulation can be used to
-  address business problems
--->
+<h2>Learning outcomes</h2>
+<p>By the end of this seminar, you should be able to:</p>
+<ul>
+<li>model and forecast a time series using a <strong>linear trend</strong>;</li>
+<li>incorporate and interpret <strong>seasonal indices</strong>; and</li>
+<li>calculate, interpret and compare <strong>MAD</strong> for forecasts.</li>
+</ul>
+<p><em>Adapted to the current Week 7 scope from <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=5">ETB1100 Seminar Week 11, page 5</a>.</em></p>
 </section>
 <section id="source-page-006" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-006.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 6</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 6.
-EDITABLE TEXT TRANSCRIPTION:
-Motivation
-Spreadsheet-based business modelling techniques have many
-applications in business and economics:
- • Determining optimal price of product
- • Balancing marketing mix
- • Investing decisions
- • Identifying production level at different manufacturing plants
- • Simplifying logistics with location and number of warehouses
--->
+<h2>Quick recap: types of data</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Data arrangement</th>
+<th>What changes?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cross-sectional</td>
+<td>Observations are taken across units or subjects.</td>
+</tr>
+<tr class="even">
+<td>Time series</td>
+<td>Observations are ordered through time.</td>
+</tr>
+</tbody>
+</table>
+<p>For this seminar, focus on two time-series features:</p>
+<ul>
+<li><strong>Trend:</strong> persistent long-term upward or downward movement.</li>
+<li><strong>Seasonality:</strong> a regular periodic pattern, often within a year.</li>
+</ul>
+<p><em>Adapted from <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=6">ETB1100 Seminar Week 11, page 6</a>.</em></p>
 </section>
 <section id="source-page-007" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-007.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 7</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 7.
-EDITABLE TEXT TRANSCRIPTION:
-What is optimisation?
-Process of finding the best decisions for a particular measure of
-performance
-
-In defining “best decision” and “performance”, we need to have:
-• Known input parameters
-• A set of decisions – things that the business can control
-• Some constraints on the decision
-• An objective or criteria to reach
-
-                These can be formulated to a model.
--->
+<h2>When time is the predictor</h2>
+<p>So far, regression has related a response to one or more explanatory variables. What if <strong>time</strong> is central to the analysis?</p>
+<p>Time-series analysis can help us:</p>
+<ul>
+<li>describe patterns over time;</li>
+<li>model trend and seasonality; and</li>
+<li>forecast future values.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=7">ETB1100 Seminar Week 11, page 7</a>.</em></p>
 </section>
 <section id="source-page-008" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-008.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 8</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 8.
-EDITABLE TEXT TRANSCRIPTION:
-Example:
-A business firm wants to determine a selling price for Product A. The
-unit cost of Product A is known to be $40 and the demand curve is
-known to be 𝑦 = 800 − 5𝑥.
-   • 𝑥: selling price per unit of Product A
-   • 𝑦: quarterly demand for Product A
-Thus,
-• Known input parameters: 40 (unit cost), -5 (marginal effect of price
-   on demand), 800 (maximum demand)
-• A set of decisions – things that the business can control: 𝑥
-• Some constraints on the decision: 𝑥 ≥ 40, so that profit 𝑧 ≥ 0
-• An objective or criteria: maximize quarterly profit 𝑧 = 𝑥 − 40 𝑦
--->
+<h2>Trend and seasonal components</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Trend</td>
+<td>Persistent long-term movement.</td>
+<td>GDP rising over time.</td>
+</tr>
+<tr class="even">
+<td>Seasonal</td>
+<td>Regular within-year pattern that repeats.</td>
+<td>Retail sales rising before Christmas and falling afterward.</td>
+</tr>
+</tbody>
+</table>
+<p>We will use trend to describe the underlying direction, then use a seasonal index to adjust a forecast for the relevant season.</p>
+<p><em>Selected components from <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=8">ETB1100 Seminar Week 11, page 8</a>.</em></p>
 </section>
 <section id="source-page-009" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-009.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 9</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 9.
-EDITABLE TEXT TRANSCRIPTION:
-How can we use Excel to model this?
-1. Excel’s Data Table Function
-   It explores how the objective changes if decisions or input
-   parameters change. Returns table of calculations/results.
-2. Excel’s Solver
-   It runs constrained optimisation that solves a maximization or
-   minimization problem subject to constraints. Returns best feasible
-   solution.
--->
+<h2>Modelling a linear trend</h2>
+<p>When a time series has a long-term trend, use time as the explanatory variable:</p>
+<p><span class="math display">
+\widehat{Y}_t = \widehat{\beta}_0 + \widehat{\beta}_1 t.
+</span></p>
+<ul>
+<li><span class="math inline">t</span> is the numerical time index.</li>
+<li><span class="math inline">\widehat{Y}_t</span> is the estimated trend value at time <span class="math inline">t</span>.</li>
+<li><span class="math inline">\widehat{\beta}_1</span> is the estimated average change in <span class="math inline">Y</span> per observed period.</li>
+</ul>
+<p>The intercept is the estimated trend value before the observed series begins, so it is not the focus here.</p>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=9">ETB1100 Seminar Week 11, page 9</a>.</em></p>
 </section>
 <section id="source-page-010" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-010.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 10</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 10.
-EDITABLE TEXT TRANSCRIPTION:
-How can we use Excel to model this?
-Setting up the mathematical formula in Excel:
-
-
-
-•   Inputs
-•   Decision
-•   Necessary Calculations
-•   Objective
-
-
-
-See demo and recording.
--->
+<h2>Time-index convention</h2>
+<p>Number the periods <span class="math inline">t=1,2,3,\ldots,n</span>. The first observed period is <span class="math inline">t=1</span>, the second is <span class="math inline">t=2</span>, and so on.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">t</span></th>
+<th>Annual series</th>
+<th>Quarterly series</th>
+<th>Monthly series</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>2022</td>
+<td>Q1 2022</td>
+<td>January 2022</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>2023</td>
+<td>Q2 2022</td>
+<td>February 2022</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>2024</td>
+<td>Q3 2022</td>
+<td>March 2022</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>2025</td>
+<td>Q4 2022</td>
+<td>April 2022</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=10">ETB1100 Seminar Week 11, page 10</a>.</em></p>
 </section>
 <section id="source-page-011" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-011.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 11</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 11.
-EDITABLE TEXT TRANSCRIPTION:
-Data Table
-Next, let’s try different prices using Data Table:
-
-
-
-
-See demo and recording.
--->
-</section>
-<section id="source-page-012" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-012.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 12</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 12.
-EDITABLE TEXT TRANSCRIPTION:
-Data Table
-Highlight your data table (without the heading labels), then go to Data >
-What-if Analysis > Data Table
-
-
-
-
- See demo and recording.
--->
-</section>
-<section id="source-page-013" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-013.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 13</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 13.
-EDITABLE TEXT TRANSCRIPTION:
-Data Table
-Output:
-
-
-
-
-•Pricing below $40 generate loss
-•Profit is non-linearly related to price
-•Over this crude grid, the maximum profit of $18,000 is achieved at
-price $100 per unit
-See demo and recording.
--->
-</section>
-<section id="source-page-014" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-014.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 14</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 14.
-EDITABLE TEXT TRANSCRIPTION:
-Data Table
-Next, let’s try different costs as well:
-
-
-
-
-See demo and recording.
--->
-</section>
-<section id="source-page-015" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-015.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 15</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 15.
-EDITABLE TEXT TRANSCRIPTION:
-Data Table
-Highlight your data table (without the heading labels), then go to Data
-> What-if Analysis > Data Table
-
-
-
-
-See demo and recording.
--->
+<h2>Forecasting with a linear trend</h2>
+<p>Once a linear trend is fitted, forecast a future period by using its <strong>future time index</strong> in</p>
+<p><span class="math display">
+\widehat{Y}_t = \widehat{\beta}_0 + \widehat{\beta}_1 t.
+</span></p>
+<p>For monthly data starting with January 2024 as <span class="math inline">t=1</span>, <strong>October 2026 is <span class="math inline">t=34</span></strong>.</p>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=11">ETB1100 Seminar Week 11, page 11</a>.</em></p>
 </section>
 <section id="source-page-016" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-016.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 16</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 16.
-EDITABLE TEXT TRANSCRIPTION:
-Data Table
-Output:
+<h2>When seasonality is present</h2>
+<p>Trend alone may miss a repeated within-year pattern. The chart has an upward trend <strong>and a peak every fourth quarter</strong>.</p>
 
-                            • Optimal price of $100/unit for
-                              cost of $40, $45, and $50
-                            • Optimal price of $110/unit for
-                              cost of $55 and $60
-                            • Note that as cost goes up, the
-                              maximum profit at the optimal
-                              price decreases.
-
-
-See demo and recording.
--->
+<img data-src="figures/time-series/seasonal-target-revenue.png" style="width:64.0%" class="r-stretch"><p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=16">ETB1100 Seminar Week 11, page 16</a>.</em></p>
 </section>
 <section id="source-page-017" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-017.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 17</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 17.
-EDITABLE TEXT TRANSCRIPTION:
-Solver
-We note that if we keep increasing the possible prices and costs, the
-table can become unwieldy. Instead of having to write out all possible
-values, we can call on Solver to get an optimal solution under
-constraint.
-
-Data > Analysis Tools > Check “Solver Add-in”
-
-
-
-
-See demo and recording.
--->
+<h2>Seasonal indices</h2>
+<p><span class="math inline">S_t</span> compares period <span class="math inline">t</span> with its underlying trend. For quarterly data, the same index repeats each year.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">t</span></th>
+<th>Quarter</th>
+<th style="text-align: right;"><span class="math inline">S_t</span></th>
+<th style="text-align: right;"><span class="math inline">t</span></th>
+<th>Quarter</th>
+<th style="text-align: right;"><span class="math inline">S_t</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Q1 2022</td>
+<td style="text-align: right;">0.996</td>
+<td style="text-align: right;">5</td>
+<td>Q1 2023</td>
+<td style="text-align: right;">0.996</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Q2 2022</td>
+<td style="text-align: right;">0.915</td>
+<td style="text-align: right;">6</td>
+<td>Q2 2023</td>
+<td style="text-align: right;">0.915</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Q3 2022</td>
+<td style="text-align: right;">0.988</td>
+<td style="text-align: right;">7</td>
+<td>Q3 2023</td>
+<td style="text-align: right;">0.988</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Q4 2022</td>
+<td style="text-align: right;">1.101</td>
+<td style="text-align: right;">8</td>
+<td>Q4 2023</td>
+<td style="text-align: right;">1.101</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=17">ETB1100 Seminar Week 11, page 17</a>.</em></p>
 </section>
 <section id="source-page-018" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-018.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 18</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 18.
-EDITABLE TEXT TRANSCRIPTION:
-Solver
-Using Solver:
-
-
-
-
-See demo and recording.
--->
+<h2>Interpreting seasonal indices</h2>
+<ul>
+<li><span class="math inline">S_t=1</span>: approximately at the trend.</li>
+<li><span class="math inline">S_t&gt;1</span>: above the trend.</li>
+<li><span class="math inline">S_t&lt;1</span>: below the trend.</li>
+</ul>
+<p>For example, <span class="math inline">S_t=0.988</span> means that season is <strong>1.2% below</strong> the trend line on average. An index of <span class="math inline">1.101</span> means <strong>10.1% above</strong> the trend line on average.</p>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=18">ETB1100 Seminar Week 11, page 18</a>.</em></p>
 </section>
 <section id="source-page-019" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-019.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 19</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 19.
-EDITABLE TEXT TRANSCRIPTION:
-Solver
-Using Solver
+<h2>Forecasting with trend and seasonality</h2>
+<p>In a multiplicative model,</p>
+<p><span class="math display">
+F_t = T_t \times S_t,
+</span></p>
+<p>where <span class="math inline">F_t</span> is the forecast, <span class="math inline">T_t</span> is the fitted trend value and <span class="math inline">S_t</span> is the seasonal index for time period <span class="math inline">t</span>.</p>
+<p>The forecast adjusts the trend by multiplying it by the index for that period’s season.</p>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=19">ETB1100 Seminar Week 11, page 19</a>.</em></p>
+</section>
+<section id="supplied-index-workflow" class="slide level2">
+<h2>Use a supplied index to deseasonalise</h2>
+<p>The seasonal index <span class="math inline">S_t</span> is <strong>given</strong>. For each training observation, remove its seasonal effect:</p>
+<p><span class="math display">
+D_t=\frac{Y_t}{S_t}.
+</span></p>
+<p>Fit <span class="math inline">T_t=a+bt</span> to training <span class="math inline">D_t</span> with Excel <code>INTERCEPT</code> and <code>SLOPE</code>.</p>
+<p>Forecast on the original scale: <span class="math inline">F_t=T_tS_t</span>.</p>
+<p><em>Instructor workflow from <code>quiz/Chocolate_sales_worked_example.xlsx</code>, first sheet, rows 15–43. Forecast relation: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=19">ETB1100 Seminar Week 11, page 19</a>.</em></p>
+</section>
+<section id="excel-intercept" class="slide level2">
+<h2>Excel: estimate the intercept</h2>
+<p>In the <strong>chocolate-bar workbook</strong>, rows 16–35 are the 2017–2021 training data. Column <code>F</code> contains deseasonalised sales; column <code>B</code> contains time <span class="math inline">t</span>.</p>
+<p>Enter this in <code>E6</code> to estimate <span class="math inline">a</span> in <span class="math inline">T_t=a+bt</span>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a aria-label="1"></a>=INTERCEPT($F$16:$F$35,$B$16:$B$35)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The result is about <strong>24.412 thousand bars</strong>. Excel takes the deseasonalised values first (<code>known_y_values</code>) and time second (<code>known_x_values</code>). Do not include the 2022 test rows.</p>
+<p><em>Worked cells: <a href="../quiz/Chocolate_sales_worked_example.xlsx">chocolate-bar workbook, first sheet</a>. Trend model: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=9">ETB1100 Seminar Week 11, page 9</a>.</em></p>
+</section>
+<section id="excel-slope" class="slide level2">
+<h2>Excel: estimate the slope</h2>
+<p>In the same chocolate-bar worksheet, enter this in <code>E7</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a aria-label="1"></a>=SLOPE($F$16:$F$35,$B$16:$B$35)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The result is about <strong>1.735 thousand bars per quarter</strong>. The workbook trend is therefore</p>
+<p><span class="math display">
+T_t \approx 24.412+1.735t.
+</span></p>
+<p>For test row 36, <code>=$E$6+$E$7*B36</code> gives the trend. Multiply it by that row’s supplied index to forecast sales.</p>
+<p><em>Worked cells: <a href="../quiz/Chocolate_sales_worked_example.xlsx">chocolate-bar workbook, first sheet</a>. The separate <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=20">source PDF example, page 20</a> uses slightly different fitted coefficients.</em></p>
+</section>
+<section id="chocolate-observed-chart" class="slide level2">
+<h2>Visualise sales with seasonality</h2>
+<p>In Excel, chart <strong>Period</strong> (<code>A15:A39</code>) against <strong>Sales (000s)</strong> (<code>D15:D39</code>): choose <strong>Insert</strong>, then <strong>Line with Markers</strong>. Q4 peaks recur as sales rise.</p>
 
+<img data-src="figures/time-series/chocolate-observed.png" style="width:75.0%" class="r-stretch"><p><em>The dotted line begins 2022 test data. Data: <a href="../quiz/Chocolate_sales_worked_example.xlsx">chocolate workbook</a>; seasonal pattern: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=16">ETB1100, page 16</a>.</em></p>
+</section>
+<section id="chocolate-deseasonalised-chart" class="slide level2">
+<h2>Visualise sales without seasonality</h2>
+<p>Chart <strong>Period</strong> (<code>A15:A39</code>) against <strong>Deseason sales</strong> (<code>F15:F39</code>). Keep the <strong>same vertical scale</strong>.</p>
 
-
-
-See demo and recording.
--->
+<img data-src="figures/time-series/chocolate-deseasonalised.png" style="width:75.0%" class="r-stretch"><p>Q4 spikes are reduced. The dashed trend uses <strong>training rows only</strong>.</p>
+<p><em>Data: <a href="../quiz/Chocolate_sales_worked_example.xlsx">chocolate workbook</a>. Trend model: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=9">ETB1100, page 9</a>.</em></p>
 </section>
 <section id="source-page-020" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-020.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 20</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 20.
-EDITABLE TEXT TRANSCRIPTION:
-Example: Marketing Mix
-Suppose the owner of a pizza company wants to figure out how much
-to spend on advertising through pamphlets.
-
-We are given the following information:
-• Profit = (Price x Quantity) - Total Cost
-• Total Cost = Variable Cost + Fixed Cost
-• Fixed Cost = 700 + Pamphlet Price x Number of Pamphlets
-• Variable Cost = (Wage/5 + Cost of Ingredients) x Pizza Quantity
-• Pizza Quantity = 120 + (0.2 x Number of Pamphlets) – (0.0003 x
-  Number of Pamphlets2)
-• Price = 25, Wage = 20, Pamphlet Price = 2, Cost of Ingredients = 3
--->
+<h2>Example: chocolate-bar sales</h2>
+<p>A confectionery company tracks quarterly chocolate-bar sales in <strong>thousands</strong>. With Q1 2017 as <span class="math inline">t=1</span>, its fitted linear trend is</p>
+<p><span class="math display">
+T_t = 24.369 + 1.76t.
+</span></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Quarter</th>
+<th style="text-align: right;">Seasonal index</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Q1</td>
+<td style="text-align: right;">0.996</td>
+</tr>
+<tr class="even">
+<td>Q2</td>
+<td style="text-align: right;">0.915</td>
+</tr>
+<tr class="odd">
+<td>Q3</td>
+<td style="text-align: right;">0.934</td>
+</tr>
+<tr class="even">
+<td>Q4</td>
+<td style="text-align: right;">1.155</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=20">ETB1100 Seminar Week 11, page 20</a>.</em></p>
 </section>
 <section id="source-page-021" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-021.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 21</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 21.
-EDITABLE TEXT TRANSCRIPTION:
-Example: Marketing Mix
-Let’s get this into our spreadsheet. Formulas included for reference.
-
-
-
-
-See demo and recording.
--->
+<h2>Forecast chocolate-bar sales</h2>
+<p>Forecast sales for <strong>Q1 2022</strong>:</p>
+<ol type="1">
+<li>Q1 2022 is <span class="math inline">t=21</span>.</li>
+<li>The fitted trend is <span class="math inline">T_{21}=24.369+1.76(21)=61.329</span> thousand bars.</li>
+<li>Q1 has seasonal index <span class="math inline">S_{21}=0.996</span>.</li>
+<li>The forecast is</li>
+</ol>
+<p><span class="math display">
+F_{21}=T_{21}S_{21}=61.329(0.996)=61.08
+</span></p>
+<p>thousand chocolate bars.</p>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=21">ETB1100 Seminar Week 11, page 21</a>.</em></p>
 </section>
 <section id="source-page-022" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-022.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 22</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 22.
-EDITABLE TEXT TRANSCRIPTION:
-Example: Marketing Mix – Data Table
-Suppose we vary both pamphlet number and price. Using the cells in
-this screenshot, which cell is the row input cell? Column input cell?
-
-
-
-
-See demo and recording.
-                                                 PollEv.com​/alyssahu
--->
+<h2>Interpret the seasonal indices</h2>
+<p>In the chocolate-bar example:</p>
+<ul>
+<li>Q1’s index is <span class="math inline">0.996</span>, so first-quarter sales are <strong>0.4% below</strong> the trend projection on average.</li>
+<li>Q4’s index is <span class="math inline">1.155</span>, so fourth-quarter sales are <strong>15.5% above</strong> the trend projection on average.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=22">ETB1100 Seminar Week 11, page 22</a>.</em></p>
 </section>
-<section id="source-page-023" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-023.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 23</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 23.
-EDITABLE TEXT TRANSCRIPTION:
-Example: Marketing Mix – Data Table
-This is our final data table:
-
-
-
-
-• Lower pamphlet price → lower fixed cost → optimal profit is higher.
-• At $2 per pamphlet, the profit maximising number of pamphlets is
-  150. At $0.5 per pamphlet, the optimal number of pamphlets is 300.
-See demo and recording.
--->
-</section>
-<section id="source-page-024" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-024.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 24</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 24.
-EDITABLE TEXT TRANSCRIPTION:
-Example: Marketing Mix
-Suppose the pizza company can advertise on Facebook as well as via
-pamphlets. Facebook ads are more expensive than pamphlets (see
-fixed cost) but tends to sell more pizza (see pizza quantity).
-We are given the following updated information:
-• Fixed Cost = 700 + (Pamphlet Price x Number of Pamphlets) +
-  (Facebook Price x Number of Facebook Ads)
-• Pizza Quantity = 120 + (0.2 x Number of Pamphlets) – (0.0003 x
-  Number of Pamphlets2) + (0.3 x Number of Facebook Ads) –
-  (0.0003 x Number of Facebook Ads2)
-• Facebook Ad Price = 5
-What if we use both Facebook ads and pamphlets?
--->
-</section>
-<section id="source-page-025" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-025.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 25</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 25.
-EDITABLE TEXT TRANSCRIPTION:
-Example: Marketing Mix - Solver
-
-
-
-
-See demo and recording.
--->
-</section>
-<section id="source-page-026" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-026.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 26</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 26.
-EDITABLE TEXT TRANSCRIPTION:
-Example: Marketing Mix - Solver
-What happens if we get rid of the Facebook ads? Only lose about $7!
-
-
-
-
-See demo and recording.
--->
-</section>
-<section id="source-page-027" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-027.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 27</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 27.
-EDITABLE TEXT TRANSCRIPTION:
-Example: Investment Decisions
-An investor considers purchasing a
-café. He presents you with the
-following timeline and the net cashflow
-(expected profit) per year:
-  • Year 0: Purchase café for
-    $650000.
-  • Year 1: Cashflow around $40000.
-  • Cashflow will increase by 4% per
-    year after that.
-  • Year 10: Sell café for $800000.
-See demo and recording.
--->
+<section id="training-test-forecasts" class="slide level2">
+<h2>Train, then test on historical periods</h2>
+<p>Use <strong>earlier deseasonalised observations</strong> to fit the linear trend with the supplied seasonal indices. Set aside later periods as a <strong>historical test set</strong>: they are observed now, but their values were unavailable when the forecasts were made.</p>
+<p>For a holdout exercise with the chocolate-bar model, treat Q1 2017–Q4 2021 (<span class="math inline">t=1,\ldots,20</span>) as training history. Before looking at Q1 2022 sales, the fitted model gives <span class="math inline">F_{21}=61.08</span> thousand bars. Once Q1 2022 sales are observed, place <span class="math inline">Y_{21}</span> beside <span class="math inline">F_{21}</span> to assess the forecast.</p>
+<p><strong>Keep the test observations out of the model-fitting step.</strong></p>
+<p><em>Instructor-added explanation using the model and forecast from <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=20">source page 20</a> and <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=21">page 21</a>. The assumed holdout split is for teaching; the source does not specify one.</em></p>
 </section>
 <section id="source-page-028" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-028.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 28</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 28.
-EDITABLE TEXT TRANSCRIPTION:
-Example: Investment Decisions
-Is this a good investment or a “lemon”? Let’s look at net present value
-(NPV) and internal rate of return (IRR) to compare investments.
-NPV accounts for “time value” of money (i.e. inflation, lost opportunity).
-               10
-              𝐶𝑡
-     𝑁𝑃𝑉 = ෍
-             1+𝑟 𝑡                         Example of Excel commands:
-              𝑡=0
-      𝐶𝑡 : cashflow in period 𝑡
- 𝑟: discount rate (return that could
-be earned on alternate investment)
-
-IRR is the discount rate that makes NPV equal to 0 (that is, the
-projected discounted cashflows equal to the initial investment amount).
--->
+<h2>Put forecasts beside observed test values</h2>
+<p>Suppose both procedures were fitted <strong>before 2024</strong>. Compare their forecasts with observed 2024 sales (<strong>millions of dollars</strong>):</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Historical test quarter</th>
+<th style="text-align: right;">Observed sales</th>
+<th style="text-align: right;">Forecast 1</th>
+<th style="text-align: right;">Forecast 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">Q1 2024</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">31.2</td>
+<td style="text-align: right;">28.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">Q2 2024</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">38.0</td>
+<td style="text-align: right;">33.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">Q3 2024</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">42.7</td>
+<td style="text-align: right;">36.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">Q4 2024</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">54.2</td>
+<td style="text-align: right;">44.4</td>
+</tr>
+</tbody>
+</table>
+<p><em>The training cutoff is an instructor illustration; the source does not give one. Data: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=28">ETB1100 Seminar Week 11, page 28</a>.</em></p>
+</section>
+<section id="source-page-023" class="slide level2">
+<h2>Evaluating forecast accuracy</h2>
+<p>A <strong>forecast error</strong> is the actual value minus the forecast:</p>
+<p><span class="math display">
+e_t=Y_t-F_t.
+</span></p>
+<p>Smaller errors suggest a more accurate forecast. To summarise the size of errors across several periods, we use <strong>mean absolute deviation (MAD)</strong>.</p>
+<p><em>Adapted to the current Week 7 scope from <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=23">ETB1100 Seminar Week 11, page 23</a>.</em></p>
+</section>
+<section id="source-page-024" class="slide level2">
+<h2>Mean absolute deviation</h2>
+<p>MAD is the average absolute size of forecast errors:</p>
+<p><span class="math display">
+\mathrm{MAD}=\frac{1}{n}\sum_{t=1}^{n}|Y_t-F_t|,
+</span></p>
+<p>where <span class="math inline">Y_t</span> is the actual value, <span class="math inline">F_t</span> is the forecast and <span class="math inline">n</span> is the number of forecasts evaluated.</p>
+<p>In Excel, calculate one test period’s absolute deviation with <code>=ABS(E30-I30)</code> in <code>J30</code>, then fill down the test rows. For the gym worksheet, <code>=AVERAGE(J30:J41)</code> gives test-period MAD.</p>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=24">ETB1100 Seminar Week 11, page 24</a>.</em></p>
 </section>
 <section id="source-page-029" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-029.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 29</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 29.
-EDITABLE TEXT TRANSCRIPTION:
-Example: Investment Decisions – GoalSeek
- • The investor is currently considering
-   another investment opportunity which
-   has an IRR of 9%.
- • If the purchase price of $650,000 is
-   negotiable, what price would yield an
-   IRR of at least 9%? (That is, the price
-   such that r = 9% and NPV = 0.)
- • We will use our final Excel function
-   ‘Goal Seek’ which finds the input value
-   needed to hit a target output value.
--->
-</section>
-<section id="source-page-030" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-030.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 30</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 30.
-EDITABLE TEXT TRANSCRIPTION:
-Example: Investment Decisions – GoalSeek
- Data > What-if Analysis > Goal Seek
- ‘Set cell’: NPV cell
- ‘To value’: 0
- ‘By changing cell’: Year 0 cashflow
-
- Goal Seek returns a year 0 cashflow
- of $613,663. So, we should try to
- negotiate the price down to $613,663
- to make this investment worthwhile.
-
- See demo and recording.
--->
-</section>
-<section id="source-page-031" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-031.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 31</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 31.
-EDITABLE TEXT TRANSCRIPTION:
-Summarising Week 10 Seminar
-❖ Spreadsheet modelling
-  ▪ Ideas to solve business problems through simulation, sensitivity
-    analysis and optimization using Excel
-❖ Excel tools for simulation and optimization
-  ▪ Data Table
-  ▪ Solver
-  ▪ Goal Seek
--->
+<h2>Retail sales: compare MAD</h2>
+<p><span class="math display">
+\begin{aligned}
+\mathrm{MAD}_1
+&amp;=\frac{|30-31.2|+|31-38.0|+|40-42.7|+|49-54.2|}{4}\\
+&amp;=4.025,\\[0.6em]
+\mathrm{MAD}_2
+&amp;=\frac{|30-28.6|+|31-33.7|+|40-36.1|+|49-44.4|}{4}\\
+&amp;=3.15.
+\end{aligned}
+</span></p>
+<p><strong>Forecast 2</strong> has the lower MAD for these four quarters.</p>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=29">ETB1100 Seminar Week 11, page 29</a>.</em></p>
 </section>
 <section id="source-page-032" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/business-modelling/page-032.jpg" style="height:6.3in"></p>
-<figcaption>ETF1100 Week 10 Seminar source PDF, page 32</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Seminar Week 10 ETF1100 S1 2026.pdf, page 32.
-EDITABLE TEXT TRANSCRIPTION:
-Closing Reminders
-Meet for workshop tomorrow 6pm on Zoom.
-Attend your allocated tutorial time on Wed/Thurs – tutorial quiz.
-Sunday May 17 by 11:55pm – submit post workshop quiz.
-Questions? Please use All Day TA, weekly forum, join
- consultation hours, or email ETF1100.Caulfield-x@monash.edu
--->
+<h2>Summary</h2>
+<p>For a time series:</p>
+<ol type="1">
+<li>Assign the correct time index and fit a <strong>linear trend</strong>.</li>
+<li>Use a <strong>seasonal index</strong> when the pattern repeats by season.</li>
+<li>Check the size of forecast errors with <strong>MAD</strong>.</li>
+</ol>
+<p><em>Adapted to the current Week 7 scope from <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=32">ETB1100 Seminar Week 11, page 32</a>.</em></p>
+</section>
+<section id="source-page-033" class="slide level2">
+<h2>Source closing reminders (historical)</h2>
+<p>The original seminar closed with these arrangements:</p>
+<ul>
+<li>Workshop on Thursday at 11:30 am on Zoom.</li>
+<li>Tutorial on Thursday at the student’s allocated time.</li>
+<li>Submit the tutorial exercise and written assignment that week.</li>
+<li>Ask questions through the discussion forum, consultation hours or AllDayTA; use email for sensitive enquiries.</li>
+</ul>
+<p><strong>These were ETB1100 arrangements in October 2026.</strong> Check the current ETX1100/ETX5900 schedule and Moodle instead.</p>
+<p><em>Source: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=33">ETB1100 Seminar Week 11, page 33</a>.</em></p>
 
 
 </section>
@@ -1046,6 +878,13 @@ Questions? Please use All Day TA, weekly forum, join
       });
     </script>
     <script>
+    // Give section dividers a background that fills the letterboxed slide.
+    document.querySelectorAll('section.section-slide').forEach(function (slide) {
+      if (!slide.hasAttribute('data-background-color')) {
+        slide.setAttribute('data-background-color', '#006dae');
+      }
+    });
+
     // Copy over background colors to new div
     divs = document.querySelectorAll('[data-background-color]');
 
@@ -1179,6 +1018,61 @@ Questions? Please use All Day TA, weekly forum, join
     // Move progress bar
     menu_div = document.querySelector(".progress");
     document.querySelector(".slides").appendChild(menu_div);
+    </script>
+
+    <script>
+    // Show a manually started countdown on slides with data-timing="seconds".
+    (function () {
+      let interval;
+
+      function showCountdown(slide) {
+        clearInterval(interval);
+        if (!slide) return;
+        const duration = Number(slide.dataset.timing);
+        if (!Number.isFinite(duration) || duration <= 0) return;
+
+        let timer = slide.querySelector('.slide-countdown');
+        if (!timer) {
+          timer = document.createElement('div');
+          timer.className = 'slide-countdown';
+          timer.innerHTML = '<span role="timer"></span><button type="button">Start</button>';
+          slide.appendChild(timer);
+        }
+        const clock = timer.querySelector('[role="timer"]');
+        const button = timer.querySelector('button');
+        const format = seconds => String(Math.floor(seconds / 60)).padStart(2, '0') + ':' +
+          String(seconds % 60).padStart(2, '0');
+        clock.textContent = format(Math.ceil(duration));
+        button.hidden = false;
+        timer.onclick = function (event) {
+          if (button.hidden) return;
+          event.stopPropagation();
+          button.hidden = true;
+          const end = Date.now() + duration * 1000;
+          function update() {
+            const remaining = Math.max(0, Math.ceil((end - Date.now()) / 1000));
+            clock.textContent = format(remaining);
+            if (remaining === 0) clearInterval(interval);
+          }
+          update();
+          interval = setInterval(update, 250);
+        };
+      }
+
+      Reveal.on('slidechanged', event => showCountdown(event.currentSlide));
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' || event.repeat) return;
+        if (event.target instanceof Element &&
+            event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+        const slide = Reveal.getCurrentSlide();
+        const button = slide && slide.querySelector('.slide-countdown button');
+        if (!button || button.hidden) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        button.click();
+      }, true);
+      showCountdown(Reveal.getCurrentSlide());
+    })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">

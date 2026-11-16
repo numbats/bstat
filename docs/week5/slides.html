@@ -9,6 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.11.9">
 
+  <meta name="dcterms.date" content="2027-01-05">
   <title>Business Statistics – slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -34,7 +35,23 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ecfa366c05ac1ff1a677a8c5facd037d.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d7d650050b1ce3e072e4f0f18efcf387.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -134,734 +151,636 @@
     <div class="slides">
 
 
-<section id="source-page-001" class="slide level2">
+<section id="chi-source-page-001" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-001.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 1</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 1. Companion PowerPoint slide 1.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image2.jpeg
-EDITABLE TEXT TRANSCRIPTION:
-ETX1100/ETX5900 Business Statistics
-Week 5
-Hypothesis Testing II
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=1">Workshop_slides_Week_4_with_solutions.pdf, page 1</a></em></p>
+<h3 id="etx11005900-business-statistics">ETX1100/5900 Business Statistics</h3>
+<p>The Chi-Square Test for Independence: Assessing relationships between categorical variables</p>
+
+<img data-src="figures/chi-source/image6.jpeg" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 1.</p></section>
+<section id="chi-source-page-002" class="slide level2">
+<h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=2">Workshop_slides_Week_4_with_solutions.pdf, page 2</a></em></p>
+<h3 id="the-chi-square-test-for-independence-assessing-relationships-between-categorical-variables">The Chi-Square Test for Independence: Assessing relationships between categorical variables</h3>
+<p>Textbook references: Berenson et al Basic Business Statistics 5th edition, Chapter 15, Section 15.3.</p>
 </section>
-<section id="source-page-002" class="slide level2">
+<section id="chi-source-page-003" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-002.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 2</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 2. Companion PowerPoint slide 3.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Reminders
-Assignment due on 19 Jan 2026 at 11:55pm.
-Please start early!
-Consultation (dedicated student hours) – see Moodle
-for time/location.
-2
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=3">Workshop_slides_Week_4_with_solutions.pdf, page 3</a></em></p>
+<h3 id="assignment">Assignment</h3>
+<p>Due date: 19 December 2025, 11:55 pm Weighting: This assignment is worth 15% of the total assessment for this unit. Submission location: Submit via the Assignment submission link available under the Assessment tab on Moodle. Number of attempts: Only ONE (1) attempt is permitted. - Dataset: Use the Excel file titled “Assignment Data.xlsx”, available under the Assessment tab on Moodle.</p>
 </section>
-<section id="source-page-003" class="slide level2">
+<section id="chi-source-page-004" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-003.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 3</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 3. Companion PowerPoint slide 4.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image6.png, figures/etx5900/components/image4.png
-EDITABLE TEXT TRANSCRIPTION:
-Hypothesis Test for Evidence-based Decisions
-Sample
-Sampling
-STATISTICS                           Distribution
-DESCRIPTIVE                         INFERENTIAL
-ESTIMATION
-HYPOTHESIS TESTS
-Point & Interval
-Estimating the value of a            Testing a claim about the value
-population parameter                 of a population parameter
-(mean μ or proportion π)                (mean μ or proportion π)
-3
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=4">Workshop_slides_Week_4_with_solutions.pdf, page 4</a></em></p>
+<h3 id="hypothesis-test-for-evidence-based-decisions">Hypothesis Test for Evidence-based Decisions</h3>
+<p>A statistical framework for using data to derive evidence-based decisions. Define business problem and variables relevant to that problem Formulate a hypothesis around these variables that are relevant to business decisions Collect representative data Conduct hypothesis testing to establish the degree of evidence for the hypotheses Based on evidence, make business decisions</p>
 </section>
-<section id="source-page-004" class="slide level2">
+<section id="chi-source-page-005" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-004.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 4</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 4. Companion PowerPoint slide 5.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Lesson outcomes:
-Identify a business problem
-Formulate a hypothesis using variables relevant to the problem
-Establish the degree of evidence for the hypotheses
-Interpret results in the context of the business problem
-Identify potential errors in hypothesis testing
-Explain the implications of these errors for business decision-making
-Textbook references:
-Berenson et al Basic Business Statistics 5th edition,
-Chapter 9, Sections 9.1-9.7
-4
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=5">Workshop_slides_Week_4_with_solutions.pdf, page 5</a></em></p>
+<h3 id="h0-defendant-is-not-guilty-status-quo-default">H0: Defendant is not guilty (‘status quo’; default)</h3>
+<p>H1: Defendant is guilty (experimental/research hypothesis) Reject H0: There IS enough evidence against H0 GUILTY! Do not reject H0: There IS NOT enough evidence against H0 NOT GUILTY (INNOCENT!) 5 An hypothesis test is conducted to decide between two hypotheses: the null H0 and the alternative, H1. Hypothesis Testing ……..Is a familiar process</p>
 </section>
-<section id="source-page-005" class="slide level2">
+<section id="chi-source-page-006" class="slide level2">
 <h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=6">Workshop_slides_Week_4_with_solutions.pdf, page 6</a></em></p>
+<h3 id="please-download-and-install-the-slido-app-on-all-computers-you-use">Please download and install the Slido app on all computers you use</h3>
+<p>What types of variables are “Education Level” &amp; “Smoking Status”, respectively. Note: Start presenting to display the poll results on this slide.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-005.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 5</figcaption>
+<p><img data-src="figures/chi-source/image8.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 6.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 5. Companion PowerPoint slide 6.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image5.wmf
-EDITABLE TEXT TRANSCRIPTION:
-Hypothesis Testing – Classic Example
-An hypothesis test is conducted to decide between two
-hypotheses: the null H0 and the alternative, H1.
-H0: Defendant is not guilty       (‘status quo’; default)
-H1: Defendant is guilty (experimental/research hypothesis)
-Reject H0: GUILTY!
-There IS enough evidence against H0 - the defendant is guilty.
-Do not reject H0: NOT GUILTY                         (INNOCENT!)
-There IS NOT enough evidence against H0 - the defendant is not guilty.
-5
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/chi-source/image10.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 6.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/chi-source/image12.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 6.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
-<section id="source-page-006" class="slide level2">
+<section id="chi-source-page-007" class="slide level2">
 <h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=7">Workshop_slides_Week_4_with_solutions.pdf, page 7</a></em></p>
+<h3 id="please-download-and-install-the-slido-app-on-all-computers-you-use-1">Please download and install the Slido app on all computers you use</h3>
+<p>If two variables are independent Note: Start presenting to display the poll results on this slide.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-006.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 6</figcaption>
+<p><img data-src="figures/chi-source/image8.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 7.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 6. Companion PowerPoint slide 7.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image9.png
-EDITABLE TEXT TRANSCRIPTION:
-5 Step Process in Hypothesis Testing
-Step 1: Set up the null and the alternative hypotheses based on a benchmark
-value of a population parameter (μ0 or π0)
-Note:
-Test for a mean (μ0) when the data are numerical measurements.
-Test for a proportion (π0) when the data are yes/no or category outcomes.
-H0: A default statement/status quo
-(contains the equals sign: =)
-H1: A belief/claim that we aim to test
-(what we are searching evidence for, does not contain the equals sign: ≠, >, <)
-6
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/chi-source/image10.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 7.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/chi-source/image12.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 7.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
-<section id="source-page-007" class="slide level2">
+<section id="chi-source-page-008" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-007.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 7</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 7. Companion PowerPoint slide 8.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image7.png
-EDITABLE TEXT TRANSCRIPTION:
-Step 2: Test Statistic
-Compute Zcalc or tcalc (depends on whether the population standard deviation (σ)
-is known or unknown).
-Calculating the test statistic for the mean:
-X̄ − μ
-Z=                 the formula used when the population standard deviation σ is known
-σ/√n
-X̄ − μ
-t=                  the formula used when the sample standard deviation s is used (in most cases)
-s/√n
-Calculating the test statistic for the proportion:
-p − π0
-Z=
-√( π0(1−π0) / n )
-7
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=8">Workshop_slides_Week_4_with_solutions.pdf, page 8</a></em></p>
+<h3 id="we-conduct-a-hypothesis-test-when-we-consider-relationships-between-categorical-variables---chi-square-test-for-independence">We conduct a hypothesis test when we consider relationships between categorical variables - Chi Square Test For Independence</h3>
+<p>For a contingency table with <span class="math inline">r</span> rows and <span class="math inline">c</span> columns, use the <span class="math inline">\chi^2</span> test of independence for two categorical variables.</p>
+
+<img data-src="figures/chi-source/image6.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 8.</p></section>
+<section id="chi-source-page-009" class="slide level2">
+<h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=9">Workshop_slides_Week_4_with_solutions.pdf, page 9</a></em></p>
+<h3 id="step-1">Step 1:</h3>
+<p>H0: The two categorical variables are independent (No relationship between variables) H1: The two categorical variables are dependent (i.e.&nbsp;there is a relationship). Note: We test on the assumption that the Null hypothesis (H0) is true i.e.&nbsp;that the attributes are independent. What we actually observe in the datavs What we would expect to see if the two variables were independent If the observed counts are very different from the expected counts, that’s evidence that the variables are related. 5 Steps</p>
 </section>
-<section id="source-page-008" class="slide level2">
+<section id="chi-source-page-010" class="slide level2">
 <h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=10">Workshop_slides_Week_4_with_solutions.pdf, page 10</a></em></p>
+<h3 id="step-2-test-statistic">Step 2: Test Statistic</h3>
+<p>The test statistic is <span class="math display">\chi^2=\sum\frac{(f_o-f_e)^2}{f_e},\qquad f_e=\frac{(\text{row total})(\text{column total})}{\text{overall total}}.</span> Here <span class="math inline">f_o</span> is an observed count and <span class="math inline">f_e</span> is its expected count if <span class="math inline">H_0</span> is true. Degrees of freedom are <span class="math inline">(r-1)(c-1)</span>. Expected counts below 5 make this approximation unreliable.</p>
+
+<img data-src="figures/chi-source/image14.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 10.</p></section>
+<section id="chi-source-page-011" class="slide level2">
+<h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=11">Workshop_slides_Week_4_with_solutions.pdf, page 11</a></em></p>
+<h3 id="step-3-critical-value-or-p-value">Step 3: Critical Value or P-value</h3>
+<p>Critical value approach/ p-value approach Critical value approach: <span class="math display">
+Look up \chi{}2 table
+</span> OR P-value: Use Excel =chisq.test(actual range,expected range) 5 Steps</p>
+
+<img data-src="figures/chi-source/image15.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 11.</p></section>
+<section id="chi-source-page-012" class="slide level2">
+<h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=12">Workshop_slides_Week_4_with_solutions.pdf, page 12</a></em></p>
+<h3 id="step-4-decision">Step 4: Decision</h3>
+<p>Reject <span class="math inline">H_0</span> when <span class="math inline">\chi^2_{\text{calc}}&gt;\chi^2_{\text{crit}}</span>, or when the <span class="math inline">p</span> value is below <span class="math inline">\alpha</span>. <span class="math display">
+Reject Ho when p-value &lt; \alpha{}
+</span> Step 5: Conclusion State the conclusion within the context of the problem. Always refer to H1 Eg: The sample provides sufficient evidence at the 5% level of significance that the variables xxx and xxx are dependent. Steps 4 and 5: Decision and Conclusion 0 alpha Reject H0 Do not Reject H0 chi-square critical value</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-008.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 8</figcaption>
+<p><img data-src="figures/chi-source/image16.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 12.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 8. Companion PowerPoint slide 9.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Step 3: p value
-Determine the p-value by using the calculated test statistic. Find the appropriate tail area
-(according to H1)
-The p-value determines the area (p-value) in the tail beyond the calculated test-statistic and
-compares it to α, the area in the tail associated with the given significance level.
-Test Statistic
-(calculated value)
-8
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/chi-source/image120.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 12.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
-<section id="source-page-009" class="slide level2">
+<section id="chi-source-page-013" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-009.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 9</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 9. Companion PowerPoint slide 10.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image8.png
-EDITABLE TEXT TRANSCRIPTION:
-Mechanics of Hypothesis Testing: p-value
-Judging whether or not the test statistic is outstandingly “far from zero” in the
-direction of the alternative.
-It is the probability of getting the test statistic assuming that H0 is true.
-p-value = P(Test statistic |H0 is true)
-If the p-value is small, then the test statistic is far from zero.
-(In the direction of the alternative hypothesis.)
-A smaller p-value means that there is stronger evidence in favor of the alternative
-hypothesis.
-9
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=13">Workshop_slides_Week_4_with_solutions.pdf, page 13</a></em></p>
+<h3 id="during-the-past-decade-many-smokers-have-attempted-to-quit.-unfortunately-nicotine-is-highly-addictive.-a-researcher-from-the-addiction-research-council-wanted-to-determine-why-some-people-quit-for-good-while-others-relapse.-he-surveyed-115-people-who-planned-to-quit-smoking-and-among-other-things-recorded-their-educational-level-and-whether-one-year-later-they-continued-to-smoke.-the-following-pivot-table-was-produced-which-shows-the-counts-for-the-various-combinations-of-categories">During the past decade many smokers have attempted to quit. Unfortunately, nicotine is highly addictive. A researcher from the Addiction Research Council wanted to determine why some people quit for good while others relapse. He surveyed 115 people who planned to quit smoking and, among other things, recorded their educational level and whether, one year later, they continued to smoke. The following pivot table was produced, which shows the counts for the various combinations of categories:</h3>
+<p>Task 1: Education Level vs Smoking Status Education Level Smoking Status Did not quit Quit Did not finish high school 9 16 High school graduate 26 21 TAFE graduate 4 15 University bachelors or postgraduate degree 7 17</p>
 </section>
-<section id="source-page-010" class="slide level2">
+<section id="chi-source-page-014" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-010.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 10</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 10. Companion PowerPoint slide 11.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Interpreting the p-value
-P-value should be interpreted as the level of “evidence” in favour of the null hypothesis,
-when compared against the ALTERNATIVE hypothesis.
-A small p-value:
-Indicates little evidence in support of the H0;
-we have reason to reject H0 in favour of H1
-A large p-value:
-Indicates considerable evidence in support of the H0;
-we do not have reason to reject H0 in favour of H1.
-Advantage:
-An advantage of p-values is that we can perform hypothesis tests at all significance
-levels without finding a new critical value.
-10
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=14">Workshop_slides_Week_4_with_solutions.pdf, page 14</a></em></p>
+<h3 id="what-is-the-proportion-of-tafe-graduates">What is the proportion of TAFE graduates?</h3>
+<ol start="2" type="a">
+<li>We wish to test the hypothesis that Education Level and Smoking Status are independent at a 5% level of significance. What type of test is appropriate? Explain. c) State the hypotheses for the test stated above. d) State the test statistic and the p-value. e) Interpret the results in the context of the question. Task 1: Education Level vs Smoking Status</li>
+</ol>
 </section>
-<section id="source-page-011" class="slide level2">
+<section id="chi-source-page-015" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-011.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 11</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 11. Companion PowerPoint slide 12.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image12.png, figures/etx5900/components/image13.png, figures/etx5900/components/image90.png
-EDITABLE TEXT TRANSCRIPTION:
-Steps 4 and 5
-Step 4: Decision Rule and Decision: We either reject H0 or do not reject H0
-Reject H0 if p-value < α
-Don’t reject H0 if p-value > α
-(Note: α is usually set at 1%, 5% or 10%. The convention is 5%)
-Step 5: Conclusion
-State the conclusion within the context of the problem
-P-value smaller than α
-There is sufficient evidence at 5% level of significance that the population mean IS
-……(interpret H1 here).
-P-value larger than α
-There is insufficient evidence at 5% level of significance that the population mean IS
-……..(interpret H1 here).
-11
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=15">Workshop_slides_Week_4_with_solutions.pdf, page 15</a></em></p>
+<h3 id="what-is-the-proportion-of-tafe-graduates-1">What is the proportion of TAFE graduates?</h3>
+<p><span class="math display">
+Proportion of TAFE Graduates = 19/115 = 0.1652 or 16.52%
+</span> b) We wish to test the hypothesis that Education Level and Smoking Status are independent at a 5% level of significance. What type of test is appropriate? Explain. The Chi-square test of independence is an appropriate test since the variables “Smoking status” and “Education Level” are both categorical variables. c) State the hypotheses for the test stated above. H0: The variables Smoking Status and Education Level are independent H1: The variables Smoking Status and Education Level are dependent Task 1: Education Level vs Smoking Status</p>
 </section>
-<section id="source-page-012" class="slide level2">
+<section id="chi-source-page-016" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-012.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 12</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 12. Companion PowerPoint slide 13.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image60.png, figures/etx5900/components/image70.png, figures/etx5900/components/image80.png, figures/etx5900/components/image100.png, figures/etx5900/components/image110.png, figures/etx5900/components/image120.png
-EDITABLE TEXT TRANSCRIPTION:
-Reject H0 when p-value < α
-If p-value < α, reject H0
-→ We still can tolerate the potential error and conclude that the p-value is small so we
-reject the H0.
-→ The smaller the p-value, the more evidence there is in favour of H 1
-∴ There is evidence to support the alternative hypothesis.
-If p-value > α, fail to reject H0
-→ We no longer can tolerate the potential error as it is bigger than the tolerance level
-allowed, α. We conclude that the p-value is large so we fail to reject the H0.
-→ The larger the p-value, the less evidence there is in favour of H1
-∴ There is not enough evidence to support the alternative hypothesis.
-Notice: our final conclusion is about the alternative hypothesis!
-12
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=16">Workshop_slides_Week_4_with_solutions.pdf, page 16</a></em></p>
+<h3 id="d-state-the-test-statistic-and-the-p-value">d) State the test statistic and the p-value</h3>
+<ol start="5" type="a">
+<li>Interpret the results in the context of the question. Task 1: Education Level vs Smoking Status</li>
+</ol>
 </section>
-<section id="source-page-013" class="slide level2">
+<section id="chi-source-page-017" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-013.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 13</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 13. Companion PowerPoint slide 14.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image10.png, figures/etx5900/components/image11.png
-EDITABLE TEXT TRANSCRIPTION:
-P-Value Approach - 5 Step Process
-1. Hypotheses:
-H0: μ = μ0                          H0: μ = μ0   H0: μ = μ0
-H1: μ ≠ μ0                          H1: μ < μ0   H1: μ > μ0
-2. Calculate Test Statistic (Zcalc or tcalc)
-3. p-value
-4. Decision Rule: Reject H0 if p-value < α
-5. Conclusion
-1. Hypotheses:
-H0: π = π0                          H0: π = π0   H0: π = π0
-H1: π ≠ π0                          H1: π < π0   H1: π > π0
-2. Calculate Test Statistic (Zcalc)
-3. p-value
-4. Decision Rule: Reject H 0 if p-value < α
-5. Conclusion
-13
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=17">Workshop_slides_Week_4_with_solutions.pdf, page 17</a></em></p>
+<h3 id="d-state-the-test-statistic-and-the-p-value-1">d) State the test statistic and the p-value</h3>
+<p>Test statistic = 8.778 (refer to Excel sheet for working or next slide for screenshot) <span class="math display">
+P-value = 0.032391
+</span> Task 1: Education Level vs Smoking Status</p>
+
+<img data-src="figures/chi-source/image17.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 17.</p></section>
+<section id="chi-source-page-018" class="slide level2">
+<h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=18">Workshop_slides_Week_4_with_solutions.pdf, page 18</a></em></p>
+<h3 id="task-1-excel-formulas">Task 1: Excel formulas</h3>
+
+<img data-src="figures/chi-source/image18.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 18.</p></section>
+<section id="chi-source-page-019" class="slide level2">
+<h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=19">Workshop_slides_Week_4_with_solutions.pdf, page 19</a></em></p>
+<h3 id="task-1-education-level-vs-smoking-status">Task 1: Education Level vs Smoking Status</h3>
+<ol start="5" type="a">
+<li>Interpret the results in the context of the question. Since the p-value (0.0324) is smaller than alpha (0.05), we reject the null hypothesis. The sample provides sufficient evidence at the 5% level of significance that the variables Smoking Status and Education Level are dependent.</li>
+</ol>
 </section>
-<section id="source-page-014" class="slide level2">
+<section id="chi-source-page-020" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-014.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 14</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 14. Companion PowerPoint slide 15.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Marketing Campaign
-The marketing team at an e-commerce company believes their email
-campaigns have an average click-through rate (CTR) of 12%. An analyst
-suspects that the CTR might be different from this benchmark. To investigate,
-the analyst randomly selects 45 recent email campaigns and finds an average
-CTR of 10.8% and standard deviation of 3.2%
-Use a 5% significance level to test whether the true average CTR differs from
-12%.
-14
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=20">Workshop_slides_Week_4_with_solutions.pdf, page 20</a></em></p>
+<h3 id="it-is-generally-agreed-that-convertibles-offer-freedom-and-excitement.-they-create-a-sensation-of-being-a-part-of-your-surroundings-that-no-sunroof-can-offer.-on-the-other-hand-sedans-are-stylish-yet-practical-for-small-families.-the-back-doors-are-also-handy-for-rear-seat-access-and-the-boot-is-a-secure-way-to-store-luggage-or-cargo.">It is generally agreed that convertibles offer freedom and excitement. They create a sensation of being a part of your surroundings that no sunroof can offer. On the other hand, sedans are stylish yet practical for small families. The back doors are also handy for rear seat access, and the boot is a secure way to store luggage or cargo.</h3>
+<p>A car importer believes that there is a relationship between buyers’ gender and their preference of sedans or convertibles. The importer gathered some information on the preference of male and female buyers and this is shown in below. Task 2: Convertibles</p>
 </section>
-<section id="source-page-015" class="slide level2">
+<section id="chi-source-page-021" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-015.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 15</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 15. Companion PowerPoint slide 16.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image160.png, figures/etx5900/components/image16.png, figures/etx5900/components/image14.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Marketing Campaign
-Let X = click through rate per campaign (%)
-Since n=45 (>30), we can invoke CLT and assume that X̄ ~ N(μ, σ2/n)
-1. Hypothesis
-H0: μ = 12
-H1: μ ≠ 12
-2. Test statistic
-X̄ − μ0
-t=                  ~ tn−1
-s/√n
-10.8 − 12            −1.2
-tcalc =                      =
-3.2/√45           0.477028 = -2.51558
-15
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=21">Workshop_slides_Week_4_with_solutions.pdf, page 21</a></em></p>
+<h3 id="task-2-convertibles">Task 2: Convertibles</h3>
+<p>TABLE 1 Gender Male Female Total Preference Convertibles 30 8 38 Sedans 56 38 94 Total 86 46 132 Calculate the test statistics and p-values for Tables 1 and 2 above TABLE 2 Gender Male Female Total Preference Convertibles 15 4 19 Sedans 28 19 47 Total 43 23 66 We created another contingency table, halved all observed frequencies, and labeled it as Table 2.</p>
 </section>
-<section id="source-page-016" class="slide level2">
+<section id="chi-source-page-022" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-016.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 16</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 16. Companion PowerPoint slide 17.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Marketing Campaign
-Step 3: P-value
-=P(t< - 2.51558 )*2
-= 0.007804*2 = 0.015609
-Since this is a two-tailed test:
-Excel function: = T.DIST(-2.51558,44,true)*2
-OR       = T.DIST.2T(2.51558,44,true)
-16
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=22">Workshop_slides_Week_4_with_solutions.pdf, page 22</a></em></p>
+<h3 id="task-2-convertibles-1">Task 2: Convertibles</h3>
+<p>Solutions for part a: Test statistic for Table 1: 4.47 p-value for Table 1: 0.0345 Test Statistic for Table 2: 2.23 p-value for Table 2: 0.1354</p>
 </section>
-<section id="source-page-017" class="slide level2">
+<section id="chi-source-page-023" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-017.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 17</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 17. Companion PowerPoint slide 18.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image26.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Marketing Campaign
-4. Decision rule:
-Reject H0 if p-value < α
-Since 0.015609 < 0.05, we can reject H0
-5. Conclusion
-There is sufficient evidence at the 5% level of significance that the true average
-CTR differs from 12%
-17
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=23">Workshop_slides_Week_4_with_solutions.pdf, page 23</a></em></p>
+<h3 id="task-2-convertibles-2">Task 2: Convertibles</h3>
+<ol start="2" type="a">
+<li>Point out why the formula for the <span class="math inline">\chi^2</span> value allows the test statistic and p-value to be different in the two cases even though all the observed and expected frequencies are proportional. The formula for the test statistic <span class="math inline">\chi^2</span> has a square of frequencies in the numerator and just a frequency in the denominator. So, if you double all the frequencies, you will double <span class="math inline">\chi^2</span>. Building on this idea: Doubling all observed and expected frequencies results in the numerator increasing by a factor of four (because of the square) and the denominator increasing by a factor of two. As a result, the overall <span class="math inline">\chi^2</span> value doubles. This explains why the test statistic is different, even though the tables are proportional.</li>
+</ol>
 </section>
-<section id="source-page-018" class="slide level2">
+<section id="chi-source-page-024" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-018.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 18</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 18. Companion PowerPoint slide 19.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image27.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Online Transaction Success Rate
-A bank states that at least 95% of online credit card transactions are processed
-without error. A financial analyst claims that this success rate may have
-dropped and wants to test if the current system is underperforming.
-To investigate, the analyst reviews a random sample of 250 online
-transactions, and finds that 229 were processed without error.
-Is there evidence to support the financial analysts claim at the 10% level of
-significance?
-18
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=24">Workshop_slides_Week_4_with_solutions.pdf, page 24</a></em></p>
+<h3 id="task-2-convertibles-3">Task 2: Convertibles</h3>
+<ol start="2" type="a">
+<li>Point out why the formula for the <span class="math inline">\chi^2</span> value allows the test statistic and p-value to be different in the two cases even though all the observed and expected frequencies are proportional. The formula for the test statistic <span class="math inline">\chi^2</span> has a square of frequencies in the numerator and just a frequency in the denominator. So, if you double all the frequencies, you will double <span class="math inline">\chi^2</span>. Building on this idea: Doubling all observed and expected frequencies results in the numerator increasing by a factor of four (because of the square) and the denominator increasing by a factor of two. As a result, the overall <span class="math inline">\chi^2</span> value doubles. This explains why the test statistic is different, even though the tables are proportional.</li>
+</ol>
 </section>
-<section id="source-page-019" class="slide level2">
+<section id="chi-source-page-025" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-019.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 19</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 19. Companion PowerPoint slide 20.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Online Transaction Success Rate
-Let X = number of online transactions
-X=229 n=250 p= 229/250 = 0.916
-n π = (250)(0.95) = 237.5 n(1- π)=(250)(1-0.95) = 12.5
-The assumption of normality is reasonable since they are both ≥5.
-19
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=25">Workshop_slides_Week_4_with_solutions.pdf, page 25</a></em></p>
+<h3 id="task-3-the-missing-data-mystery">Task 3: The Missing Data Mystery</h3>
+
+<img data-src="figures/chi-source/image19.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 25.</p></section>
+<section id="chi-source-page-026" class="slide level2">
+<h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=26">Workshop_slides_Week_4_with_solutions.pdf, page 26</a></em></p>
+<h3 id="task-3-the-missing-data-mystery-1">Task 3: The Missing Data Mystery</h3>
+<p>There are 4 statistical puzzles! Work in your group to crack each statistical puzzle level by level. Solve the statistical tasks correctly to unlock the next stage. After each level, solve a short riddle to collect a keyword. There are also some emojis to help you answer the riddles. Once all levels are completed, combine the collected words into a final answer. Accuracy matters more than speed. Good luck, detectives!</p>
 </section>
-<section id="source-page-020" class="slide level2">
+<section id="chi-source-page-027" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-020.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 20</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 20. Companion PowerPoint slide 21.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image15.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Online Transaction Success Rate
-Step 1: Hypotheses
-H0: π = 0.95
-H1: π < 0.95
-Step 2: Test Statistic
-p − π0
-Z=
-√( π0(1 − π0) / n )
-0.916 − 0.95
-Zcalc =
-√( 0.95(1 − 0.95) / 250 )   = -2.46662
-Step 3: p-Value:
-=P(Z< -2.46662) = 0.00682
-Excel function: =NORM.S.DIST(-2.46662,true)
-20
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=27">Workshop_slides_Week_4_with_solutions.pdf, page 27</a></em></p>
+<h3 id="task-3-the-missing-data-mystery-2">Task 3: The Missing Data Mystery</h3>
+<p><span class="math display">
+P(UsedCoupon = Yes) =
+</span> P(UsedCoupon = Yes | AgeGroup = Young) Using these probabilities, determine whether the two categories (UsedCoupon and AgeGroup) are dependent or not. Select the correct answer.</p>
 </section>
-<section id="source-page-021" class="slide level2">
+<section id="chi-source-page-028" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-021.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 21</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 21. Companion PowerPoint slide 22.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Online Transaction Success Rate
-Step 4: Decision Rule and Decision
-Reject H0 if p-value < α
-Since 0.00682< 0.10, we can reject H0
-Step 5: Conclusion
-There is sufficient evidence at the 10% level of significance that the true
-success rate of online credit card transactions is lower than 95%.
-There is evidence to support the financial analyst’s claim.
-21
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_4_with_solutions.pdf#page=28">Workshop_slides_Week_4_with_solutions.pdf, page 28</a></em></p>
+<h3 id="task-3-the-missing-data-mystery-3">Task 3: The Missing Data Mystery</h3>
+<p>Find the p-value The evidence has been laid out, and it’s time to make a decision. Is there enough evidence to send the Disruptor to jail? We reject the null at the 5% level of significance. The categories are dependent. We can send the Distorter to jail. We do not reject the null at the 5% level of significance. The categories are not dependent. The Distorter goes free.</p>
 </section>
-<section id="source-page-022" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-022.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 22</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 22. Companion PowerPoint slide 23.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Online Transaction Success Rate
-b. Interpret the p-value in the context of the question.
-If the true proportion were 0.95, then 0.682% of the time we would expect to
-get a sample proportion at least as small as the one we actually got (0.916).
-22
--->
+<section id="week5-intro" class="slide level2">
+<h2>Week 5: relationships in business data</h2>
+<ul>
+<li><strong>Two categorical variables:</strong> chi-square test of independence.</li>
+<li><strong>Two numerical variables:</strong> scatterplot, correlation and simple linear regression.</li>
+<li>Use the linked source pages to check the original worked examples. Historical class instructions on those pages are superseded by the current schedule and Moodle.</li>
+</ul>
 </section>
-<section id="source-page-023" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-023.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 23</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 23. Companion PowerPoint slide 24.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image32.png
-EDITABLE TEXT TRANSCRIPTION:
-Errors in Hypothesis Testing
-• Type I Error is directly related to the significance level:
-Pr(Type I Error) = α
-• So, we can control the chance of this error by setting small α
-• Small α → we need more convincing evidence against H0 to reject it
-• The smaller we make α, the bigger β becomes.
-23
--->
+<section id="corr-source-page-004" class="slide level2">
+<h2>Relationships between numerical variables</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 8 ETF1100 S1 2026 Updated.pdf#page=4">Seminar Week 8 ETF1100 S1 2026 Updated.pdf, page 4</a></em></p>
+<p>This section prepares you to:</p>
+<ul>
+<li>Characterise relationships between variables.</li>
+<li>Model a relationship using simple linear regression.</li>
+<li>Understand how regression coefficients are estimated and interpret coefficients, predictions and confidence intervals.</li>
+<li>Extend the idea to multiple regression in Week 6.</li>
+</ul>
 </section>
-<section id="source-page-024" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-024.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 24</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 24. Companion PowerPoint slide 25.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Type I and II errors
-Since the conclusions that we draw are based on sample data - using a decision rule, there is the
-chance of making two possible errors:
-Type I Error:
-Reject H0 when it’s actually true.
-Conclude guilty, when defendant is innocent.
-• The probability of a Type I error is denoted by α.
-• This value is also referred to as the “Level of Significance”.
-Type II Error:
-Do not reject H0 when it’s actually false.
-Conclude not guilty, when defendant is guilty.
-● The probability of making a Type II error is denoted by β.
-● (1- β) is referred to as the “Power of the Test”.
-NOTE:
-If we retain the null, we do not say it is true. We do not say we “accept” it; we simply do not reject it.
-24
--->
+<section id="corr-source-page-005" class="slide level2">
+<h2>Three ways to study a numerical relationship</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 8 ETF1100 S1 2026 Updated.pdf#page=5">Seminar Week 8 ETF1100 S1 2026 Updated.pdf, page 5</a></em></p>
+<ul>
+<li><strong>Scatterplot:</strong> visualise the relationship between two numerical variables.</li>
+<li><strong>Covariance:</strong> measure whether the variables tend to move together or in opposite directions.</li>
+<li><strong>Correlation:</strong> measure the direction and strength of their <em>linear</em> relationship on a common scale.</li>
+</ul>
 </section>
-<section id="source-page-025" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-025.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 25</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 25. Companion PowerPoint slide 26.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image12.gif
-EDITABLE TEXT TRANSCRIPTION:
-Type I and II errors
-The smaller we make α, the bigger β becomes.
-This inverse relationship must be considered when choosing the significance level α.
-(1-β) is referred to as the “Power of the Test”.
-The true ‘state of the world’
-Statistical Decision       H0 TRUE                       H0 FALSE
-Type II error
-Do not reject H0        Correct decision
-Pr(Type II error) = β
-Type I error
-Reject H0                                            Correct decision
-Pr(Type 1 error) = α
-25
--->
+<section id="corr-source-page-006" class="slide level2">
+<h2>Start with a scatterplot</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 8 ETF1100 S1 2026 Updated.pdf#page=6">Seminar Week 8 ETF1100 S1 2026 Updated.pdf, page 6</a></em></p>
+<p>In the real-estate example, <strong>area</strong> is the explanatory variable <span class="math inline">X</span> and <strong>price</strong> is the response variable <span class="math inline">Y</span>. The plot suggests a positive relationship.</p>
+
+<img data-src="figures/correlation-source/real-estate-scatter.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Real-estate price against area, cropped from the source slide.</p></section>
+<section id="corr-source-page-007" class="slide level2">
+<h2>Covariance: direction of movement</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 8 ETF1100 S1 2026 Updated.pdf#page=7">Seminar Week 8 ETF1100 S1 2026 Updated.pdf, page 7</a></em></p>
+<ul>
+<li><strong>Positive covariance:</strong> larger <span class="math inline">X</span> values tend to occur with larger <span class="math inline">Y</span> values.</li>
+<li><strong>Negative covariance:</strong> larger <span class="math inline">X</span> values tend to occur with smaller <span class="math inline">Y</span> values.</li>
+</ul>
+<p>We expect area and price to have <strong>positive</strong> covariance.</p>
 </section>
-<section id="source-page-026" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-026.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 26</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 26. Companion PowerPoint slide 27.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 3: Interpretation of Type I and II errors
-A recent newspaper article reported that, for 21 year old students, the mean
-amount spent per month on discretionary items (entertainment, dining out, etc)
-is at most $275. A researcher claims this is not the case. He surveyed a random
-sample of forty 21 year old students and obtained a mean of $283, with a
-standard deviation of $17.85.
-Formulate the hypotheses and interpret Type I and II errors in the context of the
-question.
-26
--->
+<section id="corr-source-page-008" class="slide level2">
+<h2>Calculate sample covariance in Excel</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 8 ETF1100 S1 2026 Updated.pdf#page=8">Seminar Week 8 ETF1100 S1 2026 Updated.pdf, page 8</a></em></p>
+<p><span class="math display">s_{XY}=\frac{1}{n-1}\sum_{i=1}^{n}(X_i-\bar X)(Y_i-\bar Y).</span></p>
+<p>In the <a href="../resources/ETF1100-S1-2026/Week 8/Week 8 Seminar Data.xlsx">source RealEstate workbook</a>, area is column K and price is column L. Excel <code>=COVARIANCE.S(K:K,L:L)</code> gives <strong>51,447.661</strong>. Covariance has mixed units, which makes its size hard to interpret.</p>
 </section>
-<section id="source-page-027" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-027.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 27</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 27. Companion PowerPoint slide 28.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 3: Interpretation of Type 1 and II errors
-Hypotheses:
-H0: μ = 275
-H1: μ > 275
-Type I error:
-A Type 1 error is rejecting H0, when H0 is true.
-We find sufficient evidence the mean amount spent per month on discretionary
-items is higher than $275, when, in fact, it is not.
-Type II error:
-A Type II error is retaining H0, when H0 is false.
-We find insufficient evidence the mean amount spent per month on discretionary
-items is higher than $275 when, in fact, it is.
-27
--->
+<section id="corr-source-page-009" class="slide level2">
+<h2>Standardise covariance: correlation</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 8 ETF1100 S1 2026 Updated.pdf#page=9">Seminar Week 8 ETF1100 S1 2026 Updated.pdf, page 9</a></em></p>
+<p><span class="math display">r=\frac{s_{XY}}{s_Xs_Y},\qquad -1\le r\le 1.</span></p>
+<p>Dividing by the sample standard deviations makes correlation <strong>unit free</strong>. In Excel, <code>=CORREL(K:K,L:L)</code> gives <strong>0.566</strong> for area and price.</p>
 </section>
-<section id="source-page-028" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-028.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 28</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 28. Companion PowerPoint slide 29.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 4: Interpretation of Type I and II errors
-The Glendale Steel Company manufactures steel bars. If the production process is
-working properly, it turns out steel bars with mean length of at least 855mm with a
-standard deviation of 65mm (as determined from engineering specifications on the
-production equipment involved).
-Longer steel bars can be used or altered, but shorter bars must be scrapped. You
-select a sample of 25 bars and the mean length is 832mm. Assume that the length of
-steel bars is normally distributed. The production manager claims that the
-production equipment needs to be adjusted.
-Formulate the hypotheses and interpret Type I and II errors in the context of the
-question.
-28
--->
+<section id="corr-source-page-010" class="slide level2">
+<h2>Interpret the sign and size of correlation</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 8 ETF1100 S1 2026 Updated.pdf#page=10">Seminar Week 8 ETF1100 S1 2026 Updated.pdf, page 10</a></em></p>
+<ul>
+<li>The <strong>sign</strong> gives direction: positive or negative.</li>
+<li>The <strong>magnitude</strong> gives linear strength: values near <span class="math inline">-1</span> or <span class="math inline">+1</span> are stronger; values near <span class="math inline">0</span> are weaker.</li>
+<li>For area and price, <span class="math inline">r=0.566</span> suggests a <strong>moderate positive</strong> linear relationship.</li>
+</ul>
 </section>
-<section id="source-page-029" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-029.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 5, page 29</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop5_Hypothesis_Testing_II.pdf, page 29. Companion PowerPoint slide 30.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 4: Interpretation of Type 1 and II errors
-Hypotheses:
-H0: μ = 855
-H1: μ < 855
-Type I error:
-A Type 1 error is rejecting H0, when H0 is true.
-We find sufficient evidence the mean length of steel bars is less than 855mm when
-in fact it is not.
-Type II error:
-A Type II error is retaining the null, when the null is false.
-We find insufficient evidence the mean length of steel bars is less than 855mm
-when in fact it is.
-29
--->
+<section id="corr-source-page-011-linear" class="slide level2">
+<h2>Correlation misses curved patterns</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 8 ETF1100 S1 2026 Updated.pdf#page=11">ETF1100 Week 8 seminar, page 11</a></em></p>
+<p>Correlation measures <strong>linear</strong> relationships. A strong curved pattern can have correlation near zero.</p>
+
+<img data-src="figures/correlation-source/nonlinear-scatter.png" style="width:35.0%" class="r-stretch quarto-figure-center"><p class="caption">Curved relationship.</p></section>
+<section id="corr-source-page-011-causation" class="slide level2">
+<h2>Correlation does not imply causation</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 8 ETF1100 S1 2026 Updated.pdf#page=11">ETF1100 Week 8 seminar, page 11</a></em></p>
+<p>Two series can move together without one causing the other. Margarine consumption and Maine’s divorce rate are a <strong>spurious correlation</strong> in the source.</p>
+
+<img data-src="figures/correlation-source/spurious-correlation.png" style="width:35.0%" class="r-stretch quarto-figure-center"><p class="caption">Spurious correlation.</p></section>
+<section id="reg-source-page-005" class="slide level2">
+<h2>Regression: purpose and variables</h2>
+<p>Regression analysis uses sample data to model relationships and predict a <strong>numerical dependent variable</strong> (response, <span class="math inline">Y</span>) from one or more <strong>independent variables</strong> (predictors, <span class="math inline">X</span>).</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=5">Workshop6_Regression_Analysis_and_Correlation.pdf, page 5</a></em></p>
+</section>
+<section id="reg-source-page-006" class="slide level2">
+<h2>Identify the variables</h2>
+<p>A professor predicts exam score from hours studied. Which is the dependent variable? Which is the independent variable?</p>
+<p><strong>Answer:</strong> exam score is <span class="math inline">Y</span>; hours studied is <span class="math inline">X</span>.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=6">Workshop6_Regression_Analysis_and_Correlation.pdf, page 6</a></em></p>
+</section>
+<section id="reg-source-page-007" class="slide level2">
+<h2>Simple and multiple regression</h2>
+<ul>
+<li><strong>Simple linear regression:</strong> one numerical response and one predictor.</li>
+<li><strong>Multiple linear regression:</strong> one numerical response and several predictors.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=7">Workshop6_Regression_Analysis_and_Correlation.pdf, page 7</a></em></p>
+</section>
+<section id="reg-source-page-008" class="slide level2">
+<h2>Choose the model</h2>
+<p>Predict exam score from hours studied. Is this simple or multiple regression?</p>
+<p><strong>Answer:</strong> simple linear regression, because there is one predictor.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=8">Workshop6_Regression_Analysis_and_Correlation.pdf, page 8</a></em></p>
+</section>
+<section id="reg-source-page-009" class="slide level2">
+<h2>Focus for this section</h2>
+<p>We focus on <strong>simple linear regression</strong>: the relationship between one numerical predictor and one numerical response. Multiple regression follows in Week 6.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=9">Workshop6_Regression_Analysis_and_Correlation.pdf, page 9</a></em></p>
+</section>
+<section id="reg-source-page-010" class="slide level2">
+<h2>Inspect the scatterplot first</h2>
+<p>Plot <span class="math inline">Y</span> against <span class="math inline">X</span> before fitting a line. A roughly linear pattern supports regression; curvature suggests another model. Compare plots A and B.</p>
+<p><img data-src="figures/regression-source/image11.png" style="width:32.0%" alt="Source plot A."> <img data-src="figures/regression-source/image12.png" style="width:32.0%" alt="Source plot B."></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=10">Workshop6_Regression_Analysis_and_Correlation.pdf, page 10</a></em></p>
+</section>
+<section id="reg-source-page-011" class="slide level2">
+<h2>Scatterplot check</h2>
+<p>Which source plot is more suitable for a straight-line model? Look for an approximately linear cloud rather than curvature. Return to the <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=10">two plots</a> before deciding.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=11">Workshop6_Regression_Analysis_and_Correlation.pdf, page 11</a></em></p>
+</section>
+<section id="reg-source-page-012" class="slide level2">
+<h2>The population model</h2>
+<p>For observation <span class="math inline">i</span>, the population model is <span class="math display">Y_i=\beta_0+\beta_1X_i+\varepsilon_i.</span> Here <span class="math inline">\beta_0</span> is the population intercept, <span class="math inline">\beta_1</span> is the population slope, and <span class="math inline">\varepsilon_i</span> is the random error.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=12">Workshop6_Regression_Analysis_and_Correlation.pdf, page 12</a></em></p>
+</section>
+<section id="reg-source-page-013" class="slide level2">
+<h2>The fitted sample line</h2>
+<p>We estimate the unknown population coefficients from a sample: <span class="math display">\widehat{Y}_i=b_0+b_1X_i.</span> The slope <span class="math inline">b_1</span> is the average change in predicted <span class="math inline">Y</span> for a one-unit increase in <span class="math inline">X</span>. Its sign gives the direction of the fitted relationship.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=13">Workshop6_Regression_Analysis_and_Correlation.pdf, page 13</a></em></p>
+</section>
+<section id="reg-source-page-014" class="slide level2">
+<h2>Least squares</h2>
+<p>Excel estimates <span class="math inline">b_0</span> and <span class="math inline">b_1</span> using <strong>least squares</strong>. Choose the line that minimises the sum of squared residuals: <span class="math display">SSE=\sum_{i=1}^{n}(Y_i-\widehat{Y}_i)^2.</span> A residual is the observed value minus its fitted value.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=14">Workshop6_Regression_Analysis_and_Correlation.pdf, page 14</a></em></p>
+</section>
+<section id="reg-source-page-015" class="slide level2">
+<h2>Residuals on a plot</h2>
+<p>Each vertical distance from an observation <span class="math inline">(X_i,Y_i)</span> to the fitted line is a residual <span class="math inline">e_i=Y_i-\widehat{Y}_i</span>. Least squares minimises <span class="math inline">\sum e_i^2</span>. See the source plot for the illustrated observations.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=15">Workshop6_Regression_Analysis_and_Correlation.pdf, page 15</a></em></p>
+</section>
+<section id="reg-source-page-016" class="slide level2">
+<h2>Simple regression workflow</h2>
+<ol type="1">
+<li>Draw a scatterplot and assess whether a line is reasonable.</li>
+<li>Fit the line in Excel and interpret intercept and slope.</li>
+<li>Describe correlation and make predictions.</li>
+<li>Evaluate <span class="math inline">R^2</span> and test the slope.</li>
+</ol>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=16">Workshop6_Regression_Analysis_and_Correlation.pdf, page 16</a></em></p>
+</section>
+<section id="reg-source-page-017" class="slide level2">
+<h2>Real estate: guided task</h2>
+<p>Use the source workbook’s <strong>RealEstate</strong> sheet. Plot price (<span class="math inline">Y</span>, AUD thousands) against area (<span class="math inline">X</span>, sqm), fit a linear trend, and obtain Excel regression output. Interpret coefficients, correlation, predictions for 600 and 900 sqm, and the slope confidence interval.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=17">Workshop6_Regression_Analysis_and_Correlation.pdf, page 17</a></em></p>
+</section>
+<section id="reg-source-page-018" class="slide level2">
+<h2>Real estate scatterplot</h2>
+<p>The trendline is <span class="math inline">\widehat{\text{Price}}=539.36+1.0928(\text{Area})</span>, with <span class="math inline">R^2=0.3204</span>. Price is in AUD thousands; the slope is positive.</p>
+
+<img data-src="figures/regression-source/real-estate-scatter.png" style="width:43.0%" class="r-stretch quarto-figure-center"><p class="caption">Real estate scatterplot and trendline from the source.</p><p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=18">Workshop6_Regression_Analysis_and_Correlation.pdf, page 18</a></em></p>
+</section>
+<section id="reg-source-page-019" class="slide level2">
+<h2>Regression in Excel</h2>
+<p>In <strong>Data → Data Analysis → Regression</strong>, set <span class="math inline">Y</span> to <strong>Price</strong> and <span class="math inline">X</span> to <strong>Area</strong>. Tick <strong>Labels</strong> if headings are included, then choose an output location.</p>
+
+<img data-src="figures/regression-source/image21.png" style="width:25.0%" class="r-stretch quarto-figure-center"><p class="caption">Excel regression setup from the source.</p><p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=19">Workshop6_Regression_Analysis_and_Correlation.pdf, page 19</a></em></p>
+</section>
+<section id="reg-source-page-020" class="slide level2">
+<h2>Read the Excel output</h2>
+<p>The source Excel output gives 329 observations (price in AUD thousands):</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Measure</th>
+<th style="text-align: right;">Estimate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Multiple R</td>
+<td style="text-align: right;">0.5660</td>
+</tr>
+<tr class="even">
+<td>R Square</td>
+<td style="text-align: right;">0.3204</td>
+</tr>
+<tr class="odd">
+<td>Intercept coefficient</td>
+<td style="text-align: right;">539.3572</td>
+</tr>
+<tr class="even">
+<td>Area coefficient</td>
+<td style="text-align: right;">1.092774</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=20">Workshop6_Regression_Analysis_and_Correlation.pdf, page 20</a></em></p>
+</section>
+<section id="reg-source-page-021" class="slide level2">
+<h2>Real estate: coefficients</h2>
+<p>From the Excel output, the intercept is about <span class="math inline">539.357</span> and the Area coefficient is about <span class="math inline">1.0928</span> (Price in AUD thousands). Thus <span class="math display">\widehat{\text{Price}}=539.357+1.0928(\text{Area}).</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=21">Workshop6_Regression_Analysis_and_Correlation.pdf, page 21</a></em></p>
+</section>
+<section id="reg-source-page-022" class="slide level2">
+<h2>Interpret the real estate coefficients</h2>
+<ul>
+<li>Intercept: at area 0 sqm, the model predicts AUD $539,357. This is outside a sensible property context, so interpret cautiously.</li>
+<li>Slope: one additional sqm is associated with about AUD $1,093 higher predicted price, on average.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=22">Workshop6_Regression_Analysis_and_Correlation.pdf, page 22</a></em></p>
+</section>
+<section id="reg-source-page-023" class="slide level2">
+<h2>Correlation coefficient</h2>
+<p>The sample correlation <span class="math inline">r</span> measures the <strong>direction and strength of a linear relationship</strong>, with <span class="math inline">-1\le r\le1</span>. A positive value indicates variables tend to rise together; a negative value indicates they tend to move oppositely. Values nearer <span class="math inline">\pm1</span> indicate a stronger linear pattern.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=23">Workshop6_Regression_Analysis_and_Correlation.pdf, page 23</a></em></p>
+</section>
+<section id="reg-source-page-024" class="slide level2">
+<h2>Real estate: find correlation</h2>
+<p>Read <strong>Multiple R</strong> in the Excel output. In a one-predictor model, give it the sign of the slope to obtain the sample correlation <span class="math inline">r</span>. You can also use Excel <code>=CORREL(price_range, area_range)</code>.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=24">Workshop6_Regression_Analysis_and_Correlation.pdf, page 24</a></em></p>
+</section>
+<section id="reg-source-page-025" class="slide level2">
+<h2>Real estate: interpret correlation</h2>
+<p>The sample correlation is <span class="math inline">r=0.566</span>: a <strong>moderate positive</strong> linear association between area and price. The positive sign agrees with the positive fitted slope.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=25">Workshop6_Regression_Analysis_and_Correlation.pdf, page 25</a></em></p>
+</section>
+<section id="reg-source-page-026" class="slide level2">
+<h2>Compare predicted property prices</h2>
+<p>Use the exact Excel coefficients for two predictions: <span class="math display">\widehat{Y}_{900}-\widehat{Y}_{600}=b_1(900-600).</span> The source output gives a difference of about <strong>AUD $327,832</strong>. The larger property has a higher fitted price because <span class="math inline">b_1&gt;0</span>.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=26">Workshop6_Regression_Analysis_and_Correlation.pdf, page 26</a></em></p>
+</section>
+<section id="reg-source-page-027" class="slide level2">
+<h2>Real estate: slope interval</h2>
+<p>Locate the <strong>Lower 95%</strong> and <strong>Upper 95%</strong> values for the Area coefficient in Excel’s output. The interval estimates the population change in mean price for one additional sqm.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=27">Workshop6_Regression_Analysis_and_Correlation.pdf, page 27</a></em></p>
+</section>
+<section id="reg-source-page-028" class="slide level2">
+<h2>Interpret the slope interval</h2>
+<p>The source interval corresponds to approximately <strong>AUD $920 to $1,266 per additional sqm</strong>. We are 95% confident that the population mean price increase per additional sqm lies in this range.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=28">Workshop6_Regression_Analysis_and_Correlation.pdf, page 28</a></em></p>
+</section>
+<section id="reg-source-page-029" class="slide level2">
+<h2>Marketing: your turn</h2>
+<p>Use the source workbook’s <strong>Marketing</strong> sheet. Predict spend (<span class="math inline">Y</span>, dollars) from income (<span class="math inline">X</span>, dollars). Draw the scatterplot, fit the model in Excel, interpret the coefficients and correlation, predict spend at $50,000 income, and interpret the slope interval.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=29">Workshop6_Regression_Analysis_and_Correlation.pdf, page 29</a></em></p>
+</section>
+<section id="reg-source-page-030" class="slide level2">
+<h2>Marketing: expected relationship</h2>
+<p>Before analysing the data, expect a positive association: a customer with higher income may spend more on non-essential items. Compare this expectation with the fitted scatterplot.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=30">Workshop6_Regression_Analysis_and_Correlation.pdf, page 30</a></em></p>
+</section>
+<section id="reg-source-page-031" class="slide level2">
+<h2>Marketing scatterplot</h2>
+<p>The chart shows a positive pattern. In dollars, <span class="math inline">\widehat{\text{Spend}}\approx8254.6+0.2956(\text{Income})</span> and <span class="math inline">R^2\approx0.5508</span>.</p>
+
+<img data-src="figures/regression-source/marketing-scatter.png" style="width:43.0%" class="r-stretch quarto-figure-center"><p class="caption">Spend versus income scatterplot and fitted line from the source.</p><p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=31">Workshop6_Regression_Analysis_and_Correlation.pdf, page 31</a></em></p>
+</section>
+<section id="reg-source-page-032" class="slide level2">
+<h2>Marketing: Excel regression</h2>
+<p>Use <strong>Data → Data Analysis → Regression</strong>. Set Spend as <span class="math inline">Y</span> and Income as <span class="math inline">X</span>. The source page shows the resulting output; read the coefficients, Multiple R, R Square and confidence interval from it.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=32">Workshop6_Regression_Analysis_and_Correlation.pdf, page 32</a></em></p>
+</section>
+<section id="reg-source-page-033" class="slide level2">
+<h2>Marketing: coefficient interpretation</h2>
+<ul>
+<li>Intercept <span class="math inline">\approx8254.575</span>: predicted spend at income $0 is about $8,255; this may not be useful outside the observed income range.</li>
+<li>Slope <span class="math inline">\approx0.296</span>: each extra <strong>$1,000</strong> of income is associated with about <strong>$296</strong> more predicted spend, on average.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=33">Workshop6_Regression_Analysis_and_Correlation.pdf, page 33</a></em></p>
+</section>
+<section id="reg-source-page-034" class="slide level2">
+<h2>Marketing: correlation</h2>
+<p>The sample correlation is <span class="math inline">r=0.742</span>, a moderately strong positive linear association between income and spend. Its positive sign agrees with the fitted slope.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=34">Workshop6_Regression_Analysis_and_Correlation.pdf, page 34</a></em></p>
+</section>
+<section id="reg-source-page-035" class="slide level2">
+<h2>Marketing: prediction</h2>
+<p>Insert income <span class="math inline">X=50{,}000</span> into the fitted equation: <span class="math display">\widehat{\text{Spend}}=b_0+b_1(50{,}000)\approx\$23{,}035.</span> Use the exact Excel coefficients when available.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=35">Workshop6_Regression_Analysis_and_Correlation.pdf, page 35</a></em></p>
+</section>
+<section id="reg-source-page-036" class="slide level2">
+<h2>Marketing: slope interval</h2>
+<p>The source 95% interval for the income slope is approximately <strong>0.277 to 0.314 dollars of spend per income dollar</strong>. Equivalently, a $1,000 increase in income is associated with <strong>$277 to $314</strong> higher mean spend.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=36">Workshop6_Regression_Analysis_and_Correlation.pdf, page 36</a></em></p>
+</section>
+<section id="reg-source-page-037" class="slide level2">
+<h2>Evaluate the fitted model</h2>
+<p>After estimating and interpreting a line, examine how much variation it explains using <span class="math inline">R^2</span>, then test whether the population slope differs from zero.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=37">Workshop6_Regression_Analysis_and_Correlation.pdf, page 37</a></em></p>
+</section>
+<section id="reg-source-page-038" class="slide level2">
+<h2>Real estate: model evaluation</h2>
+<p>For the RealEstate sheet, interpret the coefficient of determination <span class="math inline">R^2</span> and test whether the slope is statistically significant.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=38">Workshop6_Regression_Analysis_and_Correlation.pdf, page 38</a></em></p>
+</section>
+<section id="reg-source-page-039" class="slide level2">
+<h2>Coefficient of determination</h2>
+<p><span class="math inline">R^2</span> is the share of total variation in <span class="math inline">Y</span> explained by its fitted linear relationship with <span class="math inline">X</span>: <span class="math display">0\le R^2\le1.</span> A larger <span class="math inline">R^2</span> means a greater share of sample variation is accounted for by the fitted model.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=39">Workshop6_Regression_Analysis_and_Correlation.pdf, page 39</a></em></p>
+</section>
+<section id="reg-source-page-040" class="slide level2">
+<h2>Partitioning variation</h2>
+<p>The total sum of squares splits into explained and unexplained variation: <span class="math display">SST=SSR+SSE,\qquad R^2=\frac{SSR}{SST}=1-\frac{SSE}{SST}.</span> Here <span class="math inline">SSR</span> is regression variation and <span class="math inline">SSE</span> is residual variation.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=40">Workshop6_Regression_Analysis_and_Correlation.pdf, page 40</a></em></p>
+</section>
+<section id="reg-source-page-041" class="slide level2">
+<h2>What makes a good fit?</h2>
+<p>If <span class="math inline">SSR</span> is a large share of <span class="math inline">SST</span>, the line explains much of the observed variation. If <span class="math inline">SSE</span> is large, much remains unexplained. Use <span class="math display">R^2=SSR/SST</span> to express this share as a percentage.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=41">Workshop6_Regression_Analysis_and_Correlation.pdf, page 41</a></em></p>
+</section>
+<section id="reg-source-page-042" class="slide level2">
+<h2>Real estate: locate R²</h2>
+<p>Read <strong>R Square</strong> in the Excel output for the RealEstate model. What percentage of variation in observed prices is accounted for by area in the fitted line?</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=42">Workshop6_Regression_Analysis_and_Correlation.pdf, page 42</a></em></p>
+</section>
+<section id="reg-source-page-043" class="slide level2">
+<h2>Real estate: interpret R²</h2>
+<p>The model has <span class="math inline">R^2\approx0.3204</span>. About <strong>32%</strong> of the sample variation in property prices is explained by area through this linear model; about <strong>68%</strong> remains unexplained.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=43">Workshop6_Regression_Analysis_and_Correlation.pdf, page 43</a></em></p>
+</section>
+<section id="reg-source-page-044" class="slide level2">
+<h2>Why test the slope?</h2>
+<p>Least squares produces a fitted line even when the population relationship might have zero slope. Test the population coefficient <span class="math inline">\beta_1</span> before claiming evidence of a linear relationship.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=44">Workshop6_Regression_Analysis_and_Correlation.pdf, page 44</a></em></p>
+</section>
+<section id="reg-source-page-045" class="slide level2">
+<h2>Slope test: hypotheses</h2>
+<ul>
+<li>Two-sided: <span class="math inline">H_0:\beta_1=0</span> versus <span class="math inline">H_1:\beta_1\ne0</span>.</li>
+<li>Positive relationship: <span class="math inline">H_0:\beta_1=0</span> versus <span class="math inline">H_1:\beta_1&gt;0</span>.</li>
+<li>Negative relationship: <span class="math inline">H_0:\beta_1=0</span> versus <span class="math inline">H_1:\beta_1&lt;0</span>.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=45">Workshop6_Regression_Analysis_and_Correlation.pdf, page 45</a></em></p>
+</section>
+<section id="reg-source-page-046" class="slide level2">
+<h2>Slope test: statistic and p-value</h2>
+<p>Excel reports <span class="math display">t=\frac{b_1-0}{SE(b_1)},\qquad df=n-2.</span> Its default regression output gives a <strong>two-sided</strong> <span class="math inline">p</span> value. For a one-sided test in the direction of the estimated slope, halve that value.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=46">Workshop6_Regression_Analysis_and_Correlation.pdf, page 46</a></em></p>
+</section>
+<section id="reg-source-page-047" class="slide level2">
+<h2>Slope test: decision and conclusion</h2>
+<p>At significance level <span class="math inline">\alpha</span>, reject <span class="math inline">H_0</span> when <span class="math inline">p&lt;\alpha</span>; otherwise, do not reject it. State the conclusion in terms of the business variables and the population relationship.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=47">Workshop6_Regression_Analysis_and_Correlation.pdf, page 47</a></em></p>
+</section>
+<section id="reg-source-page-048" class="slide level2">
+<h2>Real estate: two-sided slope test</h2>
+<p>Test <span class="math inline">H_0:\beta_1=0</span> versus <span class="math inline">H_1:\beta_1\ne0</span> at <span class="math inline">\alpha=0.05</span>. Excel gives <span class="math inline">t=12.415</span> and two-sided <span class="math inline">p=2.9314\times10^{-29}</span>. Reject <span class="math inline">H_0</span>: there is evidence of a linear relationship between area and price.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=48">Workshop6_Regression_Analysis_and_Correlation.pdf, page 48</a></em></p>
+</section>
+<section id="reg-source-page-049" class="slide level2">
+<h2>Real estate: positive slope test</h2>
+<p>Test <span class="math inline">H_0:\beta_1=0</span> versus <span class="math inline">H_1:\beta_1&gt;0</span> at <span class="math inline">\alpha=0.05</span>. The slope is positive, so the one-sided <span class="math inline">p</span> value is <span class="math inline">2.9314\times10^{-29}/2</span>. Reject <span class="math inline">H_0</span>: there is evidence of a <strong>positive</strong> linear relationship.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=49">Workshop6_Regression_Analysis_and_Correlation.pdf, page 49</a></em></p>
+</section>
+<section id="reg-source-page-050" class="slide level2">
+<h2>Marketing: evaluate the model</h2>
+<p>For Spend versus Income, interpret <span class="math inline">R^2</span>, then test at the 5% level whether the population slope is positive.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=50">Workshop6_Regression_Analysis_and_Correlation.pdf, page 50</a></em></p>
+</section>
+<section id="reg-source-page-051" class="slide level2">
+<h2>Marketing: Excel output reminder</h2>
+<p>Use the Marketing regression output to locate <strong>R Square</strong>, the Income coefficient, its <span class="math inline">t</span> statistic and its two-sided <span class="math inline">p</span> value.</p>
+
+<img data-src="figures/regression-source/image26.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Selected Marketing output from the source.</p><p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=51">Workshop6_Regression_Analysis_and_Correlation.pdf, page 51</a></em></p>
+</section>
+<section id="reg-source-page-052" class="slide level2">
+<h2>Marketing: interpret R²</h2>
+<p>The fitted model has <span class="math inline">R^2=55.08\%</span>. It explains about <strong>55.08%</strong> of observed variation in spend. The other <strong>44.92%</strong> remains unexplained by this one-predictor line.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=52">Workshop6_Regression_Analysis_and_Correlation.pdf, page 52</a></em></p>
+</section>
+<section id="reg-source-page-053" class="slide level2">
+<h2>Marketing: positive slope test</h2>
+<p>At <span class="math inline">\alpha=0.05</span>, test <span class="math inline">H_0:\beta_1=0</span> versus <span class="math inline">H_1:\beta_1&gt;0</span>. Excel gives <span class="math inline">t=31.377</span> and two-sided <span class="math inline">p=1.1097\times10^{-141}</span>. The one-sided <span class="math inline">p</span> is half of this. Reject <span class="math inline">H_0</span>: there is evidence of a positive linear relationship between income and spend.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop6_Regression_Analysis_and_Correlation.pdf#page=53">Workshop6_Regression_Analysis_and_Correlation.pdf, page 53</a></em></p>
 
 
 </section>
@@ -1064,6 +983,13 @@ when in fact it is.
       });
     </script>
     <script>
+    // Give section dividers a background that fills the letterboxed slide.
+    document.querySelectorAll('section.section-slide').forEach(function (slide) {
+      if (!slide.hasAttribute('data-background-color')) {
+        slide.setAttribute('data-background-color', '#006dae');
+      }
+    });
+
     // Copy over background colors to new div
     divs = document.querySelectorAll('[data-background-color]');
 
@@ -1197,6 +1123,61 @@ when in fact it is.
     // Move progress bar
     menu_div = document.querySelector(".progress");
     document.querySelector(".slides").appendChild(menu_div);
+    </script>
+
+    <script>
+    // Show a manually started countdown on slides with data-timing="seconds".
+    (function () {
+      let interval;
+
+      function showCountdown(slide) {
+        clearInterval(interval);
+        if (!slide) return;
+        const duration = Number(slide.dataset.timing);
+        if (!Number.isFinite(duration) || duration <= 0) return;
+
+        let timer = slide.querySelector('.slide-countdown');
+        if (!timer) {
+          timer = document.createElement('div');
+          timer.className = 'slide-countdown';
+          timer.innerHTML = '<span role="timer"></span><button type="button">Start</button>';
+          slide.appendChild(timer);
+        }
+        const clock = timer.querySelector('[role="timer"]');
+        const button = timer.querySelector('button');
+        const format = seconds => String(Math.floor(seconds / 60)).padStart(2, '0') + ':' +
+          String(seconds % 60).padStart(2, '0');
+        clock.textContent = format(Math.ceil(duration));
+        button.hidden = false;
+        timer.onclick = function (event) {
+          if (button.hidden) return;
+          event.stopPropagation();
+          button.hidden = true;
+          const end = Date.now() + duration * 1000;
+          function update() {
+            const remaining = Math.max(0, Math.ceil((end - Date.now()) / 1000));
+            clock.textContent = format(remaining);
+            if (remaining === 0) clearInterval(interval);
+          }
+          update();
+          interval = setInterval(update, 250);
+        };
+      }
+
+      Reveal.on('slidechanged', event => showCountdown(event.currentSlide));
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' || event.repeat) return;
+        if (event.target instanceof Element &&
+            event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+        const slide = Reveal.getCurrentSlide();
+        const button = slide && slide.querySelector('.slide-countdown button');
+        if (!button || button.hidden) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        button.click();
+      }, true);
+      showCountdown(Reveal.getCurrentSlide());
+    })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">

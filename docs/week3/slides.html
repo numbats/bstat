@@ -9,6 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.11.9">
 
+  <meta name="dcterms.date" content="2026-12-08">
   <title>Business Statistics – slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -34,7 +35,23 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ecfa366c05ac1ff1a677a8c5facd037d.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d7d650050b1ce3e072e4f0f18efcf387.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -136,803 +153,663 @@
 
 <section id="source-page-001" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-001.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 1</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 1. Companion PowerPoint slide 1.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image1.png
-EDITABLE TEXT TRANSCRIPTION:
-ETX1100/5900 Business Statistics
-Week 3
-Part 1: Sampling Distribution
-Part 2: Confidence Interval Estimation
--->
-</section>
+<h3 id="etx11005900-business-statistics">ETX1100/5900 Business Statistics</h3>
+<p>Week 3 Part 1: Sampling Distribution Part 2: Confidence Interval Estimation</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=1">Workshop_slides_Week_3_with_solutions.pdf, page 1</a></em></p>
+
+<img data-src="figures/etx5900/components/image1.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 1.</p></section>
 <section id="source-page-002" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-002.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 2</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 2. Companion PowerPoint slide 2.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Learning Objectives
-Describe the role of statistical inference and apply inference methods to single populations.
-Textbook references:
-Berenson et al Basic Business Statistics 5th edition,
-Chapter 6 Sections 6.1-6.2
-Chapter 7, Sections 7.1-7.5.
-Chapter 8, Sections 8.1-8.3
--->
+<h3 id="learning-objectives">Learning Objectives</h3>
+<p>Describe the role of statistical inference and apply inference methods to single populations. Textbook references: Berenson et al Basic Business Statistics 5th edition, Chapter 6 Sections 6.1-6.2 Chapter 7, Sections 7.1-7.5. Chapter 8, Sections 8.1-8.3</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=2">Workshop_slides_Week_3_with_solutions.pdf, page 2</a></em></p>
 </section>
 <section id="source-page-003" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-003.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 3</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 3. Companion PowerPoint slide 3.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image2.jpg
-EDITABLE TEXT TRANSCRIPTION:
-The Basics of Sampling Distribution
-Sample statistic is only an estimate of the truth
-Since the sample may vary, any sample statistic is not exact and has variation/error around them. The smaller the error, the greater the accuracy.
-Assume we take data samples repeatedly, and compute sample means as the statistic for each set of sample. Then we would have the sampling distribution of the sample mean to portray its variability
-A sampling distribution is the probability distribution of a sample statistic.
-(eg: Xbar has a sampling distribution and p also has a sampling distribution)
-.
--->
-</section>
+<h3 id="the-basics-of-sampling-distribution">The Basics of Sampling Distribution</h3>
+<p>Sample statistic is only an estimate of the truth Since the sample may vary, any sample statistic is not exact and has variation/error around them. The smaller the error, the greater the accuracy. Assume we take data samples repeatedly, and compute sample means as the statistic for each set of sample. Then we would have the sampling distribution of the sample mean to portray its variability A sampling distribution is the probability distribution of a sample statistic. (eg: Xbar has a sampling distribution and p also has a sampling distribution)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=3">Workshop_slides_Week_3_with_solutions.pdf, page 3</a></em></p>
+
+<img data-src="figures/etx5900/components/image2.jpg" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 3.</p></section>
 <section id="source-page-004" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-004.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 4</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 4. Companion PowerPoint slide 4.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image23.png
-EDITABLE TEXT TRANSCRIPTION:
-Sampling Distribution of the Sample Mean
-The sampling distribution of the sample mean is a statistical tool that helps quantify the uncertainty of the estimate 𝒙  for a given data set.
-𝑋 ~ 𝑁(𝜇, 𝜎2𝑛) refers to the sampling distribution of the sample mean.
-It shows how the sample mean (𝒙 ) varies from sample to sample
-Helps us understand the properties of the sample mean as an estimator of the population mean.
-If 𝑋~ 𝑁(𝜇, 𝜎2), then 𝑋 ~ 𝑁(𝜇, 𝜎2𝑛)
-The variation of 𝒙  is measured by the standard error of the mean- SE𝒙.
-The standard error is the standard deviation of 𝒙 . It is calculated as follows: 𝑠𝑡𝑎𝑛𝑑𝑎𝑟𝑑 𝑑𝑒𝑣𝑖𝑎𝑡𝑖𝑜𝑛 𝑛
-For a large n, 𝑺𝑬𝒙 is lower, 𝒙 is more precise estimate of the true population mean (μ)
--->
-</section>
+<h3 id="sampling-distribution-of-the-sample-mean">Sampling Distribution of the Sample Mean</h3>
+<p>The sampling distribution of the sample mean describes how <span class="math inline">\bar{X}</span> varies from sample to sample. It quantifies uncertainty in the estimate of the population mean.</p>
+<p>If the population variable has a normal distribution,</p>
+<p><span class="math display">
+X \sim N(\mu, \sigma^2), \qquad \bar{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right).
+</span></p>
+<p>The standard error is the standard deviation of the sampling distribution:</p>
+<p><span class="math display">
+\mathrm{SE}(\bar{X}) = \frac{\sigma}{\sqrt{n}}.
+</span></p>
+<p>As sample size <span class="math inline">n</span> increases, the standard error decreases and <span class="math inline">\bar{X}</span> gives a more precise estimate of <span class="math inline">\mu</span>.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=4">Workshop_slides_Week_3_with_solutions.pdf, page 4</a></em></p>
+
+<img data-src="figures/etx5900/components/image23.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 4.</p></section>
 <section id="source-page-005" class="slide level2">
 <h2></h2>
+<h3 id="sampling-distributions-for-different-sample-sizes">Sampling distributions for different sample sizes</h3>
+<p>The following results are based on all possible samples of size <span class="math inline">n</span>. The sampling distribution has <span class="math inline">\mu_{\bar{x}} = 3.5</span> and population standard deviation <span class="math inline">\sigma = 1.708</span>.</p>
+<p>Compare the standard deviation of the sample mean, <span class="math inline">\sigma_{\bar{x}}</span>, with <span class="math inline">\sigma</span>:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 27%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Sample size (<span class="math inline">n</span>)</th>
+<th>Standard error (<span class="math inline">\sigma_{\bar{x}} = \sigma / \sqrt{n}</span>)</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td><span class="math inline">1.708 / \sqrt{5}</span></td>
+<td style="text-align: right;">0.764</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td><span class="math inline">1.708 / \sqrt{10}</span></td>
+<td style="text-align: right;">0.540</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">25</td>
+<td><span class="math inline">1.708 / \sqrt{25}</span></td>
+<td style="text-align: right;">0.342</td>
+</tr>
+</tbody>
+</table>
+<p>The standard deviation of the sample mean is smaller than <span class="math inline">\sigma</span>. As sample size increases, <span class="math inline">\sigma_{\bar{x}}</span> decreases, so <span class="math inline">\bar{X}</span> tends to fall closer to <span class="math inline">\mu</span>.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=5">Workshop_slides_Week_3_with_solutions.pdf, page 5</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-005.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 5</figcaption>
+<p><img data-src="figures/etx5900/components/image3.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 5.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 5. Companion PowerPoint slide 5.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image3.png, figures/etx5900/components/image4.png, figures/etx5900/components/image27.png, figures/etx5900/components/image5.png, figures/etx5900/components/image29.png, figures/etx5900/components/image31.png, figures/etx5900/components/image32.png, figures/etx5900/components/image33.png
-EDITABLE TEXT TRANSCRIPTION:
-The following are based on all possible samples of size n
-Compare 𝝈𝒙 with 𝝈
-Notice that 𝜎𝑥 is smaller than 𝜎. The larger the sample size, the smaller 𝜎𝑥.
-So 𝑋 tends to fall closer to 𝜇 as the sample size (n) increases.
-n = 5
-𝜎𝑥 = 𝜎𝑛  = 1.7085 = 0.764
-n = 25
-𝜎𝑥 = 𝜎𝑛  = 1.70825 = 0.342
-n = 10
-𝜎𝑥 = 𝜎𝑛  = 1.70810 = 0.540
-𝝁𝒙 = 3.5, 𝝈 = 1.708
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image4.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 5.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image27.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 5.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image5.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 5.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image29.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 5.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image31.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 5.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image32.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 5.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image33.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 5.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-006" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-006.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 6</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 6. Companion PowerPoint slide 6.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image34.png
-EDITABLE TEXT TRANSCRIPTION:
-In other words, regardless of the distribution of the original population,
-the distribution of the sample mean is approximately normal,
-IF the sample size is large enough.
-This approximation gets better as the sample size increases.
-What if the distribution of X (parent distribution) is not normal?
-It doesn’t matter!
-Statistical theory gives us a result (Central Limit Theorem or CLT) which states that:
-If the sample size 𝒏 is sufficiently large, regardless of the distribution of the population,
-𝑿 ~ 𝑵(𝝁, 𝝈𝟐𝒏)
-where ,     𝜎𝑛 is the standard error (𝜎𝑋)    -   standard deviation of 𝑋
--->
-</section>
+<h3 id="in-other-words-regardless-of-the-distribution-of-the-original-population">In other words, regardless of the distribution of the original population,</h3>
+<p>Regardless of the population distribution, the distribution of the sample mean is approximately normal when the sample size is sufficiently large. This is the Central Limit Theorem (CLT); the approximation improves as <span class="math inline">n</span> increases.</p>
+<p>For a population with mean <span class="math inline">\mu</span> and standard deviation <span class="math inline">\sigma</span>,</p>
+<p><span class="math display">
+\bar{X} \approx N\left(\mu, \frac{\sigma^2}{n}\right), \qquad \mathrm{SE}(\bar{X}) = \frac{\sigma}{\sqrt{n}}.
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=6">Workshop_slides_Week_3_with_solutions.pdf, page 6</a></em></p>
+
+<img data-src="figures/etx5900/components/image34.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 6.</p></section>
 <section id="source-page-007" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-007.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 7</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 7. Companion PowerPoint slide 7.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image6.png
-EDITABLE TEXT TRANSCRIPTION:
-Central Limit Theorem
-https://www.youtube.com/watch?v=jvoxEYmQHNM
--->
-</section>
+<h3 id="central-limit-theorem">Central Limit Theorem</h3>
+<p>https://www.youtube.com/watch?v=jvoxEYmQHNM</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=7">Workshop_slides_Week_3_with_solutions.pdf, page 7</a></em></p>
+
+<img data-src="figures/etx5900/components/image6.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 7.</p></section>
 <section id="source-page-008" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-008.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 8</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 8. Companion PowerPoint slide 8.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-UrbanStyle is a popular retail store that tracks customer spending to optimise staffing, stock levels, and promotional strategies. Past data indicate that the distribution of individual customer purchase amounts is normal, with mean purchase amounts of $25 and a standard deviation of $8
-You have been asked to analyse spending patterns to support decisions for an upcoming promotional event.
-The retail store defines a “moderate purchase” as spending between $15 and $35.Using the information above, calculate the probability that a randomly selected customer makes a moderate purchase.
-b) Store managers want to design a promotion that targets the top 25% of customers by spending. This will help managers set a threshold for premium rewards. Find the dollar amount such that 75% of customers spend no more than this value.
-c) On a particular weekend, a random sample of 15 customers was taken to estimate average spending.Assuming the store’s spending distribution remains unchanged, calculate the probability that the sample mean purchase amount for these 15 customers is not more than $30.
-8
-Task 1: Customer Spending
--->
+<h3 id="urbanstyle-is-a-popular-retail-store-that-tracks-customer-spending-to-optimise-staffing-stock-levels-and-promotional-strategies.-past-data-indicate-that-the-distribution-of-individual-customer-purchase-amounts-is-normal-with-mean-purchase-amounts-of-25-and-a-standard-deviation-of-8">UrbanStyle is a popular retail store that tracks customer spending to optimise staffing, stock levels, and promotional strategies. Past data indicate that the distribution of individual customer purchase amounts is normal, with mean purchase amounts of $25 and a standard deviation of $8</h3>
+<p>You have been asked to analyse spending patterns to support decisions for an upcoming promotional event. The retail store defines a “moderate purchase” as spending between $15 and $35.Using the information above, calculate the probability that a randomly selected customer makes a moderate purchase. b) Store managers want to design a promotion that targets the top 25% of customers by spending. This will help managers set a threshold for premium rewards. Find the dollar amount such that 75% of customers spend no more than this value. c) On a particular weekend, a random sample of 15 customers was taken to estimate average spending.Assuming the store’s spending distribution remains unchanged, calculate the probability that the sample mean purchase amount for these 15 customers is not more than $30. 8 Task 1: Customer Spending</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=8">Workshop_slides_Week_3_with_solutions.pdf, page 8</a></em></p>
 </section>
 <section id="source-page-009" class="slide level2">
 <h2></h2>
+<h3 id="the-retail-store-defines-a-moderate-purchase-as-spending-between-15-and-35.using-the-information-above-calculate-the-probability-that-a-randomly-selected-customer-makes-a-moderate-purchase">The retail store defines a “moderate purchase” as spending between $15 and $35.Using the information above, calculate the probability that a randomly selected customer makes a moderate purchase</h3>
+<p>9 Solutions for Task 1: Customer Spending 15 -1.25 0 1.25 25 35 X scale Z scale</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=9">Workshop_slides_Week_3_with_solutions.pdf, page 9</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-009.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 9</figcaption>
+<p><img data-src="figures/etx5900/components/image7.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 9.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 9. Companion PowerPoint slide 9.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image7.png, figures/etx5900/components/image8.png
-EDITABLE TEXT TRANSCRIPTION:
-The retail store defines a “moderate purchase” as spending between $15 and $35.Using the information above, calculate the probability that a randomly selected customer makes a moderate purchase
-9
-Solutions for Task 1: Customer Spending
-15
--1.25
-0
-1.25
-25
-35
-X scale
-Z scale
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image8.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 9.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-010" class="slide level2">
 <h2></h2>
+<h3 id="bstore-managers-want-to-design-a-promotion-that-targets-the-top-25-of-customers-by-spending.-this-will-help-managers-set-a-threshold-for-premium-rewards.-find-the-dollar-amount-such-that-75-of-customers-spend-no-more-than-this-value.">b)Store managers want to design a promotion that targets the top 25% of customers by spending. This will help managers set a threshold for premium rewards. Find the dollar amount such that 75% of customers spend no more than this value.</h3>
+<p>10 Solutions for Task 1: Purchase Amounts 25 x ? 0 0.67 Z scale X scale 0.75 <span class="math display">
+PX\leq{}x=0.75
+</span> <span class="math display">
+Norm.inv(0.75,25,8) = 0.303959 \approx{} \$30.40
+</span> OR To get the Z value: From Excel: = norm.s.inv(0.75) = 0.67449 From tables: Z=0.67 (refer to videos) <span class="math display">
+Z = X - \mu{}\sigma{}
+</span> <span class="math display">
+0.67 = = X -258
+</span> <span class="math display">
+X = 25 + (0.67)8 = 30.3959 \approx{} \$30.40
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=10">Workshop_slides_Week_3_with_solutions.pdf, page 10</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-010.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 10</figcaption>
+<p><img data-src="figures/etx5900/components/image9.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 10.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 10. Companion PowerPoint slide 10.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image9.png, figures/etx5900/components/image10.png, figures/etx5900/components/image11.png
-EDITABLE TEXT TRANSCRIPTION:
-b)Store managers want to design a promotion that targets the top 25% of customers by spending. This will help managers set a threshold for premium rewards. Find the dollar amount such that 75% of customers spend no more than this value.
-10
-Solutions for Task 1: Purchase Amounts
-25
-x ?
-0
-0.67
-Z scale
-X scale
-0.75
-𝑃𝑋≤𝑥=0.75
-Norm.inv(0.75,25,8) = 0.303959 ≈ $30.40
-OR
-To get the Z value:
-From Excel: = norm.s.inv(0.75) = 0.67449
-From tables: Z=0.67  (refer to videos)
-Z = 𝑋 − 𝜇𝜎
-0.67 = = 𝑋 −258
-X = 25 + (0.67)8 = 30.3959 ≈ $30.40
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image10.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 10.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image11.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 10.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-011" class="slide level2">
 <h2></h2>
+<h3 id="suppose-it-is-known-that-the-distribution-of-purchase-amounts-by-customers-entering-a-popular-retail-store-is-normal-with-mean-25-and-standard-deviation-8.">Suppose it is known that the distribution of purchase amounts by customers entering a popular retail store is normal with mean $25 and standard deviation $8.</h3>
+<p>Suppose a random sample of 15 customers who entered this popular retail store was taken. c) Calculate the probability that their mean purchase amount is not more than $30. 11 Solutions for Task 1: Purchase Amounts Since X~ N(μ, σ2), then X ~ N(μ, σ2n)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=11">Workshop_slides_Week_3_with_solutions.pdf, page 11</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-011.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 11</figcaption>
+<p><img data-src="figures/etx5900/components/image12.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 11.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 11. Companion PowerPoint slide 11.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image12.png, figures/etx5900/components/image44.png
-EDITABLE TEXT TRANSCRIPTION:
-Suppose it is known that the distribution of purchase amounts by customers entering a popular retail store is normal with mean $25 and standard deviation $8.
-Suppose a random sample of 15 customers who entered this popular retail store was taken.
-c) Calculate the probability that their mean purchase amount is not more than $30.
-11
-Solutions for Task 1: Purchase Amounts
-𝑆𝑖𝑛𝑐𝑒 𝑋~ 𝑁(𝜇, 𝜎2), then 𝑋 ~ 𝑁(𝜇, 𝜎2𝑛)
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image44.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 11.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-012" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-012.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 12</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 12. Companion PowerPoint slide 12.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-A consulting firm is preparing a report for a group of employers about graduate starting salaries. A recent national survey reports that the average weekly income of graduates one year after graduation is $600, with a standard deviation of $100. The distribution of individual weekly incomes is known to be non-normal (some graduates earn much more than others).
-For a client presentation, an analyst at the consulting firm takes a random sample of 50 graduates from the survey data.
-What is the probability that the mean weekly income of this sample of 50 graduates is less than $580?
-12
-Task 2: Weekly Income of Graduates
--->
+<h3 id="a-consulting-firm-is-preparing-a-report-for-a-group-of-employers-about-graduate-starting-salaries.-a-recent-national-survey-reports-that-the-average-weekly-income-of-graduates-one-year-after-graduation-is-600-with-a-standard-deviation-of-100.-the-distribution-of-individual-weekly-incomes-is-known-to-be-non-normal-some-graduates-earn-much-more-than-others.">A consulting firm is preparing a report for a group of employers about graduate starting salaries. A recent national survey reports that the average weekly income of graduates one year after graduation is $600, with a standard deviation of $100. The distribution of individual weekly incomes is known to be non-normal (some graduates earn much more than others).</h3>
+<p>For a client presentation, an analyst at the consulting firm takes a random sample of 50 graduates from the survey data. What is the probability that the mean weekly income of this sample of 50 graduates is less than $580? 12 Task 2: Weekly Income of Graduates</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=12">Workshop_slides_Week_3_with_solutions.pdf, page 12</a></em></p>
 </section>
 <section id="source-page-013" class="slide level2">
 <h2></h2>
+<h3 id="section">13</h3>
+<p>Solutions for Task 2: Weekly Income of Graduates <span class="math display">
+PX&lt;580=PX - \mu{}\sigma{}n&lt;580-60010050
+</span> <span class="math display">
+P(Z&lt;-1.414) = 0.07865
+</span> Norm.dist(580,600,100/sqrt(50),true) = 0.07865</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=13">Workshop_slides_Week_3_with_solutions.pdf, page 13</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-013.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 13</figcaption>
+<p><img data-src="figures/etx5900/components/image13.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 13.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 13. Companion PowerPoint slide 13.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image13.png, figures/etx5900/components/image430.png
-EDITABLE TEXT TRANSCRIPTION:
-13
-Solutions for Task 2: Weekly Income of Graduates
-𝑃𝑋<580=𝑃𝑋 − 𝜇𝜎𝑛<580−60010050
-P(Z<-1.414) = 0.07865
-Norm.dist(580,600,100/sqrt(50),true) = 0.07865
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image430.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 13.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-014" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-014.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 14</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 14. Companion PowerPoint slide 14.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-14
-Task 3: Call Centre Performance Analysis (in your own time)
-A telecommunications company closely monitors its call-centre operations to maintain high service standards. According to company reports, the average call handling time is 6.5 minutes, with a standard deviation of 1.2 minutes.
-To verify whether daily performance aligns with expectations, a team leader reviews a random sample of 16 customer calls from the previous shift.
-Assuming the company’s claim is accurate and call handling times are normally distributed, the probability that the sample mean of the 16 calls falls between 6.0 and 7.0 minutes is 0.9044.
-Is this probability calculation valid given the small sample size (n = 16)?Support your explanation with a discussion of population distribution, sample size, and whether the Central Limit Theorem is required in this case.
--->
+<h3 id="section-1">14</h3>
+<p>Task 3: Call Centre Performance Analysis (in your own time) A telecommunications company closely monitors its call-centre operations to maintain high service standards. According to company reports, the average call handling time is 6.5 minutes, with a standard deviation of 1.2 minutes. To verify whether daily performance aligns with expectations, a team leader reviews a random sample of 16 customer calls from the previous shift. Assuming the company’s claim is accurate and call handling times are normally distributed, the probability that the sample mean of the 16 calls falls between 6.0 and 7.0 minutes is 0.9044. Is this probability calculation valid given the small sample size (n = 16)?Support your explanation with a discussion of population distribution, sample size, and whether the Central Limit Theorem is required in this case.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=14">Workshop_slides_Week_3_with_solutions.pdf, page 14</a></em></p>
 </section>
 <section id="source-page-015" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-015.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 15</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 15. Companion PowerPoint slide 15.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image14.png
-EDITABLE TEXT TRANSCRIPTION:
-15
-Solutions for Task 3: Call Centre Performance Analysis  (in your own time)
-A telecommunications company closely monitors its call-centre operations to maintain high service standards. According to company reports, the average call handling time is 6.5 minutes, with a standard deviation of 1.2 minutes.
-To verify whether daily performance aligns with expectations, a team leader reviews a random sample of 16 customer calls from the previous shift.
-Assuming the company’s claim is accurate and call handling times are normally distributed, the probability that the sample mean of the 16 calls falls between 6.0 and 7.0 minutes is 0.9044.
-Is this probability calculation valid given the small sample size (n = 16)?Support your explanation with a discussion of population distribution, sample size, and whether the Central Limit Theorem is required in this case.
-Yes the answer is valid.
-Although the sample size is only 16, the parent population is normally distributed.
-We can assume that the mean of the random sample is also normally distributed.
-Therefore, CLT is not required.
-In other words, since 𝑋 ~ 𝑁𝜇,𝜎2 𝑡h𝑒𝑛 𝑋 ~ 𝑁𝜇,𝜎2𝑛
--->
-</section>
+<h3 id="section-2">15</h3>
+<p>Solutions for Task 3: Call Centre Performance Analysis (in your own time) A telecommunications company closely monitors its call-centre operations to maintain high service standards. According to company reports, the average call handling time is 6.5 minutes, with a standard deviation of 1.2 minutes. To verify whether daily performance aligns with expectations, a team leader reviews a random sample of 16 customer calls from the previous shift. Assuming the company’s claim is accurate and call handling times are normally distributed, the probability that the sample mean of the 16 calls falls between 6.0 and 7.0 minutes is 0.9044. Is this probability calculation valid given the small sample size (n = 16)?Support your explanation with a discussion of population distribution, sample size, and whether the Central Limit Theorem is required in this case. Yes the answer is valid. Although the sample size is only 16, the parent population is normally distributed. We can assume that the mean of the random sample is also normally distributed. Therefore, CLT is not required. In other words, since X ~ Nμ,σ2 then X ~ Nμ,σ2n</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=15">Workshop_slides_Week_3_with_solutions.pdf, page 15</a></em></p>
+
+<img data-src="figures/etx5900/components/image14.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 15.</p></section>
 <section id="source-page-016" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-016.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 16</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 16. Companion PowerPoint slide 16.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-There are two types of estimates:
-Point Estimate
-A single value that estimates a population parameter
-Interval Estimate
-A range of values within which the population parameter probably lies. This range is known as a confidence interval estimate
-Point estimates alone do not show the uncertainty caused by sampling error.
-Better approach: give a range of values within which the unknown population parameter is thought likely to lie. We refer to this range of plausible values as a confidence interval
-Confidence interval = plausible range of the unknown population mean given some level of confidence, based on our sample
-Part 2: Estimation of the true population mean (μ)
--->
+<h3 id="there-are-two-types-of-estimates">There are two types of estimates:</h3>
+<p>Point Estimate A single value that estimates a population parameter Interval Estimate A range of values within which the population parameter probably lies. This range is known as a confidence interval estimate Point estimates alone do not show the uncertainty caused by sampling error. Better approach: give a range of values within which the unknown population parameter is thought likely to lie. We refer to this range of plausible values as a confidence interval Confidence interval = plausible range of the unknown population mean given some level of confidence, based on our sample Part 2: Estimation of the true population mean (μ)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=16">Workshop_slides_Week_3_with_solutions.pdf, page 16</a></em></p>
 </section>
 <section id="source-page-017" class="slide level2">
 <h2></h2>
+<h3 id="barx-pm-margin-of-error"><span class="math inline">\bar{X}</span> <span class="math inline">\pm</span> Margin of error</h3>
+<p>Point Estimate / sample mean (<span class="math inline">\bar{X}</span>) is only an estimate of the true population (<span class="math inline">\mu</span>) Critical Value: A value that embodies the desired level of confidence <span class="math inline">(1-\alpha)</span>. Typical levels of confidence are 90%, 95% or 99%. Standard error: A measure of the error associated with the point estimate. Basic Format of an Interval Estimate (of the Population Mean): <span class="math inline">\bar{X} \pm \text{Critical Value} \times \text{Standard Error}</span>. <span class="math display">
+x\pm{}Crit Value∗Std Devn
+</span> OR</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=17">Workshop_slides_Week_3_with_solutions.pdf, page 17</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-017.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 17</figcaption>
+<p><img data-src="figures/etx5900/components/image20.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 17.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 17. Companion PowerPoint slide 17.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image20.png, figures/etx5900/components/image30.png, figures/etx5900/components/image40.png, figures/etx5900/components/image50.png, figures/etx5900/components/image36.png, figures/etx5900/components/image60.png
-EDITABLE TEXT TRANSCRIPTION:
-𝑿                                               Margin of error
-Point Estimate / sample mean (𝑋 ) is only an estimate of the true population ()
-Critical Value : A value that embodies the desired level of confidence (1-α)
-Typical levels of confidence are 90%, 95% or 99%
-Standard error:  A measure of the error associated with the point estimate
-(𝑆𝑡𝑎𝑛𝑑𝑎𝑟𝑑 𝑑𝑒𝑣𝑖𝑎𝑡𝑖𝑜𝑛𝑛)
-Basic Format of an Interval Estimate (of the Population Mean)
-∗
-
-𝑋−𝐶𝑟𝑖𝑡 𝑉𝑎𝑙𝑢𝑒∗𝑆𝑡𝑑 𝐷𝑒𝑣𝑛 < 𝜇 < 𝑋+𝐶𝑟𝑖𝑡 𝑉𝑎𝑙𝑢𝑒∗𝑆𝑡𝑑 𝐷𝑒𝑣𝑛
-𝑥±𝐶𝑟𝑖𝑡 𝑉𝑎𝑙𝑢𝑒∗𝑆𝑡𝑑 𝐷𝑒𝑣𝑛
-OR
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image30.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 17.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image40.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 17.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image50.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 17.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image36.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 17.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image60.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 17.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-018" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-018.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 18</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 18. Companion PowerPoint slide 18.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Business Examples: Confidence Interval Estimation
-1. A retail company wants to understand how much their customers typically spend per visit in their stores. They take a random sample of 80 customers and find that the average spend is $52, with a standard deviation of $10. Calculate a 95% confidence interval for the average customer spend.
-Can be used to forecast revenue, plan marketing strategies
-2. An investment analyst is evaluating the performance of a new mutual fund. They randomly select 36 months of past performance data and find that the average monthly return is 1.8%, with a standard deviation of 0.7%. Calculate a 95% confidence interval to estimate the fund’s true average monthly return.
-Can be used to compare with other investment options, determine if the return justifies the risk
-3. A company wants to estimate the proportion of people in their target market who recognise their new logo. They randomly survey 150 people, and 96 of them say they recognise the logo. Calculate a 95% confidence interval to estimate the true proportion of the population that recognises the logo.
-Can be used to guide decisions such as increasing awareness campaigns or refining their branding strategy.
--->
+<h3 id="business-examples-confidence-interval-estimation">Business Examples: Confidence Interval Estimation</h3>
+<ol type="1">
+<li>A retail company wants to understand how much their customers typically spend per visit in their stores. They take a random sample of 80 customers and find that the average spend is $52, with a standard deviation of $10. Calculate a 95% confidence interval for the average customer spend. Can be used to forecast revenue, plan marketing strategies</li>
+<li>An investment analyst is evaluating the performance of a new mutual fund. They randomly select 36 months of past performance data and find that the average monthly return is 1.8%, with a standard deviation of 0.7%. Calculate a 95% confidence interval to estimate the fund’s true average monthly return. Can be used to compare with other investment options, determine if the return justifies the risk</li>
+<li>A company wants to estimate the proportion of people in their target market who recognise their new logo. They randomly survey 150 people, and 96 of them say they recognise the logo. Calculate a 95% confidence interval to estimate the true proportion of the population that recognises the logo. Can be used to guide decisions such as increasing awareness campaigns or refining their branding strategy.</li>
+</ol>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=18">Workshop_slides_Week_3_with_solutions.pdf, page 18</a></em></p>
 </section>
 <section id="source-page-019" class="slide level2">
 <h2></h2>
+<h3 id="confidence-intervals---in-repeated-sampling-context">Confidence Intervals - in Repeated Sampling Context</h3>
+<p>E.g. 95% Confidence Level We select a sample of n observations repeatedly and and for each sample we construct a 95% confidence interval for the population mean. (Source: Lind, Marchal and Wathen, Statistical Techniques in Business Economics, 2021, 18th edition) We could expect 95% of intervals to contain the population mean. While 5% of the intervals would not contain the population mean.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=19">Workshop_slides_Week_3_with_solutions.pdf, page 19</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-019.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 19</figcaption>
+<p><img data-src="figures/etx5900/components/image70.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 19.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 19. Companion PowerPoint slide 19.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image70.png, figures/etx5900/components/image15.png
-EDITABLE TEXT TRANSCRIPTION:
-Confidence Intervals - in Repeated Sampling Context
-E.g. 95% Confidence Level
-We select a sample of 𝑛 observations repeatedly and and for each sample we construct a 95% confidence interval for the population mean.
-(Source: Lind, Marchal and Wathen, Statistical Techniques in Business Economics, 2021, 18th edition)
-We could expect 95% of intervals to contain the population mean.
-While 5% of the intervals would not contain the population mean.
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image15.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 19.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-020" class="slide level2">
 <h2></h2>
+<h3 id="x-zα2σn-μ-xzα2σn">X-Zα/2σn&lt; μ &lt;X+Zα/2σn</h3>
+<p><span class="math display">
+X-tn-1, \alpha{}/2Sn&lt;\mu{}&lt;X+tn-1, \alpha{}/2Sn
+</span> <span class="math display">
+p-Z\alpha{}/2p1-pn&lt;\pi{}&lt;p+Z\alpha{}/2p1-pn
+</span> Confidence Interval Estimation Formulas Estimate the true mean <span class="math display">
+\mu{}=population mean
+</span> <span class="math display">
+X = sample mean
+</span> <span class="math display">
+Z\alpha{}/2 and tn-1, \alpha{}/2 = critical value
+</span> <span class="math display">
+\sigma{}n  and Sn  = std error
+</span> Estimate the true proportion <span class="math display">
+\pi{}=population proportion
+</span> <span class="math display">
+p= sample proportion
+</span> <span class="math display">
+Z\alpha{}/2 = critical value
+</span> <span class="math display">
+p1-pn   = std error
+</span></p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=20">Workshop_slides_Week_3_with_solutions.pdf, page 20</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-020.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 20</figcaption>
+<p><img data-src="figures/etx5900/components/image90.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 20.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 20. Companion PowerPoint slide 20.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image90.png, figures/etx5900/components/image100.png, figures/etx5900/components/image110.png, figures/etx5900/components/image120.png, figures/etx5900/components/image130.png
-EDITABLE TEXT TRANSCRIPTION:
-𝑋−𝑍α/2𝜎𝑛< 𝜇 <𝑋+𝑍α/2𝜎𝑛
-𝑋−𝑡𝑛−1, α/2𝑆𝑛<𝜇<𝑋+𝑡𝑛−1, α/2𝑆𝑛
-𝑝−𝑍α/2𝑝1−𝑝𝑛<𝜋<𝑝+𝑍α/2𝑝1−𝑝𝑛
-Confidence Interval Estimation Formulas
-Estimate the true mean
-𝜇=𝑝𝑜𝑝𝑢𝑙𝑎𝑡𝑖𝑜𝑛 𝑚𝑒𝑎𝑛
-𝑋 = sample mean
-𝑍α/2 and 𝑡𝑛−1, α/2 = critical value
-𝜎𝑛  and 𝑆𝑛  = std error
-Estimate the true proportion
-𝜋=𝑝𝑜𝑝𝑢𝑙𝑎𝑡𝑖𝑜𝑛 𝑝𝑟𝑜𝑝𝑜𝑟𝑡𝑖𝑜𝑛
-𝑝= sample proportion
-𝑍α/2 = critical value
-𝑝1−𝑝𝑛   = std error
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image100.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 20.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image110.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 20.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image120.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 20.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image130.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 20.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-021" class="slide level2">
 <h2></h2>
+<h3 id="section-3">21</h3>
+<p>If the standard deviation (σ) ↑, spread of the distribution is larger (assuming all other factors remain unchanged) standard error std deviationn ↑, width ↑, estimate is less precise If the sample size (n) ↑, standard error std deviationn ↓, width ↓, estimate is more precise (assuming all other factors remain unchanged) The bigger the sample, the more information we have to increase the precision of the interval estimate of the sample mean, the narrower the interval. Factors that affect the width of a Confidence Interval Estimate <span class="math display">
+x\pm{}Z\alpha{}/2\sigma{}n
+</span> <span class="math display">
+If the level of confidence (1-\alpha{}) ↑,
+</span> critical value changes, width ↑ , the estimate is less precise (assuming all other factors remain unchanged) The more confident we are, the more values we need to include in our confidence interval, the wider the interval.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=21">Workshop_slides_Week_3_with_solutions.pdf, page 21</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-021.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 21</figcaption>
+<p><img data-src="figures/etx5900/components/image16.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 21.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 21. Companion PowerPoint slide 21.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image16.png, figures/etx5900/components/image17.png, figures/etx5900/components/image18.png, figures/etx5900/components/image170.png
-EDITABLE TEXT TRANSCRIPTION:
-21
-If the standard deviation (𝜎) ↑,  spread of the distribution is larger (assuming all other factors remain unchanged)
-standard error  𝑠𝑡𝑑 𝑑𝑒𝑣𝑖𝑎𝑡𝑖𝑜𝑛𝑛 ↑,
-width ↑,
-estimate is less precise
-If the sample size (n) ↑,
-standard error  𝑠𝑡𝑑 𝑑𝑒𝑣𝑖𝑎𝑡𝑖𝑜𝑛𝑛 ↓,  width ↓, estimate is more precise (assuming all other factors remain unchanged)
-The bigger the sample, the more information we have to increase the precision of the interval estimate of the sample mean, the narrower the interval.
-Factors that affect the width of a Confidence Interval Estimate
-𝒙±𝑍α/2σ𝒏
-If the level of confidence (1-α) ↑,
-critical value changes, width ↑ , the estimate is less precise (assuming all other factors remain unchanged)
-The more confident we are, the more values we need to include in our confidence interval, the wider the interval.
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image17.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 21.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image18.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 21.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image170.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 21.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-022" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-022.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 22</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 22. Companion PowerPoint slide 22.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-An audit company has been engaged to review the outstanding customer account balances for a mid-sized retail company. As part of the review, an analyst wants to estimate the average (mean) outstanding balance per customer account. A random sample of 80 accounts was selected from the company’s database, finding a mean value of $86.05 and a standard deviation of $22.38.
-Calculate a 95% confidence interval estimate of the mean outstanding account balance. Show your working and interpret your result.
-Task 4: Estimating the Average Outstanding Balance
--->
+<h3 id="an-audit-company-has-been-engaged-to-review-the-outstanding-customer-account-balances-for-a-mid-sized-retail-company.-as-part-of-the-review-an-analyst-wants-to-estimate-the-average-mean-outstanding-balance-per-customer-account.-a-random-sample-of-80-accounts-was-selected-from-the-companys-database-finding-a-mean-value-of-86.05-and-a-standard-deviation-of-22.38.">An audit company has been engaged to review the outstanding customer account balances for a mid-sized retail company. As part of the review, an analyst wants to estimate the average (mean) outstanding balance per customer account. A random sample of 80 accounts was selected from the company’s database, finding a mean value of $86.05 and a standard deviation of $22.38.</h3>
+<p>Calculate a 95% confidence interval estimate of the mean outstanding account balance. Show your working and interpret your result. Task 4: Estimating the Average Outstanding Balance</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=22">Workshop_slides_Week_3_with_solutions.pdf, page 22</a></em></p>
 </section>
 <section id="source-page-023" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-023.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 23</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 23. Companion PowerPoint slide 23.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image19.png
-EDITABLE TEXT TRANSCRIPTION:
-An audit company has been engaged to review the outstanding customer account balances for a mid-sized retail company. As part of the review, an analyst wants to estimate the average (mean) outstanding balance per customer account. A random sample of 80 accounts was selected from the company’s database, finding a mean value of $86.05 and a standard deviation of $22.38.
-Calculate a 95% confidence interval estimate of the mean outstanding account balance. Show your working and interpret your result.
-Let X = outstanding account balance ($)
-Since n=80, we can invoke CLT and assume that 𝑋~ 𝑁μ, 𝜎280
-Task 4: Estimating the Average Outstanding Balance
--->
-</section>
+<h3 id="an-audit-company-has-been-engaged-to-review-the-outstanding-customer-account-balances-for-a-mid-sized-retail-company.-as-part-of-the-review-an-analyst-wants-to-estimate-the-average-mean-outstanding-balance-per-customer-account.-a-random-sample-of-80-accounts-was-selected-from-the-companys-database-finding-a-mean-value-of-86.05-and-a-standard-deviation-of-22.38.-1">An audit company has been engaged to review the outstanding customer account balances for a mid-sized retail company. As part of the review, an analyst wants to estimate the average (mean) outstanding balance per customer account. A random sample of 80 accounts was selected from the company’s database, finding a mean value of $86.05 and a standard deviation of $22.38.</h3>
+<p>Calculate a 95% confidence interval estimate of the mean outstanding account balance. Show your working and interpret your result. Let X = outstanding account balance ($) Since n=80, we can invoke CLT and assume that X~ Nμ, σ280 Task 4: Estimating the Average Outstanding Balance</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=23">Workshop_slides_Week_3_with_solutions.pdf, page 23</a></em></p>
+
+<img data-src="figures/etx5900/components/image19.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 23.</p></section>
 <section id="source-page-024" class="slide level2">
 <h2></h2>
+<h3 id="x-t79-0.025sn-μ-xt79-0.025sn">X-t79, 0.025sn &lt; μ&lt; X+t79, 0.025sn</h3>
+<p><span class="math display">
+Critical Value: t79, 0.025=t.inv.2t(0.05,79)
+</span> <span class="math display">
+= 1.99045
+</span> Task 4: Estimating the Average Outstanding Balance</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=24">Workshop_slides_Week_3_with_solutions.pdf, page 24</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-024.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 24</figcaption>
+<p><img data-src="figures/etx5900/components/image190.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 24.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 24. Companion PowerPoint slide 24.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image190.png, figures/etx5900/components/image21.png, figures/etx5900/components/image22.png
-EDITABLE TEXT TRANSCRIPTION:
-𝑋−𝑡79, 0.025𝑠𝑛 < 𝜇< 𝑋+𝑡79, 0.025𝑠𝑛
-𝐶𝑟𝑖𝑡𝑖𝑐𝑎𝑙 𝑉𝑎𝑙𝑢𝑒: 𝑡79, 0.025=𝑡.𝑖𝑛𝑣.2𝑡(0.05,79)
-= 1.99045
-Task 4: Estimating the Average Outstanding Balance
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image21.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 24.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image22.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 24.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-025" class="slide level2">
 <h2></h2>
+<h3 id="x-t79-0.025sn-μ-xt79-0.025sn-1">X-t79, 0.025sn &lt; μ&lt; X+t79, 0.025sn</h3>
+<p>Task 4: Estimating the Average Outstanding Balance 86.05-1.99022.3880 &lt; μ&lt; 86.05+1.99022.3880 (81.06957 &lt; μ&lt; 91.03043) We are 95% confident that the true mean outstanding account balance is estimated, on average, to lie between $81.07 - $91.03 X Bar 86.05 Std deviation 22.38 Sample size 80 Std Error 2.502160067 Critical Value (t) 1.99045021 LL 81.06957497 UL 91.03042503</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=25">Workshop_slides_Week_3_with_solutions.pdf, page 25</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-025.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 25</figcaption>
+<p><img data-src="figures/etx5900/components/image24.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 25.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 25. Companion PowerPoint slide 25.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image24.png, figures/etx5900/components/image25.png
-EDITABLE TEXT TRANSCRIPTION:
-𝑋−𝑡79, 0.025𝑠𝑛 < 𝜇< 𝑋+𝑡79, 0.025𝑠𝑛
-Task 4: Estimating the Average Outstanding Balance
-86.05−1.99022.3880 < 𝜇< 86.05+1.99022.3880
-(81.06957 < 𝜇< 91.03043)
-We are 95% confident that the true mean outstanding account balance is estimated, on average, to lie between $81.07 - $91.03
-X Bar
-86.05
-Std deviation
-22.38
-Sample size
-80
-Std Error
-2.502160067
-Critical Value (t)
-1.99045021
-LL
-81.06957497
-UL
-91.03042503
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image25.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 25.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-026" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-026.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 26</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 26. Companion PowerPoint slide 26.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-During an audit of a company, the auditor wishes to estimate the mean outstanding account balance using a sample. It is known that standard deviation is $22.38. The sample of 80 accounts have a mean value of $86.05.
-An audit company has been engaged to review the outstanding customer account balances for a mid-sized retail company. As part of the review, an analyst wants to estimate the average (mean) outstanding balance per customer account. It is known that standard deviation is $22.38. A random sample of 80 accounts was selected from the company’s database, finding a mean value of $86.05.
-Calculate a 95% confidence interval estimate of the mean outstanding account balance. Show your working and interpret your result.
-Task 5: Estimating the Average Outstanding Balance _revised (Own time)
--->
+<h3 id="during-an-audit-of-a-company-the-auditor-wishes-to-estimate-the-mean-outstanding-account-balance-using-a-sample.-it-is-known-that-standard-deviation-is-22.38.-the-sample-of-80-accounts-have-a-mean-value-of-86.05.">During an audit of a company, the auditor wishes to estimate the mean outstanding account balance using a sample. It is known that standard deviation is $22.38. The sample of 80 accounts have a mean value of $86.05.</h3>
+<p>An audit company has been engaged to review the outstanding customer account balances for a mid-sized retail company. As part of the review, an analyst wants to estimate the average (mean) outstanding balance per customer account. It is known that standard deviation is $22.38. A random sample of 80 accounts was selected from the company’s database, finding a mean value of $86.05. Calculate a 95% confidence interval estimate of the mean outstanding account balance. Show your working and interpret your result. Task 5: Estimating the Average Outstanding Balance _revised (Own time)</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=26">Workshop_slides_Week_3_with_solutions.pdf, page 26</a></em></p>
 </section>
 <section id="source-page-027" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-027.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 27</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 27. Companion PowerPoint slide 27.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image26.png
-EDITABLE TEXT TRANSCRIPTION:
-During an audit of a company, the auditor wishes to estimate the mean outstanding account balance using a sample. It is known that standard deviation is $22.38. The sample of 80 accounts have a mean value of $86.05.
-An audit company has been engaged to review the outstanding customer account balances for a mid-sized retail company. As part of the review, an analyst wants to estimate the average (mean) outstanding balance per customer account. It is known that standard deviation is $22.38. A random sample of 80 accounts was selected from the company’s database, finding a mean value of $86.05.
-Calculate a 95% confidence interval estimate of the mean outstanding account balance. Show your working and interpret your result.
-Task 5: Estimating the Average Outstanding Balance _revised
-Let X = outstanding account balance ($)
-Since n=80, we can invoke CLT and assume that 𝑋~ 𝑁μ, 𝜎280
--->
-</section>
+<h3 id="during-an-audit-of-a-company-the-auditor-wishes-to-estimate-the-mean-outstanding-account-balance-using-a-sample.-it-is-known-that-standard-deviation-is-22.38.-the-sample-of-80-accounts-have-a-mean-value-of-86.05.-1">During an audit of a company, the auditor wishes to estimate the mean outstanding account balance using a sample. It is known that standard deviation is $22.38. The sample of 80 accounts have a mean value of $86.05.</h3>
+<p>An audit company has been engaged to review the outstanding customer account balances for a mid-sized retail company. As part of the review, an analyst wants to estimate the average (mean) outstanding balance per customer account. It is known that standard deviation is $22.38. A random sample of 80 accounts was selected from the company’s database, finding a mean value of $86.05. Calculate a 95% confidence interval estimate of the mean outstanding account balance. Show your working and interpret your result. Task 5: Estimating the Average Outstanding Balance _revised Let X = outstanding account balance ($) Since n=80, we can invoke CLT and assume that X~ Nμ, σ280</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=27">Workshop_slides_Week_3_with_solutions.pdf, page 27</a></em></p>
+
+<img data-src="figures/etx5900/components/image26.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 27.</p></section>
 <section id="source-page-028" class="slide level2">
 <h2></h2>
+<h3 id="x-zα2σn-μ-xzα2σn-1">X-zα2σn &lt; μ&lt; X+zα2σn</h3>
+<p><span class="math display">
+z\alpha{}2 = z0.052  = z0.025
+</span> Norm.s.inv(0.025) = -1.95996 (add a negative sign and change this to an absolute value for the purpose of substituting in the formula) Task 5: Estimating the Average Outstanding Balance _revised 86.05-1.9599622.3880 &lt; μ&lt; 86.05+1.99022.3880 81.1459&lt; μ&lt; 90.9541 We are 95% confident that the true mean outstanding account balance is estimated, on average, to lie between $81.15 - $90.95 X Bar 86.05 Std deviation 22.38 Sample size 80 Std Error 2.50216007 Critical Value (Z) 1.95996398 LL 81.1458564 UL 90.9541436</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=28">Workshop_slides_Week_3_with_solutions.pdf, page 28</a></em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-028.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 28</figcaption>
+<p><img data-src="figures/etx5900/components/image28.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 28.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 28. Companion PowerPoint slide 28.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image28.png, figures/etx5900/components/image35.png, figures/etx5900/components/image37.png
-EDITABLE TEXT TRANSCRIPTION:
-𝑋−𝑧𝛼2𝜎𝑛 < 𝜇< 𝑋+𝑧𝛼2𝜎𝑛
-𝑧𝛼2 = 𝑧0.052  = 𝑧0.025
-Norm.s.inv(0.025) = -1.95996 (add a negative sign and change this to an absolute value for the purpose of substituting in the formula)
-Task 5: Estimating the Average Outstanding Balance _revised
-86.05−1.9599622.3880 < 𝜇< 86.05+1.99022.3880
-81.1459< 𝜇< 90.9541
-We are 95% confident that the true mean outstanding account balance is estimated, on average, to lie between $81.15 - $90.95
-X Bar
-86.05
-Std deviation
-22.38
-Sample size
-80
-Std Error
-2.50216007
-Critical Value (Z)
-1.95996398
-LL
-81.1458564
-UL
-90.9541436
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image35.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 28.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image37.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 28.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-029" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-029.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 29</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 29. Companion PowerPoint slide 29.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 6: Confidence Interval for proportions– Marketing Survey
-Refer to the data set on Moodle
-More than half of our potential market have tried our frozen food product
-Let’s use the concepts of confidence interval for proportions to validate/invalidate this claim
-Have Tried
-Count of Have Tried
-No
-42.17%
-Yes
-57.83%
-Grand Total
-100.00%
--->
+<h3 id="task-6-confidence-interval-for-proportions-marketing-survey">Task 6: Confidence Interval for proportions– Marketing Survey</h3>
+<p>Refer to the data set on Moodle More than half of our potential market have tried our frozen food product Let’s use the concepts of confidence interval for proportions to validate/invalidate this claim Have Tried Count of Have Tried No 42.17% Yes 57.83% Grand Total 100.00%</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=29">Workshop_slides_Week_3_with_solutions.pdf, page 29</a></em></p>
 </section>
 <section id="source-page-030" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-030.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 30</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 30. Companion PowerPoint slide 30.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 6: Confidence Interval for proportions– Marketing Survey
-More than half of our potential market have tried our frozen food product
-Let’s use the concepts of confidence interval to validate/invalidate this claim
-We are 95% confident that the true proportion of customers who tried the product is estimated, on average, to lie between 54.52% and 61.14%
-This range is well above half.
-95% Confidence Interval for True Proportion
-alpha
-0.05
-p
-0.5783
-SE(p)
-0.016878798
-Z crit
-1.968591669
-Lower Limit
-0.545072539
-Upper Limit
-0.611527461
--->
+<h3 id="task-6-confidence-interval-for-proportions-marketing-survey-1">Task 6: Confidence Interval for proportions– Marketing Survey</h3>
+<p>More than half of our potential market have tried our frozen food product Let’s use the concepts of confidence interval to validate/invalidate this claim We are 95% confident that the true proportion of customers who tried the product is estimated, on average, to lie between 54.52% and 61.14% This range is well above half. 95% Confidence Interval for True Proportion alpha 0.05 p 0.5783 SE(p) 0.016878798 Z crit 1.968591669 Lower Limit 0.545072539 Upper Limit 0.611527461</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=30">Workshop_slides_Week_3_with_solutions.pdf, page 30</a></em></p>
 </section>
 <section id="source-page-031" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-031.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 31</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 31. Companion PowerPoint slide 31.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image280.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 6: Marketing Survey
-Let X = number of customer who have tried the product
-Checks for normality:
-np, n(1-p) ≥5
-856*0.5783 and 856*(1-0.5783) ≥5
-Since both values are greater than 5, the assumption of normality is valid.
-0.578271−1.9599640.578271∗1−0.578271856 < 𝜋<0.578271−1.9599640.578271∗(1−0.578271)856
-(0.578271−1.959964∗0.016879 <𝜋< 0.578271+1.959964∗0.016879 )
-0.545189<𝜋<0.611353
-We are 95% confident that the true proportion of customers who tried the product is estimated, on average, to lie between 54.52% and 61.14%
--->
-</section>
+<h3 id="task-6-marketing-survey">Task 6: Marketing Survey</h3>
+<p>Let X = number of customer who have tried the product Checks for normality: <span class="math display">
+np, n(1-p) \geq{}5
+</span> <span class="math display">
+856*0.5783 and 856*(1-0.5783) \geq{}5
+</span> Since both values are greater than 5, the assumption of normality is valid. 0.578271-1.9599640.578271∗1-0.578271856 &lt; π&lt;0.578271-1.9599640.578271∗(1-0.578271)856 (0.578271-1.959964∗0.016879 &lt;π&lt; 0.578271+1.959964∗0.016879 ) 0.545189&lt;π&lt;0.611353 We are 95% confident that the true proportion of customers who tried the product is estimated, on average, to lie between 54.52% and 61.14%</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=31">Workshop_slides_Week_3_with_solutions.pdf, page 31</a></em></p>
+
+<img data-src="figures/etx5900/components/image280.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 31.</p></section>
 <section id="source-page-032" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-032.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 32</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 32. Companion PowerPoint slide 32.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 7: Recruitment Service_in your own time
-Suppose that, in a survey of 600 employers, 126 indicate that they have used a recruitment service within the past two months to find new staff.
-Construct and interpret a 95% confidence interval for the population proportion of employers who have used a recruitment service within the past two months to find new staff.
-Discuss the effect on the confidence interval estimate when you increase the level of confidence, assuming all other factors remain unchanged.
--->
+<h3 id="task-7-recruitment-service_in-your-own-time">Task 7: Recruitment Service_in your own time</h3>
+<p>Suppose that, in a survey of 600 employers, 126 indicate that they have used a recruitment service within the past two months to find new staff. Construct and interpret a 95% confidence interval for the population proportion of employers who have used a recruitment service within the past two months to find new staff. Discuss the effect on the confidence interval estimate when you increase the level of confidence, assuming all other factors remain unchanged.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=32">Workshop_slides_Week_3_with_solutions.pdf, page 32</a></em></p>
 </section>
 <section id="source-page-033" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-033.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 33</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 33. Companion PowerPoint slide 33.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image290.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 7: Recruitment Service _in your own time
-Let X = number of employers who have used a recruitment service within the past 2 months to find new staff
-n=600; x = 126; 𝛼 = 0.05; p = 126/600 = 0.21
-Check for normality:
-np, n(1-p) ≥5
+<h3 id="task-7-recruitment-service-_in-your-own-time">Task 7: Recruitment Service _in your own time</h3>
+<p>Let X = number of employers who have used a recruitment service within the past 2 months to find new staff <span class="math display">
+n=600; x = 126; \alpha{} = 0.05; p = 126/600 = 0.21
+</span> Check for normality: <span class="math display">
+np, n(1-p) \geq{}5
+</span> <span class="math display">
 600*0.21 =126 and 600*(1-0.21) = 474
-Since both values are greater than 5, the assumption of normality is valid.
-0.21−1.9599640.21∗1−0.21600 < 𝜋<0.21−1.9599640.21∗(1−0.21)600
-(0.177409 < 𝜋<0.242591)
-We are 95% confident that the true proportion of of employers who have used a recruitment service within the past 2 months to find new staff is estimated, on average, to lie between 17.74% and 24.26%
--->
-</section>
+</span> Since both values are greater than 5, the assumption of normality is valid. 0.21-1.9599640.21∗1-0.21600 &lt; π&lt;0.21-1.9599640.21∗(1-0.21)600 (0.177409 &lt; π&lt;0.242591) We are 95% confident that the true proportion of of employers who have used a recruitment service within the past 2 months to find new staff is estimated, on average, to lie between 17.74% and 24.26%</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=33">Workshop_slides_Week_3_with_solutions.pdf, page 33</a></em></p>
+
+<img data-src="figures/etx5900/components/image290.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 33.</p></section>
 <section id="source-page-034" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-034.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 3, page 34</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_3_with_solutions.pdf, page 34. Companion PowerPoint slide 34.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 7: Recruitment Service _in your own time
-Suppose that, in a survey of 600 employers, 126 indicate that they have used a recruitment service within the past two months to find new staff.
-b. Discuss the effect on the confidence interval estimate when you increase the level of confidence, assuming all other factors remain unchanged.
-When the level of confidence increases, the confidence interval becomes wider.
-This results in a loss of precision, which is the price you have to pay to achieve a higher level of confidence.
--->
+<h3 id="task-7-recruitment-service-_in-your-own-time-1">Task 7: Recruitment Service _in your own time</h3>
+<p>Suppose that, in a survey of 600 employers, 126 indicate that they have used a recruitment service within the past two months to find new staff. b. Discuss the effect on the confidence interval estimate when you increase the level of confidence, assuming all other factors remain unchanged. When the level of confidence increases, the confidence interval becomes wider. This results in a loss of precision, which is the price you have to pay to achieve a higher level of confidence.</p>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=34">Workshop_slides_Week_3_with_solutions.pdf, page 34</a></em></p>
 
 
 </section>
@@ -1135,6 +1012,13 @@ This results in a loss of precision, which is the price you have to pay to achie
       });
     </script>
     <script>
+    // Give section dividers a background that fills the letterboxed slide.
+    document.querySelectorAll('section.section-slide').forEach(function (slide) {
+      if (!slide.hasAttribute('data-background-color')) {
+        slide.setAttribute('data-background-color', '#006dae');
+      }
+    });
+
     // Copy over background colors to new div
     divs = document.querySelectorAll('[data-background-color]');
 
@@ -1268,6 +1152,61 @@ This results in a loss of precision, which is the price you have to pay to achie
     // Move progress bar
     menu_div = document.querySelector(".progress");
     document.querySelector(".slides").appendChild(menu_div);
+    </script>
+
+    <script>
+    // Show a manually started countdown on slides with data-timing="seconds".
+    (function () {
+      let interval;
+
+      function showCountdown(slide) {
+        clearInterval(interval);
+        if (!slide) return;
+        const duration = Number(slide.dataset.timing);
+        if (!Number.isFinite(duration) || duration <= 0) return;
+
+        let timer = slide.querySelector('.slide-countdown');
+        if (!timer) {
+          timer = document.createElement('div');
+          timer.className = 'slide-countdown';
+          timer.innerHTML = '<span role="timer"></span><button type="button">Start</button>';
+          slide.appendChild(timer);
+        }
+        const clock = timer.querySelector('[role="timer"]');
+        const button = timer.querySelector('button');
+        const format = seconds => String(Math.floor(seconds / 60)).padStart(2, '0') + ':' +
+          String(seconds % 60).padStart(2, '0');
+        clock.textContent = format(Math.ceil(duration));
+        button.hidden = false;
+        timer.onclick = function (event) {
+          if (button.hidden) return;
+          event.stopPropagation();
+          button.hidden = true;
+          const end = Date.now() + duration * 1000;
+          function update() {
+            const remaining = Math.max(0, Math.ceil((end - Date.now()) / 1000));
+            clock.textContent = format(remaining);
+            if (remaining === 0) clearInterval(interval);
+          }
+          update();
+          interval = setInterval(update, 250);
+        };
+      }
+
+      Reveal.on('slidechanged', event => showCountdown(event.currentSlide));
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' || event.repeat) return;
+        if (event.target instanceof Element &&
+            event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+        const slide = Reveal.getCurrentSlide();
+        const button = slide && slide.querySelector('.slide-countdown button');
+        if (!button || button.hidden) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        button.click();
+      }, true);
+      showCountdown(Reveal.getCurrentSlide());
+    })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">

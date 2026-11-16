@@ -9,6 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.11.9">
 
+  <meta name="dcterms.date" content="2027-01-12">
   <title>Business Statistics – slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -34,7 +35,23 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ecfa366c05ac1ff1a677a8c5facd037d.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d7d650050b1ce3e072e4f0f18efcf387.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -134,1387 +151,634 @@
     <div class="slides">
 
 
-<section id="source-page-001" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-001.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 1</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 1. Companion PowerPoint slide 1.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image2.jpeg
-EDITABLE TEXT TRANSCRIPTION:
-ETX1100/ETX5900 Business Statistics
-Week 6: Regression Analysis & Correlation
--->
+<section id="sem-source-page-001" class="slide level2">
+<h2>Week 6: multiple regression and model evaluation</h2>
+<h3 id="etx1100-etx5900-business-statistics">ETX1100 / ETX5900 Business Statistics</h3>
+<p>Estimate and interpret multiple regression models, test coefficients, evaluate fit and inspect residuals in Excel.</p>
+<p>This deck adapts ETF1100 Week 9 seminar and tutorial materials. Source staff names, dates and Moodle directions are historical; use the current site schedule and Moodle for live arrangements.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=1">ETF1100 Week 9 seminar, page 1</a>.</em></p>
 </section>
-<section id="source-page-002" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-002.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 2</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 2. Companion PowerPoint slide 2.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Reminders
-Assignment due on 19 Jan 2026 at 11:55pm.
-Consultation (dedicated student hours) – see
-Moodle for time/location.
-Under Own-Time in Moodle, remember there is a
-Chatbot (All Day TA) and you can also practice unit-
-related questions using the Intelligent Quiz tab.
--->
+<section id="sem-source-page-002" class="slide level2">
+<h2>Source reminders (historical)</h2>
+<p>The source asked students to read Week 9 announcements, check a group-assignment correction, use a chatbot and discussion forum, attend consultation hours and contact the ETF1100 address for sensitive matters.</p>
+<p><strong>These ETF1100 arrangements are historical.</strong> Use the current ETX1100/ETX5900 site and Moodle for live instructions.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=2">ETF1100 Week 9 seminar, page 2</a>.</em></p>
 </section>
-<section id="source-page-003" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-003.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 3</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 3. Companion PowerPoint slide 3.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image3.png
-EDITABLE TEXT TRANSCRIPTION:
-Outline of Topics
-•   Overview of Regression: Terminology and Concepts
-•   Examples and Working for Simple Linear Regression (SLR)
-• Scatterplot
-• Developing the Model
-• Slope, Intercept (and how to interpret)
-• Correlation (and how to interpret)
-• Prediction
-• Confidence Interval for the Slope
-• Evaluating the Model
-•      (and how to interpret)
-• Hypothesis Testing of the Slope
-•   Getting Ready for Multiple Linear Regression (MLR)
-Textbook references: Berenson et al Basic Business Statistics 5 th ed
-Chapter 12, Sections 12.1-12.3, 12.7
--->
+<section id="sem-source-page-003" class="slide level2">
+<h2>Week 9 overview</h2>
+<p>The source builds on simple and multiple linear regression with numerical variables. It adds:</p>
+<ul>
+<li>tests of individual slope coefficients;</li>
+<li>comparison and evaluation of models;</li>
+<li>categorical predictors coded as dummy variables; and</li>
+<li>an overall model-fit test.</li>
+</ul>
+<p>The worked case uses the <code>RealEstate</code> sheet in <a href="../resources/ETF1100-S1-2026/Week 9/Week 9 Seminar Data.xlsx">Week 9 Seminar Data.xlsx</a>.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=3">ETF1100 Week 9 seminar, page 3</a>.</em></p>
 </section>
-<section id="source-page-004" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-004.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 4</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 4. Companion PowerPoint slide 4.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image4.png
-EDITABLE TEXT TRANSCRIPTION:
-Outline of Topics
-•   Overview of Regression: Terminology and Concepts
-•   Examples and Working for Simple Linear Regression (SLR)
-• Scatterplot
-• Developing the Model
-• Slope, Intercept (and how to interpret)
-• Correlation (and how to interpret)
-• Prediction
-• Confidence Interval for the Slope
-• Evaluating the Model
-•      (and how to interpret)
-• Hypothesis Testing of the Slope
-•   Getting Ready for Multiple Linear Regression (MLR)
-Textbook references: Berenson et al Basic Business Statistics 5 th ed
-Chapter 12, Sections 12.1-12.3, 12.7
--->
+<section id="sem-source-page-004" class="slide level2">
+<h2>Learning outcomes</h2>
+<p>By the end of this sequence, you should be able to test a slope for a linear relationship, judge regression fit, create dummy variables for categorical predictors and test the overall model.</p>
+<p>We use Excel’s <strong>Data → Data Analysis → Regression</strong> output for the worked models.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=4">ETF1100 Week 9 seminar, page 4</a>.</em></p>
 </section>
-<section id="source-page-005" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-005.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 5</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 5. Companion PowerPoint slide 5.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Overview of Regression: Terminology
-Regression analysis is a study of relationships between
-variables We use sample data to develop a model of the
-relationship, which we can use to make predictions of
-the value of a numerical variable based on the value of
-one or more variables.
-Some terminology:
-• Dependent variable: the variable we wish to predict
-• Independent variable: the variables used to make the
-prediction
--->
+<section id="sem-source-page-005" class="slide level2">
+<h2>Recap: simple linear regression</h2>
+<p><span class="math display">\widehat Y_i=\widehat\beta_0+\widehat\beta_1X_i.</span></p>
+<ul>
+<li>The intercept predicts <span class="math inline">Y</span> at <span class="math inline">X=0</span>; that may be outside the useful range.</li>
+<li>The slope is the change in predicted <span class="math inline">Y</span> for a one-unit rise in <span class="math inline">X</span>.</li>
+<li>A positive slope indicates an upward association; a negative slope indicates a downward association.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=5">ETF1100 Week 9 seminar, page 5</a>.</em></p>
 </section>
-<section id="source-page-006" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-006.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 6</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 6. Companion PowerPoint slide 6.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image5.png, figures/etx5900/components/image7.png, figures/etx5900/components/image9.png
-EDITABLE TEXT TRANSCRIPTION:
-For example, if a professor wants to predict
-student exam score based on how many hours a
-student studies. In this case, which is the
-dependent variable and which is the
-independent variable?
-The Slido app must be installed on every computer you’re
-presenting from
--->
+<section id="sem-source-page-006" class="slide level2">
+<h2>Recap: multiple linear regression</h2>
+<p><span class="math display">\widehat Y_i=\widehat\beta_0+\widehat\beta_1X_{1i}+\cdots+\widehat\beta_kX_{ki}.</span></p>
+<p>The intercept predicts <span class="math inline">Y</span> when every predictor is zero, which may not describe a meaningful case.</p>
+<p>Each slope compares observations that differ by one unit in that predictor <strong>while the other included predictors are held fixed</strong>.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=6">ETF1100 Week 9 seminar, page 6</a>.</em></p>
 </section>
-<section id="source-page-007" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-007.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 7</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 7. Companion PowerPoint slide 7.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Overview of Regression: Terminology
-Simple Linear Regression model:
-Type of regression model that considers a linear function
-between a single dependent variable y and a single
-independent variable x.
-Multiple Linear Regression model:
-Type of regression model that considers a linear function
-between a single dependent variable y and multiple
-independent variables
--->
+<section id="sem-source-page-007" class="slide level2">
+<h2>Real-estate regression output</h2>
+<p>For price in <strong>AUD thousands</strong>, the full model estimates</p>
+<p><span class="math display">\widehat{Price}=86.841+47.426\,Beds+216.533\,Baths+14.544\,Cars+0.83127\,Area.</span></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Predictor</th>
+<th style="text-align: right;">Estimate</th>
+<th style="text-align: right;">SE</th>
+<th style="text-align: right;"><span class="math inline">p</span>-value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Beds</td>
+<td style="text-align: right;">47.426</td>
+<td style="text-align: right;">22.866</td>
+<td style="text-align: right;">0.0389</td>
+</tr>
+<tr class="even">
+<td>Baths</td>
+<td style="text-align: right;">216.533</td>
+<td style="text-align: right;">21.408</td>
+<td style="text-align: right;"><span class="math inline">&lt;0.0001</span></td>
+</tr>
+<tr class="odd">
+<td>Cars</td>
+<td style="text-align: right;">14.544</td>
+<td style="text-align: right;">22.774</td>
+<td style="text-align: right;">0.5235</td>
+</tr>
+<tr class="even">
+<td>Area</td>
+<td style="text-align: right;">0.83127</td>
+<td style="text-align: right;">0.07574</td>
+<td style="text-align: right;"><span class="math inline">&lt;0.0001</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">n=329</span>; <span class="math inline">R^2=0.60424</span>; adjusted <span class="math inline">R^2=0.59936</span>; residual SE <span class="math inline">=265.16</span>. The source page contains the full ANOVA and confidence-interval output.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=7">ETF1100 Week 9 seminar, page 7</a>.</em></p>
 </section>
-<section id="source-page-008" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-008.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 8</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 8. Companion PowerPoint slide 8.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image5.png, figures/etx5900/components/image7.png, figures/etx5900/components/image9.png
-EDITABLE TEXT TRANSCRIPTION:
-Continuing our example: If a professor wants to
-predict student exam score based on how many
-hours a student studies, is this appropriate for
-simple linear regression or multiple linear
-regression?
-The Slido app must be installed on every computer you’re
-presenting from
--->
+<section id="sem-source-page-008" class="slide level2">
+<h2>Steps in a coefficient test</h2>
+<ol type="1">
+<li>State the null and alternative hypotheses.</li>
+<li>Calculate the test statistic.</li>
+<li>Obtain the <span class="math inline">p</span>-value from Excel output.</li>
+<li>Reject <span class="math inline">H_0</span> when <span class="math inline">p&lt;\alpha</span>; otherwise fail to reject it.</li>
+<li>Explain the conclusion in the business context and in terms of the alternative claim.</li>
+</ol>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=8">ETF1100 Week 9 seminar, page 8</a>.</em></p>
 </section>
-<section id="source-page-009" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-009.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 9</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 9. Companion PowerPoint slide 9.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Note!
-Today, we will mainly focus on simple linear
-regression (SLR).
-Next week, we extend what we’ve learned into
-multiple linear regression (MLR). We’ll also learn
-about time series data.
--->
+<section id="sem-source-page-009" class="slide level2">
+<h2>Hypotheses for one slope</h2>
+<p>For predictor <span class="math inline">X_k</span>, test <span class="math inline">H_0:\beta_k=0</span> against one of:</p>
+<ul>
+<li><span class="math inline">H_1:\beta_k&gt;0</span> for a positive conditional relationship;</li>
+<li><span class="math inline">H_1:\beta_k&lt;0</span> for a negative conditional relationship; or</li>
+<li><span class="math inline">H_1:\beta_k\ne0</span> for any conditional linear relationship.</li>
+</ul>
+<p>Choose the alternative from the question before inspecting the estimate.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=9">ETF1100 Week 9 seminar, page 9</a>.</em></p>
 </section>
-<section id="source-page-010" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-010.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 10</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 10. Companion PowerPoint slide 10.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image11.png, figures/etx5900/components/image12.png
-EDITABLE TEXT TRANSCRIPTION:
-Overview of SLR Concepts
-Good to do before modeling: Create a scatter plot of Y vs X
-It is always advisable to graph the two variables to see whether it is
-reasonable to use a linear model. If we see a quadratic or
-exponential relationship, a linear model doesn’t seem appropriate.
-Plot A                                                          Plot B
-On the next slide, we will have a Slido question about which plot (A,
-B, both, neither) is appropriate to proceed with SLR. Unfortunately, I
-can’t embed images in the Slido, so take a look at these plots and
-keep your answer in mind.
--->
+<section id="sem-source-page-010" class="slide level2">
+<h2>Slope test statistic</h2>
+<p><span class="math display">t=\frac{\widehat\beta_k-0}{SE(\widehat\beta_k)},\qquad df=n-k-1,</span></p>
+<p>where <span class="math inline">k</span> is the number of predictors and the extra 1 counts the intercept. Excel’s regression output reports the estimate, standard error and <span class="math inline">t</span> statistic.</p>
+<p>For Beds in the full real-estate model, <span class="math inline">t=47.426/22.866\approx2.074</span> with <span class="math inline">df=324</span>.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=10">ETF1100 Week 9 seminar, page 10</a>.</em></p>
 </section>
-<section id="source-page-011" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-011.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 11</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 11. Companion PowerPoint slide 11.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image5.png, figures/etx5900/components/image7.png, figures/etx5900/components/image9.png
-EDITABLE TEXT TRANSCRIPTION:
-Which is the correct
-statement?
-The Slido app must be installed on every computer you’re
-presenting from
--->
+<section id="sem-source-page-011" class="slide level2">
+<h2>Read the <span class="math inline">p</span>-value</h2>
+<p>The <strong>P-value</strong> column in Excel’s Regression output is for a <strong>two-sided</strong> slope test.</p>
+<ul>
+<li>For <span class="math inline">H_1:\beta_k\ne0</span>, use the displayed value.</li>
+<li>For a one-sided alternative in the direction of the estimate, divide it by two.</li>
+<li>If the estimate points opposite to the one-sided alternative, do not use a small halved value as evidence for that claim.</li>
+</ul>
+<p>For Beds, Excel reports two-sided <span class="math inline">p=0.03886</span>.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=11">ETF1100 Week 9 seminar, page 11</a>.</em></p>
 </section>
-<section id="source-page-012" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-012.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 12</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 12. Companion PowerPoint slide 12.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image70.png, figures/etx5900/components/image8.png
-EDITABLE TEXT TRANSCRIPTION:
-Overview of SLR Concepts
-Quantify (specify & estimate) the relationship by fitting a model:
-Y as a function of X
-• : dependent variable (also called response variable) for
-observation i
-•    independent variable (also called explanatory variable) for
-observation i
-•    y-intercept for the population (value of Y when X = 0)
-•    slope for the population (calculated as
-•   random error for observation i
-Notice how    ,   are population parameters.
--->
+<section id="sem-source-page-012" class="slide level2">
+<h2>Coefficient-testing checklist</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Two-sided</th>
+<th>One-sided</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hypotheses</td>
+<td><span class="math inline">\beta_k=0</span> vs <span class="math inline">\beta_k\ne0</span></td>
+<td><span class="math inline">\beta_k=0</span> vs <span class="math inline">\beta_k&gt;0</span> or <span class="math inline">&lt;0</span></td>
+</tr>
+<tr class="even">
+<td>Test statistic</td>
+<td><span class="math inline">\widehat\beta_k/SE(\widehat\beta_k)</span></td>
+<td>same</td>
+</tr>
+<tr class="odd">
+<td>Excel <span class="math inline">p</span>-value</td>
+<td>use as shown</td>
+<td>halve only when estimate has claimed sign</td>
+</tr>
+<tr class="even">
+<td>Decision</td>
+<td>compare <span class="math inline">p</span> with <span class="math inline">\alpha</span></td>
+<td>compare <span class="math inline">p</span> with <span class="math inline">\alpha</span></td>
+</tr>
+</tbody>
+</table>
+<p>Conclude in terms of the relationship between the predictor and outcome, holding other included predictors fixed.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=12">ETF1100 Week 9 seminar, page 12</a>.</em></p>
 </section>
-<section id="source-page-013" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-013.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 13</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 13. Companion PowerPoint slide 13.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image13.png, figures/etx5900/components/image10.png
-EDITABLE TEXT TRANSCRIPTION:
-Overview of SLR Concepts
-Quantify (specify & estimate) the relationship by fitting a model:
-Hmm… we usually don’t have information from the population. We’ll
-need to estimate from our sample – be careful with notation.
-•    : predicted value of Y for observation i
-•     : value of X for observation i
-• b 0: sample y-intercept (value of when X = 0)
-• b 1: sample slope (change in predicted , on average, when the
-value of X increases by one unit)
-•   If b1 is positive, an increase in X is accompanied by an increase in Y
-•   If b1 is negative, an increase in X is accompanied by a decrease in Y
-,       are regression coefficients.
--->
+<section id="sem-source-page-013" class="slide level2">
+<h2>One-sided example: bedrooms</h2>
+<p>Claim: more bedrooms are associated with a <strong>higher</strong> property price, holding the other predictors fixed.</p>
+<p><span class="math display">H_0:\beta_{Beds}=0,\qquad H_1:\beta_{Beds}&gt;0.</span></p>
+<p>The estimate is positive (<span class="math inline">47.426</span>) and Excel’s two-sided <span class="math inline">p</span> is <span class="math inline">0.03886</span>, so the one-sided <span class="math inline">p\approx0.01943</span>. At <span class="math inline">\alpha=0.05</span>, reject <span class="math inline">H_0</span>.</p>
+<p>There is evidence of a positive conditional association with price. This observational model does not establish causation.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=13">ETF1100 Week 9 seminar, page 13</a>.</em></p>
 </section>
-<section id="source-page-014" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-014.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 14</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 14. Companion PowerPoint slide 14.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image14.png, figures/etx5900/components/image15.png
-EDITABLE TEXT TRANSCRIPTION:
-Overview of SLR Concepts
-We have     from the data. How exactly do we get these     ,   ?
-We need to have some criteria for the line we’re modelling. (Drawing
-a random line on a page isn’t helpful.) So, we will use an approach
-called the least squares method, which Excel will help us implement.
-The idea is that we want a line that minimizes the sum of squares
-(“least squares”) of the errors.
--->
+<section id="sem-source-page-014" class="slide level2">
+<h2>Two-sided example: car spaces</h2>
+<p>Claim: car spaces have some conditional association with property price.</p>
+<p><span class="math display">H_0:\beta_{Cars}=0,\qquad H_1:\beta_{Cars}\ne0.</span></p>
+<p>Excel reports <span class="math inline">\widehat\beta_{Cars}=14.544</span> and two-sided <span class="math inline">p=0.5235</span>. At <span class="math inline">\alpha=0.05</span>, fail to reject <span class="math inline">H_0</span>.</p>
+<p>The data do not provide strong evidence of an additional linear contribution from Cars in this specification.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=14">ETF1100 Week 9 seminar, page 14</a>.</em></p>
 </section>
-<section id="source-page-015" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-015.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 15</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 15. Companion PowerPoint slide 15.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image13.wmf, figures/etx5900/components/image14.wmf, figures/etx5900/components/image15.wmf, figures/etx5900/components/image16.wmf, figures/etx5900/components/image17.wmf, figures/etx5900/components/image18.wmf
-EDITABLE TEXT TRANSCRIPTION:
-Overview of SLR Concepts
-Collective errors are
-summarised by the
-sum of squared error (SSE)
-$80,000
-$70,000                               (x39, y39)
-$60,000
-$50,000       (x9, y9)
-$40,000
-$30,000
-$20,000
-$10,000
-$0
-0              5   10        15          20    25         30
-Independent Variable
--->
+<section id="sem-source-page-015" class="slide level2">
+<h2>Consider model reduction</h2>
+<p>For a two-sided coefficient test, a small <span class="math inline">p</span>-value supports retaining a predictor. A large <span class="math inline">p</span>-value invites a comparison with a model that omits it.</p>
+<p>Here, Cars has <span class="math inline">p=0.5235</span>. The source refits a model without Cars. Compare fit, changes in other slopes and business meaning before choosing the reduced model.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=15">ETF1100 Week 9 seminar, page 15</a>.</em></p>
 </section>
-<section id="source-page-016" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-016.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 16</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 16. Companion PowerPoint slide 16.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image130.png
-EDITABLE TEXT TRANSCRIPTION:
-Outline of Topics
-•   Overview of Regression: Terminology and Concepts
-•   Examples and Working for Simple Linear Regression (SLR)
-• Scatterplot
-• Developing the Model
-• Slope, Intercept (and how to interpret)
-• Correlation (and how to interpret)
-• Prediction
-• Confidence Interval for the Slope
-• Evaluating the Model
-•      (and how to interpret)
-• Hypothesis Testing of the Slope
-•   Getting Ready for Multiple Linear Regression (MLR)
-Textbook references: Berenson et al Basic Business Statistics 5 th ed
-Chapter 12, Sections 12.1-12.3, 12.7
--->
+<section id="sem-source-page-016" class="slide level2">
+<h2>Reduced real-estate model</h2>
+<p>After removing Cars, the source estimates</p>
+<p><span class="math display">\widehat{Price}=94.295+51.363\,Beds+217.760\,Baths+0.83593\,Area.</span></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Statistic</th>
+<th style="text-align: right;">Full model</th>
+<th style="text-align: right;">Reduced model</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">R^2</span></td>
+<td style="text-align: right;">0.60424</td>
+<td style="text-align: right;">0.60375</td>
+</tr>
+<tr class="even">
+<td>Adjusted <span class="math inline">R^2</span></td>
+<td style="text-align: right;">0.59936</td>
+<td style="text-align: right;">0.60009</td>
+</tr>
+<tr class="odd">
+<td>Residual SE (AUD 000s)</td>
+<td style="text-align: right;">265.16</td>
+<td style="text-align: right;">264.92</td>
+</tr>
+</tbody>
+</table>
+<p>The remaining coefficients change only slightly. This is a useful comparison, not an automatic rule to drop every large-<span class="math inline">p</span> predictor.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=16">ETF1100 Week 9 seminar, page 16</a>.</em></p>
 </section>
-<section id="source-page-017" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-017.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 17</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 17. Companion PowerPoint slide 17.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Using the Workshop 6 Workshop Data titled RealEstate:
-• Draw a scatter plot of property price (Y, in thousands of dollars) against
-area (X, in sqm). Add a trendline to the plot.
-• Generate a simple linear regression output in Microsoft Excel with price
-as the dependent variable and area as the independent variable.
-o Report the intercept and slope coefficient. Interpret them,
-explaining what it means in the context of property prices.
-o Report the correlation coefficient. Interpret what it tells you about
-the strength and direction of the relationship between area and
-price.
-• Using the regression model, compare the predicted prices of two
-properties, one with an area of 600 sqm and another with 900 sqm.
-State how much higher the predicted price is for the larger property.
-Explain why.
-• Interpret the confidence interval for the slope.
--->
+<section id="sem-source-page-017" class="slide level2">
+<h2>Compare and evaluate models</h2>
+<p>The source compares candidate models using:</p>
+<ul>
+<li><span class="math inline">R^2</span>, the share of observed outcome variation explained in sample; and</li>
+<li>residual diagnostics, which reveal patterns or changing spread left unexplained by the model.</li>
+</ul>
+<p>Also compare adjusted <span class="math inline">R^2</span> and the business purpose when deciding between specifications.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=17">ETF1100 Week 9 seminar, page 17</a>.</em></p>
 </section>
-<section id="source-page-018" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-018.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 18</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 18. Companion PowerPoint slide 18.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image19.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Draw a scatter plot of Property Price (Y) against Area (X,
-in sq. m). Add a trendline to the plot.
-Price vs Area
-4000
-3500
-3000
-2500
-2000
-1500                                              y = 1.0928x + 539.36
-1000                                                   R² = 0.3204
-500
-0
-0   200   400    600      800       1000   1200     1400     1600
-Positive slope!
-Area (sqm)
--->
+<section id="sem-source-page-018" class="slide level2">
+<h2>What <span class="math inline">R^2</span> means</h2>
+<p>Write each observed value as fitted value plus residual:</p>
+<p><span class="math display">Y_i=\widehat Y_i+e_i.</span></p>
+<p><span class="math inline">R^2</span> measures the proportion of total sample variation in <span class="math inline">Y</span> explained by the fitted model. It lies between 0 and 1. Values near 1 mean a larger share is explained <strong>in the sample</strong>; they do not prove the model is useful for every prediction.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=18">ETF1100 Week 9 seminar, page 18</a>.</em></p>
 </section>
-<section id="source-page-019" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-019.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 19</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 19. Companion PowerPoint slide 19.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image20.png, figures/etx5900/components/image21.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Generate a simple linear regression output in Microsoft Excel with Price
-as the dependent variable and Area as the independent variable.
-Y = Price   X = Area
-Data > Data Analysis > Regression
-Tick Labels as the column names
-were included, and specify a cell for
-the Output Range.
--->
+<section id="sem-source-page-019" class="slide level2">
+<h2>The sum-of-squares decomposition</h2>
+<p><span class="math display">SST=\sum_i(Y_i-\bar Y)^2,\quad SSR=\sum_i(\widehat Y_i-\bar Y)^2,\quad SSE=\sum_i(Y_i-\widehat Y_i)^2.</span></p>
+<p>For least-squares regression with an intercept, <span class="math inline">SST=SSR+SSE</span>.</p>
+<ul>
+<li><span class="math inline">SST</span>: total variation around the sample mean.</li>
+<li><span class="math inline">SSR</span>: variation explained by the regression.</li>
+<li><span class="math inline">SSE</span>: variation left in the residuals.</li>
+</ul>
+<p><span class="math display">R^2=\frac{SSR}{SST}.</span></p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=19">ETF1100 Week 9 seminar, page 19</a>.</em></p>
 </section>
-<section id="source-page-020" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-020.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 20</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 20. Companion PowerPoint slide 20.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image22.emf
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Generate a simple linear regression output in Microsoft Excel with Price
-as the dependent variable and Area as the independent variable.
--->
+<section id="sem-source-page-020" class="slide level2">
+<h2>Fit as explained variation</h2>
+<p>The source’s diagram restates the relationship</p>
+<p><span class="math display">SST=SSR+SSE,\qquad R^2=\frac{SSR}{SST}=1-\frac{SSE}{SST}.</span></p>
+<p>A model with a larger explained share has a larger in-sample <span class="math inline">R^2</span>. Adding predictors can also raise <span class="math inline">R^2</span> without improving usefulness, so compare model complexity and residual behaviour.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=20">ETF1100 Week 9 seminar, page 20</a>.</em></p>
 </section>
-<section id="source-page-021" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-021.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 21</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 21. Companion PowerPoint slide 21.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image22.emf, figures/etx5900/components/image230.png, figures/etx5900/components/image240.png, figures/etx5900/components/image23.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Report the intercept and slope coefficient. Interpret them,
-explaining what it means in the context of property prices.
--->
+<section id="sem-source-page-021" class="slide level2">
+<h2>Real-estate <span class="math inline">R^2</span> example</h2>
+<p>For the reduced <strong>Beds + Baths + Area</strong> model, <span class="math inline">R^2\approx0.604</span>.</p>
+<p>About <strong>60%</strong> of the observed variation in property price is explained by this predictor set; about <strong>40%</strong> remains unexplained by the model.</p>
+<p>Adjusted <span class="math inline">R^2\approx0.600</span> accounts for predictor count and sample size. The source focuses mainly on <span class="math inline">R^2</span>.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=21">ETF1100 Week 9 seminar, page 21</a>.</em></p>
 </section>
-<section id="source-page-022" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-022.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 22</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 22. Companion PowerPoint slide 22.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Report the intercept and slope coefficient. Interpret them,
-explaining what it means in the context of property prices.
-Intercept:
-The intercept of 539.357 tells us that the expected price of a
-property with Area = 0 sqm is $539,357.
-Does this make sense? Does the intercept have a meaningful
-interpretation?
-Slope:
-The slope of 1.093 indicates that an additional square meter in
-land area corresponds to an increase of $1,093 in property price,
-on average.
--->
+<section id="sem-source-page-022" class="slide level2">
+<h2>Residual diagnostics: pattern and spread</h2>
+<p>Desirable residuals scatter around zero without a visible pattern and have roughly constant vertical spread.</p>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><img data-src="figures/residual-diagnostics/components/page-022-image-047.png" style="width:100.0%"></p>
+<p>Random scatter.</p>
+</div><div class="column" style="width:48%;">
+<p><img data-src="figures/residual-diagnostics/components/page-022-image-048.jpg" style="width:100.0%"></p>
+<p>A widening fan needs attention.</p>
+</div></div>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=22">ETF1100 Week 9 seminar, page 22</a>.</em></p>
 </section>
-<section id="source-page-023" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-023.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 23</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 23. Companion PowerPoint slide 23.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image231.png
-EDITABLE TEXT TRANSCRIPTION:
-What is correlation?
-Correlation is a measure of the relative strength of the linear
-relationship between two variables, taking values between -1 and 1.
-Usually, we will not see perfect negative linear correlation (-1) or
-perfect positive linear correlation (+1).
-• Strength:
-• If correlation is close to -1 or +1, it’s a relatively strong
-correlation.
-• If correlation is close to 0, it is relatively weak correlation.
-• Otherwise, it is relatively moderate.
-• Direction: Positive (+), negative (-)
-•    (notation for population), (notation for sample)
--->
+<section id="sem-source-page-023" class="slide level2">
+<h2>Real-estate residual plot</h2>
+
+<img data-src="figures/residual-diagnostics/components/page-023-image-057.png" style="width:63.0%" class="r-stretch"><p>The residuals are roughly centred on zero, but their spread is larger for properties with greater area. Forecast uncertainty may therefore vary with property size.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=23">ETF1100 Week 9 seminar, page 23</a>.</em></p>
 </section>
-<section id="source-page-024" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-024.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 24</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 24. Companion PowerPoint slide 24.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image22.emf
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Report the correlation coefficient. Interpret what it tells you about the
-strength and direction of the relationship between area and price.
--->
+<section id="sem-source-page-024" class="slide level2">
+<h2>Categorical predictors need coding</h2>
+<p>Do not enter categories as arbitrary numbers such as Water <span class="math inline">=1</span>, Tea <span class="math inline">=2</span>, Coffee <span class="math inline">=3</span>: that would impose a numerical spacing that has no business meaning.</p>
+<p>Instead, represent a category with a <strong>dummy variable</strong> taking 0 or 1.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=24">ETF1100 Week 9 seminar, page 24</a>.</em></p>
 </section>
-<section id="source-page-025" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-025.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 25</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 25. Companion PowerPoint slide 25.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Report the correlation coefficient. Interpret what it tells you about the
-strength and direction of the relationship between area and price.
-r = 0.566
-(We use r because this is calculated from our sample data.)
-We consider this to be moderate and positive correlation between
-Area (sqm) and Price (in thousands of dollars).
-Again, the direction of the correlation and sign of the slope must be
-the same. As the area increases, the property price also tends to
-increase.
--->
+<section id="sem-source-page-025" class="slide level2">
+<h2>Choose a base category</h2>
+<p>With Water, Tea and Coffee, use two dummies:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Beverage</th>
+<th style="text-align: right;"><span class="math inline">D_{Tea}</span></th>
+<th style="text-align: right;"><span class="math inline">D_{Coffee}</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Water (base)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td>Tea</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td>Coffee</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<p>For <span class="math inline">j</span> categories and an intercept, include <span class="math inline">j-1</span> dummies. The omitted category is the base represented by all dummy values equal to zero.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=25">ETF1100 Week 9 seminar, page 25</a>.</em></p>
 </section>
-<section id="source-page-026" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-026.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 26</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 26. Companion PowerPoint slide 26.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image24.png, figures/etx5900/components/image25.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Using the regression model, compare the predicted prices of two
-properties, one with an area of 600 sq. m and another with 900 sq. m. State
-how much higher the predicted price is for the larger property. Explain why.
-Note: You should use the exact numbers from the regression
-output when it is available.
-Difference = $327,832
-Another way to calculate the diffference: slope * (900-600)
-Same answer as above!
--->
+<section id="sem-source-page-026" class="slide level2">
+<h2>Interpret a dummy coefficient</h2>
+<p>For a dummy <span class="math inline">D_k</span>, <span class="math inline">\widehat\beta_k</span> is the predicted difference between <span class="math inline">D_k=1</span> and the base category <strong>holding the other predictors fixed</strong>.</p>
+<ul>
+<li>Positive coefficient: predicted outcome is higher than the base.</li>
+<li>Negative coefficient: predicted outcome is lower than the base.</li>
+</ul>
+<p>The intercept refers to the base category when other numerical predictors are zero.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=26">ETF1100 Week 9 seminar, page 26</a>.</em></p>
 </section>
-<section id="source-page-027" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-027.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 27</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 27. Companion PowerPoint slide 27.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image22.emf, figures/etx5900/components/image29.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Report and interpret the confidence interval for the slope .
--->
+<section id="sem-source-page-027" class="slide level2">
+<h2>Create real-estate dummies in Excel</h2>
+<p>The source adds these 0/1 columns to the RealEstate sheet:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>New column</th>
+<th>Excel formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DSchoolZone</td>
+<td><code>=IF(F2="Yes",1,0)</code></td>
+</tr>
+<tr class="even">
+<td>DAuction</td>
+<td><code>=IF(G2="Yes",1,0)</code></td>
+</tr>
+<tr class="odd">
+<td>DNew</td>
+<td><code>=IF(H2="Yes",1,0)</code></td>
+</tr>
+<tr class="even">
+<td>DSubdivided</td>
+<td><code>=IF(I2="Yes",1,0)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Fill each formula down the data rows. Each dummy compares <strong>Yes</strong> with the base <strong>No</strong> category.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=27">ETF1100 Week 9 seminar, page 27</a>.</em></p>
 </section>
-<section id="source-page-028" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-028.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 28</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 28. Companion PowerPoint slide 28.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Report and interpret the confidence interval for the slope.
-CI in terms of thousands of dollars: ($920, $1266)
-We are 95% confident that the price increase for an additional
-square meter of land is between $920 and $1,266 on average.
--->
+<section id="sem-source-page-028" class="slide level2">
+<h2>Model with dummy variables</h2>
+<p>The expanded model combines numerical and categorical predictors:</p>
+<p><span class="math display">
+\begin{aligned}
+Price_i={}&amp;\beta_0+\beta_1Beds_i+\beta_2Baths_i+\beta_3Area_i\\
+&amp;+\beta_4DSchoolZone_i+\beta_5DAuction_i\\
+&amp;+\beta_6DNew_i+\beta_7DSubdivided_i+\varepsilon_i.
+\end{aligned}
+</span></p>
+<p>Use the numeric dummy columns as inputs in Excel’s <strong>Data Analysis → Regression</strong> output. Each dummy slope compares otherwise similar properties with and without that feature.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=28">ETF1100 Week 9 seminar, page 28</a>.</em></p>
 </section>
-<section id="source-page-029" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-029.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 29</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 29. Companion PowerPoint slide 29.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Marketing (Your Turn)
-Using the Workshop 6 Workshop Data titled Marketing:
-• What do you expect the relationship to be between spend and
-income?
-• Draw a scatter plot of spend (Y, in dollars) against income (X, in
-dollars). Add a trendline to the plot. Comment on how this compares
-to your expectation in Question 1.
-• Generate a simple linear regression output in Microsoft Excel with
-spend as the dependent variable and income as the independent
-variable.
-o Report the intercept and slope coefficient. Interpret in context.
-o Report the correlation coefficient. Interpret in context what it
-tells you about the strength and direction of the relationship.
-• What is the estimated or predicted spend when income is $50000?
-• Interpret the confidence interval for the slope.
--->
+<section id="sem-source-page-029" class="slide level2">
+<h2>Inspect dummy-variable <span class="math inline">p</span>-values</h2>
+<p>The source’s expanded model reports:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Predictor</th>
+<th style="text-align: right;">Coefficient</th>
+<th style="text-align: right;"><span class="math inline">p</span>-value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Beds</td>
+<td style="text-align: right;">38.47</td>
+<td style="text-align: right;">0.0684</td>
+</tr>
+<tr class="even">
+<td>Baths</td>
+<td style="text-align: right;">175.76</td>
+<td style="text-align: right;"><span class="math inline">&lt;0.0001</span></td>
+</tr>
+<tr class="odd">
+<td>Area</td>
+<td style="text-align: right;">0.9958</td>
+<td style="text-align: right;"><span class="math inline">&lt;0.0001</span></td>
+</tr>
+<tr class="even">
+<td>DSchoolZone</td>
+<td style="text-align: right;">157.70</td>
+<td style="text-align: right;"><span class="math inline">&lt;0.0001</span></td>
+</tr>
+<tr class="odd">
+<td>DAuction</td>
+<td style="text-align: right;">0.77</td>
+<td style="text-align: right;">0.9783</td>
+</tr>
+<tr class="even">
+<td>DNew</td>
+<td style="text-align: right;">196.78</td>
+<td style="text-align: right;"><span class="math inline">&lt;0.0001</span></td>
+</tr>
+<tr class="odd">
+<td>DSubdivided</td>
+<td style="text-align: right;"><span class="math inline">-6.20</span></td>
+<td style="text-align: right;">0.9352</td>
+</tr>
+</tbody>
+</table>
+<p>The source considers removing DAuction and DSubdivided, whose <span class="math inline">p</span>-values are very high.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=29">ETF1100 Week 9 seminar, page 29</a>.</em></p>
 </section>
-<section id="source-page-030" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-030.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 30</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 30. Companion PowerPoint slide 30.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Marketing (Your Turn)
-What do you expect the relationship to be between spend and
-income?
-I would generally expect Spend and Income to be positively
-correlated, since a higher income would tend to allow the
-consumer to spend more on non-essential items.
--->
+<section id="sem-source-page-030" class="slide level2">
+<h2>Reduced dummy-variable model</h2>
+<p>After omitting DAuction and DSubdivided, retain Beds, Baths, Area, DSchoolZone and DNew.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Predictor</th>
+<th style="text-align: right;">Coefficient (AUD 000s)</th>
+<th style="text-align: right;"><span class="math inline">p</span>-value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Beds</td>
+<td style="text-align: right;">38.60</td>
+<td style="text-align: right;">0.0654</td>
+</tr>
+<tr class="even">
+<td>Baths</td>
+<td style="text-align: right;">175.81</td>
+<td style="text-align: right;"><span class="math inline">&lt;0.0001</span></td>
+</tr>
+<tr class="odd">
+<td>Area</td>
+<td style="text-align: right;">1.0066</td>
+<td style="text-align: right;"><span class="math inline">&lt;0.0001</span></td>
+</tr>
+<tr class="even">
+<td>DSchoolZone</td>
+<td style="text-align: right;">157.56</td>
+<td style="text-align: right;"><span class="math inline">&lt;0.0001</span></td>
+</tr>
+<tr class="odd">
+<td>DNew</td>
+<td style="text-align: right;">195.85</td>
+<td style="text-align: right;"><span class="math inline">&lt;0.0001</span></td>
+</tr>
+</tbody>
+</table>
+<p>Holding other features fixed, the model associates school-zone status with about <strong>AUD 157,555</strong> higher price and new status with about <strong>AUD 195,848</strong> higher price than their base categories.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=30">ETF1100 Week 9 seminar, page 30</a>.</em></p>
 </section>
-<section id="source-page-031" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-031.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 31</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 31. Companion PowerPoint slide 31.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Marketing (Your Turn)
-Draw a scatter plot of spend (Y, in dollars) against income (X, in dollars).
-Add a trendline to the plot. Comment on how this compares to your
-expectation in Question 1.
-Spend vs Income
-60000
-50000
-40000
-Positive slope - as the Income
-30000                                                                     increases, amount spent by the
-20000
-y = 0.2956x + 8254.6
-consumer also increases.
-10000                                                  R² = 0.5508
-0
-0   20000    40000     60000      80000      100000      120000
-Income ($)
--->
+<section id="sem-source-page-031" class="slide level2">
+<h2>Overall F-test</h2>
+<p>The overall test asks whether the predictor set has any linear relationship with <span class="math inline">Y</span>:</p>
+<p><span class="math display">H_0:\beta_1=\cdots=\beta_k=0,\qquad H_1:\text{at least one slope is nonzero}.</span></p>
+<p><span class="math display">F=\frac{SSR/k}{SSE/(n-k-1)}.</span></p>
+<p>Excel reports the <span class="math inline">F</span> statistic and <strong>Significance F</strong> in the ANOVA block. Reject <span class="math inline">H_0</span> when its <span class="math inline">p</span>-value is below <span class="math inline">\alpha</span>.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=31">ETF1100 Week 9 seminar, page 31</a>.</em></p>
 </section>
-<section id="source-page-032" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-032.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 32</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 32. Companion PowerPoint slide 32.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image26.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Marketing (Your Turn)
-Generate a simple linear regression output in Microsoft Excel with spend
-as the dependent variable and income as the independent variable.
--->
+<section id="sem-source-page-032" class="slide level2">
+<h2>Overall F-test: real estate</h2>
+<p>For the reduced Beds, Baths and Area model, the source reports <span class="math inline">F\approx165.060</span> and Significance F <span class="math inline">=5.260\times10^{-65}</span>.</p>
+<p>At <span class="math inline">\alpha=0.05</span>, reject <span class="math inline">H_0:\beta_{Beds}=\beta_{Baths}=\beta_{Area}=0</span>.</p>
+<p>There is evidence that <strong>at least one</strong> of these predictors has a linear relationship with price. The overall test does not say every individual coefficient is significant.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=32">ETF1100 Week 9 seminar, page 32</a>.</em></p>
 </section>
-<section id="source-page-033" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-033.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 33</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 33. Companion PowerPoint slide 33.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image27.png, figures/etx5900/components/image28.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Marketing (Your Turn)
-Report the intercept and slope coefficient. Interpret in context.
-Intercept:
-The intercept of 8254.575 tells us that the expected spending of
-someone with $0 in income is approximately $8255 dollars.
-Slope:
-The slope of 0.296 indicates that an additional thousand dollars in
-income corresponds to an increase of approximately $296 in
-spending, on average.
--->
+<section id="sem-source-page-033" class="slide level2">
+<h2>Seminar summary</h2>
+<ul>
+<li>Test individual slopes using the coefficient estimate, standard error and an alternative matched to the business claim.</li>
+<li>Compare models using <span class="math inline">R^2</span> and residual diagnostics.</li>
+<li>Represent categorical predictors with <span class="math inline">j-1</span> dummy variables and a stated base category.</li>
+<li>Use the overall F-test to assess whether at least one slope in a predictor set is nonzero.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=33">ETF1100 Week 9 seminar, page 33</a>.</em></p>
 </section>
-<section id="source-page-034" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-034.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 34</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 34. Companion PowerPoint slide 34.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Marketing (Your Turn)
-Report the correlation coefficient. Interpret in context what it tells you
-about the strength and direction of the relationship.
-r = 0.742
-We consider this to be moderate/strong and positive correlation
-between income ($) and spending ($).
-Again, the direction of the correlation and sign of the slope are the
-same. As income increases, spending increases.
--->
+<section id="sem-source-page-034" class="slide level2">
+<h2>Source closing reminders (historical)</h2>
+<p>The ETF1100 source asked students to attend a next-day Zoom workshop, their allocated tutorial and an ETF1100 tutorial quiz.</p>
+<p><strong>These are historical source arrangements.</strong> For this intensive, check the current Week 6 page and Moodle for the class exercise and quiz instructions.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 9 ETF1100 S1 2026 v2 .pdf#page=34">ETF1100 Week 9 seminar, page 34</a>.</em></p>
 </section>
-<section id="source-page-035" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-035.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 35</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 35. Companion PowerPoint slide 35.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image30.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Marketing (Your Turn)
-What is the estimated or predicted spend when income is $50000?
-Plug in $50000 for X.
-The estimated spend is $23035 when income is $50000.
--->
+<section id="tut-source-page-001" class="slide level2">
+<h2>Tutorial source reminders (historical)</h2>
+<p>The source asked students to sit with their assignment group, check a correction to a group-assignment task, review the rubric and note a peer-evaluation submission.</p>
+<p><strong>These are historical ETF1100 instructions.</strong> Follow the current ETX1100/ETX5900 schedule and Moodle for live arrangements.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=1">ETF1100 Week 9 tutorial solutions, page 1</a>.</em></p>
 </section>
-<section id="source-page-036" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-036.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 36</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 36. Companion PowerPoint slide 36.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Marketing (Your Turn)
-Interpret the confidence interval for the slope.
-CI: (.277, .314)
-We are 95% confident that the spend increase for an additional
-thousand dollars in income is between $277 and $314 on average.
--->
+<section id="tut-source-page-002" class="slide level2">
+<h2>Tutorial plan</h2>
+<p>The Week 9 tutorial revisits regression and a post-workshop quiz, then works through a tutor-led example and a tutorial quiz.</p>
+<p>For the current Week 6 class, use the tutorial example to practise a multiple regression in Excel after the seminar’s model-evaluation concepts.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=2">ETF1100 Week 9 tutorial solutions, page 2</a>.</em></p>
 </section>
-<section id="source-page-037" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-037.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 37</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 37. Companion PowerPoint slide 37.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image200.png
-EDITABLE TEXT TRANSCRIPTION:
-Outline of Topics
-•   Overview of Regression: Terminology and Concepts
-•   Examples and Working for Simple Linear Regression (SLR)
-• Scatterplot
-• Developing the Model
-• Slope, Intercept (and how to interpret)
-• Correlation (and how to interpret)
-• Prediction
-• Confidence Interval for the Slope
-• Evaluating the Model
-•      (and how to interpret)
-• Hypothesis Testing of the Slope
-•   Getting Ready for Multiple Linear Regression (MLR)
-Textbook references: Berenson et al Basic Business Statistics 5 th ed
-Chapter 12, Sections 12.1-12.3, 12.7
--->
+<section id="tut-source-page-003" class="slide level2">
+<h2>Simple linear regression model</h2>
+<p>The population model relates a numerical outcome <span class="math inline">Y_i</span> to one input <span class="math inline">X_i</span>:</p>
+<p><span class="math display">Y_i=\beta_0+\beta_1X_i+\varepsilon_i.</span></p>
+<p><span class="math inline">\beta_0</span> and <span class="math inline">\beta_1</span> are population parameters. The error <span class="math inline">\varepsilon_i</span> captures the part of <span class="math inline">Y_i</span> not described by the line.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=3">ETF1100 Week 9 tutorial solutions, page 3</a>.</em></p>
 </section>
-<section id="source-page-038" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-038.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 38</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 38. Companion PowerPoint slide 38.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image241.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Using the Workshop 6 Workshop Data titled RealEstate:
-• Interpret the coefficient of determination       , and explain how
-well the model explains variation in property prices.
-• Test whether the regression slope is statistically significant.
--->
+<section id="tut-source-page-004" class="slide level2">
+<h2>Fitted line and residual</h2>
+<p>Estimate the population coefficients from sample data:</p>
+<p><span class="math display">\widehat Y_i=\widehat\beta_0+\widehat\beta_1X_i,\qquad e_i=Y_i-\widehat Y_i.</span></p>
+<p>The fitted value predicts an observation using the estimated line. The residual is observed minus fitted value, in the units of <span class="math inline">Y</span>.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=4">ETF1100 Week 9 tutorial solutions, page 4</a>.</em></p>
 </section>
-<section id="source-page-039" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-039.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 39</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 39. Companion PowerPoint slide 39.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image220.png
-EDITABLE TEXT TRANSCRIPTION:
-What is the coefficient of determination?
-explainable unexplained
-The coefficient of determination is the portion of the total variation
-in the dependent variable (Y) that is explained by the linear
-relationship with the independent variable (X).
-R2 is a measure of ‘Goodness of Fit’, often expressed in %. If we have a
-good model, the unexplained component is small.
-0≤ R2 ≤1
-R2 = 0 (or 0%) means no linear relationship between X and Y
-R2 = 1 (or 100%) means deterministic linear relationship between X
-and Y
--->
+<section id="tut-source-page-005" class="slide level2">
+<h2>Least squares</h2>
+<p>Choose the fitted coefficients to minimise the sum of squared residuals:</p>
+<p><span class="math display">SSE=\sum_{i=1}^{n}e_i^2=\sum_{i=1}^{n}(Y_i-\widehat Y_i)^2.</span></p>
+<p>Squaring prevents positive and negative residuals from cancelling and penalises large misses more heavily.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=5">ETF1100 Week 9 tutorial solutions, page 5</a>.</em></p>
 </section>
-<section id="source-page-040" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-040.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 40</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 40. Companion PowerPoint slide 40.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image35.png, figures/etx5900/components/image36.png, figures/etx5900/components/image37.png, figures/etx5900/components/image38.png
-EDITABLE TEXT TRANSCRIPTION:
-What is the coefficient of determination?
-Total Sum of Squares = Regression Sum of Squares + Error Sum of Squares
-Measures the TOTAL            Part of the total variation that can   Part of the total variation
-variation of the values       be explained by the regression.        that is unexplained by the
-around their sample mean      Measures        the      EXPLAINED     model.
-variation attributable to the          Measures the
-relationship between X and Y.          UNEXPLAINED Variation
-This measures the improvement          attributable to factors other
-of over the as the predictor of        than the relationship
-between X and Y.
-SST = SSR + SSE
-A model fits the data well if SSR is a “large” proportion of SST
-Regression Sum of Squares
-Total Sum of Squares
--->
+<section id="tut-source-page-006" class="slide level2">
+<h2>Interpret simple-regression coefficients</h2>
+<p>In <span class="math inline">\widehat Y_i=\widehat\beta_0+\widehat\beta_1X_i</span>:</p>
+<ul>
+<li><span class="math inline">\widehat\beta_0</span> predicts <span class="math inline">Y</span> when <span class="math inline">X=0</span>; it may lack practical meaning if zero is outside the observed range.</li>
+<li><span class="math inline">\widehat\beta_1</span> is the predicted change in <span class="math inline">Y</span> for a one-unit increase in <span class="math inline">X</span>.</li>
+</ul>
+<p>A positive slope rises with <span class="math inline">X</span>; a negative slope falls with <span class="math inline">X</span>.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=6">ETF1100 Week 9 tutorial solutions, page 6</a>.</em></p>
 </section>
-<section id="source-page-041" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-041.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 41</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 41. Companion PowerPoint slide 41.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image38.png, figures/etx5900/components/image27.wmf, figures/etx5900/components/image28.wmf, figures/etx5900/components/image29.wmf, figures/etx5900/components/image30.wmf, figures/etx5900/components/image31.wmf, figures/etx5900/components/image32.wmf, figures/etx5900/components/image33.wmf, figures/etx5900/components/image34.wmf, figures/etx5900/components/image35.wmf, figures/etx5900/components/image36.wmf
-EDITABLE TEXT TRANSCRIPTION:
-What is the coefficient of determination?
-SST = SSR + SSE
-A model fits the data well if SSR is a “large” proportion of SST
-Regression Sum of Squares
-Total Sum of Squares
--->
+<section id="tut-source-page-007" class="slide level2">
+<h2>Why simple slopes can mislead</h2>
+<p>In real estate, Area, Beds, Baths and Cars can move together. A simple regression of Price on Area can attribute to Area variation also associated with the omitted property features.</p>
+<p>Omitting a relevant predictor may bias a slope estimate. Multiple regression lets us compare properties at fixed values of the other included features, although it does not by itself prove causation.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=7">ETF1100 Week 9 tutorial solutions, page 7</a>.</em></p>
 </section>
-<section id="source-page-042" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-042.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 42</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 42. Companion PowerPoint slide 42.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image49.png, figures/etx5900/components/image22.emf
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Interpret the coefficient of determination     , and explain how
-well the model explains variation in property prices.
--->
+<section id="tut-source-page-008" class="slide level2">
+<h2>Interpret multiple-regression slopes</h2>
+<p><span class="math display">\widehat Y_i=\widehat\beta_0+\widehat\beta_1X_{1i}+\widehat\beta_2X_{2i}+\cdots+\widehat\beta_kX_{ki}.</span></p>
+<p><span class="math inline">\widehat\beta_k</span> is the predicted change in <span class="math inline">Y</span> for one more unit of <span class="math inline">X_k</span>, <strong>holding the other included predictors fixed</strong>.</p>
+<p>The intercept refers to all predictors equal to zero and may not represent a realistic case.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=8">ETF1100 Week 9 tutorial solutions, page 8</a>.</em></p>
 </section>
-<section id="source-page-043" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-043.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 43</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 43. Companion PowerPoint slide 43.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image50.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Interpret the coefficient of determination     , and explain how
-well the model explains variation in property prices.
-The R 2 value is 32% for the simple linear model. About 32% of the
-variation in property prices can be explained by the model.
-About 68% of the variation in property prices cannot be explained
-by the model.
--->
+<section id="tut-source-page-009" class="slide level2">
+<h2>Source quiz review: correlation</h2>
+<p>The historical quiz gives the correlation between <strong>Waiting_time</strong> and <strong>Travel_time</strong> as <strong>0.402</strong> (three decimal places). It then asks which statement is true:</p>
+<ul>
+<li>No relationship for Wednesday travellers.</li>
+<li>A strong relationship for Thursday travellers.</li>
+<li>The correlation is higher for Wednesday travellers.</li>
+<li>The correlation is higher for Thursday travellers.</li>
+</ul>
+<p>Use the travel-time data to compare the two days; the overall correlation alone does not answer this.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=9">ETF1100 Week 9 tutorial solutions, page 9</a>.</em></p>
 </section>
-<section id="source-page-044" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-044.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 44</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 44. Companion PowerPoint slide 44.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-Remember hypothesis testing?
-The least squares method will produce a regression line regardless of
-whether there is actually a linear relationship between X and Y, so
-we need to use hypothesis testing on the regression slope
-coefficient.
-Once again, we will need to use our 5 steps (see next 5 slides).
--->
+<section id="tut-source-page-010" class="slide level2">
+<h2>Source quiz review: what correlation says</h2>
+<p>Which source statements are <strong>false</strong>? Select all that apply.</p>
+<ul>
+<li>Correlation reveals only the linear relationship between two numerical variables.</li>
+<li>Correlation is used for numerical variable pairs.</li>
+<li>Waiting time has a very strong relationship with travel time within Wednesday and Thursday groups.</li>
+<li>Waiting time has a very strong relationship with travel time regardless of grouping.</li>
+</ul>
+<p>Check the overall and within-day correlations before deciding.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=10">ETF1100 Week 9 tutorial solutions, page 10</a>.</em></p>
 </section>
-<section id="source-page-045" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-045.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 45</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 45. Companion PowerPoint slide 45.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image34.png, figures/etx5900/components/image39.png, figures/etx5900/components/image41.png
-EDITABLE TEXT TRANSCRIPTION:
-HT of Regression Slope – Step 1
-Our null hypothesis says that there is NO linear relationship between X and Y.
-Our alternative hypothesis is where we make claims about a linear relationship.
-Two-tailed test. There is a linear relationship between    &
-or:
-Left-tailed test. There is a negative linear relationship between    & .
-has a negative effect on
-or:
-Right-tailed test. There is a positive linear relationship between   & .
-has a positive effect on
--->
+<section id="tut-source-page-011" class="slide level2">
+<h2>Source quiz review: slope meaning</h2>
+<p>In a simple linear relationship, what does the slope represent?</p>
+<ul>
+<li>The value of <span class="math inline">Y</span> when <span class="math inline">X=0</span>.</li>
+<li>The strength of correlation between <span class="math inline">X</span> and <span class="math inline">Y</span>.</li>
+<li><strong>The predicted change in <span class="math inline">Y</span> for a one-unit increase in <span class="math inline">X</span>.</strong></li>
+<li>Whether the relationship is statistically significant.</li>
+</ul>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=11">ETF1100 Week 9 tutorial solutions, page 11</a>.</em></p>
 </section>
-<section id="source-page-046" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-046.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 46</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 46. Companion PowerPoint slide 46.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image410.png
-EDITABLE TEXT TRANSCRIPTION:
-HT of Regression Slope – Steps 2 and 3
-Step 2. The test statistic is              . We can use Excel to get this.
-= the hypothesized null value of the population slope (which is 0)
-= the sample estimate of
-= the standard error of
-The test statistic follows a t-distribution with       degrees of
-freedom.
-Step 3. To find the p-value, we will also use Excel
-Warning: Excel by default will give a p-value for the two-tailed test. If
-you are doing a one-tailed test, you MUST divide by 2 to get p-value
-for one-tailed test.
--->
+<section id="tut-source-page-012" class="slide level2">
+<h2>Tutor-led Excel regressions</h2>
+<p>Use the <code>YOUR DATA</code> sheet in <a href="../resources/ETF1100-S1-2026/Week 9/Week 9 Tutorial Data.xlsx">Week 9 Tutorial Data.xlsx</a>:</p>
+<ol type="1">
+<li>Regress <code>Travel_time</code> on <code>Waiting_time</code> in Excel’s <strong>Data → Data Analysis → Regression</strong>.</li>
+<li>Fit a multiple regression adding <code>No_classes</code>.</li>
+<li>Compare the Waiting_time slope across models and inspect the No_classes coefficient and confidence interval.</li>
+</ol>
+<p>The <a href="../resources/ETF1100-S1-2026/Week 9/Week 9 Tutorial Data solutions.xlsx">worked tutorial workbook</a> contains source output for cross-checking.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=12">ETF1100 Week 9 tutorial solutions, page 12</a>.</em></p>
 </section>
-<section id="source-page-047" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-047.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 47</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 47. Companion PowerPoint slide 47.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-EDITABLE TEXT TRANSCRIPTION:
-HT of Regression Slope – Steps 4 and 5
-Step 4. Same decision rule.
-Reject H 0 if p-value < α
-Fail to reject H 0 otherwise
-Step 5. Conclusion
-If p-value < α, we CAN reject H 0                If p-value > α, we CANNOT reject H 0
-There is sufficient evidence at the (α)% level   There is insufficient evidence at the (α)% level
-of significance that there is a significant      of significance that there is a significant linear
-linear relationship between X and Y in the       relationship between X and Y in the
-population based on the sample data.             population based on the sample data.
--->
+<section id="tut-source-page-013" class="slide level2">
+<h2>Worked solution: number of classes</h2>
+<p>The multiple-regression output estimates the <code>No_classes</code> slope at about <strong>2.400 minutes per class</strong>.</p>
+<p>Holding waiting time fixed, one more class is associated with about 2.4 minutes more travel time on average.</p>
+<p>The source’s 95% confidence interval is approximately <strong><span class="math inline">-0.138</span> to <span class="math inline">4.939</span> minutes</strong>. Because it includes zero, the two-sided 5% test does not find strong evidence of a nonzero conditional slope.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=13">ETF1100 Week 9 tutorial solutions, page 13</a>.</em></p>
 </section>
-<section id="source-page-048" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-048.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 48</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 48. Companion PowerPoint slide 48.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image55.png, figures/etx5900/components/image22.emf
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Test if there is a linear relationship:
-Hypotheses:
-Level of significance:α=0.05
-t-statistic = 12.415
-p-value = 2.9314E-29 ≈ 0
-(from the Excel output)
-Decision Rule:
-Reject H 0 if p-value < α
-Since p-value = 0.0000 < 0.05, reject H 0
-Conclusion:
-There is sufficient evidence at the 5% level of significance to conclude
-there is a significant linear relationship between area and house price.
--->
+<section id="tut-source-page-014" class="slide level2">
+<h2>Worked solution: predict travel time</h2>
+<p>For a student with <strong>2 classes</strong> and <strong>10 minutes waiting time</strong>, the worked model predicts about <strong>47.009 minutes</strong> of travel time.</p>
+<p>For an <strong>eight-minute increase</strong> in waiting time at fixed number of classes, the estimated change is <span class="math inline">8\widehat\beta_{Waiting}\approx\mathbf{12.334}</span> minutes.</p>
+<p>Use the full Excel coefficients for the exact prediction before rounding.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=14">ETF1100 Week 9 tutorial solutions, page 14</a>.</em></p>
 </section>
-<section id="source-page-049" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-049.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 49</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 49. Companion PowerPoint slide 49.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image56.png, figures/etx5900/components/image22.emf
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Real Estate Data (Guided Example)
-Test if there is a positive linear relationship:
-Hypotheses:
-Level of significance:α=0.05
-t-statistic = 12.415
-p-value = 2.9314E-29/2 ≈ 0
-(from the Excel output)
-Decision Rule:
-Reject H 0 if p-value < α
-Since p-value = 0.0000 < 0.05, reject H 0
-Conclusion:
-There is sufficient evidence at the 5% level of significance to conclude there is a
-significant positive linear relationship between area and house price.
--->
-</section>
-<section id="source-page-050" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-050.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 50</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 50. Companion PowerPoint slide 50.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image390.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Marketing (Your Turn)
-Using the Workshop 6 Workshop Data titled Marketing:
-• Interpret the coefficient of determination       , and explain how
-well the model explains variation in spend.
-• Using a 5% level of significance, conduct a hypothesis test of the
-slope to determine if a positive linear relationship exists
-between spend and income.
--->
-</section>
-<section id="source-page-051" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-051.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 51</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 51. Companion PowerPoint slide 51.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image26.png
-EDITABLE TEXT TRANSCRIPTION:
-Reminder: Excel Output
--->
-</section>
-<section id="source-page-052" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-052.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 52</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 52. Companion PowerPoint slide 52.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image58.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Marketing (Your Turn)
-Interpret the coefficient of determination   , and explain how well
-the model explains variation in spend.
-R2 = 55.08%
-Approximately 55.08% of the variation in Spend is explained by the
-model.
-The remaining 44.92% of variation in Spend is left unexplained by
-the model.
--->
-</section>
-<section id="source-page-053" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-053.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 53</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 53. Companion PowerPoint slide 53.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image59.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Marketing (Your Turn)
-Using a 5% level of significance, conduct a hypothesis test of the
-slope to determine if a positive linear relationship exists between
-spend and income.
-Step 4:
-Step 1:
-Reject H0 if p-value < α
-Since 1.1097E-141/2 < 0.05,
-we can reject H 0
-Step 2:
-α = 0.05                         Step 5:
-t-statistic = 31.377
-There is sufficient evidence at the 5%
-level of significance to conclude that
-Step 3: p-value                  there is a positive linear relationship
-p-value = 1.1097E-141/2          between Spend and Income
--->
-</section>
-<section id="source-page-054" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-054.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 54</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 54. Companion PowerPoint slide 54.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image500.png
-EDITABLE TEXT TRANSCRIPTION:
-Outline of Topics
-•   Overview of Regression: Terminology and Concepts
-•   Examples and Working for Simple Linear Regression (SLR)
-• Scatterplot
-• Developing the Model
-• Slope, Intercept (and how to interpret)
-• Correlation (and how to interpret)
-• Prediction
-• Confidence Interval for the Slope
-• Evaluating the Model
-•      (and how to interpret)
-• Hypothesis Testing of the Slope
-•   Getting Ready for Multiple Linear Regression (MLR)
--->
-</section>
-<section id="source-page-055" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-055.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 55</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 55. Companion PowerPoint slide 55.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image510.png
-EDITABLE TEXT TRANSCRIPTION:
-Simple Linear Regression Pitfalls
-So far, we’ve only included a SINGLE independent variable.
-Omitting other relevant variables                        Area
-from the regression model may
-result in biased estimates of the
-regression coefficient (omitted                         Baths
-variable bias).                      Price
-Cars
-e.g. Larger properties (in land
-area) tend to have larger dwelling
-size and therefore, more beds,                           Beds
-baths and cars.
--->
-</section>
-<section id="source-page-056" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-056.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 56</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 56. Companion PowerPoint slide 56.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image37.emf
-EDITABLE TEXT TRANSCRIPTION:
-Simple Linear Regression Pitfalls
-So we could estimate several simple linear regressions:
-These results seemingly give you area, beds, baths and cars
-premiums (i.e. how they increase the price).
-But they are misleading because of the interconnected relations
-between variables!
--->
-</section>
-<section id="source-page-057" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-057.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 57</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 57. Companion PowerPoint slide 57.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image61.png
-EDITABLE TEXT TRANSCRIPTION:
-Multiple Linear Regression (MLR)
-The dependent variable Y may depend on several independent
-variables… (not just one!)
-+
-Independent variables               are related to . But some of
-the independent variables may also be related.
-If you h              constant, how would      affect ?
-We can generate a multiple regression output in Excel. Next time,
-we will select a number of columns for the independent variables
-in the ‘Input X Range’.
--->
-</section>
-<section id="source-page-058" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-058.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 6, page 58</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop6_Regression_Analysis_and_Correlation.pdf, page 58. Companion PowerPoint slide 58.
-TEXT SOURCE: PDF text layer, with PowerPoint fallback.
-COMPONENT IMAGES: figures/etx5900/components/image62.png, figures/etx5900/components/image550.png
-EDITABLE TEXT TRANSCRIPTION:
-Multiple Linear Regression (MLR)
-+        +       +   +
-The predicted value of when all variables are zero
-Not meaningful when the range value of any variables does not
-include
-: The change in predicted when        value increases by one unit,
-holding other variables fixed.
-The change in predicted when          value increases by one unit,
-holding other variables fixed.
-Important: The slope estimates in MLR are marginal effects, i.e. the
-effect of a single X input holding other variables fixed.
-(In SLR, the slope tells you the total effect of X on Y because there
-were no other variables to control for.)
--->
+<section id="tut-source-page-015" class="slide level2">
+<h2>Source tutorial quiz reminder (historical)</h2>
+<p>The ETF1100 source directed students to a Week 9 tutorial quiz in Moodle and to complete a group-assignment task.</p>
+<p><strong>These are historical source activities.</strong> Use the current ETX1100/ETX5900 Week 6 schedule and Moodle for the live class exercise and quiz.</p>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Week 9/Tutorial Week 9 ETF1100 S1 2026-solutions-final.pdf#page=15">ETF1100 Week 9 tutorial solutions, page 15</a>.</em></p>
 
 
 </section>
@@ -1717,6 +981,13 @@ were no other variables to control for.)
       });
     </script>
     <script>
+    // Give section dividers a background that fills the letterboxed slide.
+    document.querySelectorAll('section.section-slide').forEach(function (slide) {
+      if (!slide.hasAttribute('data-background-color')) {
+        slide.setAttribute('data-background-color', '#006dae');
+      }
+    });
+
     // Copy over background colors to new div
     divs = document.querySelectorAll('[data-background-color]');
 
@@ -1850,6 +1121,61 @@ were no other variables to control for.)
     // Move progress bar
     menu_div = document.querySelector(".progress");
     document.querySelector(".slides").appendChild(menu_div);
+    </script>
+
+    <script>
+    // Show a manually started countdown on slides with data-timing="seconds".
+    (function () {
+      let interval;
+
+      function showCountdown(slide) {
+        clearInterval(interval);
+        if (!slide) return;
+        const duration = Number(slide.dataset.timing);
+        if (!Number.isFinite(duration) || duration <= 0) return;
+
+        let timer = slide.querySelector('.slide-countdown');
+        if (!timer) {
+          timer = document.createElement('div');
+          timer.className = 'slide-countdown';
+          timer.innerHTML = '<span role="timer"></span><button type="button">Start</button>';
+          slide.appendChild(timer);
+        }
+        const clock = timer.querySelector('[role="timer"]');
+        const button = timer.querySelector('button');
+        const format = seconds => String(Math.floor(seconds / 60)).padStart(2, '0') + ':' +
+          String(seconds % 60).padStart(2, '0');
+        clock.textContent = format(Math.ceil(duration));
+        button.hidden = false;
+        timer.onclick = function (event) {
+          if (button.hidden) return;
+          event.stopPropagation();
+          button.hidden = true;
+          const end = Date.now() + duration * 1000;
+          function update() {
+            const remaining = Math.max(0, Math.ceil((end - Date.now()) / 1000));
+            clock.textContent = format(remaining);
+            if (remaining === 0) clearInterval(interval);
+          }
+          update();
+          interval = setInterval(update, 250);
+        };
+      }
+
+      Reveal.on('slidechanged', event => showCountdown(event.currentSlide));
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' || event.repeat) return;
+        if (event.target instanceof Element &&
+            event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+        const slide = Reveal.getCurrentSlide();
+        const button = slide && slide.querySelector('.slide-countdown button');
+        if (!button || button.hidden) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        button.click();
+      }, true);
+      showCountdown(Reveal.getCurrentSlide());
+    })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">

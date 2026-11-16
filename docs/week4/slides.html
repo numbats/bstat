@@ -9,6 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.11.9">
 
+  <meta name="dcterms.date" content="2026-12-15">
   <title>Business Statistics – slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -34,7 +35,23 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ecfa366c05ac1ff1a677a8c5facd037d.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d7d650050b1ce3e072e4f0f18efcf387.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -136,609 +153,477 @@
 
 <section id="source-page-001" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-001.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 1</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 1. Companion PowerPoint slide 1.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image6.jpeg
-EDITABLE TEXT TRANSCRIPTION:
-ETX1100/5900 Business Statistics
-The Chi-Square Test for Independence: Assessing relationships between categorical variables
--->
-</section>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=1">Workshop5_Hypothesis_Testing_II.pdf, page 1</a></em></p>
+<h3 id="etx1100etx5900-business-statistics">ETX1100/ETX5900 Business Statistics</h3>
+<p>Week 4: Hypothesis tests for means and proportions</p>
+<p>The source PDF originally labels this workshop as Week 5.</p>
+
+<img data-src="figures/hypothesis-source/image2.jpeg" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 1.</p></section>
 <section id="source-page-002" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-002.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 2</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 2. Companion PowerPoint slide 2.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-The Chi-Square Test for Independence: Assessing relationships between categorical variables
-Textbook references:
-Berenson et al Basic Business Statistics 5th edition,
-Chapter 15, Section 15.3.
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=2">Workshop5_Hypothesis_Testing_II.pdf, page 2</a></em></p>
+<h3 id="reminders">Reminders</h3>
+<p>Assignment due on 19 Jan 2026 at 11:55pm. Please start early! Consultation (dedicated student hours) - see Moodle for time/location. 2</p>
 </section>
 <section id="source-page-003" class="slide level2">
 <h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=3">Workshop5_Hypothesis_Testing_II.pdf, page 3</a></em></p>
+<h3 id="hypothesis-test-for-evidence-based-decisions">Hypothesis Test for Evidence-based Decisions</h3>
+<p>Sample Sampling STATISTICS Distribution DESCRIPTIVE INFERENTIAL ESTIMATION HYPOTHESIS TESTS Point &amp; Interval Estimating the value of a Testing a claim about the value population parameter of a population parameter (mean <span class="math inline">\mu</span> or proportion <span class="math inline">\pi</span>) (mean <span class="math inline">\mu</span> or proportion <span class="math inline">\pi</span>) 3</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-003.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 3</figcaption>
+<p><img data-src="figures/hypothesis-source/image6.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 3.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 3. Companion PowerPoint slide 3.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Assignment
-Due date: 19 December 2025, 11:55 pm
-Weighting: This assignment is worth 15% of the total assessment for this unit.
-Submission location: Submit via the Assignment submission link available under the Assessment tab on Moodle.
-Number of attempts: Only ONE (1) attempt is permitted. •
-Dataset: Use the Excel file titled “Assignment Data.xlsx”, available under the Assessment tab on Moodle.
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/hypothesis-source/image4.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 3.</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="etf-proportion-page-006" class="slide level2">
+<h2>Proportions: notation</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 7 ETF1100 S1 2026 (updated).pdf#page=6">ETF1100 Week 7 seminar, page 6</a></em></p>
+<p>A <strong>proportion</strong> is the relative frequency of a characteristic, so it lies between <span class="math inline">0</span> and <span class="math inline">1</span>.</p>
+<ul>
+<li>Population proportion: <span class="math inline">\pi</span>.</li>
+<li>Sample proportion: <span class="math inline">\hat p=X/n</span>, where <span class="math inline">X</span> observations have the characteristic among <span class="math inline">n</span> observations.</li>
+</ul>
+<p><strong>Grocery-store example:</strong> 47 of 80 shoppers used a trolley, so <span class="math inline">\hat p=47/80=0.5875</span>. The others used a basket (28) or carried items by hand (5).</p>
+</section>
+<section id="etf-proportion-page-007" class="slide level2">
+<h2>Proportions and confidence intervals in practice</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 7 ETF1100 S1 2026 (updated).pdf#page=7">ETF1100 Week 7 seminar, page 7</a></em></p>
+<p>A study of adolescent smoking prevalence in Australia reports an estimated <strong>13.2%</strong> prevalence of ever smoking in 2022–2023, with a <strong>95% confidence interval of 12.7% to 13.6%</strong>. It compares this with a projected background trend of <strong>5.8%</strong>, with a <strong>95% interval of 5.6% to 6.0%</strong>.</p>
+<p>The intervals express uncertainty around the estimates. Source example: Egger <em>et al.</em>, <em>Medical Journal of Australia</em> (2025), DOI: 10.5694/mja2.70000.</p>
+</section>
+<section id="etf-proportion-page-008" class="slide level2">
+<h2>Sampling distribution of a sample proportion</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 7 ETF1100 S1 2026 (updated).pdf#page=8">ETF1100 Week 7 seminar, page 8</a></em></p>
+<p>We use the sample proportion <span class="math inline">\hat p</span> to estimate the population proportion <span class="math inline">\pi</span>. The value of <span class="math inline">\hat p</span> changes from sample to sample.</p>
+<p><span class="math display">\operatorname{SE}(\hat p)=\sqrt{\frac{\pi(1-\pi)}{n}}.</span></p>
+<p>For a sufficiently large sample, <span class="math inline">\hat p</span> is approximately normal with mean <span class="math inline">\pi</span> and this standard error. The source checks <span class="math inline">n\pi\geq5</span> and <span class="math inline">n(1-\pi)\geq5</span>.</p>
+</section>
+<section id="etf-proportion-page-009" class="slide level2">
+<h2>Which proportion goes into the standard error?</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 7 ETF1100 S1 2026 (updated).pdf#page=9">ETF1100 Week 7 seminar, page 9</a></em></p>
+<p><strong>For a hypothesis test</strong>, use the null benchmark <span class="math inline">\pi_0</span>:</p>
+<p><span class="math display">\operatorname{SE}_0(\hat p)=\sqrt{\frac{\pi_0(1-\pi_0)}{n}},\qquad n\pi_0\geq5,\quad n(1-\pi_0)\geq5.</span></p>
+<p><strong>For a confidence interval</strong>, <span class="math inline">\pi</span> is unknown, so estimate the standard error with <span class="math inline">\hat p</span>:</p>
+<p><span class="math display">\widehat{\operatorname{SE}}(\hat p)=\sqrt{\frac{\hat p(1-\hat p)}{n}},\qquad n\hat p\geq5,\quad n(1-\hat p)\geq5.</span></p>
+</section>
+<section id="etf-proportion-page-010" class="slide level2">
+<h2>Why use a confidence interval?</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 7 ETF1100 S1 2026 (updated).pdf#page=10">ETF1100 Week 7 seminar, page 10</a></em></p>
+<p>One sample gives one <strong>point estimate</strong>, <span class="math inline">\hat p</span>, for the unknown population proportion <span class="math inline">\pi</span>.</p>
+<p>Because samples vary, <span class="math inline">\hat p</span> will not always equal <span class="math inline">\pi</span>. A <strong>confidence interval</strong> gives a range of plausible values for <span class="math inline">\pi</span> rather than only the single estimate.</p>
+</section>
+<section id="etf-proportion-page-011" class="slide level2">
+<h2>Confidence interval for a proportion</h2>
+<p><em>Source: <a href="../resources/ETF1100-S1-2026/Seminar Week 7 ETF1100 S1 2026 (updated).pdf#page=11">ETF1100 Week 7 seminar, page 11</a></em></p>
+<p>The confidence level is <span class="math inline">1-\alpha</span>. For example, a 95% confidence level has <span class="math inline">\alpha=0.05</span>; a 90% confidence level has <span class="math inline">\alpha=0.10</span>.</p>
+<p>When <span class="math inline">n\hat p\geq5</span> and <span class="math inline">n(1-\hat p)\geq5</span>, the approximate interval is</p>
+<p><span class="math display">\hat p\;\pm\;z^*\sqrt{\frac{\hat p(1-\hat p)}{n}},\qquad z^*=\Phi^{-1}(1-\alpha/2).</span></p>
+<p>In Excel: <code>=NORM.S.INV(1-alpha/2)</code>. At 95% confidence, <span class="math inline">z^*\approx1.96</span>.</p>
 </section>
 <section id="source-page-004" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-004.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 4</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 4. Companion PowerPoint slide 4.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Hypothesis Test for Evidence-based Decisions
-A statistical framework for using data to derive evidence-based decisions.
-Define business problem and variables relevant to that problem
-Formulate a hypothesis around these variables that are relevant to business decisions
-Collect representative data
-Conduct hypothesis testing to establish the degree of evidence for the hypotheses
-Based on evidence, make business decisions
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=4">Workshop5_Hypothesis_Testing_II.pdf, page 4</a></em></p>
+<h3 id="lesson-outcomes">Lesson outcomes:</h3>
+<p>Identify a business problem Formulate a hypothesis using variables relevant to the problem Establish the degree of evidence for the hypotheses Interpret results in the context of the business problem Identify potential errors in hypothesis testing Explain the implications of these errors for business decision-making Textbook references: Berenson et al Basic Business Statistics 5th edition, Chapter 9, Sections 9.1-9.7 4</p>
 </section>
 <section id="source-page-005" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-005.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 5</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 5. Companion PowerPoint slide 5.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image7.wmf
-EDITABLE TEXT TRANSCRIPTION:
-H0: Defendant is not guilty     (‘status quo’; default)
-H1: Defendant is guilty  (experimental/research hypothesis)
-Reject H0:
-There IS enough evidence against H0
-GUILTY!
-Do not reject H0:
-There IS NOT enough evidence against H0
-NOT GUILTY      (INNOCENT!)
-5
-An hypothesis test is conducted to decide between two hypotheses: the null H0 and the alternative, H1.
-Hypothesis Testing  ……..Is a familiar process
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=5">Workshop5_Hypothesis_Testing_II.pdf, page 5</a></em></p>
+<h3 id="hypothesis-testing---classic-example">Hypothesis Testing - Classic Example</h3>
+<p>An hypothesis test is conducted to decide between two hypotheses: the null H0 and the alternative, H1. H0: Defendant is not guilty (‘status quo’; default) H1: Defendant is guilty (experimental/research hypothesis) Reject H0: GUILTY! There IS enough evidence against H0 - the defendant is guilty. Do not reject H0: NOT GUILTY (INNOCENT!) There IS NOT enough evidence against H0 - the defendant is not guilty. 5</p>
 </section>
 <section id="source-page-006" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-006.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 6</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 6. Companion PowerPoint slide 6.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image8.png, figures/etx5900/components/image10.png, figures/etx5900/components/image12.png
-EDITABLE TEXT TRANSCRIPTION:
-Please download and install the Slido app on all computers you use
-What types of variables are "Education Level" & "Smoking Status", respectively.
-ⓘ Start presenting to display the poll results on this slide.
--->
-</section>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=6">Workshop5_Hypothesis_Testing_II.pdf, page 6</a></em></p>
+<h3 id="step-process-in-hypothesis-testing">5 Step Process in Hypothesis Testing</h3>
+<p>Step 1: Set up the null and the alternative hypotheses based on a benchmark <span class="math display">
+value of a population parameter (\mu_0 or \pi_0)
+</span> Note: Test for a mean (<span class="math inline">\mu_0</span>) when the data are numerical measurements. Test for a proportion (<span class="math inline">\pi_0</span>) when the data are yes/no or category outcomes. H0: A default statement/status quo (contains the equals sign: =) H1: A belief/claim that we aim to test (what we are searching evidence for, does not contain the equals sign: does not equal, &gt;, &lt;) 6</p>
+
+<img data-src="figures/hypothesis-source/image9.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 6.</p></section>
 <section id="source-page-007" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-007.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 7</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 7. Companion PowerPoint slide 7.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image8.png, figures/etx5900/components/image10.png, figures/etx5900/components/image12.png
-EDITABLE TEXT TRANSCRIPTION:
-Please download and install the Slido app on all computers you use
-If two variables are independent
-ⓘ Start presenting to display the poll results on this slide.
--->
-</section>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=7">Workshop5_Hypothesis_Testing_II.pdf, page 7</a></em></p>
+<h3 id="step-2-test-statistic">Step 2: Test Statistic</h3>
+<p>Compute Zcalc or tcalc (depends on whether the population standard deviation (<span class="math inline">\sigma</span>) is known or unknown). Calculating the test statistic for the mean: <span class="math display">
+\bar{X} - \mu{}
+</span> Z= the formula used when the population standard deviation <span class="math inline">\sigma</span> is known <span class="math display">
+\sigma{}/\sqrt{}{}n
+</span> <span class="math display">
+\bar{X} - \mu{}
+</span> t= the formula used when the sample standard deviation s is used (in most cases) <span class="math display">
+s/\sqrt{}{}n
+</span> Calculating the test statistic for the proportion: <span class="math display">
+p - \pi_0
+</span> <span class="math display">
+Z=
+</span> <span class="math display">
+\sqrt{}{}( \pi_0(1-\pi_0) / n )
+</span> 7</p>
+
+<img data-src="figures/hypothesis-source/image7.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 7.</p></section>
 <section id="source-page-008" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-008.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 8</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 8. Companion PowerPoint slide 8.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image6.png
-EDITABLE TEXT TRANSCRIPTION:
-We conduct a hypothesis test when we consider relationships between categorical variables - Chi Square Test For Independence
-For a contingency table that has r rows and c columns, you can generalise the 𝜒2 test as a test of independence for two categorical variables.
-8
-Chi Square Test For Independence
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=8">Workshop5_Hypothesis_Testing_II.pdf, page 8</a></em></p>
+<h3 id="step-3-p-value">Step 3: p value</h3>
+<p>Determine the p-value by using the calculated test statistic. Find the appropriate tail area (according to H1) The p-value determines the area (p-value) in the tail beyond the calculated test-statistic and compares it to <span class="math inline">\alpha</span>, the area in the tail associated with the given significance level. Test Statistic (calculated value) 8</p>
 </section>
 <section id="source-page-009" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-009.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 9</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 9. Companion PowerPoint slide 9.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Step 1:
-H0: The two categorical variables are independent (No relationship between variables)
-H1: The two categorical variables are dependent (i.e. there is a relationship).
-Note: We test on the assumption that the Null hypothesis (H0) is true i.e. that the attributes are independent.
-What we actually observe in the datavs
-What we would expect to see if the two variables were independent
-If the observed counts are very different from the expected counts, that’s evidence that the variables are related.
-5 Steps
--->
-</section>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=9">Workshop5_Hypothesis_Testing_II.pdf, page 9</a></em></p>
+<h3 id="mechanics-of-hypothesis-testing-p-value">Mechanics of Hypothesis Testing: p-value</h3>
+<p>Judging whether or not the test statistic is outstandingly “far from zero” in the direction of the alternative. It is the probability of getting the test statistic assuming that H0 is true. p-value = P(Test statistic |H0 is true) If the p-value is small, then the test statistic is far from zero. (In the direction of the alternative hypothesis.) A smaller p-value means that there is stronger evidence in favor of the alternative hypothesis. 9</p>
+
+<img data-src="figures/hypothesis-source/image8.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 9.</p></section>
 <section id="source-page-010" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-010.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 10</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 10. Companion PowerPoint slide 10.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image14.png
-EDITABLE TEXT TRANSCRIPTION:
-Step 2: Test Statistic
-The test statistic is calculated as: 𝜒2= (𝑓𝑜−𝑓𝑒)2𝑓𝑒
-Where 𝑓𝑜 = observed frequencies (or count, obtained from the contingency table)
-𝑓𝑒= expected frequencies assuming H0 is true   (𝑓𝑒 Row Total x Column TotalOverall Total)
-Notes to remember:
-This test statistic has an approximate chi-square distribution with df= (r-1)(c-1)
-The results are not reliable if the expected frequencies are less than 5.
-In this statistical test, we determine whether observed frequencies are significantly different from expected frequencies. If there is a significant difference, we reject the null hypothesis and conclude that the sample data provides sufficient evidence to support the alternative hypothesis.
-5 Steps
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=10">Workshop5_Hypothesis_Testing_II.pdf, page 10</a></em></p>
+<h3 id="interpreting-the-p-value">Interpreting the p-value</h3>
+<p>P-value should be interpreted as the level of “evidence” in favour of the null hypothesis, when compared against the ALTERNATIVE hypothesis. A small p-value: Indicates little evidence in support of the H0; we have reason to reject H0 in favour of H1 A large p-value: Indicates considerable evidence in support of the H0; we do not have reason to reject H0 in favour of H1. Advantage: An advantage of p-values is that we can perform hypothesis tests at all significance levels without finding a new critical value. 10</p>
 </section>
 <section id="source-page-011" class="slide level2">
 <h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=11">Workshop5_Hypothesis_Testing_II.pdf, page 11</a></em></p>
+<h3 id="steps-4-and-5">Steps 4 and 5</h3>
+<p>Step 4: Decision Rule and Decision: We either reject H0 or do not reject H0 <span class="math display">
+Reject H0 if p-value &lt; \alpha{}
+</span> <span class="math display">
+Don't reject H0 if p-value &gt; \alpha{}
+</span> (Note: <span class="math inline">\alpha</span> is usually set at 1%, 5% or 10%. The convention is 5%) Step 5: Conclusion State the conclusion within the context of the problem <span class="math display">
+P-value smaller than \alpha{}
+</span> There is sufficient evidence at 5% level of significance that the population mean IS ……(interpret H1 here). <span class="math display">
+P-value larger than \alpha{}
+</span> There is insufficient evidence at 5% level of significance that the population mean IS ……..(interpret H1 here). 11</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-011.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 11</figcaption>
+<p><img data-src="figures/hypothesis-source/image12.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 11.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 11. Companion PowerPoint slide 11.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image15.png
-EDITABLE TEXT TRANSCRIPTION:
-Step 3: Critical Value or P-value
-Critical value approach/ p-value approach
-Critical value approach:
-Look up χ2 table
-OR
-P-value:
-Use Excel
-=chisq.test(actual range,expected range)
-5 Steps
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/hypothesis-source/image13.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 11.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/hypothesis-source/image90.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 11.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-012" class="slide level2">
 <h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=12">Workshop5_Hypothesis_Testing_II.pdf, page 12</a></em></p>
+<h3 id="reject-h0-when-p-value-alpha">Reject H0 when p-value &lt; <span class="math inline">\alpha</span></h3>
+<p><span class="math display">
+If p-value &lt; \alpha{}, reject H0
+</span> to We still can tolerate the potential error and conclude that the p-value is small so we reject the H0. to The smaller the p-value, the more evidence there is in favour of H 1 therefore There is evidence to support the alternative hypothesis. <span class="math display">
+If p-value &gt; \alpha{}, fail to reject H0
+</span> to We no longer can tolerate the potential error as it is bigger than the tolerance level allowed, <span class="math inline">\alpha</span>. We conclude that the p-value is large so we fail to reject the H0. to The larger the p-value, the less evidence there is in favour of H1 therefore There is not enough evidence to support the alternative hypothesis. Notice: our final conclusion is about the alternative hypothesis! 12</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-012.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 12</figcaption>
+<p><img data-src="figures/hypothesis-source/image60.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 12.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 12. Companion PowerPoint slide 12.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image16.png, figures/etx5900/components/image120.png
-EDITABLE TEXT TRANSCRIPTION:
-Step 4: Decision
-Reject Ho when
-𝝌𝒄𝒂𝒍𝒄𝟐 > 𝝌𝒄𝒓𝒊𝒕𝟐
-OR
-Reject Ho when p-value < α
-Step 5: Conclusion
-State the conclusion within the context of the problem. Always refer to H1
-Eg: The sample provides sufficient evidence at the 5% level of significance that the variables xxx and xxx are dependent.
-Steps 4 and 5: Decision and Conclusion
-0
-
-Reject H0
-Do not
-Reject H0
-𝜒𝑐𝑟𝑖𝑡2
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/hypothesis-source/image70.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 12.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/hypothesis-source/image80.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 12.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/hypothesis-source/image100.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 12.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/hypothesis-source/image110.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 12.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/hypothesis-source/image120.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 12.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-013" class="slide level2">
 <h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=13">Workshop5_Hypothesis_Testing_II.pdf, page 13</a></em></p>
+<h3 id="p-value-approach---5-step-process">P-Value Approach - 5 Step Process</h3>
+<ol type="1">
+<li>Hypotheses: <span class="math display">
+H0: \mu{} = \mu_0                          H0: \mu{} = \mu_0   H0: \mu{} = \mu_0
+</span> <span class="math display">
+H1: \mu{} \ne{} \mu_0                          H1: \mu{} &lt; \mu_0   H1: \mu{} &gt; \mu_0
+</span></li>
+<li>Calculate Test Statistic (Zcalc or tcalc)</li>
+<li>p-value</li>
+<li>Decision Rule: Reject H0 if p-value &lt; <span class="math inline">\alpha</span></li>
+<li>Conclusion</li>
+<li>Hypotheses: <span class="math display">
+H0: \pi{} = \pi_0                          H0: \pi{} = \pi_0   H0: \pi{} = \pi_0
+</span> <span class="math display">
+H1: \pi{} \ne{} \pi_0                          H1: \pi{} &lt; \pi_0   H1: \pi{} &gt; \pi_0
+</span></li>
+<li>Calculate Test Statistic (Zcalc)</li>
+<li>p-value</li>
+<li>Decision Rule: Reject H 0 if p-value &lt; <span class="math inline">\alpha</span></li>
+<li>Conclusion 13</li>
+</ol>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-013.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 13</figcaption>
+<p><img data-src="figures/hypothesis-source/image10.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 13.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 13. Companion PowerPoint slide 13.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-During the past decade many smokers have attempted to quit. Unfortunately, nicotine is highly addictive. A researcher from the Addiction Research Council wanted to determine why some people quit for good while others relapse. He surveyed 115 people who planned to quit smoking and, among other things, recorded their educational level and whether, one year later, they continued to smoke. The following pivot table was produced, which shows the counts for the various combinations of categories:
-Task 1: Education Level vs Smoking Status
-Education Level
-Smoking Status
-Did not quit
-Quit
-Did not finish high school
-9
-16
-High school graduate
-26
-21
-TAFE graduate
-4
-15
-University bachelors or postgraduate degree
-7
-17
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/hypothesis-source/image11.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 13.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-014" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-014.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 14</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 14. Companion PowerPoint slide 14.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-What is the proportion of TAFE graduates?
-b) We wish to test the hypothesis that Education Level and Smoking Status are independent at a 5% level of significance. What type of test is appropriate? Explain.
-c) State the hypotheses for the test stated above.
-d) State the test statistic and the p-value.
-e) Interpret the results in the context of the question.
-Task 1: Education Level vs Smoking Status
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=14">Workshop5_Hypothesis_Testing_II.pdf, page 14</a></em></p>
+<h3 id="task-1-marketing-campaign">Task 1: Marketing Campaign</h3>
+<p>The marketing team at an e-commerce company believes their email campaigns have an average click-through rate (CTR) of 12%. An analyst suspects that the CTR might be different from this benchmark. To investigate, the analyst randomly selects 45 recent email campaigns and finds an average CTR of 10.8% and standard deviation of 3.2% Use a 5% significance level to test whether the true average CTR differs from 12%. 14</p>
 </section>
 <section id="source-page-015" class="slide level2">
 <h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=15">Workshop5_Hypothesis_Testing_II.pdf, page 15</a></em></p>
+<h3 id="task-1-marketing-campaign-1">Task 1: Marketing Campaign</h3>
+<p>Let X = click through rate per campaign (%) Since n=45 (&gt;30), we can invoke CLT and assume that <span class="math inline">\bar X</span> ~ N(<span class="math inline">\mu</span>, <span class="math inline">\sigma^2</span>/n) 1. Hypothesis <span class="math display">
+H0: \mu{} = 12
+</span> <span class="math display">
+H1: \mu{} \ne{} 12
+</span> 2. Test statistic <span class="math display">
+\bar{X} - \mu_0
+</span> <span class="math display">
+t=                  ~ tn-1
+</span> <span class="math display">
+s/\sqrt{}{}n
+</span> 10.8 - 12 -1.2 <span class="math display">
+tcalc =                      =
+</span> <span class="math display">
+3.2/\sqrt{}{}45           0.477028 = -2.51558
+</span> 15</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/page-015.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 15</figcaption>
+<p><img data-src="figures/hypothesis-source/image160.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 15.</figcaption>
 </figure>
 </div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 15. Companion PowerPoint slide 15.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-What is the proportion of TAFE graduates?
-Proportion of TAFE Graduates = 19/115 = 0.1652 or 16.52%
-b) We wish to test the hypothesis that Education Level and Smoking Status are independent at a 5% level of significance. What type of test is appropriate? Explain.
-The Chi-square test of independence is an appropriate test since the variables “Smoking status” and “Education Level” are both categorical variables.
-c) State the hypotheses for the test stated above.
-H0: The variables Smoking Status and Education Level are independent
-H1: The variables Smoking Status and Education Level are dependent
-Task 1: Education Level vs Smoking Status
--->
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/hypothesis-source/image16.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 15.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/hypothesis-source/image14.png" style="width:100.0%"></p>
+<figcaption>Visual from source page 15.</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="source-page-016" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-016.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 16</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 16. Companion PowerPoint slide 16.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-d) State the test statistic and the p-value
-e) Interpret the results in the context of the question.
-Task 1: Education Level vs Smoking Status
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=16">Workshop5_Hypothesis_Testing_II.pdf, page 16</a></em></p>
+<h3 id="task-1-marketing-campaign-2">Task 1: Marketing Campaign</h3>
+<p>Step 3: P-value <span class="math display">
+=P(t&lt; - 2.51558 )*2
+</span> <span class="math display">
+= 0.007804*2 = 0.015609
+</span> Since this is a two-tailed test: Excel function: = T.DIST(-2.51558,44,true)*2 <span class="math display">
+OR       = T.DIST.2T(2.51558,44,true)
+</span> 16</p>
 </section>
 <section id="source-page-017" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-017.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 17</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 17. Companion PowerPoint slide 17.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image17.png
-EDITABLE TEXT TRANSCRIPTION:
-d) State the test statistic and the p-value
-Test statistic = 8.778 (refer to Excel sheet for working or next slide for screenshot)
-P-value = 0.032391
-Task 1: Education Level vs Smoking Status
--->
-</section>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=17">Workshop5_Hypothesis_Testing_II.pdf, page 17</a></em></p>
+<h3 id="task-1-marketing-campaign-3">Task 1: Marketing Campaign</h3>
+<ol start="4" type="1">
+<li>Decision rule: <span class="math display">
+Reject H0 if p-value &lt; \alpha{}
+</span> Since 0.015609 &lt; 0.05, we can reject H0</li>
+<li>Conclusion There is sufficient evidence at the 5% level of significance that the true average CTR differs from 12% 17</li>
+</ol>
+
+<img data-src="figures/hypothesis-source/image26.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 17.</p></section>
 <section id="source-page-018" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-018.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 18</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 18. Companion PowerPoint slide 18.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image18.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Excel formulas
--->
-</section>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=18">Workshop5_Hypothesis_Testing_II.pdf, page 18</a></em></p>
+<h3 id="task-2-online-transaction-success-rate">Task 2: Online Transaction Success Rate</h3>
+<p>A bank states that at least 95% of online credit card transactions are processed without error. A financial analyst claims that this success rate may have dropped and wants to test if the current system is underperforming. To investigate, the analyst reviews a random sample of 250 online transactions, and finds that 229 were processed without error. Is there evidence to support the financial analysts claim at the 10% level of significance? 18</p>
+
+<img data-src="figures/hypothesis-source/image27.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 18.</p></section>
 <section id="source-page-019" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-019.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 19</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 19. Companion PowerPoint slide 19.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 1: Education Level vs Smoking Status
-e) Interpret the results in the context of the question.
-Since the p-value (0.0324) is smaller than alpha (0.05), we reject the null hypothesis.
-The sample provides sufficient evidence at the 5% level of significance that the variables Smoking Status and Education Level are dependent.
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=19">Workshop5_Hypothesis_Testing_II.pdf, page 19</a></em></p>
+<h3 id="task-2-online-transaction-success-rate-1">Task 2: Online Transaction Success Rate</h3>
+<p>Let X = number of online transactions <span class="math display">
+X=229 n=250 p= 229/250 = 0.916
+</span> <span class="math display">
+n \pi{} = (250)(0.95) = 237.5 n(1- \pi{})=(250)(1-0.95) = 12.5
+</span> The assumption of normality is reasonable since they are both at least5. 19</p>
 </section>
 <section id="source-page-020" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-020.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 20</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 20. Companion PowerPoint slide 20.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-It is generally agreed that convertibles offer freedom and excitement. They create a sensation of being a part of your surroundings that no sunroof can offer. On the other hand, sedans are stylish yet practical for small families. The back doors are also handy for rear seat access, and the boot is a secure way to store luggage or cargo.
-A car importer believes that there is a relationship between buyers' gender and their preference of sedans or convertibles. The importer gathered some information on the preference of male and female buyers and this is shown in below.
-Task 2: Convertibles
--->
-</section>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=20">Workshop5_Hypothesis_Testing_II.pdf, page 20</a></em></p>
+<h3 id="task-2-online-transaction-success-rate-2">Task 2: Online Transaction Success Rate</h3>
+<p>Step 1: Hypotheses <span class="math display">
+H0: \pi{} = 0.95
+</span> <span class="math display">
+H1: \pi{} &lt; 0.95
+</span> Step 2: Test Statistic <span class="math display">
+p - \pi_0
+</span> <span class="math display">
+Z=
+</span> <span class="math display">
+\sqrt{}{}( \pi_0(1 - \pi_0) / n )
+</span> 0.916 - 0.95 <span class="math display">
+Zcalc =
+</span> <span class="math display">
+\sqrt{}{}( 0.95(1 - 0.95) / 250 )   = -2.46662
+</span> Step 3: p-Value: <span class="math display">
+=P(Z&lt; -2.46662) = 0.00682
+</span> Excel function: =NORM.S.DIST(-2.46662,true) 20</p>
+
+<img data-src="figures/hypothesis-source/image15.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 20.</p></section>
 <section id="source-page-021" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-021.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 21</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 21. Companion PowerPoint slide 21.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Convertibles
-TABLE 1
-Gender
-Male
-Female
-Total
-Preference
-Convertibles
-30
-8
-38
-Sedans
-56
-38
-94
-Total
-86
-46
-132
-Calculate the test statistics and p-values for Tables 1 and 2 above
-TABLE 2
-Gender
-Male
-Female
-Total
-Preference
-Convertibles
-15
-4
-19
-Sedans
-28
-19
-47
-Total
-43
-23
-66
-We created another contingency table, halved all observed frequencies, and labeled it as Table 2.
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=21">Workshop5_Hypothesis_Testing_II.pdf, page 21</a></em></p>
+<h3 id="task-2-online-transaction-success-rate-3">Task 2: Online Transaction Success Rate</h3>
+<p>Step 4: Decision Rule and Decision <span class="math display">
+Reject H0 if p-value &lt; \alpha{}
+</span> Since 0.00682&lt; 0.10, we can reject H0 Step 5: Conclusion There is sufficient evidence at the 10% level of significance that the true success rate of online credit card transactions is lower than 95%. There is evidence to support the financial analyst’s claim. 21</p>
 </section>
 <section id="source-page-022" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-022.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 22</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 22. Companion PowerPoint slide 22.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Convertibles
-Solutions for part a:
-Test statistic for Table 1: 4.47                  p-value for Table 1: 0.0345
-Test Statistic for Table 2: 2.23                  p-value for Table 2: 0.1354
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=22">Workshop5_Hypothesis_Testing_II.pdf, page 22</a></em></p>
+<h3 id="task-2-online-transaction-success-rate-4">Task 2: Online Transaction Success Rate</h3>
+<ol start="2" type="a">
+<li>Interpret the p-value in the context of the question. If the true proportion were 0.95, then 0.682% of the time we would expect to get a sample proportion at least as small as the one we actually got (0.916). 22</li>
+</ol>
 </section>
 <section id="source-page-023" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-023.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 23</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 23. Companion PowerPoint slide 23.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Convertibles
-b. Point out why the formula for the χ2 value allows the test statistic and p-value to be different in the two cases even though all the observed and expected frequencies are proportional.
-The formula for the test statistic χ2 has a square of frequencies in the numerator and just a frequency in the denominator.
-So, if you double all the frequencies, you will double χ2.
-Building on this idea:
-Doubling all observed and expected frequencies results in the numerator increasing by a factor of four (because of the square) and the denominator increasing by a factor of two.
-As a result, the overall χ² value doubles. This explains why the test statistic is different, even though the tables are proportional.
--->
-</section>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=23">Workshop5_Hypothesis_Testing_II.pdf, page 23</a></em></p>
+<h3 id="errors-in-hypothesis-testing">Errors in Hypothesis Testing</h3>
+<ul>
+<li>Type I Error is directly related to the significance level: <span class="math display">
+Pr(Type I Error) = \alpha{}
+</span></li>
+<li>So, we can control the chance of this error by setting small <span class="math inline">\alpha</span></li>
+<li>Small <span class="math inline">\alpha</span> to we need more convincing evidence against H0 to reject it</li>
+<li>The smaller we make <span class="math inline">\alpha</span>, the bigger <span class="math inline">\beta</span> becomes. 23</li>
+</ul>
+
+<img data-src="figures/hypothesis-source/image32.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 23.</p></section>
 <section id="source-page-024" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-024.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 24</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 24. Companion PowerPoint slide 24.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 2: Convertibles
-b. Point out why the formula for the χ2 value allows the test statistic and p-value to be different in the two cases even though all the observed and expected frequencies are proportional.
-The formula for the test statistic χ2 has a square of frequencies in the numerator and just a frequency in the denominator.
-So, if you double all the frequencies, you will double χ2.
-Building on this idea:
-Doubling all observed and expected frequencies results in the numerator increasing by a factor of four (because of the square) and the denominator increasing by a factor of two.
-As a result, the overall χ² value doubles. This explains why the test statistic is different, even though the tables are proportional.
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=24">Workshop5_Hypothesis_Testing_II.pdf, page 24</a></em></p>
+<h3 id="type-i-and-ii-errors">Type I and II errors</h3>
+<p>Since the conclusions that we draw are based on sample data - using a decision rule, there is the chance of making two possible errors: Type I Error: Reject H0 when it’s actually true. Conclude guilty, when defendant is innocent. - The probability of a Type I error is denoted by <span class="math inline">\alpha</span>. - This value is also referred to as the “Level of Significance”. Type II Error: Do not reject H0 when it’s actually false. Conclude not guilty, when defendant is guilty. - The probability of making a Type II error is denoted by <span class="math inline">\beta</span>. - (1- <span class="math inline">\beta</span>) is referred to as the “Power of the Test”. NOTE: If we retain the null, we do not say it is true. We do not say we “accept” it; we simply do not reject it. 24</p>
 </section>
 <section id="source-page-025" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-025.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 25</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 25. Companion PowerPoint slide 25.
-TEXT SOURCE: Companion PowerPoint.
-COMPONENT IMAGES: figures/etx5900/components/image19.png
-EDITABLE TEXT TRANSCRIPTION:
-Task 3: The Missing Data Mystery
--->
-</section>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=25">Workshop5_Hypothesis_Testing_II.pdf, page 25</a></em></p>
+<h3 id="type-i-and-ii-errors-1">Type I and II errors</h3>
+<p>The smaller we make <span class="math inline">\alpha</span>, the bigger <span class="math inline">\beta</span> becomes. This inverse relationship must be considered when choosing the significance level <span class="math inline">\alpha</span>. (1-<span class="math inline">\beta</span>) is referred to as the “Power of the Test”. The true ‘state of the world’ Statistical Decision H0 TRUE H0 FALSE Type II error Do not reject H0 Correct decision <span class="math display">
+Pr(Type II error) = \beta{}
+</span> Type I error Reject H0 Correct decision <span class="math display">
+Pr(Type 1 error) = \alpha{}
+</span> 25</p>
+
+<img data-src="figures/hypothesis-source/image12.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 25.</p></section>
 <section id="source-page-026" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-026.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 26</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 26. Companion PowerPoint slide 26.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 3: The Missing Data Mystery
-There are 4 statistical puzzles!
-Work in your group to crack each statistical puzzle level by level.
-Solve the statistical tasks correctly to unlock the next stage.
-After each level, solve a short riddle to collect a keyword. There are also some emojis to help you answer the riddles.
-Once all levels are completed, combine the collected words into a final answer.
-Accuracy matters more than speed.
-Good luck, detectives!
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=26">Workshop5_Hypothesis_Testing_II.pdf, page 26</a></em></p>
+<h3 id="task-3-interpretation-of-type-i-and-ii-errors">Task 3: Interpretation of Type I and II errors</h3>
+<p>A recent newspaper article reported that, for 21 year old students, the mean amount spent per month on discretionary items (entertainment, dining out, etc) is at most $275. A researcher claims this is not the case. He surveyed a random sample of forty 21 year old students and obtained a mean of $283, with a standard deviation of $17.85. Formulate the hypotheses and interpret Type I and II errors in the context of the question. 26</p>
 </section>
 <section id="source-page-027" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-027.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 27</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 27. Companion PowerPoint slide 27.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 3: The Missing Data Mystery
-P(UsedCoupon = Yes) =
-P(UsedCoupon = Yes | AgeGroup = Young)
-Using these probabilities, determine whether the two categories (UsedCoupon and AgeGroup) are dependent or not. Select the correct answer.
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=27">Workshop5_Hypothesis_Testing_II.pdf, page 27</a></em></p>
+<h3 id="task-3-interpretation-of-type-1-and-ii-errors">Task 3: Interpretation of Type 1 and II errors</h3>
+<p>Hypotheses: <span class="math display">
+H0: \mu{} = 275
+</span> <span class="math display">
+H1: \mu{} &gt; 275
+</span> Type I error: A Type 1 error is rejecting H0, when H0 is true. We find sufficient evidence the mean amount spent per month on discretionary items is higher than $275, when, in fact, it is not. Type II error: A Type II error is retaining H0, when H0 is false. We find insufficient evidence the mean amount spent per month on discretionary items is higher than $275 when, in fact, it is. 27</p>
 </section>
 <section id="source-page-028" class="slide level2">
 <h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/page-028.jpg" style="height:6.3in"></p>
-<figcaption>ETX5900 source PDF, Week 4, page 28</figcaption>
-</figure>
-</div>
-<!--
-SOURCE: Workshop_slides_Week_4_with_solutions.pdf, page 28. Companion PowerPoint slide 28.
-TEXT SOURCE: Companion PowerPoint.
-EDITABLE TEXT TRANSCRIPTION:
-Task 3: The Missing Data Mystery
-Find the p-value
-The evidence has been laid out, and it’s time to make a decision. Is there enough evidence to send the Disruptor to jail?
-We reject the null at the 5% level of significance. The categories are dependent. We can send the Distorter to jail.
-We do not reject the null at the 5% level of significance. The categories are not dependent. The Distorter goes free.
--->
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=28">Workshop5_Hypothesis_Testing_II.pdf, page 28</a></em></p>
+<h3 id="task-4-interpretation-of-type-i-and-ii-errors">Task 4: Interpretation of Type I and II errors</h3>
+<p>The Glendale Steel Company manufactures steel bars. If the production process is working properly, it turns out steel bars with mean length of at least 855mm with a standard deviation of 65mm (as determined from engineering specifications on the production equipment involved). Longer steel bars can be used or altered, but shorter bars must be scrapped. You select a sample of 25 bars and the mean length is 832mm. Assume that the length of steel bars is normally distributed. The production manager claims that the production equipment needs to be adjusted. Formulate the hypotheses and interpret Type I and II errors in the context of the question. 28</p>
+</section>
+<section id="source-page-029" class="slide level2">
+<h2></h2>
+<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop5_Hypothesis_Testing_II.pdf#page=29">Workshop5_Hypothesis_Testing_II.pdf, page 29</a></em></p>
+<h3 id="task-4-interpretation-of-type-1-and-ii-errors">Task 4: Interpretation of Type 1 and II errors</h3>
+<p>Hypotheses: <span class="math display">
+H0: \mu{} = 855
+</span> <span class="math display">
+H1: \mu{} &lt; 855
+</span> Type I error: A Type 1 error is rejecting H0, when H0 is true. We find sufficient evidence the mean length of steel bars is less than 855mm when in fact it is not. Type II error: A Type II error is retaining the null, when the null is false. We find insufficient evidence the mean length of steel bars is less than 855mm when in fact it is. 29</p>
 
 
 </section>
@@ -941,6 +826,13 @@ We do not reject the null at the 5% level of significance. The categories are no
       });
     </script>
     <script>
+    // Give section dividers a background that fills the letterboxed slide.
+    document.querySelectorAll('section.section-slide').forEach(function (slide) {
+      if (!slide.hasAttribute('data-background-color')) {
+        slide.setAttribute('data-background-color', '#006dae');
+      }
+    });
+
     // Copy over background colors to new div
     divs = document.querySelectorAll('[data-background-color]');
 
@@ -1074,6 +966,61 @@ We do not reject the null at the 5% level of significance. The categories are no
     // Move progress bar
     menu_div = document.querySelector(".progress");
     document.querySelector(".slides").appendChild(menu_div);
+    </script>
+
+    <script>
+    // Show a manually started countdown on slides with data-timing="seconds".
+    (function () {
+      let interval;
+
+      function showCountdown(slide) {
+        clearInterval(interval);
+        if (!slide) return;
+        const duration = Number(slide.dataset.timing);
+        if (!Number.isFinite(duration) || duration <= 0) return;
+
+        let timer = slide.querySelector('.slide-countdown');
+        if (!timer) {
+          timer = document.createElement('div');
+          timer.className = 'slide-countdown';
+          timer.innerHTML = '<span role="timer"></span><button type="button">Start</button>';
+          slide.appendChild(timer);
+        }
+        const clock = timer.querySelector('[role="timer"]');
+        const button = timer.querySelector('button');
+        const format = seconds => String(Math.floor(seconds / 60)).padStart(2, '0') + ':' +
+          String(seconds % 60).padStart(2, '0');
+        clock.textContent = format(Math.ceil(duration));
+        button.hidden = false;
+        timer.onclick = function (event) {
+          if (button.hidden) return;
+          event.stopPropagation();
+          button.hidden = true;
+          const end = Date.now() + duration * 1000;
+          function update() {
+            const remaining = Math.max(0, Math.ceil((end - Date.now()) / 1000));
+            clock.textContent = format(remaining);
+            if (remaining === 0) clearInterval(interval);
+          }
+          update();
+          interval = setInterval(update, 250);
+        };
+      }
+
+      Reveal.on('slidechanged', event => showCountdown(event.currentSlide));
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' || event.repeat) return;
+        if (event.target instanceof Element &&
+            event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+        const slide = Reveal.getCurrentSlide();
+        const button = slide && slide.querySelector('.slide-countdown button');
+        if (!button || button.hidden) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        button.click();
+      }, true);
+      showCountdown(Reveal.getCurrentSlide());
+    })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">
