@@ -1522,8 +1522,8 @@
     "objectID": "week1/slides.html#hello-im-fonti",
     "href": "week1/slides.html#hello-im-fonti",
     "title": "Describing and visualising data",
-    "section": "Hello! I’m Fonti",
-    "text": "Hello! I’m Fonti\n\n\n\nYour Chief Examiner! (CE)\nfonti.kar@monash.edu\nBSc, MRes, PhD\nOpen-source software engineer (UNSW)\nBiodiversity Data Analyst (CSIRO)\nAnalytics Lead at non-profit\nAustralian Grains Industry (ANU)\n\n\n\n\n\nFonti Kar"
+    "section": "Hello! I’m Fonti 👋",
+    "text": "Hello! I’m Fonti 👋\n\n\n\nYour Chief Examiner! (CE)\nfonti.kar@monash.edu\nBSc, MRes, PhD\nOpen-source software engineer (UNSW)\nBiodiversity Data Analyst (CSIRO)\nAnalytics Lead at non-profit\nAustralian Grains Industry (ANU)\n\n\n\n\n\nFonti Kar"
   },
   {
     "objectID": "week1/slides.html#it-takes-a-village",
@@ -1684,7 +1684,21 @@
     "href": "week1/slides.html#data-collection",
     "title": "Describing and visualising data",
     "section": "Data collection",
-    "text": "Data collection\n\n\n\nPopulation\n\nAll members of a group about which you want to draw a conclusion.\ne.g. All voters in an election, all Telstra shareholders, all invoices submitted to Medicare for rebate"
+    "text": "Data collection\n\n\n\nPopulation\n\nAll members of a group about which you want to draw a conclusion.\ne.g. All voters in an election, all Telstra shareholders, all invoices submitted to Medicare for rebate in NSW"
+  },
+  {
+    "objectID": "week1/slides.html#data-collection-1",
+    "href": "week1/slides.html#data-collection-1",
+    "title": "Describing and visualising data",
+    "section": "Data collection",
+    "text": "Data collection\n\n\n\nSample\n\nSubset of the population selected for analysis\nIdeally chosen randomly\nEqual chance of being selected\nRepresentative of the population\ne.g. Random survey of travellers at Brisbane airport"
+  },
+  {
+    "objectID": "week1/slides.html#bias-in-sampling",
+    "href": "week1/slides.html#bias-in-sampling",
+    "title": "Describing and visualising data",
+    "section": "Bias in sampling",
+    "text": "Bias in sampling\n\n\nDiscuss potential issues with bia with these data collections scenarios\n\nA marketing agency surveys 5,000 people through TikTok to estimate how much time Australians spend on social media.\nA record label analyses Spotify listening histories to identify Australia’s most popular music genre."
   },
   {
     "objectID": "week1/slides.html#branches-of-statistics",
@@ -1694,18 +1708,11 @@
     "text": "Branches of Statistics\n\n\n\nDescriptive\n\nSummarise, describe, simplify data at hand\ne.g. The average speed was 37.58 km/h for the men’s 100m sprint in 2024\n\nInferential\n\nTo infer/make educated guess about the wider population\ne.g. Using the average running speed for 30 men in Caufield, we estimated the population average for men in VIC.\n\n\n\n\n\n\n\n\n\nflowchart TD\n  Statistics --&gt; B[Descriptive]\n  Statistics --&gt; C[Inferential]"
   },
   {
-    "objectID": "week1/slides.html#descriptive-statistic",
-    "href": "week1/slides.html#descriptive-statistic",
-    "title": "Describing and visualising data",
-    "section": "Descriptive Statistic",
-    "text": "Descriptive Statistic"
-  },
-  {
     "objectID": "week1/slides.html#types-of-variables",
     "href": "week1/slides.html#types-of-variables",
     "title": "Describing and visualising data",
     "section": "Types of Variables",
-    "text": "Types of Variables\nTypes of Variables Categorical (Qualitative) Numerical (Quantitative) Nominal Ordinal Discrete Continuous 11\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 11"
+    "text": "Types of Variables\n\n\nCategorical\n\nQualitative (non-numerical) data organised in groups\n\nNominal, no natural order\n\ne.g. cat breeds, provinces,\n\nOrdinal, meaning ordering\n\ne.g. education level, poor/average/great feedback ratings\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef categorical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class B,D,E categorical;"
   },
   {
     "objectID": "week1/slides.html#basic-concepts-population-and-sample",
