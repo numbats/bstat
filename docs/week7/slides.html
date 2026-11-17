@@ -481,7 +481,7 @@ D_t=\frac{Y_t}{S_t}.
 </span></p>
 <p>Fit <span class="math inline">T_t=a+bt</span> to training <span class="math inline">D_t</span> with Excel <code>INTERCEPT</code> and <code>SLOPE</code>.</p>
 <p>Forecast on the original scale: <span class="math inline">F_t=T_tS_t</span>.</p>
-<p><em>Instructor workflow from <code>quiz/Chocolate_sales_worked_example.xlsx</code>, first sheet, rows 15–43. Forecast relation: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=19">ETB1100 Seminar Week 11, page 19</a>.</em></p>
+<p><em>Forecast relation: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=19">ETB1100 Seminar Week 11, page 19</a>.</em></p>
 </section>
 <section id="excel-intercept" class="slide level2">
 <h2>Excel: estimate the intercept</h2>
@@ -489,7 +489,7 @@ D_t=\frac{Y_t}{S_t}.
 <p>Enter this in <code>E6</code> to estimate <span class="math inline">a</span> in <span class="math inline">T_t=a+bt</span>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a aria-label="1"></a>=INTERCEPT($F$16:$F$35,$B$16:$B$35)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The result is about <strong>24.412 thousand bars</strong>. Excel takes the deseasonalised values first (<code>known_y_values</code>) and time second (<code>known_x_values</code>). Do not include the 2022 test rows.</p>
-<p><em>Worked cells: <a href="../quiz/Chocolate_sales_worked_example.xlsx">chocolate-bar workbook, first sheet</a>. Trend model: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=9">ETB1100 Seminar Week 11, page 9</a>.</em></p>
+<p><em>Trend model: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=9">ETB1100 Seminar Week 11, page 9</a>.</em></p>
 </section>
 <section id="excel-slope" class="slide level2">
 <h2>Excel: estimate the slope</h2>
@@ -500,20 +500,20 @@ D_t=\frac{Y_t}{S_t}.
 T_t \approx 24.412+1.735t.
 </span></p>
 <p>For test row 36, <code>=$E$6+$E$7*B36</code> gives the trend. Multiply it by that row’s supplied index to forecast sales.</p>
-<p><em>Worked cells: <a href="../quiz/Chocolate_sales_worked_example.xlsx">chocolate-bar workbook, first sheet</a>. The separate <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=20">source PDF example, page 20</a> uses slightly different fitted coefficients.</em></p>
+<p><em>The separate <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=20">source PDF example, page 20</a> uses slightly different fitted coefficients.</em></p>
 </section>
 <section id="chocolate-observed-chart" class="slide level2">
 <h2>Visualise sales with seasonality</h2>
 <p>In Excel, chart <strong>Period</strong> (<code>A15:A39</code>) against <strong>Sales (000s)</strong> (<code>D15:D39</code>): choose <strong>Insert</strong>, then <strong>Line with Markers</strong>. Q4 peaks recur as sales rise.</p>
 
-<img data-src="figures/time-series/chocolate-observed.png" style="width:75.0%" class="r-stretch"><p><em>The dotted line begins 2022 test data. Data: <a href="../quiz/Chocolate_sales_worked_example.xlsx">chocolate workbook</a>; seasonal pattern: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=16">ETB1100, page 16</a>.</em></p>
+<img data-src="figures/time-series/chocolate-observed.png" style="width:75.0%" class="r-stretch"><p><em>The dotted line begins 2022 test data. Seasonal pattern: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=16">ETB1100, page 16</a>.</em></p>
 </section>
 <section id="chocolate-deseasonalised-chart" class="slide level2">
 <h2>Visualise sales without seasonality</h2>
 <p>Chart <strong>Period</strong> (<code>A15:A39</code>) against <strong>Deseason sales</strong> (<code>F15:F39</code>). Keep the <strong>same vertical scale</strong>.</p>
 
 <img data-src="figures/time-series/chocolate-deseasonalised.png" style="width:75.0%" class="r-stretch"><p>Q4 spikes are reduced. The dashed trend uses <strong>training rows only</strong>.</p>
-<p><em>Data: <a href="../quiz/Chocolate_sales_worked_example.xlsx">chocolate workbook</a>. Trend model: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=9">ETB1100, page 9</a>.</em></p>
+<p><em>Trend model: <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf#page=9">ETB1100, page 9</a>.</em></p>
 </section>
 <section id="source-page-020" class="slide level2">
 <h2>Example: chocolate-bar sales</h2>
