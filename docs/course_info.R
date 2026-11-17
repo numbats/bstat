@@ -146,11 +146,14 @@ submit <- function(schedule = NULL, assignment) {
 show_slides <- function(week) {
   qmd_file <- here::here(paste0("week", week, "/slides.qmd"))
   if (fs::file_exists(qmd_file)) {
+    index_file <- here::here(paste0("week", week, "/index.qmd"))
+    pdf_filename <- paste0(rmarkdown::yaml_front_matter(index_file)$title, ".pdf")
     buttons <- paste0(
       "<div class='slide-actions'>",
-      "<a href='slides.pdf' class='slide-download-pdf' download>",
+      "<a href='slides.pdf' class='slide-download-pdf' download='",
+      htmltools::htmlEscape(pdf_filename, attribute = TRUE), "'>",
       "Download PDF slides</a>",
-      "<a href='slides.html' class='slide-open-html'>",
+      "<a href='slides.html' class='slide-open-html' target='_blank' rel='noopener noreferrer'>",
       "Open interactive slides</a>",
       "</div>"
     )
