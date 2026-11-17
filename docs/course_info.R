@@ -100,14 +100,6 @@ stopifnot(
   assignments$Due_Time[assignments$Assignment == "Written Assignment"] == written_assignment_due_time
 )
 
-link_assignment <- function(text, prefix = "") {
-  if (is.na(text) || !grepl("Written assignment", text, fixed = TRUE)) return(text)
-  file <- assignments$File[assignments$Assignment == "Written Assignment"]
-  sub("Written assignment",
-      paste0("[Written assignment](", prefix, file, ")"),
-      text, fixed = TRUE)
-}
-
 show_assignments <- function(week) {
   upcoming <- schedule |>
     filter(!is.na(Week), Week >= week, Week <= week + 2L, !is.na(Assessment)) |>
@@ -117,7 +109,7 @@ show_assignments <- function(week) {
     cat("\n\n## Upcoming assessments\n\n")
     for (i in seq_len(NROW(upcoming))) {
       cat("- **Week ", upcoming$Week[i], ":** ",
-          link_assignment(upcoming$Assessment[i], "../"), "\n", sep = "")
+          upcoming$Assessment[i], "\n", sep = "")
     }
   }
 }

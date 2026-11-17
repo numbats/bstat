@@ -1754,7 +1754,7 @@
     "href": "week1/slides.html#otis-elevator-company---you-try",
     "title": "Describing and visualising data",
     "section": "Otis Elevator Company - You try ✏️",
-    "text": "Otis Elevator Company - You try ✏️\nFor Supplier 2\nUse Excel to calculate measures of:\n\ncentral tendency (MEAN, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)"
+    "text": "Otis Elevator Company - You try ✏️\n\n \nFor Supplier 2\nUse Excel to calculate measures of:\n\ncentral tendency (MEAN, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)"
   },
   {
     "objectID": "week1/slides.html#otis-elevator-company---bring-it-together",
@@ -1778,38 +1778,150 @@
     "text": "Data viz whiz"
   },
   {
+    "objectID": "week1/slides.html#histogram",
+    "href": "week1/slides.html#histogram",
+    "title": "Describing and visualising data",
+    "section": "Histogram",
+    "text": "Histogram\nShows the distribution or shape of numerical data\n\nPossible values are counted or “binned” into bars\nHeight of bars represent the number of observations in each bin"
+  },
+  {
     "objectID": "week1/slides.html#box-and-whisker-plot-aka.-boxplot",
     "href": "week1/slides.html#box-and-whisker-plot-aka.-boxplot",
     "title": "Describing and visualising data",
     "section": "Box and whisker plot (aka. boxplot)",
-    "text": "Box and whisker plot (aka. boxplot)\nShows the distribution of data\n\n\n\n\n\n\n\n\n\n\n\n\n\n25% of data falls below Q1\n75% of data falls below Q3\nInterquartile range (IQR) is the Q3 - Q1\n\nSpread of middle 50% of the data\n\nWhiskers show the min and max values\n\nMax - min = Range of data"
+    "text": "Box and whisker plot (aka. boxplot)\nShows the distribution or shape of numerical data\n\n\n\n\n\n\n\n\n\n\n\n\n\n25% of data falls below Q1\n75% of data falls below Q3\nInterquartile range (IQR) is the Q3 - Q1\n\nSpread of middle 50% of the data\n\nWhiskers show the min and max values\n\nMax - min = Range of data"
   },
   {
     "objectID": "week1/slides.html#shape-of-data",
     "href": "week1/slides.html#shape-of-data",
     "title": "Describing and visualising data",
     "section": "Shape of data",
-    "text": "Shape of data"
+    "text": "Shape of data\nRight skewed distribution\n\nThe long upper tail is on the right\nSkewness &gt; 0\n\n\nRed = median; black = mean."
   },
   {
-    "objectID": "week1/slides.html#what-type-of-chart",
-    "href": "week1/slides.html#what-type-of-chart",
+    "objectID": "week1/slides.html#shape-of-data-1",
+    "href": "week1/slides.html#shape-of-data-1",
     "title": "Describing and visualising data",
-    "section": "What type of chart",
-    "text": "What type of chart\n\nThe data type determines what chart is used for visualisation\n\nNominal & Ordinal Discrete Data Numeric data Bar Chart Pie Chart Bar Chart Histogram Box plot Great for Great for illustrating illustrating Great for illustrating the distribution relativity portions or particularly for shares ordinal data\nTask 1: Real Estate Data\nWe wish to compare the distribution of house prices for properties within/outside school zone Refer to the workshop data set under Module 1. Refer to the Price column and answer the following questions. a. Generate summary statistics of house prices for properties within/outside the school zone b. Draw two frequency percentage histograms. c. Draw two box plots 24\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 23"
+    "section": "Shape of data",
+    "text": "Shape of data\nSymmetric distribution\n\nEqual number of high and low values\nSkewness = 0\n\n\nRed = median; black = mean."
   },
   {
-    "objectID": "week1/slides.html#source-page-024",
-    "href": "week1/slides.html#source-page-024",
+    "objectID": "week1/slides.html#shape-of-data-2",
+    "href": "week1/slides.html#shape-of-data-2",
     "title": "Describing and visualising data",
-    "section": "",
-    "text": "Instructions for Summary Statistics\n\nHighlight the relevant column and check ‘Labels in the first row’\nClick on Data tab and choose 3. Select Descriptive Statistics 6. Check ‘output range’ box and select a\nClick on Data Analysis 4. Click ‘OK’ blank cell\nCheck the ‘Summary statistics’ box\nClick OK\n\n\n\n\n\n\nVisual from source page 24.\n\n\n\n\n\n\nVisual from source page 24.\n\n\n\n\n\n\n\n\nVisual from source page 24."
+    "section": "Shape of data",
+    "text": "Shape of data\nLeft skewed distribution\n\nThe long lower tail is on the left\nSkewness &lt; 0\n\n\nRed = median; black = mean."
   },
   {
-    "objectID": "week1/slides.html#source-page-025",
-    "href": "week1/slides.html#source-page-025",
+    "objectID": "week1/slides.html#otis-elevator-company---watch-me-1",
+    "href": "week1/slides.html#otis-elevator-company---watch-me-1",
     "title": "Describing and visualising data",
-    "section": "",
+    "section": "Otis Elevator Company - Watch me 👀",
+    "text": "Otis Elevator Company - Watch me 👀\nUse Excel to generate summary statistics for Supplier 1\n\nClick on Data tab and click on Data Analysis\nSelect Descriptive Statistics &gt; OK\nUnder Input range, highlight the relevant column\nSelect Grouped by Columns and check Labels in the first row\nCheck Output range box and select a blank cell\nCheck the Summary statistics box &gt; OK"
+  },
+  {
+    "objectID": "week1/slides.html#otis-elevator-company---you-try-1",
+    "href": "week1/slides.html#otis-elevator-company---you-try-1",
+    "title": "Describing and visualising data",
+    "section": "Otis Elevator Company - You try ✏️",
+    "text": "Otis Elevator Company - You try ✏️\n\n \nUse Excel to generate summary statistics for Supplier 2\n\nClick on Data tab and click on Data Analysis\nSelect Descriptive Statistics &gt; OK\nUnder Input range, highlight the relevant column\nSelect Grouped by Columns and check Labels in the first row\nCheck Output range box and select a blank cell\nCheck the Summary statistics box &gt; OK"
+  },
+  {
+    "objectID": "week1/slides.html#otis-elevator-company---watch-me-2",
+    "href": "week1/slides.html#otis-elevator-company---watch-me-2",
+    "title": "Describing and visualising data",
+    "section": "Otis Elevator Company - Watch me 👀",
+    "text": "Otis Elevator Company - Watch me 👀\nUse Excel to make a boxplot for Supplier 1\n\nHighlight the relevant column\nGo to Insert &gt; Chart\nSelect Box and Whisker"
+  },
+  {
+    "objectID": "week1/slides.html#otis-elevator-company---you-try-2",
+    "href": "week1/slides.html#otis-elevator-company---you-try-2",
+    "title": "Describing and visualising data",
+    "section": "Otis Elevator Company - You try ✏️",
+    "text": "Otis Elevator Company - You try ✏️\n\n \nUse Excel to make a boxplot for Supplier 2\n\nHighlight the relevant column\nGo to Insert &gt; Chart\nSelect Box and Whisker"
+  },
+  {
+    "objectID": "week1/slides.html#counting-things-in-excel",
+    "href": "week1/slides.html#counting-things-in-excel",
+    "title": "Describing and visualising data",
+    "section": "Counting things in Excel",
+    "text": "Counting things in Excel"
+  },
+  {
+    "objectID": "week1/slides.html#real-estate-data",
+    "href": "week1/slides.html#real-estate-data",
+    "title": "Describing and visualising data",
+    "section": "Real Estate Data",
+    "text": "Real Estate Data\nEach row of the RealEstate worksheet is one property (329 properties).\n\n\n\nColumn\nMeaning\nData type and units\n\n\n\n\nPrice ($000s)\nProperty price\nNumerical, AUD thousands\n\n\nBeds\nNumber of bedrooms\nNumerical, discrete count\n\n\nBaths\nNumber of bathrooms\nNumerical, discrete count\n\n\nCars\nNumber of car spaces\nNumerical, discrete count\n\n\nArea (sqm)\nProperty area\nNumerical, square metres\n\n\nSchoolZone\nIn a school zone\nCategorical, Yes/No\n\n\nAuction\nAuction status\nCategorical, Yes/No\n\n\nNew\nNew property\nCategorical, Yes/No\n\n\nSubdivided\nSubdivided property\nCategorical, Yes/No"
+  },
+  {
+    "objectID": "week1/slides.html#frequency-tables---pivot-table---watch-me",
+    "href": "week1/slides.html#frequency-tables---pivot-table---watch-me",
+    "title": "Describing and visualising data",
+    "section": "Frequency tables - Pivot Table - Watch me 👀",
+    "text": "Frequency tables - Pivot Table - Watch me 👀\n\nA Pivot Table groups your data and summarises them.\ne.g. Use Counts to make a frequency table for categories.\n\nHow many properties have been sold in an Auction (Yes/No)\n\nChoose Insert &gt; PivotTable.\nSelect a table or range &gt; highlight the entire of the dataset\nChoose where to place Pivot Table &gt; New worksheet &gt; OK\nAuction in Rows.\nPut Beds in Values and change Sum of Beds to Count of Beds.\n\nNote: Every property has a Beds entry, so this counts properties."
+  },
+  {
+    "objectID": "week1/slides.html#frequency-tables---pivot-table",
+    "href": "week1/slides.html#frequency-tables---pivot-table",
+    "title": "Describing and visualising data",
+    "section": "Frequency tables - Pivot Table",
+    "text": "Frequency tables - Pivot Table\n\n\n\nAuction\nCount of Beds (properties)\n\n\n\n\nNo\n151\n\n\nYes\n178\n\n\nGrand Total\n329\n\n\n\nFor example, 178 properties have Auction = Yes."
+  },
+  {
+    "objectID": "week1/slides.html#frequency-percentage-tables---pivot-table---watch-me",
+    "href": "week1/slides.html#frequency-percentage-tables---pivot-table---watch-me",
+    "title": "Describing and visualising data",
+    "section": "Frequency percentage tables - Pivot Table - Watch me 👀",
+    "text": "Frequency percentage tables - Pivot Table - Watch me 👀\nCreate a Pivot Table of percentage of properties in each area band.\n\nSelect the dataset, then choose Insert &gt; PivotTable &gt; New Worksheet.\nPut Area (sqm) in Rows. Put Beds in Values and set Summarize Values By &gt; Count; every property has a Beds entry.\nRight-click an area value in the PivotTable and choose Group. Set Starting at: 0, Ending at: 1600, By: 200 to create 200 sqm bands.\nOpen Value Field Settings for Count of Beds, then choose Show Values As &gt; % of Grand Total. Format the result as a percentage with one decimal place.\n\nFor example, 192 of 329 properties fall in the 600–799 sqm band, so its frequency percentage is 58.4%. The Grand Total should be 100%."
+  },
+  {
+    "objectID": "week1/slides.html#area-frequency-percentage-table",
+    "href": "week1/slides.html#area-frequency-percentage-table",
+    "title": "Describing and visualising data",
+    "section": "Area frequency percentage table",
+    "text": "Area frequency percentage table\n\n\n\nArea band (sqm)\nNumber of properties\nPercentage of properties\n\n\n\n\n0–199\n7\n2.1%\n\n\n200–399\n78\n23.7%\n\n\n400–599\n14\n4.3%\n\n\n600–799\n192\n58.4%\n\n\n800–999\n33\n10.0%\n\n\n1000–1199\n4\n1.2%\n\n\n1200–1399\n0\n0.0%\n\n\n1400–1599\n1\n0.3%\n\n\nGrand Total\n329\n100.0%\n\n\n\nKeep the empty 1200–1399 sqm band so every interval is represented in the chart."
+  },
+  {
+    "objectID": "week1/slides.html#plot-the-area-frequency-table-as-a-histogram",
+    "href": "week1/slides.html#plot-the-area-frequency-table-as-a-histogram",
+    "title": "Describing and visualising data",
+    "section": "Plot the area frequency table as a histogram",
+    "text": "Plot the area frequency table as a histogram\n\nSelect the Area band and Percentage of properties columns, excluding Grand Total. Use the complete table above if the PivotTable omits the empty band.\nChoose **Insert &gt; Column.\nRight-click a bar and choose Format Data Series. Set Gap Width to 0% so adjacent area bands touch.\nCheck that the horizontal axis shows the 200 sqm bands in order and the vertical axis shows percentages starting at 0%.\n\nNote: Excel’s built-in Histogram chart is for raw observations only; this chart uses the frequency percentage table made with Pivot Table."
+  },
+  {
+    "objectID": "week1/slides.html#what-chart-type",
+    "href": "week1/slides.html#what-chart-type",
+    "title": "Describing and visualising data",
+    "section": "What chart type?",
+    "text": "What chart type?\n\nYour data type determines your eventual data visualisation"
+  },
+  {
+    "objectID": "week1/slides.html#exercise-real-estate-you-try",
+    "href": "week1/slides.html#exercise-real-estate-you-try",
+    "title": "Describing and visualising data",
+    "section": "Exercise: Real Estate — You try ✏️",
+    "text": "Exercise: Real Estate — You try ✏️\nQ1. Use COUNTIF() in Excel:\n\nHow many properties have three bedrooms or more?\nHow many properties have three bathrooms or more?\n\nQ2. Compare the distribution of house prices within and outside the school zone. Refer to the Price ($000s) column:\n\nGenerate summary statistics for each group.\nConstruct two frequency percentage histograms, one for each group.\nConstruct two box plots to compare the groups."
+  },
+  {
+    "objectID": "week1/slides.html#exercise-real-estate-you-try-1",
+    "href": "week1/slides.html#exercise-real-estate-you-try-1",
+    "title": "Describing and visualising data",
+    "section": "Exercise: Real Estate — You try ✏️",
+    "text": "Exercise: Real Estate — You try ✏️\nQ3. Refer to the number of bedrooms in the RealEstate worksheet:\n\nChoose an appropriate graph for this variable.\nConstruct a relative frequency table for the number of bedrooms using a PivotTable.\nWhat is the frequency of three bedrooms?\nConstruct a chart from your relative frequency table for ed-ie.com."
+  },
+  {
+    "objectID": "week1/slides.html#exercise-real-estate-you-try-2",
+    "href": "week1/slides.html#exercise-real-estate-you-try-2",
+    "title": "Describing and visualising data",
+    "section": "Exercise: Real Estate — You try ✏️",
+    "text": "Exercise: Real Estate — You try ✏️\nQ4. Refer to Price ($000s) in the RealEstate worksheet:\n\nConstruct a relative frequency table for price using a PivotTable.\nGroup the price values, setting Starting at: 500 and By: 500.\nWhat changed in the PivotTable’s price field after grouping?\n\nAnswer the exercise questions in Moodle."
+  },
+  {
+    "objectID": "week1/slides.html#average-house-prices",
+    "href": "week1/slides.html#average-house-prices",
+    "title": "Describing and visualising data",
+    "section": "Average house prices",
     "text": "Average house prices\nLet’s compare the distribution of house prices within/outside school zone Price (School Zone) Price (Outside School Zone) Mean 1258.79 1046.04 Median 1225.50 980.00 Var 178200.41 130871.38 Stdev 422.14 361.76 Skewness 1.76 2.74 Q1 987.25 858.00 Q3 1405.25 1180.00 IQR 418.00 322.00 Range 3195.00 2430.00 26\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 25"
   },
   {
@@ -1817,21 +1929,7 @@
     "href": "week1/slides.html#source-page-026",
     "title": "Describing and visualising data",
     "section": "",
-    "text": "Average house prices\nLet’s compare the distribution of house prices within/outside school zone Price (School Zone) Price (Outside School Zone) Mean 1258.79 1046.04 Median 1225.50 980.00 Var 178200.41 130871.38 Stdev 422.14 361.76 Skewness 1.76 2.74 Q1 987.25 858.00 Q3 1405.25 1180.00 IQR 418.00 322.00 Range 3195.00 2430.00 Houses in the school zone tend to be more expensive, with higher mean and median 27\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 26"
-  },
-  {
-    "objectID": "week1/slides.html#source-page-027",
-    "href": "week1/slides.html#source-page-027",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "Measures of Variability\nPrice (School Zone) Price (Outside School Zone) - Range Mean 1258.79 1046.04 - Inter-quartile Median 1225.50 980.00 range (IQR) Var 178200.41 130871.38 Stdev 422.14 361.76 - Variance Skewness 1.76 2.74 - Standard Q1 987.25 858.00 deviation Q3 1405.25 1180.00 IQR 418.00 322.00 - Coefficient of Variation (CV) Range 3195.00 2430.00 What do these statistics measure? 28\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 27"
-  },
-  {
-    "objectID": "week1/slides.html#source-page-028",
-    "href": "week1/slides.html#source-page-028",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "Measures of Variability\nRange to The difference between the maximum and the minimum values. It relies just on the two most extreme values in the dataset. =MAX(…)-MIN(…) Interquartile Range (IQR) to the spread of the middle 50% of the data. IQR =Q3 -Q1 Q1 =QUARTILE.EXC(…,1) Q3 =QUARTILE.EXC(…,3) Variance: average of the squared deviations (distance) from the mean =VAR.S(…) Standard Deviation = Variance . =STDEV.S(…) Standard deviation Coefficient of Variation (cv): measures relative variation = Mean x 100% 29\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 28\n\n\n\n\n\nVisual from source page 28.\n\n\n\n\n\n\nVisual from source page 28."
+    "text": "Average house prices\nLet’s compare the distribution of house prices within/outside school zone Price (School Zone) Price (Outside School Zone) Mean 1258.79 1046.04 Median 1225.50 980.00 Var 178200.41 130871.38 Stdev 422.14 361.76 Skewness 1.76 2.74 Q1 987.25 858.00 Q3 1405.25 1180.00 IQR 418.00 322.00 Range 3195.00 2430.00 Houses in the school zone tend to be more expensive, with higher mean and median 27\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 26\nMeasures of Variability\nRange to The difference between the maximum and the minimum values. It relies just on the two most extreme values in the dataset. =MAX(…)-MIN(…) Interquartile Range (IQR) to the spread of the middle 50% of the data. IQR =Q3 -Q1 Q1 =QUARTILE.EXC(…,1) Q3 =QUARTILE.EXC(…,3) Variance: average of the squared deviations (distance) from the mean =VAR.S(…) Standard Deviation = Variance . =STDEV.S(…) Standard deviation Coefficient of Variation (cv): measures relative variation = Mean x 100% 29\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 28\n\n\n\n\n\nVisual from source page 28.\n\n\n\n\n\n\nVisual from source page 28."
   },
   {
     "objectID": "week1/slides.html#source-page-029",
@@ -1839,27 +1937,6 @@
     "title": "Describing and visualising data",
     "section": "",
     "text": "Variability of house price\nPrice (School Zone) Price (Outside School Zone) Mean 1258.79 1046.04 Median 1225.50 980.00 Var 178200.41 130871.38 Stdev 422.14 361.76 Skewness 1.76 2.74 Q1 987.25 858.00 Q3 1405.25 1180.00 IQR 418.00 322.00 Range 3195.00 2430.00 There is a greater degree of absolute variability of houses in the school zone and only slightly lower relative variability. Range: $3.195m vs $2.43m; IQR:$418k vs $322k; standard deviation: $422k vs $362k CV: 33.54% vs 34.45% (standard deviation/mean *100%) 30\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 29"
-  },
-  {
-    "objectID": "week1/slides.html#source-page-030",
-    "href": "week1/slides.html#source-page-030",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "Shape of Distributions\nSkewness measures how symmetric the distribution is - Positive statistic to positive skewed, right tail longer than the left tail - Negative statistic to negative skewed, left tail longer than the right tail Left-Skewed Symmetric Right-Skewed \n(Skewness &lt; 0)                   (Skewness = 0)                        (Skewness &gt; 0)\n Mean &lt; Median Mean = Median Mean &gt; Median Some very “low” values An equal number of “low” & Some very “high” values The mean is pulled left toward “high” values. The mean stays The mean is pulled right toward the “tail” of the distribution in the centre of the distribution the “tail” of the distribution\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 30"
-  },
-  {
-    "objectID": "week1/slides.html#source-page-031",
-    "href": "week1/slides.html#source-page-031",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "Visualization of Numerical Data using Box Plot\nMax A graphical representation of the data based on the 5-number summary. Refer to page 121 of the textbook. Q3 Mean Median Q1 Min 32\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 31"
-  },
-  {
-    "objectID": "week1/slides.html#source-page-032",
-    "href": "week1/slides.html#source-page-032",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "Shape of Distributions and Box Plots\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 32\n\n\n\n\n\nVisual from source page 32.\n\n\n\n\n\n\nVisual from source page 32.\n\n\n\n\n\n\n\n\nVisual from source page 32.\n\n\n\n\n\n\nVisual from source page 32.\n\n\n\n\n\n\n\n\nVisual from source page 32.\n\n\n\n\n\n\nVisual from source page 32."
   },
   {
     "objectID": "week1/slides.html#source-page-033",
@@ -1873,14 +1950,7 @@
     "href": "week1/slides.html#source-page-034",
     "title": "Describing and visualising data",
     "section": "",
-    "text": "Visualization of Numerical Data using Histograms\nHouse Prices School Zone Histogram of House Prices (Outside School Zone) 0.3 16 14 0.25 12 0.2 10 Percentage 8 0.15 6 0.1 4 2 0.05 0 0 Prices ($) 35\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 34"
-  },
-  {
-    "objectID": "week1/slides.html#source-page-035",
-    "href": "week1/slides.html#source-page-035",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "Visualization of Numerical Data using Box Plot\nInsert &gt; Histogram &gt; Box and Whisker You can plot multiple data series on the same plot As long as they are of the same units! 36\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 35\n\nVisual from source page 35."
+    "text": "Visualization of Numerical Data using Histograms\nHouse Prices School Zone Histogram of House Prices (Outside School Zone) 0.3 16 14 0.25 12 0.2 10 Percentage 8 0.15 6 0.1 4 2 0.05 0 0 Prices ($) 35\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 34\nVisualization of Numerical Data using Box Plot\n\nInsert &gt; Histogram &gt; Box and Whisker\nYou can plot multiple data series on the same plot As long as they are of the same units!\n\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 35\n\nVisual from source page 35."
   },
   {
     "objectID": "week1/slides.html#source-page-036",
@@ -1908,28 +1978,7 @@
     "href": "week1/slides.html#source-page-039",
     "title": "Describing and visualising data",
     "section": "",
-    "text": "Task 3: Visualisation for Continuous Data_Price\n\nConstruct a relative frequency table for the variable “Price”\nDraw an appropriate graph. Bin Range Frequency Relative Frequency 500-999 1000-1499 1500-1999 2000-2499 2500-2999 3000-3499 3500-3999\n\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 39"
-  },
-  {
-    "objectID": "week1/slides.html#source-page-040",
-    "href": "week1/slides.html#source-page-040",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "1. H i g h l i g h t o n e d a t a cel l\n\nInsert to Pivot table (in Mac Data to Pivot table)\nI n ser t to P i v o t t a b l e (in M a c Data to P i v o t t ab l e ) 3 . S e l e c t e xi s t i n g w o r k s h e e t 4 . S p e c i f y t h e c el l l o c a t i o n toOK 5 . D r ag a n d d r o p p r i c e t o t h e ’ R o w s ’ q u a d r a n t 6 . D r ag a n d d r o p p r i c e ag ai n t o t h e ’ v a l u e s ’ q u a d r a n t P i v o t T a b l e\n\n\n. .. L\n\nPrice ($’o00) l I 1100 - 4 1095 – -\n\n\n\n\n1150\n1087 870 120 0\n\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 40\n\nVisual from source page 40."
-  },
-  {
-    "objectID": "week1/slides.html#source-page-041",
-    "href": "week1/slides.html#source-page-041",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "C h a n g e t h e v a l u e fi e ld S e l e c t ’ V a l u e fi e l d S h o w v alu e s a s - &gt; % o f R i g h t c li c k o n a n y o f t h e\ns e t t i n g s ’ s u m o f P r i c e’ to se t ti n g s ’ -&gt; s u m m a r i s e G r a n d Total v a l u e s in t h e fi r s t c o l u m n C o u n t o f Price v a l u e fi e l d b y - &gt; c o u n t ( P r i c e $ ’ 0 0 0} P r ic e ($’o00) 0 . 3 0% 550 0 . 3 0% 5 70 0 . 3 0% 0 . 3 0% 0 . 3 0% — 64 S 0 . 3 0% 0 . 3 0% 65 0 0. 61% 0 . 3 0% 0.61% … 0 . 3 0% 0 . 3 0% 0 . 3 0% S e l e c t G r o u p (T he w i n d o w C h a n g e : s t a r t i n g a t 50 0, Final Table T h i s is t h e c r i t e r i a f o r g r o u p i n g o n t h e r i g h t w i l l p o p up) end inR at 3 7 0 0 , bv 500 G ro up in g X Price ($’000) - C o u nt o f Price ($’000) A uto 500-999 31.61 Au to 1000-1499 52.58% St art ing at: 505 5 t a rt i n g at: 500 1500-1999 10.64 .Ending at: 3700 2000-2499 2.74% E n d i n g at: 3700 By: , o oo 2500-2999 1.52 By: 3000-3499 0.61% Cancel 350()..3999 Can c el G ra nd T o b i\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 41\n\nVisual from source page 41."
-  },
-  {
-    "objectID": "week1/slides.html#source-page-042",
-    "href": "week1/slides.html#source-page-042",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "1. Highlight the pivot table\n\nHighlight the pivot table\nInsert a bar char t\nTo change the bar chart to a histo gram, click on any o f the bars in the bar chart\nRight click and Select f o r ma t data series\nChange the gap w i dth to O (zero) OlstnbtJtJonof pncl! Format Data Series X I 11\n\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 42\n\nVisual from source page 42."
+    "text": "Task 3: Visualisation for Continuous Data_Price\n\nConstruct a relative frequency table for the variable “Price”\nDraw an appropriate graph. Bin Range Frequency Relative Frequency 500-999 1000-1499 1500-1999 2000-2499 2500-2999 3000-3499 3500-3999\n\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 39\n1. Highlight the pivot table\n\nHighlight the pivot table\nInsert a bar char t\nTo change the bar chart to a histo gram, click on any o f the bars in the bar chart\nRight click and Select f o r ma t data series\nChange the gap w i dth to O (zero) OlstnbtJtJonof pncl! Format Data Series X I 11\n\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 42\n\nVisual from source page 42."
   },
   {
     "objectID": "week1/slides.html#source-page-043",
@@ -1985,42 +2034,7 @@
     "href": "index.html#assessment-summary",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Assessment summary",
-    "text": "Assessment summary\n\n\n\nAssessment task\nWeight\nTiming\nMode\n\n\n\n\nWeekly classroom exercises\n15%\nEnd of each class\nGroup\n\n\nWeekly quizzes (best 5 of 7)\n15%\nMonday after each quiz week\nIndividual\n\n\nWritten assignment\n20%\nMon 04 Jan 2027 at 11:55 pm\nIndividual\n\n\nExamination\n50%\nExamination period\nIndividual"
-  },
-  {
-    "objectID": "assignments/A1.html",
-    "href": "assignments/A1.html",
-    "title": "Individual written assignment",
-    "section": "",
-    "text": "Due: Monday 04 January 2027 at 11:55 pm (Melbourne time). Check Moodle for the submission location."
-  },
-  {
-    "objectID": "assignments/A1.html#the-business-case",
-    "href": "assignments/A1.html#the-business-case",
-    "title": "Individual written assignment",
-    "section": "The business case",
-    "text": "The business case\nYou are a business analyst. Your company has launched iPhone 4, and reports of reception signals dropping are attracting growing public criticism. Customers noticed that when the iPhone was held in a specific way, the reception bars dropped off.\nThe CEO will address the media in 48 hours. The Corporate Affairs team has commissioned you to analyse the available evidence and develop a persuasive, statistically defensible narrative. Your findings will inform the CEO’s public statement. You must identify what the data demonstrate, what remains uncertain, and which claims the CEO can reasonably make.\nThe company wants to know whether the iPhone 4 experience differs from that of the previous iPhone 3GS. A low rate of complaints or returns might reassure customers, while a higher rate of dropped calls or greater reception loss might require a more careful response. A persuasive data story must account for all of these measures.\nUse the assignment data workbook to prepare the briefing. The scenario is fictional; the workbook contains no actual company or historical customer data."
-  },
-  {
-    "objectID": "assignments/A1.html#data-and-decision",
-    "href": "assignments/A1.html#data-and-decision",
-    "title": "Individual written assignment",
-    "section": "Data and decision",
-    "text": "Data and decision\nThe workbook has a READ ME sheet with a data dictionary and two independent datasets:\n\nCustomer survey: a simple random sample of 2,000 customers of each model from the company’s customer list, linked to support and returns records. Each row represents one customer. It records whether one observed call dropped, whether the purchaser reported a reception issue to customer support during the previous 30 days, and whether the phone was returned within 30 days for any reason. These are different events. Coverage and case use are also recorded.\nReception tests: a simple random sample of 100 distinct handsets of each model (iPhone 3GS and 4) tested under the same network conditions. Each handset has signal reading measured in decibel-milliwatts (dBm) when placed on a flat surface (ungripped) and held in a position as if making a call (gripped). Calculate reception loss = ungripped reading − gripped reading; a larger positive number means a greater loss.\n\nThe product team’s working rule is that an average reception loss greater than 3 dB for iPhone 4 handsets would be operationally important. This is the decision threshold for the test below. Reception loss is a difference between two dBm readings, so its unit is dB.\nIn the questions below, owner means an original customer, including someone who subsequently returned a phone. The survey deliberately samples the same number from each model."
-  },
-  {
-    "objectID": "assignments/A1.html#your-tasks",
-    "href": "assignments/A1.html#your-tasks",
-    "title": "Individual written assignment",
-    "section": "Your tasks",
-    "text": "Your tasks\n\n1. Describe the evidence (20 marks)\n\nIdentify the observational unit, population of interest, sample, and type of the main variables in each sheet. Explain why the survey and reception tests answer different questions.\nBuild a compact CEO evidence table by phone model. Show the sample size; the rates of dropped calls. Include appropriate description statistics of reception loss. Importantly, distinguish between\n\n\ncustomers who only reported a reception issue in the last 30 days\ncustomers who only returned the phone for any reason\n\nUse clear denominators and units so the table could be understood in a media briefing.\nSupport your table with two well-labelled charts: one comparing a drop our rates by model and one showing the distribution of reception loss by model.\n\nExplain which headline figures would best answer the public concern. Identify one possible source of sampling or measurement bias.\n\n\n\n2. Probability and reported issues (20 marks)\nUsing the Customer survey sheet, construct a contingency table for model and call_dropped. Show counts and relevant proportions. Calculate and interpret, as sample-based probability estimates:\n\nP(\\text{call dropped}\\mid\\text{iPhone 4});\nP(\\text{iPhone 4 and call dropped});\nP(\\text{reported issue}\\mid\\text{call dropped}); and\nP(\\text{call dropped or reported issue}).\n\nState the denominator for each calculation. Compare the conditional call-drop probabilities for the two models and explain why this comparison alone does not establish that the handset model caused the difference. You may use a pivot table or Excel formulas; show enough working to make the calculations auditable.\n\n\n3. Estimate uncertainty (20 marks)\n\nCalculate a 95% confidence interval for the proportion of iPhone 4 owners in the customer population who reported a reception issue in the previous 30 days. State the estimate, standard error, interval, assumptions, and interpretation. Compare the estimate descriptively with the iPhone 3GS sample proportion.\nCalculate a 95% confidence interval for mean reception loss among iPhone 4 handsets in the fictional test population. State the estimate, standard error, interval, assumptions, and interpretation.\nExplain how sample size and sampling design affect how much confidence Corporate Affairs should place in these intervals.\n\n\n\n4. Test the mean reception-loss claim (25 marks)\nUse the Reception tests sheet to test, at the 5% significance level, whether the fictional iPhone 4 population has a mean reception loss greater than the 3 dB decision threshold.\n\nState the parameter, null and alternative hypotheses, and explain why a one-sample, one-sided test is appropriate.\nShow the iPhone 4 sample size, mean, standard deviation, standard error, test statistic, degrees of freedom, and p-value. Make your calculations auditable in Excel.\nGive a decision and a plain-language conclusion about the 3 dB threshold. Explain what the result does and does not say about the two phone models, and describe a Type I error in this setting.\n\n\n\n5. Advise Corporate Affairs and PR (15 marks)\nWrite a 150–250 word media-briefing recommendation for the Corporate Affairs and PR team. Propose a clear opening message for the CEO and two precise claims that the simulated evidence supports. Bring together the descriptive, probability, interval, and test results, including any result that complicates a reassuring message. Identify one claim the CEO should avoid, explain what remains uncertain, and recommend a next investigation or communication step. The team will use this advice to address public concerns, so write for a non-technical audience without overstating what the data shows."
-  },
-  {
-    "objectID": "assignments/A1.html#submission",
-    "href": "assignments/A1.html#submission",
-    "title": "Individual written assignment",
-    "section": "Submission",
-    "text": "Submission\nVia Moodle link\n\nAI statment\n\n\n\n\n\n\nAI & Generative AI tools may be used for this assessment / task per the guidelines provided in the free-text explanation\n\nI understand the ease and temptation of uploading the workbook and getting an immediate answer, however this approach won’t help you learn the content in the long term. Instead, I urge you to consider the following uses:\n\n\nYou may use AI & Generative AI tools for the translation of the question e.g. “Don’t give me the answer, please reword/breakdown/walk me through the question so I understand clearly what I need to do”\n\n\nYou may use AI & Generative AI tools for hints on how to approach the question “Don’t give me the answer, provide me some scaffolded hints on how to approach this question”\n\n\nOnce you are done, you may use AI & Generative AI tools to summarise your knowledge gaps and provide similar exercises for practice so you can work on your weak spots “Give me a bulleted list of key concepts where I struggled with” “Provide me 5 similar practice questions using the same dataset, don’t give me the answers yet”\n\n\n\n\n\n\nRubric\n\n\n\n\n\n\nCaution\n\n\n\nPlease note, a random sample of assignments will be selected and you will be interviewed about your analytic choices and interpretations.\n\n\nThe assessed content is from Weeks 1–4: data description and visualisation (LO1), probability (LO2), and sampling, confidence intervals, and hypothesis testing (LO3).\n\n\n\nCriterion\nMarks\n\n\n\n\nData definitions, summaries, visualisation, and critique\n20\n\n\nProbability calculations and interpretation\n20\n\n\nConfidence intervals and sampling interpretation\n20\n\n\nOne-sample mean threshold test and interpretation\n25\n\n\nCorporate Affairs recommendation and communication\n15\n\n\nTotal\n100"
+    "text": "Assessment summary\n\n\n\n\n\n\n\n\n\nAssessment task\nWeight\nTiming\nMode\n\n\n\n\nWeekly classroom exercises\n15%\nEnd of each class\nGroup\n\n\nWeekly quizzes (best 5 of 7)\n15%\nMonday after each quiz week\nIndividual\n\n\nWritten assignment\n20%\nMon 04 Jan 2027 at 11:55 pm\nIndividual\n\n\nExamination\n50%\nExamination period\nIndividual"
   },
   {
     "objectID": "week1/index.html",

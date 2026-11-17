@@ -934,6 +934,8 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 </section>
 <section id="otis-elevator-company---you-try" class="slide level2">
 <h2>Otis Elevator Company - You try ✏️</h2>
+<countdown-timer id="introductions-timer" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
 <p><strong>For <code>Supplier 2</code></strong></p>
 <p>Use Excel to calculate measures of:</p>
 <ul>
@@ -1005,16 +1007,25 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <section id="data-viz-whiz" class="slide level2 section-slide">
 <h2>Data viz whiz</h2>
 </section>
+<section id="histogram" class="slide level2">
+<h2>Histogram</h2>
+<p>Shows the <strong>distribution or shape</strong> of numerical data</p>
+<ul>
+<li>Possible values are counted or “binned” into bars</li>
+<li>Height of bars represent the number of observations in each bin</li>
+</ul>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="864"></section>
 <section id="box-and-whisker-plot-aka.-boxplot" class="slide level2">
 <h2>Box and whisker plot (aka. boxplot)</h2>
-<p>Shows the <strong>distribution of data</strong></p>
+<p>Shows the <strong>distribution or shape</strong> of numerical data</p>
 <div class="columns">
 <div class="column">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center" width="672"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-11-1.png" class="quarto-figure quarto-figure-center" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1036,56 +1047,318 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 </section>
 <section id="shape-of-data" class="slide level2">
 <h2>Shape of data</h2>
+<h3 id="right-skewed-distribution">Right skewed distribution</h3>
+<ul>
+<li>The long upper tail is on the <strong>right</strong></li>
+<li>Skewness &gt; 0</li>
+</ul>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" width="864"><p>Red = median; black = mean.</p>
 </section>
-<section id="what-type-of-chart" class="slide level2">
-<h2>What type of chart</h2>
-<blockquote>
-<p>The data type determines what chart is used for visualisation</p>
-</blockquote>
-<p>Nominal &amp; Ordinal Discrete Data Numeric data Bar Chart Pie Chart Bar Chart Histogram Box plot Great for Great for illustrating illustrating Great for illustrating the distribution relativity portions or particularly for shares ordinal data</p>
-<h3 id="task-1-real-estate-data">Task 1: Real Estate Data</h3>
-<p>We wish to compare the distribution of house prices for properties within/outside school zone Refer to the workshop data set under Module 1. Refer to the Price column and answer the following questions. a. Generate summary statistics of house prices for properties within/outside the school zone b. Draw two frequency percentage histograms. c.&nbsp;Draw two box plots 24</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=23">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 23</a></em></p>
+<section id="shape-of-data-1" class="slide level2">
+<h2>Shape of data</h2>
+<h3 id="symmetric-distribution">Symmetric distribution</h3>
+<ul>
+<li><strong>Equal</strong> number of high and low values</li>
+<li>Skewness = 0</li>
+</ul>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center r-stretch" width="864"><p>Red = median; black = mean.</p>
 </section>
-<section id="source-page-024" class="slide level2">
-<h2></h2>
-<h3 id="instructions-for-summary-statistics">Instructions for Summary Statistics</h3>
-<ol start="5" type="1">
-<li>Highlight the relevant column and check ‘Labels in the first row’</li>
-<li>Click on Data tab and choose 3. Select Descriptive Statistics 6. Check ‘output range’ box and select a</li>
-<li>Click on Data Analysis 4. Click ‘OK’ blank cell</li>
-<li>Check the ‘Summary statistics’ box</li>
-<li>Click OK</li>
+<section id="shape-of-data-2" class="slide level2">
+<h2>Shape of data</h2>
+<h3 id="left-skewed-distribution">Left skewed distribution</h3>
+<ul>
+<li>The long lower tail is on the <strong>left</strong></li>
+<li>Skewness &lt; 0</li>
+</ul>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center r-stretch" width="864"><p>Red = median; black = mean.</p>
+</section>
+<section id="otis-elevator-company---watch-me-1" class="slide level2">
+<h2>Otis Elevator Company - Watch me 👀</h2>
+<p>Use Excel to generate summary statistics for <code>Supplier 1</code></p>
+<ol type="1">
+<li>Click on <code>Data</code> tab and click on <code>Data Analysis</code></li>
+<li>Select <code>Descriptive Statistics</code> &gt; <code>OK</code></li>
+<li>Under <code>Input range</code>, highlight the relevant column</li>
+<li>Select <code>Grouped by</code> <code>Columns</code> and check <code>Labels in the first row</code></li>
+<li>Check <code>Output range</code> box and select a blank cell</li>
+<li>Check the <code>Summary statistics</code> box &gt; <code>OK</code></li>
 </ol>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image21.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 24.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image22.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 24.</figcaption>
-</figure>
-</div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image23.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 24.</figcaption>
-</figure>
-</div>
-</div></div>
 </section>
-<section id="source-page-025" class="slide level2">
-<h2></h2>
-<h3 id="average-house-prices">Average house prices</h3>
+<section id="otis-elevator-company---you-try-1" class="slide level2">
+<h2>Otis Elevator Company - You try ✏️</h2>
+<countdown-timer id="introductions-timer" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+<p>Use Excel to generate summary statistics for <code>Supplier 2</code></p>
+<ol type="1">
+<li>Click on <code>Data</code> tab and click on <code>Data Analysis</code></li>
+<li>Select <code>Descriptive Statistics</code> &gt; <code>OK</code></li>
+<li>Under <code>Input range</code>, highlight the relevant column</li>
+<li>Select <code>Grouped by</code> <code>Columns</code> and check <code>Labels in the first row</code></li>
+<li>Check <code>Output range</code> box and select a blank cell</li>
+<li>Check the <code>Summary statistics</code> box &gt; <code>OK</code></li>
+</ol>
+</section>
+<section id="otis-elevator-company---watch-me-2" class="slide level2">
+<h2>Otis Elevator Company - Watch me 👀</h2>
+<p>Use Excel to make a boxplot for <code>Supplier 1</code></p>
+<ol type="1">
+<li>Highlight the relevant column</li>
+<li>Go to <code>Insert</code> &gt; <code>Chart</code></li>
+<li>Select <code>Box and Whisker</code></li>
+</ol>
+</section>
+<section id="otis-elevator-company---you-try-2" class="slide level2">
+<h2>Otis Elevator Company - You try ✏️</h2>
+<countdown-timer id="introductions-timer" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+<p>Use Excel to make a boxplot for <code>Supplier 2</code></p>
+<ol type="1">
+<li>Highlight the relevant column</li>
+<li>Go to <code>Insert</code> &gt; <code>Chart</code></li>
+<li>Select <code>Box and Whisker</code></li>
+</ol>
+</section>
+<section id="counting-things-in-excel" class="slide level2 section-slide">
+<h2>Counting things in Excel</h2>
+</section>
+<section id="real-estate-data" class="slide level2 smaller">
+<h2>Real Estate Data</h2>
+<p>Each row of the <a href="week1-data.xlsx"><code>RealEstate</code> worksheet</a> is one property (329 properties).</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Meaning</th>
+<th>Data type and units</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>Price ($000s)</code></td>
+<td>Property price</td>
+<td>Numerical, AUD thousands</td>
+</tr>
+<tr class="even">
+<td><code>Beds</code></td>
+<td>Number of bedrooms</td>
+<td>Numerical, discrete count</td>
+</tr>
+<tr class="odd">
+<td><code>Baths</code></td>
+<td>Number of bathrooms</td>
+<td>Numerical, discrete count</td>
+</tr>
+<tr class="even">
+<td><code>Cars</code></td>
+<td>Number of car spaces</td>
+<td>Numerical, discrete count</td>
+</tr>
+<tr class="odd">
+<td><code>Area (sqm)</code></td>
+<td>Property area</td>
+<td>Numerical, square metres</td>
+</tr>
+<tr class="even">
+<td><code>SchoolZone</code></td>
+<td>In a school zone</td>
+<td>Categorical, Yes/No</td>
+</tr>
+<tr class="odd">
+<td><code>Auction</code></td>
+<td>Auction status</td>
+<td>Categorical, Yes/No</td>
+</tr>
+<tr class="even">
+<td><code>New</code></td>
+<td>New property</td>
+<td>Categorical, Yes/No</td>
+</tr>
+<tr class="odd">
+<td><code>Subdivided</code></td>
+<td>Subdivided property</td>
+<td>Categorical, Yes/No</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<section id="real-estate---watch-me" class="title-slide slide level1 center">
+<h1>Real Estate - Watch me 👀</h1>
+<p>Count functions:</p>
+<ul>
+<li><code>=COUNT(range)</code> — counts cells containing numbers.</li>
+<li><code>=COUNTA(range)</code> — counts non-empty cells, including numbers and text.</li>
+<li><code>=COUNTIF(range, criterion)</code> — counts cells meeting one condition, such as <code>=COUNTIF(A2:A11,"&lt;5")</code>.</li>
+</ul>
+</section>
+<section id="frequency-tables---pivot-table---watch-me" class="slide level2">
+<h2>Frequency tables - <code>Pivot Table</code> - Watch me 👀</h2>
+<ul>
+<li>A <strong>Pivot Table</strong> groups your data and summarises them.</li>
+<li>e.g.&nbsp;Use <strong>Counts</strong> to make a frequency table for categories.</li>
+</ul>
+<p><strong>How many properties have been sold in an <code>Auction</code> (<code>Yes/No</code>)</strong></p>
+<ol type="1">
+<li>Choose <strong>Insert &gt; PivotTable</strong>.</li>
+<li><code>Select a table or range</code> &gt; highlight the entire of the dataset</li>
+<li><code>Choose where to place Pivot Table</code> &gt; <code>New worksheet</code> &gt; OK</li>
+<li><code>Auction</code> in <strong>Rows</strong>.</li>
+<li>Put <code>Beds</code> in <strong>Values</strong> and change <strong>Sum of Beds</strong> to <strong>Count of Beds</strong>.</li>
+</ol>
+<p><strong>Note</strong>: Every property has a <code>Beds</code> entry, so this counts properties.</p>
+</section>
+<section id="frequency-tables---pivot-table" class="slide level2">
+<h2>Frequency tables - <code>Pivot Table</code></h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Auction</th>
+<th style="text-align: right;">Count of Beds (properties)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>No</td>
+<td style="text-align: right;">151</td>
+</tr>
+<tr class="even">
+<td>Yes</td>
+<td style="text-align: right;">178</td>
+</tr>
+<tr class="odd">
+<td><strong>Grand Total</strong></td>
+<td style="text-align: right;"><strong>329</strong></td>
+</tr>
+</tbody>
+</table>
+<p>For example, <strong>178</strong> properties have <code>Auction = Yes</code>.</p>
+</section>
+<section id="frequency-percentage-tables---pivot-table---watch-me" class="slide level2 smaller">
+<h2>Frequency percentage tables - <code>Pivot Table</code> - Watch me 👀</h2>
+<p>Create a Pivot Table of <strong>percentage of properties</strong> in each area band.</p>
+<ol type="1">
+<li>Select the dataset, then choose <strong>Insert &gt; PivotTable &gt; New Worksheet</strong>.</li>
+<li>Put <code>Area (sqm)</code> in <strong>Rows</strong>. Put <code>Beds</code> in <strong>Values</strong> and set <strong>Summarize Values By &gt; Count</strong>; every property has a <code>Beds</code> entry.</li>
+<li>Right-click an area value in the PivotTable and choose <strong>Group</strong>. Set <strong>Starting at: 0</strong>, <strong>Ending at: 1600</strong>, <strong>By: 200</strong> to create 200 sqm bands.</li>
+<li>Open <strong>Value Field Settings</strong> for <code>Count of Beds</code>, then choose <strong>Show Values As &gt; % of Grand Total</strong>. Format the result as a percentage with one decimal place.</li>
+</ol>
+<p>For example, <strong>192 of 329 properties</strong> fall in the <strong>600–799 sqm</strong> band, so its frequency percentage is <strong>58.4%</strong>. The Grand Total should be <strong>100%</strong>.</p>
+</section>
+<section id="area-frequency-percentage-table" class="slide level2 smaller">
+<h2>Area frequency percentage table</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Area band (sqm)</th>
+<th style="text-align: right;">Number of properties</th>
+<th style="text-align: right;">Percentage of properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0–199</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2.1%</td>
+</tr>
+<tr class="even">
+<td>200–399</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">23.7%</td>
+</tr>
+<tr class="odd">
+<td>400–599</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4.3%</td>
+</tr>
+<tr class="even">
+<td>600–799</td>
+<td style="text-align: right;">192</td>
+<td style="text-align: right;">58.4%</td>
+</tr>
+<tr class="odd">
+<td>800–999</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">10.0%</td>
+</tr>
+<tr class="even">
+<td>1000–1199</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1.2%</td>
+</tr>
+<tr class="odd">
+<td>1200–1399</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0%</td>
+</tr>
+<tr class="even">
+<td>1400–1599</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.3%</td>
+</tr>
+<tr class="odd">
+<td><strong>Grand Total</strong></td>
+<td style="text-align: right;"><strong>329</strong></td>
+<td style="text-align: right;"><strong>100.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Keep the empty 1200–1399 sqm band so every interval is represented in the chart.</p>
+</section>
+<section id="plot-the-area-frequency-table-as-a-histogram" class="slide level2 smaller">
+<h2>Plot the area frequency table as a histogram</h2>
+<ol type="1">
+<li>Select the <strong>Area band</strong> and <strong>Percentage of properties</strong> columns, excluding <strong>Grand Total</strong>. Use the complete table above if the PivotTable omits the empty band.</li>
+<li>Choose **Insert &gt; Column.</li>
+<li>Right-click a bar and choose <strong>Format Data Series</strong>. Set <strong>Gap Width</strong> to <strong>0%</strong> so adjacent area bands touch.</li>
+<li>Check that the horizontal axis shows the 200 sqm bands in order and the vertical axis shows percentages starting at 0%.</li>
+</ol>
+<p><strong>Note</strong>: Excel’s built-in Histogram chart is for raw observations only; this chart uses the frequency percentage table made with Pivot Table.</p>
+</section>
+<section id="what-chart-type" class="slide level2">
+<h2>What chart type?</h2>
+<blockquote>
+<p>Your data type determines your eventual data visualisation</p>
+</blockquote>
+</section>
+<section id="exercise-real-estate-you-try" class="slide level2 smaller">
+<h2>Exercise: Real Estate — You try ✏️</h2>
+<p><strong>Q1.</strong> Use <code>COUNTIF()</code> in Excel:</p>
+<ol type="1">
+<li>How many properties have <strong>three bedrooms or more</strong>?</li>
+<li>How many properties have <strong>three bathrooms or more</strong>?</li>
+</ol>
+<p><strong>Q2.</strong> Compare the distribution of house prices <strong>within and outside the school zone</strong>. Refer to the <code>Price ($000s)</code> column:</p>
+<ol type="1">
+<li>Generate summary statistics for each group.</li>
+<li>Construct two frequency percentage histograms, one for each group.</li>
+<li>Construct two box plots to compare the groups.</li>
+</ol>
+</section>
+<section id="exercise-real-estate-you-try-1" class="slide level2 smaller">
+<h2>Exercise: Real Estate — You try ✏️</h2>
+<p><strong>Q3.</strong> Refer to the number of bedrooms in the <code>RealEstate</code> worksheet:</p>
+<ol type="1">
+<li>Choose an appropriate graph for this variable.</li>
+<li>Construct a relative frequency table for the number of bedrooms using a PivotTable.</li>
+<li>What is the frequency of <strong>three bedrooms</strong>?</li>
+<li>Construct a chart from your relative frequency table for ed-ie.com.</li>
+</ol>
+</section>
+<section id="exercise-real-estate-you-try-2" class="slide level2 smaller">
+<h2>Exercise: Real Estate — You try ✏️</h2>
+<p><strong>Q4.</strong> Refer to <code>Price ($000s)</code> in the <code>RealEstate</code> worksheet:</p>
+<ol type="1">
+<li>Construct a relative frequency table for price using a PivotTable.</li>
+<li>Group the price values, setting <strong>Starting at: 500</strong> and <strong>By: 500</strong>.</li>
+<li>What changed in the PivotTable’s price field after grouping?</li>
+</ol>
+<p>Answer the exercise questions in Moodle.</p>
+</section>
+<section id="average-house-prices" class="slide level2">
+<h2>Average house prices</h2>
 <p>Let’s compare the distribution of house prices within/outside school zone Price (School Zone) Price (Outside School Zone) Mean 1258.79 1046.04 Median 1225.50 980.00 Var 178200.41 130871.38 Stdev 422.14 361.76 Skewness 1.76 2.74 Q1 987.25 858.00 Q3 1405.25 1180.00 IQR 418.00 322.00 Range 3195.00 2430.00 26</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=25">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 25</a></em></p>
 </section>
@@ -1094,16 +1367,7 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <h3 id="average-house-prices-1">Average house prices</h3>
 <p>Let’s compare the distribution of house prices within/outside school zone Price (School Zone) Price (Outside School Zone) Mean 1258.79 1046.04 Median 1225.50 980.00 Var 178200.41 130871.38 Stdev 422.14 361.76 Skewness 1.76 2.74 Q1 987.25 858.00 Q3 1405.25 1180.00 IQR 418.00 322.00 Range 3195.00 2430.00 Houses in the school zone tend to be more expensive, with higher mean and median 27</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=26">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 26</a></em></p>
-</section>
-<section id="source-page-027" class="slide level2">
-<h2></h2>
 <h3 id="measures-of-variability">Measures of Variability</h3>
-<p>Price (School Zone) Price (Outside School Zone) - Range Mean 1258.79 1046.04 - Inter-quartile Median 1225.50 980.00 range (IQR) Var 178200.41 130871.38 Stdev 422.14 361.76 - Variance Skewness 1.76 2.74 - Standard Q1 987.25 858.00 deviation Q3 1405.25 1180.00 IQR 418.00 322.00 - Coefficient of Variation (CV) Range 3195.00 2430.00 What do these statistics measure? 28</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=27">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 27</a></em></p>
-</section>
-<section id="source-page-028" class="slide level2">
-<h2></h2>
-<h3 id="measures-of-variability-1">Measures of Variability</h3>
 <p>Range to The difference between the maximum and the minimum values. It relies just on the two most extreme values in the dataset. =MAX(…)-MIN(…) Interquartile Range (IQR) to the spread of the middle 50% of the data. IQR =Q3 -Q1 Q1 =QUARTILE.EXC(…,1) Q3 =QUARTILE.EXC(…,3) Variance: average of the squared deviations (distance) from the mean =VAR.S(…) Standard Deviation = Variance . =STDEV.S(…) Standard deviation Coefficient of Variation (cv): measures relative variation = Mean x 100% 29</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=28">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 28</a></em></p>
 <div class="columns">
@@ -1129,73 +1393,6 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <p>Price (School Zone) Price (Outside School Zone) Mean 1258.79 1046.04 Median 1225.50 980.00 Var 178200.41 130871.38 Stdev 422.14 361.76 Skewness 1.76 2.74 Q1 987.25 858.00 Q3 1405.25 1180.00 IQR 418.00 322.00 Range 3195.00 2430.00 There is a greater degree of absolute variability of houses in the school zone and only slightly lower relative variability. Range: $3.195m vs $2.43m; IQR:$418k vs $322k; standard deviation: $422k vs $362k CV: 33.54% vs 34.45% (standard deviation/mean *100%) 30</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=29">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 29</a></em></p>
 </section>
-<section id="source-page-030" class="slide level2">
-<h2></h2>
-<h3 id="shape-of-distributions">Shape of Distributions</h3>
-<p>Skewness measures how symmetric the distribution is - Positive statistic to positive skewed, right tail longer than the left tail - Negative statistic to negative skewed, left tail longer than the right tail Left-Skewed Symmetric Right-Skewed <span class="math display">
-(Skewness &lt; 0)                   (Skewness = 0)                        (Skewness &gt; 0)
-</span> Mean &lt; Median Mean = Median Mean &gt; Median Some very “low” values An equal number of “low” &amp; Some very “high” values The mean is pulled left toward “high” values. The mean stays The mean is pulled right toward the “tail” of the distribution in the centre of the distribution the “tail” of the distribution</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=30">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 30</a></em></p>
-</section>
-<section id="source-page-031" class="slide level2">
-<h2></h2>
-<h3 id="visualization-of-numerical-data-using-box-plot">Visualization of Numerical Data using Box Plot</h3>
-<p>Max A graphical representation of the data based on the 5-number summary. Refer to page 121 of the textbook. Q3 Mean Median Q1 Min 32</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=31">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 31</a></em></p>
-</section>
-<section id="source-page-032" class="slide level2">
-<h2></h2>
-<h3 id="shape-of-distributions-and-box-plots">Shape of Distributions and Box Plots</h3>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=32">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 32</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image26.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 32.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image27.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 32.</figcaption>
-</figure>
-</div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image28.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 32.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image29.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 32.</figcaption>
-</figure>
-</div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image30.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 32.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image31.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 32.</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
 <section id="source-page-033" class="slide level2">
 <h2></h2>
 <h3 id="example-shape-of-the-house-price-distribution">Example: Shape of the house price distribution</h3>
@@ -1207,17 +1404,17 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <h3 id="visualization-of-numerical-data-using-histograms">Visualization of Numerical Data using Histograms</h3>
 <p>House Prices School Zone Histogram of House Prices (Outside School Zone) 0.3 16 14 0.25 12 0.2 10 Percentage 8 0.15 6 0.1 4 2 0.05 0 0 Prices ($) 35</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=34">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 34</a></em></p>
-</section>
-<section id="source-page-035" class="slide level2">
-<h2></h2>
-<h3 id="visualization-of-numerical-data-using-box-plot-1">Visualization of Numerical Data using Box Plot</h3>
-<p>Insert &gt; Histogram &gt; Box and Whisker You can plot multiple data series on the same plot As long as they are of the same units! 36</p>
+<h3 id="visualization-of-numerical-data-using-box-plot">Visualization of Numerical Data using Box Plot</h3>
+<ul>
+<li>Insert &gt; Histogram &gt; Box and Whisker</li>
+<li>You can plot multiple data series on the same plot As long as they are of the same units!</li>
+</ul>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=35">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 35</a></em></p>
 
 <img data-src="figures/etx5900/components/image32.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 35.</p></section>
 <section id="source-page-036" class="slide level2">
 <h2></h2>
-<h3 id="visualization-of-numerical-data-using-box-plot-2">Visualization of Numerical Data using Box Plot</h3>
+<h3 id="visualization-of-numerical-data-using-box-plot-1">Visualization of Numerical Data using Box Plot</h3>
 <ul>
 <li>Houses outside the school zone tend to be less expensive</li>
 <li>The distribution is less variable in absolute terms (tighter box) for houses outside the zone and only marginally higher (or almost the same) in terms of relative variability</li>
@@ -1247,37 +1444,6 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <li>Draw an appropriate graph. Bin Range Frequency Relative Frequency 500-999 1000-1499 1500-1999 2000-2499 2500-2999 3000-3499 3500-3999</li>
 </ol>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=39">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 39</a></em></p>
-</section>
-<section id="source-page-040" class="slide level2">
-<h2></h2>
-<h3 id="h-i-g-h-l-i-g-h-t-o-n-e-d-a-t-a-cel-l">1. H i g h l i g h t o n e d a t a cel l</h3>
-<ol start="2" type="1">
-<li>Insert to Pivot table (in Mac Data to Pivot table)</li>
-<li>I n ser t to P i v o t t a b l e (in M a c Data to P i v o t t ab l e ) 3 . S e l e c t e xi s t i n g w o r k s h e e t 4 . S p e c i f y t h e c el l l o c a t i o n toOK 5 . D r ag a n d d r o p p r i c e t o t h e ’ R o w s ’ q u a d r a n t 6 . D r ag a n d d r o p p r i c e ag ai n t o t h e ’ v a l u e s ’ q u a d r a n t P i v o t T a b l e</li>
-</ol>
-<ul>
-<li>. .. L</li>
-<li><ul>
-<li>Price ($’o00) l I 1100 - 4 1095 – -</li>
-</ul></li>
-<li><ul>
-<li></li>
-</ul></li>
-<li>1150</li>
-<li>1087 870 120 0</li>
-</ul>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=40">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 40</a></em></p>
-
-<img data-src="figures/etx5900/components/image34.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 40.</p></section>
-<section id="source-page-041" class="slide level2">
-<h2></h2>
-<h3 id="c-h-a-n-g-e-t-h-e-v-a-l-u-e-fi-e-ld-s-e-l-e-c-t-v-a-l-u-e-fi-e-l-d-s-h-o-w-v-alu-e-s-a-s---o-f-r-i-g-h-t-c-li-c-k-o-n-a-n-y-o-f-t-h-e">C h a n g e t h e v a l u e fi e ld S e l e c t ’ V a l u e fi e l d S h o w v alu e s a s - &gt; % o f R i g h t c li c k o n a n y o f t h e</h3>
-<p>s e t t i n g s ’ s u m o f P r i c e’ to se t ti n g s ’ -&gt; s u m m a r i s e G r a n d Total v a l u e s in t h e fi r s t c o l u m n C o u n t o f Price v a l u e fi e l d b y - &gt; c o u n t ( P r i c e $ ’ 0 0 0} P r ic e ($’o00) 0 . 3 0% 550 0 . 3 0% 5 70 0 . 3 0% 0 . 3 0% 0 . 3 0% — 64 S 0 . 3 0% 0 . 3 0% 65 0 0. 61% 0 . 3 0% 0.61% … 0 . 3 0% 0 . 3 0% 0 . 3 0% S e l e c t G r o u p (T he w i n d o w C h a n g e : s t a r t i n g a t 50 0, Final Table T h i s is t h e c r i t e r i a f o r g r o u p i n g o n t h e r i g h t w i l l p o p up) end inR at 3 7 0 0 , bv 500 G ro up in g X Price ($’000) - C o u nt o f Price ($’000) A uto 500-999 31.61 Au to 1000-1499 52.58% St art ing at: 505 5 t a rt i n g at: 500 1500-1999 10.64 .Ending at: 3700 2000-2499 2.74% E n d i n g at: 3700 By: , o oo 2500-2999 1.52 By: 3000-3499 0.61% Cancel 350()..3999 Can c el G ra nd T o b i</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=41">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 41</a></em></p>
-
-<img data-src="figures/etx5900/components/image35.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 41.</p></section>
-<section id="source-page-042" class="slide level2">
-<h2></h2>
 <h3 id="highlight-the-pivot-table">1. Highlight the pivot table</h3>
 <ol type="1">
 <li>Highlight the pivot table</li>
@@ -1303,7 +1469,7 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=44">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 44</a></em></p>
 
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
