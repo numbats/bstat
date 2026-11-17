@@ -1726,20 +1726,20 @@
     "href": "week1/slides.html#spread---sample-standard-deviation-s-1",
     "title": "Describing and visualising data",
     "section": "Spread - sample standard deviation s",
-    "text": "Spread - sample standard deviation s\n\nHow much variation (or disperson) exists is the data?\n\n=STDEV.S(...)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}}\n\n\nUnit is the same as the original variable\nPositive and negative values"
+    "text": "Spread - sample standard deviation s\n\nHow much variation (or disperson) exists is the data?\n\n=STDEV.S(...)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}}\n\n\nUnit is the same as the original variable"
   },
   {
-    "objectID": "week1/slides.html#common-descriptive-statistics-excel-functions",
-    "href": "week1/slides.html#common-descriptive-statistics-excel-functions",
+    "objectID": "week1/slides.html#spread---sample-variance-s2",
+    "href": "week1/slides.html#spread---sample-variance-s2",
     "title": "Describing and visualising data",
-    "section": "Common descriptive statistics Excel functions",
-    "text": "Common descriptive statistics Excel functions\nSome functions we will use over this course. A:A means “with all values in column A”\n\n\n\nType\nExcel formula\n\n\n\n\nMean\n=AVERAGE(A:A)\n\n\nMedian\n=MEDIAN(A:A)\n\n\nSample standard deviation\n=STDEV.S(A:A)\n\n\nMinimum\n=MIN(A:A)\n\n\nMaximum\n=MAX(A:A)\n\n\n\nVariance and Standard Deviation\nVariance is the mean squared deviation from the mean. Population variance is \\sigma^2; sample variance is s^2 (an estimate of population variance). - Variance has squared units, which can be hard to interpret. Standard deviation is the square root of variance. Population standard deviation is \\sigma; sample standard deviation is s. - Advantage: Easier to interpret as units are the same as the original data 14\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 14\n\n\n\n\n\nVisual from source page 14.\n\n\n\n\n\n\nVisual from source page 14."
+    "section": "Spread - sample variance s^2",
+    "text": "Spread - sample variance s^2\n=VAR.S(...)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\begin{aligned}\ns^2 &= \\left( \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}} \\right)^2 \\\\\n    &= \\left(s\\right)^2\n\\end{aligned}\n\n\nSquared units e.g. \\text{cm}^2"
   },
   {
-    "objectID": "week1/slides.html#source-page-015",
-    "href": "week1/slides.html#source-page-015",
+    "objectID": "week1/slides.html#variance-and-standard-deviation---example",
+    "href": "week1/slides.html#variance-and-standard-deviation---example",
     "title": "Describing and visualising data",
-    "section": "",
+    "section": "Variance and Standard Deviation - example",
     "text": "Variance and Standard Deviation - example\nOtis Elevator Company uses 1-inch-diameter elevator rails. There are two potential suppliers. To decide between the suppliers, the manager obtains a sample of 10 rails from each supplier. Which supplier is preferred? 15\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 15\n\nVisual from source page 15."
   },
   {

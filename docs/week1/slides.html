@@ -875,67 +875,40 @@ s = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}}
 </span></p>
 <ul>
 <li class="fragment">Unit is the same as the original variable</li>
-<li class="fragment">Positive and negative values</li>
 </ul>
 </div>
 </div></div>
 </section>
-<section id="common-descriptive-statistics-excel-functions" class="slide level2">
-<h2>Common descriptive statistics Excel functions</h2>
-<p>Some functions we will use over this course. <code>A:A</code> means “with all values in column A”</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Type</th>
-<th>Excel formula</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mean</td>
-<td><code>=AVERAGE(A:A)</code></td>
-</tr>
-<tr class="even">
-<td>Median</td>
-<td><code>=MEDIAN(A:A)</code></td>
-</tr>
-<tr class="odd">
-<td>Sample standard deviation</td>
-<td><code>=STDEV.S(A:A)</code></td>
-</tr>
-<tr class="even">
-<td>Minimum</td>
-<td><code>=MIN(A:A)</code></td>
-</tr>
-<tr class="odd">
-<td>Maximum</td>
-<td><code>=MAX(A:A)</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="variance-and-standard-deviation">Variance and Standard Deviation</h3>
-<p>Variance is the mean squared deviation from the mean. Population variance is <span class="math inline">\sigma^2</span>; sample variance is <span class="math inline">s^2</span> (an estimate of population variance). - Variance has squared units, which can be hard to interpret. Standard deviation is the square root of variance. Population standard deviation is <span class="math inline">\sigma</span>; sample standard deviation is <span class="math inline">s</span>. - Advantage: Easier to interpret as units are the same as the original data 14</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=14">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 14</a></em></p>
+<section id="spread---sample-variance-s2" class="slide level2">
+<h2>Spread - sample variance <span class="math inline">s^2</span></h2>
+<p><code>=VAR.S(...)</code></p>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:70%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/etx5900/components/image11.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 14.</figcaption>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
 </figure>
 </div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image12.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 14.</figcaption>
-</figure>
+</div>
+</div>
+</div><div class="column" style="width:30%;">
+<div style="font-size: 70%;">
+<p><span class="math display">
+\begin{aligned}
+s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^2 \\
+    &amp;= \left(s\right)^2
+\end{aligned}
+</span></p>
+<ul>
+<li>Squared units e.g.&nbsp;<span class="math inline">\text{cm}^2</span></li>
+</ul>
 </div>
 </div></div>
 </section>
-<section id="source-page-015" class="slide level2">
-<h2></h2>
-<h3 id="variance-and-standard-deviation---example">Variance and Standard Deviation - example</h3>
+<section id="variance-and-standard-deviation---example" class="slide level2">
+<h2>Variance and Standard Deviation - example</h2>
 <p>Otis Elevator Company uses 1-inch-diameter elevator rails. There are two potential suppliers. To decide between the suppliers, the manager obtains a sample of 10 rails from each supplier. Which supplier is preferred? 15</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=15">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 15</a></em></p>
 
@@ -949,7 +922,7 @@ s = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}}
 <img data-src="figures/etx5900/components/image14.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 16.</p></section>
 <section id="source-page-017" class="slide level2">
 <h2></h2>
-<h3 id="variance-and-standard-deviation-1">Variance and Standard Deviation</h3>
+<h3 id="variance-and-standard-deviation">Variance and Standard Deviation</h3>
 <p>Although each value in the data set is used in the calculation, there are several disadvantages: - Sensitive to extreme values (outliers) - Measures of absolute variation, not relative variation - We cannot compare values that have different units 17</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=17">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 17</a></em></p>
 
