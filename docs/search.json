@@ -1523,7 +1523,7 @@
     "href": "week1/slides.html#todays-roadmap",
     "title": "Describing and visualising data",
     "section": "Today’s roadmap",
-    "text": "Today’s roadmap\n\nUnit overview\n\nAssessments\nAI and tips on how to thrive\nHow workshops will run\n\nYour Excel toolbelt\n10 MINUTE BREAK\nTaxonomy of statistics\n\nStatistical lingo\n\nData viz\nIn-class exercise"
+    "text": "Today’s roadmap\n\nUnit overview\n\nAssessments\nAI and tips on how to thrive\nHow workshops will run\n\nYour Excel toolbelt\n10 MINUTE BREAK\nTaxonomy of statistics\nData viz\nIn-class exercise"
   },
   {
     "objectID": "week1/slides.html#unit-overview",
@@ -1694,11 +1694,25 @@
     "text": "Types of Variables\n\n\nNumerical\n\nQuantitative data organised in groups\n\nDiscrete, countable\n\ne.g. number of chicken nuggets sold\n\nContinuous, requires a measuring process\n\ne.g. grams of protein, price for stock\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class C,F,G numerical;"
   },
   {
-    "objectID": "week1/slides.html#describing-numerical-data",
-    "href": "week1/slides.html#describing-numerical-data",
+    "objectID": "week1/slides.html#statistical-lingo",
+    "href": "week1/slides.html#statistical-lingo",
     "title": "Describing and visualising data",
-    "section": "Describing Numerical Data",
-    "text": "Describing Numerical Data\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class C,F,G numerical;\n\n\n\n\n\n\n\nNumerical Data Central Quartiles Variation Shape Tendency Arithmetic Interquartile Standard Coefficient Median Mode Percentiles Range Variance Skewness Mean Range Deviation of Variation Are there any What is the typical or the central How much variation in the distribution? unusual values value? that contribute to 13 the distribution?\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 13"
+    "section": "Statistical lingo",
+    "text": "Statistical lingo"
+  },
+  {
+    "objectID": "week1/slides.html#talking-about-numerical-data",
+    "href": "week1/slides.html#talking-about-numerical-data",
+    "title": "Describing and visualising data",
+    "section": "Talking about numerical data",
+    "text": "Talking about numerical data\n\n\n\nCentral tendency - what is the typical value like in this data?\nSpread - how much variation exists is the data?\nShape - Where is the bulk of the data?\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class C,F,G numerical;"
+  },
+  {
+    "objectID": "week1/slides.html#central-tendency",
+    "href": "week1/slides.html#central-tendency",
+    "title": "Describing and visualising data",
+    "section": "Central tendency",
+    "text": "Central tendency\n\nWhat is the typical value like in this data?"
   },
   {
     "objectID": "week1/slides.html#common-descriptive-statistics-excel-functions",
