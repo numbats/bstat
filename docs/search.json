@@ -1544,7 +1544,7 @@
     "href": "week1/slides.html#assessments",
     "title": "Describing and visualising data",
     "section": "Assessments",
-    "text": "Assessments\n\nWeekly Take home quiz due on the following Monday*\nW4 quiz due on Sunday\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nAssessment\nIn class Activity\n\n\n\n\n1\n24/11/2026\nDescribing and visualising data\nQuiz 1\nExercises 1\n\n\n2\n1/12/2026\nProbability and distributions\nQuiz 2\nExercises 2\n\n\n3\n08/12/2026\nSampling and estimation\nQuiz 3\nExercises 3\n\n\n4\n15/12/2026\nTesting business claims\nQuiz* 4\nExercises 4\n\n\n\n21 – 28/12/2026\nMid Semester Break\n\n\n\n\n5\n05/01/2027\nRelationships and introduction to simple regression\nQuiz 5Written Assignment\nExercises 5\n\n\n6\n12/01/2027\nMultiple regression and model evaluation\nQuiz 6\nExercises 6\n\n\n7\n19/01/2027\nIntroduction to time series and forecasting\nQuiz 7\nExercises 7\n\n\n8\n*29/01/2027\nIntegrated business case, communication, and revision"
+    "text": "Assessments\n\nWeekly take home quiz due on the following Monday except W4, due Sunday*\n**Class moved to a Friday due to public holiday\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nAssessment\nIn class Activity\n\n\n\n\n1\n24/11/2026\nDescribing and visualising data\nQuiz 1\nExercises 1\n\n\n2\n1/12/2026\nProbability and distributions\nQuiz 2\nExercises 2\n\n\n3\n08/12/2026\nSampling and estimation\nQuiz 3\nExercises 3\n\n\n4\n15/12/2026\nTesting business claims\nQuiz 4*\nExercises 4\n\n\n\n21 – 28/12/2026\nMid Semester Break\n\n\n\n\n5\n05/01/2027\nRelationships and introduction to simple regression\nQuiz 5Written Assignment\nExercises 5\n\n\n6\n12/01/2027\nMultiple regression and model evaluation\nQuiz 6\nExercises 6\n\n\n7\n19/01/2027\nIntroduction to time series and forecasting\nQuiz 7\nExercises 7\n\n\n8\n**29/01/2027\nIntegrated business case, communication, and revision"
   },
   {
     "objectID": "week1/slides.html#the-ai-elephant-in-the-room",
@@ -1558,7 +1558,7 @@
     "href": "week1/slides.html#how-to-thrive-with-ai",
     "title": "Describing and visualising data",
     "section": "How to thrive (with AI)",
-    "text": "How to thrive (with AI)\n\nBe curious\n\nAnything unclear - ask away!\nDiscuss with fellow students, tutors, post a question on ed-ie.com\nQuestion everything\n\nParticipate in class actively\n\nConsider putting your phone on silent unless you need to be on call\nTake notes \n\nEngage with learning materials (quizes + exercises)\n\nRead materials\nDoing materials with friends &gt; with AI\nRevise notes\n\nPractice\n\nYou’re learning a new skill, you’re suppose to suck at the start\nFind those weak spots\nFill them with readings, research, AI suggested exercises"
+    "text": "How to thrive (with AI)\n\nBe curious\n\nAnything unclear - ask away!\nDiscuss with fellow students, tutors, post a question on ed-ie.com\nQuestion everything\n\nParticipate in class actively\n\nConsider putting your phone on silent unless you need to be on call\nTake notes \n\nEngage with learning materials (quizes + exercises)\n\nRead materials\nDoing materials with friends &gt; with AI\nRevise notes\n\nPractice\n\nYou’re learning a new skill, you’re suppose to suck at the start\nFind those weak spots *- Fill them with readings, research, AI suggested exercises"
   },
   {
     "objectID": "week1/slides.html#we-have-your-back",
@@ -1719,14 +1719,7 @@
     "href": "week1/slides.html#spread---sample-standard-deviation-s",
     "title": "Describing and visualising data",
     "section": "Spread - sample standard deviation s",
-    "text": "Spread - sample standard deviation s\n\nHow much variation (or disperson) exists is the data?\n\n=STDEV.S(...)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}}\n\n\nx_i: Each individual data point in the sample\n\\bar{x}: Sample mean\nn: Total number of observations in the sample"
-  },
-  {
-    "objectID": "week1/slides.html#spread---sample-standard-deviation-s-1",
-    "href": "week1/slides.html#spread---sample-standard-deviation-s-1",
-    "title": "Describing and visualising data",
-    "section": "Spread - sample standard deviation s",
-    "text": "Spread - sample standard deviation s\n\nHow much variation (or disperson) exists is the data?\n\n=STDEV.S(...)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}}\n\n\nUnit is the same as the original variable"
+    "text": "Spread - sample standard deviation s\n\nHow much variation (or disperson) exists is the data?\n\n=STDEV.S(...)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}}\n\n\nx_i: Each individual data point in the sample\n\\bar{x}: Sample mean\nn: Total number of observations in the sample\nUnit is the same as the original variable"
   },
   {
     "objectID": "week1/slides.html#spread---sample-variance-s2",
@@ -1734,6 +1727,13 @@
     "title": "Describing and visualising data",
     "section": "Spread - sample variance s^2",
     "text": "Spread - sample variance s^2\n=VAR.S(...)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\begin{aligned}\ns^2 &= \\left( \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}} \\right)^2 \\\\\n    &= \\left(s\\right)^2\n\\end{aligned}\n\n\nSquared units e.g. \\text{cm}^2"
+  },
+  {
+    "objectID": "week1/slides.html#spread---population-and-sample",
+    "href": "week1/slides.html#spread---population-and-sample",
+    "title": "Describing and visualising data",
+    "section": "Spread - population and sample",
+    "text": "Spread - population and sample\n\n\n\n\n\n\n\n\n\nData available\nSD\nVariance\nExcel\n\n\n\n\nSample used to estimate a population\n\\displaystyle s=\\sqrt{\\frac{\\sum_{i=1}^{n}(x_i-\\bar{x})^2}{n-1}}\ns^2=(s)^2\nSTDEV.S, VAR.S\n\n\nEntire population\n\\displaystyle \\sigma=\\sqrt{\\frac{\\sum_{i=1}^{N}(x_i-\\mu)^2}{N}}\n\\sigma^2=(\\sigma)^2\nSTDEV.P, VAR.P"
   },
   {
     "objectID": "week1/slides.html#variance-and-standard-deviation---example",
@@ -1747,35 +1747,7 @@
     "href": "week1/slides.html#source-page-016",
     "title": "Describing and visualising data",
     "section": "",
-    "text": "Otis Elevator Company\nMean and median: 1 inch for both suppliers Variance: Supplier 2 &gt; Supplier 1 (0.001200 &gt; 0.000133) - Supplier 1 preferred: less variation around the mean. - However, variances are difficult to interpret because their units are inches squared, not inches. Standard deviation: Supplier 2 &gt; Supplier 1 (0.0346 &gt; 0.0115) - Supplier 1’s standard deviation is about 1/3 of Supplier 2’s standard deviation. Quite a disparity! Given that Otis wants 1-inch diameter rails, Supplier 1 is preferred. 16\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 16\n\nVisual from source page 16."
-  },
-  {
-    "objectID": "week1/slides.html#source-page-017",
-    "href": "week1/slides.html#source-page-017",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "Variance and Standard Deviation\nAlthough each value in the data set is used in the calculation, there are several disadvantages: - Sensitive to extreme values (outliers) - Measures of absolute variation, not relative variation - We cannot compare values that have different units 17\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 17\n\nVisual from source page 17."
-  },
-  {
-    "objectID": "week1/slides.html#source-page-018",
-    "href": "week1/slides.html#source-page-018",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "Coefficient of variation (CV) EXCLUDE\n\nMeasures relative variation (relative to the mean)\nVery useful for comparing the variation of two or more data sets, which are: check Measured in different units and/or check Are of different magnitudes\nThe CV is always expressed as a percentage: CV=(s/\\bar{x})\\times100\\%.\n\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 18\n\nVisual from source page 18."
-  },
-  {
-    "objectID": "week1/slides.html#source-page-019",
-    "href": "week1/slides.html#source-page-019",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "Coefficient of variation (CV)\nStock A - Mean price last year: $50 Standard deviation: $5 \nCVA = 5/50 * 100% = 10%\n Stock B - Mean price last year: $100 Standard deviation: $5 \nCVB = 5/100 * 100% = 5%\n Same standard deviation, but stock B is less variable - relative to its mean. 19\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 19"
-  },
-  {
-    "objectID": "week1/slides.html#source-page-020",
-    "href": "week1/slides.html#source-page-020",
-    "title": "Describing and visualising data",
-    "section": "",
-    "text": "Visualising Data\nNominal & Ordinal Discrete Data Continuous data Bar Chart Pie Chart Bar Chart Histogram Box plot Great for Great for illustrating illustrating Great for illustrating the distribution relativity portions or particularly for shares ordinal data https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization https://www.jmp.com/en_au/statistics-knowledge-portal/exploratory-data-analysis/types-of-graphs.html https://piktochart.com/blog/types-of-graphs/ https://www.easel.ly/blog/types-of-graphs-and-charts-for-visualizing-data/\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 20"
+    "text": "Otis Elevator Company\nMean and median: 1 inch for both suppliers Variance: Supplier 2 &gt; Supplier 1 (0.001200 &gt; 0.000133) - Supplier 1 preferred: less variation around the mean. - However, variances are difficult to interpret because their units are inches squared, not inches. Standard deviation: Supplier 2 &gt; Supplier 1 (0.0346 &gt; 0.0115) - Supplier 1’s standard deviation is about 1/3 of Supplier 2’s standard deviation. Quite a disparity! Given that Otis wants 1-inch diameter rails, Supplier 1 is preferred. 16\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 16\n\nVisual from source page 16.Visualising Data\nNominal & Ordinal Discrete Data Continuous data Bar Chart Pie Chart Bar Chart Histogram Box plot Great for Great for illustrating illustrating Great for illustrating the distribution relativity portions or particularly for shares ordinal data https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization https://www.jmp.com/en_au/statistics-knowledge-portal/exploratory-data-analysis/types-of-graphs.html https://piktochart.com/blog/types-of-graphs/ https://www.easel.ly/blog/types-of-graphs-and-charts-for-visualizing-data/\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 20"
   },
   {
     "objectID": "week1/slides.html#source-page-023",
