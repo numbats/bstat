@@ -1565,14 +1565,14 @@
     "href": "week1/slides.html#we-have-your-back",
     "title": "Describing and visualising data",
     "section": "We have your back",
-    "text": "We have your back\n\nNo such thing as a “dumb” question\nWe are learning too\nIn-person and Zoom Consultations\n\nFonti - Before class XX - XX\nSusama -\n\nQuestion? fonti.kar@monash.edu with subject ETX1100/5900\nMonash Student Wellbeing support"
+    "text": "We have your back\n\nNo such thing as a “dumb” question\nWe are learning too\nIn-person and Zoom Consultations\n\nFonti - XX - XX\nSusama -\n\nQuestion? fonti.kar@monash.edu with subject ETX1100/5900\nMonash Student Wellbeing support"
   },
   {
     "objectID": "week1/slides.html#recommended-text",
     "href": "week1/slides.html#recommended-text",
     "title": "Describing and visualising data",
     "section": "Recommended Text",
-    "text": "Recommended Text\nBasic Business Statistics: Concepts and Applications, Berenson et al, Australian 5th edition, Pearson, 2018, ISBN 9781488620201.\n\nThis textbook is available online via the Monash Library here."
+    "text": "Recommended Text\nBasic Business Statistics: Concepts and Applications, Berenson et al, Australian 5th edition, Pearson, 2018, ISBN 9781488620201.\n\nMoodle &gt; Learning &gt; Additional information and resources"
   },
   {
     "objectID": "week1/slides.html#your-excel-toolbelt",
@@ -1593,7 +1593,7 @@
     "href": "week1/slides.html#toolpak---an-add-on-for-excel",
     "title": "Describing and visualising data",
     "section": "ToolPak - an add on for Excel",
-    "text": "ToolPak - an add on for Excel\nWindows\n\nClick the File menu &gt; Options to Add-Ins category\nIn the Manage box, select Excel Add-ins to Go.\nIn the Add-Ins box, check the Analysis ToolPak check box to OK.\n\nMac\n\nGo Tools in the top navbar menu &gt; Excel Add-ins.\nIn the Add-Ins available box, check the Analysis ToolPak check box and click OK."
+    "text": "ToolPak - an add on for Excel\nWindows\n\nClick the File menu &gt; Options &gt; Add-Ins category\nIn the Manage box, select Excel Add-ins &gt; Go.\nIn the Add-Ins box, check the Analysis ToolPak check box &gt; OK.\n\nMac\n\nGo Tools in the top navbar menu &gt; Excel Add-ins.\nIn the Add-Ins available box, check the Analysis ToolPak check box and click OK."
   },
   {
     "objectID": "week1/slides.html#excel-orientation-cells-and-references",
@@ -1736,18 +1736,46 @@
     "text": "Spread - population and sample\n\n\n\n\n\n\n\n\n\nData available\nSD\nVariance\nExcel\n\n\n\n\nSample used to estimate a population\n\\displaystyle s=\\sqrt{\\frac{\\sum_{i=1}^{n}(x_i-\\bar{x})^2}{n-1}}\ns^2=(s)^2\nSTDEV.S, VAR.S\n\n\nEntire population\n\\displaystyle \\sigma=\\sqrt{\\frac{\\sum_{i=1}^{N}(x_i-\\mu)^2}{N}}\n\\sigma^2=(\\sigma)^2\nSTDEV.P, VAR.P"
   },
   {
-    "objectID": "week1/slides.html#variance-and-standard-deviation---example",
-    "href": "week1/slides.html#variance-and-standard-deviation---example",
+    "objectID": "week1/slides.html#otis-elevator-company---a-worked-example",
+    "href": "week1/slides.html#otis-elevator-company---a-worked-example",
     "title": "Describing and visualising data",
-    "section": "Variance and Standard Deviation - example",
-    "text": "Variance and Standard Deviation - example\nOtis Elevator Company uses 1-inch-diameter elevator rails. There are two potential suppliers. To decide between the suppliers, the manager obtains a sample of 10 rails from each supplier. Which supplier is preferred? 15\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 15\n\nVisual from source page 15."
+    "section": "Otis Elevator Company - a worked example",
+    "text": "Otis Elevator Company - a worked example\n\nOtis Elevator Company uses 1-inch-diameter elevator rails.\nThere are two potential suppliers.\nTo decide between the suppliers, the manager obtains a sample of 10 rails from each supplier.\n\n\nWhich supplier is preferred?"
   },
   {
-    "objectID": "week1/slides.html#source-page-016",
-    "href": "week1/slides.html#source-page-016",
+    "objectID": "week1/slides.html#otis-elevator-company---watch-me",
+    "href": "week1/slides.html#otis-elevator-company---watch-me",
     "title": "Describing and visualising data",
-    "section": "",
-    "text": "Otis Elevator Company\nMean and median: 1 inch for both suppliers Variance: Supplier 2 &gt; Supplier 1 (0.001200 &gt; 0.000133) - Supplier 1 preferred: less variation around the mean. - However, variances are difficult to interpret because their units are inches squared, not inches. Standard deviation: Supplier 2 &gt; Supplier 1 (0.0346 &gt; 0.0115) - Supplier 1’s standard deviation is about 1/3 of Supplier 2’s standard deviation. Quite a disparity! Given that Otis wants 1-inch diameter rails, Supplier 1 is preferred. 16\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 16\n\nVisual from source page 16.Visualising Data\nNominal & Ordinal Discrete Data Continuous data Bar Chart Pie Chart Bar Chart Histogram Box plot Great for Great for illustrating illustrating Great for illustrating the distribution relativity portions or particularly for shares ordinal data https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization https://www.jmp.com/en_au/statistics-knowledge-portal/exploratory-data-analysis/types-of-graphs.html https://piktochart.com/blog/types-of-graphs/ https://www.easel.ly/blog/types-of-graphs-and-charts-for-visualizing-data/\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 20"
+    "section": "Otis Elevator Company - Watch me 👀",
+    "text": "Otis Elevator Company - Watch me 👀\nFor Supplier 1\nUse Excel to calculate measures of:\n\ncentral tendency (MEAN, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)"
+  },
+  {
+    "objectID": "week1/slides.html#otis-elevator-company---you-try",
+    "href": "week1/slides.html#otis-elevator-company---you-try",
+    "title": "Describing and visualising data",
+    "section": "Otis Elevator Company - You try ✏️",
+    "text": "Otis Elevator Company - You try ✏️\nFor Supplier 2\nUse Excel to calculate measures of:\n\ncentral tendency (MEAN, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)"
+  },
+  {
+    "objectID": "week1/slides.html#otis-elevator-company---bring-it-together",
+    "href": "week1/slides.html#otis-elevator-company---bring-it-together",
+    "title": "Describing and visualising data",
+    "section": "Otis Elevator Company - bring it together 🙌",
+    "text": "Otis Elevator Company - bring it together 🙌\nUse Excel to calculate measures of:\n\ncentral tendency (MEAN, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)\n\n\n\n\n\n\n\n\nSolution\n\n\n\nMean and median: 1 inch for both suppliers\nSD and Variance: Supplier 2 &gt; Supplier 1\n\nSupplier 1 preferred: less variation around the mean."
+  },
+  {
+    "objectID": "week1/slides.html#data-viz-whiz",
+    "href": "week1/slides.html#data-viz-whiz",
+    "title": "Describing and visualising data",
+    "section": "Data viz whiz",
+    "text": "Data viz whiz"
+  },
+  {
+    "objectID": "week1/slides.html#visualising-data",
+    "href": "week1/slides.html#visualising-data",
+    "title": "Describing and visualising data",
+    "section": "Visualising Data",
+    "text": "Visualising Data\nNominal & Ordinal Discrete Data Continuous data Bar Chart Pie Chart Bar Chart Histogram Box plot Great for Great for illustrating illustrating Great for illustrating the distribution relativity portions or particularly for shares ordinal data https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization https://www.jmp.com/en_au/statistics-knowledge-portal/exploratory-data-analysis/types-of-graphs.html https://piktochart.com/blog/types-of-graphs/ https://www.easel.ly/blog/types-of-graphs-and-charts-for-visualizing-data/\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 20"
   },
   {
     "objectID": "week1/slides.html#source-page-023",
@@ -1887,7 +1915,7 @@
     "href": "week1/slides.html#source-page-042",
     "title": "Describing and visualising data",
     "section": "",
-    "text": "1. Highlight the pivot table\n\nHighlight the p ivot tab le\nInsert a bar char t\nTo change the bar chart to a histo gram, click on any o f the bars in the bar chart\nRight click and Select f o r ma t data series\nChange the gap w i dth to O (zero) OlstnbtJtJonof pncl! Format Data Series X I 11\n\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 42\n\nVisual from source page 42."
+    "text": "1. Highlight the pivot table\n\nHighlight the pivot table\nInsert a bar char t\nTo change the bar chart to a histo gram, click on any o f the bars in the bar chart\nRight click and Select f o r ma t data series\nChange the gap w i dth to O (zero) OlstnbtJtJonof pncl! Format Data Series X I 11\n\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 42\n\nVisual from source page 42."
   },
   {
     "objectID": "week1/slides.html#source-page-043",

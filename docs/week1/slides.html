@@ -422,7 +422,7 @@
 <li><p>We are learning too</p></li>
 <li><p>In-person and Zoom Consultations</p>
 <ul>
-<li>Fonti - Before class XX - XX</li>
+<li>Fonti - XX - XX</li>
 <li>Susama -</li>
 </ul></li>
 <li><p>Question? fonti.kar@monash.edu with subject <strong>ETX1100/5900</strong></p></li>
@@ -431,9 +431,9 @@
 </section>
 <section id="recommended-text" class="slide level2">
 <h2>Recommended Text</h2>
-<p>Basic Business Statistics: Concepts and Applications, Berenson et al, Australian 5th edition, Pearson, 2018, ISBN 9781488620201.</p>
+<p><a href="https://www.pearson.com/en-au/subject-catalog/p/basic-business-statistics/P200000007864/9780655722113">Basic Business Statistics: Concepts and Applications, Berenson et al, Australian 5th edition, Pearson, 2018, ISBN 9781488620201.</a></p>
 <ul>
-<li>This textbook is available online via the Monash Library here.</li>
+<li><code>Moodle</code> &gt; <code>Learning</code> &gt; <code>Additional information and resources</code></li>
 </ul>
 </section>
 <section id="your-excel-toolbelt" class="slide level2 section-slide">
@@ -455,9 +455,9 @@
 <h2><code>ToolPak</code> - an add on for Excel</h2>
 <p><strong>Windows</strong></p>
 <ol type="1">
-<li>Click the <code>File</code> menu &gt; Options to Add-Ins category</li>
-<li>In the Manage box, select Excel Add-ins to Go.</li>
-<li>In the Add-Ins box, check the Analysis ToolPak check box to OK.</li>
+<li>Click the <code>File</code> menu &gt; <code>Options</code> &gt; <code>Add-Ins</code> category</li>
+<li>In the <code>Manage</code> box, select <code>Excel Add-ins</code> &gt; Go.</li>
+<li>In the <code>Add-Ins</code> box, check the <code>Analysis ToolPak</code> check box &gt; <code>OK</code>.</li>
 </ol>
 <p><strong>Mac</strong></p>
 <ol type="1">
@@ -913,19 +913,67 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 </table>
 <!-- *Note.* Dividing by $n-1$ in the sample corrects for estimating the population mean from the sample. -->
 </section>
-<section id="variance-and-standard-deviation---example" class="slide level2">
-<h2>Variance and Standard Deviation - example</h2>
-<p>Otis Elevator Company uses 1-inch-diameter elevator rails. There are two potential suppliers. To decide between the suppliers, the manager obtains a sample of 10 rails from each supplier. Which supplier is preferred? 15</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=15">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 15</a></em></p>
-
-<img data-src="figures/etx5900/components/image13.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 15.</p></section>
-<section id="source-page-016" class="slide level2">
-<h2></h2>
-<h3 id="otis-elevator-company">Otis Elevator Company</h3>
-<p>Mean and median: 1 inch for both suppliers Variance: Supplier 2 &gt; Supplier 1 (0.001200 &gt; 0.000133) - Supplier 1 preferred: less variation around the mean. - However, variances are difficult to interpret because their units are inches squared, not inches. Standard deviation: Supplier 2 &gt; Supplier 1 (0.0346 &gt; 0.0115) - Supplier 1’s standard deviation is about 1/3 of Supplier 2’s standard deviation. Quite a disparity! Given that Otis wants 1-inch diameter rails, Supplier 1 is preferred. 16</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=16">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 16</a></em></p>
-
-<img data-src="figures/etx5900/components/image14.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 16.</p><h3 id="visualising-data">Visualising Data</h3>
+<section id="otis-elevator-company---a-worked-example" class="slide level2">
+<h2>Otis Elevator Company - a worked example</h2>
+<ul>
+<li>Otis Elevator Company uses 1-inch-diameter elevator rails.</li>
+<li>There are two potential suppliers.</li>
+<li>To decide between the suppliers, the manager obtains a <strong>sample</strong> of 10 rails from each supplier.</li>
+</ul>
+<blockquote>
+<p>Which supplier is preferred?</p>
+</blockquote>
+</section>
+<section id="otis-elevator-company---watch-me" class="slide level2">
+<h2>Otis Elevator Company - Watch me 👀</h2>
+<p><strong>For <code>Supplier 1</code></strong></p>
+<p>Use Excel to calculate measures of:</p>
+<ul>
+<li>central tendency (<code>MEAN</code>, <code>MODE</code>, <code>MEDIAN</code>)</li>
+<li>spread (<code>STDEV.S</code>, <code>VAR.S</code>)</li>
+</ul>
+</section>
+<section id="otis-elevator-company---you-try" class="slide level2">
+<h2>Otis Elevator Company - You try ✏️</h2>
+<p><strong>For <code>Supplier 2</code></strong></p>
+<p>Use Excel to calculate measures of:</p>
+<ul>
+<li>central tendency (<code>MEAN</code>, <code>MODE</code>, <code>MEDIAN</code>)</li>
+<li>spread (<code>STDEV.S</code>, <code>VAR.S</code>)</li>
+</ul>
+</section>
+<section id="otis-elevator-company---bring-it-together" class="slide level2">
+<h2>Otis Elevator Company - bring it together 🙌</h2>
+<p>Use Excel to calculate measures of:</p>
+<ul>
+<li>central tendency (<code>MEAN</code>, <code>MODE</code>, <code>MEDIAN</code>)</li>
+<li>spread (<code>STDEV.S</code>, <code>VAR.S</code>)</li>
+</ul>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Mean and median: 1 inch for both suppliers</li>
+<li>SD and Variance: Supplier 2 &gt; Supplier 1</li>
+</ul>
+<p><strong>Supplier 1 preferred: less variation around the mean.</strong></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="data-viz-whiz" class="slide level2 section-slide">
+<h2>Data viz whiz</h2>
+</section>
+<section id="visualising-data" class="slide level2">
+<h2>Visualising Data</h2>
 <p>Nominal &amp; Ordinal Discrete Data Continuous data Bar Chart Pie Chart Bar Chart Histogram Box plot Great for Great for illustrating illustrating Great for illustrating the distribution relativity portions or particularly for shares ordinal data https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization https://www.jmp.com/en_au/statistics-knowledge-portal/exploratory-data-analysis/types-of-graphs.html https://piktochart.com/blog/types-of-graphs/ https://www.easel.ly/blog/types-of-graphs-and-charts-for-visualizing-data/</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=20">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 20</a></em></p>
 </section>
@@ -1169,7 +1217,7 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <h2></h2>
 <h3 id="highlight-the-pivot-table">1. Highlight the pivot table</h3>
 <ol type="1">
-<li>Highlight the p ivot tab le</li>
+<li>Highlight the pivot table</li>
 <li>Insert a bar char t</li>
 <li>To change the bar chart to a histo gram, click on any o f the bars in the bar chart</li>
 <li>Right click and Select f o r ma t data series</li>
