@@ -1778,11 +1778,18 @@
     "text": "Data viz whiz"
   },
   {
-    "objectID": "week1/slides.html#a-picture-is-worth-so-much-more",
-    "href": "week1/slides.html#a-picture-is-worth-so-much-more",
+    "objectID": "week1/slides.html#box-and-whisker-plot-aka.-boxplot",
+    "href": "week1/slides.html#box-and-whisker-plot-aka.-boxplot",
     "title": "Describing and visualising data",
-    "section": "A picture is worth so much more",
-    "text": "A picture is worth so much more\nWe visualise data to help us understand it’s features more efficiently\n\nThis box and whisker plot (aka. boxplot)"
+    "section": "Box and whisker plot (aka. boxplot)",
+    "text": "Box and whisker plot (aka. boxplot)\nShows the distribution of data\n\n\n\n\n\n\n\n\n\n\n\n\n\n25% of data falls below Q1\n75% of data falls below Q3\nInterquartile range (IQR) is the Q3 - Q1\n\nSpread of middle 50% of the data\n\nWhiskers show the min and max values\n\nMax - min = Range of data"
+  },
+  {
+    "objectID": "week1/slides.html#shape-of-data",
+    "href": "week1/slides.html#shape-of-data",
+    "title": "Describing and visualising data",
+    "section": "Shape of data",
+    "text": "Shape of data"
   },
   {
     "objectID": "week1/slides.html#what-type-of-chart",
