@@ -46,6 +46,8 @@ schedule$Quiz_Due <- as.Date(NA)
 quiz_rows <- schedule$Week %in% 1L:7L
 schedule$Quiz_Due[quiz_rows] <- schedule$Date[quiz_rows] +
   ((8L - as.POSIXlt(schedule$Date[quiz_rows])$wday) %% 7L)
+# Quiz 4 closes before the mid-semester break.
+schedule$Quiz_Due[schedule$Week %in% 4L] <- as.Date("2026-12-20")
 schedule$Assessment <- NA_character_
 schedule$Assessment[quiz_rows] <- sprintf(
   "Quiz %d — due %s",
@@ -66,7 +68,8 @@ stopifnot(
   schedule$Date[match(8L, schedule$Week)] == as.Date("2027-01-29"),
   sum(!is.na(schedule$Quiz_Due)) == 7L,
   is.na(schedule$Quiz_Due[schedule$Week == 8L]),
-  all(as.POSIXlt(schedule$Quiz_Due[quiz_rows])$wday == 1L),
+  all(as.POSIXlt(schedule$Quiz_Due[quiz_rows & schedule$Week != 4L])$wday == 1L),
+  schedule$Quiz_Due[schedule$Week %in% 4L] == as.Date("2026-12-20"),
   all(schedule$Quiz_Due[quiz_rows] > schedule$Date[quiz_rows]),
   written_assignment_due == schedule$Date[schedule$Week %in% 5L] - 1L
 )
