@@ -35,7 +35,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d7d650050b1ce3e072e4f0f18efcf387.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-a5fb4bc0362d941dc3ace44d79a6106d.css">
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
@@ -1084,61 +1084,6 @@ Mean = Median = Mode
     // Move progress bar
     menu_div = document.querySelector(".progress");
     document.querySelector(".slides").appendChild(menu_div);
-    </script>
-
-    <script>
-    // Show a manually started countdown on slides with data-timing="seconds".
-    (function () {
-      let interval;
-
-      function showCountdown(slide) {
-        clearInterval(interval);
-        if (!slide) return;
-        const duration = Number(slide.dataset.timing);
-        if (!Number.isFinite(duration) || duration <= 0) return;
-
-        let timer = slide.querySelector('.slide-countdown');
-        if (!timer) {
-          timer = document.createElement('div');
-          timer.className = 'slide-countdown';
-          timer.innerHTML = '<span role="timer"></span><button type="button">Start</button>';
-          slide.appendChild(timer);
-        }
-        const clock = timer.querySelector('[role="timer"]');
-        const button = timer.querySelector('button');
-        const format = seconds => String(Math.floor(seconds / 60)).padStart(2, '0') + ':' +
-          String(seconds % 60).padStart(2, '0');
-        clock.textContent = format(Math.ceil(duration));
-        button.hidden = false;
-        timer.onclick = function (event) {
-          if (button.hidden) return;
-          event.stopPropagation();
-          button.hidden = true;
-          const end = Date.now() + duration * 1000;
-          function update() {
-            const remaining = Math.max(0, Math.ceil((end - Date.now()) / 1000));
-            clock.textContent = format(remaining);
-            if (remaining === 0) clearInterval(interval);
-          }
-          update();
-          interval = setInterval(update, 250);
-        };
-      }
-
-      Reveal.on('slidechanged', event => showCountdown(event.currentSlide));
-      document.addEventListener('keydown', function (event) {
-        if (event.key !== 'Enter' || event.repeat) return;
-        if (event.target instanceof Element &&
-            event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
-        const slide = Reveal.getCurrentSlide();
-        const button = slide && slide.querySelector('.slide-countdown button');
-        if (!button || button.hidden) return;
-        event.preventDefault();
-        event.stopImmediatePropagation();
-        button.click();
-      }, true);
-      showCountdown(Reveal.getCurrentSlide());
-    })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">

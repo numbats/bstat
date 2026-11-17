@@ -1516,7 +1516,7 @@
     "href": "week1/slides.html#now-your-turn",
     "title": "Describing and visualising data",
     "section": "Now, your turn!",
-    "text": "Now, your turn!\n\nIntroduce yourself to your neighbours\nSign into ed-ie.com via on your device (phone or laptop)\nHow to use ed-ie\n\n\n\n\n“What do you want want to get out of this unit? (no wrong answers!)”\nLINK PLACEHOLDER / QR code"
+    "text": "Now, your turn!\n\n \n\nIntroduce yourself to your neighbours\nSign into ed-ie.com via on your device (phone or laptop)\nHow to use ed-ie\n\n\n\n\n“What do you want want to get out of this unit? (no wrong answers!)”\nLINK PLACEHOLDER / QR code"
   },
   {
     "objectID": "week1/slides.html#todays-roadmap",
@@ -1649,28 +1649,28 @@
     "href": "week1/slides.html#statistics",
     "title": "Describing and visualising data",
     "section": "Statistics",
-    "text": "Statistics\n\n…is the discipline that concerns the collection, organization, analysis, interpretation, and presentation of data.\n\n\nData can be anything! e.g. surveys, election votes, stock market, health data"
+    "text": "Statistics\n\n…is the discipline that concerns the collection, organization, analysis, interpretation, and presentation of data.\n\nData can be anything! e.g. surveys, election votes, stock market, health data, orders on UberEats, views on a video\n\nIn business statistics, we work with data and analyses to make better business or economic decisions"
   },
   {
     "objectID": "week1/slides.html#data-collection",
     "href": "week1/slides.html#data-collection",
     "title": "Describing and visualising data",
     "section": "Data collection",
-    "text": "Data collection\n\n\n\nPopulation\n\nAll members of a group about which you want to draw a conclusion.\ne.g. All voters in an election, all Telstra shareholders, all invoices submitted to Medicare for rebate in NSW"
+    "text": "Data collection\n\n\nPopulation\n\nAll members of a group that you want to draw a conclusion upon.\n\nParameters are used to describe Populations\nGreek letters in math notations \\mu for population mean, \\sigma for population standard deviation\n\n\n\n\n\ne.g. All voters in an election, all Telstra shareholders, all invoices submitted to Medicare for rebate in NSW"
   },
   {
     "objectID": "week1/slides.html#data-collection-1",
     "href": "week1/slides.html#data-collection-1",
     "title": "Describing and visualising data",
     "section": "Data collection",
-    "text": "Data collection\n\n\n\nSample\n\nSubset of the population selected for analysis\nIdeally chosen randomly\nEqual chance of being selected\nRepresentative of the population\ne.g. Random survey of travellers at Brisbane airport"
+    "text": "Data collection\n\n\nSample\n\nA subset that is representative of the population used analysis\n\n(Ideally) chosen randomly where every individual has equal chance of selection\n\nStatistics are used to describe a Sample\nRoman letters in math notations \\bar{x} for sample mean and s for sample standard deviation\n\n\n \n\ne.g. Random survey of 20 travellers at Brisbane airport, random sample of male lab rats for an experiment"
   },
   {
     "objectID": "week1/slides.html#bias-in-sampling",
     "href": "week1/slides.html#bias-in-sampling",
     "title": "Describing and visualising data",
     "section": "Bias in sampling",
-    "text": "Bias in sampling\n\n\nDiscuss potential issues with bia with these data collections scenarios\n\nA marketing agency surveys 5,000 people through TikTok to estimate how much time Australians spend on social media.\nA record label analyses Spotify listening histories to identify Australia’s most popular music genre."
+    "text": "Bias in sampling\n\n \n\n\nDiscuss potential issues with bia with these data collections scenarios\n\nA marketing agency surveys 5,000 people through TikTok to estimate how much time Australians spend on social media.\nA record label analyses Spotify listening histories to identify Australia’s most popular music genre."
   },
   {
     "objectID": "week1/slides.html#branches-of-statistics",
@@ -1684,21 +1684,21 @@
     "href": "week1/slides.html#types-of-variables",
     "title": "Describing and visualising data",
     "section": "Types of Variables",
-    "text": "Types of Variables\n\n\nCategorical\n\nQualitative (non-numerical) data organised in groups\n\nNominal, no natural order\n\ne.g. cat breeds, provinces,\n\nOrdinal, meaning ordering\n\ne.g. education level, poor/average/great feedback ratings\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef categorical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class B,D,E categorical;"
+    "text": "Types of Variables\n\n\nCategorical\n\nQualitative (non-numerical) data organised in groups\n\nNominal, no natural order\n\ne.g. cat breeds, provinces,\n\nOrdinal, meaning ordering\n\ne.g. education level, poor/average/great ratings\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef categorical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class B,D,E categorical;"
   },
   {
-    "objectID": "week1/slides.html#basic-concepts-population-and-sample",
-    "href": "week1/slides.html#basic-concepts-population-and-sample",
+    "objectID": "week1/slides.html#types-of-variables-1",
+    "href": "week1/slides.html#types-of-variables-1",
     "title": "Describing and visualising data",
-    "section": "Basic Concepts: Population and Sample",
-    "text": "Basic Concepts: Population and Sample\nSample: A subset of the population selected for analysis - Often chosen randomly - Preferably representative of the population Statistic: A numerical measure that describes a characteristic of a sample Population: All members of a group about which you want to draw a conclusion. Parameter: A numerical measure that describes a (e.g. All voters in an election, all Telstra shareholders, all characteristic of a population. invoices submitted to Medicare for reimbursement, etc.)\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 12\n\n\n\n\n\nVisual from source page 12.\n\n\n\n\n\n\nVisual from source page 12."
+    "section": "Types of Variables",
+    "text": "Types of Variables\n\n\nNumerical\n\nQuantitative data organised in groups\n\nDiscrete, countable\n\ne.g. number of chicken nuggets sold\n\nContinuous, requires a measuring process\n\ne.g. grams of protein, price for stock\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class C,F,G numerical;"
   },
   {
-    "objectID": "week1/slides.html#source-page-013",
-    "href": "week1/slides.html#source-page-013",
+    "objectID": "week1/slides.html#describing-numerical-data",
+    "href": "week1/slides.html#describing-numerical-data",
     "title": "Describing and visualising data",
-    "section": "",
-    "text": "Describing Numerical Data\nNumerical Data Central Quartiles Variation Shape Tendency Arithmetic Interquartile Standard Coefficient Median Mode Percentiles Range Variance Skewness Mean Range Deviation of Variation Are there any What is the typical or the central How much variation in the distribution? unusual values value? that contribute to 13 the distribution?\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 13"
+    "section": "Describing Numerical Data",
+    "text": "Describing Numerical Data\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class C,F,G numerical;\n\n\n\n\n\n\n\nNumerical Data Central Quartiles Variation Shape Tendency Arithmetic Interquartile Standard Coefficient Median Mode Percentiles Range Variance Skewness Mean Range Deviation of Variation Are there any What is the typical or the central How much variation in the distribution? unusual values value? that contribute to 13 the distribution?\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 13"
   },
   {
     "objectID": "week1/slides.html#common-descriptive-statistics-excel-functions",

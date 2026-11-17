@@ -6,7 +6,9 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/countdown-0.6.0/countdown.js"></script>
+<link href="../site_libs/quarto-contrib/countdown-0.6.0/countdown.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.11.9">
 
   <meta name="dcterms.date" content="2026-11-24">
@@ -35,7 +37,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d7d650050b1ce3e072e4f0f18efcf387.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-a5fb4bc0362d941dc3ace44d79a6106d.css">
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
@@ -235,8 +237,10 @@
 <li></li>
 </ul>
 </section>
-<section id="now-your-turn" class="slide level2" data-timing="300">
+<section id="now-your-turn" class="slide level2">
 <h2>Now, your turn!</h2>
+<countdown-timer id="introductions-timer" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
 <ul>
 <li>Introduce yourself to your neighbours</li>
 <li>Sign into ed-ie.com via on your device (phone or laptop)</li>
@@ -559,8 +563,10 @@
 </div>
 </div></div>
 </section>
-<section id="break" class="slide level2 section-slide" data-timing="600">
+<section id="break" class="slide level2 section-slide">
 <h2>Break</h2>
+<countdown-timer id="break-timer" minutes="10" seconds="00" class="countdown" warn-when="60" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
 </section>
 <section id="taxonomy-of-statistics" class="slide level2 section-slide">
 <h2>Taxonomy of statistics</h2>
@@ -570,45 +576,54 @@
 <blockquote>
 <p>…is the discipline that concerns the collection, organization, analysis, interpretation, and presentation of data.</p>
 </blockquote>
-<ul>
-<li>Data can be anything! e.g.&nbsp;surveys, election votes, stock market, health data</li>
-</ul>
+<p>Data can be anything! e.g.&nbsp;surveys, election votes, stock market, health data, orders on UberEats, views on a video</p>
+<div class="fragment">
+<p>In <em>business</em> statistics, we work with data and analyses to make better business or economic decisions</p>
+</div>
 </section>
 <section id="data-collection" class="slide level2">
 <h2>Data collection</h2>
 <div class="columns">
 <div class="column" style="width:52%;">
+<p><strong>Population</strong></p>
 <ul>
-<li><strong>Population</strong>
+<li>All members of a group that you want to draw a conclusion upon.
 <ul>
-<li>All members of a group about which you want to draw a conclusion.</li>
-<li>e.g.&nbsp;All voters in an election, all Telstra shareholders, all invoices submitted to Medicare for rebate in NSW</li>
+<li><strong>P</strong>arameters are used to describe <strong>P</strong>opulations</li>
+<li><a href="https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols">Greek letters</a> in math notations <span class="math inline">\mu</span> for population mean, <span class="math inline">\sigma</span> for population standard deviation</li>
 </ul></li>
 </ul>
 </div><div class="column" style="width:48%;">
-<p><img data-src="figures/diagram/population.png"></p>
+<p><img data-src="figures/diagram/population.png" style="width:70.0%"></p>
+<div style="font-size: 50%;">
+<p>e.g.&nbsp;All voters in an election, all Telstra shareholders, all invoices submitted to Medicare for rebate in NSW</p>
+</div>
 </div></div>
 </section>
-<section id="data-collection-1" class="slide level2">
+<section id="data-collection-1" class="slide level2" style="font-size: 90%;">
 <h2>Data collection</h2>
 <div class="columns">
 <div class="column" style="width:52%;">
+<p><strong>Sample</strong></p>
 <ul>
-<li><strong>Sample</strong>
+<li>A subset that is <strong>representative</strong> of the population used analysis
 <ul>
-<li>Subset of the population selected for analysis</li>
-<li>Ideally chosen <strong>randomly</strong></li>
-<li><strong>Equal</strong> chance of being selected</li>
-<li><strong>Representative</strong> of the population</li>
-<li>e.g.&nbsp;Random survey of travellers at Brisbane airport</li>
+<li>(Ideally) chosen <strong>randomly</strong> where every individual has <strong>equal</strong> chance of selection</li>
 </ul></li>
+<li><strong>S</strong>tatistics are used to describe a <strong>S</strong>ample</li>
+<li>Roman letters in math notations <span class="math inline">\bar{x}</span> for sample mean and <span class="math inline">s</span> for sample standard deviation</li>
 </ul>
 </div><div class="column" style="width:48%;">
-<p><img data-src="figures/diagram/random-collection.png"> <img data-src="figures/diagram/sample.png" style="width:20.0%"></p>
+<p><img data-src="figures/diagram/random-collection.png" style="width:70.0%"> <img data-src="figures/diagram/sample.png" style="width:20.0%"></p>
+<div style="font-size: 70%;">
+<p>e.g.&nbsp;Random survey of 20 travellers at Brisbane airport, random sample of male lab rats for an experiment</p>
+</div>
 </div></div>
 </section>
-<section id="bias-in-sampling" class="slide level2" data-timing="300">
+<section id="bias-in-sampling" class="slide level2">
 <h2>Bias in sampling</h2>
+<countdown-timer id="sampling-bias-timer" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
 <div class="columns">
 <div class="column" style="width:52%;">
 <p>Discuss potential issues with bia with these data collections scenarios</p>
@@ -620,7 +635,7 @@
 <p><img data-src="figures/diagram/random-collection.png"> <img data-src="figures/diagram/sample.png" style="width:20.0%"></p>
 </div></div>
 </section>
-<section id="branches-of-statistics" class="slide level2">
+<section id="branches-of-statistics" class="slide level2 smaller">
 <h2>Branches of Statistics</h2>
 <div class="columns">
 <div class="column" style="width:52%;">
@@ -668,7 +683,7 @@
 </ul></li>
 <li>Ordinal, meaning ordering
 <ul>
-<li>e.g.&nbsp;education level, poor/average/great feedback ratings</li>
+<li>e.g.&nbsp;education level, poor/average/great ratings</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -697,30 +712,75 @@
 </div>
 </div></div>
 </section>
-<section id="basic-concepts-population-and-sample" class="slide level2">
-<h2>Basic Concepts: Population and Sample</h2>
-<p>Sample: A subset of the population selected for analysis - Often chosen randomly - Preferably representative of the population Statistic: A numerical measure that describes a characteristic of a sample Population: All members of a group about which you want to draw a conclusion. Parameter: A numerical measure that describes a (e.g.&nbsp;All voters in an election, all Telstra shareholders, all characteristic of a population. invoices submitted to Medicare for reimbursement, etc.)</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=12">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 12</a></em></p>
+<section id="types-of-variables-1" class="slide level2">
+<h2>Types of Variables</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image9.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 12.</figcaption>
-</figure>
+<div class="column">
+<h3 id="numerical">Numerical</h3>
+<ul>
+<li>Quantitative data organised in groups
+<ul>
+<li>Discrete, countable
+<ul>
+<li>e.g.&nbsp;number of chicken nuggets sold</li>
+</ul></li>
+<li>Continuous, requires a measuring process
+<ul>
+<li>e.g.&nbsp;grams of protein, price for stock</li>
+</ul></li>
+</ul></li>
+</ul>
+</div><div class="column">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+
+<pre class="mermaid mermaid-js">flowchart TD
+  Data --&gt; B[Categorical]
+  Data --&gt; C[Numerical]
+  B --&gt; D[Nominal]
+  B --&gt; E[Ordinal]
+  C[Numerical] --&gt; F[Discrete]
+  C --&gt; G[Continuous]
+
+  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;
+  class C,F,G numerical;
+</pre>
 </div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image10.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 12.</figcaption>
-</figure>
+<p></p></figure><p></p>
+</div>
+</div>
 </div>
 </div></div>
 </section>
-<section id="source-page-013" class="slide level2">
-<h2></h2>
-<h3 id="describing-numerical-data">Describing Numerical Data</h3>
+<section id="describing-numerical-data" class="slide level2">
+<h2>Describing Numerical Data</h2>
+<div class="absolute" style="font-size: 0.6em; text-align: right;top: 0px; right: 0px; width: 300px; ">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+
+<pre class="mermaid mermaid-js">flowchart TD
+  Data --&gt; B[Categorical]
+  Data --&gt; C[Numerical]
+  B --&gt; D[Nominal]
+  B --&gt; E[Ordinal]
+  C[Numerical] --&gt; F[Discrete]
+  C --&gt; G[Continuous]
+
+  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;
+  class C,F,G numerical;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
 <p>Numerical Data Central Quartiles Variation Shape Tendency Arithmetic Interquartile Standard Coefficient Median Mode Percentiles Range Variance Skewness Mean Range Deviation of Variation Are there any What is the typical or the central How much variation in the distribution? unusual values value? that contribute to 13 the distribution?</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf#page=13">Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 13</a></em></p>
 </section>
@@ -1428,61 +1488,6 @@ CVB = 5/100 * 100% = 5%
     // Move progress bar
     menu_div = document.querySelector(".progress");
     document.querySelector(".slides").appendChild(menu_div);
-    </script>
-
-    <script>
-    // Show a manually started countdown on slides with data-timing="seconds".
-    (function () {
-      let interval;
-
-      function showCountdown(slide) {
-        clearInterval(interval);
-        if (!slide) return;
-        const duration = Number(slide.dataset.timing);
-        if (!Number.isFinite(duration) || duration <= 0) return;
-
-        let timer = slide.querySelector('.slide-countdown');
-        if (!timer) {
-          timer = document.createElement('div');
-          timer.className = 'slide-countdown';
-          timer.innerHTML = '<span role="timer"></span><button type="button">Start</button>';
-          slide.appendChild(timer);
-        }
-        const clock = timer.querySelector('[role="timer"]');
-        const button = timer.querySelector('button');
-        const format = seconds => String(Math.floor(seconds / 60)).padStart(2, '0') + ':' +
-          String(seconds % 60).padStart(2, '0');
-        clock.textContent = format(Math.ceil(duration));
-        button.hidden = false;
-        timer.onclick = function (event) {
-          if (button.hidden) return;
-          event.stopPropagation();
-          button.hidden = true;
-          const end = Date.now() + duration * 1000;
-          function update() {
-            const remaining = Math.max(0, Math.ceil((end - Date.now()) / 1000));
-            clock.textContent = format(remaining);
-            if (remaining === 0) clearInterval(interval);
-          }
-          update();
-          interval = setInterval(update, 250);
-        };
-      }
-
-      Reveal.on('slidechanged', event => showCountdown(event.currentSlide));
-      document.addEventListener('keydown', function (event) {
-        if (event.key !== 'Enter' || event.repeat) return;
-        if (event.target instanceof Element &&
-            event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
-        const slide = Reveal.getCurrentSlide();
-        const button = slide && slide.querySelector('.slide-countdown button');
-        if (!button || button.hidden) return;
-        event.preventDefault();
-        event.stopImmediatePropagation();
-        button.click();
-      }, true);
-      showCountdown(Reveal.getCurrentSlide());
-    })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">
