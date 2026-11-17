@@ -1712,7 +1712,21 @@
     "href": "week1/slides.html#central-tendency",
     "title": "Describing and visualising data",
     "section": "Central tendency",
-    "text": "Central tendency\n\nWhat is the typical value like in this data?"
+    "text": "Central tendency\n\nWhat is the typical value like in this data?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n=MODE(...) the most common value\n=MEDIAN(...) the middle value\n=MEAN(...) the average\n\nSum all values and divide by total number of values (n)\n\n\n\n\\bar{x} = \\frac{1}{n} \\sum_{i=1}^{n} x_i"
+  },
+  {
+    "objectID": "week1/slides.html#spread---sample-standard-deviation-s",
+    "href": "week1/slides.html#spread---sample-standard-deviation-s",
+    "title": "Describing and visualising data",
+    "section": "Spread - sample standard deviation s",
+    "text": "Spread - sample standard deviation s\n\nHow much variation (or disperson) exists is the data?\n\n=STDEV.S(...)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}}\n\n\nx_i: Each individual data point in the sample\n\\bar{x}: Sample mean\nn: Total number of observations in the sample"
+  },
+  {
+    "objectID": "week1/slides.html#spread---sample-standard-deviation-s-1",
+    "href": "week1/slides.html#spread---sample-standard-deviation-s-1",
+    "title": "Describing and visualising data",
+    "section": "Spread - sample standard deviation s",
+    "text": "Spread - sample standard deviation s\n\nHow much variation (or disperson) exists is the data?\n\n=STDEV.S(...)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}}\n\n\nUnit is the same as the original variable\nPositive and negative values"
   },
   {
     "objectID": "week1/slides.html#common-descriptive-statistics-excel-functions",

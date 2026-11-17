@@ -794,8 +794,92 @@
 <blockquote>
 <p>What is the typical value like in this data?</p>
 </blockquote>
-
-<img data-src="slides_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:30%;">
+<div style="font-size: 70%;">
+<ul>
+<li><code>=MODE(...)</code> the most common value</li>
+<li><code>=MEDIAN(...)</code> the middle value</li>
+<li><code>=MEAN(...)</code> the average
+<ul>
+<li>Sum all values and divide by total number of values (<span class="math inline">n</span>)</li>
+</ul></li>
+</ul>
+<p><span class="math display">
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+</span></p>
+</div>
+</div></div>
+</section>
+<section id="spread---sample-standard-deviation-s" class="slide level2">
+<h2>Spread - sample standard deviation <span class="math inline">s</span></h2>
+<blockquote>
+<p>How much <strong><em>variation</em></strong> (or disperson) exists is the data?</p>
+</blockquote>
+<p><code>=STDEV.S(...)</code></p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:30%;">
+<div style="font-size: 70%;">
+<p><span class="math display">
+s = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}}
+</span></p>
+<ul>
+<li class="fragment"><strong><span class="math inline">x_i</span></strong>: Each individual data point in the sample</li>
+<li class="fragment"><strong><span class="math inline">\bar{x}</span></strong>: Sample mean</li>
+<li class="fragment"><strong><span class="math inline">n</span></strong>: Total number of observations in the sample</li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="spread---sample-standard-deviation-s-1" class="slide level2">
+<h2>Spread - sample standard deviation <span class="math inline">s</span></h2>
+<blockquote>
+<p>How much <strong><em>variation</em></strong> (or disperson) exists is the data?</p>
+</blockquote>
+<p><code>=STDEV.S(...)</code></p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:30%;">
+<div style="font-size: 70%;">
+<p><span class="math display">
+s = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}}
+</span></p>
+<ul>
+<li class="fragment">Unit is the same as the original variable</li>
+<li class="fragment">Positive and negative values</li>
+</ul>
+</div>
+</div></div>
+</section>
 <section id="common-descriptive-statistics-excel-functions" class="slide level2">
 <h2>Common descriptive statistics Excel functions</h2>
 <p>Some functions we will use over this course. <code>A:A</code> means “with all values in column A”</p>
