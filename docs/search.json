@@ -1509,7 +1509,7 @@
     "href": "week1/slides.html#it-takes-a-village-1",
     "title": "Describing and visualising data",
     "section": "It takes a village…",
-    "text": "It takes a village…\nOn the ground:\n\nSusama (Consultations: XX - XX )"
+    "text": "It takes a village…\nOn the ground:\n\nSusama Mahnaz\nSong Li"
   },
   {
     "objectID": "week1/slides.html#now-your-turn",
@@ -1705,7 +1705,7 @@
     "href": "week1/slides.html#talking-about-numerical-data",
     "title": "Describing and visualising data",
     "section": "Talking about numerical data",
-    "text": "Talking about numerical data\n\n\n\nCentral tendency - what is the typical value like in this data?\nSpread - how much variation exists is the data?\nShape - Where is the bulk of the data?\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class C,F,G numerical;"
+    "text": "Talking about numerical data\n\n\n\nCentral tendency - what is the typical value like in this data?\nSpread - how much variation exists is the data?\nShape - where is the bulk of the data?\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class C,F,G numerical;"
   },
   {
     "objectID": "week1/slides.html#central-tendency",
@@ -1761,7 +1761,14 @@
     "href": "week1/slides.html#otis-elevator-company---bring-it-together",
     "title": "Describing and visualising data",
     "section": "Otis Elevator Company - bring it together 🙌",
-    "text": "Otis Elevator Company - bring it together 🙌\nUse Excel to calculate measures of:\n\ncentral tendency (MEAN, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)\n\n\n\n\n\n\n\n\nSolution\n\n\n\nMean and median: 1 inch for both suppliers\nSD and Variance: Supplier 2 &gt; Supplier 1\n\nSupplier 1 preferred: less variation around the mean."
+    "text": "Otis Elevator Company - bring it together 🙌\nUse Excel to calculate and compare measures of:\n\ncentral tendency (MEAN, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)\n\n\n\n\n\n\n\n\nSolution\n\n\n\nMean and median: 1 inch for both suppliers\nSD and Variance: Supplier 2 &gt; Supplier 1\n\nSupplier 1 preferred: less variation around the mean."
+  },
+  {
+    "objectID": "week1/slides.html#talking-about-numerical-data-1",
+    "href": "week1/slides.html#talking-about-numerical-data-1",
+    "title": "Describing and visualising data",
+    "section": "Talking about numerical data",
+    "text": "Talking about numerical data\n\n\n\nCentral tendency - what is the typical value like in this data?\nSpread - how much variation exists is the data?\nShape - where is the bulk of the data?\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class C,F,G numerical;"
   },
   {
     "objectID": "week1/slides.html#data-viz-whiz",
@@ -1771,25 +1778,25 @@
     "text": "Data viz whiz"
   },
   {
-    "objectID": "week1/slides.html#visualising-data",
-    "href": "week1/slides.html#visualising-data",
+    "objectID": "week1/slides.html#a-picture-is-worth-so-much-more",
+    "href": "week1/slides.html#a-picture-is-worth-so-much-more",
     "title": "Describing and visualising data",
-    "section": "Visualising Data",
-    "text": "Visualising Data\nNominal & Ordinal Discrete Data Continuous data Bar Chart Pie Chart Bar Chart Histogram Box plot Great for Great for illustrating illustrating Great for illustrating the distribution relativity portions or particularly for shares ordinal data https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization https://www.jmp.com/en_au/statistics-knowledge-portal/exploratory-data-analysis/types-of-graphs.html https://piktochart.com/blog/types-of-graphs/ https://www.easel.ly/blog/types-of-graphs-and-charts-for-visualizing-data/\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 20"
+    "section": "A picture is worth so much more",
+    "text": "A picture is worth so much more\nWe visualise data to help us understand it’s features more efficiently\n\nThis box and whisker plot (aka. boxplot)"
   },
   {
-    "objectID": "week1/slides.html#source-page-023",
-    "href": "week1/slides.html#source-page-023",
+    "objectID": "week1/slides.html#what-type-of-chart",
+    "href": "week1/slides.html#what-type-of-chart",
     "title": "Describing and visualising data",
-    "section": "",
-    "text": "Task 1: Real Estate Data\nWe wish to compare the distribution of house prices for properties within/outside school zone Refer to the workshop data set under Module 1. Refer to the Price column and answer the following questions. a. Generate summary statistics of house prices for properties within/outside the school zone b. Draw two frequency percentage histograms. c. Draw two box plots 24\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 23"
+    "section": "What type of chart",
+    "text": "What type of chart\n\nThe data type determines what chart is used for visualisation\n\nNominal & Ordinal Discrete Data Numeric data Bar Chart Pie Chart Bar Chart Histogram Box plot Great for Great for illustrating illustrating Great for illustrating the distribution relativity portions or particularly for shares ordinal data\nTask 1: Real Estate Data\nWe wish to compare the distribution of house prices for properties within/outside school zone Refer to the workshop data set under Module 1. Refer to the Price column and answer the following questions. a. Generate summary statistics of house prices for properties within/outside the school zone b. Draw two frequency percentage histograms. c. Draw two box plots 24\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 23"
   },
   {
     "objectID": "week1/slides.html#source-page-024",
     "href": "week1/slides.html#source-page-024",
     "title": "Describing and visualising data",
     "section": "",
-    "text": "Instructions for Summary Statistics\n\nHighlight the relevant column and check ‘Labels in the first row’\nClick on Data tab and choose 3. Select Descriptive Statistics 6. Check ‘output range’ box and select a\nClick on Data Analysis 4. Click ‘OK’ blank cell\nCheck the ‘Summary statistics’ box\nClick OK 5 6 7 8 1 2 3 4 25\n\nSource: Workshop_slides_Week_1-ETX1100_ETX5900 Workshop solutions_fullPage.pdf, page 24\n\n\n\n\n\nVisual from source page 24.\n\n\n\n\n\n\nVisual from source page 24.\n\n\n\n\n\n\n\n\nVisual from source page 24."
+    "text": "Instructions for Summary Statistics\n\nHighlight the relevant column and check ‘Labels in the first row’\nClick on Data tab and choose 3. Select Descriptive Statistics 6. Check ‘output range’ box and select a\nClick on Data Analysis 4. Click ‘OK’ blank cell\nCheck the ‘Summary statistics’ box\nClick OK\n\n\n\n\n\n\nVisual from source page 24.\n\n\n\n\n\n\nVisual from source page 24.\n\n\n\n\n\n\n\n\nVisual from source page 24."
   },
   {
     "objectID": "week1/slides.html#source-page-025",
