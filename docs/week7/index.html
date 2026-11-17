@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ETX1100/ETX5900 Business Statistics – Business Statistics</title>
+<title>Week 7 - Introduction to time series – Business Statistics</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-70361e7c7413d257e16cd85e985e9bdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-95cd9b02161972d28a2151982aadd563.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fe95c27409410de8cfb5d230c9207ae0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -110,45 +110,40 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-schedule">    
         <li>
     <a class="dropdown-item" href="../week1/index.html">
- <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+ <span class="dropdown-text">Week 1 - Describing and visualising data</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../week2/index.html">
- <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+ <span class="dropdown-text">Week 2 - Probability and distributions</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../week3/index.html">
- <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+ <span class="dropdown-text">Week 3 - Sampling and estimation</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../week4/index.html">
- <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+ <span class="dropdown-text">Week 4 - Testing business claims</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../week5/index.html">
- <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+ <span class="dropdown-text">Week 5 - Chi-square, correlation and simple linear regression</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../week6/index.html">
- <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+ <span class="dropdown-text">Week 6 - Multiple regression and model evaluation</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../week7/index.html">
- <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+ <span class="dropdown-text">Week 7 - Introduction to time series</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../week8/index.html">
- <span class="dropdown-text">ETX1100/ETX5900 Business Statistics</span></a>
+ <span class="dropdown-text">Week 8 - Integrated business case, communication and revision</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="https://edstem.org/au/courses/00000/discussion/"> <i class="bi bi-chat-fill" role="img">
-</i> 
-<span class="menu-text">Discussion</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://learning.monash.edu/course/view.php?id=00000&amp;section=1"> <i class="bi bi-mortarboard-fill" role="img">
+    <a class="nav-link" href="https://learning.monash.edu/course/view.php?id=40805"> <i class="bi bi-mortarboard-fill" role="img">
 </i> 
 <span class="menu-text">Moodle</span></a>
   </li>  
@@ -169,9 +164,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-you-will-learn-this-week" id="toc-what-you-will-learn-this-week" class="nav-link active" data-scroll-target="#what-you-will-learn-this-week">What you will learn this week</a></li>
-  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
   <li><a href="#upcoming-assessments" id="toc-upcoming-assessments" class="nav-link" data-scroll-target="#upcoming-assessments">Upcoming assessments</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
   </ul>
 </nav>
     </div>
@@ -180,8 +175,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ETX1100/ETX5900 Business Statistics</h1>
-<p class="subtitle lead">Week 7: Introduction to time series</p>
+<h1 class="title">Week 7 - Introduction to time series</h1>
 </div>
 
 
@@ -198,19 +192,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-you-will-learn-this-week" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-will-learn-this-week">What you will learn this week</h2>
-<ul>
-<li>Fit and use a linear trend to forecast values over time.</li>
-<li>Plot observed and deseasonalised values to see trend and seasonality.</li>
-<li>Interpret supplied seasonal indices, deseasonalise observations, and combine the fitted trend with an index to forecast.</li>
-<li>Use earlier data to fit a forecast, then compare it with observed values in a later historical test period.</li>
-<li>Calculate and compare mean absolute deviation (MAD) for forecasts.</li>
-</ul>
-</section>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<p>The interactive slides and browser-printed PDF adapt the relevant pages of the <a href="../resources/ETB1100-S2-2026/seminar/Seminar Week 11 ETB1100 S2 2026.pdf">ETB1100 Week 11 seminar PDF</a>. Source-page links appear on each slide. Historical logistics in the source are labelled; check the current schedule and Moodle for live details.</p>
 <div class="slide-actions">
 <a href="slides.pdf" class="slide-download-pdf" download="">Download PDF slides</a><a href="slides.html" class="slide-open-html">Open interactive slides</a>
 </div>
@@ -220,6 +203,12 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><strong>Week 7:</strong> Quiz 7 — due Mon 25 Jan 2027</li>
 </ul>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<div class="data-actions">
+<p><a href="week-7-chocolate-sales.xlsx" download="">Download Chocolate sales time-series data</a></p>
+</div>
 
 
 </section>

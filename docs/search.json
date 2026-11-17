@@ -198,23 +198,23 @@
   {
     "objectID": "week8/index.html",
     "href": "week8/index.html",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 8 - Integrated business case, communication and revision",
     "section": "",
-    "text": "Review probability, inference and regression questions from the source workshop.\nPractise choosing methods and explaining statistical conclusions.\nIdentify areas needing further practice before the examination."
-  },
-  {
-    "objectID": "week8/index.html#what-you-will-learn-this-week",
-    "href": "week8/index.html#what-you-will-learn-this-week",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "",
-    "text": "Review probability, inference and regression questions from the source workshop.\nPractise choosing methods and explaining statistical conclusions.\nIdentify areas needing further practice before the examination."
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week8/index.html#slides",
     "href": "week8/index.html#slides",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Slides",
-    "text": "Slides\nThe interactive slides and browser-printed PDF reproduce all 39 pages of the ETX5900 source revision workshop, including worked solutions. The source exam rules and timetable are historical; use the current official exam information in Moodle.\n\nDownload PDF slidesOpen interactive slides"
+    "title": "Week 8 - Integrated business case, communication and revision",
+    "section": "",
+    "text": "Download PDF slidesOpen interactive slides"
+  },
+  {
+    "objectID": "week8/index.html#data",
+    "href": "week8/index.html#data",
+    "title": "Week 8 - Integrated business case, communication and revision",
+    "section": "Data",
+    "text": "Data\n\nDownload Revision case data"
   },
   {
     "objectID": "week7/slides.html#source-page-001",
@@ -464,37 +464,30 @@
   {
     "objectID": "week6/index.html",
     "href": "week6/index.html",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 6 - Multiple regression and model evaluation",
     "section": "",
-    "text": "Fit and interpret multiple regression models in Excel.\nTest individual coefficients and the overall model.\nCompare model fit with R^2, adjusted R^2 and residual plots.\nCode categorical predictors with dummy variables and interpret their coefficients."
-  },
-  {
-    "objectID": "week6/index.html#what-you-will-learn-this-week",
-    "href": "week6/index.html#what-you-will-learn-this-week",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "",
-    "text": "Fit and interpret multiple regression models in Excel.\nTest individual coefficients and the overall model.\nCompare model fit with R^2, adjusted R^2 and residual plots.\nCode categorical predictors with dummy variables and interpret their coefficients."
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week6/index.html#slides",
     "href": "week6/index.html#slides",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Slides",
-    "text": "Slides\nThe interactive slides and browser-printed PDF adapt all 34 pages of the ETF1100 Week 9 seminar and all 15 pages of its tutorial solutions. Source-page links appear on every slide. Historical ETF1100 logistics are labelled; check the current schedule and Moodle for live instructions."
-  },
-  {
-    "objectID": "week6/index.html#excel-data",
-    "href": "week6/index.html#excel-data",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Excel data",
-    "text": "Excel data\n\nReal-estate seminar data: the RealEstate sheet for model fitting, evaluation and dummy variables.\nTravel-time tutorial data: the YOUR DATA sheet for simple and multiple regression practice.\nWorked tutorial workbook: source output and solutions for cross-checking.\nUnderwriting data: an optional categorical-predictor practice set from the Week 9 materials.\n\nThe older Week 6 workbook copies remain in the repository for historical work; use the source files linked above with the current deck.\n\nDownload PDF slidesOpen interactive slides"
+    "title": "Week 6 - Multiple regression and model evaluation",
+    "section": "",
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week6/index.html#upcoming-assessments",
     "href": "week6/index.html#upcoming-assessments",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 6 - Multiple regression and model evaluation",
     "section": "Upcoming assessments",
     "text": "Upcoming assessments\n\nWeek 6: Quiz 6 — due Mon 18 Jan 2027\nWeek 7: Quiz 7 — due Mon 25 Jan 2027"
+  },
+  {
+    "objectID": "week6/index.html#data",
+    "href": "week6/index.html#data",
+    "title": "Week 6 - Multiple regression and model evaluation",
+    "section": "Data",
+    "text": "Data\n\nDownload Real-estate seminar data Download Travel-time tutorial data Download Underwriting data"
   },
   {
     "objectID": "week5/slides.html#chi-source-page-001",
@@ -1157,30 +1150,30 @@
   {
     "objectID": "week4/index.html",
     "href": "week4/index.html",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 4 - Testing business claims",
     "section": "",
-    "text": "State null and alternative hypotheses for a population mean or proportion.\nExplain sample proportions, their sampling variation and confidence intervals.\nCalculate and interpret a test statistic and p-value.\nExplain significance, Type I and Type II errors, and the decision in context."
-  },
-  {
-    "objectID": "week4/index.html#what-you-will-learn-this-week",
-    "href": "week4/index.html#what-you-will-learn-this-week",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "",
-    "text": "State null and alternative hypotheses for a population mean or proportion.\nExplain sample proportions, their sampling variation and confidence intervals.\nCalculate and interpret a test statistic and p-value.\nExplain significance, Type I and Type II errors, and the decision in context."
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week4/index.html#slides",
     "href": "week4/index.html#slides",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Slides",
-    "text": "Slides\nThe interactive slides and browser-printed PDF reproduce all 29 pages of the ETX5900 hypothesis-testing workshop, including worked solutions, and insert pages 6–11 of the ETF1100 Week 7 seminar after source slide 3. Historical dates and instructions on reproduced pages are superseded by the current schedule on this site and Moodle.\n\nDownload PDF slidesOpen interactive slides"
+    "title": "Week 4 - Testing business claims",
+    "section": "",
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week4/index.html#upcoming-assessments",
     "href": "week4/index.html#upcoming-assessments",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 4 - Testing business claims",
     "section": "Upcoming assessments",
     "text": "Upcoming assessments\n\nWeek 4: Quiz 4 — due Mon 21 Dec 2026\nWeek 5: Written assignment — due Mon 04 Jan 2027 at 11:55 pm; Quiz 5 — due Mon 11 Jan 2027\nWeek 6: Quiz 6 — due Mon 18 Jan 2027"
+  },
+  {
+    "objectID": "week4/index.html#data",
+    "href": "week4/index.html#data",
+    "title": "Week 4 - Testing business claims",
+    "section": "Data",
+    "text": "Data\n\nDownload Sample proportions data Download Hypothesis testing data"
   },
   {
     "objectID": "week3/slides.html#source-page-001",
@@ -1458,30 +1451,30 @@
   {
     "objectID": "week2/index.html",
     "href": "week2/index.html",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 2 - Probability and distributions",
     "section": "",
-    "text": "Calculate marginal, joint and conditional probabilities from categorical data.\nUse contingency tables to assess independence.\nCalculate and interpret probabilities from a Normal distribution in Excel."
-  },
-  {
-    "objectID": "week2/index.html#what-you-will-learn-this-week",
-    "href": "week2/index.html#what-you-will-learn-this-week",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "",
-    "text": "Calculate marginal, joint and conditional probabilities from categorical data.\nUse contingency tables to assess independence.\nCalculate and interpret probabilities from a Normal distribution in Excel."
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week2/index.html#slides",
     "href": "week2/index.html#slides",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Slides",
-    "text": "Slides\nThe interactive slides and browser-printed PDF reproduce all 47 pages of the ETX5900 source workshop, including worked solutions. Historical dates and instructions on reproduced pages are superseded by the current schedule on this site and Moodle.\n\nDownload PDF slidesOpen interactive slides"
+    "title": "Week 2 - Probability and distributions",
+    "section": "",
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week2/index.html#upcoming-assessments",
     "href": "week2/index.html#upcoming-assessments",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 2 - Probability and distributions",
     "section": "Upcoming assessments",
     "text": "Upcoming assessments\n\nWeek 2: Quiz 2 — due Mon 07 Dec 2026\nWeek 3: Quiz 3 — due Mon 14 Dec 2026\nWeek 4: Quiz 4 — due Mon 21 Dec 2026"
+  },
+  {
+    "objectID": "week2/index.html#data",
+    "href": "week2/index.html#data",
+    "title": "Week 2 - Probability and distributions",
+    "section": "Data",
+    "text": "Data\n\nDownload Categorical data Download Distribution data"
   },
   {
     "objectID": "week1/slides.html#welcome",
@@ -2039,30 +2032,30 @@
   {
     "objectID": "week1/index.html",
     "href": "week1/index.html",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 1 - Describing and visualising data",
     "section": "",
-    "text": "Identify units, variables and data types.\nEnter cell formulas, fill formulas down a column and use common Excel functions.\nSummarise business data using frequencies and descriptive statistics.\nCreate and interpret categorical and numerical visualisations in Excel."
-  },
-  {
-    "objectID": "week1/index.html#what-you-will-learn-this-week",
-    "href": "week1/index.html#what-you-will-learn-this-week",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "",
-    "text": "Identify units, variables and data types.\nEnter cell formulas, fill formulas down a column and use common Excel functions.\nSummarise business data using frequencies and descriptive statistics.\nCreate and interpret categorical and numerical visualisations in Excel."
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week1/index.html#slides",
     "href": "week1/index.html#slides",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Slides",
-    "text": "Slides\nThe interactive slides and browser-printed PDF reproduce all 44 pages of the ETX5900 source workshop, including worked solutions, with slides 29–34 of the ETF1100 Week 1 PowerPoint inserted after source slide 11 as an editable Excel primer.\nSome reproduced pages contain historical staff, assessment and class information. Use the current schedule on this site and Moodle for live logistics.\n\nDownload PDF slidesOpen interactive slides"
+    "title": "Week 1 - Describing and visualising data",
+    "section": "",
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week1/index.html#upcoming-assessments",
     "href": "week1/index.html#upcoming-assessments",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 1 - Describing and visualising data",
     "section": "Upcoming assessments",
     "text": "Upcoming assessments\n\nWeek 1: Quiz 1 — due Mon 30 Nov 2026\nWeek 2: Quiz 2 — due Mon 07 Dec 2026\nWeek 3: Quiz 3 — due Mon 14 Dec 2026"
+  },
+  {
+    "objectID": "week1/index.html#data",
+    "href": "week1/index.html#data",
+    "title": "Week 1 - Describing and visualising data",
+    "section": "Data",
+    "text": "Data\n\nDownload Week 1 data"
   },
   {
     "objectID": "week1/solution/index.html",
@@ -2431,30 +2424,30 @@
   {
     "objectID": "week3/index.html",
     "href": "week3/index.html",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 3 - Sampling and estimation",
     "section": "",
-    "text": "Explain sampling variation and the central limit theorem.\nUse sampling distributions and standard errors.\nConstruct and interpret confidence intervals from the supplied examples."
-  },
-  {
-    "objectID": "week3/index.html#what-you-will-learn-this-week",
-    "href": "week3/index.html#what-you-will-learn-this-week",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "",
-    "text": "Explain sampling variation and the central limit theorem.\nUse sampling distributions and standard errors.\nConstruct and interpret confidence intervals from the supplied examples."
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week3/index.html#slides",
     "href": "week3/index.html#slides",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Slides",
-    "text": "Slides\nThe interactive slides and browser-printed PDF reproduce all 34 pages of the ETX5900 source workshop, including worked solutions. Historical dates and instructions on reproduced pages are superseded by the current schedule on this site and Moodle.\n\nDownload PDF slidesOpen interactive slides"
+    "title": "Week 3 - Sampling and estimation",
+    "section": "",
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week3/index.html#upcoming-assessments",
     "href": "week3/index.html#upcoming-assessments",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 3 - Sampling and estimation",
     "section": "Upcoming assessments",
     "text": "Upcoming assessments\n\nWeek 3: Quiz 3 — due Mon 14 Dec 2026\nWeek 4: Quiz 4 — due Mon 21 Dec 2026\nWeek 5: Written assignment — due Mon 04 Jan 2027 at 11:55 pm; Quiz 5 — due Mon 11 Jan 2027"
+  },
+  {
+    "objectID": "week3/index.html#data",
+    "href": "week3/index.html#data",
+    "title": "Week 3 - Sampling and estimation",
+    "section": "Data",
+    "text": "Data\n\nDownload Sampling and estimation data"
   },
   {
     "objectID": "week3/solution/index.html",
@@ -2746,30 +2739,30 @@
   {
     "objectID": "week5/index.html",
     "href": "week5/index.html",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 5 - Chi-square, correlation and simple linear regression",
     "section": "",
-    "text": "Test independence between two categorical variables using chi-square.\nDescribe the direction and strength of association between two numerical variables using a scatterplot and correlation.\nFit, interpret and evaluate a simple linear regression in Excel."
-  },
-  {
-    "objectID": "week5/index.html#what-you-will-learn-this-week",
-    "href": "week5/index.html#what-you-will-learn-this-week",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "",
-    "text": "Test independence between two categorical variables using chi-square.\nDescribe the direction and strength of association between two numerical variables using a scatterplot and correlation.\nFit, interpret and evaluate a simple linear regression in Excel."
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week5/index.html#slides",
     "href": "week5/index.html#slides",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Slides",
-    "text": "Slides\nThe interactive slides and browser-printed PDF contain all 28 pages of the ETX5900 chi-square workshop, pages 4–11 of the ETF1100 Week 8 seminar for correlation, and pages 5–53 of the ETX5900 regression workshop, including worked solutions. Historical dates and instructions on reproduced pages are superseded by the current schedule on this site and Moodle.\nFor the correlation explanation, use the source RealEstate workbook. For the regression examples, use the source RealEstate and Marketing workbook. The chi-square practice workbook and regression practice workbook accompany the Week 5 solutions.\n\nDownload PDF slidesOpen interactive slides"
+    "title": "Week 5 - Chi-square, correlation and simple linear regression",
+    "section": "",
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week5/index.html#upcoming-assessments",
     "href": "week5/index.html#upcoming-assessments",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 5 - Chi-square, correlation and simple linear regression",
     "section": "Upcoming assessments",
     "text": "Upcoming assessments\n\nWeek 5: Written assignment — due Mon 04 Jan 2027 at 11:55 pm; Quiz 5 — due Mon 11 Jan 2027\nWeek 6: Quiz 6 — due Mon 18 Jan 2027\nWeek 7: Quiz 7 — due Mon 25 Jan 2027"
+  },
+  {
+    "objectID": "week5/index.html#data",
+    "href": "week5/index.html#data",
+    "title": "Week 5 - Chi-square, correlation and simple linear regression",
+    "section": "Data",
+    "text": "Data\n\nDownload Chi-square practice data Download Correlation example data Download Regression example data Download Regression practice data"
   },
   {
     "objectID": "week5/solution/index.html",
@@ -3152,30 +3145,30 @@
   {
     "objectID": "week7/index.html",
     "href": "week7/index.html",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 7 - Introduction to time series",
     "section": "",
-    "text": "Fit and use a linear trend to forecast values over time.\nPlot observed and deseasonalised values to see trend and seasonality.\nInterpret supplied seasonal indices, deseasonalise observations, and combine the fitted trend with an index to forecast.\nUse earlier data to fit a forecast, then compare it with observed values in a later historical test period.\nCalculate and compare mean absolute deviation (MAD) for forecasts."
-  },
-  {
-    "objectID": "week7/index.html#what-you-will-learn-this-week",
-    "href": "week7/index.html#what-you-will-learn-this-week",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "",
-    "text": "Fit and use a linear trend to forecast values over time.\nPlot observed and deseasonalised values to see trend and seasonality.\nInterpret supplied seasonal indices, deseasonalise observations, and combine the fitted trend with an index to forecast.\nUse earlier data to fit a forecast, then compare it with observed values in a later historical test period.\nCalculate and compare mean absolute deviation (MAD) for forecasts."
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week7/index.html#slides",
     "href": "week7/index.html#slides",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Slides",
-    "text": "Slides\nThe interactive slides and browser-printed PDF adapt the relevant pages of the ETB1100 Week 11 seminar PDF. Source-page links appear on each slide. Historical logistics in the source are labelled; check the current schedule and Moodle for live details.\n\nDownload PDF slidesOpen interactive slides"
+    "title": "Week 7 - Introduction to time series",
+    "section": "",
+    "text": "Download PDF slidesOpen interactive slides"
   },
   {
     "objectID": "week7/index.html#upcoming-assessments",
     "href": "week7/index.html#upcoming-assessments",
-    "title": "ETX1100/ETX5900 Business Statistics",
+    "title": "Week 7 - Introduction to time series",
     "section": "Upcoming assessments",
     "text": "Upcoming assessments\n\nWeek 7: Quiz 7 — due Mon 25 Jan 2027"
+  },
+  {
+    "objectID": "week7/index.html#data",
+    "href": "week7/index.html#data",
+    "title": "Week 7 - Introduction to time series",
+    "section": "Data",
+    "text": "Data\n\nDownload Chocolate sales time-series data"
   },
   {
     "objectID": "week7/solution/index.html",
