@@ -1194,56 +1194,85 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <li><code>=COUNTIF(range, criterion)</code> — counts cells meeting one condition, such as <code>=COUNTIF(A2:A11,"&lt;5")</code>.</li>
 </ul>
 </section>
-<section id="frequency-tables---pivot-table---watch-me" class="slide level2">
+<section id="frequency-tables---pivot-table---watch-me" class="slide level2 smaller">
 <h2>Frequency tables - <code>Pivot Table</code> - Watch me 👀</h2>
 <ul>
 <li>A <strong>Pivot Table</strong> groups your data and summarises them.</li>
-<li>e.g.&nbsp;Use <strong>Counts</strong> to make a frequency table for categories.</li>
+<li>e.g.&nbsp;Create relative frequency tables for easier comparisons</li>
 </ul>
-<p><strong>How many properties have been sold in an <code>Auction</code> (<code>Yes/No</code>)</strong></p>
+<p><strong>What is the distribution of relative frequencies for number of bedrooms?</strong></p>
 <ol type="1">
 <li>Choose <strong>Insert &gt; PivotTable</strong>.</li>
 <li><code>Select a table or range</code> &gt; highlight the entire of the dataset</li>
 <li><code>Choose where to place Pivot Table</code> &gt; <code>New worksheet</code> &gt; OK</li>
-<li><code>Auction</code> in <strong>Rows</strong>.</li>
-<li>Put <code>Beds</code> in <strong>Values</strong> and change <strong>Sum of Beds</strong> to <strong>Count of Beds</strong>.</li>
+<li><code>Beds</code> in <strong>Rows</strong>.</li>
+<li>Put <code>Beds</code> in <strong>Values</strong> and set <strong>Summarize Values By &gt; Count</strong> for raw counts.</li>
+<li>Put <code>Beds</code> in <strong>Values</strong> again. For this second value field, set <strong>Summarise Values By &gt; Count</strong>, then <strong>Show Values As &gt; % of Grand Total</strong>.</li>
 </ol>
-<p><strong>Note</strong>: Every property has a <code>Beds</code> entry, so this counts properties.</p>
+<p><strong>Note</strong>: Every property has a <code>Beds</code> entry, so <strong>Count of Beds</strong> counts properties. <strong>Sum of Beds</strong> would instead give each group’s share of all bedrooms.</p>
 </section>
-<section id="frequency-tables---pivot-table" class="slide level2">
-<h2>Frequency tables - <code>Pivot Table</code></h2>
+<section id="relative-frequency-table" class="slide level2">
+<h2>Relative frequency table</h2>
 <table class="caption-top">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 36%">
+<col style="width: 36%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Auction</th>
-<th style="text-align: right;">Count of Beds (properties)</th>
+<th>Number of bedrooms (<code>Beds</code>)</th>
+<th style="text-align: right;">Number of properties</th>
+<th style="text-align: right;">Relative frequency</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>No</td>
-<td style="text-align: right;">151</td>
+<td>2</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">8.81%</td>
 </tr>
 <tr class="even">
-<td>Yes</td>
-<td style="text-align: right;">178</td>
+<td>3</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">41.95%</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">32.83%</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">13.68%</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2.43%</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.30%</td>
 </tr>
 <tr class="odd">
 <td><strong>Grand Total</strong></td>
 <td style="text-align: right;"><strong>329</strong></td>
+<td style="text-align: right;"><strong>100.00%</strong></td>
 </tr>
 </tbody>
 </table>
-<p>For example, <strong>178</strong> properties have <code>Auction = Yes</code>.</p>
 </section>
-<section id="frequency-percentage-tables---pivot-table---watch-me" class="slide level2 smaller">
-<h2>Frequency percentage tables - <code>Pivot Table</code> - Watch me 👀</h2>
+<section id="change-bin-size---watch-me" class="slide level2 smaller">
+<h2>Change bin size - Watch me 👀</h2>
 <p>Create a Pivot Table of <strong>percentage of properties</strong> in each area band.</p>
 <ol type="1">
 <li>Select the dataset, then choose <strong>Insert &gt; PivotTable &gt; New Worksheet</strong>.</li>
 <li>Put <code>Area (sqm)</code> in <strong>Rows</strong>. Put <code>Beds</code> in <strong>Values</strong> and set <strong>Summarize Values By &gt; Count</strong>; every property has a <code>Beds</code> entry.</li>
 <li>Right-click an area value in the PivotTable and choose <strong>Group</strong>. Set <strong>Starting at: 0</strong>, <strong>Ending at: 1600</strong>, <strong>By: 200</strong> to create 200 sqm bands.</li>
-<li>Open <strong>Value Field Settings</strong> for <code>Count of Beds</code>, then choose <strong>Show Values As &gt; % of Grand Total</strong>. Format the result as a percentage with one decimal place.</li>
+<li>Open <strong>Value Field Settings</strong> for <code>Count of Beds</code>, then choose <strong>Show Values As. &gt; % of Grand Total</strong>. Format the result as a percentage with one decimal place.</li>
 </ol>
 <p>For example, <strong>192 of 329 properties</strong> fall in the <strong>600–799 sqm</strong> band, so its frequency percentage is <strong>58.4%</strong>. The Grand Total should be <strong>100%</strong>.</p>
 </section>

@@ -2776,21 +2776,21 @@
     "href": "week1/slides.html#frequency-tables---pivot-table---watch-me",
     "title": "Describing and visualising data",
     "section": "Frequency tables - Pivot Table - Watch me 👀",
-    "text": "Frequency tables - Pivot Table - Watch me 👀\n\nA Pivot Table groups your data and summarises them.\ne.g. Use Counts to make a frequency table for categories.\n\nHow many properties have been sold in an Auction (Yes/No)\n\nChoose Insert &gt; PivotTable.\nSelect a table or range &gt; highlight the entire of the dataset\nChoose where to place Pivot Table &gt; New worksheet &gt; OK\nAuction in Rows.\nPut Beds in Values and change Sum of Beds to Count of Beds.\n\nNote: Every property has a Beds entry, so this counts properties."
+    "text": "Frequency tables - Pivot Table - Watch me 👀\n\nA Pivot Table groups your data and summarises them.\ne.g. Create relative frequency tables for easier comparisons\n\nWhat is the distribution of relative frequencies for number of bedrooms?\n\nChoose Insert &gt; PivotTable.\nSelect a table or range &gt; highlight the entire of the dataset\nChoose where to place Pivot Table &gt; New worksheet &gt; OK\nBeds in Rows.\nPut Beds in Values and set Summarize Values By &gt; Count for raw counts.\nPut Beds in Values again. For this second value field, set Summarise Values By &gt; Count, then Show Values As &gt; % of Grand Total.\n\nNote: Every property has a Beds entry, so Count of Beds counts properties. Sum of Beds would instead give each group’s share of all bedrooms."
   },
   {
-    "objectID": "week1/slides.html#frequency-tables---pivot-table",
-    "href": "week1/slides.html#frequency-tables---pivot-table",
+    "objectID": "week1/slides.html#relative-frequency-table",
+    "href": "week1/slides.html#relative-frequency-table",
     "title": "Describing and visualising data",
-    "section": "Frequency tables - Pivot Table",
-    "text": "Frequency tables - Pivot Table\n\n\n\nAuction\nCount of Beds (properties)\n\n\n\n\nNo\n151\n\n\nYes\n178\n\n\nGrand Total\n329\n\n\n\nFor example, 178 properties have Auction = Yes."
+    "section": "Relative frequency table",
+    "text": "Relative frequency table\n\n\n\n\n\n\n\n\nNumber of bedrooms (Beds)\nNumber of properties\nRelative frequency\n\n\n\n\n2\n29\n8.81%\n\n\n3\n138\n41.95%\n\n\n4\n108\n32.83%\n\n\n5\n45\n13.68%\n\n\n6\n8\n2.43%\n\n\n8\n1\n0.30%\n\n\nGrand Total\n329\n100.00%"
   },
   {
-    "objectID": "week1/slides.html#frequency-percentage-tables---pivot-table---watch-me",
-    "href": "week1/slides.html#frequency-percentage-tables---pivot-table---watch-me",
+    "objectID": "week1/slides.html#change-bin-size---watch-me",
+    "href": "week1/slides.html#change-bin-size---watch-me",
     "title": "Describing and visualising data",
-    "section": "Frequency percentage tables - Pivot Table - Watch me 👀",
-    "text": "Frequency percentage tables - Pivot Table - Watch me 👀\nCreate a Pivot Table of percentage of properties in each area band.\n\nSelect the dataset, then choose Insert &gt; PivotTable &gt; New Worksheet.\nPut Area (sqm) in Rows. Put Beds in Values and set Summarize Values By &gt; Count; every property has a Beds entry.\nRight-click an area value in the PivotTable and choose Group. Set Starting at: 0, Ending at: 1600, By: 200 to create 200 sqm bands.\nOpen Value Field Settings for Count of Beds, then choose Show Values As &gt; % of Grand Total. Format the result as a percentage with one decimal place.\n\nFor example, 192 of 329 properties fall in the 600–799 sqm band, so its frequency percentage is 58.4%. The Grand Total should be 100%."
+    "section": "Change bin size - Watch me 👀",
+    "text": "Change bin size - Watch me 👀\nCreate a Pivot Table of percentage of properties in each area band.\n\nSelect the dataset, then choose Insert &gt; PivotTable &gt; New Worksheet.\nPut Area (sqm) in Rows. Put Beds in Values and set Summarize Values By &gt; Count; every property has a Beds entry.\nRight-click an area value in the PivotTable and choose Group. Set Starting at: 0, Ending at: 1600, By: 200 to create 200 sqm bands.\nOpen Value Field Settings for Count of Beds, then choose Show Values As. &gt; % of Grand Total. Format the result as a percentage with one decimal place.\n\nFor example, 192 of 329 properties fall in the 600–799 sqm band, so its frequency percentage is 58.4%. The Grand Total should be 100%."
   },
   {
     "objectID": "week1/slides.html#area-frequency-percentage-table",
