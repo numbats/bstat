@@ -1194,12 +1194,9 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <li><code>=COUNTIF(range, criterion)</code> — counts cells meeting one condition, such as <code>=COUNTIF(A2:A11,"&lt;5")</code>.</li>
 </ul>
 </section>
-<section id="frequency-tables---pivot-table---watch-me" class="slide level2 smaller">
+<section id="frequency-tables---pivot-table---watch-me" class="slide level2" style="font-size: 70%;">
 <h2>Frequency tables - <code>Pivot Table</code> - Watch me 👀</h2>
-<ul>
-<li>A <strong>Pivot Table</strong> groups your data and summarises them.</li>
-<li>e.g.&nbsp;Create relative frequency tables for easier comparisons</li>
-</ul>
+<p>A <strong>Pivot Table</strong> groups your data and summarises them. - Create relative frequency tables using percentages make for easier comparisons</p>
 <p><strong>What is the distribution of relative frequencies for number of bedrooms?</strong></p>
 <ol type="1">
 <li>Choose <strong>Insert &gt; PivotTable</strong>.</li>
@@ -1209,10 +1206,10 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <li>Put <code>Beds</code> in <strong>Values</strong> and set <strong>Summarize Values By &gt; Count</strong> for raw counts.</li>
 <li>Put <code>Beds</code> in <strong>Values</strong> again. For this second value field, set <strong>Summarise Values By &gt; Count</strong>, then <strong>Show Values As &gt; % of Grand Total</strong>.</li>
 </ol>
-<p><strong>Note</strong>: Every property has a <code>Beds</code> entry, so <strong>Count of Beds</strong> counts properties. <strong>Sum of Beds</strong> would instead give each group’s share of all bedrooms.</p>
+<p><strong>Note</strong>: Every property has a <code>Beds</code> entry, so <strong>Count of Beds</strong> counts properties.</p>
 </section>
-<section id="relative-frequency-table" class="slide level2">
-<h2>Relative frequency table</h2>
+<section id="relative-frequency-table-beds" class="slide level2">
+<h2>Relative frequency table (beds)</h2>
 <table class="caption-top">
 <colgroup>
 <col style="width: 27%">
@@ -1276,8 +1273,8 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 </ol>
 <p>For example, <strong>192 of 329 properties</strong> fall in the <strong>600–799 sqm</strong> band, so its frequency percentage is <strong>58.4%</strong>. The Grand Total should be <strong>100%</strong>.</p>
 </section>
-<section id="area-frequency-percentage-table" class="slide level2 smaller">
-<h2>Area frequency percentage table</h2>
+<section id="relative-frequency-percentage-table-area" class="slide level2 smaller">
+<h2>Relative frequency percentage table (area)</h2>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -1334,10 +1331,60 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 </tr>
 </tbody>
 </table>
-<p>Keep the empty 1200–1399 sqm band so every interval is represented in the chart.</p>
+<p>Keep the empty 1200–1399 sqm band so every interval is represented.</p>
 </section>
-<section id="plot-the-area-frequency-table-as-a-histogram" class="slide level2 smaller">
-<h2>Plot the area frequency table as a histogram</h2>
+<section id="what-chart-type" class="slide level2 smaller">
+<h2>What chart type?</h2>
+<blockquote>
+<p>Your data type determines your eventual data visualisation</p>
+</blockquote>
+<div class="columns">
+<div class="column" style="width:48%;">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+
+<pre class="mermaid mermaid-js">flowchart TB
+  categorical["Nominal &amp; ordinal data"] --- bar_cat["Bar chart"]
+  categorical --- pie["Pie chart"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Bar chart:</strong> compare categories, especially ordered categories.</li>
+<li><strong>Pie chart:</strong> show portions of a whole.</li>
+</ul>
+</div><div class="column" style="width:52%;">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+
+<pre class="mermaid mermaid-js">flowchart TB
+  numerical["Numerical data"] --- discrete["Discrete data"]
+  numerical --- continuous["Continuous data"]
+  discrete --- bar_num["Bar chart"]
+  continuous --- histogram["Histogram"]
+  continuous --- box["Box plot"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Bar chart, histogram or box plot:</strong> show a distribution.</li>
+</ul>
+</div></div>
+</section>
+<section id="plot-the-area-frequency-table-as-a-histogram---watch-me" class="slide level2 smaller">
+<h2>Plot the area frequency table as a histogram - Watch me 👀</h2>
 <ol type="1">
 <li>Select the <strong>Area band</strong> and <strong>Percentage of properties</strong> columns, excluding <strong>Grand Total</strong>. Use the complete table above if the PivotTable omits the empty band.</li>
 <li>Choose **Insert &gt; Column.</li>
@@ -1345,12 +1392,6 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <li>Check that the horizontal axis shows the 200 sqm bands in order and the vertical axis shows percentages starting at 0%.</li>
 </ol>
 <p><strong>Note</strong>: Excel’s built-in Histogram chart is for raw observations only; this chart uses the frequency percentage table made with Pivot Table.</p>
-</section>
-<section id="what-chart-type" class="slide level2">
-<h2>What chart type?</h2>
-<blockquote>
-<p>Your data type determines your eventual data visualisation</p>
-</blockquote>
 </section>
 <section id="exercise-real-estate-you-try" class="slide level2 smaller">
 <h2>Exercise: Real Estate — You try ✏️</h2>

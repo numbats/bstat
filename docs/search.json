@@ -2776,14 +2776,14 @@
     "href": "week1/slides.html#frequency-tables---pivot-table---watch-me",
     "title": "Describing and visualising data",
     "section": "Frequency tables - Pivot Table - Watch me 👀",
-    "text": "Frequency tables - Pivot Table - Watch me 👀\n\nA Pivot Table groups your data and summarises them.\ne.g. Create relative frequency tables for easier comparisons\n\nWhat is the distribution of relative frequencies for number of bedrooms?\n\nChoose Insert &gt; PivotTable.\nSelect a table or range &gt; highlight the entire of the dataset\nChoose where to place Pivot Table &gt; New worksheet &gt; OK\nBeds in Rows.\nPut Beds in Values and set Summarize Values By &gt; Count for raw counts.\nPut Beds in Values again. For this second value field, set Summarise Values By &gt; Count, then Show Values As &gt; % of Grand Total.\n\nNote: Every property has a Beds entry, so Count of Beds counts properties. Sum of Beds would instead give each group’s share of all bedrooms."
+    "text": "Frequency tables - Pivot Table - Watch me 👀\nA Pivot Table groups your data and summarises them. - Create relative frequency tables using percentages make for easier comparisons\nWhat is the distribution of relative frequencies for number of bedrooms?\n\nChoose Insert &gt; PivotTable.\nSelect a table or range &gt; highlight the entire of the dataset\nChoose where to place Pivot Table &gt; New worksheet &gt; OK\nBeds in Rows.\nPut Beds in Values and set Summarize Values By &gt; Count for raw counts.\nPut Beds in Values again. For this second value field, set Summarise Values By &gt; Count, then Show Values As &gt; % of Grand Total.\n\nNote: Every property has a Beds entry, so Count of Beds counts properties."
   },
   {
-    "objectID": "week1/slides.html#relative-frequency-table",
-    "href": "week1/slides.html#relative-frequency-table",
+    "objectID": "week1/slides.html#relative-frequency-table-beds",
+    "href": "week1/slides.html#relative-frequency-table-beds",
     "title": "Describing and visualising data",
-    "section": "Relative frequency table",
-    "text": "Relative frequency table\n\n\n\n\n\n\n\n\nNumber of bedrooms (Beds)\nNumber of properties\nRelative frequency\n\n\n\n\n2\n29\n8.81%\n\n\n3\n138\n41.95%\n\n\n4\n108\n32.83%\n\n\n5\n45\n13.68%\n\n\n6\n8\n2.43%\n\n\n8\n1\n0.30%\n\n\nGrand Total\n329\n100.00%"
+    "section": "Relative frequency table (beds)",
+    "text": "Relative frequency table (beds)\n\n\n\n\n\n\n\n\nNumber of bedrooms (Beds)\nNumber of properties\nRelative frequency\n\n\n\n\n2\n29\n8.81%\n\n\n3\n138\n41.95%\n\n\n4\n108\n32.83%\n\n\n5\n45\n13.68%\n\n\n6\n8\n2.43%\n\n\n8\n1\n0.30%\n\n\nGrand Total\n329\n100.00%"
   },
   {
     "objectID": "week1/slides.html#change-bin-size---watch-me",
@@ -2793,25 +2793,25 @@
     "text": "Change bin size - Watch me 👀\nCreate a Pivot Table of percentage of properties in each area band.\n\nSelect the dataset, then choose Insert &gt; PivotTable &gt; New Worksheet.\nPut Area (sqm) in Rows. Put Beds in Values and set Summarize Values By &gt; Count; every property has a Beds entry.\nRight-click an area value in the PivotTable and choose Group. Set Starting at: 0, Ending at: 1600, By: 200 to create 200 sqm bands.\nOpen Value Field Settings for Count of Beds, then choose Show Values As. &gt; % of Grand Total. Format the result as a percentage with one decimal place.\n\nFor example, 192 of 329 properties fall in the 600–799 sqm band, so its frequency percentage is 58.4%. The Grand Total should be 100%."
   },
   {
-    "objectID": "week1/slides.html#area-frequency-percentage-table",
-    "href": "week1/slides.html#area-frequency-percentage-table",
+    "objectID": "week1/slides.html#relative-frequency-percentage-table-area",
+    "href": "week1/slides.html#relative-frequency-percentage-table-area",
     "title": "Describing and visualising data",
-    "section": "Area frequency percentage table",
-    "text": "Area frequency percentage table\n\n\n\nArea band (sqm)\nNumber of properties\nPercentage of properties\n\n\n\n\n0–199\n7\n2.1%\n\n\n200–399\n78\n23.7%\n\n\n400–599\n14\n4.3%\n\n\n600–799\n192\n58.4%\n\n\n800–999\n33\n10.0%\n\n\n1000–1199\n4\n1.2%\n\n\n1200–1399\n0\n0.0%\n\n\n1400–1599\n1\n0.3%\n\n\nGrand Total\n329\n100.0%\n\n\n\nKeep the empty 1200–1399 sqm band so every interval is represented in the chart."
-  },
-  {
-    "objectID": "week1/slides.html#plot-the-area-frequency-table-as-a-histogram",
-    "href": "week1/slides.html#plot-the-area-frequency-table-as-a-histogram",
-    "title": "Describing and visualising data",
-    "section": "Plot the area frequency table as a histogram",
-    "text": "Plot the area frequency table as a histogram\n\nSelect the Area band and Percentage of properties columns, excluding Grand Total. Use the complete table above if the PivotTable omits the empty band.\nChoose **Insert &gt; Column.\nRight-click a bar and choose Format Data Series. Set Gap Width to 0% so adjacent area bands touch.\nCheck that the horizontal axis shows the 200 sqm bands in order and the vertical axis shows percentages starting at 0%.\n\nNote: Excel’s built-in Histogram chart is for raw observations only; this chart uses the frequency percentage table made with Pivot Table."
+    "section": "Relative frequency percentage table (area)",
+    "text": "Relative frequency percentage table (area)\n\n\n\nArea band (sqm)\nNumber of properties\nPercentage of properties\n\n\n\n\n0–199\n7\n2.1%\n\n\n200–399\n78\n23.7%\n\n\n400–599\n14\n4.3%\n\n\n600–799\n192\n58.4%\n\n\n800–999\n33\n10.0%\n\n\n1000–1199\n4\n1.2%\n\n\n1200–1399\n0\n0.0%\n\n\n1400–1599\n1\n0.3%\n\n\nGrand Total\n329\n100.0%\n\n\n\nKeep the empty 1200–1399 sqm band so every interval is represented."
   },
   {
     "objectID": "week1/slides.html#what-chart-type",
     "href": "week1/slides.html#what-chart-type",
     "title": "Describing and visualising data",
     "section": "What chart type?",
-    "text": "What chart type?\n\nYour data type determines your eventual data visualisation"
+    "text": "What chart type?\n\nYour data type determines your eventual data visualisation\n\n\n\n\n\n\n\n\n\nflowchart TB\n  categorical[\"Nominal & ordinal data\"] --- bar_cat[\"Bar chart\"]\n  categorical --- pie[\"Pie chart\"]\n\n\n\n\n\n\n\nBar chart: compare categories, especially ordered categories.\nPie chart: show portions of a whole.\n\n\n\n\n\n\n\n\nflowchart TB\n  numerical[\"Numerical data\"] --- discrete[\"Discrete data\"]\n  numerical --- continuous[\"Continuous data\"]\n  discrete --- bar_num[\"Bar chart\"]\n  continuous --- histogram[\"Histogram\"]\n  continuous --- box[\"Box plot\"]\n\n\n\n\n\n\n\nBar chart, histogram or box plot: show a distribution."
+  },
+  {
+    "objectID": "week1/slides.html#plot-the-area-frequency-table-as-a-histogram---watch-me",
+    "href": "week1/slides.html#plot-the-area-frequency-table-as-a-histogram---watch-me",
+    "title": "Describing and visualising data",
+    "section": "Plot the area frequency table as a histogram - Watch me 👀",
+    "text": "Plot the area frequency table as a histogram - Watch me 👀\n\nSelect the Area band and Percentage of properties columns, excluding Grand Total. Use the complete table above if the PivotTable omits the empty band.\nChoose **Insert &gt; Column.\nRight-click a bar and choose Format Data Series. Set Gap Width to 0% so adjacent area bands touch.\nCheck that the horizontal axis shows the 200 sqm bands in order and the vertical axis shows percentages starting at 0%.\n\nNote: Excel’s built-in Histogram chart is for raw observations only; this chart uses the frequency percentage table made with Pivot Table."
   },
   {
     "objectID": "week1/slides.html#exercise-real-estate-you-try",
