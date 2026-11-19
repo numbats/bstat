@@ -455,25 +455,32 @@
     "text": "Data\n\nDownload Revision case data"
   },
   {
+    "objectID": "week8/index.html#recommended-reading",
+    "href": "week8/index.html#recommended-reading",
+    "title": "Week 8 - Integrated business case, communication and revision",
+    "section": "Recommended reading",
+    "text": "Recommended reading\nFrom Berenson et al., Basic Business Statistics, Australian 5th edition (printed pages).\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nChs. 2–3, §§2.4, 3.1 and 3.4\nData displays and descriptive measures\n\n\nChs. 4 and 6, §§4.2 and 6.2\nConditional and normal probabilities\n\n\nChs. 7–9, §§7.2, 8.2–8.3 and 9.1, 9.4–9.5\nSampling, intervals and hypothesis tests\n\n\nChs. 3, 12 and 15, §§3.5, 12.2–12.5 and 15.3\nCorrelation, regression and chi-square independence\n\n\nCh. 13, §§13.1–13.4 and 13.6\nMultiple regression and model evaluation\n\n\nCh. 14, §§14.4 and 14.7–14.8 (selected parts)\nLinear trend, supplied seasonal indices and MAD\n\n\n\nSee reading and practice for a mixed set of revision exercises."
+  },
+  {
     "objectID": "week7/reading/index.html",
     "href": "week7/reading/index.html",
     "title": "Week 7 reading and practice: time series, seasonality and MAD",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel. The book covers broader forecasting methods than this class, so follow the limits below."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel. The book covers broader forecasting methods than this class, so follow the limits below."
   },
   {
     "objectID": "week7/reading/index.html#references",
     "href": "week7/reading/index.html#references",
     "title": "Week 7 reading and practice: time series, seasonality and MAD",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel. The book covers broader forecasting methods than this class, so follow the limits below."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel. The book covers broader forecasting methods than this class, so follow the limits below."
   },
   {
     "objectID": "week7/reading/index.html#read",
     "href": "week7/reading/index.html#read",
     "title": "Week 7 reading and practice: time series, seasonality and MAD",
     "section": "Read",
-    "text": "Read\n\n\n\n\n\n\n\nBook reference\nWhy it fits this class\n\n\n\n\nCh. 14, §§14.1–14.2, pp. 545–547\nIntroduces forecasting, trend and seasonal components.\n\n\nCh. 14, §14.4, pp. 555–563, linear-trend portions only\nTime index, least-squares line and forecasts match the class trend method. Skip quadratic and exponential trend comparisons.\n\n\nCh. 14, §14.7, pp. 579–584, MAD definition and interpretation only\nMean absolute deviation supplies the class accuracy measure. Calculate it on later historical test observations after fitting on earlier training observations.\n\n\nCh. 14, §14.8, pp. 584–589, seasonal interpretation only\nUse the discussion of multiplicative seasonal effects to interpret supplied indices. The book’s log transformation and seasonal dummy-regression workflow is outside the class method."
+    "text": "Read\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 14, §§14.1–14.2, pp. 545–547\nIntroduces forecasting, trend and seasonal components.\n\n\nCh. 14, §14.4, pp. 555–563, linear-trend portions only\nTime index, least-squares line and forecasts match the class trend method. Skip quadratic and exponential trend comparisons.\n\n\nCh. 14, §14.7, pp. 579–584, MAD definition and interpretation only\nMean absolute deviation supplies the class accuracy measure. Calculate it on later historical test observations after fitting on earlier training observations.\n\n\nCh. 14, §14.8, pp. 584–589, seasonal interpretation only\nUse the discussion of multiplicative seasonal effects to interpret supplied indices. The book’s log transformation and seasonal dummy-regression workflow is outside the class method."
   },
   {
     "objectID": "week7/reading/index.html#try",
@@ -861,25 +868,32 @@
     "text": "Data\n\nDownload Real-estate seminar data Download Travel-time tutorial data Download Underwriting data"
   },
   {
+    "objectID": "week6/index.html#recommended-reading",
+    "href": "week6/index.html#recommended-reading",
+    "title": "Week 6 - Multiple regression and model evaluation",
+    "section": "Recommended reading",
+    "text": "Recommended reading\nFrom Berenson et al., Basic Business Statistics, Australian 5th edition (printed pages).\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 13, §13.1, pp. 505–510\nMultiple regression equations and coefficient interpretation\n\n\nCh. 13, §13.2, pp. 511–513\nR², adjusted R² and the overall F test\n\n\nCh. 13, §§13.3–13.4, pp. 514–519\nResiduals and tests of individual coefficients\n\n\nCh. 13, §13.6, pp. 525–532 (dummy-variable material)\nCategorical predictors and reference groups\n\n\n\nSee reading and practice for recommended exercises and reading notes."
+  },
+  {
     "objectID": "week5/reading/index.html",
     "href": "week5/reading/index.html",
     "title": "Week 5 reading and practice: chi-square, correlation and simple regression",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel; these are suggested practice tasks."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel; these are suggested practice tasks."
   },
   {
     "objectID": "week5/reading/index.html#references",
     "href": "week5/reading/index.html#references",
     "title": "Week 5 reading and practice: chi-square, correlation and simple regression",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel; these are suggested practice tasks."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel; these are suggested practice tasks."
   },
   {
     "objectID": "week5/reading/index.html#read",
     "href": "week5/reading/index.html#read",
     "title": "Week 5 reading and practice: chi-square, correlation and simple regression",
     "section": "Read",
-    "text": "Read\n\n\n\n\n\n\n\nBook reference\nWhy it fits this class\n\n\n\n\nCh. 15, §15.3, pp. 622–626\nThe chi-square test of independence is the specific test in the adopted Week 5 slides.\n\n\nCh. 3, §3.5, pp. 123–128\nCovariance, Pearson correlation and scatterplots prepare for the inserted correlation explainer.\n\n\nCh. 12, §§12.1–12.3, pp. 456–472\nFit and interpret a simple regression line, make predictions and assess explained variation.\n\n\nCh. 12, §§12.4–12.5, pp. 473–477; §12.7, pp. 482–488 (selected parts)\nRead residual patterns and, if covered in class, interpret slope significance."
+    "text": "Read\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 15, §15.3, pp. 622–626\nThe chi-square test of independence is the specific test in the adopted Week 5 slides.\n\n\nCh. 3, §3.5, pp. 123–128\nCovariance, Pearson correlation and scatterplots prepare for the inserted correlation explainer.\n\n\nCh. 12, §§12.1–12.3, pp. 456–472\nFit and interpret a simple regression line, make predictions and assess explained variation.\n\n\nCh. 12, §§12.4–12.5, pp. 473–477; §12.7, pp. 482–488 (selected parts)\nRead residual patterns and, if covered in class, interpret slope significance."
   },
   {
     "objectID": "week5/reading/index.html#try",
@@ -1169,25 +1183,32 @@
     "text": "Data\n\nDownload Sample proportions data Download Hypothesis testing data"
   },
   {
+    "objectID": "week4/index.html#recommended-reading",
+    "href": "week4/index.html#recommended-reading",
+    "title": "Week 4 - Testing business claims",
+    "section": "Recommended reading",
+    "text": "Recommended reading\nFrom Berenson et al., Basic Business Statistics, Australian 5th edition (printed pages).\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 7, §7.3, pp. 259–262; Ch. 8, §8.3, pp. 291–293\nSample proportions and confidence intervals\n\n\nCh. 9, §9.1, pp. 316–321\nHypothesis-testing concepts and p-values\n\n\nCh. 9, §§9.2–9.5, pp. 322–343\nTests for means and one proportion\n\n\nCh. 9, §9.7, pp. 349–352 (skim)\nInterpreting statistical decisions in context\n\n\n\nSee reading and practice for recommended exercises and reading notes."
+  },
+  {
     "objectID": "week3/reading/index.html",
     "href": "week3/reading/index.html",
     "title": "Week 3 reading and practice: sampling and estimation",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel; these are suggested practice tasks."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel; these are suggested practice tasks."
   },
   {
     "objectID": "week3/reading/index.html#references",
     "href": "week3/reading/index.html#references",
     "title": "Week 3 reading and practice: sampling and estimation",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel; these are suggested practice tasks."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel; these are suggested practice tasks."
   },
   {
     "objectID": "week3/reading/index.html#read",
     "href": "week3/reading/index.html#read",
     "title": "Week 3 reading and practice: sampling and estimation",
     "section": "Read",
-    "text": "Read\n\n\n\n\n\n\n\nBook reference\nWhy it fits this class\n\n\n\n\nCh. 6, §6.2, pp. 214–228 (recap)\nNormal probabilities are the prerequisite for probabilities about sample means.\n\n\nCh. 7, §§7.1–7.2, pp. 249–258\nSampling distributions, the standard error of the mean and the Central Limit Theorem match the first half of the deck.\n\n\nCh. 8, §§8.1–8.2, pp. 280–290\nConfidence intervals for a population mean with known or unknown standard deviation match the estimation work."
+    "text": "Read\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 6, §6.2, pp. 214–228 (recap)\nNormal probabilities are the prerequisite for probabilities about sample means.\n\n\nCh. 7, §§7.1–7.2, pp. 249–258\nSampling distributions, the standard error of the mean and the Central Limit Theorem match the first half of the deck.\n\n\nCh. 8, §§8.1–8.2, pp. 280–290\nConfidence intervals for a population mean with known or unknown standard deviation match the estimation work."
   },
   {
     "objectID": "week3/reading/index.html#try",
@@ -1561,25 +1582,32 @@
     "text": "Data\n\nDownload Categorical data Download Distribution data"
   },
   {
+    "objectID": "week2/index.html#recommended-reading",
+    "href": "week2/index.html#recommended-reading",
+    "title": "Week 2 - Probability and distributions",
+    "section": "Recommended reading",
+    "text": "Recommended reading\nFrom Berenson et al., Basic Business Statistics, Australian 5th edition (printed pages).\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 4, §4.1, pp. 148–155\nEvents, complements, unions and joint probabilities\n\n\nCh. 4, §4.2, pp. 156–162\nConditional probability and independence\n\n\nCh. 6, §§6.1–6.2, pp. 213–228\nNormal probabilities, standardisation and quantiles\n\n\n\nSee reading and practice for recommended exercises and reading notes."
+  },
+  {
     "objectID": "week1/reading/index.html",
     "href": "week1/reading/index.html",
     "title": "Week 1 reading and practice: describing and visualising data",
     "section": "",
-    "text": "All page numbers below are the printed book pages in Basic Business Statistics: Concepts and Applications, Australian 5th edition (Berenson et al.). In the supplied PDF, the viewer page is usually the printed page plus 19 (for example, printed p. 42 is PDF p. 61). Use your authorised copy of the book; the PDF is not reproduced here. The exercises are suggested independent practice, not additional assessed work. Work calculations and charts in Excel."
+    "text": "All page numbers below are the printed book pages in Basic Business Statistics: Concepts and Applications, Australian 5th edition (Berenson et al.). The exercises are suggested independent practice, not additional assessed work. Work calculations and charts in Excel."
   },
   {
     "objectID": "week1/reading/index.html#how-to-use-the-book-references",
     "href": "week1/reading/index.html#how-to-use-the-book-references",
     "title": "Week 1 reading and practice: describing and visualising data",
     "section": "",
-    "text": "All page numbers below are the printed book pages in Basic Business Statistics: Concepts and Applications, Australian 5th edition (Berenson et al.). In the supplied PDF, the viewer page is usually the printed page plus 19 (for example, printed p. 42 is PDF p. 61). Use your authorised copy of the book; the PDF is not reproduced here. The exercises are suggested independent practice, not additional assessed work. Work calculations and charts in Excel."
+    "text": "All page numbers below are the printed book pages in Basic Business Statistics: Concepts and Applications, Australian 5th edition (Berenson et al.). The exercises are suggested independent practice, not additional assessed work. Work calculations and charts in Excel."
   },
   {
     "objectID": "week1/reading/index.html#read",
     "href": "week1/reading/index.html#read",
     "title": "Week 1 reading and practice: describing and visualising data",
     "section": "Read",
-    "text": "Read\n\n\n\n\n\n\n\nBook reference\nWhy it fits this class\n\n\n\n\nCh. 1, §§1.1–1.2, pp. 6–12; skim §1.4, pp. 17–22\nPopulation, sample, categorical and numerical variables, and sampling bias support the opening data discussion.\n\n\nCh. 2, §§2.1–2.4, pp. 38–58; §2.7, pp. 69–73\nFrequency tables, bar charts, histograms and two-way tables match the Excel visualisation activities; §2.7 helps students judge misleading displays.\n\n\nCh. 3, §3.1, pp. 92–112, and §3.4, pp. 120–123\nMean, median, spread, shape and boxplots match the numerical summary activities. The book’s quartile convention may differ from Excel’s, so state the convention used.\n\n\nCh. 1–3 Excel Guides, pp. 29–36, 77–90 and 135–138 (selected parts)\nUse these as Excel practice alongside the class primer on cells, references and formulas. The book’s older Excel interface or PHStat steps may not match current Excel; use ordinary formulas, PivotTables and charts in class."
+    "text": "Read\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 1, §§1.1–1.2, pp. 6–12; skim §1.4, pp. 17–22\nPopulation, sample, categorical and numerical variables, and sampling bias support the opening data discussion.\n\n\nCh. 2, §§2.1–2.4, pp. 38–58; §2.7, pp. 69–73\nFrequency tables, bar charts, histograms and two-way tables match the Excel visualisation activities; §2.7 helps students judge misleading displays.\n\n\nCh. 3, §3.1, pp. 92–112, and §3.4, pp. 120–123\nMean, median, spread, shape and boxplots match the numerical summary activities. The book’s quartile convention may differ from Excel’s, so state the convention used.\n\n\nCh. 1–3 Excel Guides, pp. 29–36, 77–90 and 135–138 (selected parts)\nUse these as Excel practice alongside the class primer on cells, references and formulas. The book’s older Excel interface or PHStat steps may not match current Excel; use ordinary formulas, PivotTables and charts in class."
   },
   {
     "objectID": "week1/reading/index.html#try",
@@ -1657,6 +1685,13 @@
     "title": "Week 1 - Describing and visualising data",
     "section": "Data",
     "text": "Data\n\nDownload Week 1 data"
+  },
+  {
+    "objectID": "week1/index.html#recommended-reading",
+    "href": "week1/index.html#recommended-reading",
+    "title": "Week 1 - Describing and visualising data",
+    "section": "Recommended reading",
+    "text": "Recommended reading\nFrom Berenson et al., Basic Business Statistics, Australian 5th edition (printed pages).\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 1, §§1.1–1.2, pp. 6–12; skim §1.4, pp. 17–22\nData types, populations, samples and sampling bias\n\n\nCh. 2, §§2.1–2.4, pp. 38–58; §2.7, pp. 69–73\nFrequency tables, visualisations and misleading graphs\n\n\nCh. 3, §3.1, pp. 92–112; §3.4, pp. 120–123\nCentre, spread, shape and boxplots\n\n\nCh. 1–3 Excel Guides, pp. 29–36, 77–90 and 135–138 (selected parts)\nExcel calculations, PivotTables and charts\n\n\n\nSee reading and practice for recommended exercises and reading notes."
   },
   {
     "objectID": "week1/slides.html#save-these-slides-as-a-pdf",
@@ -2041,21 +2076,21 @@
     "href": "week2/reading/index.html",
     "title": "Week 2 reading and practice: probability and distributions",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel for calculations. These are practice recommendations, not assessed work."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel for calculations. These are practice recommendations, not assessed work."
   },
   {
     "objectID": "week2/reading/index.html#references",
     "href": "week2/reading/index.html#references",
     "title": "Week 2 reading and practice: probability and distributions",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel for calculations. These are practice recommendations, not assessed work."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel for calculations. These are practice recommendations, not assessed work."
   },
   {
     "objectID": "week2/reading/index.html#read",
     "href": "week2/reading/index.html#read",
     "title": "Week 2 reading and practice: probability and distributions",
     "section": "Read",
-    "text": "Read\n\n\n\n\n\n\n\nBook reference\nWhy it fits this class\n\n\n\n\nCh. 4, §4.1, pp. 148–155\nEvents, complements, unions, intersections and marginal or joint probability support the class frequency-table examples.\n\n\nCh. 4, §4.2, pp. 156–162\nConditional probability and independence correspond to the class two-way tables and PivotTable percentages.\n\n\nCh. 6, §§6.1–6.2, pp. 213–228\nContinuous probability and normal areas, standardisation and quantiles match the normal-distribution work."
+    "text": "Read\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 4, §4.1, pp. 148–155\nEvents, complements, unions, intersections and marginal or joint probability support the class frequency-table examples.\n\n\nCh. 4, §4.2, pp. 156–162\nConditional probability and independence correspond to the class two-way tables and PivotTable percentages.\n\n\nCh. 6, §§6.1–6.2, pp. 213–228\nContinuous probability and normal areas, standardisation and quantiles match the normal-distribution work."
   },
   {
     "objectID": "week2/reading/index.html#try",
@@ -2091,6 +2126,13 @@
     "title": "Week 3 - Sampling and estimation",
     "section": "Data",
     "text": "Data\n\nDownload Sampling and estimation data"
+  },
+  {
+    "objectID": "week3/index.html#recommended-reading",
+    "href": "week3/index.html#recommended-reading",
+    "title": "Week 3 - Sampling and estimation",
+    "section": "Recommended reading",
+    "text": "Recommended reading\nFrom Berenson et al., Basic Business Statistics, Australian 5th edition (printed pages).\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 6, §6.2, pp. 214–228 (recap)\nNormal probabilities\n\n\nCh. 7, §§7.1–7.2, pp. 249–258\nSampling distributions, standard error and the Central Limit Theorem\n\n\nCh. 8, §§8.1–8.2, pp. 280–290\nConfidence intervals for a population mean\n\n\n\nSee reading and practice for recommended exercises and reading notes."
   },
   {
     "objectID": "week3/slides.html#source-page-001",
@@ -2342,21 +2384,21 @@
     "href": "week4/reading/index.html",
     "title": "Week 4 reading and practice: proportions and hypothesis tests",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel. The questions are suggested practice, not additional assessed work."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel. The questions are suggested practice, not additional assessed work."
   },
   {
     "objectID": "week4/reading/index.html#references",
     "href": "week4/reading/index.html#references",
     "title": "Week 4 reading and practice: proportions and hypothesis tests",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel. The questions are suggested practice, not additional assessed work."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel. The questions are suggested practice, not additional assessed work."
   },
   {
     "objectID": "week4/reading/index.html#read",
     "href": "week4/reading/index.html#read",
     "title": "Week 4 reading and practice: proportions and hypothesis tests",
     "section": "Read",
-    "text": "Read\n\n\n\n\n\n\n\nBook reference\nWhy it fits this class\n\n\n\n\nCh. 7, §7.3, pp. 259–262, and Ch. 8, §8.3, pp. 291–293\nSample proportions, their standard error and confidence intervals match the six inserted teaching slides.\n\n\nCh. 9, §9.1, pp. 316–321\nHypotheses, p-values, significance and errors establish the testing workflow.\n\n\nCh. 9, §§9.2–9.5, pp. 322–343\nOne- and two-sided mean tests, the one-sample t test, and a test of one proportion match the class applications.\n\n\nCh. 9, §9.7, pp. 349–352 (skim)\nHelps distinguish a statistical decision from a business conclusion."
+    "text": "Read\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 7, §7.3, pp. 259–262, and Ch. 8, §8.3, pp. 291–293\nSample proportions, their standard error and confidence intervals match the six inserted teaching slides.\n\n\nCh. 9, §9.1, pp. 316–321\nHypotheses, p-values, significance and errors establish the testing workflow.\n\n\nCh. 9, §§9.2–9.5, pp. 322–343\nOne- and two-sided mean tests, the one-sample t test, and a test of one proportion match the class applications.\n\n\nCh. 9, §9.7, pp. 349–352 (skim)\nHelps distinguish a statistical decision from a business conclusion."
   },
   {
     "objectID": "week4/reading/index.html#try",
@@ -2392,6 +2434,13 @@
     "title": "Week 5 - Chi-square, correlation and simple linear regression",
     "section": "Data",
     "text": "Data\n\nDownload Chi-square practice data Download Correlation example data Download Regression example data Download Regression practice data"
+  },
+  {
+    "objectID": "week5/index.html#recommended-reading",
+    "href": "week5/index.html#recommended-reading",
+    "title": "Week 5 - Chi-square, correlation and simple linear regression",
+    "section": "Recommended reading",
+    "text": "Recommended reading\nFrom Berenson et al., Basic Business Statistics, Australian 5th edition (printed pages).\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 15, §15.3, pp. 622–626\nChi-square test of independence\n\n\nCh. 3, §3.5, pp. 123–128\nCovariance, correlation and scatterplots\n\n\nCh. 12, §§12.1–12.3, pp. 456–472\nFitting and interpreting simple linear regression\n\n\nCh. 12, §§12.4–12.5, pp. 473–477; §12.7, pp. 482–488 (selected parts)\nResidual checks and slope significance\n\n\n\nSee reading and practice for recommended exercises and reading notes."
   },
   {
     "objectID": "week5/slides.html#chi-source-page-001",
@@ -3014,21 +3063,21 @@
     "href": "week6/reading/index.html",
     "title": "Week 6 reading and practice: multiple regression and model evaluation",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel’s Analysis ToolPak for regression output. These are suggested practice tasks."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel’s Analysis ToolPak for regression output. These are suggested practice tasks."
   },
   {
     "objectID": "week6/reading/index.html#references",
     "href": "week6/reading/index.html#references",
     "title": "Week 6 reading and practice: multiple regression and model evaluation",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel’s Analysis ToolPak for regression output. These are suggested practice tasks."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel’s Analysis ToolPak for regression output. These are suggested practice tasks."
   },
   {
     "objectID": "week6/reading/index.html#read",
     "href": "week6/reading/index.html#read",
     "title": "Week 6 reading and practice: multiple regression and model evaluation",
     "section": "Read",
-    "text": "Read\n\n\n\n\n\n\n\nBook reference\nWhy it fits this class\n\n\n\n\nCh. 13, §13.1, pp. 505–510\nDevelop a multiple regression equation and interpret one coefficient while holding other predictors fixed.\n\n\nCh. 13, §13.2, pp. 511–513\nCompare R² and adjusted R² and read the overall F test.\n\n\nCh. 13, §§13.3–13.4, pp. 514–519\nResidual checks and tests of individual coefficients match model evaluation and reduction.\n\n\nCh. 13, §13.6, pp. 525–532 (dummy-variable material)\nCoding a categorical predictor and interpreting its reference group match the real-estate example."
+    "text": "Read\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 13, §13.1, pp. 505–510\nDevelop a multiple regression equation and interpret one coefficient while holding other predictors fixed.\n\n\nCh. 13, §13.2, pp. 511–513\nCompare R² and adjusted R² and read the overall F test.\n\n\nCh. 13, §§13.3–13.4, pp. 514–519\nResidual checks and tests of individual coefficients match model evaluation and reduction.\n\n\nCh. 13, §13.6, pp. 525–532 (dummy-variable material)\nCoding a categorical predictor and interpreting its reference group match the real-estate example."
   },
   {
     "objectID": "week6/reading/index.html#try",
@@ -3064,6 +3113,13 @@
     "title": "Week 7 - Introduction to time series",
     "section": "Data",
     "text": "Data\n\nDownload Chocolate sales time-series data"
+  },
+  {
+    "objectID": "week7/index.html#recommended-reading",
+    "href": "week7/index.html#recommended-reading",
+    "title": "Week 7 - Introduction to time series",
+    "section": "Recommended reading",
+    "text": "Recommended reading\nFrom Berenson et al., Basic Business Statistics, Australian 5th edition (printed pages).\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 14, §§14.1–14.2, pp. 545–547\nForecasting, trend and seasonal components\n\n\nCh. 14, §14.4, pp. 555–563 (linear-trend portions only)\nTime indices, linear trends and forecasts\n\n\nCh. 14, §14.7, pp. 579–584 (MAD only)\nMean absolute deviation for forecast accuracy\n\n\nCh. 14, §14.8, pp. 584–589 (seasonal interpretation only)\nSupplied seasonal indices and multiplicative seasonality\n\n\n\nSee reading and practice for recommended exercises and reading notes."
   },
   {
     "objectID": "week7/slides.html#source-page-001",
@@ -3287,21 +3343,21 @@
     "href": "week8/reading/index.html",
     "title": "Week 8 reading and practice: integrated revision",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel. Week 8 introduces no new textbook chapter: revisit the sections tied to each question after attempting it without notes."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel. Week 8 introduces no new textbook chapter: revisit the sections tied to each question after attempting it without notes."
   },
   {
     "objectID": "week8/reading/index.html#references",
     "href": "week8/reading/index.html#references",
     "title": "Week 8 reading and practice: integrated revision",
     "section": "",
-    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. PDF viewer pages are normally printed page + 19. Use your authorised copy and Excel. Week 8 introduces no new textbook chapter: revisit the sections tied to each question after attempting it without notes."
+    "text": "Page numbers are printed book pages in Berenson et al., Basic Business Statistics: Concepts and Applications, Australian 5th edition. Use Excel. Week 8 introduces no new textbook chapter: revisit the sections tied to each question after attempting it without notes."
   },
   {
     "objectID": "week8/reading/index.html#mixed-practice",
     "href": "week8/reading/index.html#mixed-practice",
     "title": "Week 8 reading and practice: integrated revision",
     "section": "Mixed practice",
-    "text": "Mixed practice\n\n\n\n\n\n\n\n\nClass topic and book section\nQuestions (printed page)\nWhy revisit it\n\n\n\n\nDescribing data: Ch. 2 §2.4 and Ch. 3 §§3.1, 3.4\n2.20 (p. 57); 3.1 (p. 111); 3.28 (p. 123)\nChoose a suitable table or display and interpret centre and spread.\n\n\nProbability and normal distribution: Ch. 4 §4.2; Ch. 6 §6.2\n4.10 (p. 162); 6.8 (pp. 228–229)\nDistinguish conditional probabilities from normal probabilities.\n\n\nSampling and intervals: Ch. 7 §7.2; Ch. 8 §§8.2–8.3\n7.1 (p. 258); 8.11 (p. 290); 8.22 (p. 293)\nSeparate sample-mean uncertainty from mean and proportion intervals.\n\n\nTesting: Ch. 9 §§9.1, 9.4–9.5\n9.46–9.49 (p. 338); 9.62–9.64 (p. 343)\nState hypotheses, use the right test and give a contextual decision.\n\n\nRelationships: Ch. 15 §15.3; Ch. 3 §3.5; Ch. 12 §§12.2–12.5\n15.23 (p. 626); 3.36 (p. 128); 12.1 (p. 465); 12.21 (p. 477)\nDistinguish categorical association, correlation and fitted regression.\n\n\nMultiple regression: Ch. 13 §§13.1–13.4, 13.6\n13.9 (p. 513); 13.23 (p. 519); 13.37 (p. 532)\nInterpret model fit, an individual slope and a dummy coefficient.\n\n\nTime series: Ch. 14 §§14.4, 14.7–14.8 (selected parts)\n14.8–14.9 (pp. 563–564); 14.34(b) (p. 583)\nPractise linear trend and MAD, then repeat the class workbook’s supplied-index forecast on a held-out historical period.\n\n\n\nPick one question from each row for a first pass, then use the rest to address weaker topics. For the Week 7 row, keep the class limits: linear trend, supplied seasonal indices and MAD only. The source Week 8 exam logistics are historical; use the current unit and Moodle information for assessment arrangements."
+    "text": "Mixed practice\n\n\n\n\n\n\n\n\nBook section\nQuestions (printed page)\nTopic\n\n\n\n\nCh. 2 §2.4 and Ch. 3 §§3.1, 3.4\n2.20 (p. 57); 3.1 (p. 111); 3.28 (p. 123)\nChoose a suitable table or display and interpret centre and spread.\n\n\nCh. 4 §4.2; Ch. 6 §6.2\n4.10 (p. 162); 6.8 (pp. 228–229)\nDistinguish conditional probabilities from normal probabilities.\n\n\nCh. 7 §7.2; Ch. 8 §§8.2–8.3\n7.1 (p. 258); 8.11 (p. 290); 8.22 (p. 293)\nSeparate sample-mean uncertainty from mean and proportion intervals.\n\n\nCh. 9 §§9.1, 9.4–9.5\n9.46–9.49 (p. 338); 9.62–9.64 (p. 343)\nState hypotheses, use the right test and give a contextual decision.\n\n\nCh. 15 §15.3; Ch. 3 §3.5; Ch. 12 §§12.2–12.5\n15.23 (p. 626); 3.36 (p. 128); 12.1 (p. 465); 12.21 (p. 477)\nDistinguish categorical association, correlation and fitted regression.\n\n\nCh. 13 §§13.1–13.4, 13.6\n13.9 (p. 513); 13.23 (p. 519); 13.37 (p. 532)\nInterpret model fit, an individual slope and a dummy coefficient.\n\n\nCh. 14 §§14.4, 14.7–14.8 (selected parts)\n14.8–14.9 (pp. 563–564); 14.34(b) (p. 583)\nPractise linear trend and MAD, then repeat the class workbook’s supplied-index forecast on a held-out historical period.\n\n\n\nPick one question from each row for a first pass, then use the rest to address weaker topics. For the Week 7 row, keep the class limits: linear trend, supplied seasonal indices and MAD only. The source Week 8 exam logistics are historical; use the current unit and Moodle information for assessment arrangements."
   },
   {
     "objectID": "docs/current-weekly-content-summary.html",
