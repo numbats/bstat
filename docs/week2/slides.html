@@ -204,19 +204,42 @@ P(\text{Event}) = \frac{\text{Number of ways the event can happen}}{\text{Total 
 </span></li>
 </ul>
 </section>
-<section id="coinflip" class="slide level2">
-<h2>Coinflip</h2>
-<p>There are 2 only possible outcomes in a coin flip: - heads (<span class="math inline">\text{H}</span>) - tails (<span class="math inline">\text{T}</span>)</p>
-<div class="columns">
-<div class="column">
+<section id="coinflip" class="slide level2" style="font-size: 70%;">
+<h2>Coinflip 🪙</h2>
+<p>There are 2 only possible outcomes in a coin flip:</p>
+<ul>
+<li>heads (<span class="math inline">\text{H}</span>)</li>
+<li>tails (<span class="math inline">\text{T}</span>)</li>
+</ul>
 <p><span class="math display">
 P(\text{H}) = \frac{1}{2} = 0.5
 </span></p>
-</div><div class="column">
 <p><span class="math display">
 P(\text{T}) = \frac{1}{2} = 0.5
 </span></p>
-</div></div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Adding the probability of possible outcomes will always total to 1</p>
+</div>
+</div>
+</div>
+</section>
+<section id="rolling-a-die" class="slide level2" style="font-size: 70%;">
+<h2>Rolling a die 🎲</h2>
+<ul>
+<li>There are 6 only possible outcomes in a rolling a 6 sided die.</li>
+<li>Event = Rolling an even number i.e 2, 4, 6</li>
+</ul>
+<p><span class="math display">
+P(\text{Even number}) = \frac{1+1+1}{6} = 0.5
+</span></p>
 </section>
 <section id="union" class="slide level2">
 <h2>Union</h2>
@@ -224,6 +247,10 @@ P(\text{T}) = \frac{1}{2} = 0.5
 PA or B =PA+PB-PrA and B
 </span> Note: <span class="math inline">P(A)</span> and <span class="math inline">P(B)</span> are referred to as marginal probabilities Intersection (Joint probability) &amp; Union Intersection (joint probability) Helps us understand the nature of the relationship between two events <span class="math inline">P(A \text{ and } B)</span> or <span class="math inline">P(A \cap B)</span> - known as “JOINT” probability</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=5">Workshop_slides_Week_2_with_solutions.pdf, page 5</a></em></p>
+<h3 id="conditional-probability">Conditional Probability</h3>
+<p>Probability of an event (A) given that (conditional on) another event (B) having occurred. P(A given B) or P (A|B) is known as conditional probability Conditional Probability=Joint probability of the two eventsMarginal probability of the condition <span class="math display">
+PAB=P(A∩B)P(B)
+</span></p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -240,25 +267,18 @@ PA or B =PA+PB-PrA and B
 </figure>
 </div>
 </div></div>
-</section>
-<section id="source-page-006" class="slide level2">
-<h2></h2>
-<h3 id="conditional-probability">Conditional Probability</h3>
-<p>Conditional Probability Probability of an event (A) given that (conditional on) another event (B) having occurred. P(A given B) or P (A|B) is known as conditional probability Conditional Probability=Joint probability of the two eventsMarginal probability of the condition <span class="math display">
-PAB=P(A∩B)P(B)
-</span></p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=6">Workshop_slides_Week_2_with_solutions.pdf, page 6</a></em></p>
-
-<img data-src="figures/etx5900/components/image8.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 6.</p></section>
-<section id="source-page-007" class="slide level2">
-<h2></h2>
 <h3 id="mutually-exclusive-and-independent-events">Mutually Exclusive and Independent Events</h3>
 <p>Mutually exclusive: Definition: Events that cannot occur together We know that P(A or B) = P(A) + P(B) – P(A and B). For mutually exclusive events, P(A and B) = 0 Example: Toss a fair coin P(Not Head) = P(Tail) = 1-P(Head) Independent: Definition: Probability of one event occurring unaffected by the outcome of the other Event A is independent of event B if: <span class="math display">
 P(A|B) = P(A)   OR    PA∩B=PA\times{}P(B)
 </span></p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=7">Workshop_slides_Week_2_with_solutions.pdf, page 7</a></em></p>
-
-<img data-src="figures/etx5900/components/image10.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 7.</p></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/etx5900/components/image10.png" style="width:48.0%"></p>
+<figcaption>Visual from source page 7.</figcaption>
+</figure>
+</div>
+</section>
 <section id="source-page-008" class="slide level2">
 <h2></h2>
 <h3 id="frequency-table">Frequency Table</h3>
