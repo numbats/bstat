@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.11.9">
 
   <meta name="dcterms.date" content="2026-12-01">
-  <title>Business Statistics – slides</title>
+  <title>Business Statistics – Probability and distributions</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -150,14 +150,20 @@
   <div class="reveal">
     <div class="slides">
 
+<section id="title-slide" data-background-image="../site_libs/quarto-contrib/quarto-project/quarto-monash/presentation/_images/background/bg-02.png" data-background-position="center" data-background-size="contain" class="quarto-title-block center">
+<div id="title-slide-text">
 
-<section id="source-page-001" class="slide level2">
-<h2></h2>
-<h3 id="etx11005900-business-statistics">ETX1100/5900 Business Statistics</h3>
-<p>Week 2 Probability: Concepts &amp; Applications Introduction to the Normal Distribution</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=1">Workshop_slides_Week_2_with_solutions.pdf, page 1</a></em></p>
+  <h1 class="title">Probability and distributions</h1>
+  <p class="subtitle">ETX1100/5900 | Business Statistics</p>
 
-<img data-src="figures/etx5900/components/image1.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 1.</p></section>
+<div class="quarto-title-authors">
+</div>
+
+  <p class="date">1 December 2026</p>
+
+</div>
+
+</section>
 <section id="save-these-slides-as-a-pdf" class="slide level2" style="text-align: center;">
 <h2>Save these slides as a PDF</h2>
 <div style="font-size: 1.45em; line-height: 1.35; text-align: center;">
@@ -166,30 +172,54 @@
 <p>Click <strong>☰ (menu) &gt; Tools &gt; PDF export mode</strong>, then <strong>Ctrl/Cmd + P</strong> and choose <strong>Save as PDF</strong>.</p>
 </div>
 </section>
-<section id="source-page-002" class="slide level2">
-<h2></h2>
-<h3 id="learning-outcomes-for-week-2">Learning Outcomes for Week 2</h3>
-<p>Fundamentals of Probability Understand and calculate the concept of probability Interpret probabilities: Marginal probability Joint probability Conditional probability Evaluate the relationship between variables Introduction to the Normal Distribution Understand the concept of a continuous random variable Analyse the characteristics of a normal distribution Calculate and interpret probabilities for continuous random variables using Excel</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=2">Workshop_slides_Week_2_with_solutions.pdf, page 2</a></em></p>
+<section id="todays-roadmap" class="slide level2">
+<h2>Today’s roadmap</h2>
+<ul>
+<li>Probability
+<ul>
+<li>Pivot tables</li>
+</ul></li>
+<li>Probability density functions
+<ul>
+<li>Normal distribution</li>
+<li>Standard normal distibution</li>
+<li>Excel skills</li>
+</ul></li>
+</ul>
 </section>
-<section id="source-page-003" class="slide level2">
-<h2></h2>
-<h3 id="learning-outcomes-for-week-2-1">Learning Outcomes for Week 2</h3>
-<p>Understand the concept of probability Calculate and interpret probabilities: Marginal probability Joint probability Conditional probability Apply the concepts of probability for categorical data analysis Evaluate the relationship between variables Textbook references: Berenson et al Basic Business Statistics 5th edition, Chapter 4 Sections 4.1 and 4.2 Chapter 6 Sections 6.1-6.2</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=3">Workshop_slides_Week_2_with_solutions.pdf, page 3</a></em></p>
-</section>
-<section id="source-page-004" class="slide level2">
-<h2></h2>
-<h3 id="what-is-probability">What is PROBABILITY?</h3>
-<p>Probability = quantification of chance / likelihood of an occurrence Probability statements: Event A has zero probability <span class="math inline">P(A) = 0 \rightarrow</span> There is no chance that event A will occur Event B has probability of one <span class="math inline">P(B)=1 \rightarrow</span> Event B will occur with 100% certainty Probability of all possible events add to 1 Eg Experiment: Toss a fair coin <span class="math display">
-PHead=0.5          PTail=0.5
-</span> What is the total probability? <span class="math inline">P(\text{Head}) + P(\text{Tail}) = 1</span></p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=4">Workshop_slides_Week_2_with_solutions.pdf, page 4</a></em></p>
+<section>
+<section id="probability" class="title-slide slide level1 section-slide center">
+<h1>Probability</h1>
 
-<img data-src="figures/etx5900/components/image3.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 4.</p></section>
-<section id="source-page-005" class="slide level2">
-<h2></h2>
-<h3 id="union">Union</h3>
+</section>
+<section id="what-is-probability" class="slide level2">
+<h2>What is probability?</h2>
+<blockquote>
+<p>Probability is the mathematical measure of how <strong>likely</strong> an event is to happen</p>
+</blockquote>
+<ul>
+<li>Values range from 0 to 1</li>
+<li>Can be expressed as a fraction, decimal or a percentage. <span class="math display">
+P(\text{Event}) = \frac{\text{Number of ways the event can happen}}{\text{Total number of outcomes}}
+</span></li>
+</ul>
+</section>
+<section id="coinflip" class="slide level2">
+<h2>Coinflip</h2>
+<p>There are 2 only possible outcomes in a coin flip: - heads (<span class="math inline">\text{H}</span>) - tails (<span class="math inline">\text{T}</span>)</p>
+<div class="columns">
+<div class="column">
+<p><span class="math display">
+P(\text{H}) = \frac{1}{2} = 0.5
+</span></p>
+</div><div class="column">
+<p><span class="math display">
+P(\text{T}) = \frac{1}{2} = 0.5
+</span></p>
+</div></div>
+</section>
+<section id="union" class="slide level2">
+<h2>Union</h2>
 <p><span class="math inline">P(A \text{ or } B)</span> or <span class="math inline">P(A \cup B)</span> describes either A OR B <span class="math display">
 PA or B =PA+PB-PrA and B
 </span> Note: <span class="math inline">P(A)</span> and <span class="math inline">P(B)</span> are referred to as marginal probabilities Intersection (Joint probability) &amp; Union Intersection (joint probability) Helps us understand the nature of the relationship between two events <span class="math inline">P(A \text{ and } B)</span> or <span class="math inline">P(A \cap B)</span> - known as “JOINT” probability</p>
@@ -752,7 +782,7 @@ Mean = Median = Mode
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=47">Workshop_slides_Week_2_with_solutions.pdf, page 47</a></em></p>
 
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
