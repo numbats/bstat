@@ -1250,14 +1250,21 @@
     "href": "week2/slides.html#mutually-exclusive-events",
     "title": "Probability and distributions",
     "section": "Mutually exclusive events 🎲",
-    "text": "Mutually exclusive events 🎲\n\nThere are 6 only possible outcomes in a rolling a fair, 6-sided die.\nWhat is the probability of rolling a 1 OR a 6?\nA single roll cannot produce both 1 and 6 = mutually exclusive event\n\nP(\\text{roll 1}) = \\frac{1}{6}\nP(\\text{roll 6}) = \\frac{1}{6}\n\n\nRepresented by \\cup “union” \nP(\\text{roll 1 $\\cup$ roll 6}) = \\frac{1}{6} + \\frac{1}{6}  = \\frac{2}{6}\n\n\n\n\n\n\n\nTip\n\n\nAdd the probability of each mutually exclusive outome to get the their combined probability"
+    "text": "Mutually exclusive events 🎲\n\nThere are 6 only possible outcomes in a rolling a fair, 6-sided die.\nWhat is the probability of rolling a 1 OR a 6?\nA single roll cannot produce both 1 and 6 = mutually exclusive event\n\nP(\\text{roll 1}) = \\frac{1}{6}\nP(\\text{roll 6}) = \\frac{1}{6}\n\n\nRepresented by \\cup “union” \nP(\\text{roll 1 \\cup roll 6}) = \\frac{1}{6} + \\frac{1}{6}  = \\frac{2}{6}\n\n\n\n\n\n\n\nTip\n\n\nAdd the probability of each mutually exclusive outome to get the their combined probability"
   },
   {
     "objectID": "week2/slides.html#non-mutually-exclusive-events",
     "href": "week2/slides.html#non-mutually-exclusive-events",
     "title": "Probability and distributions",
     "section": "Non-mutually exclusive events 🎲",
-    "text": "Non-mutually exclusive events 🎲\nNow consider:\n\nEvent A: Rolling a 1 OR a 6\nEvent B: Rolling an even number 2, 4, 6\n\n\nP(\\text{A}) = \\frac{1}{6} + \\mathbf{\\frac{1}{6}}  = \\frac{2}{6}\n\n\nP(\\text{B}) = \\frac{1}{6} + \\frac{1}{6} + \\mathbf{\\frac{1}{6}}  = \\frac{3}{6}\n\nSo we just add these two events together right?\n\nP(\\text{A} + \\text{B}) = \\frac{2}{6} + \\frac{3}{6} = \\frac{5}{6}\n\nNO! 🙅‍♀️\nThese events are not mutually exclusive , because rolling 6 satisfies both conditions. Adding them will double count rolling 6!"
+    "text": "Non-mutually exclusive events 🎲\nNow consider:\n\nEvent A: Rolling a 1 OR a 6\nEvent B: Rolling an even number 2, 4, 6\n\n\nP(\\text{A}) = \\frac{1}{6} + \\mathbf{\\frac{1}{6}}  = \\frac{2}{6}\n\n\nP(\\text{B}) = \\frac{1}{6} + \\frac{1}{6} + \\mathbf{\\frac{1}{6}}  = \\frac{3}{6}\n\nSo we just add these two events together right? 😏    NO!\n\nP(\\text{A} \\cup \\text{B}) = \\frac{2}{6} + \\frac{3}{6} = \\frac{5}{6}\\quad🙅‍♀️\n\n\n\n\n\n\n\nTip\n\n\nThese events are not mutually exclusive , because rolling 6 satisfies both event conditions. Adding them will double count rolling 6!"
+  },
+  {
+    "objectID": "week2/slides.html#intersection",
+    "href": "week2/slides.html#intersection",
+    "title": "Probability and distributions",
+    "section": "Intersection 🎲",
+    "text": "Intersection 🎲\n\nEvent A: Rolling a 1 OR a 6\nEvent B: Rolling an even number 2, 4, 6\n\nRolling a 6 satisfies both event conditions. This shared outcome is called intersection, represented by \\cap\n\n\nP(\\text{A} \\cap \\text{B})= P(A)+ P(B) \\mathbf{-P(A\\cap B)}\n\nSolution 💡\n\nWe need to remove the overlap outcome"
   },
   {
     "objectID": "week2/slides.html#union",

@@ -243,7 +243,7 @@ P(\text{T}) = \frac{1}{2} = 0.5
 </ul></li>
 </ul>
 <p>Represented by <span class="math inline">\cup</span> “union” <span class="math display">
-P(\text{roll 1 $\cup$ roll 6}) = \frac{1}{6} + \frac{1}{6}  = \frac{2}{6}
+P(\text{roll 1 \cup roll 6}) = \frac{1}{6} + \frac{1}{6}  = \frac{2}{6}
 </span></p>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -259,7 +259,7 @@ P(\text{roll 1 $\cup$ roll 6}) = \frac{1}{6} + \frac{1}{6}  = \frac{2}{6}
 </div>
 </div>
 </section>
-<section id="non-mutually-exclusive-events" class="slide level2" style="font-size: 70%;">
+<section id="non-mutually-exclusive-events" class="slide level2" style="font-size: 65%;">
 <h2>Non-mutually exclusive events 🎲</h2>
 <p>Now consider:</p>
 <ul>
@@ -272,12 +272,39 @@ P(\text{A}) = \frac{1}{6} + \mathbf{\frac{1}{6}}  = \frac{2}{6}
 <p><span class="math display">
 P(\text{B}) = \frac{1}{6} + \frac{1}{6} + \mathbf{\frac{1}{6}}  = \frac{3}{6}
 </span></p>
-<p>So we just add these two events together right?</p>
+<p>So we just add these two events together right? 😏    <strong>NO!</strong></p>
 <p><span class="math display">
-P(\text{A} + \text{B}) = \frac{2}{6} + \frac{3}{6} = \frac{5}{6}
+P(\text{A} \cup \text{B}) = \frac{2}{6} + \frac{3}{6} = \frac{5}{6}\quad🙅‍♀️
 </span></p>
-<p><strong>NO!</strong> 🙅‍♀️</p>
-<p>These events are <strong>not mutually exclusive </strong>, because rolling 6 satisfies both conditions. Adding them will double count rolling 6!</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>These events are <strong>not mutually exclusive </strong>, because rolling 6 satisfies both event conditions. Adding them will double count rolling 6!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="intersection" class="slide level2" style="font-size: 70%;">
+<h2>Intersection 🎲</h2>
+<ul>
+<li>Event A: Rolling a 1 OR a <strong>6</strong></li>
+<li>Event B: Rolling an even number 2, 4, <strong>6</strong></li>
+</ul>
+<p>Rolling a 6 satisfies both event conditions. This shared outcome is called <strong>intersection</strong>, represented by <span class="math inline">\cap</span></p>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%" alt="Venn diagram of die-roll events: A contains 1 and 6, B contains 2, 4 and 6, and their intersection contains 6."><p><span class="math display">
+P(\text{A} \cap \text{B})= P(A)+ P(B) \mathbf{-P(A\cap B)}
+</span></p>
+<p>Solution 💡</p>
+<ul>
+<li>We need to remove the overlap outcome</li>
+</ul>
 </section>
 <section id="union" class="slide level2">
 <h2>Union</h2>
@@ -1180,6 +1207,44 @@ Mean = Median = Mode
     // Move progress bar
     menu_div = document.querySelector(".progress");
     document.querySelector(".slides").appendChild(menu_div);
+    </script>
+
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">
