@@ -1292,7 +1292,7 @@
     "href": "week2/slides.html#two-way-table-notations",
     "title": "Probability and distributions",
     "section": "Two-way table (notations)",
-    "text": "Two-way table (notations)\nLet:\n\nH_{\\mathrm{No}} and H_{\\mathrm{Yes}} denote heart disease status E_{\\mathrm{Min}} (rows ➡️)\nE_{\\mathrm{Mod}} denote exercise level. (columns ⬆️)\n\n\n\n\n\n\n\n\n\n\n\nMinimal (E_{\\mathrm{Min}})\nModerate (E_{\\mathrm{Mod}})\nTotal\n\n\n\n\nNo (H_{\\mathrm{No}})\nP(H_{\\mathrm{No}} \\cap E_{\\mathrm{Min}})\nP(H_{\\mathrm{No}} \\cap E_{\\mathrm{Mod}})\nP(H_{\\mathrm{No}})\n\n\nYes (H_{\\mathrm{Yes}})\nP(H_{\\mathrm{Yes}} \\cap E_{\\mathrm{Min}})\nP(H_{\\mathrm{Yes}} \\cap E_{\\mathrm{Mod}})\nP(H_{\\mathrm{Yes}})\n\n\nTotal\nP(E_{\\mathrm{Min}})\nP(E_{\\mathrm{Mod}})\n1\n\n\n\nThe four inside cells are joint probabilities; the row and column totals are marginal probabilities.\n\n\n\n\n\n\nTip\n\n\nRead \\cap as AND"
+    "text": "Two-way table (notations)\nLet:\n\nH_{\\mathrm{No}} and H_{\\mathrm{Yes}} denote heart disease status (rows).\nE_{\\mathrm{Min}} and E_{\\mathrm{Mod}} denote exercise level (columns).\n\n\n\n\n\n\n\nExercise\n\n\nTotal\n\n\n\n\nMinimal (EMin)\n\n\nModerate (EMod)\n\n\n\n\n\n\nHeart Disease\n\n\nNo (HNo)\n\n\nP(HNo ∩ EMin)\n\n\nP(HNo ∩ EMod)\n\n\nP(HNo)\n\n\n\n\nYes (HYes)\n\n\nP(HYes ∩ EMin)\n\n\nP(HYes ∩ EMod)\n\n\nP(HYes)\n\n\n\n\nTotal\n\n\nP(EMin)\n\n\nP(EMod)\n\n\n1\n\n\n\n\nThe four inside cells are joint probabilities; the row and column totals are marginal probabilities.\n\n\n\n\n\n\nTip\n\n\nRead \\cap as AND"
   },
   {
     "objectID": "week2/slides.html#two-way-table-counts---watch-me",
@@ -1306,7 +1306,7 @@
     "href": "week2/slides.html#two-way-table-counts",
     "title": "Probability and distributions",
     "section": "Two-way table (counts)",
-    "text": "Two-way table (counts)"
+    "text": "Two-way table (counts)\n\n\n\n\n\n\nExercise\n\n\nTotal\n\n\n\n\nMinimal\n\n\nModerate\n\n\n\n\n\n\nHeart Disease\n\n\nNo\n\n\n2,996\n\n\n1,741\n\n\n4,737\n\n\n\n\nYes\n\n\n220\n\n\n43\n\n\n263\n\n\n\n\nTotal\n\n\n3,216\n\n\n1,784\n\n\n5,000\n\n\n\n\nEach inside cell counts people with both the row’s heart disease status and the column’s exercise level."
   },
   {
     "objectID": "week2/slides.html#counts-to-probabilities-grand-total---you-try",

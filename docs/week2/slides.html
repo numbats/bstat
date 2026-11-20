@@ -461,42 +461,75 @@ P(\text{A} \cup \text{B})
 <h2>Two-way table (notations)</h2>
 <p>Let:</p>
 <ul>
-<li><span class="math inline">H_{\mathrm{No}}</span> and <span class="math inline">H_{\mathrm{Yes}}</span> denote heart disease status <span class="math inline">E_{\mathrm{Min}}</span> (rows ➡️)</li>
-<li><span class="math inline">E_{\mathrm{Mod}}</span> denote exercise level. (columns ⬆️)</li>
+<li><span class="math inline">H_{\mathrm{No}}</span> and <span class="math inline">H_{\mathrm{Yes}}</span> denote heart disease status (rows).</li>
+<li><span class="math inline">E_{\mathrm{Min}}</span> and <span class="math inline">E_{\mathrm{Mod}}</span> denote exercise level (columns).</li>
 </ul>
-<table class="caption-top">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
+<table>
 <thead>
-<tr class="header">
-<th></th>
-<th>Minimal (<span class="math inline">E_{\mathrm{Min}}</span>)</th>
-<th>Moderate (<span class="math inline">E_{\mathrm{Mod}}</span>)</th>
-<th>Total</th>
+<tr>
+<th colspan="2" rowspan="2">
+</th>
+<th colspan="2" scope="colgroup">
+Exercise
+</th>
+<th rowspan="2" scope="col">
+Total
+</th>
+</tr>
+<tr>
+<th scope="col">
+Minimal (E<sub>Min</sub>)
+</th>
+<th scope="col">
+Moderate (E<sub>Mod</sub>)
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><strong>No</strong> (<span class="math inline">H_{\mathrm{No}}</span>)</td>
-<td><span class="math inline">P(H_{\mathrm{No}} \cap E_{\mathrm{Min}})</span></td>
-<td><span class="math inline">P(H_{\mathrm{No}} \cap E_{\mathrm{Mod}})</span></td>
-<td><span class="math inline">P(H_{\mathrm{No}})</span></td>
+<tr>
+<th rowspan="2" scope="rowgroup">
+Heart Disease
+</th>
+<th scope="row">
+No (H<sub>No</sub>)
+</th>
+<td>
+P(H<sub>No</sub> ∩ E<sub>Min</sub>)
+</td>
+<td>
+P(H<sub>No</sub> ∩ E<sub>Mod</sub>)
+</td>
+<td>
+P(H<sub>No</sub>)
+</td>
 </tr>
-<tr class="even">
-<td><strong>Yes</strong> (<span class="math inline">H_{\mathrm{Yes}}</span>)</td>
-<td><span class="math inline">P(H_{\mathrm{Yes}} \cap E_{\mathrm{Min}})</span></td>
-<td><span class="math inline">P(H_{\mathrm{Yes}} \cap E_{\mathrm{Mod}})</span></td>
-<td><span class="math inline">P(H_{\mathrm{Yes}})</span></td>
+<tr>
+<th scope="row">
+Yes (H<sub>Yes</sub>)
+</th>
+<td>
+P(H<sub>Yes</sub> ∩ E<sub>Min</sub>)
+</td>
+<td>
+P(H<sub>Yes</sub> ∩ E<sub>Mod</sub>)
+</td>
+<td>
+P(H<sub>Yes</sub>)
+</td>
 </tr>
-<tr class="odd">
-<td><strong>Total</strong></td>
-<td><span class="math inline">P(E_{\mathrm{Min}})</span></td>
-<td><span class="math inline">P(E_{\mathrm{Mod}})</span></td>
-<td><span class="math inline">1</span></td>
+<tr>
+<th colspan="2" scope="row">
+Total
+</th>
+<td>
+P(E<sub>Min</sub>)
+</td>
+<td>
+P(E<sub>Mod</sub>)
+</td>
+<td>
+1
+</td>
 </tr>
 </tbody>
 </table>
@@ -540,6 +573,76 @@ P(\text{A} \cup \text{B})
 </section>
 <section id="two-way-table-counts" class="slide level2">
 <h2>Two-way table (counts)</h2>
+<table>
+<thead>
+<tr>
+<th colspan="2" rowspan="2">
+</th>
+<th colspan="2" scope="colgroup">
+Exercise
+</th>
+<th rowspan="2" scope="col">
+Total
+</th>
+</tr>
+<tr>
+<th scope="col">
+Minimal
+</th>
+<th scope="col">
+Moderate
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th rowspan="2" scope="rowgroup">
+Heart Disease
+</th>
+<th scope="row">
+No
+</th>
+<td>
+2,996
+</td>
+<td>
+1,741
+</td>
+<td>
+4,737
+</td>
+</tr>
+<tr>
+<th scope="row">
+Yes
+</th>
+<td>
+220
+</td>
+<td>
+43
+</td>
+<td>
+263
+</td>
+</tr>
+<tr>
+<th colspan="2" scope="row">
+Total
+</th>
+<td>
+3,216
+</td>
+<td>
+1,784
+</td>
+<td>
+5,000
+</td>
+</tr>
+</tbody>
+</table>
+<p>Each inside cell counts people with <strong>both</strong> the row’s heart disease status and the column’s exercise level.</p>
 </section>
 <section id="counts-to-probabilities-grand-total---you-try" class="slide level2">
 <h2>Counts to probabilities: <code>% Grand total</code> - You try ✏️</h2>
