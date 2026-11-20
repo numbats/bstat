@@ -204,7 +204,7 @@ P(\text{Event}) = \frac{\text{Number of ways the event can happen}}{\text{Total 
 </span></li>
 </ul>
 </section>
-<section id="coinflip" class="slide level2" style="font-size: 70%;">
+<section id="coinflip" class="slide level2" style="font-size: 90%;">
 <h2>Coinflip 🪙</h2>
 <p>There are 2 only possible outcomes in a coin flip:</p>
 <ul>
@@ -231,15 +231,53 @@ P(\text{T}) = \frac{1}{2} = 0.5
 </div>
 </div>
 </section>
-<section id="rolling-a-die" class="slide level2" style="font-size: 70%;">
-<h2>Rolling a die 🎲</h2>
+<section id="mutually-exclusive-events" class="slide level2" style="font-size: 70%;">
+<h2>Mutually exclusive events 🎲</h2>
 <ul>
-<li>There are 6 only possible outcomes in a rolling a 6 sided die.</li>
-<li>Event = Rolling an even number i.e 2, 4, 6</li>
+<li>There are 6 only possible outcomes in a rolling a fair, 6-sided die.</li>
+<li>What is the probability of rolling a 1 OR a 6?</li>
+<li>A single roll cannot produce both 1 and 6 = <strong>mutually exclusive</strong> event
+<ul>
+<li><span class="math inline">P(\text{roll 1}) = \frac{1}{6}</span></li>
+<li><span class="math inline">P(\text{roll 6}) = \frac{1}{6}</span></li>
+</ul></li>
+</ul>
+<p>Represented by <span class="math inline">\cup</span> “union” <span class="math display">
+P(\text{roll 1 $\cup$ roll 6}) = \frac{1}{6} + \frac{1}{6}  = \frac{2}{6}
+</span></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Add</strong> the probability of each <strong>mutually exclusive outome</strong> to get the their combined probability</p>
+</div>
+</div>
+</div>
+</section>
+<section id="non-mutually-exclusive-events" class="slide level2" style="font-size: 70%;">
+<h2>Non-mutually exclusive events 🎲</h2>
+<p>Now consider:</p>
+<ul>
+<li>Event A: Rolling a 1 OR a <strong>6</strong></li>
+<li>Event B: Rolling an even number 2, 4, <strong>6</strong></li>
 </ul>
 <p><span class="math display">
-P(\text{Even number}) = \frac{1+1+1}{6} = 0.5
+P(\text{A}) = \frac{1}{6} + \mathbf{\frac{1}{6}}  = \frac{2}{6}
 </span></p>
+<p><span class="math display">
+P(\text{B}) = \frac{1}{6} + \frac{1}{6} + \mathbf{\frac{1}{6}}  = \frac{3}{6}
+</span></p>
+<p>So we just add these two events together right?</p>
+<p><span class="math display">
+P(\text{A} + \text{B}) = \frac{2}{6} + \frac{3}{6} = \frac{5}{6}
+</span></p>
+<p><strong>NO!</strong> 🙅‍♀️</p>
+<p>These events are <strong>not mutually exclusive </strong>, because rolling 6 satisfies both conditions. Adding them will double count rolling 6!</p>
 </section>
 <section id="union" class="slide level2">
 <h2>Union</h2>
