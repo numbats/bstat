@@ -1348,49 +1348,42 @@
     "href": "week2/slides.html#conditional-probability-1",
     "title": "Probability and distributions",
     "section": "Conditional probability",
-    "text": "Conditional probability\nOf those with heart disease, what percentage exercise moderately?\n\n\nE: moderate exercise\nH: heart disease.\n\n\\begin{aligned}\nP(E \\mid H)\n&= \\frac{P(E \\cap H)}{P(H)} \\\\\n&= \\frac{43}{263} \\\\\n&\\approx \\mathbf{16.35\\%}\n\\end{aligned}\n\n\nPeople (count)\n\n\n\nHeart disease\nMinimal\nModerate\nTotal\n\n\n\n\nNo\n2,996\n1,741\n4,737\n\n\nYes\n220\n43\n263\n\n\nTotal\n3,216\n1,784\n5,000"
+    "text": "Conditional probability\nOf those with heart disease, what percentage exercise moderately?\n\n\nE: Does moderate exercise\nH: Has heart disease.\n\n\\begin{aligned}\nP(E \\mid H)\n&= \\frac{P(E \\cap H)}{P(H)} \\\\\n&= \\frac{43}{263} \\\\\n&\\approx \\mathbf{16.35\\%}\n\\end{aligned}\n\n\nPeople (count)\n\n\n\nHeart disease\nMinimal\nModerate\nTotal\n\n\n\n\nNo\n2,996\n1,741\n4,737\n\n\nYes\n220\n43\n263\n\n\nTotal\n3,216\n1,784\n5,000"
   },
   {
-    "objectID": "week2/slides.html#source-page-008",
-    "href": "week2/slides.html#source-page-008",
+    "objectID": "week2/slides.html#two-way-table-probability---row-total---watch-me",
+    "href": "week2/slides.html#two-way-table-probability---row-total---watch-me",
     "title": "Probability and distributions",
-    "section": "",
-    "text": "Frequency Table\nOpen“Heart Disease” sheet in Week 2 Workshop Data.xlsx. It contains data on the diagnosis of heart disease and exercise levels. Generate 2 relative frequency tables Exercise level Medical condition What information do the tables convey?\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 8"
+    "section": "Two-way table (probability) - % Row total - Watch me 👀",
+    "text": "Two-way table (probability) - % Row total - Watch me 👀"
   },
   {
-    "objectID": "week2/slides.html#source-page-009",
-    "href": "week2/slides.html#source-page-009",
+    "objectID": "week2/slides.html#two-way-table-count-and-probabilty---you-try",
+    "href": "week2/slides.html#two-way-table-count-and-probabilty---you-try",
     "title": "Probability and distributions",
-    "section": "",
-    "text": "Instructions:\nExercise Level Place the cursor in any cell within the data Drag & drop Exercise under 1. Rows & 2. Values. Right-click on Exercise entries &gt; Value Field Setting &gt; Summarize value by &gt; Count; Show Values As &gt; % of Column Total Medical Condition Place the cursor in any cell within the data Drag & drop Heart Disease under 1. Rows & 2. Values. Right-click on Heart Disease entries &gt; Value Field Setting &gt; Summarize value by &gt; Count; Show Values As &gt; % of Column Total\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 9\n\nVisual from source page 9."
+    "section": "Two-way table (count and probabilty) - You try ✏️",
+    "text": "Two-way table (count and probabilty) - You try ✏️\nWhat is the probability of someone not haven’t heart disease, given that their do minimal exercise?\n\n% Column total"
   },
   {
-    "objectID": "week2/slides.html#source-page-010",
-    "href": "week2/slides.html#source-page-010",
+    "objectID": "week2/slides.html#independent-events-x",
+    "href": "week2/slides.html#independent-events-x",
     "title": "Probability and distributions",
-    "section": "",
-    "text": "Relative Frequency Tables:\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 10\n\n\n\n\n\nVisual from source page 10.\n\n\n\n\n\n\nVisual from source page 10."
+    "section": "Independent events 🎲 x 🎲",
+    "text": "Independent events 🎲 x 🎲\n\nTwo events are independent if knowing that one event occurred does not change the probability of the other.\n\n\n\nIf Heart disease and Exercise are independent (i.e. they don’t affect each other) then: \n\nE: moderate exercise; H: has heart disease.\n\nP(\\text{E} \\mid \\text{H}) = P(\\text{E})"
   },
   {
-    "objectID": "week2/slides.html#source-page-011",
-    "href": "week2/slides.html#source-page-011",
+    "objectID": "week2/slides.html#independent-events-x-1",
+    "href": "week2/slides.html#independent-events-x-1",
     "title": "Probability and distributions",
-    "section": "",
-    "text": "Calculating Joint Probabilities\nConstruct a two-way frequency table (contingency table/Pivot table) by placing Heart Disease in rows and Exercise in Columns. Display as “count” Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 2996 1741 4737 Yes 220 43 263 Grand Total 3216 1784 5000 Probabilities Exercise Level Heart Disease Minimal Moderate Grand Total No Yes Grand Total Convert to probabilities\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 11\n\nVisual from source page 11."
+    "section": "Independent events 🎲 x 🎲",
+    "text": "Independent events 🎲 x 🎲\nE: moderate exercise; H: has heart disease.\n\n\nPeople (count)\n\n\n\nHeart disease\nMinimal\nModerate\nTotal\n\n\n\n\nNo\n2,996\n1,741\n4,737\n\n\nYes\n220\n43\n263\n\n\nTotal\n3,216\n1,784\n5,000\n\n\n\n\nConditional: among those with heart disease\n\n\\begin{aligned}\nP(E \\mid H) &= \\frac{P(E \\cap H)}{P(H)} \\\\\n&= \\frac{43}{263} \\approx 16.35\\%\n\\end{aligned}\n\nMarginal: among everyone\n\nP(E) = \\frac{1{,}784}{5{,}000} = 35.68\\%\n\n\n\n\n\n\n\n\nTip\n\n\nP(E \\mid H) \\ne P(E): 16.35% ≠ 35.68%. Heart disease and exercise are not independent."
   },
   {
-    "objectID": "week2/slides.html#source-page-012",
-    "href": "week2/slides.html#source-page-012",
+    "objectID": "week2/slides.html#are-heart-diseases-and-exercise-independent",
+    "href": "week2/slides.html#are-heart-diseases-and-exercise-independent",
     "title": "Probability and distributions",
-    "section": "",
-    "text": "Calculating Joint Probabilities: Manual Calculations\nConstruct a two-way frequency table (contingency table/Pivot table) by placing Heart Disease in rows and Exercise in Columns. Display as “count” Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 2996 1741 4737 Yes 220 43 263 Grand Total 3216 1784 5000 Probabilities Exercise Level Heart Disease Minimal Moderate Grand Total No \n=2996/5000\n \n=1741/5000\n \n=4737/5000\n Yes \n=220/5000\n \n=43/5000\n \n=263/5000\n Grand Total \n=3216/5000\n \n=1784/5000\n 1\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 12\n\nVisual from source page 12."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-013",
-    "href": "week2/slides.html#source-page-013",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Pivot table: % of Grand Total\nConstruct a pivot table by placing Heart Disease in rows and Exercise in Columns. Display as “% of Grand Total” Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00%\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 13\n\nVisual from source page 13."
+    "section": "Are heart diseases and exercise independent?",
+    "text": "Are heart diseases and exercise independent?"
   },
   {
     "objectID": "week2/slides.html#source-page-014",

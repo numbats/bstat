@@ -818,8 +818,8 @@ P(\text{A} \mid \text{B}) = \frac{\overbrace{P(\text{A} \cap \text{B})}^{\text{I
 <p><strong>Of those with heart disease, what percentage exercise moderately?</strong></p>
 <div class="columns" style="align-items: center; gap: 1.5rem; margin-top: 1em;">
 <div class="column" style="width: 48%;">
-<p><span class="math inline">E</span>: moderate exercise<br>
-<span class="math inline">H</span>: heart disease.</p>
+<p><span class="math inline">E</span>: Does moderate exercise<br>
+<span class="math inline">H</span>: Has heart disease.</p>
 <p><span class="math display">
 \begin{aligned}
 P(E \mid H)
@@ -862,77 +862,107 @@ P(E \mid H)
 </table>
 </div></div>
 </section>
-<section id="source-page-008" class="slide level2">
-<h2></h2>
-<h3 id="frequency-table">Frequency Table</h3>
-<p>Open“Heart Disease” sheet in Week 2 Workshop Data.xlsx. It contains data on the diagnosis of heart disease and exercise levels. Generate 2 relative frequency tables Exercise level Medical condition What information do the tables convey?</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=8">Workshop_slides_Week_2_with_solutions.pdf, page 8</a></em></p>
+<section id="two-way-table-probability---row-total---watch-me" class="slide level2">
+<h2>Two-way table (probability) - <code>% Row total</code> - Watch me 👀</h2>
 </section>
-<section id="source-page-009" class="slide level2">
-<h2></h2>
-<h3 id="instructions">Instructions:</h3>
-<p>Exercise Level Place the cursor in any cell within the data Drag &amp; drop Exercise under 1. Rows &amp; 2. Values. Right-click on Exercise entries &gt; Value Field Setting &gt; Summarize value by &gt; Count; Show Values As &gt; % of Column Total Medical Condition Place the cursor in any cell within the data Drag &amp; drop Heart Disease under 1. Rows &amp; 2. Values. Right-click on Heart Disease entries &gt; Value Field Setting &gt; Summarize value by &gt; Count; Show Values As &gt; % of Column Total</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=9">Workshop_slides_Week_2_with_solutions.pdf, page 9</a></em></p>
-
-<img data-src="figures/etx5900/components/image2.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 9.</p></section>
-<section id="source-page-010" class="slide level2">
-<h2></h2>
-<h3 id="relative-frequency-tables">Relative Frequency Tables:</h3>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=10">Workshop_slides_Week_2_with_solutions.pdf, page 10</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image5.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 10.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image6.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 10.</figcaption>
-</figure>
-</div>
+<section id="two-way-table-count-and-probabilty---you-try" class="slide level2">
+<h2>Two-way table (count and probabilty) - You try ✏️</h2>
+<p><strong>What is the probability of someone not haven’t heart disease, given that their do minimal exercise?</strong></p>
+<ul>
+<li><code>% Column total</code></li>
+</ul>
+</section>
+<section id="independent-events-x" class="slide level2">
+<h2>Independent events 🎲 x 🎲</h2>
+<blockquote>
+<p>Two events are independent if knowing that one event occurred does not change the probability of the other.</p>
+</blockquote>
+<!-- ::: {style="font-size: 0.8em; white-space: nowrap;"} -->
+<ul>
+<li>If Heart disease and Exercise are <strong>independent</strong> (i.e.&nbsp;they don’t affect each other) then: <!-- ::: --></li>
+</ul>
+<p><span class="math inline">E</span>: moderate exercise; <span class="math inline">H</span>: has heart disease.</p>
+<p><span class="math display">
+P(\text{E} \mid \text{H}) = P(\text{E})
+</span></p>
+</section>
+<section id="independent-events-x-1" class="slide level2 smaller">
+<h2>Independent events 🎲 x 🎲</h2>
+<p><span class="math inline">E</span>: moderate exercise; <span class="math inline">H</span>: has heart disease.</p>
+<div class="columns" style="gap: 1.5rem; align-items: flex-start;">
+<div class="column" style="width: 50%;">
+<p><strong>People (count)</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Heart disease</th>
+<th style="text-align: right;">Minimal</th>
+<th style="text-align: right;">Moderate</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">No</td>
+<td style="text-align: right;">2,996</td>
+<td style="text-align: right;">1,741</td>
+<td style="text-align: right;">4,737</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Yes</strong></td>
+<td style="text-align: right;">220</td>
+<td style="text-align: right;"><strong>43</strong></td>
+<td style="text-align: right;"><strong>263</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;">3,216</td>
+<td style="text-align: right;"><strong>1,784</strong></td>
+<td style="text-align: right;"><strong>5,000</strong></td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width: 48%;">
+<p><strong>Conditional: among those with heart disease</strong></p>
+<p><span class="math display">
+\begin{aligned}
+P(E \mid H) &amp;= \frac{P(E \cap H)}{P(H)} \\
+&amp;= \frac{43}{263} \approx 16.35\%
+\end{aligned}
+</span></p>
+<p><strong>Marginal: among everyone</strong></p>
+<p><span class="math display">
+P(E) = \frac{1{,}784}{5{,}000} = 35.68\%
+</span></p>
 </div></div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math inline">P(E \mid H) \ne P(E)</span>: <strong>16.35% ≠ 35.68%</strong>. Heart disease and exercise are <strong>not independent</strong>.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="source-page-011" class="slide level2">
-<h2></h2>
-<h3 id="calculating-joint-probabilities">Calculating Joint Probabilities</h3>
-<p>Construct a two-way frequency table (contingency table/Pivot table) by placing Heart Disease in rows and Exercise in Columns. Display as “count” Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 2996 1741 4737 Yes 220 43 263 Grand Total 3216 1784 5000 Probabilities Exercise Level Heart Disease Minimal Moderate Grand Total No Yes Grand Total Convert to probabilities</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=11">Workshop_slides_Week_2_with_solutions.pdf, page 11</a></em></p>
+<section id="are-heart-diseases-and-exercise-independent" class="slide level2">
+<h2>Are heart diseases and exercise independent?</h2>
+</section></section>
+<section id="break" class="title-slide slide level1 section-slide center">
+<h1>Break</h1>
+<countdown-timer id="introductions-timer" minutes="10" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+</section>
 
-<img data-src="figures/etx5900/components/image7.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 11.</p></section>
-<section id="source-page-012" class="slide level2">
-<h2></h2>
-<h3 id="calculating-joint-probabilities-manual-calculations">Calculating Joint Probabilities: Manual Calculations</h3>
-<p>Construct a two-way frequency table (contingency table/Pivot table) by placing Heart Disease in rows and Exercise in Columns. Display as “count” Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 2996 1741 4737 Yes 220 43 263 Grand Total 3216 1784 5000 Probabilities Exercise Level Heart Disease Minimal Moderate Grand Total No <span class="math display">
-=2996/5000
-</span> <span class="math display">
-=1741/5000
-</span> <span class="math display">
-=4737/5000
-</span> Yes <span class="math display">
-=220/5000
-</span> <span class="math display">
-=43/5000
-</span> <span class="math display">
-=263/5000
-</span> Grand Total <span class="math display">
-=3216/5000
-</span> <span class="math display">
-=1784/5000
-</span> 1</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=12">Workshop_slides_Week_2_with_solutions.pdf, page 12</a></em></p>
+<section>
+<section id="probability-distribtions-functions" class="title-slide slide level1 section-slide center">
+<h1>Probability distribtions functions</h1>
 
-<img data-src="figures/etx5900/components/image7.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 12.</p></section>
-<section id="source-page-013" class="slide level2">
-<h2></h2>
-<h3 id="pivot-table-of-grand-total">Pivot table: % of Grand Total</h3>
-<p>Construct a pivot table by placing Heart Disease in rows and Exercise in Columns. Display as “% of Grand Total” Count of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00%</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=13">Workshop_slides_Week_2_with_solutions.pdf, page 13</a></em></p>
-
-<img data-src="figures/etx5900/components/image7.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 13.</p></section>
+</section>
 <section id="source-page-014" class="slide level2">
 <h2></h2>
 <h3 id="task-1-heart-disease-and-exercise-level">Task 1: Heart Disease and Exercise Level</h3>
@@ -1024,7 +1054,7 @@ P(Heart Disease|Moderate) = 2.41%
 </section>
 <section id="source-page-024" class="slide level2">
 <h2></h2>
-<h3 id="instructions-1">Instructions:</h3>
+<h3 id="instructions">Instructions:</h3>
 <p>Construct contingency tables to analyse the relationship between “Have Tried” and 3 other variables: Live Alone, Income &amp; Gender. Use these tables to answer the following questions. Include probability statements and contextual interpretations in your answers. What is the proportion of customers who live alone? What is the proportion of customers who have tried the frozen food product and live alone? What is the probability that a randomly selected customer earns more than $50,000? What is the probability that a randomly selected customer earns more than $50,000 and has tried the frozen food product? What proportion of customers who live alone have tried the frozen food product? What proportion of customers who have tried the frozen food product, live alone? Are there more males or females who have tried the frozen food product? Task 2: Marketing (to be completed in your own time)</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=24">Workshop_slides_Week_2_with_solutions.pdf, page 24</a></em></p>
 </section>
