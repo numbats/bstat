@@ -1292,7 +1292,7 @@
     "href": "week2/slides.html#two-way-table-notations",
     "title": "Probability and distributions",
     "section": "Two-way table (notations)",
-    "text": "Two-way table (notations)"
+    "text": "Two-way table (notations)\nLet:\n\nH_{\\mathrm{No}} and H_{\\mathrm{Yes}} denote heart disease status E_{\\mathrm{Min}} (rows ➡️)\nE_{\\mathrm{Mod}} denote exercise level. (columns ⬆️)\n\n\n\n\n\n\n\n\n\n\n\nMinimal (E_{\\mathrm{Min}})\nModerate (E_{\\mathrm{Mod}})\nTotal\n\n\n\n\nNo (H_{\\mathrm{No}})\nP(H_{\\mathrm{No}} \\cap E_{\\mathrm{Min}})\nP(H_{\\mathrm{No}} \\cap E_{\\mathrm{Mod}})\nP(H_{\\mathrm{No}})\n\n\nYes (H_{\\mathrm{Yes}})\nP(H_{\\mathrm{Yes}} \\cap E_{\\mathrm{Min}})\nP(H_{\\mathrm{Yes}} \\cap E_{\\mathrm{Mod}})\nP(H_{\\mathrm{Yes}})\n\n\nTotal\nP(E_{\\mathrm{Min}})\nP(E_{\\mathrm{Mod}})\n1\n\n\n\nThe four inside cells are joint probabilities; the row and column totals are marginal probabilities.\n\n\n\n\n\n\nTip\n\n\nRead \\cap as AND"
   },
   {
     "objectID": "week2/slides.html#two-way-table-counts---watch-me",
@@ -1300,6 +1300,13 @@
     "title": "Probability and distributions",
     "section": "Two-way table (counts) - Watch me 👀",
     "text": "Two-way table (counts) - Watch me 👀\n\n\n\n\n\n\nRecall\n\n\nA Pivot Table groups your data and summarises them as counts/percentages\n\n\n\n\nClick any cell in the data, and choose Insert &gt; PivotTable.\nSelect the entire dataset, choose New Worksheet, then click OK.\nIn PivotTable Fields, drag Heart Disease to Rows and Exercise to Columns.\nDrag Heart Disease to Values. Open Value Field Settings and choose Summarize Values By &gt; Count.\n\nCheck that the Grand Total is 5,000 people."
+  },
+  {
+    "objectID": "week2/slides.html#two-way-table-counts",
+    "href": "week2/slides.html#two-way-table-counts",
+    "title": "Probability and distributions",
+    "section": "Two-way table (counts)",
+    "text": "Two-way table (counts)"
   },
   {
     "objectID": "week2/slides.html#counts-to-probabilities-grand-total---you-try",

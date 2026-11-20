@@ -457,8 +457,63 @@ P(\text{A} \cup \text{B})
 <p>What are the probabilities of each of these conditions coexisting?</p>
 </blockquote>
 </section>
-<section id="two-way-table-notations" class="slide level2">
+<section id="two-way-table-notations" class="slide level2 smaller">
 <h2>Two-way table (notations)</h2>
+<p>Let:</p>
+<ul>
+<li><span class="math inline">H_{\mathrm{No}}</span> and <span class="math inline">H_{\mathrm{Yes}}</span> denote heart disease status <span class="math inline">E_{\mathrm{Min}}</span> (rows ➡️)</li>
+<li><span class="math inline">E_{\mathrm{Mod}}</span> denote exercise level. (columns ⬆️)</li>
+</ul>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Minimal (<span class="math inline">E_{\mathrm{Min}}</span>)</th>
+<th>Moderate (<span class="math inline">E_{\mathrm{Mod}}</span>)</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>No</strong> (<span class="math inline">H_{\mathrm{No}}</span>)</td>
+<td><span class="math inline">P(H_{\mathrm{No}} \cap E_{\mathrm{Min}})</span></td>
+<td><span class="math inline">P(H_{\mathrm{No}} \cap E_{\mathrm{Mod}})</span></td>
+<td><span class="math inline">P(H_{\mathrm{No}})</span></td>
+</tr>
+<tr class="even">
+<td><strong>Yes</strong> (<span class="math inline">H_{\mathrm{Yes}}</span>)</td>
+<td><span class="math inline">P(H_{\mathrm{Yes}} \cap E_{\mathrm{Min}})</span></td>
+<td><span class="math inline">P(H_{\mathrm{Yes}} \cap E_{\mathrm{Mod}})</span></td>
+<td><span class="math inline">P(H_{\mathrm{Yes}})</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><span class="math inline">P(E_{\mathrm{Min}})</span></td>
+<td><span class="math inline">P(E_{\mathrm{Mod}})</span></td>
+<td><span class="math inline">1</span></td>
+</tr>
+</tbody>
+</table>
+<p>The four inside cells are <strong>joint probabilities</strong>; the row and column totals are <strong>marginal probabilities</strong>.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Read <span class="math inline">\cap</span> as AND</p>
+</div>
+</div>
+</div>
 </section>
 <section id="two-way-table-counts---watch-me" class="slide level2">
 <h2>Two-way table (counts) - Watch me 👀</h2>
@@ -482,6 +537,9 @@ P(\text{A} \cup \text{B})
 <li>Drag <code>Heart Disease</code> to <strong>Values</strong>. Open <strong>Value Field Settings</strong> and choose <strong>Summarize Values By &gt; Count</strong>.</li>
 </ol>
 <p>Check that the <strong>Grand Total</strong> is <strong>5,000</strong> people.</p>
+</section>
+<section id="two-way-table-counts" class="slide level2">
+<h2>Two-way table (counts)</h2>
 </section>
 <section id="counts-to-probabilities-grand-total---you-try" class="slide level2">
 <h2>Counts to probabilities: <code>% Grand total</code> - You try ✏️</h2>
