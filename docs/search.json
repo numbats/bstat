@@ -1250,7 +1250,7 @@
     "href": "week2/slides.html#mutually-exclusive-events",
     "title": "Probability and distributions",
     "section": "Mutually exclusive events 🎲",
-    "text": "Mutually exclusive events 🎲\n\nThere are 6 only possible outcomes in a rolling a fair, 6-sided die.\nWhat is the probability of rolling a 1 OR a 6?\nA single roll cannot produce both 1 and 6 = mutually exclusive event\n\nP(\\text{roll 1}) = \\frac{1}{6}\nP(\\text{roll 6}) = \\frac{1}{6}\n\n\nRepresented by \\cup “union” \nP(\\text{roll 1} \\cup \\text{roll 6}) = \\frac{1}{6} + \\frac{1}{6}  = \\frac{2}{6}\n\n\n\n\n\n\n\nTip\n\n\nAdd the probability of each mutually exclusive outome to get the their combined probability"
+    "text": "Mutually exclusive events 🎲\n\nThere are 6 only possible outcomes in a rolling a fair, 6-sided die.\nWhat is the probability of rolling a 1 OR a 6?\nA single roll cannot produce both 1 and 6 = mutually exclusive event\n\nP(\\text{roll 1}) = \\frac{1}{6}\nP(\\text{roll 6}) = \\frac{1}{6}\n\n\nThe probability of A OR B is called the “union”, represented by \\cup \nP(\\text{roll 1} \\cup \\text{roll 6}) = \\frac{1}{6} + \\frac{1}{6}  = \\frac{2}{6}\n\n\n\n\n\n\n\nTip\n\n\nWhen two events are mutually exclusive (cannot happen together), add their probabilities to calculate the probability of either event occurring."
   },
   {
     "objectID": "week2/slides.html#non-mutually-exclusive-events",
@@ -1334,7 +1334,7 @@
     "href": "week2/slides.html#conditional-probability",
     "title": "Probability and distributions",
     "section": "Conditional Probability",
-    "text": "Conditional Probability\nProbability of an event (A) given that (conditional on) another event (B) having occurred. P(A given B) or P (A|B) is known as conditional probability Conditional Probability=Joint probability of the two eventsMarginal probability of the condition \nPAB=P(A∩B)P(B)\n\n\n\n\n\n\nVisual from source page 5.\n\n\n\n\n\n\nVisual from source page 5.\n\n\n\nMutually Exclusive and Independent Events\nMutually exclusive: Definition: Events that cannot occur together We know that P(A or B) = P(A) + P(B) – P(A and B). For mutually exclusive events, P(A and B) = 0 Example: Toss a fair coin P(Not Head) = P(Tail) = 1-P(Head) Independent: Definition: Probability of one event occurring unaffected by the outcome of the other Event A is independent of event B if: \nP(A|B) = P(A)   OR    PA∩B=PA\\times{}P(B)\n\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 7\n\n\n\nVisual from source page 7."
+    "text": "Conditional Probability\nProbability of an event (A) given that (conditional on) another event (B) having occurred. P(A given B) or P (A|B) is known as conditional probability Conditional Probability=Joint probability of the two eventsMarginal probability of the condition \nPAB=P(A∩B)P(B)\n\nMutually Exclusive and Independent Events\nMutually exclusive: Definition: Events that cannot occur together We know that P(A or B) = P(A) + P(B) – P(A and B). For mutually exclusive events, P(A and B) = 0 Example: Toss a fair coin P(Not Head) = P(Tail) = 1-P(Head) Independent: Definition: Probability of one event occurring unaffected by the outcome of the other Event A is independent of event B if: \nP(A|B) = P(A)   OR    PA∩B=PA\\times{}P(B)\n\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 7\n\nVisual from source page 7."
   },
   {
     "objectID": "week2/slides.html#source-page-008",
