@@ -463,75 +463,42 @@ P(\text{A} \cup \text{B})
 <h2>Two-way table (notations)</h2>
 <p>Let:</p>
 <ul>
-<li><span class="math inline">H_{\mathrm{No}}</span> and <span class="math inline">H_{\mathrm{Yes}}</span> denote heart disease status (rows).</li>
-<li><span class="math inline">E_{\mathrm{Min}}</span> and <span class="math inline">E_{\mathrm{Mod}}</span> denote exercise level (columns).</li>
+<li><span class="math inline">H_{\text{No}}</span> and <span class="math inline">H_{\text{Yes}}</span> denote heart disease status (rows).</li>
+<li><span class="math inline">E_{\text{Min}}</span> and <span class="math inline">E_{\text{Mod}}</span> denote exercise level (columns).</li>
 </ul>
-<table>
+<table class="caption-top">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
 <thead>
-<tr>
-<th colspan="2" rowspan="2">
-</th>
-<th colspan="2" scope="colgroup">
-Exercise
-</th>
-<th rowspan="2" scope="col">
-Total
-</th>
-</tr>
-<tr>
-<th scope="col">
-Minimal (E<sub>Min</sub>)
-</th>
-<th scope="col">
-Moderate (E<sub>Mod</sub>)
-</th>
+<tr class="header">
+<th style="text-align: left;">Heart disease</th>
+<th style="text-align: center;">Minimal exercise (<span class="math inline">E_{\text{Min}}</span>)</th>
+<th style="text-align: center;">Moderate exercise (<span class="math inline">E_{\text{Mod}}</span>)</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<th rowspan="2" scope="rowgroup">
-Heart Disease
-</th>
-<th scope="row">
-No (H<sub>No</sub>)
-</th>
-<td>
-P(H<sub>No</sub> ∩ E<sub>Min</sub>)
-</td>
-<td>
-P(H<sub>No</sub> ∩ E<sub>Mod</sub>)
-</td>
-<td>
-P(H<sub>No</sub>)
-</td>
+<tr class="odd">
+<td style="text-align: left;">No (<span class="math inline">H_{\text{No}}</span>)</td>
+<td style="text-align: center;"><span class="math inline">P(H_{\text{No}} \cap E_{\text{Min}})</span></td>
+<td style="text-align: center;"><span class="math inline">P(H_{\text{No}} \cap E_{\text{Mod}})</span></td>
+<td style="text-align: center;"><span class="math inline">P(H_{\text{No}})</span></td>
 </tr>
-<tr>
-<th scope="row">
-Yes (H<sub>Yes</sub>)
-</th>
-<td>
-P(H<sub>Yes</sub> ∩ E<sub>Min</sub>)
-</td>
-<td>
-P(H<sub>Yes</sub> ∩ E<sub>Mod</sub>)
-</td>
-<td>
-P(H<sub>Yes</sub>)
-</td>
+<tr class="even">
+<td style="text-align: left;">Yes (<span class="math inline">H_{\text{Yes}}</span>)</td>
+<td style="text-align: center;"><span class="math inline">P(H_{\text{Yes}} \cap E_{\text{Min}})</span></td>
+<td style="text-align: center;"><span class="math inline">P(H_{\text{Yes}} \cap E_{\text{Mod}})</span></td>
+<td style="text-align: center;"><span class="math inline">P(H_{\text{Yes}})</span></td>
 </tr>
-<tr>
-<th colspan="2" scope="row">
-Total
-</th>
-<td>
-P(E<sub>Min</sub>)
-</td>
-<td>
-P(E<sub>Mod</sub>)
-</td>
-<td>
-1
-</td>
+<tr class="odd">
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><span class="math inline">P(E_{\text{Min}})</span></td>
+<td style="text-align: center;"><span class="math inline">P(E_{\text{Mod}})</span></td>
+<td style="text-align: center;"><span class="math inline">1</span></td>
 </tr>
 </tbody>
 </table>
@@ -646,14 +613,14 @@ Total
 </table>
 <p>Each inside cell counts people with <strong>both</strong> the row’s heart disease status and the column’s exercise level.</p>
 </section>
-<section id="counts-to-probabilities-grand-total---you-try" class="slide level2">
+<section id="counts-to-probabilities-grand-total---you-try" class="slide level2 smaller">
 <h2>Counts to probabilities: <code>% Grand total</code> - You try ✏️</h2>
-<countdown-timer id="introductions-timer" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="introductions-timer" minutes="10" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <ol type="1">
 <li>In the PivotTable, right-click any count and choose <strong>Show Values As &gt; % of Grand Total</strong>.</li>
 </ol>
-<p><strong>Discuss: </strong></p>
+<p><strong>Calculate</strong></p>
 <p>If you choose someone at random from the population, what is the probability that they:</p>
 <ul>
 <li>have no heart disease</li>
@@ -661,6 +628,8 @@ Total
 <li>do a moderate amount of exercise <strong>and</strong> have no heart disease</li>
 <li>do a moderate amount of exercise <strong>or</strong> have no heart disease</li>
 </ul>
+<p><strong>Discuss</strong></p>
+<p>Are <code>Heart Disease</code> and <code>Exercise</code> levels <strong>mutually exclusive</strong> events?</p>
 </section>
 <section id="two-way-table-probabilities" class="slide level2">
 <h2>Two-way table (probabilities)</h2>
@@ -704,14 +673,65 @@ Total
 </div>
 <div class="callout-content">
 <ul>
-<li><span class="math inline">P(H_{\mathrm{No}})=4{,}737/5{,}000=94.74\%</span>.</li>
-<li><span class="math inline">P(E_{\mathrm{Mod}})=1{,}784/5{,}000=35.68\%</span>.</li>
-<li><span class="math inline">P(H_{\mathrm{No}}\cap E_{\mathrm{Mod}})=1{,}741/5{,}000=34.82\%</span>.</li>
-<li><span class="math inline">P(H_{\mathrm{No}}\cup E_{\mathrm{Mod}})=P(H_{\mathrm{No}})+P(E_{\mathrm{Mod}})-P(H_{\mathrm{No}}\cap E_{\mathrm{Mod}})=95.60\%</span>.</li>
+<li><span class="math inline">P(H_{\text{No}})=4{,}737/5{,}000=94.74\%</span>.</li>
+<li><span class="math inline">P(E_{\text{Mod}})=1{,}784/5{,}000=35.68\%</span>.</li>
+<li><span class="math inline">P(H_{\text{No}}\cap E_{\text{Mod}})=1{,}741/5{,}000=34.82\%</span>.</li>
+<li><span class="math inline">P(H_{\text{No}}\cup E_{\text{Mod}})=P(H_{\text{No}})+P(E_{\text{Mod}})-P(H_{\text{No}}\cap E_{\text{Mod}})=95.60\%</span>.</li>
 </ul>
 </div>
 </div>
 </div>
+</section>
+<section id="are-heart-disease-and-exercise-levels-mutually-exclusive-events" class="slide level2 smaller">
+<h2>Are <code>Heart Disease</code> and <code>Exercise</code> levels <strong>mutually exclusive</strong> events?</h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
+<p>Ask, can these two events happen at the same time?</p>
+<p>Recall that for <strong>mutually exclusive</strong> events e.g.&nbsp;<span class="math inline">P(H_\text{yes} \cap E_\text{minimal})</span> = 0</p>
+<ul>
+<li>Our table shows <span class="math inline">P(H_\text{yes} \cap E_\text{minimal})</span> = 4.4%</li>
+<li>We can conclude <code>Heart Disease</code> and <code>Exercise</code> levels are <strong>NOT mutually exclusive</strong> events.</li>
+</ul>
+</div>
+</div>
+</div>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Heart disease</th>
+<th style="text-align: right;">Minimal exercise</th>
+<th style="text-align: right;">Moderate exercise</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">No</td>
+<td style="text-align: right;">59.92%</td>
+<td style="text-align: right;">34.82%</td>
+<td style="text-align: right;">94.74%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Yes</td>
+<td style="text-align: right;"><strong>4.40%</strong></td>
+<td style="text-align: right;">0.86%</td>
+<td style="text-align: right;">5.26%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;">64.32%</td>
+<td style="text-align: right;">35.68%</td>
+<td style="text-align: right;">100%</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="conditional-probability" class="slide level2">
 <h2>Conditional Probability</h2>

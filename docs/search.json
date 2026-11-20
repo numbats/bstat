@@ -1292,7 +1292,7 @@
     "href": "week2/slides.html#two-way-table-notations",
     "title": "Probability and distributions",
     "section": "Two-way table (notations)",
-    "text": "Two-way table (notations)\nLet:\n\nH_{\\mathrm{No}} and H_{\\mathrm{Yes}} denote heart disease status (rows).\nE_{\\mathrm{Min}} and E_{\\mathrm{Mod}} denote exercise level (columns).\n\n\n\n\n\n\n\nExercise\n\n\nTotal\n\n\n\n\nMinimal (EMin)\n\n\nModerate (EMod)\n\n\n\n\n\n\nHeart Disease\n\n\nNo (HNo)\n\n\nP(HNo ∩ EMin)\n\n\nP(HNo ∩ EMod)\n\n\nP(HNo)\n\n\n\n\nYes (HYes)\n\n\nP(HYes ∩ EMin)\n\n\nP(HYes ∩ EMod)\n\n\nP(HYes)\n\n\n\n\nTotal\n\n\nP(EMin)\n\n\nP(EMod)\n\n\n1\n\n\n\n\nThe four inside cells are joint probabilities; the row and column totals are marginal probabilities.\n\n\n\n\n\n\nTip\n\n\nRead \\cap as AND"
+    "text": "Two-way table (notations)\nLet:\n\nH_{\\text{No}} and H_{\\text{Yes}} denote heart disease status (rows).\nE_{\\text{Min}} and E_{\\text{Mod}} denote exercise level (columns).\n\n\n\n\n\n\n\n\n\n\nHeart disease\nMinimal exercise (E_{\\text{Min}})\nModerate exercise (E_{\\text{Mod}})\nTotal\n\n\n\n\nNo (H_{\\text{No}})\nP(H_{\\text{No}} \\cap E_{\\text{Min}})\nP(H_{\\text{No}} \\cap E_{\\text{Mod}})\nP(H_{\\text{No}})\n\n\nYes (H_{\\text{Yes}})\nP(H_{\\text{Yes}} \\cap E_{\\text{Min}})\nP(H_{\\text{Yes}} \\cap E_{\\text{Mod}})\nP(H_{\\text{Yes}})\n\n\nTotal\nP(E_{\\text{Min}})\nP(E_{\\text{Mod}})\n1\n\n\n\nThe four inside cells are joint probabilities; the row and column totals are marginal probabilities.\n\n\n\n\n\n\nTip\n\n\nRead \\cap as AND"
   },
   {
     "objectID": "week2/slides.html#two-way-table-counts---watch-me",
@@ -1313,14 +1313,21 @@
     "href": "week2/slides.html#counts-to-probabilities-grand-total---you-try",
     "title": "Probability and distributions",
     "section": "Counts to probabilities: % Grand total - You try ✏️",
-    "text": "Counts to probabilities: % Grand total - You try ✏️\n\n \n\nIn the PivotTable, right-click any count and choose Show Values As &gt; % of Grand Total.\n\nDiscuss: \nIf you choose someone at random from the population, what is the probability that they:\n\nhave no heart disease\ndo a moderate amount of exercise\ndo a moderate amount of exercise and have no heart disease\ndo a moderate amount of exercise or have no heart disease"
+    "text": "Counts to probabilities: % Grand total - You try ✏️\n\n \n\nIn the PivotTable, right-click any count and choose Show Values As &gt; % of Grand Total.\n\nCalculate\nIf you choose someone at random from the population, what is the probability that they:\n\nhave no heart disease\ndo a moderate amount of exercise\ndo a moderate amount of exercise and have no heart disease\ndo a moderate amount of exercise or have no heart disease\n\nDiscuss\nAre Heart Disease and Exercise levels mutually exclusive events?"
   },
   {
     "objectID": "week2/slides.html#two-way-table-probabilities",
     "href": "week2/slides.html#two-way-table-probabilities",
     "title": "Probability and distributions",
     "section": "Two-way table (probabilities)",
-    "text": "Two-way table (probabilities)\n\n\n\nHeart disease\nMinimal exercise\nModerate exercise\nTotal\n\n\n\n\nNo\n59.92%\n34.82%\n94.74%\n\n\nYes\n4.40%\n0.86%\n5.26%\n\n\nTotal\n64.32%\n35.68%\n100%\n\n\n\n\n\n\n\n\n\nSolution\n\n\n\nP(H_{\\mathrm{No}})=4{,}737/5{,}000=94.74\\%.\nP(E_{\\mathrm{Mod}})=1{,}784/5{,}000=35.68\\%.\nP(H_{\\mathrm{No}}\\cap E_{\\mathrm{Mod}})=1{,}741/5{,}000=34.82\\%.\nP(H_{\\mathrm{No}}\\cup E_{\\mathrm{Mod}})=P(H_{\\mathrm{No}})+P(E_{\\mathrm{Mod}})-P(H_{\\mathrm{No}}\\cap E_{\\mathrm{Mod}})=95.60\\%."
+    "text": "Two-way table (probabilities)\n\n\n\nHeart disease\nMinimal exercise\nModerate exercise\nTotal\n\n\n\n\nNo\n59.92%\n34.82%\n94.74%\n\n\nYes\n4.40%\n0.86%\n5.26%\n\n\nTotal\n64.32%\n35.68%\n100%\n\n\n\n\n\n\n\n\n\nSolution\n\n\n\nP(H_{\\text{No}})=4{,}737/5{,}000=94.74\\%.\nP(E_{\\text{Mod}})=1{,}784/5{,}000=35.68\\%.\nP(H_{\\text{No}}\\cap E_{\\text{Mod}})=1{,}741/5{,}000=34.82\\%.\nP(H_{\\text{No}}\\cup E_{\\text{Mod}})=P(H_{\\text{No}})+P(E_{\\text{Mod}})-P(H_{\\text{No}}\\cap E_{\\text{Mod}})=95.60\\%."
+  },
+  {
+    "objectID": "week2/slides.html#are-heart-disease-and-exercise-levels-mutually-exclusive-events",
+    "href": "week2/slides.html#are-heart-disease-and-exercise-levels-mutually-exclusive-events",
+    "title": "Probability and distributions",
+    "section": "Are Heart Disease and Exercise levels mutually exclusive events?",
+    "text": "Are Heart Disease and Exercise levels mutually exclusive events?\n\n\n\n\n\n\nSolution\n\n\nAsk, can these two events happen at the same time?\nRecall that for mutually exclusive events e.g. P(H_\\text{yes} \\cap E_\\text{minimal}) = 0\n\nOur table shows P(H_\\text{yes} \\cap E_\\text{minimal}) = 4.4%\nWe can conclude Heart Disease and Exercise levels are NOT mutually exclusive events.\n\n\n\n\n\n\n\nHeart disease\nMinimal exercise\nModerate exercise\nTotal\n\n\n\n\nNo\n59.92%\n34.82%\n94.74%\n\n\nYes\n4.40%\n0.86%\n5.26%\n\n\nTotal\n64.32%\n35.68%\n100%"
   },
   {
     "objectID": "week2/slides.html#conditional-probability",
