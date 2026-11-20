@@ -1288,18 +1288,25 @@
     "text": "Heart disease and Exercise 🏃‍♀️‍➡️\nEach row of the Heart Disease worksheet is one person (5,000 people).\n\n\n\nColumn\nMeaning\nData type and values\n\n\n\n\nPerson\nPerson identifier\nIdentifier, 1–5,000\n\n\nExercise\nExercise level\nCategorical, Minimal/Moderate\n\n\nHeart Disease\nHeart disease status\nCategorical, Yes/No\n\n\n\n\nWhat are the probabilities of each of these conditions coexisting?"
   },
   {
-    "objectID": "week2/slides.html#two-way-frequency-table---watch-me",
-    "href": "week2/slides.html#two-way-frequency-table---watch-me",
+    "objectID": "week2/slides.html#two-way-table-notations",
+    "href": "week2/slides.html#two-way-table-notations",
     "title": "Probability and distributions",
-    "section": "Two way frequency table - Watch me 👀",
-    "text": "Two way frequency table - Watch me 👀\n\n\n\n\n\n\nRecall\n\n\nA Pivot Table groups your data and summarises them as counts/percentages"
+    "section": "Two-way table (notations)",
+    "text": "Two-way table (notations)"
   },
   {
-    "objectID": "week2/slides.html#two-way-frequency-table-of-counts",
-    "href": "week2/slides.html#two-way-frequency-table-of-counts",
+    "objectID": "week2/slides.html#two-way-table-counts---watch-me",
+    "href": "week2/slides.html#two-way-table-counts---watch-me",
     "title": "Probability and distributions",
-    "section": "Two way frequency table of counts",
-    "text": "Two way frequency table of counts"
+    "section": "Two-way table (counts) - Watch me 👀",
+    "text": "Two-way table (counts) - Watch me 👀\n\n\n\n\n\n\nRecall\n\n\nA Pivot Table groups your data and summarises them as counts/percentages\n\n\n\n\nClick any cell in the data, and choose Insert &gt; PivotTable.\nSelect the entire dataset, choose New Worksheet, then click OK.\nIn PivotTable Fields, drag Heart Disease to Rows and Exercise to Columns.\nDrag Heart Disease to Values. Open Value Field Settings and choose Summarize Values By &gt; Count.\n\nCheck that the Grand Total is 5,000 people."
+  },
+  {
+    "objectID": "week2/slides.html#counts-to-probabilities-grand-total---you-try",
+    "href": "week2/slides.html#counts-to-probabilities-grand-total---you-try",
+    "title": "Probability and distributions",
+    "section": "Counts to probabilities: % Grand total - You try ✏️",
+    "text": "Counts to probabilities: % Grand total - You try ✏️"
   },
   {
     "objectID": "week2/slides.html#conditional-probability",
