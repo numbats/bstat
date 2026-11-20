@@ -1229,7 +1229,7 @@
     "href": "week2/slides.html#todays-roadmap",
     "title": "Probability and distributions",
     "section": "Today’s roadmap",
-    "text": "Today’s roadmap\n\nProbability\n\nCoin flip\nDice roll\nCafe orders\n\nBREAK\nProbability density functions\n\nNormal distribution\nStandard normal distibution\nExcel skills"
+    "text": "Today’s roadmap\n\nProbability\n\nCoin flip\nDice roll\nHeart disease and Exercise level\n\nBREAK\nProbability density functions\n\nNormal distribution\nStandard normal distibution\nExcel skills"
   },
   {
     "objectID": "week2/slides.html#what-is-probability",
@@ -1279,6 +1279,27 @@
     "title": "Probability and distributions",
     "section": "Bringing it together",
     "text": "Bringing it together\nWhat is the probability of Event A and B taking place?\n\n\n\n\\underbrace{P(A \\cup B)}_{\\text{Union}}\n\n\n\n\n\n\n\n\n\n\n\n\n=\\underbrace{P(A) + P(B)}_{\\text{Marginal probabilities}}\n\n\n\n\n\n\n\n\n\n\n\n\n-\\underbrace{P(A \\cap B)}_{\\text{Joint probability}}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nFor mutually exclusive events, the joint probability is 0. That’s why we can simply add the marginal probabilies up!"
+  },
+  {
+    "objectID": "week2/slides.html#heart-disease-and-exercise",
+    "href": "week2/slides.html#heart-disease-and-exercise",
+    "title": "Probability and distributions",
+    "section": "Heart disease and Exercise 🏃‍♀️‍➡️",
+    "text": "Heart disease and Exercise 🏃‍♀️‍➡️\nEach row of the Heart Disease worksheet is one person (5,000 people).\n\n\n\nColumn\nMeaning\nData type and values\n\n\n\n\nPerson\nPerson identifier\nIdentifier, 1–5,000\n\n\nExercise\nExercise level\nCategorical, Minimal/Moderate\n\n\nHeart Disease\nHeart disease status\nCategorical, Yes/No\n\n\n\n\nWhat are the probabilities of each of these conditions coexisting?"
+  },
+  {
+    "objectID": "week2/slides.html#two-way-frequency-table---watch-me",
+    "href": "week2/slides.html#two-way-frequency-table---watch-me",
+    "title": "Probability and distributions",
+    "section": "Two way frequency table - Watch me 👀",
+    "text": "Two way frequency table - Watch me 👀\n\n\n\n\n\n\nRecall\n\n\nA Pivot Table groups your data and summarises them as counts/percentages"
+  },
+  {
+    "objectID": "week2/slides.html#two-way-frequency-table-of-counts",
+    "href": "week2/slides.html#two-way-frequency-table-of-counts",
+    "title": "Probability and distributions",
+    "section": "Two way frequency table of counts",
+    "text": "Two way frequency table of counts"
   },
   {
     "objectID": "week2/slides.html#conditional-probability",
@@ -2034,7 +2055,7 @@
     "href": "week1/slides.html#frequency-tables---pivot-table---watch-me",
     "title": "Describing and visualising data",
     "section": "Frequency tables - Pivot Table - Watch me 👀",
-    "text": "Frequency tables - Pivot Table - Watch me 👀\nA Pivot Table groups your data and summarises them. - Create relative frequency tables using percentages make for easier comparisons\nWhat is the distribution of relative frequencies for number of bedrooms?\n\nChoose Insert &gt; PivotTable.\nSelect a table or range &gt; highlight the entire of the dataset\nChoose where to place Pivot Table &gt; New worksheet &gt; OK\nBeds in Rows.\nPut Beds in Values and set Summarize Values By &gt; Count for raw counts.\nPut Beds in Values again. For this second value field, set Summarise Values By &gt; Count, then Show Values As &gt; % of Grand Total.\n\nNote: Every property has a Beds entry, so Count of Beds counts properties."
+    "text": "Frequency tables - Pivot Table - Watch me 👀\nA Pivot Table groups your data and summarises them.\n\nCreate relative frequency tables using percentages make for easier comparisons\n\nWhat is the distribution of relative frequencies for number of bedrooms?\n\nChoose Insert &gt; PivotTable.\nSelect a table or range &gt; highlight the entire of the dataset\nChoose where to place Pivot Table &gt; New worksheet &gt; OK\nBeds in Rows.\nPut Beds in Values and set Summarize Values By &gt; Count for raw counts.\nPut Beds in Values again. For this second value field, set Summarise Values By &gt; Count, then Show Values As &gt; % of Grand Total.\n\nNote: Every property has a Beds entry, so Count of Beds counts properties."
   },
   {
     "objectID": "week1/slides.html#relative-frequency-table-beds",
