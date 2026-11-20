@@ -6,7 +6,9 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/countdown-0.6.0/countdown.js"></script>
+<link href="../site_libs/quarto-contrib/countdown-0.6.0/countdown.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.11.9">
 
   <meta name="dcterms.date" content="2026-12-01">
@@ -646,6 +648,70 @@ Total
 </section>
 <section id="counts-to-probabilities-grand-total---you-try" class="slide level2">
 <h2>Counts to probabilities: <code>% Grand total</code> - You try ✏️</h2>
+<countdown-timer id="introductions-timer" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+<ol type="1">
+<li>In the PivotTable, right-click any count and choose <strong>Show Values As &gt; % of Grand Total</strong>.</li>
+</ol>
+<p><strong>Discuss: </strong></p>
+<p>If you choose someone at random from the population, what is the probability that they:</p>
+<ul>
+<li>have no heart disease</li>
+<li>do a moderate amount of exercise</li>
+<li>do a moderate amount of exercise <strong>and</strong> have no heart disease</li>
+<li>do a moderate amount of exercise <strong>or</strong> have no heart disease</li>
+</ul>
+</section>
+<section id="two-way-table-probabilities" class="slide level2">
+<h2>Two-way table (probabilities)</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Heart disease</th>
+<th style="text-align: right;">Minimal exercise</th>
+<th style="text-align: right;">Moderate exercise</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">No</td>
+<td style="text-align: right;">59.92%</td>
+<td style="text-align: right;">34.82%</td>
+<td style="text-align: right;">94.74%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Yes</td>
+<td style="text-align: right;">4.40%</td>
+<td style="text-align: right;">0.86%</td>
+<td style="text-align: right;">5.26%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>64.32%</strong></td>
+<td style="text-align: right;"><strong>35.68%</strong></td>
+<td style="text-align: right;"><strong>100%</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><span class="math inline">P(H_{\mathrm{No}})=4{,}737/5{,}000=94.74\%</span>.</li>
+<li><span class="math inline">P(E_{\mathrm{Mod}})=1{,}784/5{,}000=35.68\%</span>.</li>
+<li><span class="math inline">P(H_{\mathrm{No}}\cap E_{\mathrm{Mod}})=1{,}741/5{,}000=34.82\%</span>.</li>
+<li><span class="math inline">P(H_{\mathrm{No}}\cup E_{\mathrm{Mod}})=P(H_{\mathrm{No}})+P(E_{\mathrm{Mod}})-P(H_{\mathrm{No}}\cap E_{\mathrm{Mod}})=95.60\%</span>.</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
 <section id="conditional-probability" class="slide level2">
 <h2>Conditional Probability</h2>
