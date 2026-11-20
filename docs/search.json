@@ -1229,7 +1229,7 @@
     "href": "week2/slides.html#todays-roadmap",
     "title": "Probability and distributions",
     "section": "Today’s roadmap",
-    "text": "Today’s roadmap\n\nProbability\n\nCoin flip\nDice roll\nPivot tables\n\nBREAK\nProbability density functions\n\nNormal distribution\nStandard normal distibution\nExcel skills"
+    "text": "Today’s roadmap\n\nProbability\n\nCoin flip\nDice roll\nCafe orders\n\nBREAK\nProbability density functions\n\nNormal distribution\nStandard normal distibution\nExcel skills"
   },
   {
     "objectID": "week2/slides.html#what-is-probability",
@@ -1243,7 +1243,7 @@
     "href": "week2/slides.html#coinflip",
     "title": "Probability and distributions",
     "section": "Coinflip 🪙",
-    "text": "Coinflip 🪙\nThere are 2 only possible outcomes in a coin flip:\n\nheads (\\text{H})\ntails (\\text{T})\n\n\nP(\\text{H}) = \\frac{1}{2} = 0.5\n\n\nP(\\text{T}) = \\frac{1}{2} = 0.5\n\n\n\n\n\n\n\nTip\n\n\nAdding the probability of possible outcomes will always total to 1"
+    "text": "Coinflip 🪙\nThere are two possible outcomes when flipping a fair coin:\n\n\nHeads (\\text{H})\n\nP(\\text{H}) = \\frac{1}{2} = 0.5\n\n\nTails (\\text{T})\n\nP(\\text{T}) = \\frac{1}{2} = 0.5\n\n\nMarginal probability is the probability of one event happening, regardless of anything else.\n\n\n\n\n\n\nTip\n\n\nAdding the marginal probabilities will always total to 1"
   },
   {
     "objectID": "week2/slides.html#mutually-exclusive-events",
@@ -1264,7 +1264,7 @@
     "href": "week2/slides.html#intersection",
     "title": "Probability and distributions",
     "section": "Intersection 🎲",
-    "text": "Intersection 🎲\n\nEvent A: Rolling a 1 OR a 6\nEvent B: Rolling an even number 2, 4, 6\n\nRolling a 6 satisfies both event conditions. This shared outcome is called intersection \\cap \nP(\\text{A}\\cap \\text{B})"
+    "text": "Intersection 🎲\n\nEvent A: Rolling a 1 OR a 6\nEvent B: Rolling an even number 2, 4, 6\n\nRolling a 6 satisfies both event conditions. This shared outcome is called intersection \\cap \nP(\\text{A}\\cap \\text{B})\n\n\n\n\n\n\n\n\nTip\n\n\nThe probability of Event A AND Event B taking place is called the joint probability"
   },
   {
     "objectID": "week2/slides.html#non-mutually-exclusive-events-1",
@@ -1274,11 +1274,18 @@
     "text": "Non-mutually exclusive events 🎲\nWhat is the probability of Event A or B taking place?\n\n\nEvent A\nRoll a 1 or 6\n\nP(\\text{A}) = \\frac{2}{6}\n\n\nEvent B\nRoll a 2, 4 or 6\n\nP(\\text{B}) = \\frac{3}{6}\n\n\nShared outcome\nRoll a 6\n\nP(\\text{A} \\cap \\text{B}) = \\frac{1}{6}\n\n\n\n\\begin{aligned}\nP(\\text{A} \\cup \\text{B})\n  &= P(\\text{A}) + P(\\text{B}) - P(\\text{A} \\cap \\text{B}) \\\\\n  &= \\frac{2}{6} + \\frac{3}{6} - \\frac{1}{6} \\\\\n  &= \\frac{4}{6}\n\\end{aligned}\n\n\n\n\n\n\n\nSolution\n\n\nWe need to subtract the intersection from the calculation to avoid double counting."
   },
   {
-    "objectID": "week2/slides.html#union",
-    "href": "week2/slides.html#union",
+    "objectID": "week2/slides.html#bringing-it-together",
+    "href": "week2/slides.html#bringing-it-together",
     "title": "Probability and distributions",
-    "section": "Union",
-    "text": "Union\nP(A \\text{ or } B) or P(A \\cup B) describes either A OR B \nPA or B =PA+PB-PrA and B\n Note: P(A) and P(B) are referred to as marginal probabilities Intersection (Joint probability) & Union Intersection (joint probability) Helps us understand the nature of the relationship between two events P(A \\text{ and } B) or P(A \\cap B) - known as “JOINT” probability\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 5\nConditional Probability\nProbability of an event (A) given that (conditional on) another event (B) having occurred. P(A given B) or P (A|B) is known as conditional probability Conditional Probability=Joint probability of the two eventsMarginal probability of the condition \nPAB=P(A∩B)P(B)\n\n\n\n\n\n\nVisual from source page 5.\n\n\n\n\n\n\nVisual from source page 5.\n\n\n\nMutually Exclusive and Independent Events\nMutually exclusive: Definition: Events that cannot occur together We know that P(A or B) = P(A) + P(B) – P(A and B). For mutually exclusive events, P(A and B) = 0 Example: Toss a fair coin P(Not Head) = P(Tail) = 1-P(Head) Independent: Definition: Probability of one event occurring unaffected by the outcome of the other Event A is independent of event B if: \nP(A|B) = P(A)   OR    PA∩B=PA\\times{}P(B)\n\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 7\n\n\n\nVisual from source page 7."
+    "section": "Bringing it together",
+    "text": "Bringing it together\nWhat is the probability of Event A and B taking place?\n\n\n\n\\underbrace{P(A \\cup B)}_{\\text{Union}}\n\n\n\n\n\n\n\n\n\n\n\n\n=\\underbrace{P(A) + P(B)}_{\\text{Marginal probabilities}}\n\n\n\n\n\n\n\n\n\n\n\n\n-\\underbrace{P(A \\cap B)}_{\\text{Joint probability}}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nFor mutually exclusive events, the joint probability is 0. That’s why we can simply add the marginal probabilies up!"
+  },
+  {
+    "objectID": "week2/slides.html#conditional-probability",
+    "href": "week2/slides.html#conditional-probability",
+    "title": "Probability and distributions",
+    "section": "Conditional Probability",
+    "text": "Conditional Probability\nProbability of an event (A) given that (conditional on) another event (B) having occurred. P(A given B) or P (A|B) is known as conditional probability Conditional Probability=Joint probability of the two eventsMarginal probability of the condition \nPAB=P(A∩B)P(B)\n\n\n\n\n\n\nVisual from source page 5.\n\n\n\n\n\n\nVisual from source page 5.\n\n\n\nMutually Exclusive and Independent Events\nMutually exclusive: Definition: Events that cannot occur together We know that P(A or B) = P(A) + P(B) – P(A and B). For mutually exclusive events, P(A and B) = 0 Example: Toss a fair coin P(Not Head) = P(Tail) = 1-P(Head) Independent: Definition: Probability of one event occurring unaffected by the outcome of the other Event A is independent of event B if: \nP(A|B) = P(A)   OR    PA∩B=PA\\times{}P(B)\n\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 7\n\n\n\nVisual from source page 7."
   },
   {
     "objectID": "week2/slides.html#source-page-008",

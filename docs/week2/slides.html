@@ -179,7 +179,7 @@
 <ul>
 <li>Coin flip</li>
 <li>Dice roll</li>
-<li>Pivot tables</li>
+<li>Cafe orders</li>
 </ul></li>
 <li>BREAK</li>
 <li>Probability density functions
@@ -209,17 +209,20 @@ P(\text{Event}) = \frac{\text{Number of ways the event can happen}}{\text{Total 
 </section>
 <section id="coinflip" class="slide level2" style="font-size: 90%;">
 <h2>Coinflip 🪙</h2>
-<p>There are 2 only possible outcomes in a coin flip:</p>
-<ul>
-<li>heads (<span class="math inline">\text{H}</span>)</li>
-<li>tails (<span class="math inline">\text{T}</span>)</li>
-</ul>
+<p>There are two possible outcomes when flipping a fair coin:</p>
+<div class="columns" style="align-items: flex-start; gap: 2rem; margin: 1em 0;">
+<div class="column" style="width: 48%; text-align: center;">
+<p><strong>Heads</strong> (<span class="math inline">\text{H}</span>)</p>
 <p><span class="math display">
 P(\text{H}) = \frac{1}{2} = 0.5
 </span></p>
+</div><div class="column" style="width: 48%; text-align: center;">
+<p><strong>Tails</strong> (<span class="math inline">\text{T}</span>)</p>
 <p><span class="math display">
 P(\text{T}) = \frac{1}{2} = 0.5
 </span></p>
+</div></div>
+<p><strong>Marginal probability</strong> is the probability of one event happening, regardless of anything else.</p>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -229,7 +232,7 @@ P(\text{T}) = \frac{1}{2} = 0.5
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p>Adding the probability of possible outcomes will always total to 1</p>
+<p>Adding the marginal probabilities will always total to 1</p>
 </div>
 </div>
 </div>
@@ -304,7 +307,20 @@ P(\text{A} \cup \text{B}) = \frac{2}{6} + \frac{3}{6} = \frac{5}{6}\quad🙅‍�
 P(\text{A}\cap \text{B})
 </span></p>
 
-<img data-src="slides_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%" alt="Venn diagram of die-roll events: A contains 1 and 6, B contains 2, 4 and 6, and their intersection contains 6."></section>
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%" alt="Venn diagram of die-roll events: A contains 1 and 6, B contains 2, 4 and 6, and their intersection contains 6."><div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>The probability of Event A AND Event B taking place is called the <strong>joint probability</strong></p>
+</div>
+</div>
+</div>
+</section>
 <section id="non-mutually-exclusive-events-1" class="slide level2" style="font-size: 65%;">
 <h2>Non-mutually exclusive events 🎲</h2>
 <h4 id="what-is-the-probability-of-event-a-or-b-taking-place-1">What is the probability of Event A or B taking place?</h4>
@@ -350,13 +366,66 @@ P(\text{A} \cup \text{B})
 </div>
 </div>
 </section>
-<section id="union" class="slide level2">
-<h2>Union</h2>
-<p><span class="math inline">P(A \text{ or } B)</span> or <span class="math inline">P(A \cup B)</span> describes either A OR B <span class="math display">
-PA or B =PA+PB-PrA and B
-</span> Note: <span class="math inline">P(A)</span> and <span class="math inline">P(B)</span> are referred to as marginal probabilities Intersection (Joint probability) &amp; Union Intersection (joint probability) Helps us understand the nature of the relationship between two events <span class="math inline">P(A \text{ and } B)</span> or <span class="math inline">P(A \cap B)</span> - known as “JOINT” probability</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=5">Workshop_slides_Week_2_with_solutions.pdf, page 5</a></em></p>
-<h3 id="conditional-probability">Conditional Probability</h3>
+<section id="bringing-it-together" class="slide level2">
+<h2>Bringing it together</h2>
+<h4 id="what-is-the-probability-of-event-a-and-b-taking-place">What is the probability of Event A and B taking place?</h4>
+<div class="columns" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: start; margin-top: 0.5em;">
+<div class="column" style="width: auto; min-width: 0; text-align: center;">
+<p><span class="math display">
+\underbrace{P(A \cup B)}_{\text{Union}}
+</span></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center" style="width:92.0%" alt="Venn diagram shading all outcomes in A or B."></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width: auto; min-width: 0; text-align: center;">
+<p><span class="math display">
+=\underbrace{P(A) + P(B)}_{\text{Marginal probabilities}}
+</span></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center" style="width:92.0%" alt="Venn diagram shading A blue and B coral; their overlap shows the shade made by both fills."></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width: auto; min-width: 0; text-align: center;">
+<p><span class="math display">
+-\underbrace{P(A \cap B)}_{\text{Joint probability}}
+</span></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center" style="width:92.0%" alt="Venn diagram shading only the shared outcome in A and B with the marginal overlap colour."></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>For <strong>mutually exclusive</strong> events, the joint probability is 0. That’s why we can simply add the marginal probabilies up!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="conditional-probability" class="slide level2">
+<h2>Conditional Probability</h2>
 <p>Probability of an event (A) given that (conditional on) another event (B) having occurred. P(A given B) or P (A|B) is known as conditional probability Conditional Probability=Joint probability of the two eventsMarginal probability of the condition <span class="math display">
 PAB=P(A∩B)P(B)
 </span></p>
