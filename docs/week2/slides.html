@@ -684,6 +684,10 @@ Total
 </section>
 <section id="are-heart-disease-and-exercise-levels-mutually-exclusive-events" class="slide level2 smaller">
 <h2>Are <code>Heart Disease</code> and <code>Exercise</code> levels <strong>mutually exclusive</strong> events?</h2>
+<p>Ask, can these two events happen at the same time?</p>
+<ul>
+<li>Recall that for <strong>mutually exclusive</strong> events e.g.&nbsp;<span class="math inline">P(H_\text{yes} \cap E_\text{minimal})</span> = 0</li>
+</ul>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -693,8 +697,6 @@ Total
 <p><strong>Solution</strong></p>
 </div>
 <div class="callout-content">
-<p>Ask, can these two events happen at the same time?</p>
-<p>Recall that for <strong>mutually exclusive</strong> events e.g.&nbsp;<span class="math inline">P(H_\text{yes} \cap E_\text{minimal})</span> = 0</p>
 <ul>
 <li>Our table shows <span class="math inline">P(H_\text{yes} \cap E_\text{minimal})</span> = 4.4%</li>
 <li>We can conclude <code>Heart Disease</code> and <code>Exercise</code> levels are <strong>NOT mutually exclusive</strong> events.</li>
@@ -733,18 +735,133 @@ Total
 </tbody>
 </table>
 </section>
-<section id="conditional-probability" class="slide level2">
-<h2>Conditional Probability</h2>
-<p>Probability of an event (A) given that (conditional on) another event (B) having occurred. P(A given B) or P (A|B) is known as conditional probability Conditional Probability=Joint probability of the two eventsMarginal probability of the condition <span class="math display">
-PAB=P(A∩B)P(B)
+<section id="does-knowing-something-change-the-probability" class="slide level2 smaller">
+<h2>Does knowing <em>something</em> change the probability?</h2>
+<p><strong>What is the probability that a randomly selected person exercises moderately? </strong> <span class="math display">
+P(E_{\text{Mod}}) = 35.68\%
+</span> Well… what if this person has heart disease?</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Heart disease</th>
+<th style="text-align: right;">Minimal exercise</th>
+<th style="text-align: right;">Moderate exercise</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">No</td>
+<td style="text-align: right;">59.92%</td>
+<td style="text-align: right;">34.82%</td>
+<td style="text-align: right;">94.74%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Yes</td>
+<td style="text-align: right;"><strong>4.40%</strong></td>
+<td style="text-align: right;">0.86%</td>
+<td style="text-align: right;">5.26%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;">64.32%</td>
+<td style="text-align: right;">35.68%</td>
+<td style="text-align: right;">100%</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Knowing the randomly selection person has heart disease changes the pool of possible outcomes or <strong>denominator</strong> for our probability calculations</p>
+</div>
+</div>
+</div>
+</section>
+<section id="conditional-probability" class="slide level2 smaller">
+<h2>Conditional probability</h2>
+<blockquote>
+<p>Probability of an Event A occuring given that another Event B has already happened</p>
+</blockquote>
+<ul>
+<li>Event A: Moderate exercise</li>
+<li>Event B: Heart disease</li>
+</ul>
+<p>Expressed as: <span class="math display">
+P(\text{A} \mid \text{B}) = \frac{\overbrace{P(\text{A} \cap \text{B})}^{\text{Intersection}}}{P(\text{B})}
 </span></p>
-<h3 id="mutually-exclusive-and-independent-events">Mutually Exclusive and Independent Events</h3>
-<p>Mutually exclusive: Definition: Events that cannot occur together We know that P(A or B) = P(A) + P(B) – P(A and B). For mutually exclusive events, P(A and B) = 0 Example: Toss a fair coin P(Not Head) = P(Tail) = 1-P(Head) Independent: Definition: Probability of one event occurring unaffected by the outcome of the other Event A is independent of event B if: <span class="math display">
-P(A|B) = P(A)   OR    PA∩B=PA\times{}P(B)
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Recall that the intersection is the joint probability of Event A and B occuring</li>
+<li>Event A is <strong>conditional</strong> on Event B</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="conditional-probability-1" class="slide level2" style="font-size: 90%;">
+<h2>Conditional probability</h2>
+<p><strong>Of those with heart disease, what percentage exercise moderately?</strong></p>
+<div class="columns" style="align-items: center; gap: 1.5rem; margin-top: 1em;">
+<div class="column" style="width: 48%;">
+<p><span class="math inline">E</span>: moderate exercise<br>
+<span class="math inline">H</span>: heart disease.</p>
+<p><span class="math display">
+\begin{aligned}
+P(E \mid H)
+&amp;= \frac{P(E \cap H)}{P(H)} \\
+&amp;= \frac{43}{263} \\
+&amp;\approx \mathbf{16.35\%}
+\end{aligned}
 </span></p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=7">Workshop_slides_Week_2_with_solutions.pdf, page 7</a></em></p>
-
-<img data-src="figures/etx5900/components/image10.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 7.</p></section>
+</div><div class="column" style="width: 50%;">
+<p><strong>People (count)</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Heart disease</th>
+<th style="text-align: right;">Minimal</th>
+<th style="text-align: right;">Moderate</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">No</td>
+<td style="text-align: right;">2,996</td>
+<td style="text-align: right;">1,741</td>
+<td style="text-align: right;">4,737</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Yes</strong></td>
+<td style="text-align: right;">220</td>
+<td style="text-align: right;"><strong>43</strong></td>
+<td style="text-align: right;"><strong>263</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;">3,216</td>
+<td style="text-align: right;">1,784</td>
+<td style="text-align: right;">5,000</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
 <section id="source-page-008" class="slide level2">
 <h2></h2>
 <h3 id="frequency-table">Frequency Table</h3>

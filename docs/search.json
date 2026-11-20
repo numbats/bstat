@@ -1327,14 +1327,28 @@
     "href": "week2/slides.html#are-heart-disease-and-exercise-levels-mutually-exclusive-events",
     "title": "Probability and distributions",
     "section": "Are Heart Disease and Exercise levels mutually exclusive events?",
-    "text": "Are Heart Disease and Exercise levels mutually exclusive events?\n\n\n\n\n\n\nSolution\n\n\nAsk, can these two events happen at the same time?\nRecall that for mutually exclusive events e.g. P(H_\\text{yes} \\cap E_\\text{minimal}) = 0\n\nOur table shows P(H_\\text{yes} \\cap E_\\text{minimal}) = 4.4%\nWe can conclude Heart Disease and Exercise levels are NOT mutually exclusive events.\n\n\n\n\n\n\n\nHeart disease\nMinimal exercise\nModerate exercise\nTotal\n\n\n\n\nNo\n59.92%\n34.82%\n94.74%\n\n\nYes\n4.40%\n0.86%\n5.26%\n\n\nTotal\n64.32%\n35.68%\n100%"
+    "text": "Are Heart Disease and Exercise levels mutually exclusive events?\nAsk, can these two events happen at the same time?\n\nRecall that for mutually exclusive events e.g. P(H_\\text{yes} \\cap E_\\text{minimal}) = 0\n\n\n\n\n\n\n\nSolution\n\n\n\nOur table shows P(H_\\text{yes} \\cap E_\\text{minimal}) = 4.4%\nWe can conclude Heart Disease and Exercise levels are NOT mutually exclusive events.\n\n\n\n\n\n\n\nHeart disease\nMinimal exercise\nModerate exercise\nTotal\n\n\n\n\nNo\n59.92%\n34.82%\n94.74%\n\n\nYes\n4.40%\n0.86%\n5.26%\n\n\nTotal\n64.32%\n35.68%\n100%"
+  },
+  {
+    "objectID": "week2/slides.html#does-knowing-something-change-the-probability",
+    "href": "week2/slides.html#does-knowing-something-change-the-probability",
+    "title": "Probability and distributions",
+    "section": "Does knowing something change the probability?",
+    "text": "Does knowing something change the probability?\nWhat is the probability that a randomly selected person exercises moderately?  \nP(E_{\\text{Mod}}) = 35.68\\%\n Well… what if this person has heart disease?\n\n\n\nHeart disease\nMinimal exercise\nModerate exercise\nTotal\n\n\n\n\nNo\n59.92%\n34.82%\n94.74%\n\n\nYes\n4.40%\n0.86%\n5.26%\n\n\nTotal\n64.32%\n35.68%\n100%\n\n\n\n\n\n\n\n\n\nTip\n\n\nKnowing the randomly selection person has heart disease changes the pool of possible outcomes or denominator for our probability calculations"
   },
   {
     "objectID": "week2/slides.html#conditional-probability",
     "href": "week2/slides.html#conditional-probability",
     "title": "Probability and distributions",
-    "section": "Conditional Probability",
-    "text": "Conditional Probability\nProbability of an event (A) given that (conditional on) another event (B) having occurred. P(A given B) or P (A|B) is known as conditional probability Conditional Probability=Joint probability of the two eventsMarginal probability of the condition \nPAB=P(A∩B)P(B)\n\nMutually Exclusive and Independent Events\nMutually exclusive: Definition: Events that cannot occur together We know that P(A or B) = P(A) + P(B) – P(A and B). For mutually exclusive events, P(A and B) = 0 Example: Toss a fair coin P(Not Head) = P(Tail) = 1-P(Head) Independent: Definition: Probability of one event occurring unaffected by the outcome of the other Event A is independent of event B if: \nP(A|B) = P(A)   OR    PA∩B=PA\\times{}P(B)\n\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 7\n\nVisual from source page 7."
+    "section": "Conditional probability",
+    "text": "Conditional probability\n\nProbability of an Event A occuring given that another Event B has already happened\n\n\nEvent A: Moderate exercise\nEvent B: Heart disease\n\nExpressed as: \nP(\\text{A} \\mid \\text{B}) = \\frac{\\overbrace{P(\\text{A} \\cap \\text{B})}^{\\text{Intersection}}}{P(\\text{B})}\n\n\n\n\n\n\n\nTip\n\n\n\nRecall that the intersection is the joint probability of Event A and B occuring\nEvent A is conditional on Event B"
+  },
+  {
+    "objectID": "week2/slides.html#conditional-probability-1",
+    "href": "week2/slides.html#conditional-probability-1",
+    "title": "Probability and distributions",
+    "section": "Conditional probability",
+    "text": "Conditional probability\nOf those with heart disease, what percentage exercise moderately?\n\n\nE: moderate exercise\nH: heart disease.\n\n\\begin{aligned}\nP(E \\mid H)\n&= \\frac{P(E \\cap H)}{P(H)} \\\\\n&= \\frac{43}{263} \\\\\n&\\approx \\mathbf{16.35\\%}\n\\end{aligned}\n\n\nPeople (count)\n\n\n\nHeart disease\nMinimal\nModerate\nTotal\n\n\n\n\nNo\n2,996\n1,741\n4,737\n\n\nYes\n220\n43\n263\n\n\nTotal\n3,216\n1,784\n5,000"
   },
   {
     "objectID": "week2/slides.html#source-page-008",
