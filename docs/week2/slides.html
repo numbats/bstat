@@ -177,8 +177,11 @@
 <ul>
 <li>Probability
 <ul>
+<li>Coin flip</li>
+<li>Dice roll</li>
 <li>Pivot tables</li>
 </ul></li>
+<li>BREAK</li>
 <li>Probability density functions
 <ul>
 <li>Normal distribution</li>
@@ -243,7 +246,7 @@ P(\text{T}) = \frac{1}{2} = 0.5
 </ul></li>
 </ul>
 <p>Represented by <span class="math inline">\cup</span> “union” <span class="math display">
-P(\text{roll 1 \cup roll 6}) = \frac{1}{6} + \frac{1}{6}  = \frac{2}{6}
+P(\text{roll 1} \cup \text{roll 6}) = \frac{1}{6} + \frac{1}{6}  = \frac{2}{6}
 </span></p>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -266,6 +269,7 @@ P(\text{roll 1 \cup roll 6}) = \frac{1}{6} + \frac{1}{6}  = \frac{2}{6}
 <li>Event A: Rolling a 1 OR a <strong>6</strong></li>
 <li>Event B: Rolling an even number 2, 4, <strong>6</strong></li>
 </ul>
+<h4 id="what-is-the-probability-of-event-a-or-b-taking-place">What is the probability of Event A or B taking place?</h4>
 <p><span class="math display">
 P(\text{A}) = \frac{1}{6} + \mathbf{\frac{1}{6}}  = \frac{2}{6}
 </span></p>
@@ -296,15 +300,55 @@ P(\text{A} \cup \text{B}) = \frac{2}{6} + \frac{3}{6} = \frac{5}{6}\quad🙅‍�
 <li>Event A: Rolling a 1 OR a <strong>6</strong></li>
 <li>Event B: Rolling an even number 2, 4, <strong>6</strong></li>
 </ul>
-<p>Rolling a 6 satisfies both event conditions. This shared outcome is called <strong>intersection</strong>, represented by <span class="math inline">\cap</span></p>
-
-<img data-src="slides_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%" alt="Venn diagram of die-roll events: A contains 1 and 6, B contains 2, 4 and 6, and their intersection contains 6."><p><span class="math display">
-P(\text{A} \cap \text{B})= P(A)+ P(B) \mathbf{-P(A\cap B)}
+<p>Rolling a 6 satisfies both event conditions. This shared outcome is called <strong>intersection</strong> <span class="math inline">\cap</span> <span class="math display">
+P(\text{A}\cap \text{B})
 </span></p>
-<p>Solution 💡</p>
-<ul>
-<li>We need to remove the overlap outcome</li>
-</ul>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%" alt="Venn diagram of die-roll events: A contains 1 and 6, B contains 2, 4 and 6, and their intersection contains 6."></section>
+<section id="non-mutually-exclusive-events-1" class="slide level2" style="font-size: 65%;">
+<h2>Non-mutually exclusive events 🎲</h2>
+<h4 id="what-is-the-probability-of-event-a-or-b-taking-place-1">What is the probability of Event A or B taking place?</h4>
+<div class="columns" style="align-items: flex-start; gap: 1.5rem; margin-top: 1.2em; margin-bottom: 1em;">
+<div class="column" style="width: 31%; text-align: center;">
+<p><strong>Event A</strong><br>
+Roll a 1 or <strong>6</strong></p>
+<p><span class="math display">
+P(\text{A}) = \frac{2}{6}
+</span></p>
+</div><div class="column" style="width: 31%; text-align: center;">
+<p><strong>Event B</strong><br>
+Roll a 2, 4 or <strong>6</strong></p>
+<p><span class="math display">
+P(\text{B}) = \frac{3}{6}
+</span></p>
+</div><div class="column" style="width: 31%; text-align: center;">
+<p><strong>Shared outcome</strong><br>
+Roll a <strong>6</strong></p>
+<p><span class="math display">
+P(\text{A} \cap \text{B}) = \frac{1}{6}
+</span></p>
+</div></div>
+<p><span class="math display">
+\begin{aligned}
+P(\text{A} \cup \text{B})
+  &amp;= P(\text{A}) + P(\text{B}) - P(\text{A} \cap \text{B}) \\
+  &amp;= \frac{2}{6} + \frac{3}{6} - \frac{1}{6} \\
+  &amp;= \frac{4}{6}
+\end{aligned}
+</span></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
+<p>We need to <strong>subtract</strong> the intersection from the calculation to avoid double counting.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="union" class="slide level2">
 <h2>Union</h2>

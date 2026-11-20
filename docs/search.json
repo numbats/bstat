@@ -1229,7 +1229,7 @@
     "href": "week2/slides.html#todays-roadmap",
     "title": "Probability and distributions",
     "section": "Today’s roadmap",
-    "text": "Today’s roadmap\n\nProbability\n\nPivot tables\n\nProbability density functions\n\nNormal distribution\nStandard normal distibution\nExcel skills"
+    "text": "Today’s roadmap\n\nProbability\n\nCoin flip\nDice roll\nPivot tables\n\nBREAK\nProbability density functions\n\nNormal distribution\nStandard normal distibution\nExcel skills"
   },
   {
     "objectID": "week2/slides.html#what-is-probability",
@@ -1250,21 +1250,28 @@
     "href": "week2/slides.html#mutually-exclusive-events",
     "title": "Probability and distributions",
     "section": "Mutually exclusive events 🎲",
-    "text": "Mutually exclusive events 🎲\n\nThere are 6 only possible outcomes in a rolling a fair, 6-sided die.\nWhat is the probability of rolling a 1 OR a 6?\nA single roll cannot produce both 1 and 6 = mutually exclusive event\n\nP(\\text{roll 1}) = \\frac{1}{6}\nP(\\text{roll 6}) = \\frac{1}{6}\n\n\nRepresented by \\cup “union” \nP(\\text{roll 1 \\cup roll 6}) = \\frac{1}{6} + \\frac{1}{6}  = \\frac{2}{6}\n\n\n\n\n\n\n\nTip\n\n\nAdd the probability of each mutually exclusive outome to get the their combined probability"
+    "text": "Mutually exclusive events 🎲\n\nThere are 6 only possible outcomes in a rolling a fair, 6-sided die.\nWhat is the probability of rolling a 1 OR a 6?\nA single roll cannot produce both 1 and 6 = mutually exclusive event\n\nP(\\text{roll 1}) = \\frac{1}{6}\nP(\\text{roll 6}) = \\frac{1}{6}\n\n\nRepresented by \\cup “union” \nP(\\text{roll 1} \\cup \\text{roll 6}) = \\frac{1}{6} + \\frac{1}{6}  = \\frac{2}{6}\n\n\n\n\n\n\n\nTip\n\n\nAdd the probability of each mutually exclusive outome to get the their combined probability"
   },
   {
     "objectID": "week2/slides.html#non-mutually-exclusive-events",
     "href": "week2/slides.html#non-mutually-exclusive-events",
     "title": "Probability and distributions",
     "section": "Non-mutually exclusive events 🎲",
-    "text": "Non-mutually exclusive events 🎲\nNow consider:\n\nEvent A: Rolling a 1 OR a 6\nEvent B: Rolling an even number 2, 4, 6\n\n\nP(\\text{A}) = \\frac{1}{6} + \\mathbf{\\frac{1}{6}}  = \\frac{2}{6}\n\n\nP(\\text{B}) = \\frac{1}{6} + \\frac{1}{6} + \\mathbf{\\frac{1}{6}}  = \\frac{3}{6}\n\nSo we just add these two events together right? 😏    NO!\n\nP(\\text{A} \\cup \\text{B}) = \\frac{2}{6} + \\frac{3}{6} = \\frac{5}{6}\\quad🙅‍♀️\n\n\n\n\n\n\n\nTip\n\n\nThese events are not mutually exclusive , because rolling 6 satisfies both event conditions. Adding them will double count rolling 6!"
+    "text": "Non-mutually exclusive events 🎲\nNow consider:\n\nEvent A: Rolling a 1 OR a 6\nEvent B: Rolling an even number 2, 4, 6\n\nWhat is the probability of Event A or B taking place?\n\nP(\\text{A}) = \\frac{1}{6} + \\mathbf{\\frac{1}{6}}  = \\frac{2}{6}\n\n\nP(\\text{B}) = \\frac{1}{6} + \\frac{1}{6} + \\mathbf{\\frac{1}{6}}  = \\frac{3}{6}\n\nSo we just add these two events together right? 😏    NO!\n\nP(\\text{A} \\cup \\text{B}) = \\frac{2}{6} + \\frac{3}{6} = \\frac{5}{6}\\quad🙅‍♀️\n\n\n\n\n\n\n\nTip\n\n\nThese events are not mutually exclusive , because rolling 6 satisfies both event conditions. Adding them will double count rolling 6!"
   },
   {
     "objectID": "week2/slides.html#intersection",
     "href": "week2/slides.html#intersection",
     "title": "Probability and distributions",
     "section": "Intersection 🎲",
-    "text": "Intersection 🎲\n\nEvent A: Rolling a 1 OR a 6\nEvent B: Rolling an even number 2, 4, 6\n\nRolling a 6 satisfies both event conditions. This shared outcome is called intersection, represented by \\cap\n\n\nP(\\text{A} \\cap \\text{B})= P(A)+ P(B) \\mathbf{-P(A\\cap B)}\n\nSolution 💡\n\nWe need to remove the overlap outcome"
+    "text": "Intersection 🎲\n\nEvent A: Rolling a 1 OR a 6\nEvent B: Rolling an even number 2, 4, 6\n\nRolling a 6 satisfies both event conditions. This shared outcome is called intersection \\cap \nP(\\text{A}\\cap \\text{B})"
+  },
+  {
+    "objectID": "week2/slides.html#non-mutually-exclusive-events-1",
+    "href": "week2/slides.html#non-mutually-exclusive-events-1",
+    "title": "Probability and distributions",
+    "section": "Non-mutually exclusive events 🎲",
+    "text": "Non-mutually exclusive events 🎲\nWhat is the probability of Event A or B taking place?\n\n\nEvent A\nRoll a 1 or 6\n\nP(\\text{A}) = \\frac{2}{6}\n\n\nEvent B\nRoll a 2, 4 or 6\n\nP(\\text{B}) = \\frac{3}{6}\n\n\nShared outcome\nRoll a 6\n\nP(\\text{A} \\cap \\text{B}) = \\frac{1}{6}\n\n\n\n\\begin{aligned}\nP(\\text{A} \\cup \\text{B})\n  &= P(\\text{A}) + P(\\text{B}) - P(\\text{A} \\cap \\text{B}) \\\\\n  &= \\frac{2}{6} + \\frac{3}{6} - \\frac{1}{6} \\\\\n  &= \\frac{4}{6}\n\\end{aligned}\n\n\n\n\n\n\n\nSolution\n\n\nWe need to subtract the intersection from the calculation to avoid double counting."
   },
   {
     "objectID": "week2/slides.html#union",
