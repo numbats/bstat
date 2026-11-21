@@ -199,17 +199,23 @@
 <h1>Probability</h1>
 
 </section>
-<section id="what-is-probability" class="slide level2">
+<section id="what-is-probability" class="slide level2" style="font-size: 88%">
 <h2>What is probability?</h2>
 <blockquote>
 <p>Probability is the mathematical measure of how <strong>likely</strong> an event is to happen</p>
 </blockquote>
 <ul>
 <li>Values range from 0 to 1</li>
-<li>Can be expressed as a fraction, decimal or a percentage. <span class="math display">
-P(\text{Event}) = \frac{\text{Number of ways the event can happen}}{\text{Total number of outcomes}}
-</span></li>
 </ul>
+<svg viewbox="0 0 1000 195" width="100%" role="img" aria-label="Probability scale from zero, no chance, to one, certain. An arrow points right to show increasing likelihood." style="display: block; max-width: 900px; margin: 0.5em auto; font-family: 'Fira Sans', sans-serif;">
+<line x1="100" y1="105" x2="900" y2="105" stroke="#222" stroke-width="4"></line> <g stroke="#222" stroke-width="3"> <line x1="100" y1="92" x2="100" y2="118"></line> <line x1="300" y1="96" x2="300" y2="114"></line> <line x1="500" y1="92" x2="500" y2="118"></line> <line x1="700" y1="96" x2="700" y2="114"></line> <line x1="900" y1="92" x2="900" y2="118"></line> </g> <g fill="#222" font-size="30" text-anchor="middle"> <text x="100" y="150">0</text> <text x="300" y="150">0.25</text> <text x="500" y="150">0.5</text> <text x="700" y="150">0.75</text> <text x="900" y="150">1</text> </g> <g fill="#222" font-size="25" text-anchor="middle"> <text x="100" y="178">No chance</text> <text x="900" y="178">Certain</text> </g> <line x1="330" y1="40" x2="670" y2="40" stroke="#006DAE" stroke-width="4"></line> <path d="M 670 40 L 652 29 M 670 40 L 652 51" fill="none" stroke="#006DAE" stroke-width="4"></path> <text x="500" y="29" fill="#006DAE" font-size="27" text-anchor="middle">More likely</text>
+</svg>
+<ul>
+<li>Expressed as a fraction, decimal or a percentage.</li>
+</ul>
+<p><span class="math display">
+P(\text{Event}) = \frac{\text{Number of ways the event can happen}}{\text{Total number of outcomes}}
+</span></p>
 </section>
 <section id="coinflip" class="slide level2" style="font-size: 90%;">
 <h2>Coinflip 🪙</h2>
@@ -245,14 +251,14 @@ P(\text{T}) = \frac{1}{2} = 0.5
 <h2>Mutually exclusive events 🎲</h2>
 <ul>
 <li>There are 6 only possible outcomes in a rolling a fair, 6-sided die.</li>
-<li>What is the probability of rolling a 1 OR a 6?</li>
+<li>What is the probability of rolling a 1 <strong>OR</strong> a 6?</li>
 <li>A single roll cannot produce both 1 and 6 = <strong>mutually exclusive</strong> event
 <ul>
 <li><span class="math inline">P(\text{roll 1}) = \frac{1}{6}</span></li>
 <li><span class="math inline">P(\text{roll 6}) = \frac{1}{6}</span></li>
 </ul></li>
 </ul>
-<p>The probability of A OR B is called the “union”, represented by <span class="math inline">\cup</span> <span class="math display">
+<p>The probability of A <em>OR</em> B is called the <strong>union</strong>, represented by <span class="math inline">\cup</span> <span class="math display">
 P(\text{roll 1} \cup \text{roll 6}) = \frac{1}{6} + \frac{1}{6}  = \frac{2}{6}
 </span></p>
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -423,7 +429,7 @@ P(\text{A} \cup \text{B})
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p>For <strong>mutually exclusive</strong> events, the joint probability is 0. That’s why we can simply add the marginal probabilies up!</p>
+<p>For <strong>mutually exclusive</strong> events, the joint probability is 0. That’s why we can simply add the marginal probabilities up!</p>
 </div>
 </div>
 </div>
@@ -465,8 +471,8 @@ P(\text{A} \cup \text{B})
 <h2>Two-way table (notations)</h2>
 <p>Let:</p>
 <ul>
-<li><span class="math inline">H_{\text{No}}</span> and <span class="math inline">H_{\text{Yes}}</span> denote heart disease status (rows).</li>
-<li><span class="math inline">E_{\text{Min}}</span> and <span class="math inline">E_{\text{Mod}}</span> denote exercise level (columns).</li>
+<li><span class="math inline">H_{\text{No}}</span> and <span class="math inline">H_{\text{Yes}}</span> denote heart disease status (rows) ➡️</li>
+<li><span class="math inline">E_{\text{Min}}</span> and <span class="math inline">E_{\text{Mod}}</span> denote exercise level (columns). ⬇️</li>
 </ul>
 <table class="caption-top">
 <colgroup>
@@ -741,7 +747,7 @@ Total
 <h2>Does knowing <em>something</em> change the probability?</h2>
 <p><strong>What is the probability that a randomly selected person exercises moderately? </strong> <span class="math display">
 P(E_{\text{Mod}}) = 35.68\%
-</span> Well… what if this person has heart disease?</p>
+</span> Well… what if this person already has heart disease?</p>
 <table class="caption-top">
 <thead>
 <tr class="header">

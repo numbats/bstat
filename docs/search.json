@@ -1236,7 +1236,7 @@
     "href": "week2/slides.html#what-is-probability",
     "title": "Probability and distributions",
     "section": "What is probability?",
-    "text": "What is probability?\n\nProbability is the mathematical measure of how likely an event is to happen\n\n\nValues range from 0 to 1\nCan be expressed as a fraction, decimal or a percentage. \nP(\\text{Event}) = \\frac{\\text{Number of ways the event can happen}}{\\text{Total number of outcomes}}"
+    "text": "What is probability?\n\nProbability is the mathematical measure of how likely an event is to happen\n\n\nValues range from 0 to 1\n\n\n         0 0.25 0.5 0.75 1   No chance Certain    More likely\n\n\nExpressed as a fraction, decimal or a percentage.\n\n\nP(\\text{Event}) = \\frac{\\text{Number of ways the event can happen}}{\\text{Total number of outcomes}}"
   },
   {
     "objectID": "week2/slides.html#coinflip",
@@ -1250,7 +1250,7 @@
     "href": "week2/slides.html#mutually-exclusive-events",
     "title": "Probability and distributions",
     "section": "Mutually exclusive events 🎲",
-    "text": "Mutually exclusive events 🎲\n\nThere are 6 only possible outcomes in a rolling a fair, 6-sided die.\nWhat is the probability of rolling a 1 OR a 6?\nA single roll cannot produce both 1 and 6 = mutually exclusive event\n\nP(\\text{roll 1}) = \\frac{1}{6}\nP(\\text{roll 6}) = \\frac{1}{6}\n\n\nThe probability of A OR B is called the “union”, represented by \\cup \nP(\\text{roll 1} \\cup \\text{roll 6}) = \\frac{1}{6} + \\frac{1}{6}  = \\frac{2}{6}\n\n\n\n\n\n\n\nTip\n\n\nWhen two events are mutually exclusive (cannot happen together), add their probabilities to calculate the probability of either event occurring."
+    "text": "Mutually exclusive events 🎲\n\nThere are 6 only possible outcomes in a rolling a fair, 6-sided die.\nWhat is the probability of rolling a 1 OR a 6?\nA single roll cannot produce both 1 and 6 = mutually exclusive event\n\nP(\\text{roll 1}) = \\frac{1}{6}\nP(\\text{roll 6}) = \\frac{1}{6}\n\n\nThe probability of A OR B is called the union, represented by \\cup \nP(\\text{roll 1} \\cup \\text{roll 6}) = \\frac{1}{6} + \\frac{1}{6}  = \\frac{2}{6}\n\n\n\n\n\n\n\nTip\n\n\nWhen two events are mutually exclusive (cannot happen together), add their probabilities to calculate the probability of either event occurring."
   },
   {
     "objectID": "week2/slides.html#non-mutually-exclusive-events",
@@ -1278,7 +1278,7 @@
     "href": "week2/slides.html#bringing-it-together",
     "title": "Probability and distributions",
     "section": "Bringing it together",
-    "text": "Bringing it together\nWhat is the probability of Event A and B taking place?\n\n\n\n\\underbrace{P(A \\cup B)}_{\\text{Union}}\n\n\n\n\n\n\n\n\n\n\n\n\n=\\underbrace{P(A) + P(B)}_{\\text{Marginal probabilities}}\n\n\n\n\n\n\n\n\n\n\n\n\n-\\underbrace{P(A \\cap B)}_{\\text{Joint probability}}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nFor mutually exclusive events, the joint probability is 0. That’s why we can simply add the marginal probabilies up!"
+    "text": "Bringing it together\nWhat is the probability of Event A and B taking place?\n\n\n\n\\underbrace{P(A \\cup B)}_{\\text{Union}}\n\n\n\n\n\n\n\n\n\n\n\n\n=\\underbrace{P(A) + P(B)}_{\\text{Marginal probabilities}}\n\n\n\n\n\n\n\n\n\n\n\n\n-\\underbrace{P(A \\cap B)}_{\\text{Joint probability}}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nFor mutually exclusive events, the joint probability is 0. That’s why we can simply add the marginal probabilities up!"
   },
   {
     "objectID": "week2/slides.html#heart-disease-and-exercise",
@@ -1292,7 +1292,7 @@
     "href": "week2/slides.html#two-way-table-notations",
     "title": "Probability and distributions",
     "section": "Two-way table (notations)",
-    "text": "Two-way table (notations)\nLet:\n\nH_{\\text{No}} and H_{\\text{Yes}} denote heart disease status (rows).\nE_{\\text{Min}} and E_{\\text{Mod}} denote exercise level (columns).\n\n\n\n\n\n\n\n\n\n\nHeart disease\nMinimal exercise (E_{\\text{Min}})\nModerate exercise (E_{\\text{Mod}})\nTotal\n\n\n\n\nNo (H_{\\text{No}})\nP(H_{\\text{No}} \\cap E_{\\text{Min}})\nP(H_{\\text{No}} \\cap E_{\\text{Mod}})\nP(H_{\\text{No}})\n\n\nYes (H_{\\text{Yes}})\nP(H_{\\text{Yes}} \\cap E_{\\text{Min}})\nP(H_{\\text{Yes}} \\cap E_{\\text{Mod}})\nP(H_{\\text{Yes}})\n\n\nTotal\nP(E_{\\text{Min}})\nP(E_{\\text{Mod}})\n1\n\n\n\nThe four inside cells are joint probabilities; the row and column totals are marginal probabilities.\n\n\n\n\n\n\nTip\n\n\nRead \\cap as AND"
+    "text": "Two-way table (notations)\nLet:\n\nH_{\\text{No}} and H_{\\text{Yes}} denote heart disease status (rows) ➡️\nE_{\\text{Min}} and E_{\\text{Mod}} denote exercise level (columns). ⬇️\n\n\n\n\n\n\n\n\n\n\nHeart disease\nMinimal exercise (E_{\\text{Min}})\nModerate exercise (E_{\\text{Mod}})\nTotal\n\n\n\n\nNo (H_{\\text{No}})\nP(H_{\\text{No}} \\cap E_{\\text{Min}})\nP(H_{\\text{No}} \\cap E_{\\text{Mod}})\nP(H_{\\text{No}})\n\n\nYes (H_{\\text{Yes}})\nP(H_{\\text{Yes}} \\cap E_{\\text{Min}})\nP(H_{\\text{Yes}} \\cap E_{\\text{Mod}})\nP(H_{\\text{Yes}})\n\n\nTotal\nP(E_{\\text{Min}})\nP(E_{\\text{Mod}})\n1\n\n\n\nThe four inside cells are joint probabilities; the row and column totals are marginal probabilities.\n\n\n\n\n\n\nTip\n\n\nRead \\cap as AND"
   },
   {
     "objectID": "week2/slides.html#two-way-table-counts---watch-me",
@@ -1334,7 +1334,7 @@
     "href": "week2/slides.html#does-knowing-something-change-the-probability",
     "title": "Probability and distributions",
     "section": "Does knowing something change the probability?",
-    "text": "Does knowing something change the probability?\nWhat is the probability that a randomly selected person exercises moderately?  \nP(E_{\\text{Mod}}) = 35.68\\%\n Well… what if this person has heart disease?\n\n\n\nHeart disease\nMinimal exercise\nModerate exercise\nTotal\n\n\n\n\nNo\n59.92%\n34.82%\n94.74%\n\n\nYes\n4.40%\n0.86%\n5.26%\n\n\nTotal\n64.32%\n35.68%\n100%\n\n\n\n\n\n\n\n\n\nTip\n\n\nKnowing the randomly selection person has heart disease changes the pool of possible outcomes or denominator for our probability calculations"
+    "text": "Does knowing something change the probability?\nWhat is the probability that a randomly selected person exercises moderately?  \nP(E_{\\text{Mod}}) = 35.68\\%\n Well… what if this person already has heart disease?\n\n\n\nHeart disease\nMinimal exercise\nModerate exercise\nTotal\n\n\n\n\nNo\n59.92%\n34.82%\n94.74%\n\n\nYes\n4.40%\n0.86%\n5.26%\n\n\nTotal\n64.32%\n35.68%\n100%\n\n\n\n\n\n\n\n\n\nTip\n\n\nKnowing the randomly selection person has heart disease changes the pool of possible outcomes or denominator for our probability calculations"
   },
   {
     "objectID": "week2/slides.html#conditional-probability",
