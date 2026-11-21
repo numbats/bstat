@@ -1418,7 +1418,28 @@
     "href": "week2/slides.html#probability-density-function",
     "title": "Probability and distributions",
     "section": "Probability density function",
-    "text": "Probability density function\n\nA probability density function describes how likely the range of numeric values.\n\n\nThe area under the probability curve, sums to 1\n\nThere are three you’ll learn in this course\nNormal (N)\nStandard Normal (Z)\nStudent’s t (t) (next week)\n\nNotations are used represent their key characteristics.\n## Normal distribution\n## Standard Normal distribution"
+    "text": "Probability density function\n\nA probability density function describes how likely the range of numeric values.\n\n\n\n\n\nNotations are used to represent a PDF’s features\n\n\\mathcal{N} is a family of distributions\n\\mu mean; \\sigma SD encode the shape of the distribution\n\n\n\nX \\sim \\overbrace{\\mathcal{N}}^{\\text{family}}(\\underbrace{\\mu, \\sigma}_{\\text{features}})\n\n\n\n\n\n\n\n\n\n\n\n\nThe area under the probability curve sums to 1\n\n\n\n\n\n\n\nRecall\n\n\n\nMean describes the central tendency or typical value\nStandard deviation (SD) describes the spread in the values"
+  },
+  {
+    "objectID": "week2/slides.html#density-functions-in-this-course",
+    "href": "week2/slides.html#density-functions-in-this-course",
+    "title": "Probability and distributions",
+    "section": "Density functions in this course",
+    "text": "Density functions in this course\n\nThere are three you’ll learn in this course\nNormal (N)\nStandard Normal (Z)\nStudent’s t (t) (next week)"
+  },
+  {
+    "objectID": "week2/slides.html#normal-distribution",
+    "href": "week2/slides.html#normal-distribution",
+    "title": "Probability and distributions",
+    "section": "Normal distribution",
+    "text": "Normal distribution"
+  },
+  {
+    "objectID": "week2/slides.html#standard-normal-distribution",
+    "href": "week2/slides.html#standard-normal-distribution",
+    "title": "Probability and distributions",
+    "section": "Standard Normal distribution",
+    "text": "Standard Normal distribution"
   },
   {
     "objectID": "week2/slides.html#a-company-is-interested-in-analyzing-the-efficacy-of-launching-a-new-brand-of-frozen-food-products.-they-wish-to-study-the-various-demographics-of-customers-who-have-and-have-not-tried-their-products-using-the-marketing-worksheet-in-the-dataset-week-3-workshop-data.xlsx.",
