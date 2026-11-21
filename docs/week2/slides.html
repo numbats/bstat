@@ -617,7 +617,7 @@ Total
 </section>
 <section id="counts-to-probabilities-grand-total---you-try" class="slide level2 smaller">
 <h2>Counts to probabilities: <code>% Grand total</code> - You try ✏️</h2>
-<countdown-timer id="introductions-timer" minutes="10" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="week2-grand-total-practice" minutes="10" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <ol type="1">
 <li>In the PivotTable, right-click any count and choose <strong>Show Values As &gt; % of Grand Total</strong>.</li>
@@ -983,7 +983,7 @@ P(E \mid H)
 <section>
 <section id="break" class="title-slide slide level1 section-slide center">
 <h1>Break</h1>
-<countdown-timer id="introductions-timer" minutes="10" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="week2-break" minutes="10" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 </section>
 <section id="independent-events-x" class="slide level2">
@@ -1317,14 +1317,40 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 </div>
 </div>
 </section>
-<section id="finding-the-shaded-region" class="slide level2">
+<section id="finding-the-shaded-region" class="slide level2 smaller">
 <h2>Finding the shaded region</h2>
 <p><strong>Which part of the curve do you want?</strong></p>
-<ul>
-<li>=NORM.DIST(0,TRUE) - Cumulative area, left of 0</li>
-<li>=NORM.DIST(0,FALSE) - Right side of 0</li>
-<li>Plots showing true or false, in columns</li>
-</ul>
+<!--
+- =NORM.DIST(0,TRUE) - Cumulative area, left of 0
+- =NORM.DIST(0,FALSE) - Right side of 0
+- Plots showing true or false, in columns
+-->
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong><code>TRUE</code>: cumulative area</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal curve with the area to the left of zero shaded." width="412"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><code>=NORM.S.DIST(0,TRUE)</code> gives <strong>0.5</strong>.</p>
+</div><div class="column" style="width:50%;">
+<p><strong><code>FALSE</code>: curve height</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal curve with a point at zero marking the density height, approximately 0.399." width="412"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><code>=NORM.S.DIST(0,FALSE)</code> gives <strong>0.399</strong>, a density height.</p>
+</div></div>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -1334,7 +1360,7 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p><code>NORM.S.DIST(0, TRUE)</code> gives the cumulative area to the <strong>left</strong> of 0; subtract it from 1 to get the shaded area on the <strong>right</strong>.</p>
+<p>Use <code>TRUE</code> for an <strong>area</strong>. For an area to the <strong>right</strong>, subtract the left area from 1. <code>FALSE</code> gives a <strong>density height</strong>, not a right-tail area.</p>
 </div>
 </div>
 </div>
@@ -1361,7 +1387,7 @@ P(X&gt;4.75)=1-P(X\leq 4.75)=0.5
 </section>
 <section id="finding-the-shaded-region-z---you-try" class="slide level2">
 <h2>Finding the shaded region (Z) - You try ✏️</h2>
-<countdown-timer id="introductions-timer" minutes="05" seconds="00" class="countdown" warn-when="300" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="week2-z-right-tail" minutes="05" seconds="00" class="countdown" warn-when="60" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <p>For the shaded half of the standard normal curve, <span class="math inline">Z&gt;0</span>:</p>
 <p><span class="math display">
@@ -1381,46 +1407,155 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 </div>
 </div>
 </section>
-<section id="finding-the-upper-tail-region-normal---watch-me" class="slide level2">
-<h2>Finding the upper tail region (normal) - Watch me 👀</h2>
-<ul>
-<li>Range between 6 to 8 for Normal</li>
-<li>Include plot showing shaded region</li>
-<li>Include solution in callout tip</li>
-</ul>
+<section id="finding-a-region-from-6-to-8-normal---watch-me" class="slide level2 smaller">
+<h2>Finding a region from 6 to 8 (normal) - Watch me 👀</h2>
+<!--
+- Range between 6 to 8 for Normal
+- Include plot showing shaded region
+- Include solution in callout tip
+-->
+<p>For <span class="math inline">X\sim\mathcal{N}(4.75,1.25^2)</span>, find the shaded probability <span class="math inline">P(6&lt;X&lt;8)</span>.</p>
+<div style="text-align: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center" alt="Normal density with only the region from 6 to 8 shaded dark blue." width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Excel:</strong> <code>=NORM.DIST(8,4.75,1.25,TRUE)-NORM.DIST(6,4.75,1.25,TRUE)</code></p>
+<p>The area between 6 and 8 is <strong>0.154</strong> (about <strong>15.4%</strong>).</p>
+</div>
+</div>
+</div>
 </section>
-<section id="finding-the-middle-region-z---you-try" class="slide level2">
+<section id="finding-the-middle-region-z---you-try" class="slide level2 smaller">
 <h2>Finding the middle region (Z) - You try ✏️</h2>
-<countdown-timer id="introductions-timer" minutes="05" seconds="00" class="countdown" warn-when="300" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="week2-z-middle" minutes="05" seconds="00" class="countdown" warn-when="60" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
-<ul>
-<li>Range between -1 to 1 for Z</li>
-<li>Include plot showing shaded region</li>
-<li>Include solution in callout tip</li>
-</ul>
+<!--
+- Range between -1 to 1 for Z 
+- Include plot showing shaded region
+- Include solution in callout tip
+-->
+<p>For <span class="math inline">Z\sim\mathcal{N}(0,1)</span>, find <span class="math inline">P(-1&lt;Z&lt;1)</span> in Excel.</p>
+<div style="text-align: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density with the middle region from minus one to one shaded dark blue." width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Excel:</strong> <code>=NORM.S.DIST(1,TRUE)-NORM.S.DIST(-1,TRUE)</code></p>
+<p>The shaded area is <strong>0.6827</strong> (about <strong>68.3%</strong>).</p>
+</div>
+</div>
+</div>
 </section>
-<section id="finding-the-inverse-normal---watch-me" class="slide level2">
+<section id="finding-the-inverse-normal---watch-me" class="slide level2 smaller">
 <h2>Finding the inverse (normal) - Watch me 👀</h2>
-<ul>
-<li>=NORM.INV</li>
-<li>Make plot no x axis, but shaded in different proporotions and we are finding the x value</li>
-</ul>
+<!--
+- =NORM.INV
+- Make plot no x axis, but shaded in different proporotions and we are finding the x value 
+-->
+<p><strong>Inverse question:</strong> Which value <span class="math inline">x</span> has <strong>90%</strong> of the normal distribution to its left? Here <span class="math inline">X\sim\mathcal{N}(4.75,1.25^2)</span>.</p>
+<div style="text-align: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-17-1.png" class="quarto-figure quarto-figure-center" alt="Normal density with 90 percent shaded to the left of an unknown cutoff x and 10 percent to the right; no x axis is shown." width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Excel:</strong> <code>=NORM.INV(0.90,4.75,1.25)</code> gives <strong><span class="math inline">x\approx6.35</span></strong>.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="finding-the-inverse-z---you-try" class="slide level2">
+<section id="finding-the-inverse-z---you-try" class="slide level2 smaller">
 <h2>Finding the inverse (Z) - You try ✏️</h2>
-<countdown-timer id="introductions-timer" minutes="05" seconds="00" class="countdown" warn-when="300" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="week2-z-inverse" minutes="05" seconds="00" class="countdown" warn-when="60" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
-<ul>
-<li>=NORM.S.INV</li>
-<li>Make plots no x axis, but shaded in different proporotions and we are finding the x value</li>
-</ul>
+<!--
+- =NORM.S.INV
+- Make plots no x axis, but shaded in different proporotions and we are finding the x value 
+-->
+<p><strong>Inverse question:</strong> Which <span class="math inline">z</span> value has <strong>95%</strong> of the standard normal distribution to its left?</p>
+<div style="text-align: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-18-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density with 95 percent shaded to the left of an unknown cutoff z and 5 percent to the right; no x axis is shown." width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Excel:</strong> <code>=NORM.S.INV(0.95)</code> gives <strong><span class="math inline">z\approx1.645</span></strong>.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
+<section id="pdf-recap" class="slide level2">
+<h2>PDF: Recap</h2>
+<ul>
+<li>A PDF shows how probability is spread across numerical values; <strong>area</strong> under the full curve is 1.</li>
+<li><code>NORM.DIST</code> uses a chosen mean and SD; <code>NORM.S.DIST</code> uses mean 0 and SD 1.</li>
+<li>With <code>TRUE</code>, Excel returns the <strong>area to the left</strong>. Subtract from 1 for a right tail; subtract two cumulative areas for a region between cutoffs.</li>
+<li>With <code>FALSE</code>, Excel returns a <strong>density height</strong>, not an area.</li>
+<li><code>NORM.INV</code> and <code>NORM.S.INV</code> turn a <strong>left-area probability</strong> into a cutoff value.</li>
+</ul>
 </section>
 <section id="exercise---you-try" class="slide level2">
 <h2>Exercise: - You try ✏️</h2>
-<countdown-timer id="introductions-timer" minutes="30" seconds="00" class="countdown" warn-when="300" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="week2-in-class-exercise" minutes="30" seconds="00" class="countdown" warn-when="300" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">

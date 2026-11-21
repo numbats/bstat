@@ -1446,7 +1446,7 @@
     "href": "week2/slides.html#finding-the-shaded-region",
     "title": "Probability and distributions",
     "section": "Finding the shaded region",
-    "text": "Finding the shaded region\nWhich part of the curve do you want?\n\n=NORM.DIST(0,TRUE) - Cumulative area, left of 0\n=NORM.DIST(0,FALSE) - Right side of 0\nPlots showing true or false, in columns\n\n\n\n\n\n\n\nTip\n\n\nNORM.S.DIST(0, TRUE) gives the cumulative area to the left of 0; subtract it from 1 to get the shaded area on the right."
+    "text": "Finding the shaded region\nWhich part of the curve do you want?\n\n\n\nTRUE: cumulative area\n\n\n\n\n\n\n\n\n\n=NORM.S.DIST(0,TRUE) gives 0.5.\n\nFALSE: curve height\n\n\n\n\n\n\n\n\n\n=NORM.S.DIST(0,FALSE) gives 0.399, a density height.\n\n\n\n\n\n\n\nTip\n\n\nUse TRUE for an area. For an area to the right, subtract the left area from 1. FALSE gives a density height, not a right-tail area."
   },
   {
     "objectID": "week2/slides.html#finding-the-shaded-region-normal---watch-me",
@@ -1463,39 +1463,39 @@
     "text": "Finding the shaded region (Z) - You try ✏️\n\n \nFor the shaded half of the standard normal curve, Z&gt;0:\n\nP(Z&gt;0)=1-P(Z\\leq 0)=0.5\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =1-NORM.S.DIST(0,TRUE)"
   },
   {
-    "objectID": "week2/slides.html#finding-the-upper-tail-region-normal---watch-me",
-    "href": "week2/slides.html#finding-the-upper-tail-region-normal---watch-me",
+    "objectID": "week2/slides.html#finding-a-region-from-6-to-8-normal---watch-me",
+    "href": "week2/slides.html#finding-a-region-from-6-to-8-normal---watch-me",
     "title": "Probability and distributions",
-    "section": "Finding the upper tail region (normal) - Watch me 👀",
-    "text": "Finding the upper tail region (normal) - Watch me 👀\n\nRange between 6 to 8 for Normal\nInclude plot showing shaded region\nInclude solution in callout tip"
+    "section": "Finding a region from 6 to 8 (normal) - Watch me 👀",
+    "text": "Finding a region from 6 to 8 (normal) - Watch me 👀\n\nFor X\\sim\\mathcal{N}(4.75,1.25^2), find the shaded probability P(6&lt;X&lt;8).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.DIST(8,4.75,1.25,TRUE)-NORM.DIST(6,4.75,1.25,TRUE)\nThe area between 6 and 8 is 0.154 (about 15.4%)."
   },
   {
     "objectID": "week2/slides.html#finding-the-middle-region-z---you-try",
     "href": "week2/slides.html#finding-the-middle-region-z---you-try",
     "title": "Probability and distributions",
     "section": "Finding the middle region (Z) - You try ✏️",
-    "text": "Finding the middle region (Z) - You try ✏️\n\n \n\nRange between -1 to 1 for Z\nInclude plot showing shaded region\nInclude solution in callout tip"
+    "text": "Finding the middle region (Z) - You try ✏️\n\n \n\nFor Z\\sim\\mathcal{N}(0,1), find P(-1&lt;Z&lt;1) in Excel.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.S.DIST(1,TRUE)-NORM.S.DIST(-1,TRUE)\nThe shaded area is 0.6827 (about 68.3%)."
   },
   {
     "objectID": "week2/slides.html#finding-the-inverse-normal---watch-me",
     "href": "week2/slides.html#finding-the-inverse-normal---watch-me",
     "title": "Probability and distributions",
     "section": "Finding the inverse (normal) - Watch me 👀",
-    "text": "Finding the inverse (normal) - Watch me 👀\n\n=NORM.INV\nMake plot no x axis, but shaded in different proporotions and we are finding the x value"
+    "text": "Finding the inverse (normal) - Watch me 👀\n\nInverse question: Which value x has 90% of the normal distribution to its left? Here X\\sim\\mathcal{N}(4.75,1.25^2).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.INV(0.90,4.75,1.25) gives x\\approx6.35."
   },
   {
     "objectID": "week2/slides.html#finding-the-inverse-z---you-try",
     "href": "week2/slides.html#finding-the-inverse-z---you-try",
     "title": "Probability and distributions",
     "section": "Finding the inverse (Z) - You try ✏️",
-    "text": "Finding the inverse (Z) - You try ✏️\n\n \n\n=NORM.S.INV\nMake plots no x axis, but shaded in different proporotions and we are finding the x value"
+    "text": "Finding the inverse (Z) - You try ✏️\n\n \n\nInverse question: Which z value has 95% of the standard normal distribution to its left?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.S.INV(0.95) gives z\\approx1.645."
   },
   {
-    "objectID": "week2/slides.html#summary",
-    "href": "week2/slides.html#summary",
+    "objectID": "week2/slides.html#pdf-recap",
+    "href": "week2/slides.html#pdf-recap",
     "title": "Probability and distributions",
-    "section": "Summary",
-    "text": "Summary"
+    "section": "PDF: Recap",
+    "text": "PDF: Recap\n\nA PDF shows how probability is spread across numerical values; area under the full curve is 1.\nNORM.DIST uses a chosen mean and SD; NORM.S.DIST uses mean 0 and SD 1.\nWith TRUE, Excel returns the area to the left. Subtract from 1 for a right tail; subtract two cumulative areas for a region between cutoffs.\nWith FALSE, Excel returns a density height, not an area.\nNORM.INV and NORM.S.INV turn a left-area probability into a cutoff value."
   },
   {
     "objectID": "week2/slides.html#exercise---you-try",
