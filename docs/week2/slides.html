@@ -174,7 +174,7 @@
 <p>Click <strong>☰ (menu) &gt; Tools &gt; PDF export mode</strong>, then <strong>Ctrl/Cmd + P</strong> and choose <strong>Save as PDF</strong>.</p>
 </div>
 </section>
-<section id="todays-roadmap" class="slide level2">
+<section id="todays-roadmap" class="slide level2 smaller">
 <h2>Today’s roadmap</h2>
 <ul>
 <li>Probability
@@ -1065,9 +1065,11 @@ P(E) = \frac{1{,}784}{5{,}000} = 35.68\%
 </section>
 <section id="probability-recap" class="slide level2 smaller">
 <h2>Probability: recap</h2>
-<p>Let <span class="math inline">A=\{1,6\}</span> and <span class="math inline">B=\{2,4,6\}</span> on one fair die. Let <span class="math inline">E</span> mean moderate exercise, <span class="math inline">H</span> heart disease, and <span class="math inline">X,Y</span> heads on the first and second coin flips.</p>
+<div style="font-size=0.4em">
+<p>Let <span class="math inline">A=\{1,6\}</span> and <span class="math inline">B=\{2,4,6\}</span> on one fair die.</p>
+</div>
 <div class="columns" style="gap: 1.4rem; align-items: flex-start;">
-<div class="column" style="width: 66%;">
+<div class="column" style="width: 66%">
 <table class="caption-top">
 <colgroup>
 <col style="width: 33%">
@@ -1077,8 +1079,8 @@ P(E) = \frac{1{,}784}{5{,}000} = 35.68\%
 <thead>
 <tr class="header">
 <th style="text-align: left;">Concept</th>
-<th style="text-align: left;">Notation and reminder</th>
-<th style="text-align: left;">Example</th>
+<th style="text-align: left;">Notation</th>
+<th style="text-align: left;">Example/reminder</th>
 </tr>
 </thead>
 <tbody>
@@ -1088,34 +1090,24 @@ P(E) = \frac{1{,}784}{5{,}000} = 35.68\%
 <td style="text-align: left;">Coin: <span class="math inline">P(\text{heads})=1/2</span></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;"><strong>Mutually exclusive</strong></td>
+<td style="text-align: left;">add <span class="math inline">P(C)+P(D)</span> ; <span class="math inline">P(C\cap D)=0</span></td>
+<td style="text-align: left;">Die: <span class="math inline">C=\{1\}</span>, <span class="math inline">D=\{6\}</span></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;"><strong>Union</strong></td>
 <td style="text-align: left;"><span class="math inline">P(A\cup B)</span>: <strong>or</strong></td>
 <td style="text-align: left;">Die: <span class="math inline">P(A\cup B)=4/6</span></td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Mutually exclusive</strong></td>
-<td style="text-align: left;"><span class="math inline">P(C\cap D)=0</span>; add <span class="math inline">P(C)+P(D)</span></td>
-<td style="text-align: left;">Die: <span class="math inline">C=\{1\}</span>, <span class="math inline">D=\{6\}</span></td>
-</tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Not mutually exclusive</strong></td>
-<td style="text-align: left;"><span class="math inline">P(A\cup B)=P(A)+P(B)-P(A\cap B)</span></td>
-<td style="text-align: left;">Die: <span class="math inline">2/6+3/6-1/6=4/6</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Joint</strong></td>
+<td style="text-align: left;"><strong>Joint/Intersection</strong></td>
 <td style="text-align: left;"><span class="math inline">P(A\cap B)</span>: <strong>and</strong></td>
 <td style="text-align: left;">Die: shared roll <span class="math inline">6</span>, so <span class="math inline">1/6</span></td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Conditional</strong></td>
-<td style="text-align: left;"><span class="math inline">P(E\mid H)=P(E\cap H)/P(H)</span>: <strong>given</strong> <span class="math inline">H</span></td>
-<td style="text-align: left;">Heart disease: <span class="math inline">43/263=16.35\%</span></td>
-</tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Independent</strong></td>
-<td style="text-align: left;"><span class="math inline">P(X\mid Y)=P(X)</span>, or <span class="math inline">P(X\cap Y)=P(X)P(Y)</span></td>
-<td style="text-align: left;">Two coin flips: <span class="math inline">P(X\cap Y)=1/4</span></td>
+<td style="text-align: left;"><strong>Not mutually exclusive</strong></td>
+<td style="text-align: left;"><span class="math inline">P(A\cup B)=P(A)+P(B)-P(A\cap B)</span></td>
+<td style="text-align: left;">Die: <span class="math inline">2/6+3/6-1/6=4/6</span></td>
 </tr>
 </tbody>
 </table>
@@ -1141,11 +1133,116 @@ P(E) = \frac{1{,}784}{5{,}000} = 35.68\%
 </div>
 </div>
 </div></div>
+</section>
+<section id="probability-recap-1" class="slide level2 smaller">
+<h2>Probability: recap</h2>
+<p>Let <span class="math inline">X,Y</span> heads on the first and second coin flips.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Concept</th>
+<th style="text-align: left;">Notation</th>
+<th style="text-align: left;">Example/reminder</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Conditional</strong></td>
+<td style="text-align: left;"><span class="math inline">P(E\mid H)=P(E\cap H)/P(H)</span>: <strong>given</strong> <span class="math inline">H</span></td>
+<td style="text-align: left;">Heart disease: changes denominator</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Independent</strong></td>
+<td style="text-align: left;"><span class="math inline">P(X\mid Y)=P(X)</span></td>
+<td style="text-align: left;">Flipping two coins</td>
+</tr>
+</tbody>
+</table>
 </section></section>
 <section>
-<section id="probability-distributions-functions" class="title-slide slide level1 section-slide center">
-<h1>Probability distributions functions</h1>
+<section id="pdfs-not-the-one-youre-thinking-of" class="title-slide slide level1 section-slide center">
+<h1>PDFs (not the one you’re thinking of)</h1>
 
+</section>
+<section id="probability-as-a-density-function-pdf" class="slide level2 smaller">
+<h2>Probability as a density function (PDF)</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Recall</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>A histogram shows the shape of numerical data</li>
+</ul>
+</div>
+</div>
+</div>
+<p>We can represent the same data as “smoothed curve” using a <strong>mathematical function</strong>. <span class="math inline">f(x)</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Histogram</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center" alt="Upright histogram of a symmetric distribution, with the tallest bars in the centre and similar tails on both sides." width="432"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>Probability density function</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center" alt="Normal probability density curve with mean 4.75 and standard deviation 1.25, matching the distribution shown in the histogram." width="432"></p>
+</figure>
+</div>
+</div>
+</div>
+<div style="font-size: 0.5em; margin-top: -3.5em; margin-bottom: -0.7em;">
+<p><span class="math display">
+f(x)=\frac{1}{\sigma\sqrt{2\pi}}\exp\!\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
+</span></p>
+</div>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>You do <strong>NOT</strong> need to know this formula!</p>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="probability-density-functions" class="slide level2">
+<h2>Probability density functions</h2>
+<p>A <strong>probability density function</strong> describes how <em>likely</em> the range of numeric values.</p>
+<ul>
+<li><p>A key characteristic of a PDF is that the area under the curve = 1, just like the probability concepts we learned.</p></li>
+<li><p>There are three you’ll learn in this course</p></li>
+<li><p>We use notations to represent their key characteristics. Think of this as their bio</p></li>
+</ul>
+<p>## Meet the Normal “average joe”</p>
+<p>## Meet the Standard normal “The minimalist”</p>
+<ul>
+<li>Says “Z” a lot</li>
+</ul>
 </section>
 <section id="source-page-023" class="slide level2">
 <h2></h2>

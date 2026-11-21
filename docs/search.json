@@ -1397,7 +1397,28 @@
     "href": "week2/slides.html#probability-recap",
     "title": "Probability and distributions",
     "section": "Probability: recap",
-    "text": "Probability: recap\nLet A=\\{1,6\\} and B=\\{2,4,6\\} on one fair die. Let E mean moderate exercise, H heart disease, and X,Y heads on the first and second coin flips.\n\n\n\n\n\n\n\n\n\n\nConcept\nNotation and reminder\nExample\n\n\n\n\nMarginal\nP(A): one event\nCoin: P(\\text{heads})=1/2\n\n\nUnion\nP(A\\cup B): or\nDie: P(A\\cup B)=4/6\n\n\nMutually exclusive\nP(C\\cap D)=0; add P(C)+P(D)\nDie: C=\\{1\\}, D=\\{6\\}\n\n\nNot mutually exclusive\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B)\nDie: 2/6+3/6-1/6=4/6\n\n\nJoint\nP(A\\cap B): and\nDie: shared roll 6, so 1/6\n\n\nConditional\nP(E\\mid H)=P(E\\cap H)/P(H): given H\nHeart disease: 43/263=16.35\\%\n\n\nIndependent\nP(X\\mid Y)=P(X), or P(X\\cap Y)=P(X)P(Y)\nTwo coin flips: P(X\\cap Y)=1/4\n\n\n\n\nMutually exclusive: no overlap\n\n\n\n\n\n\n\n\n\nNot mutually exclusive: shared 6"
+    "text": "Probability: recap\n\nLet A=\\{1,6\\} and B=\\{2,4,6\\} on one fair die.\n\n\n\n\n\n\n\n\n\n\n\nConcept\nNotation\nExample/reminder\n\n\n\n\nMarginal\nP(A): one event\nCoin: P(\\text{heads})=1/2\n\n\nMutually exclusive\nadd P(C)+P(D) ; P(C\\cap D)=0\nDie: C=\\{1\\}, D=\\{6\\}\n\n\nUnion\nP(A\\cup B): or\nDie: P(A\\cup B)=4/6\n\n\nJoint/Intersection\nP(A\\cap B): and\nDie: shared roll 6, so 1/6\n\n\nNot mutually exclusive\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B)\nDie: 2/6+3/6-1/6=4/6\n\n\n\n\nMutually exclusive: no overlap\n\n\n\n\n\n\n\n\n\nNot mutually exclusive: shared 6"
+  },
+  {
+    "objectID": "week2/slides.html#probability-recap-1",
+    "href": "week2/slides.html#probability-recap-1",
+    "title": "Probability and distributions",
+    "section": "Probability: recap",
+    "text": "Probability: recap\nLet X,Y heads on the first and second coin flips.\n\n\n\n\n\n\n\n\nConcept\nNotation\nExample/reminder\n\n\n\n\nConditional\nP(E\\mid H)=P(E\\cap H)/P(H): given H\nHeart disease: changes denominator\n\n\nIndependent\nP(X\\mid Y)=P(X)\nFlipping two coins"
+  },
+  {
+    "objectID": "week2/slides.html#probability-as-a-density-function-pdf",
+    "href": "week2/slides.html#probability-as-a-density-function-pdf",
+    "title": "Probability and distributions",
+    "section": "Probability as a density function (PDF)",
+    "text": "Probability as a density function (PDF)\n\n\n\n\n\n\nRecall\n\n\n\nA histogram shows the shape of numerical data\n\n\n\n\nWe can represent the same data as “smoothed curve” using a mathematical function. f(x)\n\n\nHistogram\n\n\n\n\n\n\n\n\n\n\nProbability density function\n\n\n\n\n\n\n\n\n\n\n\nf(x)=\\frac{1}{\\sigma\\sqrt{2\\pi}}\\exp\\!\\left(-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right)\n\n\n\n\n\n\n\n\nWarning\n\n\nYou do NOT need to know this formula!"
+  },
+  {
+    "objectID": "week2/slides.html#probability-density-functions",
+    "href": "week2/slides.html#probability-density-functions",
+    "title": "Probability and distributions",
+    "section": "Probability density functions",
+    "text": "Probability density functions\nA probability density function describes how likely the range of numeric values.\n\nA key characteristic of a PDF is that the area under the curve = 1, just like the probability concepts we learned.\nThere are three you’ll learn in this course\nWe use notations to represent their key characteristics. Think of this as their bio\n\n## Meet the Normal “average joe”\n## Meet the Standard normal “The minimalist”\n\nSays “Z” a lot"
   },
   {
     "objectID": "week2/slides.html#source-page-023",
