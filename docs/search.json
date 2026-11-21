@@ -1414,17 +1414,17 @@
     "text": "Probability as a density function (PDF)\n\n\n\n\n\n\nRecall\n\n\n\nA histogram shows the shape of numerical data\n\n\n\n\nWe can represent the same data as “smoothed curve” using a mathematical function. f(x)\n\n\nHistogram\n\n\n\n\n\n\n\n\n\n\nProbability density function\n\n\n\n\n\n\n\n\n\n\n\nf(x)=\\frac{1}{\\sigma\\sqrt{2\\pi}}\\exp\\!\\left(-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right)\n\n\n\n\n\n\n\n\nWarning\n\n\nYou do NOT need to know this formula!"
   },
   {
-    "objectID": "week2/slides.html#probability-density-functions",
-    "href": "week2/slides.html#probability-density-functions",
+    "objectID": "week2/slides.html#probability-density-function",
+    "href": "week2/slides.html#probability-density-function",
     "title": "Probability and distributions",
-    "section": "Probability density functions",
-    "text": "Probability density functions\nA probability density function describes how likely the range of numeric values.\n\nA key characteristic of a PDF is that the area under the curve = 1, just like the probability concepts we learned.\nThere are three you’ll learn in this course\nWe use notations to represent their key characteristics. Think of this as their bio\n\n## Meet the Normal “average joe”\n## Meet the Standard normal “The minimalist”\n\nSays “Z” a lot"
+    "section": "Probability density function",
+    "text": "Probability density function\n\nA probability density function describes how likely the range of numeric values.\n\n\nThe area under the probability curve, sums to 1\n\nThere are three you’ll learn in this course\nNormal (N)\nStandard Normal (Z)\nStudent’s t (t) (next week)\n\nNotations are used represent their key characteristics.\n## Normal distribution\n## Standard Normal distribution"
   },
   {
-    "objectID": "week2/slides.html#source-page-023",
-    "href": "week2/slides.html#source-page-023",
+    "objectID": "week2/slides.html#a-company-is-interested-in-analyzing-the-efficacy-of-launching-a-new-brand-of-frozen-food-products.-they-wish-to-study-the-various-demographics-of-customers-who-have-and-have-not-tried-their-products-using-the-marketing-worksheet-in-the-dataset-week-3-workshop-data.xlsx.",
+    "href": "week2/slides.html#a-company-is-interested-in-analyzing-the-efficacy-of-launching-a-new-brand-of-frozen-food-products.-they-wish-to-study-the-various-demographics-of-customers-who-have-and-have-not-tried-their-products-using-the-marketing-worksheet-in-the-dataset-week-3-workshop-data.xlsx.",
     "title": "Probability and distributions",
-    "section": "",
+    "section": "A company is interested in analyzing the efficacy of launching a new brand of frozen food products. They wish to study the various demographics of customers who have and have not tried their products using the Marketing worksheet in the dataset Week 3 Workshop Data.xlsx.",
     "text": "A company is interested in analyzing the efficacy of launching a new brand of frozen food products. They wish to study the various demographics of customers who have and have not tried their products using the Marketing worksheet in the dataset Week 3 Workshop Data.xlsx.\nThis data contains 6 variables: Person ID = the unique identifier of each person/respondent in the data. Raw Income = the income of the respondent. Gender = the gender (male or female) of the respondent. Live Alone = whether the respondent lives alone. Have Tried = whether the respondent has tried the new product or not. Income Category = the income range of the respondent. Task 2: Marketing (to be completed in your own time)\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 23"
   },
   {
