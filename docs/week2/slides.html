@@ -1317,28 +1317,91 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 </div>
 </div>
 </section>
+<section id="finding-the-shaded-region" class="slide level2">
+<h2>Finding the shaded region</h2>
+<p><strong>Which part of the curve do you want?</strong></p>
+<ul>
+<li>=NORM.DIST(0,TRUE) - Cumulative area, left of 0</li>
+<li>=NORM.DIST(0,FALSE) - Right side of 0</li>
+<li>Plots showing true or false, in columns</li>
+</ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><code>NORM.S.DIST(0, TRUE)</code> gives the cumulative area to the <strong>left</strong> of 0; subtract it from 1 to get the shaded area on the <strong>right</strong>.</p>
+</div>
+</div>
+</div>
+</section>
 <section id="finding-the-shaded-region-normal" class="slide level2">
 <h2>Finding the shaded region (normal)</h2>
 <p>For the shaded half of the normal curve, <span class="math inline">X&gt;\mu</span> with <span class="math inline">\mu=4.75</span> and <span class="math inline">\sigma=1.25</span>:</p>
 <p><span class="math display">
 P(X&gt;4.75)=1-P(X\leq 4.75)=0.5
 </span></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
 <p><strong>Excel:</strong> <code>=1-NORM.DIST(4.75,4.75,1.25,TRUE)</code></p>
-<p><code>NORM.DIST</code> gives the cumulative area to the <strong>left</strong> of 4.75; subtract it from 1 to get the shaded area on the <strong>right</strong>.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="finding-the-shaded-region-z" class="slide level2">
-<h2>Finding the shaded region (Z)</h2>
+<section id="finding-the-shaded-region-z---you-try" class="slide level2">
+<h2>Finding the shaded region (Z) - You try ✏️</h2>
+<countdown-timer id="introductions-timer" minutes="05" seconds="00" class="countdown" warn-when="300" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
 <p>For the shaded half of the standard normal curve, <span class="math inline">Z&gt;0</span>:</p>
 <p><span class="math display">
 P(Z&gt;0)=1-P(Z\leq 0)=0.5
 </span></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
 <p><strong>Excel:</strong> <code>=1-NORM.S.DIST(0,TRUE)</code></p>
-<p><code>NORM.S.DIST</code> gives the cumulative area to the <strong>left</strong> of 0; subtract it from 1 to get the shaded area on the <strong>right</strong>.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="finding-a-ranged-shaded-region" class="slide level2">
-<h2>Finding a ranged shaded region</h2>
+<section id="finding-the-upper-tail-region-normal" class="slide level2">
+<h2>Finding the upper tail region (normal)</h2>
 <ul>
-<li>Range between -1 to 1</li>
+<li>Range between 6 to 8 for Normal</li>
+<li>Include plot showing shaded region</li>
+<li>Include solution in callout tip</li>
+</ul>
+</section>
+<section id="finding-the-middle-region-z" class="slide level2">
+<h2>Finding the middle region (Z)</h2>
+<ul>
+<li>Range between -1 to 1 for Z</li>
+<li>Include plot showing shaded region</li>
+<li>Include solution in callout tip</li>
+</ul>
+</section>
+<section id="finding-the-inverse" class="slide level2">
+<h2>Finding the inverse</h2>
+<ul>
+<li>=NORM.INV</li>
+<li>=NORM.S.INV</li>
 </ul>
 </section>
 <section id="summary" class="slide level2">

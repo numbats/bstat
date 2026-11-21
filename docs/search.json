@@ -1442,25 +1442,46 @@
     "text": "Standard Normal distribution\nNotation: Z \\sim \\mathcal{N}(0,1). Its mean is 0 and its standard deviation is 1."
   },
   {
+    "objectID": "week2/slides.html#finding-the-shaded-region",
+    "href": "week2/slides.html#finding-the-shaded-region",
+    "title": "Probability and distributions",
+    "section": "Finding the shaded region",
+    "text": "Finding the shaded region\nWhich part of the curve do you want?\n\n=NORM.DIST(0,TRUE) - Cumulative area, left of 0\n=NORM.DIST(0,FALSE) - Right side of 0\nPlots showing true or false, in columns\n\n\n\n\n\n\n\nTip\n\n\nNORM.S.DIST(0, TRUE) gives the cumulative area to the left of 0; subtract it from 1 to get the shaded area on the right."
+  },
+  {
     "objectID": "week2/slides.html#finding-the-shaded-region-normal",
     "href": "week2/slides.html#finding-the-shaded-region-normal",
     "title": "Probability and distributions",
     "section": "Finding the shaded region (normal)",
-    "text": "Finding the shaded region (normal)\nFor the shaded half of the normal curve, X&gt;\\mu with \\mu=4.75 and \\sigma=1.25:\n\nP(X&gt;4.75)=1-P(X\\leq 4.75)=0.5\n\nExcel: =1-NORM.DIST(4.75,4.75,1.25,TRUE)\nNORM.DIST gives the cumulative area to the left of 4.75; subtract it from 1 to get the shaded area on the right."
+    "text": "Finding the shaded region (normal)\nFor the shaded half of the normal curve, X&gt;\\mu with \\mu=4.75 and \\sigma=1.25:\n\nP(X&gt;4.75)=1-P(X\\leq 4.75)=0.5\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =1-NORM.DIST(4.75,4.75,1.25,TRUE)"
   },
   {
-    "objectID": "week2/slides.html#finding-the-shaded-region-z",
-    "href": "week2/slides.html#finding-the-shaded-region-z",
+    "objectID": "week2/slides.html#finding-the-shaded-region-z---you-try",
+    "href": "week2/slides.html#finding-the-shaded-region-z---you-try",
     "title": "Probability and distributions",
-    "section": "Finding the shaded region (Z)",
-    "text": "Finding the shaded region (Z)\nFor the shaded half of the standard normal curve, Z&gt;0:\n\nP(Z&gt;0)=1-P(Z\\leq 0)=0.5\n\nExcel: =1-NORM.S.DIST(0,TRUE)\nNORM.S.DIST gives the cumulative area to the left of 0; subtract it from 1 to get the shaded area on the right."
+    "section": "Finding the shaded region (Z) - You try ✏️",
+    "text": "Finding the shaded region (Z) - You try ✏️\n\n \nFor the shaded half of the standard normal curve, Z&gt;0:\n\nP(Z&gt;0)=1-P(Z\\leq 0)=0.5\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =1-NORM.S.DIST(0,TRUE)"
   },
   {
-    "objectID": "week2/slides.html#finding-a-ranged-shaded-region",
-    "href": "week2/slides.html#finding-a-ranged-shaded-region",
+    "objectID": "week2/slides.html#finding-the-upper-tail-region-normal",
+    "href": "week2/slides.html#finding-the-upper-tail-region-normal",
     "title": "Probability and distributions",
-    "section": "Finding a ranged shaded region",
-    "text": "Finding a ranged shaded region\n\nRange between -1 to 1"
+    "section": "Finding the upper tail region (normal)",
+    "text": "Finding the upper tail region (normal)\n\nRange between 6 to 8 for Normal\nInclude plot showing shaded region\nInclude solution in callout tip"
+  },
+  {
+    "objectID": "week2/slides.html#finding-the-middle-region-z",
+    "href": "week2/slides.html#finding-the-middle-region-z",
+    "title": "Probability and distributions",
+    "section": "Finding the middle region (Z)",
+    "text": "Finding the middle region (Z)\n\nRange between -1 to 1 for Z\nInclude plot showing shaded region\nInclude solution in callout tip"
+  },
+  {
+    "objectID": "week2/slides.html#finding-the-inverse",
+    "href": "week2/slides.html#finding-the-inverse",
+    "title": "Probability and distributions",
+    "section": "Finding the inverse",
+    "text": "Finding the inverse\n\n=NORM.INV\n=NORM.S.INV"
   },
   {
     "objectID": "week2/slides.html#summary",
