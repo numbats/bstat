@@ -1432,14 +1432,14 @@
     "href": "week2/slides.html#normal-distribution",
     "title": "Probability and distributions",
     "section": "Normal distribution",
-    "text": "Normal distribution"
+    "text": "Normal distribution\nNotation: X \\sim \\mathcal{N}(\\mu,\\sigma^2). In this example, \\mu=4.75 and \\sigma=1.25."
   },
   {
     "objectID": "week2/slides.html#standard-normal-distribution",
     "href": "week2/slides.html#standard-normal-distribution",
     "title": "Probability and distributions",
     "section": "Standard Normal distribution",
-    "text": "Standard Normal distribution"
+    "text": "Standard Normal distribution\nNotation: Z \\sim \\mathcal{N}(0,1). Its mean is 0 and its standard deviation is 1."
   },
   {
     "objectID": "week2/slides.html#a-company-is-interested-in-analyzing-the-efficacy-of-launching-a-new-brand-of-frozen-food-products.-they-wish-to-study-the-various-demographics-of-customers-who-have-and-have-not-tried-their-products-using-the-marketing-worksheet-in-the-dataset-week-3-workshop-data.xlsx.",
