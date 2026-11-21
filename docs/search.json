@@ -1432,14 +1432,14 @@
     "href": "week2/slides.html#normal-distribution",
     "title": "Probability and distributions",
     "section": "Normal distribution",
-    "text": "Normal distribution\nNotation: X \\sim \\mathcal{N}(\\mu,\\sigma^2). Here, \\mu=4.75 and \\sigma=1.25."
+    "text": "Normal distribution\n\n\n\n\n\n\n\n\n\n\n\nNotation: X \\sim \\mathcal{N}(\\mu,\\sigma^2)\n\\mu=4.75 ; \\sigma=1.25\n\n\n\n\n\n\n\nRecall\n\n\n\nThe shape of this distribution is symmetrical"
   },
   {
     "objectID": "week2/slides.html#standard-normal-distribution",
     "href": "week2/slides.html#standard-normal-distribution",
     "title": "Probability and distributions",
     "section": "Standard Normal distribution",
-    "text": "Standard Normal distribution\nNotation: Z \\sim \\mathcal{N}(0,1). Its mean is 0 and its standard deviation is 1."
+    "text": "Standard Normal distribution\n\n\n\n\n\n\n\n\n\n\n\n\nNotation: Z \\sim \\mathcal{N}(0,1). Its mean is 0 and its standard deviation is 1."
   },
   {
     "objectID": "week2/slides.html#finding-the-shaded-region",
