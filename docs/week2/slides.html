@@ -1055,7 +1055,7 @@ P(E) = \frac{1{,}784}{5{,}000} = 35.68\%
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Tip</strong></p>
+<p><strong>Solution</strong></p>
 </div>
 <div class="callout-content">
 <p><span class="math inline">P(E \mid H) \ne P(E)</span>: <strong>16.35% ≠ 35.68%</strong>. Heart disease and exercise are <strong>not independent</strong>.</p>
@@ -1063,8 +1063,84 @@ P(E) = \frac{1{,}784}{5{,}000} = 35.68\%
 </div>
 </div>
 </section>
-<section id="are-heart-diseases-and-exercise-independent" class="slide level2">
-<h2>Are heart diseases and exercise independent?</h2>
+<section id="probability-recap" class="slide level2 smaller">
+<h2>Probability: recap</h2>
+<p>Let <span class="math inline">A=\{1,6\}</span> and <span class="math inline">B=\{2,4,6\}</span> on one fair die. Let <span class="math inline">E</span> mean moderate exercise, <span class="math inline">H</span> heart disease, and <span class="math inline">X,Y</span> heads on the first and second coin flips.</p>
+<div class="columns" style="gap: 1.4rem; align-items: flex-start;">
+<div class="column" style="width: 66%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Concept</th>
+<th style="text-align: left;">Notation and reminder</th>
+<th style="text-align: left;">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Marginal</strong></td>
+<td style="text-align: left;"><span class="math inline">P(A)</span>: one event</td>
+<td style="text-align: left;">Coin: <span class="math inline">P(\text{heads})=1/2</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Union</strong></td>
+<td style="text-align: left;"><span class="math inline">P(A\cup B)</span>: <strong>or</strong></td>
+<td style="text-align: left;">Die: <span class="math inline">P(A\cup B)=4/6</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mutually exclusive</strong></td>
+<td style="text-align: left;"><span class="math inline">P(C\cap D)=0</span>; add <span class="math inline">P(C)+P(D)</span></td>
+<td style="text-align: left;">Die: <span class="math inline">C=\{1\}</span>, <span class="math inline">D=\{6\}</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Not mutually exclusive</strong></td>
+<td style="text-align: left;"><span class="math inline">P(A\cup B)=P(A)+P(B)-P(A\cap B)</span></td>
+<td style="text-align: left;">Die: <span class="math inline">2/6+3/6-1/6=4/6</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Joint</strong></td>
+<td style="text-align: left;"><span class="math inline">P(A\cap B)</span>: <strong>and</strong></td>
+<td style="text-align: left;">Die: shared roll <span class="math inline">6</span>, so <span class="math inline">1/6</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Conditional</strong></td>
+<td style="text-align: left;"><span class="math inline">P(E\mid H)=P(E\cap H)/P(H)</span>: <strong>given</strong> <span class="math inline">H</span></td>
+<td style="text-align: left;">Heart disease: <span class="math inline">43/263=16.35\%</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Independent</strong></td>
+<td style="text-align: left;"><span class="math inline">P(X\mid Y)=P(X)</span>, or <span class="math inline">P(X\cap Y)=P(X)P(Y)</span></td>
+<td style="text-align: left;">Two coin flips: <span class="math inline">P(X\cap Y)=1/4</span></td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width: 32%; text-align: center;">
+<p><strong>Mutually exclusive</strong>: no overlap</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Venn diagram with separate circles C and D, representing die rolls 1 and 6."></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Not mutually exclusive</strong>: shared <span class="math inline">6</span></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Overlapping Venn circles A and B: A-only is die roll 1, B-only is 2 or 4, and the intersection is 6."></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
 </section></section>
 <section>
 <section id="probability-distributions-functions" class="title-slide slide level1 section-slide center">

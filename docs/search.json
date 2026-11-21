@@ -1390,14 +1390,14 @@
     "href": "week2/slides.html#independent-events-x-1",
     "title": "Probability and distributions",
     "section": "Independent events 🎲 x 🎲",
-    "text": "Independent events 🎲 x 🎲\nE: moderate exercise; H: has heart disease.\n\n\nPeople (count)\n\n\n\nHeart disease\nMinimal\nModerate\nTotal\n\n\n\n\nNo\n2,996\n1,741\n4,737\n\n\nYes\n220\n43\n263\n\n\nTotal\n3,216\n1,784\n5,000\n\n\n\n\nConditional: among those with heart disease\n\n\\begin{aligned}\nP(E \\mid H) &= \\frac{P(E \\cap H)}{P(H)} \\\\\n&= \\frac{43}{263} \\approx 16.35\\%\n\\end{aligned}\n\nMarginal: among everyone\n\nP(E) = \\frac{1{,}784}{5{,}000} = 35.68\\%\n\n\n\n\n\n\n\n\nTip\n\n\nP(E \\mid H) \\ne P(E): 16.35% ≠ 35.68%. Heart disease and exercise are not independent."
+    "text": "Independent events 🎲 x 🎲\nE: moderate exercise; H: has heart disease.\n\n\nPeople (count)\n\n\n\nHeart disease\nMinimal\nModerate\nTotal\n\n\n\n\nNo\n2,996\n1,741\n4,737\n\n\nYes\n220\n43\n263\n\n\nTotal\n3,216\n1,784\n5,000\n\n\n\n\nConditional: among those with heart disease\n\n\\begin{aligned}\nP(E \\mid H) &= \\frac{P(E \\cap H)}{P(H)} \\\\\n&= \\frac{43}{263} \\approx 16.35\\%\n\\end{aligned}\n\nMarginal: among everyone\n\nP(E) = \\frac{1{,}784}{5{,}000} = 35.68\\%\n\n\n\n\n\n\n\n\nSolution\n\n\nP(E \\mid H) \\ne P(E): 16.35% ≠ 35.68%. Heart disease and exercise are not independent."
   },
   {
-    "objectID": "week2/slides.html#are-heart-diseases-and-exercise-independent",
-    "href": "week2/slides.html#are-heart-diseases-and-exercise-independent",
+    "objectID": "week2/slides.html#probability-recap",
+    "href": "week2/slides.html#probability-recap",
     "title": "Probability and distributions",
-    "section": "Are heart diseases and exercise independent?",
-    "text": "Are heart diseases and exercise independent?"
+    "section": "Probability: recap",
+    "text": "Probability: recap\nLet A=\\{1,6\\} and B=\\{2,4,6\\} on one fair die. Let E mean moderate exercise, H heart disease, and X,Y heads on the first and second coin flips.\n\n\n\n\n\n\n\n\n\n\nConcept\nNotation and reminder\nExample\n\n\n\n\nMarginal\nP(A): one event\nCoin: P(\\text{heads})=1/2\n\n\nUnion\nP(A\\cup B): or\nDie: P(A\\cup B)=4/6\n\n\nMutually exclusive\nP(C\\cap D)=0; add P(C)+P(D)\nDie: C=\\{1\\}, D=\\{6\\}\n\n\nNot mutually exclusive\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B)\nDie: 2/6+3/6-1/6=4/6\n\n\nJoint\nP(A\\cap B): and\nDie: shared roll 6, so 1/6\n\n\nConditional\nP(E\\mid H)=P(E\\cap H)/P(H): given H\nHeart disease: 43/263=16.35\\%\n\n\nIndependent\nP(X\\mid Y)=P(X), or P(X\\cap Y)=P(X)P(Y)\nTwo coin flips: P(X\\cap Y)=1/4\n\n\n\n\nMutually exclusive: no overlap\n\n\n\n\n\n\n\n\n\nNot mutually exclusive: shared 6"
   },
   {
     "objectID": "week2/slides.html#source-page-023",
