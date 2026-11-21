@@ -1418,7 +1418,7 @@
     "href": "week2/slides.html#probability-density-function",
     "title": "Probability and distributions",
     "section": "Probability density function",
-    "text": "Probability density function\n\nA probability density function describes how likely the range of numeric, continuous values.\n\n\n\n\n\nNotations are used to represent a PDF’s features\n\n\\mathcal{N} is a family of distributions\n\\mu mean; \\sigma SD encode the shape of the distribution\n\n\n\nX \\sim \\overbrace{\\mathcal{N}}^{\\text{family}}(\\underbrace{\\mu, \\sigma}_{\\text{features}})\n\n\n\n\n\n\n\n\n\n\n\n\nThe area under the probability curve sums to 1\n\n\n\n\n\n\n\nRecall\n\n\n\nMean describes the central tendency or typical value\nStandard deviation (SD) describes the spread in the values"
+    "text": "Probability density function\n\nA probability density function describes how likely the range of continuous values in a population\n\n\n\n\n\nNotations are used to represent a PDF’s features\n\n\\mathcal{N} is a family of distributions\n\\mu mean; \\sigma SD encode the shape of the distribution\n\n\n\nX \\sim \\overbrace{\\mathcal{N}}^{\\text{family}}(\\underbrace{\\mu, \\sigma}_{\\text{features}})\n\n\n\n\n\n\n\n\n\n\n\n\nThe area under the probability curve sums to 1\n\n\n\n\n\n\n\nRecall\n\n\n\nPopulation refers to all members of a group that you want to draw a conclusion upon.\nMean \\mu describes the central tendency or typical value\nStandard deviation \\sigma describes the spread in the values"
   },
   {
     "objectID": "week2/slides.html#probability-density-function---why",
@@ -1432,7 +1432,7 @@
     "href": "week2/slides.html#normal-distribution",
     "title": "Probability and distributions",
     "section": "Normal distribution",
-    "text": "Normal distribution\n\n\n\n\n\n\n\n\n\n\n\nNotation: X \\sim \\mathcal{N}(\\mu,\\sigma^2)\n\\mu=4.75 ; \\sigma=1.25\n\n\n\n\n\n\n\nRecall\n\n\n\nThe shape of this distribution is symmetrical"
+    "text": "Normal distribution\n\n\n\n\n\n\n\n\n\n\n\n\nNotation: X \\sim \\mathcal{N}(\\overbrace{\\mu}^{\\text{Mean}},\\overbrace{\\sigma}^{\\text{SD}})\n\\mu = 8 ; \\sigma = 2\n\n=NORM.DIST(x, mean, standard_dev, ...)\n\nx: the value or cutoff on the horizontal axis.\nmean: the distribution mean, \\mu.\nstandard_dev: the distribution SD, \\sigma.\n\n\n\n\n\n\n\n\nRecall\n\n\n\nThe shape of this distribution is symmetrical\nSkewness = 0\n\\mu = median = mode"
   },
   {
     "objectID": "week2/slides.html#standard-normal-distribution",
@@ -1467,7 +1467,7 @@
     "href": "week2/slides.html#finding-a-region-from-6-to-8-normal---watch-me",
     "title": "Probability and distributions",
     "section": "Finding a region from 6 to 8 (normal) - Watch me 👀",
-    "text": "Finding a region from 6 to 8 (normal) - Watch me 👀\n\nFor X\\sim\\mathcal{N}(4.75,1.25^2), find the shaded probability P(6&lt;X&lt;8).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.DIST(8,4.75,1.25,TRUE)-NORM.DIST(6,4.75,1.25,TRUE)\nThe area between 6 and 8 is 0.154 (about 15.4%)."
+    "text": "Finding a region from 6 to 8 (normal) - Watch me 👀\n\nFor X\\sim\\mathcal{N}(4.75,1.25), find the shaded probability P(6&lt;X&lt;8).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.DIST(8,4.75,1.25,TRUE)-NORM.DIST(6,4.75,1.25,TRUE)\nThe area between 6 and 8 is 0.154 (about 15.4%)."
   },
   {
     "objectID": "week2/slides.html#finding-the-middle-region-z---you-try",
@@ -1481,7 +1481,7 @@
     "href": "week2/slides.html#finding-the-inverse-normal---watch-me",
     "title": "Probability and distributions",
     "section": "Finding the inverse (normal) - Watch me 👀",
-    "text": "Finding the inverse (normal) - Watch me 👀\n\nInverse question: Which value x has 90% of the normal distribution to its left? Here X\\sim\\mathcal{N}(4.75,1.25^2).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.INV(0.90,4.75,1.25) gives x\\approx6.35."
+    "text": "Finding the inverse (normal) - Watch me 👀\n\nInverse question: Which value x has 90% of the normal distribution to its left? Here X\\sim\\mathcal{N}(4.75,1.25).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.INV(0.90,4.75,1.25) gives x\\approx6.35."
   },
   {
     "objectID": "week2/slides.html#finding-the-inverse-z---you-try",

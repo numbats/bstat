@@ -1248,7 +1248,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}\exp\!\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
 <section id="probability-density-function" class="slide level2 smaller">
 <h2>Probability density function</h2>
 <blockquote>
-<p>A <strong>probability density function</strong> describes how <em>likely</em> the range of numeric, continuous values.</p>
+<p>A <strong>probability density function</strong> describes how <em>likely</em> the range of continuous values in a population</p>
 </blockquote>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -1286,8 +1286,9 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 </div>
 <div class="callout-content">
 <ul>
-<li>Mean describes the central tendency or typical value</li>
-<li>Standard deviation (SD) describes the spread in the values</li>
+<li><strong>Population</strong> refers to all members of a group that you want to draw a conclusion upon.</li>
+<li><strong>Mean</strong> <span class="math inline">\mu</span> describes the central tendency or typical value</li>
+<li><strong>Standard deviation</strong> <span class="math inline">\sigma</span> describes the spread in the values</li>
 </ul>
 </div>
 </div>
@@ -1336,15 +1337,23 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center" alt="Normal density with mean 4.75 and standard deviation 1.25. The area to the right of the mean is shaded dark blue and labelled X greater than mu." width="624"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center" alt="Normal density with mean 8 and standard deviation 2. The horizontal axis has symmetric integer tick marks from 0 to 16, and the area to the right of the mean is shaded dark blue." width="624"></p>
 </figure>
 </div>
 </div>
 </div>
-<p><strong>Notation:</strong> <span class="math inline">X \sim \mathcal{N}(\mu,\sigma^2)</span><br>
-<span class="math inline">\mu=4.75</span> ; <span class="math inline">\sigma=1.25</span></p>
 </div><div class="column" style="width: 40%;">
-<div class="callout callout-note callout-titled callout-style-default">
+<p><strong>Notation:</strong> <span class="math inline">X \sim \mathcal{N}(\overbrace{\mu}^{\text{Mean}},\overbrace{\sigma}^{\text{SD}})</span><br>
+<span class="math inline">\mu = 8</span> ; <span class="math inline">\sigma = 2</span></p>
+<div style="font-size: 75%;">
+<p><code>=NORM.DIST(x, mean, standard_dev, ...)</code></p>
+<ul>
+<li><code>x</code>: the value or cutoff on the horizontal axis.</li>
+<li><code>mean</code>: the distribution mean, <span class="math inline">\mu</span>.</li>
+<li><code>standard_dev</code>: the distribution SD, <span class="math inline">\sigma</span>.</li>
+</ul>
+</div>
+</div><div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
@@ -1355,11 +1364,13 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 <div class="callout-content">
 <ul>
 <li>The shape of this distribution is <strong>symmetrical</strong></li>
+<li>Skewness = 0</li>
+<li><span class="math inline">\mu</span> = median = mode</li>
 </ul>
 </div>
 </div>
 </div>
-</div></div>
+</div>
 </section>
 <section id="standard-normal-distribution" class="slide level2">
 <h2>Standard Normal distribution</h2>
@@ -1475,7 +1486,7 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 - Include plot showing shaded region
 - Include solution in callout tip
 -->
-<p>For <span class="math inline">X\sim\mathcal{N}(4.75,1.25^2)</span>, find the shaded probability <span class="math inline">P(6&lt;X&lt;8)</span>.</p>
+<p>For <span class="math inline">X\sim\mathcal{N}(4.75,1.25)</span>, find the shaded probability <span class="math inline">P(6&lt;X&lt;8)</span>.</p>
 <div style="text-align: center;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -1544,7 +1555,7 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 - =NORM.INV
 - Make plot no x axis, but shaded in different proporotions and we are finding the x value 
 -->
-<p><strong>Inverse question:</strong> Which value <span class="math inline">x</span> has <strong>90%</strong> of the normal distribution to its left? Here <span class="math inline">X\sim\mathcal{N}(4.75,1.25^2)</span>.</p>
+<p><strong>Inverse question:</strong> Which value <span class="math inline">x</span> has <strong>90%</strong> of the normal distribution to its left? Here <span class="math inline">X\sim\mathcal{N}(4.75,1.25)</span>.</p>
 <div style="text-align: center;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
