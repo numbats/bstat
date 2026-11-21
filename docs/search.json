@@ -1442,179 +1442,39 @@
     "text": "Standard Normal distribution\nNotation: Z \\sim \\mathcal{N}(0,1). Its mean is 0 and its standard deviation is 1."
   },
   {
-    "objectID": "week2/slides.html#a-company-is-interested-in-analyzing-the-efficacy-of-launching-a-new-brand-of-frozen-food-products.-they-wish-to-study-the-various-demographics-of-customers-who-have-and-have-not-tried-their-products-using-the-marketing-worksheet-in-the-dataset-week-3-workshop-data.xlsx.",
-    "href": "week2/slides.html#a-company-is-interested-in-analyzing-the-efficacy-of-launching-a-new-brand-of-frozen-food-products.-they-wish-to-study-the-various-demographics-of-customers-who-have-and-have-not-tried-their-products-using-the-marketing-worksheet-in-the-dataset-week-3-workshop-data.xlsx.",
+    "objectID": "week2/slides.html#finding-the-shaded-region-normal",
+    "href": "week2/slides.html#finding-the-shaded-region-normal",
     "title": "Probability and distributions",
-    "section": "A company is interested in analyzing the efficacy of launching a new brand of frozen food products. They wish to study the various demographics of customers who have and have not tried their products using the Marketing worksheet in the dataset Week 3 Workshop Data.xlsx.",
-    "text": "A company is interested in analyzing the efficacy of launching a new brand of frozen food products. They wish to study the various demographics of customers who have and have not tried their products using the Marketing worksheet in the dataset Week 3 Workshop Data.xlsx.\nThis data contains 6 variables: Person ID = the unique identifier of each person/respondent in the data. Raw Income = the income of the respondent. Gender = the gender (male or female) of the respondent. Live Alone = whether the respondent lives alone. Have Tried = whether the respondent has tried the new product or not. Income Category = the income range of the respondent. Task 2: Marketing (to be completed in your own time)\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 23"
+    "section": "Finding the shaded region (normal)",
+    "text": "Finding the shaded region (normal)\nFor the shaded half of the normal curve, X&gt;\\mu with \\mu=4.75 and \\sigma=1.25:\n\nP(X&gt;4.75)=1-P(X\\leq 4.75)=0.5\n\nExcel: =1-NORM.DIST(4.75,4.75,1.25,TRUE)\nNORM.DIST gives the cumulative area to the left of 4.75; subtract it from 1 to get the shaded area on the right."
   },
   {
-    "objectID": "week2/slides.html#source-page-024",
-    "href": "week2/slides.html#source-page-024",
+    "objectID": "week2/slides.html#finding-the-shaded-region-z",
+    "href": "week2/slides.html#finding-the-shaded-region-z",
     "title": "Probability and distributions",
-    "section": "",
-    "text": "Instructions:\nConstruct contingency tables to analyse the relationship between “Have Tried” and 3 other variables: Live Alone, Income & Gender. Use these tables to answer the following questions. Include probability statements and contextual interpretations in your answers. What is the proportion of customers who live alone? What is the proportion of customers who have tried the frozen food product and live alone? What is the probability that a randomly selected customer earns more than $50,000? What is the probability that a randomly selected customer earns more than $50,000 and has tried the frozen food product? What proportion of customers who live alone have tried the frozen food product? What proportion of customers who have tried the frozen food product, live alone? Are there more males or females who have tried the frozen food product? Task 2: Marketing (to be completed in your own time)\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 24"
+    "section": "Finding the shaded region (Z)",
+    "text": "Finding the shaded region (Z)\nFor the shaded half of the standard normal curve, Z&gt;0:\n\nP(Z&gt;0)=1-P(Z\\leq 0)=0.5\n\nExcel: =1-NORM.S.DIST(0,TRUE)\nNORM.S.DIST gives the cumulative area to the left of 0; subtract it from 1 to get the shaded area on the right."
   },
   {
-    "objectID": "week2/slides.html#source-page-025",
-    "href": "week2/slides.html#source-page-025",
+    "objectID": "week2/slides.html#finding-a-ranged-shaded-region",
+    "href": "week2/slides.html#finding-a-ranged-shaded-region",
     "title": "Probability and distributions",
-    "section": "",
-    "text": "What is the proportion of customers who live alone?\n\nP(Live Alone = Yes) = 16.94%\n 16.94% of the customers live alone. Solutions for Task 2a (to be completed in your own time)\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 25\n\nVisual from source page 25."
+    "section": "Finding a ranged shaded region",
+    "text": "Finding a ranged shaded region\n\nRange between -1 to 1"
   },
   {
-    "objectID": "week2/slides.html#source-page-026",
-    "href": "week2/slides.html#source-page-026",
+    "objectID": "week2/slides.html#summary",
+    "href": "week2/slides.html#summary",
     "title": "Probability and distributions",
-    "section": "",
-    "text": "What is the proportion of customers who have tried the frozen food product and live alone?\nP(Have Tried = Yes AND Live Alone = Yes) = 12.62% 12.62% of the customers have tried the frozen food and live alone. Solutions for Task 2b (to be completed in your own time)\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 26\n\nVisual from source page 26."
+    "section": "Summary",
+    "text": "Summary"
   },
   {
-    "objectID": "week2/slides.html#source-page-027",
-    "href": "week2/slides.html#source-page-027",
+    "objectID": "week2/slides.html#exercise---you-try",
+    "href": "week2/slides.html#exercise---you-try",
     "title": "Probability and distributions",
-    "section": "",
-    "text": "What is the probability that a randomly selected customer earns more than $50,000?\n\nP(Income &gt; 50,000) = 21.14% + 7.24% + 5.84% = 34.23%\n 34.23% of the customers earn more than $50,000. Solutions for Task 2c (to be completed in your own time)\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 27\n\nVisual from source page 27."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-028",
-    "href": "week2/slides.html#source-page-028",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "What is the probability that a randomly selected customer earns more than $50,000 and has tried the frozen food product?\nP(Income &gt; 50,000 AND Have Tried = Yes) = 13.08% + 4.67% + 4.21% = 21.96% 21.96% of the customers earn more than $50,000 and has tried the frozen food product. Solutions for Task 2d (to be completed in your own time)\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 28\n\nVisual from source page 28."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-029",
-    "href": "week2/slides.html#source-page-029",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "What proportion of customers who live alone have tried the frozen food product?\nP(Have Tried = Yes | Live Alone = Yes) = 74.48% 74.48% of customers who live alone, have tried the frozen food. Solutions for Task 2e (to be completed in your own time)\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 29\n\nVisual from source page 29."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-030",
-    "href": "week2/slides.html#source-page-030",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Solutions for Task 2f (to be completed in your own time)\nWhat proportion of customers who have tried the frozen food product, live alone? P(Live Alone = Yes | Have Tried = Yes) = 21.82% 21.82% of customers who have tried the frozen food product, live alone.\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 30\n\nVisual from source page 30."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-031",
-    "href": "week2/slides.html#source-page-031",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Solutions for Task 2g (to be completed in your own time)\nAre there more males or females who have tried the frozen food product? P(Male | Have Tried = Yes) &gt; P(Female | Have Tried= Yes) 56.36% &gt; 43.64% Therefore, there are more males who have tried the frozen food product than females.\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 31\n\nVisual from source page 31."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-032",
-    "href": "week2/slides.html#source-page-032",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Motherboard\nDigital World manufactures motherboards and has factories in China and Australia. Information about their production is provided in the Motherboard worksheet in the dataset Week 2 Workshop Data.xlsx. The company wishes to investigate the quality of the motherboards being manufactured from each of the factories. Use the following notation in all your answers: D: a motherboard is defective G: a motherboard is good (not defective) C: motherboard manufactured in China A: motherboard manufactured in Australia\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 32"
-  },
-  {
-    "objectID": "week2/slides.html#source-page-033",
-    "href": "week2/slides.html#source-page-033",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Challenge\nYou are encouraged to work in groups.\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 33\n\n\n\n\n\nVisual from source page 33.\n\n\n\n\n\n\nVisual from source page 33."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-034",
-    "href": "week2/slides.html#source-page-034",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Please download and install the Slido app on all computers you use\nHow many motherboards are produced in China? ⓘ Start presenting to display the poll results on this slide.\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 34\n\n\n\n\n\nVisual from source page 34.\n\n\n\n\n\n\nVisual from source page 34.\n\n\n\n\n\n\n\n\nVisual from source page 34."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-035",
-    "href": "week2/slides.html#source-page-035",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Please download and install the Slido app on all computers you use\nWhat is the probability that a randomly selected defective motherboard is from China? ⓘ Start presenting to display the poll results on this slide.\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 35\n\n\n\n\n\nVisual from source page 35.\n\n\n\n\n\n\nVisual from source page 35.\n\n\n\n\n\n\n\n\nVisual from source page 35."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-036",
-    "href": "week2/slides.html#source-page-036",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Please download and install the Slido app on all computers you use\nWhat is the probability that a randomly selected motherboard from China is defective? ⓘ Start presenting to display the poll results on this slide.\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 36\n\n\n\n\n\nVisual from source page 36.\n\n\n\n\n\n\nVisual from source page 36.\n\n\n\n\n\n\n\n\nVisual from source page 36."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-037",
-    "href": "week2/slides.html#source-page-037",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Solutions\nHow many motherboards are produced in China? 65 What is the probability that a randomly selected defective motherboard is from China? \nP(C|D) = 33.33%\n 33.33% of defective motherboards are from China.\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 37\n\nVisual from source page 37."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-038",
-    "href": "week2/slides.html#source-page-038",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Solutions for Task 3c\nWhat is the probability that a randomly selected motherboard from China is defective? \nP(D|C) = 3.08%\n 3.08% of motherboards from China are defective.\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 38\n\nVisual from source page 38."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-039",
-    "href": "week2/slides.html#source-page-039",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Part 2 of the workshop: Normal Distribution\n\nProbability is the area under a probability density function (PDF).\nThe normal distribution: shape, location and distribution.\nHow to specify a particular normal distribution.\nThe effect of changing the mean and standard deviation.\nFinding areas under the standard normal curve using Excel.\n\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 39\n\nVisual from source page 39."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-040",
-    "href": "week2/slides.html#source-page-040",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Probability: as the area under a Probability density function (pdf)\nThe normal distribution: shape, location and distribution. How to specify a particular normal distribution The effect of changing the mean and standard deviation Finding areas under the standard normal curve: Using Excel Part 2 of the workshop: Normal Distribution\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 40"
-  },
-  {
-    "objectID": "week2/slides.html#source-page-041",
-    "href": "week2/slides.html#source-page-041",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Probability Distribution\nThe histogram is a picture of the probability density in crude form Probability density describes how “dense” the distribution is over a data range Allows us to calculate the probability related to the variable of interest In statistics, we use a smooth mathematical function to model the probability density function (pdf) The area under the curve represents the probability\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 41\n\n\n\n\n\nVisual from source page 41.\n\n\n\n\n\n\nVisual from source page 41."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-042",
-    "href": "week2/slides.html#source-page-042",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Probability Distribution: Normal Distribution\nThe most common distribution in statistics is the normal distribution It is a symmetric (bell-shaped) distribution The normal distribution has two features: Mean and Stdev Normal Distribution Notation: X \\sim N(\\text{Mean}, \\text{Stdev}) or X \\sim N(\\mu, \\sigma) \nSkewness = 0\n \nMean = Median = Mode\n\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 42\n\n\n\n\n\nVisual from source page 42.\n\n\n\n\n\n\nVisual from source page 42."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-043",
-    "href": "week2/slides.html#source-page-043",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "STANDARD Normal Distribution\nA special case: STANDARD normal distribution \nMean = 0 and Stdev = 1\n Used in statistics to assess statistical uncertainty Standard Normal Distribution Notation: Z \\sim N(0,1) \nSkewness = 0\n \nMean = Median = Mode\n\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 43\n\n\n\n\n\nVisual from source page 43.\n\n\n\n\n\n\nVisual from source page 43."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-044",
-    "href": "week2/slides.html#source-page-044",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Normal Distribution & Standard normal distribution\nX \\sim N(\\text{Mean}, \\text{Stdev}) and Z \\sim N(0,1)\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 44\n\n\n\n\n\nVisual from source page 44.\n\n\n\n\n\n\nVisual from source page 44.\n\n\n\n\n\n\n\n\nVisual from source page 44.\n\n\n\n\n\n\nVisual from source page 44."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-045",
-    "href": "week2/slides.html#source-page-045",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Standard normal distribution: Excel\nQuestion 1 P(Z&lt;0) \n=NORM.S.DIST(0,TRUE)\n Question 2 P(Z&gt;0) \n=1-NORM.S.DIST(0,TRUE)\n Question 3 P(Z&lt;-1) \n=NORM.S.DIST(-1,TRUE)\n Question 4 P(-1&gt;Z&gt;1.5) =NORM.S.DIST(1.5,TRUE)-NORM.S.DIST(-1,TRUE) Question 5 P(Z&gt;2) \n=1-NORM.S.DIST(2,TRUE)\n 0.5 0.5 0.158655254 0.0.774538 0.02275\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 45"
-  },
-  {
-    "objectID": "week2/slides.html#source-page-046",
-    "href": "week2/slides.html#source-page-046",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Standard normal distribution: Excel\nQuestion 6 Suppose Z has a standard normal distribution. For some value of z∗, the probability P(Z&lt;z∗)=0.2843. Find z∗. To find z* \n=norm.s.inv(0.2843) = -0.57011\n Question 7 Suppose Z has a standard normal distribution. For some value of z∗, the probability P(Z&gt;z∗)=0.2843. Find z∗. \n=Norm.s.inv(1-0.2843) = 0.57011\n\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 46\n\nVisual from source page 46."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-047",
-    "href": "week2/slides.html#source-page-047",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Checklist: General Probability & Normal Distribution\nUse contingency table to calculate marginal, joint and conditional probabilities % of Grand Total % of Column Total % of Row Total Interpreting the relationship between two categorical variables Rule of Independence Probability: as the area under a Probability density function (pdf) The normal distribution: shape, location and distribution. How to specify a particular normal distribution The effect of changing the mean and standard deviation Finding areas under the standard normal curve: Using Excel\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 47"
+    "section": "Exercise: - You try ✏️",
+    "text": "Exercise: - You try ✏️\n\n \n\n\n\n\n\n\nImportant\n\n\n\nAnswer the exercise questions in Moodle\n30 mins\nPassword protected\nWork together!"
   },
   {
     "objectID": "week2/index.html",
@@ -2121,18 +1981,18 @@
     "text": "Plot frequency table as a histogram - Watch me 👀\n\nSelect the Area band and Percentage of properties columns, excluding Grand Total. Use the complete table above if the PivotTable omits the empty band.\nChoose Insert &gt; Column.\nRight-click a bar and choose Format Data Series. Set Gap Width to 0% so adjacent area bands touch.\nCheck that the horizontal axis shows the 200 sqm bands in order and the vertical axis shows percentages starting at 0%.\n\nNote: Excel’s built-in Histogram chart is for raw observations only; we use the frequency percentage table made with Pivot Table here."
   },
   {
-    "objectID": "week1/slides.html#exercise-real-estate-you-try",
-    "href": "week1/slides.html#exercise-real-estate-you-try",
-    "title": "Describing and visualising data",
-    "section": "Exercise: Real Estate — You try ✏️",
-    "text": "Exercise: Real Estate — You try ✏️\n\n \n\n\n\n\n\n\nImportant\n\n\n\nAnswer the exercise questions in Moodle\n30 mins\nPassword protected\nWork together!"
-  },
-  {
     "objectID": "week1/slides.html#summary",
     "href": "week1/slides.html#summary",
     "title": "Describing and visualising data",
     "section": "Summary",
     "text": "Summary\n\nExcel foundations: cell references, formulas, functions, the Analysis ToolPak and PivotTables.\nData and statistics: sampling and bias, descriptive vs. inferential statistics, and categorical vs. numerical variables.\nDescribe numerical data: centre (mean, median, mode), spread (range, variance, standard deviation) and shape.\nSummarise numerical data Build frequency and relative-frequency tables.\nVisualise distributions: use bar or pie charts for categories, and histograms or box plots for numerical data."
+  },
+  {
+    "objectID": "week1/slides.html#exercise-real-estate-you-try",
+    "href": "week1/slides.html#exercise-real-estate-you-try",
+    "title": "Describing and visualising data",
+    "section": "Exercise: Real Estate — You try ✏️",
+    "text": "Exercise: Real Estate — You try ✏️\n\n \n\n\n\n\n\n\nImportant\n\n\n\nAnswer the exercise questions in Moodle\n30 mins\nPassword protected\nWork together!"
   },
   {
     "objectID": "week2/reading/index.html",

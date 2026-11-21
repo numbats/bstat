@@ -1317,372 +1317,55 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 </div>
 </div>
 </section>
-<section id="a-company-is-interested-in-analyzing-the-efficacy-of-launching-a-new-brand-of-frozen-food-products.-they-wish-to-study-the-various-demographics-of-customers-who-have-and-have-not-tried-their-products-using-the-marketing-worksheet-in-the-dataset-week-3-workshop-data.xlsx." class="slide level2">
-<h2>A company is interested in analyzing the efficacy of launching a new brand of frozen food products. They wish to study the various demographics of customers who have and have not tried their products using the Marketing worksheet in the dataset Week 3 Workshop Data.xlsx.</h2>
-<p>This data contains 6 variables: Person ID = the unique identifier of each person/respondent in the data. Raw Income = the income of the respondent. Gender = the gender (male or female) of the respondent. Live Alone = whether the respondent lives alone. Have Tried = whether the respondent has tried the new product or not. Income Category = the income range of the respondent. Task 2: Marketing (to be completed in your own time)</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=23">Workshop_slides_Week_2_with_solutions.pdf, page 23</a></em></p>
-</section>
-<section id="source-page-024" class="slide level2">
-<h2></h2>
-<h3 id="instructions">Instructions:</h3>
-<p>Construct contingency tables to analyse the relationship between “Have Tried” and 3 other variables: Live Alone, Income &amp; Gender. Use these tables to answer the following questions. Include probability statements and contextual interpretations in your answers. What is the proportion of customers who live alone? What is the proportion of customers who have tried the frozen food product and live alone? What is the probability that a randomly selected customer earns more than $50,000? What is the probability that a randomly selected customer earns more than $50,000 and has tried the frozen food product? What proportion of customers who live alone have tried the frozen food product? What proportion of customers who have tried the frozen food product, live alone? Are there more males or females who have tried the frozen food product? Task 2: Marketing (to be completed in your own time)</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=24">Workshop_slides_Week_2_with_solutions.pdf, page 24</a></em></p>
-</section>
-<section id="source-page-025" class="slide level2">
-<h2></h2>
-<h3 id="what-is-the-proportion-of-customers-who-live-alone">What is the proportion of customers who live alone?</h3>
+<section id="finding-the-shaded-region-normal" class="slide level2">
+<h2>Finding the shaded region (normal)</h2>
+<p>For the shaded half of the normal curve, <span class="math inline">X&gt;\mu</span> with <span class="math inline">\mu=4.75</span> and <span class="math inline">\sigma=1.25</span>:</p>
 <p><span class="math display">
-P(Live Alone = Yes) = 16.94%
-</span> 16.94% of the customers live alone. Solutions for Task 2a (to be completed in your own time)</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=25">Workshop_slides_Week_2_with_solutions.pdf, page 25</a></em></p>
-
-<img data-src="figures/etx5900/components/image12.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 25.</p></section>
-<section id="source-page-026" class="slide level2">
-<h2></h2>
-<h3 id="what-is-the-proportion-of-customers-who-have-tried-the-frozen-food-product-and-live-alone">What is the proportion of customers who have tried the frozen food product and live alone?</h3>
-<p>P(Have Tried = Yes AND Live Alone = Yes) = 12.62% 12.62% of the customers have tried the frozen food and live alone. Solutions for Task 2b (to be completed in your own time)</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=26">Workshop_slides_Week_2_with_solutions.pdf, page 26</a></em></p>
-
-<img data-src="figures/etx5900/components/image13.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 26.</p></section>
-<section id="source-page-027" class="slide level2">
-<h2></h2>
-<h3 id="what-is-the-probability-that-a-randomly-selected-customer-earns-more-than-50000">What is the probability that a randomly selected customer earns more than $50,000?</h3>
+P(X&gt;4.75)=1-P(X\leq 4.75)=0.5
+</span></p>
+<p><strong>Excel:</strong> <code>=1-NORM.DIST(4.75,4.75,1.25,TRUE)</code></p>
+<p><code>NORM.DIST</code> gives the cumulative area to the <strong>left</strong> of 4.75; subtract it from 1 to get the shaded area on the <strong>right</strong>.</p>
+</section>
+<section id="finding-the-shaded-region-z" class="slide level2">
+<h2>Finding the shaded region (Z)</h2>
+<p>For the shaded half of the standard normal curve, <span class="math inline">Z&gt;0</span>:</p>
 <p><span class="math display">
-P(Income &gt; 50,000) = 21.14% + 7.24% + 5.84% = 34.23%
-</span> 34.23% of the customers earn more than $50,000. Solutions for Task 2c (to be completed in your own time)</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=27">Workshop_slides_Week_2_with_solutions.pdf, page 27</a></em></p>
-
-<img data-src="figures/etx5900/components/image14.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 27.</p></section>
-<section id="source-page-028" class="slide level2">
-<h2></h2>
-<h3 id="what-is-the-probability-that-a-randomly-selected-customer-earns-more-than-50000-and-has-tried-the-frozen-food-product">What is the probability that a randomly selected customer earns more than $50,000 and has tried the frozen food product?</h3>
-<p>P(Income &gt; 50,000 AND Have Tried = Yes) = 13.08% + 4.67% + 4.21% = 21.96% 21.96% of the customers earn more than $50,000 and has tried the frozen food product. Solutions for Task 2d (to be completed in your own time)</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=28">Workshop_slides_Week_2_with_solutions.pdf, page 28</a></em></p>
-
-<img data-src="figures/etx5900/components/image15.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 28.</p></section>
-<section id="source-page-029" class="slide level2">
-<h2></h2>
-<h3 id="what-proportion-of-customers-who-live-alone-have-tried-the-frozen-food-product">What proportion of customers who live alone have tried the frozen food product?</h3>
-<p>P(Have Tried = Yes | Live Alone = Yes) = 74.48% 74.48% of customers who live alone, have tried the frozen food. Solutions for Task 2e (to be completed in your own time)</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=29">Workshop_slides_Week_2_with_solutions.pdf, page 29</a></em></p>
-
-<img data-src="figures/etx5900/components/image16.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 29.</p></section>
-<section id="source-page-030" class="slide level2">
-<h2></h2>
-<h3 id="solutions-for-task-2f-to-be-completed-in-your-own-time">Solutions for Task 2f (to be completed in your own time)</h3>
-<p>What proportion of customers who have tried the frozen food product, live alone? P(Live Alone = Yes | Have Tried = Yes) = 21.82% 21.82% of customers who have tried the frozen food product, live alone.</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=30">Workshop_slides_Week_2_with_solutions.pdf, page 30</a></em></p>
-
-<img data-src="figures/etx5900/components/image17.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 30.</p></section>
-<section id="source-page-031" class="slide level2">
-<h2></h2>
-<h3 id="solutions-for-task-2g-to-be-completed-in-your-own-time">Solutions for Task 2g (to be completed in your own time)</h3>
-<p>Are there more males or females who have tried the frozen food product? P(Male | Have Tried = Yes) &gt; P(Female | Have Tried= Yes) 56.36% &gt; 43.64% Therefore, there are more males who have tried the frozen food product than females.</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=31">Workshop_slides_Week_2_with_solutions.pdf, page 31</a></em></p>
-
-<img data-src="figures/etx5900/components/image18.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 31.</p></section>
-<section id="source-page-032" class="slide level2">
-<h2></h2>
-<h3 id="motherboard">Motherboard</h3>
-<p>Digital World manufactures motherboards and has factories in China and Australia. Information about their production is provided in the Motherboard worksheet in the dataset Week 2 Workshop Data.xlsx. The company wishes to investigate the quality of the motherboards being manufactured from each of the factories. Use the following notation in all your answers: D: a motherboard is defective G: a motherboard is good (not defective) C: motherboard manufactured in China A: motherboard manufactured in Australia</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=32">Workshop_slides_Week_2_with_solutions.pdf, page 32</a></em></p>
+P(Z&gt;0)=1-P(Z\leq 0)=0.5
+</span></p>
+<p><strong>Excel:</strong> <code>=1-NORM.S.DIST(0,TRUE)</code></p>
+<p><code>NORM.S.DIST</code> gives the cumulative area to the <strong>left</strong> of 0; subtract it from 1 to get the shaded area on the <strong>right</strong>.</p>
 </section>
-<section id="source-page-033" class="slide level2">
-<h2></h2>
-<h3 id="challenge">Challenge</h3>
-<p>You are encouraged to work in groups.</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=33">Workshop_slides_Week_2_with_solutions.pdf, page 33</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image19.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 33.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image20.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 33.</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="source-page-034" class="slide level2">
-<h2></h2>
-<h3 id="please-download-and-install-the-slido-app-on-all-computers-you-use">Please download and install the Slido app on all computers you use</h3>
-<p>How many motherboards are produced in China? ⓘ Start presenting to display the poll results on this slide.</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=34">Workshop_slides_Week_2_with_solutions.pdf, page 34</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image21.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 34.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image23.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 34.</figcaption>
-</figure>
-</div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image25.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 34.</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="source-page-035" class="slide level2">
-<h2></h2>
-<h3 id="please-download-and-install-the-slido-app-on-all-computers-you-use-1">Please download and install the Slido app on all computers you use</h3>
-<p>What is the probability that a randomly selected defective motherboard is from China? ⓘ Start presenting to display the poll results on this slide.</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=35">Workshop_slides_Week_2_with_solutions.pdf, page 35</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image21.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 35.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image23.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 35.</figcaption>
-</figure>
-</div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image25.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 35.</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="source-page-036" class="slide level2">
-<h2></h2>
-<h3 id="please-download-and-install-the-slido-app-on-all-computers-you-use-2">Please download and install the Slido app on all computers you use</h3>
-<p>What is the probability that a randomly selected motherboard from China is defective? ⓘ Start presenting to display the poll results on this slide.</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=36">Workshop_slides_Week_2_with_solutions.pdf, page 36</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image21.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 36.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image23.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 36.</figcaption>
-</figure>
-</div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image25.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 36.</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="source-page-037" class="slide level2">
-<h2></h2>
-<h3 id="solutions">Solutions</h3>
-<p>How many motherboards are produced in China? 65 What is the probability that a randomly selected defective motherboard is from China? <span class="math display">
-P(C|D) = 33.33%
-</span> 33.33% of defective motherboards are from China.</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=37">Workshop_slides_Week_2_with_solutions.pdf, page 37</a></em></p>
-
-<img data-src="figures/etx5900/components/image27.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 37.</p></section>
-<section id="source-page-038" class="slide level2">
-<h2></h2>
-<h3 id="solutions-for-task-3c">Solutions for Task 3c</h3>
-<p>What is the probability that a randomly selected motherboard from China is defective? <span class="math display">
-P(D|C) = 3.08%
-</span> 3.08% of motherboards from China are defective.</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=38">Workshop_slides_Week_2_with_solutions.pdf, page 38</a></em></p>
-
-<img data-src="figures/etx5900/components/image28.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 38.</p></section>
-<section id="source-page-039" class="slide level2">
-<h2></h2>
-<h3 id="part-2-of-the-workshop-normal-distribution">Part 2 of the workshop: Normal Distribution</h3>
+<section id="finding-a-ranged-shaded-region" class="slide level2">
+<h2>Finding a ranged shaded region</h2>
 <ul>
-<li>Probability is the area under a probability density function (PDF).</li>
-<li>The normal distribution: shape, location and distribution.</li>
-<li>How to specify a particular normal distribution.</li>
-<li>The effect of changing the mean and standard deviation.</li>
-<li>Finding areas under the standard normal curve using Excel.</li>
+<li>Range between -1 to 1</li>
 </ul>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=39">Workshop_slides_Week_2_with_solutions.pdf, page 39</a></em></p>
-
-<img data-src="figures/etx5900/components/image29.jpeg" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 39.</p></section>
-<section id="source-page-040" class="slide level2">
-<h2></h2>
-<h3 id="probability-as-the-area-under-a-probability-density-function-pdf">Probability: as the area under a Probability density function (pdf)</h3>
-<p>The normal distribution: shape, location and distribution. How to specify a particular normal distribution The effect of changing the mean and standard deviation Finding areas under the standard normal curve: Using Excel Part 2 of the workshop: Normal Distribution</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=40">Workshop_slides_Week_2_with_solutions.pdf, page 40</a></em></p>
 </section>
-<section id="source-page-041" class="slide level2">
-<h2></h2>
-<h3 id="probability-distribution">Probability Distribution</h3>
-<p>The histogram is a picture of the probability density in crude form Probability density describes how “dense” the distribution is over a data range Allows us to calculate the probability related to the variable of interest In statistics, we use a smooth mathematical function to model the probability density function (pdf) The area under the curve represents the probability</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=41">Workshop_slides_Week_2_with_solutions.pdf, page 41</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image31.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 41.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image32.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 41.</figcaption>
-</figure>
-</div>
-</div></div>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
 </section>
-<section id="source-page-042" class="slide level2">
-<h2></h2>
-<h3 id="probability-distribution-normal-distribution">Probability Distribution: Normal Distribution</h3>
-<p>The most common distribution in statistics is the normal distribution It is a symmetric (bell-shaped) distribution The normal distribution has two features: Mean and Stdev Normal Distribution Notation: <span class="math inline">X \sim N(\text{Mean}, \text{Stdev})</span> or <span class="math inline">X \sim N(\mu, \sigma)</span> <span class="math display">
-Skewness = 0
-</span> <span class="math display">
-Mean = Median = Mode
-</span></p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=42">Workshop_slides_Week_2_with_solutions.pdf, page 42</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image220.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 42.</figcaption>
-</figure>
+<section id="exercise---you-try" class="slide level2">
+<h2>Exercise: - You try ✏️</h2>
+<countdown-timer id="introductions-timer" minutes="30" seconds="00" class="countdown" warn-when="300" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image32.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 42.</figcaption>
-</figure>
+<p><strong>Important</strong></p>
 </div>
-</div></div>
-</section>
-<section id="source-page-043" class="slide level2">
-<h2></h2>
-<h3 id="standard-normal-distribution-1">STANDARD Normal Distribution</h3>
-<p>A special case: STANDARD normal distribution <span class="math display">
-Mean = 0 and Stdev = 1
-</span> Used in statistics to assess statistical uncertainty Standard Normal Distribution Notation: <span class="math inline">Z \sim N(0,1)</span> <span class="math display">
-Skewness = 0
-</span> <span class="math display">
-Mean = Median = Mode
-</span></p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=43">Workshop_slides_Week_2_with_solutions.pdf, page 43</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image300.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 43.</figcaption>
-</figure>
+<div class="callout-content">
+<ul>
+<li>Answer the exercise questions in Moodle</li>
+<li>30 mins</li>
+<li>Password protected</li>
+<li>Work together!</li>
+</ul>
 </div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image33.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 43.</figcaption>
-</figure>
 </div>
-</div></div>
-</section>
-<section id="source-page-044" class="slide level2">
-<h2></h2>
-<h3 id="normal-distribution-standard-normal-distribution">Normal Distribution &amp; Standard normal distribution</h3>
-<p><span class="math inline">X \sim N(\text{Mean}, \text{Stdev})</span> and <span class="math inline">Z \sim N(0,1)</span></p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=44">Workshop_slides_Week_2_with_solutions.pdf, page 44</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image91.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 44.</figcaption>
-</figure>
 </div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image32.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 44.</figcaption>
-</figure>
-</div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image121.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 44.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image33.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 44.</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="source-page-045" class="slide level2">
-<h2></h2>
-<h3 id="standard-normal-distribution-excel">Standard normal distribution: Excel</h3>
-<p>Question 1 P(Z&lt;0) <span class="math display">
-=NORM.S.DIST(0,TRUE)
-</span> Question 2 P(Z&gt;0) <span class="math display">
-=1-NORM.S.DIST(0,TRUE)
-</span> Question 3 P(Z&lt;-1) <span class="math display">
-=NORM.S.DIST(-1,TRUE)
-</span> Question 4 P(-1&gt;Z&gt;1.5) =NORM.S.DIST(1.5,TRUE)-NORM.S.DIST(-1,TRUE) Question 5 P(Z&gt;2) <span class="math display">
-=1-NORM.S.DIST(2,TRUE)
-</span> 0.5 0.5 0.158655254 0.0.774538 0.02275</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=45">Workshop_slides_Week_2_with_solutions.pdf, page 45</a></em></p>
-</section>
-<section id="source-page-046" class="slide level2">
-<h2></h2>
-<h3 id="standard-normal-distribution-excel-1">Standard normal distribution: Excel</h3>
-<p>Question 6 Suppose Z has a standard normal distribution. For some value of z∗, the probability P(Z&lt;z∗)=0.2843. Find z∗. To find z* <span class="math display">
-=norm.s.inv(0.2843) = -0.57011
-</span> Question 7 Suppose Z has a standard normal distribution. For some value of z∗, the probability P(Z&gt;z∗)=0.2843. Find z∗. <span class="math display">
-=Norm.s.inv(1-0.2843) = 0.57011
-</span></p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=46">Workshop_slides_Week_2_with_solutions.pdf, page 46</a></em></p>
-
-<img data-src="figures/etx5900/components/image34.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 46.</p></section>
-<section id="source-page-047" class="slide level2">
-<h2></h2>
-<h3 id="checklist-general-probability-normal-distribution">Checklist: General Probability &amp; Normal Distribution</h3>
-<p>Use contingency table to calculate marginal, joint and conditional probabilities % of Grand Total % of Column Total % of Row Total Interpreting the relationship between two categorical variables Rule of Independence Probability: as the area under a Probability density function (pdf) The normal distribution: shape, location and distribution. How to specify a particular normal distribution The effect of changing the mean and standard deviation Finding areas under the standard normal curve: Using Excel</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_2_with_solutions.pdf#page=47">Workshop_slides_Week_2_with_solutions.pdf, page 47</a></em></p>
 
 
 </section></section>
