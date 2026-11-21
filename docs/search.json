@@ -1397,14 +1397,14 @@
     "href": "week2/slides.html#probability-recap",
     "title": "Probability and distributions",
     "section": "Probability: recap",
-    "text": "Probability: recap\n\nLet A=\\{1,6\\} and B=\\{2,4,6\\} on one fair die.\n\n\n\n\n\n\n\n\n\n\n\nConcept\nNotation\nExample/reminder\n\n\n\n\nMarginal\nP(A): one event\nCoin: P(\\text{heads})=1/2\n\n\nMutually exclusive\nadd P(C)+P(D) ; P(C\\cap D)=0\nDie: C=\\{1\\}, D=\\{6\\}\n\n\nUnion\nP(A\\cup B): or\nDie: P(A\\cup B)=4/6\n\n\nJoint/Intersection\nP(A\\cap B): and\nDie: shared roll 6, so 1/6\n\n\nNot mutually exclusive\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B)\nDie: 2/6+3/6-1/6=4/6\n\n\n\n\nMutually exclusive: no overlap\n\n\n\n\n\n\n\n\n\nNot mutually exclusive: shared 6"
+    "text": "Probability: recap\n\nLet A=\\{1,6\\} and B=\\{2,4,6\\} on one fair die.\n\n\n\n\n\n\n\n\n\n\n\nConcept\nNotation\nExample/reminder\n\n\n\n\nMarginal\nP(A): one event\nCoin: P(\\text{heads})=1/2\n\n\nMutually exclusive\nP(C)+P(D) ; P(C\\cap D)=0\nDie: C=\\{1\\}, D=\\{6\\}; add\n\n\nUnion\nP(A\\cup B): or\nDie: P(A\\cup B)=4/6; check exclusive status*\n\n\nJoint/Intersection\nP(A\\cap B): and\nDie: shared roll 6, so 1/6\n\n\nNot mutually exclusive\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B)\nDie: 2/6+3/6-1/6=4/6*\n\n\n\n\nMutually exclusive: no overlap\n\n\n\n\n\n\n\n\n\nNot mutually exclusive: shared 6"
   },
   {
     "objectID": "week2/slides.html#probability-recap-1",
     "href": "week2/slides.html#probability-recap-1",
     "title": "Probability and distributions",
     "section": "Probability: recap",
-    "text": "Probability: recap\nLet X,Y heads on the first and second coin flips.\n\n\n\n\n\n\n\n\nConcept\nNotation\nExample/reminder\n\n\n\n\nConditional\nP(E\\mid H)=P(E\\cap H)/P(H): given H\nHeart disease: changes denominator\n\n\nIndependent\nP(X\\mid Y)=P(X)\nFlipping two coins"
+    "text": "Probability: recap\nLet X,Y heads on the first and second coin flips; E Exercise moderately, H Has heart disease\n\n\n\n\n\n\n\n\nConcept\nNotation\nExample/reminder\n\n\n\n\nConditional\nP(E\\mid H)=P(E\\cap H)/P(H): given H\nHeart disease: changes denominator\n\n\nIndependent\nP(X\\mid Y)=P(X)\nSeperate processes\n\n\n\n\n       E H E ∩ H  Intersection: both events occur"
   },
   {
     "objectID": "week2/slides.html#probability-as-a-density-function-pdf",
@@ -1418,21 +1418,21 @@
     "href": "week2/slides.html#probability-density-function",
     "title": "Probability and distributions",
     "section": "Probability density function",
-    "text": "Probability density function\n\nA probability density function describes how likely the range of numeric values.\n\n\n\n\n\nNotations are used to represent a PDF’s features\n\n\\mathcal{N} is a family of distributions\n\\mu mean; \\sigma SD encode the shape of the distribution\n\n\n\nX \\sim \\overbrace{\\mathcal{N}}^{\\text{family}}(\\underbrace{\\mu, \\sigma}_{\\text{features}})\n\n\n\n\n\n\n\n\n\n\n\n\nThe area under the probability curve sums to 1\n\n\n\n\n\n\n\nRecall\n\n\n\nMean describes the central tendency or typical value\nStandard deviation (SD) describes the spread in the values"
+    "text": "Probability density function\n\nA probability density function describes how likely the range of numeric, continuous values.\n\n\n\n\n\nNotations are used to represent a PDF’s features\n\n\\mathcal{N} is a family of distributions\n\\mu mean; \\sigma SD encode the shape of the distribution\n\n\n\nX \\sim \\overbrace{\\mathcal{N}}^{\\text{family}}(\\underbrace{\\mu, \\sigma}_{\\text{features}})\n\n\n\n\n\n\n\n\n\n\n\n\nThe area under the probability curve sums to 1\n\n\n\n\n\n\n\nRecall\n\n\n\nMean describes the central tendency or typical value\nStandard deviation (SD) describes the spread in the values"
   },
   {
-    "objectID": "week2/slides.html#density-functions-in-this-course",
-    "href": "week2/slides.html#density-functions-in-this-course",
+    "objectID": "week2/slides.html#probability-density-function---why",
+    "href": "week2/slides.html#probability-density-function---why",
     "title": "Probability and distributions",
-    "section": "Density functions in this course",
-    "text": "Density functions in this course\n\nThere are three you’ll learn in this course\nNormal (N)\nStandard Normal (Z)\nStudent’s t (t) (next week)"
+    "section": "Probability density function - why?",
+    "text": "Probability density function - why?\n\n\n\nContinuous values have infinite number of possible values\n\nNot feasible to assign an exact probability for any single exact value e.g. 165.210123 cm tall\n“What is the exact probability a person is 165.210123… cm tall?” 😵‍💫\n\nPDF reframes to:\n\n“What is the probability a person is between 160 cm and 170 cm tall?”\n\n\n\n\n\n\n\n\n\n\n\n\n\nPDFs in this unit:\n\nNormal (N)\nStandard Normal (Z)\nStudent’s t (next week)"
   },
   {
     "objectID": "week2/slides.html#normal-distribution",
     "href": "week2/slides.html#normal-distribution",
     "title": "Probability and distributions",
     "section": "Normal distribution",
-    "text": "Normal distribution\nNotation: X \\sim \\mathcal{N}(\\mu,\\sigma^2). In this example, \\mu=4.75 and \\sigma=1.25."
+    "text": "Normal distribution\nNotation: X \\sim \\mathcal{N}(\\mu,\\sigma^2). Here, \\mu=4.75 and \\sigma=1.25."
   },
   {
     "objectID": "week2/slides.html#standard-normal-distribution",

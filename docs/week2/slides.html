@@ -1103,13 +1103,13 @@ P(E) = \frac{1{,}784}{5{,}000} = 35.68\%
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Mutually exclusive</strong></td>
-<td style="text-align: left;">add <span class="math inline">P(C)+P(D)</span> ; <span class="math inline">P(C\cap D)=0</span></td>
-<td style="text-align: left;">Die: <span class="math inline">C=\{1\}</span>, <span class="math inline">D=\{6\}</span></td>
+<td style="text-align: left;"><span class="math inline">P(C)+P(D)</span> ; <span class="math inline">P(C\cap D)=0</span></td>
+<td style="text-align: left;">Die: <span class="math inline">C=\{1\}</span>, <span class="math inline">D=\{6\}</span>; add</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Union</strong></td>
 <td style="text-align: left;"><span class="math inline">P(A\cup B)</span>: <strong>or</strong></td>
-<td style="text-align: left;">Die: <span class="math inline">P(A\cup B)=4/6</span></td>
+<td style="text-align: left;">Die: <span class="math inline">P(A\cup B)=4/6</span>; check exclusive status*</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Joint/Intersection</strong></td>
@@ -1119,7 +1119,7 @@ P(E) = \frac{1{,}784}{5{,}000} = 35.68\%
 <tr class="odd">
 <td style="text-align: left;"><strong>Not mutually exclusive</strong></td>
 <td style="text-align: left;"><span class="math inline">P(A\cup B)=P(A)+P(B)-P(A\cap B)</span></td>
-<td style="text-align: left;">Die: <span class="math inline">2/6+3/6-1/6=4/6</span></td>
+<td style="text-align: left;">Die: <span class="math inline">2/6+3/6-1/6=4/6</span>*</td>
 </tr>
 </tbody>
 </table>
@@ -1148,7 +1148,7 @@ P(E) = \frac{1{,}784}{5{,}000} = 35.68\%
 </section>
 <section id="probability-recap-1" class="slide level2 smaller">
 <h2>Probability: recap</h2>
-<p>Let <span class="math inline">X,Y</span> heads on the first and second coin flips.</p>
+<p>Let <span class="math inline">X,Y</span> heads on the first and second coin flips; <span class="math inline">E</span> Exercise moderately, <span class="math inline">H</span> Has heart disease</p>
 <table class="caption-top">
 <colgroup>
 <col style="width: 33%">
@@ -1171,10 +1171,13 @@ P(E) = \frac{1{,}784}{5{,}000} = 35.68\%
 <tr class="even">
 <td style="text-align: left;"><strong>Independent</strong></td>
 <td style="text-align: left;"><span class="math inline">P(X\mid Y)=P(X)</span></td>
-<td style="text-align: left;">Flipping two coins</td>
+<td style="text-align: left;">Seperate processes</td>
 </tr>
 </tbody>
 </table>
+<svg viewbox="0 0 400 280" width="100%" role="img" aria-label="Venn diagram of moderate exercise E and heart disease H. Their shared region, E intersection H, is highlighted." style="display: block; max-width: 400px; margin: 0.6em auto 0; font-family: 'Fira Sans', sans-serif;">
+<defs> <clippath id="week2-recap-h-circle"><circle cx="250" cy="130" r="100"></circle></clippath> </defs> <circle cx="150" cy="130" r="100" fill="#4682B4" fill-opacity="0.25" stroke="#737373" stroke-width="3"></circle> <circle cx="250" cy="130" r="100" fill="#F08080" fill-opacity="0.25" stroke="#737373" stroke-width="3"></circle> <circle cx="150" cy="130" r="100" fill="#CA95A1" clip-path="url(#week2-recap-h-circle)"></circle> <g fill="#222" font-size="26" font-weight="bold" text-anchor="middle"> <text x="95" y="138">E</text> <text x="305" y="138">H</text> <text x="200" y="138">E ∩ H</text> </g> <text x="200" y="265" fill="#222" font-size="21" text-anchor="middle">Intersection: both events occur</text>
+</svg>
 </section></section>
 <section>
 <section id="pdfs-not-the-one-youre-thinking-of" class="title-slide slide level1 section-slide center">
@@ -1245,7 +1248,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}\exp\!\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
 <section id="probability-density-function" class="slide level2 smaller">
 <h2>Probability density function</h2>
 <blockquote>
-<p>A <strong>probability density function</strong> describes how <em>likely</em> the range of numeric values.</p>
+<p>A <strong>probability density function</strong> describes how <em>likely</em> the range of numeric, continuous values.</p>
 </blockquote>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -1290,24 +1293,50 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 </div>
 </div>
 </section>
-<section id="density-functions-in-this-course" class="slide level2">
-<h2>Density functions in this course</h2>
+<section id="probability-density-function---why" class="slide level2">
+<h2>Probability density function - why?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="font-size: 70%;">
+<p>Continuous values have <strong>infinite</strong> number of possible values</p>
 <ul>
-<li>There are three you’ll learn in this course</li>
+<li>Not feasible to assign an exact probability for any single exact value e.g.&nbsp;165.210123 cm tall</li>
+<li>“What is the exact probability a person is 165.210123… cm tall?” 😵‍💫</li>
+</ul>
+<p><strong>PDF</strong> reframes to:</p>
+<blockquote>
+<p>“What is the probability a person is <strong>between</strong> 160 cm and 170 cm tall?”</p>
+</blockquote>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-11-1.png" class="quarto-figure quarto-figure-center" width="432"></p>
+</figure>
+</div>
+</div>
+</div>
+<div style="font-size: 60%;">
+<p>PDFs in this unit:</p>
+<ul>
 <li>Normal (<span class="math inline">N</span>)</li>
 <li>Standard Normal (<span class="math inline">Z</span>)</li>
-<li>Student’s t (<span class="math inline">t</span>) (next week)</li>
+<li>Student’s <span class="math inline">t</span> (next week)</li>
 </ul>
+</div>
+</div></div>
 </section>
 <section id="normal-distribution" class="slide level2">
 <h2>Normal distribution</h2>
-<p><strong>Notation:</strong> <span class="math inline">X \sim \mathcal{N}(\mu,\sigma^2)</span>. In this example, <span class="math inline">\mu=4.75</span> and <span class="math inline">\sigma=1.25</span>.</p>
+<p><strong>Notation:</strong> <span class="math inline">X \sim \mathcal{N}(\mu,\sigma^2)</span>. Here, <span class="math inline">\mu=4.75</span> and <span class="math inline">\sigma=1.25</span>.</p>
 <div style="text-align: center;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-11-1.png" class="quarto-figure quarto-figure-center" alt="Normal density with mean 4.75 and standard deviation 1.25. The area to the right of the mean is shaded dark blue and labelled X greater than mu." width="864"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center" alt="Normal density with mean 4.75 and standard deviation 1.25. The area to the right of the mean is shaded dark blue and labelled X greater than mu." width="864"></p>
 </figure>
 </div>
 </div>
@@ -1322,7 +1351,7 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density from minus four to plus four, centred on zero. The region Z greater than zero is shaded dark blue." width="864"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density from minus four to plus four, centred on zero. The region Z greater than zero is shaded dark blue." width="864"></p>
 </figure>
 </div>
 </div>
@@ -1344,7 +1373,7 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal curve with the area to the left of zero shaded." width="412"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal curve with the area to the left of zero shaded." width="412"></p>
 </figure>
 </div>
 </div>
@@ -1356,7 +1385,7 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal curve with a point at zero marking the density height, approximately 0.399." width="412"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal curve with a point at zero marking the density height, approximately 0.399." width="412"></p>
 </figure>
 </div>
 </div>
@@ -1432,7 +1461,7 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center" alt="Normal density with only the region from 6 to 8 shaded dark blue." width="768"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center" alt="Normal density with only the region from 6 to 8 shaded dark blue." width="768"></p>
 </figure>
 </div>
 </div>
@@ -1468,7 +1497,7 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density with the middle region from minus one to one shaded dark blue." width="768"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-17-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density with the middle region from minus one to one shaded dark blue." width="768"></p>
 </figure>
 </div>
 </div>
@@ -1501,7 +1530,7 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-17-1.png" class="quarto-figure quarto-figure-center" alt="Normal density with 90 percent shaded to the left of an unknown cutoff x and 10 percent to the right; no x axis is shown." width="768"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-18-1.png" class="quarto-figure quarto-figure-center" alt="Normal density with 90 percent shaded to the left of an unknown cutoff x and 10 percent to the right; no x axis is shown." width="768"></p>
 </figure>
 </div>
 </div>
@@ -1535,7 +1564,7 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-18-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density with 95 percent shaded to the left of an unknown cutoff z and 5 percent to the right; no x axis is shown." width="768"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-19-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density with 95 percent shaded to the left of an unknown cutoff z and 5 percent to the right; no x axis is shown." width="768"></p>
 </figure>
 </div>
 </div>
