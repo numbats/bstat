@@ -797,11 +797,19 @@ P(E_{\text{Mod}}) = 35.68\%
 <blockquote>
 <p>Probability of an event occuring <strong>given that</strong> another event has already happened</p>
 </blockquote>
+<div class="columns" style="align-items: center; gap: 1.5rem; margin: 0.4em 0;">
+<div class="column" style="width: 54%;">
 <p><span class="math inline">E</span>: Does moderate exercise<br>
 <span class="math inline">H</span>: Has heart disease.</p>
-<p>Expressed as: <span class="math display">
+<p>Expressed as:</p>
+<p><span class="math display">
 P(\text{E} \mid \text{H}) = \frac{\overbrace{P(\text{E} \cap \text{H})}^{\text{Intersection}}}{P(\text{H})}
 </span></p>
+</div><div class="column" style="width: 44%; text-align: center;">
+<svg viewbox="0 0 400 280" width="100%" role="img" aria-label="Venn diagram of moderate exercise E and heart disease H. Their shared region, E intersection H, is highlighted." style="display: block; max-width: 400px; margin: auto; font-family: 'Fira Sans', sans-serif;">
+<defs> <clippath id="week2-conditional-h-circle"><circle cx="250" cy="130" r="100"></circle></clippath> </defs> <circle cx="150" cy="130" r="100" fill="#4682B4" fill-opacity="0.25" stroke="#737373" stroke-width="3"></circle> <circle cx="250" cy="130" r="100" fill="#F08080" fill-opacity="0.25" stroke="#737373" stroke-width="3"></circle> <circle cx="150" cy="130" r="100" fill="#CA95A1" clip-path="url(#week2-conditional-h-circle)"></circle> <g fill="#222" font-size="26" font-weight="bold" text-anchor="middle"> <text x="95" y="138">E</text> <text x="305" y="138">H</text> <text x="200" y="138">E ∩ H</text> </g> <text x="200" y="265" fill="#222" font-size="21" text-anchor="middle">Intersection: both events occur</text>
+</svg>
+</div></div>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -868,11 +876,9 @@ P(E \mid H)
 </table>
 </div></div>
 </section>
-<section id="two-way-table-probability---row-total---watch-me" class="slide level2" style="font-size: 90%;">
+<section id="two-way-table-probability---row-total---watch-me" class="slide level2" style="font-size: 80%;">
 <h2>Two-way table (probability) - <code>% Row total</code> - Watch me 👀</h2>
-<ul>
-<li><strong>Of those with heart disease</strong>, what is the probability that someone exercises moderately? <span class="math inline">P(E_{\text{Mod}} \mid H_{\text{Yes}})</span></li>
-</ul>
+<p><strong>Of those with heart disease</strong>, what is the probability that someone exercises moderately? <span class="math inline">P(E_{\text{Mod}} \mid H_{\text{Yes}})</span></p>
 <ol type="1">
 <li>Open the <a href="week2-data.xlsx"><code>Heart Disease</code> worksheet</a>, click any cell in the data, and choose <strong>Insert &gt; PivotTable</strong>.</li>
 <li>Select the entire dataset, choose <strong>New Worksheet</strong>, then click <strong>OK</strong>.</li>
@@ -927,11 +933,11 @@ P(E \mid H)
 </div>
 </div>
 </section>
-<section id="two-way-table-probability---column-total---you-try" class="slide level2" style="font-size: 90%;">
+<section id="two-way-table-probability---column-total---you-try" class="slide level2" style="font-size: 80%;">
 <h2>Two-way table (probability) - <code>% Column Total</code> - You try ✏️</h2>
-<ul>
-<li>What is the probability that someone does not have heart disease, <strong>given that</strong> they do minimal exercise? <span class="math inline">P(H_{\text{No}} \mid E_{\text{Min}})</span></li>
-</ul>
+<countdown-timer id="week2-break" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+<p>What is the probability that someone does not have heart disease, <strong>given that</strong> they do minimal exercise? <span class="math inline">P(H_{\text{No}} \mid E_{\text{Min}})</span></p>
 <ol type="1">
 <li>Open the <a href="week2-data.xlsx"><code>Heart Disease</code> worksheet</a>, click any cell in the data, and choose <strong>Insert &gt; PivotTable</strong>.</li>
 <li>Select the entire dataset, choose <strong>New Worksheet</strong>, then click <strong>OK</strong>.</li>

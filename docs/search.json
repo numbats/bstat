@@ -1341,7 +1341,7 @@
     "href": "week2/slides.html#conditional-probability",
     "title": "Probability and distributions",
     "section": "Conditional probability",
-    "text": "Conditional probability\n\nProbability of an event occuring given that another event has already happened\n\nE: Does moderate exercise\nH: Has heart disease.\nExpressed as: \nP(\\text{E} \\mid \\text{H}) = \\frac{\\overbrace{P(\\text{E} \\cap \\text{H})}^{\\text{Intersection}}}{P(\\text{H})}\n\n\n\n\n\n\n\nTip\n\n\n\nRecall that the intersection is the joint probability of Event E and H occuring\nEvent E is conditional on Event H"
+    "text": "Conditional probability\n\nProbability of an event occuring given that another event has already happened\n\n\n\nE: Does moderate exercise\nH: Has heart disease.\nExpressed as:\n\nP(\\text{E} \\mid \\text{H}) = \\frac{\\overbrace{P(\\text{E} \\cap \\text{H})}^{\\text{Intersection}}}{P(\\text{H})}\n\n\n\n       E H E ∩ H  Intersection: both events occur\n\n\n\n\n\n\n\n\nTip\n\n\n\nRecall that the intersection is the joint probability of Event E and H occuring\nEvent E is conditional on Event H"
   },
   {
     "objectID": "week2/slides.html#conditional-probability-1",
@@ -1355,7 +1355,7 @@
     "href": "week2/slides.html#two-way-table-probability---row-total---watch-me",
     "title": "Probability and distributions",
     "section": "Two-way table (probability) - % Row total - Watch me 👀",
-    "text": "Two-way table (probability) - % Row total - Watch me 👀\n\nOf those with heart disease, what is the probability that someone exercises moderately? P(E_{\\text{Mod}} \\mid H_{\\text{Yes}})\n\n\nOpen the Heart Disease worksheet, click any cell in the data, and choose Insert &gt; PivotTable.\nSelect the entire dataset, choose New Worksheet, then click OK.\nIn PivotTable Fields, drag Heart Disease to Rows and Exercise to Columns.\nDrag Heart Disease to Values. In Value Field Settings, choose Summarize Values By &gt; Count.\nRight-click any count and choose Show Values As &gt; % of Row Total. Format the values as percentages with two decimal places."
+    "text": "Two-way table (probability) - % Row total - Watch me 👀\nOf those with heart disease, what is the probability that someone exercises moderately? P(E_{\\text{Mod}} \\mid H_{\\text{Yes}})\n\nOpen the Heart Disease worksheet, click any cell in the data, and choose Insert &gt; PivotTable.\nSelect the entire dataset, choose New Worksheet, then click OK.\nIn PivotTable Fields, drag Heart Disease to Rows and Exercise to Columns.\nDrag Heart Disease to Values. In Value Field Settings, choose Summarize Values By &gt; Count.\nRight-click any count and choose Show Values As &gt; % of Row Total. Format the values as percentages with two decimal places."
   },
   {
     "objectID": "week2/slides.html#two-way-table-probability",
@@ -1369,7 +1369,7 @@
     "href": "week2/slides.html#two-way-table-probability---column-total---you-try",
     "title": "Probability and distributions",
     "section": "Two-way table (probability) - % Column Total - You try ✏️",
-    "text": "Two-way table (probability) - % Column Total - You try ✏️\n\nWhat is the probability that someone does not have heart disease, given that they do minimal exercise? P(H_{\\text{No}} \\mid E_{\\text{Min}})\n\n\nOpen the Heart Disease worksheet, click any cell in the data, and choose Insert &gt; PivotTable.\nSelect the entire dataset, choose New Worksheet, then click OK.\nIn PivotTable Fields, drag Heart Disease to Rows and Exercise to Columns.\nDrag Heart Disease to Values. In Value Field Settings, choose Summarize Values By &gt; Count.\nRight-click any count and choose Show Values As &gt; % of Column Total. Format the values as percentages with two decimal places."
+    "text": "Two-way table (probability) - % Column Total - You try ✏️\n\n \nWhat is the probability that someone does not have heart disease, given that they do minimal exercise? P(H_{\\text{No}} \\mid E_{\\text{Min}})\n\nOpen the Heart Disease worksheet, click any cell in the data, and choose Insert &gt; PivotTable.\nSelect the entire dataset, choose New Worksheet, then click OK.\nIn PivotTable Fields, drag Heart Disease to Rows and Exercise to Columns.\nDrag Heart Disease to Values. In Value Field Settings, choose Summarize Values By &gt; Count.\nRight-click any count and choose Show Values As &gt; % of Column Total. Format the values as percentages with two decimal places."
   },
   {
     "objectID": "week2/slides.html#two-way-table-probability-1",
