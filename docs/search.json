@@ -1229,7 +1229,7 @@
     "href": "week2/slides.html#todays-roadmap",
     "title": "Probability and distributions",
     "section": "Today’s roadmap",
-    "text": "Today’s roadmap\n\nProbability\n\nCoin flip\nDice roll\nHeart disease and Exercise level\n\nBREAK\nProbability density functions\n\nNormal distribution\nStandard normal distibution\nExcel skills"
+    "text": "Today’s roadmap\n\nProbability\n\nCoin flip\nDice roll\nHeart disease and Exercise level\nConditional probability\n\n10 MIN BREAK\nIndependent events\nProbability density functions\n\nNormal distribution\nStandard normal distibution\n\nIn class Exercise"
   },
   {
     "objectID": "week2/slides.html#what-is-probability",
@@ -1341,28 +1341,42 @@
     "href": "week2/slides.html#conditional-probability",
     "title": "Probability and distributions",
     "section": "Conditional probability",
-    "text": "Conditional probability\n\nProbability of an Event A occuring given that another Event B has already happened\n\n\nEvent A: Moderate exercise\nEvent B: Heart disease\n\nExpressed as: \nP(\\text{A} \\mid \\text{B}) = \\frac{\\overbrace{P(\\text{A} \\cap \\text{B})}^{\\text{Intersection}}}{P(\\text{B})}\n\n\n\n\n\n\n\nTip\n\n\n\nRecall that the intersection is the joint probability of Event A and B occuring\nEvent A is conditional on Event B"
+    "text": "Conditional probability\n\nProbability of an event occuring given that another event has already happened\n\nE: Does moderate exercise\nH: Has heart disease.\nExpressed as: \nP(\\text{E} \\mid \\text{H}) = \\frac{\\overbrace{P(\\text{E} \\cap \\text{H})}^{\\text{Intersection}}}{P(\\text{H})}\n\n\n\n\n\n\n\nTip\n\n\n\nRecall that the intersection is the joint probability of Event E and H occuring\nEvent E is conditional on Event H"
   },
   {
     "objectID": "week2/slides.html#conditional-probability-1",
     "href": "week2/slides.html#conditional-probability-1",
     "title": "Probability and distributions",
     "section": "Conditional probability",
-    "text": "Conditional probability\nOf those with heart disease, what percentage exercise moderately?\n\n\nE: Does moderate exercise\nH: Has heart disease.\n\n\\begin{aligned}\nP(E \\mid H)\n&= \\frac{P(E \\cap H)}{P(H)} \\\\\n&= \\frac{43}{263} \\\\\n&\\approx \\mathbf{16.35\\%}\n\\end{aligned}\n\n\nPeople (count)\n\n\n\nHeart disease\nMinimal\nModerate\nTotal\n\n\n\n\nNo\n2,996\n1,741\n4,737\n\n\nYes\n220\n43\n263\n\n\nTotal\n3,216\n1,784\n5,000"
+    "text": "Conditional probability\nOf those with heart disease, what percentage exercise moderately?\n\n\nE: Does moderate exercise\nH: Has heart disease.\n\n\\begin{aligned}\nP(E \\mid H)\n&= \\frac{P(E \\cap H)}{P(H)} \\\\\n&= \\frac{43}{263} \\\\\n&= \\mathbf{16.35\\%}\n\\end{aligned}\n\n\nPeople (count)\n\n\n\nHeart disease\nMinimal\nModerate\nTotal\n\n\n\n\nNo\n2,996\n1,741\n4,737\n\n\nYes\n220\n43\n263\n\n\nTotal\n3,216\n1,784\n5,000"
   },
   {
     "objectID": "week2/slides.html#two-way-table-probability---row-total---watch-me",
     "href": "week2/slides.html#two-way-table-probability---row-total---watch-me",
     "title": "Probability and distributions",
     "section": "Two-way table (probability) - % Row total - Watch me 👀",
-    "text": "Two-way table (probability) - % Row total - Watch me 👀"
+    "text": "Two-way table (probability) - % Row total - Watch me 👀\n\nOf those with heart disease, what is the probability that someone exercises moderately? P(E_{\\text{Mod}} \\mid H_{\\text{Yes}})\n\n\nOpen the Heart Disease worksheet, click any cell in the data, and choose Insert &gt; PivotTable.\nSelect the entire dataset, choose New Worksheet, then click OK.\nIn PivotTable Fields, drag Heart Disease to Rows and Exercise to Columns.\nDrag Heart Disease to Values. In Value Field Settings, choose Summarize Values By &gt; Count.\nRight-click any count and choose Show Values As &gt; % of Row Total. Format the values as percentages with two decimal places."
   },
   {
-    "objectID": "week2/slides.html#two-way-table-count-and-probabilty---you-try",
-    "href": "week2/slides.html#two-way-table-count-and-probabilty---you-try",
+    "objectID": "week2/slides.html#two-way-table-probability",
+    "href": "week2/slides.html#two-way-table-probability",
     "title": "Probability and distributions",
-    "section": "Two-way table (count and probabilty) - You try ✏️",
-    "text": "Two-way table (count and probabilty) - You try ✏️\nWhat is the probability of someone not haven’t heart disease, given that their do minimal exercise?\n\n% Column total"
+    "section": "Two-way table (probability)",
+    "text": "Two-way table (probability)\n\n\n\nHeart disease\nMinimal\nModerate\nTotal\n\n\n\n\nNo\n63.25%\n36.75%\n100.00%\n\n\nYes\n83.65%\n16.35%\n100.00%\n\n\nTotal\n64.32%\n35.68%\n100.00%\n\n\n\n\n\n\n\n\n\nSolution\n\n\nAmong people with heart disease, 43 of 263 exercise moderately: P(E_{\\text{Mod}} \\mid H_{\\text{Yes}}) = 43/263 = \\mathbf{16.35\\%}. Use the Yes row total as the denominator."
+  },
+  {
+    "objectID": "week2/slides.html#two-way-table-probability---column-total---you-try",
+    "href": "week2/slides.html#two-way-table-probability---column-total---you-try",
+    "title": "Probability and distributions",
+    "section": "Two-way table (probability) - % Column Total - You try ✏️",
+    "text": "Two-way table (probability) - % Column Total - You try ✏️\n\nWhat is the probability that someone does not have heart disease, given that they do minimal exercise? P(H_{\\text{No}} \\mid E_{\\text{Min}})\n\n\nOpen the Heart Disease worksheet, click any cell in the data, and choose Insert &gt; PivotTable.\nSelect the entire dataset, choose New Worksheet, then click OK.\nIn PivotTable Fields, drag Heart Disease to Rows and Exercise to Columns.\nDrag Heart Disease to Values. In Value Field Settings, choose Summarize Values By &gt; Count.\nRight-click any count and choose Show Values As &gt; % of Column Total. Format the values as percentages with two decimal places."
+  },
+  {
+    "objectID": "week2/slides.html#two-way-table-probability-1",
+    "href": "week2/slides.html#two-way-table-probability-1",
+    "title": "Probability and distributions",
+    "section": "Two-way table (probability)",
+    "text": "Two-way table (probability)\n\n\n\nHeart disease\nMinimal\nModerate\nTotal\n\n\n\n\nNo\n93.16%\n97.59%\n94.74%\n\n\nYes\n6.84%\n2.41%\n5.26%\n\n\nTotal\n100.00%\n100.00%\n100.00%\n\n\n\n\n\n\n\n\n\nSolution\n\n\nAmong people who do minimal exercise, 2,996 of 3,216 do not have heart disease: P(H_{\\text{No}} \\mid E_{\\text{Min}}) = 2{,}996/3{,}216 = \\mathbf{93.16\\%}. Use the Minimal column total as the denominator."
   },
   {
     "objectID": "week2/slides.html#independent-events-x",
@@ -1384,69 +1398,6 @@
     "title": "Probability and distributions",
     "section": "Are heart diseases and exercise independent?",
     "text": "Are heart diseases and exercise independent?"
-  },
-  {
-    "objectID": "week2/slides.html#source-page-014",
-    "href": "week2/slides.html#source-page-014",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Task 1: Heart Disease and Exercise Level\nCount of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00% 1. If you choose someone at random from the population, what is the probability that they have no heart disease do a moderate amount of exercise do a moderate amount of exercise and have no heart disease do a moderate amount of exercise or have no heart disease 2. Are Heart Disease and Exercise levels mutually exclusive events?\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 14"
-  },
-  {
-    "objectID": "week2/slides.html#source-page-015",
-    "href": "week2/slides.html#source-page-015",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Task 1: Heart Disease and Exercise Level\n\nConstruct a new Pivot Table for Heart Disease and Exercise Level. Change the display settings to % Row Total. Use this table and answer the following questions: a. Write a probability statement that describes the value of 83.65% from your table? b. Interpret this value\nAre exercise levels and heart disease independent? Provide evidence to support your answer.\nA lower proportion of heart disease patients do moderate exercise compared to those who do not have heart disease. Construct a pivot table and provide probability statements to support this.\nThe probability of heart disease reduces with moderate exercise compared to minimum exercise. Construct a pivot table and provide probability statements to support this.\n\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 15"
-  },
-  {
-    "objectID": "week2/slides.html#source-page-016",
-    "href": "week2/slides.html#source-page-016",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Solutions for Task 1: Question 1\nCount of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00% 1. If you choose someone at random from the population, what is the probability that they have no heart disease \nP(No Heart Disease) =  94.74%\n do a moderate amount of exercise \nP(Moderate) =  35.68%\n\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 16"
-  },
-  {
-    "objectID": "week2/slides.html#source-page-017",
-    "href": "week2/slides.html#source-page-017",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Solutions for Task 1: Question 1\nCount of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00% 1. If you choose someone at random from the population, what is the probability that they do a moderate amount of exercise and have no heart disease P(Moderate and No Heart Disease) = 34.82% do a moderate amount of exercise or have no heart disease P(Moderate or No Heart Disease) = P(Moderate) + P(No Heart Disease) – P(Moderate and No Heart Disease) \n= 35.68% + 94.74% - 34.82% = 95.6%\n\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 17"
-  },
-  {
-    "objectID": "week2/slides.html#source-page-018",
-    "href": "week2/slides.html#source-page-018",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Solutions for Task 1: Question 2\nCount of Heart Disease Exercise Level Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00% 2. Are Heart Disease and Exercise levels mutually exclusive events? Definition of mutually exclusive events: Events that cannot occur together If A and B are mutually exclusive, P(A and B) = 0 P(Heart Disease and Minimal) = 4.4% P(Heart Disease and Moderate) = 0.86% Therefore Heart Disease and Exercise are not mutually exclusive.\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 18"
-  },
-  {
-    "objectID": "week2/slides.html#source-page-019",
-    "href": "week2/slides.html#source-page-019",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Solutions for Task 1: Question 3\nQ3a. Write a probability statement to describe the highlighted value. \nPrMinimalHeart Disease=83.65%\n Q3b. Interpret this value. If you only consider heart disease patients, 83.65% of them do minimal exercise OR Approximately 83.65% of patients with heart disease, do minimal exercise. Count of Heart Disease Exercise Heart Disease Minimal Moderate Grand Total No 63.25% 36.75% 100.00% Yes 83.65% 16.35% 100.00% Grand Total 64.32% 35.68% 100.00%\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 19\n\nVisual from source page 19."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-020",
-    "href": "week2/slides.html#source-page-020",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Solutions for task 1: Question 4\nAre Exercise level and heart disease independent? Exercise level and heart disease are NOT independent There is a relationship between exercise and heart health! Count of Heart Disease Exercise Heart Disease Minimal Moderate Grand Total No 63.25% 36.75% 100.00% Yes 83.65% 16.35% 100.00% Grand Total 64.32% 35.68% 100.00% Are exercise levels and heart disease independent? Provide evidence to support your answer. \nP(Moderate|No Heart Disease) = 36.75%\n \nP(Moderate|Heart Disease) = 16.35%\n \nP(Moderate) = 35.68%\n Is P(Moderate|No Heart Disease) = P(Moderate)?? Conditional probability ≠ marginal probability Count of Heart Disease Exercise Heart Disease Minimal Moderate Grand Total No 59.92% 34.82% 94.74% Yes 4.40% 0.86% 5.26% Grand Total 64.32% 35.68% 100.00%\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 20\n\nVisual from source page 20."
-  },
-  {
-    "objectID": "week2/slides.html#source-page-021",
-    "href": "week2/slides.html#source-page-021",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "A lower proportion of heart disease patients do moderate exercise compared to those who do not have heart disease. Construct a pivot table and provide probability statements to this statement.\nP(Moderate|No Heart Disease) \n= 36.75%\n P(Moderate|Heart Disease) \n= 16.35%\n What does this imply? A smaller proportion of heart disease patients do moderate exercise compared to those who do not have heart disease. Application of what you have learned: People with healthy hearts tend to do more exercise! Solutions for Task 1: Question 5 Count of Heart Disease Exercise Heart Disease Minimal Moderate Grand Total No 63.25% 36.75% 100.00% Yes 83.65% 16.35% 100.00% Grand Total 64.32% 35.68% 100.00%\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 21"
-  },
-  {
-    "objectID": "week2/slides.html#source-page-022",
-    "href": "week2/slides.html#source-page-022",
-    "title": "Probability and distributions",
-    "section": "",
-    "text": "Solutions for Task 1: Question 6\nThe probability of heart disease reduces with moderate exercise compared to minimum exercise. Construct a pivot table and provide probability statements to this statement. The condition here is exercise. \nP(Heart Disease|Minimum) = 6.84%\n \nP(Heart Disease|Moderate) = 2.41%\n Application of what you have learned: The probability of heart disease reduces with moderate exercise! Count of Heart Disease Exercise Heart Disease Minimal Moderate Grand Total No 93.16% 97.59% 94.74% Yes 6.84% 2.41% 5.26% Grand Total 100.00% 100.00% 100.00%\nSource: Workshop_slides_Week_2_with_solutions.pdf, page 22"
   },
   {
     "objectID": "week2/slides.html#source-page-023",
