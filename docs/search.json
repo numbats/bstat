@@ -1432,14 +1432,14 @@
     "href": "week2/slides.html#normal-distribution",
     "title": "Probability and distributions",
     "section": "Normal distribution",
-    "text": "Normal distribution\n\n\n\n\n\n\n\n\n\n\n\n\nNotation: X \\sim \\mathcal{N}(\\overbrace{\\mu}^{\\text{Mean}},\\overbrace{\\sigma}^{\\text{SD}})\n\\mu = 8 ; \\sigma = 2\n\n\n\n=NORM.DIST(x, mean, standard_dev, cumulative)\n\nx: the cutoff on the horizontal axis. x= 8\nmean: the distribution mean, \\mu = 8\nstandard_dev: the distribution SD, \\sigma = 2\ncumulative: TRUE gives the area to the left of x; FALSE gives the curve’s height at x.\n\n\n\n\n\n\n\n\nRecall\n\n\n\nThe shape is symmetrical\nSkewness = 0\n\\mu = median = mode"
+    "text": "Normal distribution\n\n\n\n\n\n\n\n\n\n\n\n\nNotation: X \\sim \\mathcal{N}(\\overbrace{\\mu}^{\\text{Mean}},\\overbrace{\\sigma}^{\\text{SD}})\n\\mu = 8 ; \\sigma = 2\n\n\n\n=NORM.DIST(x, mean, standard_dev, cumulative)\n\nx: the cutoff on the horizontal axis. x= 8\nmean: the distribution mean, \\mu = 8\nstandard_dev: the distribution SD, \\sigma = 2\ncumulative\n\nTRUE gives the shaded area to the left of x\nFALSE gives the curve’s height at x= 8\n\n\n\n\n\n\n\n\n\nRecall\n\n\n\nThe shape is symmetrical\nSkewness = 0\n\\mu = median = mode"
   },
   {
     "objectID": "week2/slides.html#standard-normal-distribution",
     "href": "week2/slides.html#standard-normal-distribution",
     "title": "Probability and distributions",
     "section": "Standard Normal distribution",
-    "text": "Standard Normal distribution\n\n\n\n\n\n\n\n\n\n\n\n\nNotation: Z \\sim \\mathcal{N}(0,1). Its mean is 0 and its standard deviation is 1."
+    "text": "Standard Normal distribution\n\n\n\n\n\n\n\n\n\n\n\n\nNotation: Z \\sim \\mathcal{N}(\\overbrace{0}^{\\text{Mean}},\\overbrace{1}^{\\text{SD}})\n\\mu = 0 ; \\sigma = 1\n\n\n\n=NORM.S.DIST(z, cumulative)\n\nz: the cutoff on the horizontal axis. z = 0\ncumulative\n\nTRUE gives the shaded area to the left of z\nFALSE gives the curve’s height at z = 0\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nStandard normal is exactly the same as Normal only with fixed mean = 0 and SD = 1"
   },
   {
     "objectID": "week2/slides.html#finding-the-shaded-region",

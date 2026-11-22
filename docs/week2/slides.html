@@ -1337,7 +1337,7 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center" alt="Normal density with mean 8 and standard deviation 2. The horizontal axis has symmetric integer tick marks from 0 to 16, and the area to the right of the mean is shaded dark blue." width="624"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center" alt="Normal density with mean 8 and standard deviation 2. The area left of x equals 8 is shaded dark blue for cumulative TRUE. A red dot at the peak marks the density height returned by cumulative FALSE." width="624"></p>
 </figure>
 </div>
 </div>
@@ -1353,7 +1353,11 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 <li><code>x</code>: the cutoff on the horizontal axis. <code>x</code>= 8</li>
 <li><code>mean</code>: the distribution mean, <span class="math inline">\mu</span> = 8</li>
 <li><code>standard_dev</code>: the distribution SD, <span class="math inline">\sigma</span> = 2</li>
-<li><code>cumulative</code>: <code>TRUE</code> gives the area to the left of <code>x</code>; <code>FALSE</code> gives the curve’s height at <code>x</code>.</li>
+<li><code>cumulative</code>
+<ul>
+<li><code>TRUE</code> gives the shaded area to the <strong>left</strong> of <code>x</code></li>
+<li><code>FALSE</code> gives the curve’s height at <code>x</code>= 8</li>
+</ul></li>
 </ul>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
@@ -1377,19 +1381,48 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 </section>
 <section id="standard-normal-distribution" class="slide level2">
 <h2>Standard Normal distribution</h2>
-<div class="columns" style="align-items: center; gap: 1.5rem; margin-top: 0.5em;">
-<div class="column" style="width: 58%; text-align: center;">
+<div class="columns" style="align-items: flex-start; gap: 1.2rem; margin-top: 0.35em;">
+<div class="column" style="width: 41%; text-align: center;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density from minus four to plus four, centred on zero. The region Z greater than zero is shaded dark blue." width="624"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density from minus four to plus four, centred on zero. The area left of z equals zero is shaded dark blue for cumulative TRUE. A red dot at the peak marks the density height returned by cumulative FALSE." width="624"></p>
 </figure>
 </div>
 </div>
 </div>
-</div><div class="column" style="width: 40%;">
-<p><strong>Notation:</strong> <span class="math inline">Z \sim \mathcal{N}(0,1)</span>. Its mean is <span class="math inline">0</span> and its standard deviation is <span class="math inline">1</span>.</p>
+<div style="font-size: 70%; white-space: nowrap;">
+<p><strong>Notation:</strong> <span class="math inline">Z \sim \mathcal{N}(\overbrace{0}^{\text{Mean}},\overbrace{1}^{\text{SD}})</span></p>
+<p><span class="math inline">\mu = 0</span> ; <span class="math inline">\sigma = 1</span></p>
+</div>
+</div><div class="column" style="width: 55%; min-width: 0;">
+<div style="font-size: 70%;">
+<p><code>=NORM.S.DIST(z, cumulative)</code></p>
+<ul>
+<li><code>z</code>: the cutoff on the horizontal axis. <code>z</code> = 0</li>
+<li><code>cumulative</code>
+<ul>
+<li><code>TRUE</code> gives the shaded area to the <strong>left</strong> of <code>z</code></li>
+<li><code>FALSE</code> gives the curve’s height at <code>z</code> = 0</li>
+</ul></li>
+</ul>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Standard normal is exactly the same as Normal only with <strong>fixed</strong> mean = 0 and SD = 1</li>
+</ul>
+</div>
+</div>
+</div>
 </div></div>
 </section>
 <section id="finding-the-shaded-region" class="slide level2 smaller">
