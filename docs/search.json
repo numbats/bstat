@@ -1155,6 +1155,13 @@
     "text": "Source: Workshop5_Hypothesis_Testing_II.pdf, page 29\nTask 4: Interpretation of Type 1 and II errors\nHypotheses: \nH0: \\mu{} = 855\n \nH1: \\mu{} &lt; 855\n Type I error: A Type 1 error is rejecting H0, when H0 is true. We find sufficient evidence the mean length of steel bars is less than 855mm when in fact it is not. Type II error: A Type II error is retaining the null, when the null is false. We find insufficient evidence the mean length of steel bars is less than 855mm when in fact it is. 29"
   },
   {
+    "objectID": "week4/slides.html#assignment-work-that-can-now-be-completed",
+    "href": "week4/slides.html#assignment-work-that-can-now-be-completed",
+    "title": "Testing business claims",
+    "section": "Assignment work that can now be completed",
+    "text": "Assignment work that can now be completed\nQ1–Q5 complete: the full assignment is teachable.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
+  },
+  {
     "objectID": "week4/index.html",
     "href": "week4/index.html",
     "title": "Week 4 - Testing business claims",
@@ -1510,6 +1517,13 @@
     "title": "Probability and distributions",
     "section": "Exercise: - You try ✏️",
     "text": "Exercise: - You try ✏️\n\n \n\n\n\n\n\n\nImportant\n\n\n\nAnswer the exercise questions in Moodle\n30 mins\nPassword protected\nWork together!"
+  },
+  {
+    "objectID": "week2/slides.html#assignment-work-that-can-now-be-completed",
+    "href": "week2/slides.html#assignment-work-that-can-now-be-completed",
+    "title": "Probability and distributions",
+    "section": "Assignment work that can now be completed",
+    "text": "Assignment work that can now be completed\nQ1–Q2 complete. Q5 remains a draft.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
   },
   {
     "objectID": "week2/index.html",
@@ -2030,6 +2044,13 @@
     "text": "Exercise: Real Estate — You try ✏️\n\n \n\n\n\n\n\n\nImportant\n\n\n\nAnswer the exercise questions in Moodle\n30 mins\nPassword protected\nWork together!"
   },
   {
+    "objectID": "week1/slides.html#assignment-work-that-can-now-be-completed",
+    "href": "week1/slides.html#assignment-work-that-can-now-be-completed",
+    "title": "Describing and visualising data",
+    "section": "Assignment work that can now be completed",
+    "text": "Assignment work that can now be completed\nQ1 complete. Q5 is a draft only.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
+  },
+  {
     "objectID": "week2/reading/index.html",
     "href": "week2/reading/index.html",
     "title": "Week 2 reading and practice: probability and distributions",
@@ -2336,6 +2357,13 @@
     "title": "Sampling and estimation",
     "section": "",
     "text": "Task 7: Recruitment Service _in your own time\nSuppose that, in a survey of 600 employers, 126 indicate that they have used a recruitment service within the past two months to find new staff. b. Discuss the effect on the confidence interval estimate when you increase the level of confidence, assuming all other factors remain unchanged. When the level of confidence increases, the confidence interval becomes wider. This results in a loss of precision, which is the price you have to pay to achieve a higher level of confidence.\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 34"
+  },
+  {
+    "objectID": "week3/slides.html#assignment-work-that-can-now-be-completed",
+    "href": "week3/slides.html#assignment-work-that-can-now-be-completed",
+    "title": "Sampling and estimation",
+    "section": "Assignment work that can now be completed",
+    "text": "Assignment work that can now be completed\nQ1–Q3 complete. Q5 still needs the test result.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
   },
   {
     "objectID": "week4/reading/index.html",
