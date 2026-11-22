@@ -1432,7 +1432,7 @@
     "href": "week2/slides.html#probability-density-function---why",
     "title": "Probability and distributions",
     "section": "Probability density function - why?",
-    "text": "Probability density function - why?\n\n\n\nContinuous values have infinite number of possible values\n\nNot feasible to assign an exact probability for any single exact value e.g. 165.210123 cm tall\n“What is the exact probability a person is 165.210123… cm tall?” 😵‍💫\n\nPDF reframes to:\n\n“What is the probability a person is between 160 cm and 170 cm tall?”\n\n\n\n\n\n\n\n\n\n\n\n\n\nPDFs in this unit:\n\nNormal (\\mathcal{N})\nStandard Normal (Z)\nStudent’s t (next week)"
+    "text": "Probability density function - why?\n\n\n\nContinuous values have infinite number of possible values\n\nNot feasible to assign an exact probability for any single exact value e.g. 165.210123 cm tall\n“What is the exact probability a person is 165.210123… cm tall?” 😵‍💫\n\nPDF reframes to:\n\n“What is the probability a person is between 160 cm and 170 cm tall?”\n\n\n\n\n\n\n\n\n\n\n\n\n\nPDFs in this unit:\n\nNormal (\\mathcal{N})\nStandard Normal (Z)\nStudent’s t (Week 4)"
   },
   {
     "objectID": "week2/slides.html#normal-distribution",
