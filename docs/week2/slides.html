@@ -1322,7 +1322,7 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 <div style="font-size: 60%;">
 <p>PDFs in this unit:</p>
 <ul>
-<li>Normal (<span class="math inline">N</span>)</li>
+<li>Normal (<span class="math inline">\mathcal{N}</span>)</li>
 <li>Standard Normal (<span class="math inline">Z</span>)</li>
 <li>Student’s <span class="math inline">t</span> (next week)</li>
 </ul>
@@ -1331,8 +1331,8 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 </section>
 <section id="normal-distribution" class="slide level2">
 <h2>Normal distribution</h2>
-<div class="columns" style="align-items: center; gap: 1.5rem; margin-top: 0.5em;">
-<div class="column" style="width: 58%; text-align: center;">
+<div class="columns" style="align-items: flex-start; gap: 1.2rem; margin-top: 0.35em;">
+<div class="column" style="width: 41%; text-align: center;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -1342,18 +1342,21 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 </div>
 </div>
 </div>
-</div><div class="column" style="width: 40%;">
-<p><strong>Notation:</strong> <span class="math inline">X \sim \mathcal{N}(\overbrace{\mu}^{\text{Mean}},\overbrace{\sigma}^{\text{SD}})</span><br>
-<span class="math inline">\mu = 8</span> ; <span class="math inline">\sigma = 2</span></p>
-<div style="font-size: 75%;">
-<p><code>=NORM.DIST(x, mean, standard_dev, ...)</code></p>
+<div style="font-size: 70%; white-space: nowrap;">
+<p><strong>Notation:</strong> <span class="math inline">X \sim \mathcal{N}(\overbrace{\mu}^{\text{Mean}},\overbrace{\sigma}^{\text{SD}})</span></p>
+<p><span class="math inline">\mu = 8</span> ; <span class="math inline">\sigma = 2</span></p>
+</div>
+</div><div class="column" style="width: 55%; min-width: 0;">
+<div style="font-size: 70%;">
+<p><code>=NORM.DIST(x, mean, standard_dev, cumulative)</code></p>
 <ul>
-<li><code>x</code>: the value or cutoff on the horizontal axis.</li>
-<li><code>mean</code>: the distribution mean, <span class="math inline">\mu</span>.</li>
-<li><code>standard_dev</code>: the distribution SD, <span class="math inline">\sigma</span>.</li>
+<li><code>x</code>: the cutoff on the horizontal axis. <code>x</code>= 8</li>
+<li><code>mean</code>: the distribution mean, <span class="math inline">\mu</span> = 8</li>
+<li><code>standard_dev</code>: the distribution SD, <span class="math inline">\sigma</span> = 2</li>
+<li><code>cumulative</code>: <code>TRUE</code> gives the area to the left of <code>x</code>; <code>FALSE</code> gives the curve’s height at <code>x</code>.</li>
 </ul>
 </div>
-</div><div class="callout callout-note callout-titled callout-style-default">
+<div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
@@ -1363,14 +1366,14 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 </div>
 <div class="callout-content">
 <ul>
-<li>The shape of this distribution is <strong>symmetrical</strong></li>
+<li>The shape is <strong>symmetrical</strong></li>
 <li>Skewness = 0</li>
 <li><span class="math inline">\mu</span> = median = mode</li>
 </ul>
 </div>
 </div>
 </div>
-</div>
+</div></div>
 </section>
 <section id="standard-normal-distribution" class="slide level2">
 <h2>Standard Normal distribution</h2>
