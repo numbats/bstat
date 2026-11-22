@@ -1439,14 +1439,14 @@
     "href": "week2/slides.html#standard-normal-distribution",
     "title": "Probability and distributions",
     "section": "Standard Normal distribution",
-    "text": "Standard Normal distribution\n\n\n\n\n\n\n\n\n\n\n\n\nNotation: Z \\sim \\mathcal{N}(\\overbrace{0}^{\\text{Mean}},\\overbrace{1}^{\\text{SD}})\n\\mu = 0 ; \\sigma = 1\n\n\n\n=NORM.S.DIST(z, cumulative)\n\nz: the cutoff on the horizontal axis. z = 0\ncumulative\n\nTRUE gives the shaded area to the left of z\nFALSE gives the curve’s height at z = 0\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nStandard normal is exactly the same as Normal only with fixed mean = 0 and SD = 1"
+    "text": "Standard Normal distribution\n\n\n\n\n\n\n\n\n\n\n\n\nNotation: Z \\sim \\mathcal{N}(\\overbrace{0}^{\\text{Mean}},\\overbrace{1}^{\\text{SD}})\n\\mu = 0 ; \\sigma = 1\n\n\n\n=NORM.S.DIST(z, cumulative)\n\nz: the cutoff on the horizontal axis. z = 0\ncumulative\n\nTRUE gives the shaded area to the left of z\nFALSE gives the curve’s height at z = 0\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nAlso known as the** Z distribution** and the values as z-scores\nStandard normal is exactly the same as Normal only with fixed mean = 0 and SD = 1"
   },
   {
     "objectID": "week2/slides.html#finding-the-shaded-region",
     "href": "week2/slides.html#finding-the-shaded-region",
     "title": "Probability and distributions",
     "section": "Finding the shaded region",
-    "text": "Finding the shaded region\nWhich part of the curve do you want?\n\n\n\nTRUE: cumulative area\n\n\n\n\n\n\n\n\n\n=NORM.S.DIST(0,TRUE) gives 0.5.\n\nFALSE: curve height\n\n\n\n\n\n\n\n\n\n=NORM.S.DIST(0,FALSE) gives 0.399, a density height.\n\n\n\n\n\n\n\nTip\n\n\nUse TRUE for an area. For an area to the right, subtract the left area from 1. FALSE gives a density height, not a right-tail area."
+    "text": "Finding the shaded region\nWhich part of the curve do you want?\n\n\nTRUE: cumulative area\n\n\n\n\n\n\n\n\n\n=NORM.S.DIST(0,TRUE) gives 0.5.\n\nRight area: 1 - cumulative area\n\n\n\n\n\n\n\n\n\n=1-NORM.S.DIST(0,TRUE) gives 0.5 for P(Z&gt;0).\n\n\n\n\n\n\n\nTip\n\n\nThe cumulative TRUE result is the area to the left. Subtract it from 1 to get the area to the right. FALSE returns a density height, not a right-tail area."
   },
   {
     "objectID": "week2/slides.html#finding-the-shaded-region-normal---watch-me",
@@ -1481,21 +1481,28 @@
     "href": "week2/slides.html#finding-the-inverse-normal---watch-me",
     "title": "Probability and distributions",
     "section": "Finding the inverse (normal) - Watch me 👀",
-    "text": "Finding the inverse (normal) - Watch me 👀\n\nInverse question: Which value x has 90% of the normal distribution to its left? Here X\\sim\\mathcal{N}(4.75,1.25).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.INV(0.90,4.75,1.25) gives x\\approx6.35."
+    "text": "Finding the inverse (normal) - Watch me 👀\n\nWhich value x has 90% of the normal distribution to its left? Here X\\sim\\mathcal{N}(4.75,1.25).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.INV(0.90,4.75,1.25) gives x\\approx6.35."
   },
   {
     "objectID": "week2/slides.html#finding-the-inverse-z---you-try",
     "href": "week2/slides.html#finding-the-inverse-z---you-try",
     "title": "Probability and distributions",
     "section": "Finding the inverse (Z) - You try ✏️",
-    "text": "Finding the inverse (Z) - You try ✏️\n\n \n\nInverse question: Which z value has 95% of the standard normal distribution to its left?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.S.INV(0.95) gives z\\approx1.645."
+    "text": "Finding the inverse (Z) - You try ✏️\n\n \n\nWhich z score has 5% of the standard normal distribution to its left?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.S.INV(0.95) gives z\\approx1.645."
+  },
+  {
+    "objectID": "week2/slides.html#finding-the-inverse-z---trick-question",
+    "href": "week2/slides.html#finding-the-inverse-z---trick-question",
+    "title": "Probability and distributions",
+    "section": "Finding the inverse (Z) - Trick question 🥸",
+    "text": "Finding the inverse (Z) - Trick question 🥸\nWhich z score has 95% of the standard normal distribution to its left?"
   },
   {
     "objectID": "week2/slides.html#pdf-recap",
     "href": "week2/slides.html#pdf-recap",
     "title": "Probability and distributions",
     "section": "PDF: Recap",
-    "text": "PDF: Recap\n\nA PDF shows how probability is spread across numerical values; area under the full curve is 1.\nNORM.DIST uses a chosen mean and SD; NORM.S.DIST uses mean 0 and SD 1.\nWith TRUE, Excel returns the area to the left. Subtract from 1 for a right tail; subtract two cumulative areas for a region between cutoffs.\nWith FALSE, Excel returns a density height, not an area.\nNORM.INV and NORM.S.INV turn a left-area probability into a cutoff value."
+    "text": "PDF: Recap\n\n\n\nA PDF shows how probability is spread across numerical values; area under the full curve is 1.\nNORM.DIST uses a chosen mean and SD; NORM.S.DIST uses mean 0 and SD 1.\nWith TRUE, Excel returns the area to the left.\nSubtract from 1 for a right tail area.\nSubtract two cumulative areas for a region between cutoffs.\nNORM.INV and NORM.S.INV turn a left-area probability into a cutoff value.\n\n\nNormal — mean 8, SD 2\n\n\n\n\n\n\n\n\n\nStandard normal — mean 0, SD 1"
   },
   {
     "objectID": "week2/slides.html#exercise---you-try",

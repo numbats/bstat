@@ -1418,6 +1418,7 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 </div>
 <div class="callout-content">
 <ul>
+<li>Also known as the** <span class="math inline">Z</span> distribution** and the values as <strong>z-scores</strong></li>
 <li>Standard normal is exactly the same as Normal only with <strong>fixed</strong> mean = 0 and SD = 1</li>
 </ul>
 </div>
@@ -1428,11 +1429,6 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 <section id="finding-the-shaded-region" class="slide level2 smaller">
 <h2>Finding the shaded region</h2>
 <p><strong>Which part of the curve do you want?</strong></p>
-<!--
-- =NORM.DIST(0,TRUE) - Cumulative area, left of 0
-- =NORM.DIST(0,FALSE) - Right side of 0
-- Plots showing true or false, in columns
--->
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong><code>TRUE</code>: cumulative area</strong></p>
@@ -1447,17 +1443,17 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 </div>
 <p><code>=NORM.S.DIST(0,TRUE)</code> gives <strong>0.5</strong>.</p>
 </div><div class="column" style="width:50%;">
-<p><strong><code>FALSE</code>: curve height</strong></p>
+<p><strong>Right area: <code>1 -</code> cumulative area</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal curve with a point at zero marking the density height, approximately 0.399." width="412"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal curve with the area to the right of zero shaded, representing one minus the cumulative left area." width="412"></p>
 </figure>
 </div>
 </div>
 </div>
-<p><code>=NORM.S.DIST(0,FALSE)</code> gives <strong>0.399</strong>, a density height.</p>
+<p><code>=1-NORM.S.DIST(0,TRUE)</code> gives <strong>0.5</strong> for <span class="math inline">P(Z&gt;0)</span>.</p>
 </div></div>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -1468,7 +1464,7 @@ X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu, \sigma}_{\text{f
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p>Use <code>TRUE</code> for an <strong>area</strong>. For an area to the <strong>right</strong>, subtract the left area from 1. <code>FALSE</code> gives a <strong>density height</strong>, not a right-tail area.</p>
+<p>The cumulative <code>TRUE</code> result is the area to the <strong>left</strong>. Subtract it from 1 to get the area to the <strong>right</strong>. <code>FALSE</code> returns a density height, not a right-tail area.</p>
 </div>
 </div>
 </div>
@@ -1591,7 +1587,7 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 - =NORM.INV
 - Make plot no x axis, but shaded in different proporotions and we are finding the x value 
 -->
-<p><strong>Inverse question:</strong> Which value <span class="math inline">x</span> has <strong>90%</strong> of the normal distribution to its left? Here <span class="math inline">X\sim\mathcal{N}(4.75,1.25)</span>.</p>
+<p>Which value <span class="math inline">x</span> has <strong>90%</strong> of the normal distribution to its left? Here <span class="math inline">X\sim\mathcal{N}(4.75,1.25)</span>.</p>
 <div style="text-align: center;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -1625,7 +1621,7 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 - =NORM.S.INV
 - Make plots no x axis, but shaded in different proporotions and we are finding the x value 
 -->
-<p><strong>Inverse question:</strong> Which <span class="math inline">z</span> value has <strong>95%</strong> of the standard normal distribution to its left?</p>
+<p>Which <span class="math inline">z</span> score has <strong>5%</strong> of the standard normal distribution to its left?</p>
 <div style="text-align: center;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -1651,15 +1647,44 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 </div>
 </div>
 </section>
+<section id="finding-the-inverse-z---trick-question" class="slide level2 smaller">
+<h2>Finding the inverse (Z) - Trick question 🥸</h2>
+<p>Which <span class="math inline">z</span> score has <strong>95%</strong> of the standard normal distribution to its left?</p>
+</section>
 <section id="pdf-recap" class="slide level2">
 <h2>PDF: Recap</h2>
+<div class="columns" style="align-items: flex-start; gap: 1.2rem; margin-top: 0.4em;">
+<div class="column" style="width: 48%; font-size: 72%;">
 <ul>
 <li>A PDF shows how probability is spread across numerical values; <strong>area</strong> under the full curve is 1.</li>
 <li><code>NORM.DIST</code> uses a chosen mean and SD; <code>NORM.S.DIST</code> uses mean 0 and SD 1.</li>
-<li>With <code>TRUE</code>, Excel returns the <strong>area to the left</strong>. Subtract from 1 for a right tail; subtract two cumulative areas for a region between cutoffs.</li>
-<li>With <code>FALSE</code>, Excel returns a <strong>density height</strong>, not an area.</li>
+<li>With <code>TRUE</code>, Excel returns the <strong>area to the left</strong>.</li>
+<li>Subtract from 1 for a <strong>right tail area</strong>.</li>
+<li>Subtract <strong>two cumulative areas</strong> for a region between cutoffs.</li>
 <li><code>NORM.INV</code> and <code>NORM.S.INV</code> turn a <strong>left-area probability</strong> into a cutoff value.</li>
 </ul>
+</div><div class="column" style="width: 50%; text-align: center; font-size: 75%;">
+<p><strong>Normal — mean 8, SD 2</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-20-1.png" class="quarto-figure quarto-figure-center" style="width:95.0%" alt="Normal density curve centred at 8 with standard deviation 2."></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Standard normal — mean 0, SD 1</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-21-1.png" class="quarto-figure quarto-figure-center" style="width:95.0%" alt="Standard normal density curve centred at zero with standard deviation one."></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
 </section>
 <section id="exercise---you-try" class="slide level2">
 <h2>Exercise: - You try ✏️</h2>
