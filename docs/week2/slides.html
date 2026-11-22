@@ -1621,13 +1621,13 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 - =NORM.S.INV
 - Make plots no x axis, but shaded in different proporotions and we are finding the x value 
 -->
-<p>Which <span class="math inline">z</span> score has <strong>5%</strong> of the standard normal distribution to its left?</p>
+<p>Which <span class="math inline">z</span> score has <strong>95%</strong> of the standard normal distribution to its left?</p>
 <div style="text-align: center;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-19-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density with 95 percent shaded to the left of an unknown cutoff z and 5 percent to the right; no x axis is shown." width="768"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-19-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density with 95 percent shaded to the left of an unknown positive cutoff z and 5 percent to the right; no x axis is shown." width="768"></p>
 </figure>
 </div>
 </div>
@@ -1649,7 +1649,32 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 </section>
 <section id="finding-the-inverse-z---trick-question" class="slide level2 smaller">
 <h2>Finding the inverse (Z) - Trick question 🥸</h2>
-<p>Which <span class="math inline">z</span> score has <strong>95%</strong> of the standard normal distribution to its left?</p>
+<p>Which <span class="math inline">z</span> score has <strong>5%</strong> of the standard normal distribution to its left?</p>
+<div style="text-align: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-20-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density with 5 percent shaded in the left tail of an unknown negative cutoff z and 95 percent to the right; no x axis is shown." width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Excel:</strong> <code>=NORM.S.INV(1-0.95)</code> gives <strong><span class="math inline">z\approx-1.645</span></strong>.</p>
+<p>This is the mirror image of the 5% left-tail cutoff: the magnitude is the same, but the sign is negative.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="pdf-recap" class="slide level2">
 <h2>PDF: Recap</h2>
@@ -1669,7 +1694,7 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-20-1.png" class="quarto-figure quarto-figure-center" style="width:95.0%" alt="Normal density curve centred at 8 with standard deviation 2."></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-21-1.png" class="quarto-figure quarto-figure-center" style="width:95.0%" alt="Normal density curve centred at 8 with standard deviation 2."></p>
 </figure>
 </div>
 </div>
@@ -1679,7 +1704,7 @@ P(Z&gt;0)=1-P(Z\leq 0)=0.5
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-21-1.png" class="quarto-figure quarto-figure-center" style="width:95.0%" alt="Standard normal density curve centred at zero with standard deviation one."></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-22-1.png" class="quarto-figure quarto-figure-center" style="width:95.0%" alt="Standard normal density curve centred at zero with standard deviation one."></p>
 </figure>
 </div>
 </div>

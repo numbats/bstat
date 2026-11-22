@@ -1488,14 +1488,14 @@
     "href": "week2/slides.html#finding-the-inverse-z---you-try",
     "title": "Probability and distributions",
     "section": "Finding the inverse (Z) - You try ✏️",
-    "text": "Finding the inverse (Z) - You try ✏️\n\n \n\nWhich z score has 5% of the standard normal distribution to its left?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.S.INV(0.95) gives z\\approx1.645."
+    "text": "Finding the inverse (Z) - You try ✏️\n\n \n\nWhich z score has 95% of the standard normal distribution to its left?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.S.INV(0.95) gives z\\approx1.645."
   },
   {
     "objectID": "week2/slides.html#finding-the-inverse-z---trick-question",
     "href": "week2/slides.html#finding-the-inverse-z---trick-question",
     "title": "Probability and distributions",
     "section": "Finding the inverse (Z) - Trick question 🥸",
-    "text": "Finding the inverse (Z) - Trick question 🥸\nWhich z score has 95% of the standard normal distribution to its left?"
+    "text": "Finding the inverse (Z) - Trick question 🥸\nWhich z score has 5% of the standard normal distribution to its left?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.S.INV(1-0.95) gives z\\approx-1.645.\nThis is the mirror image of the 5% left-tail cutoff: the magnitude is the same, but the sign is negative."
   },
   {
     "objectID": "week2/slides.html#pdf-recap",
