@@ -184,23 +184,28 @@
 - In the third tab, I want the last simulation and it's 95% CI. I have n as an input as a slider bar, and mean and SD as well?
 
 -->
-<ul>
-<li>Remove Input box of Number of smaples to draw</li>
-<li>Input numerical boxes for Population mean and SD</li>
-<li>Remove text “Illustrative Australian prices”…</li>
-<li>Y axis, should be histogram count not density for tab 1</li>
-<li>Remove footer: “Bars: latest sample prices”</li>
-<li>Tabset first and inputs under it.</li>
-<li>Tab set remove the numeric numbering.</li>
-<li>Tab 2, rather than blue bars for simulated means, I want the normal distribution using the sample mean and SD plotted as a density plot.</li>
-<li>Tab 2, remove the y axis</li>
-<li>Tab 2, change legend label for red, to population distribution, blue to sample distribution</li>
-<li>Tab 3, simulate data can stretch beyond the axis, change the x axis so it can the extend or shorten dynamically.</li>
-<li>Tab 3, Move the labels to the right corner of the plot</li>
-<li>Fit all in one slide and not use scrollable if you can. You can use a sidebar for inputs if neccessary</li>
-</ul>
+<!-- App revision brief
+- Use bslibs for cards and formatting 
+- Remove Input box of Number of smaples to draw
+- Input numerical boxes for Population mean and SD
+- Remove text "Illustrative Australian prices"...
+- Y axis, should be histogram count not density for tab 1 
+- Remove footer: "Bars: latest sample prices"
+- Tabset first and inputs under it. 
+- Tab set remove the numeric numbering. 
+- Tab 2, rather than blue bars for simulated means, I want the normal distribution using the sample mean and SD plotted as a density plot. 
+- Tab 2, remove the y axis
+- Tab 2, change legend label for red, to population distribution, blue to sample distribution
+- Tab 3, simulate data can stretch beyond the axis, change the x axis so it can the extend or shorten dynamically. 
+- Tab 3, Move the labels to the right corner of the plot
+- Fit all in one slide and not use scrollable if you can. You can use a sidebar for inputs if neccessary
+-->
+<!-- Further app revisions
+- Can we increase the size of the plot more? When I am full screen, there is a lot of negative space below the plot
+- I want to be able to hold each draw in memory so we can plot in tab 2, each successive sampling distributions and each successive CIs in tab 3
+-->
 <div class="boba-live" data-boba-tab="sample">
-<iframe id="boba-simulator" src="../apps/boba/site/index.html" title="Boba price sampling simulator" style="width:100%;height:550px;border:0;">
+<iframe id="boba-simulator" src="../apps/boba/site/index.html" title="Boba price sampling simulator" style="width:100%;height:610px;border:0;">
 </iframe>
 </div>
 <div class="boba-print">
@@ -234,7 +239,7 @@ window.addEventListener("load", () => {
 });
 </script>
 <style>
-.boba-live {height:550px;}
+.boba-live {height:610px;}
 .boba-print {display:none;}
 .print-pdf .boba-live {display:none;}
 .print-pdf .boba-print {display:block;}

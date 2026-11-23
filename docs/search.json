@@ -1705,7 +1705,7 @@
     "href": "week1/slides.html#todays-roadmap",
     "title": "Describing and visualising data",
     "section": "Today’s roadmap",
-    "text": "Today’s roadmap\n\nUnit overview\n\nAssessments\nAI and tips on how to thrive\nHow workshops will run\n\nYour Excel toolbelt\n10 MINUTE BREAK\nTaxonomy of statistics\nData viz\nIn-class exercise"
+    "text": "Today’s roadmap\n\nUnit overview\n\nAssessments\nAI and tips on how to thrive\nHow workshops will run\n\nYour Excel toolbelt\nTaxonomy of statistics\n10 MINUTE BREAK\nStatistical lingo\nData viz\nIn-class exercise"
   },
   {
     "objectID": "week1/slides.html#unit-learning-outcomes",
@@ -1754,7 +1754,7 @@
     "href": "week1/slides.html#lets-get-your-set-up-with-excel",
     "title": "Describing and visualising data",
     "section": "Let’s get your set up with Excel",
-    "text": "Let’s get your set up with Excel\nAccess Microsoft 365 FREE!\n\nGo to Microsoft Online, enter your Monash email address and select Next.\nEnter your Monash account details into the Monash login page.\nYou’ll be redirected to Microsoft Office Online.\nIn the top-right corner, click Install apps.\nSelect Microsoft 365 apps from the drop-down menu.\nInstall Office on your device, though we only need Excel only"
+    "text": "Let’s get your set up with Excel\n\n \nAccess Microsoft 365 FREE!\n\nGo to Microsoft Online, enter your Monash email address and select Next.\nEnter your Monash account details into the Monash login page.\nYou’ll be redirected to Microsoft Office Online.\nIn the top-right corner, click Install apps.\nSelect Microsoft 365 apps from the drop-down menu.\nInstall Office on your device, though we only need Excel only"
   },
   {
     "objectID": "week1/slides.html#toolpak---an-add-on-for-excel",
@@ -2125,7 +2125,7 @@
     "href": "week3/slides.html#chat-time-boba",
     "title": "Sampling and estimation",
     "section": "Chat Time Boba 🧋",
-    "text": "Chat Time Boba 🧋\n\n\nRemove Input box of Number of smaples to draw\nInput numerical boxes for Population mean and SD\nRemove text “Illustrative Australian prices”…\nY axis, should be histogram count not density for tab 1\nRemove footer: “Bars: latest sample prices”\nTabset first and inputs under it.\nTab set remove the numeric numbering.\nTab 2, rather than blue bars for simulated means, I want the normal distribution using the sample mean and SD plotted as a density plot.\nTab 2, remove the y axis\nTab 2, change legend label for red, to population distribution, blue to sample distribution\nTab 3, simulate data can stretch beyond the axis, change the x axis so it can the extend or shorten dynamically.\nTab 3, Move the labels to the right corner of the plot\nFit all in one slide and not use scrollable if you can. You can use a sidebar for inputs if neccessary\n\n\n\n\n\n\nBoba sampling simulator — interactive in the HTML slides.\nSimulate samples of n cups from X \\sim \\mathcal{N}(8, 1.2) (AUD; SD = $1.20). Compare individual prices, repeated sample means and a 95% confidence interval.\n\nSample mean: \\bar{x}; sample SD: s; estimated SE: s / \\sqrt{n}.\nTheoretical sampling distribution: \\bar{X} \\sim \\mathcal{N}(8, 1.2 / \\sqrt{n}).\n95% confidence interval: \\bar{x} \\pm t_{0.975,n-1} s / \\sqrt{n}.\n\nPrices are illustrative teaching assumptions."
+    "text": "Chat Time Boba 🧋\n\n\n\n\n\n\n\n\nBoba sampling simulator — interactive in the HTML slides.\nSimulate samples of n cups from X \\sim \\mathcal{N}(8, 1.2) (AUD; SD = $1.20). Compare individual prices, repeated sample means and a 95% confidence interval.\n\nSample mean: \\bar{x}; sample SD: s; estimated SE: s / \\sqrt{n}.\nTheoretical sampling distribution: \\bar{X} \\sim \\mathcal{N}(8, 1.2 / \\sqrt{n}).\n95% confidence interval: \\bar{x} \\pm t_{0.975,n-1} s / \\sqrt{n}.\n\nPrices are illustrative teaching assumptions."
   },
   {
     "objectID": "week3/slides.html#source-page-002",
