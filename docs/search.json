@@ -2030,6 +2030,13 @@
     "text": "What chart type?\n\n\n\n\n\n\n\n\nflowchart TB\n  categorical[\"Nominal & ordinal data\"] --- bar_cat[\"Bar chart\"]\n  categorical --- pie[\"Pie chart\"]\n\n\n\n\n\n\n\nBar chart: compare categories, especially ordered categories.\nPie chart: show portions of a whole."
   },
   {
+    "objectID": "week1/slides.html#what-chart-type-2",
+    "href": "week1/slides.html#what-chart-type-2",
+    "title": "Describing and visualising data",
+    "section": "What chart type?",
+    "text": "What chart type?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nflowchart TB\n  numerical[\"Numerical data\"] --- discrete[\"Discrete data\"]\n  numerical --- continuous[\"Continuous data\"]\n  discrete --- bar_num[\"Bar chart\"]\n  continuous --- histogram[\"Histogram\"]\n  continuous --- box[\"Box plot\"]\n\n\n\n\n\n\n\nBar chart, histogram or box plot: show a distribution."
+  },
+  {
     "objectID": "week1/slides.html#plot-frequency-table-as-a-histogram---watch-me",
     "href": "week1/slides.html#plot-frequency-table-as-a-histogram---watch-me",
     "title": "Describing and visualising data",
