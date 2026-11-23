@@ -1677,35 +1677,35 @@
     "href": "week1/slides.html#hello-im-fonti",
     "title": "Describing and visualising data",
     "section": "Hello! I’m Fonti 👋",
-    "text": "Hello! I’m Fonti 👋\n\n\n\nYour Chief Examiner! (CE)\nfonti.kar@monash.edu\nBSc, MRes, PhD\nOpen-source software engineer (UNSW)\nBiodiversity Data Analyst (CSIRO)\nAnalytics Lead at non-profit\nAustralian Grains Industry (ANU)\n\n\n\n\n\nFonti Kar"
+    "text": "Hello! I’m Fonti 👋\n\n\nYour Chief Examiner! (CE)\n\nBSc, MRes, PhD\n\nIn a previous life…\n\nAustralian Grains Industry (ANU)\nOpen-source software engineer (UNSW)\nAnalytics Lead at non-profit\nBiodiversity Data Analyst (CSIRO)\n\n\n\n\nI like crunching data and programming"
   },
   {
     "objectID": "week1/slides.html#it-takes-a-village",
     "href": "week1/slides.html#it-takes-a-village",
     "title": "Describing and visualising data",
     "section": "It takes a village…",
-    "text": "It takes a village…\nCourse content:\n\n\n\n\n\nCharanjit Kaur\n\n\n\n\n\n\nAlyssa Hu\n\n\n\n\n\n\nNithya Tharmaseelan\n\n\n\n\n\n\nZhansulu Baikenova"
+    "text": "It takes a village…\nCourse content:\n\n\n\n\n\nCharanjit Kaur\n\n\n\n\n\n\nAlyssa Hu\n\n\n\n\n\n\nNithya Tharmaseelan\n\n\n\n\n\n\nZhansulu Baikenova\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nWhat is your role at Monash Uni? (PhD student/Postdoc/Teaching Fellow/Lecturer)\nWhat is one tip for our students to doing well in this unit?"
   },
   {
     "objectID": "week1/slides.html#it-takes-a-village-1",
     "href": "week1/slides.html#it-takes-a-village-1",
     "title": "Describing and visualising data",
     "section": "It takes a village…",
-    "text": "It takes a village…\nOn the ground:\n\n\n\n\n\nSusama Mahnaz\n\n\n\n\n\n\nHannah Comiskey\n\n\n\n\n\n\nLu Wang\n\n\n\n\nAS\n\nAditya Sharma\n\n\n\n\nZheng Fan"
+    "text": "It takes a village…\nOn the ground:\n\n\n\n\n\nSusama Mahnaz\n\n\n\n\n\n\nHannah Comiskey\n\n\n\n\n\n\nLu Wang\n\n\n\n\nAS\n\nAditya Sharma\n\n\n\n\nZheng Fan\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nWhat is your role at Monash Uni? (PhD student/Postdoc/Teaching Fellow/Lecturer)\nWhat is one tip for our students to doing well in this unit?"
   },
   {
     "objectID": "week1/slides.html#now-your-turn",
     "href": "week1/slides.html#now-your-turn",
     "title": "Describing and visualising data",
-    "section": "Now, your turn!",
-    "text": "Now, your turn!\n\n \n\nIntroduce yourself to your neighbours\nSign into ed-ie.com via on your device (phone or laptop)\nHow to use ed-ie\n\n\n\n\n\n\n\ned-ie.com\n\n\nhttps://www.ed-ie.com/spaces/bstat/week1\n\n“What do you want want to get out of this unit?”"
+    "section": "Now, your turn! ✏️",
+    "text": "Now, your turn! ✏️\n\n \n\nIntroduce yourself to your neighbours\nSign into ed-ie.com via on your device (phone or laptop)\nHow to use ed-ie\n\n\n\n\n\n\n\ned-ie.com\n\n\nhttps://www.ed-ie.com/spaces/bstat/week1 - What course are you taking? - What motivated you to complete a summer unit? - What do you want want to get out of this unit?"
   },
   {
     "objectID": "week1/slides.html#todays-roadmap",
     "href": "week1/slides.html#todays-roadmap",
     "title": "Describing and visualising data",
     "section": "Today’s roadmap",
-    "text": "Today’s roadmap\n\nUnit overview\n\nAssessments\nAI and tips on how to thrive\nHow workshops will run\n\nYour Excel toolbelt\nTaxonomy of statistics\n10 MINUTE BREAK\nStatistical lingo\nData viz\nIn-class exercise"
+    "text": "Today’s roadmap\n\nUnit overview\n\nAssessments\nAI and tips on how to thrive\nHow workshops will run\n\nYour Excel toolbelt\nTaxonomy of statistics\n10 MINUTE BREAK\nStatistical lingo\nData viz whiz\nIn-class exercise"
   },
   {
     "objectID": "week1/slides.html#unit-learning-outcomes",
@@ -1726,7 +1726,7 @@
     "href": "week1/slides.html#the-ai-elephant-in-the-room",
     "title": "Describing and visualising data",
     "section": "The (AI) elephant in the room",
-    "text": "The (AI) elephant in the room\n\nGenAI\nMonash policy on AI usage\nSkipping to the end is n\nMy priority: I want to see you win (but I need you to try as well)\n\n\nYour education is in your hands"
+    "text": "The (AI) elephant in the room\n\nGenAI\nMonash policy on AI usage\nSkipping to the end is kinda boring1\nMy priority: I want to see you win (but I need you to try as well)\n\n\nYour education is in your hands\n\nMalaysian Comedian Ronny Chieng’s Harvard Speech on AI 🤬"
   },
   {
     "objectID": "week1/slides.html#how-to-thrive-with-ai",
@@ -1838,14 +1838,14 @@
     "href": "week1/slides.html#types-of-variables",
     "title": "Describing and visualising data",
     "section": "Types of Variables",
-    "text": "Types of Variables\n\n\nCategorical\n\nQualitative (non-numerical) data organised in groups\n\nNominal, no natural order\n\ne.g. cat breeds, provinces,\n\nOrdinal, meaning ordering\n\ne.g. education level, poor/average/great ratings\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef categorical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class B,D,E categorical;"
+    "text": "Types of Variables\n\n\nCategorical\n\nQualitative (non-numerical) data organised in groups\n\nNominal, no natural order\n\ne.g. cat breeds, provinces,\n\nOrdinal, meaningful ordering\n\ne.g. education level, poor/average/great ratings\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef categorical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class B,D,E categorical;\n\n\n\n\n\n\n\n\n\n\n\n\ned-ie.com\n\n\n\nGive me an example from of a nominal variable\nGive me an example from of an ordinal variable"
   },
   {
     "objectID": "week1/slides.html#types-of-variables-1",
     "href": "week1/slides.html#types-of-variables-1",
     "title": "Describing and visualising data",
     "section": "Types of Variables",
-    "text": "Types of Variables\n\n\nNumerical\n\nQuantitative data organised in groups\n\nDiscrete, countable\n\ne.g. number of chicken nuggets sold\n\nContinuous, requires a measuring process\n\ne.g. grams of protein, price for stock\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class C,F,G numerical;"
+    "text": "Types of Variables\n\n\nNumerical\n\nQuantitative data organised in groups\n\nDiscrete, countable\n\ne.g. number of chicken nuggets sold\n\nContinuous, requires a measuring process\n\ne.g. grams of protein, price of stock\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class C,F,G numerical;\n\n\n\n\n\n\n\n\n\n\n\n\ned-ie.com\n\n\n\nGive me an example from of a discrete variable\nGive me an example from of an ordinal variable"
   },
   {
     "objectID": "week1/slides.html#talking-about-numerical-data",
