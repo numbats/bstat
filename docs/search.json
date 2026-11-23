@@ -2114,18 +2114,18 @@
     "text": "Recommended reading\nFrom Berenson et al., Basic Business Statistics, Australian 5th edition (printed pages).\n\n\n\n\n\n\n\nBook reference\nTopic\n\n\n\n\nCh. 6, §6.2, pp. 214–228 (recap)\nNormal probabilities\n\n\nCh. 7, §§7.1–7.2, pp. 249–258\nSampling distributions, standard error and the Central Limit Theorem\n\n\nCh. 8, §§8.1–8.2, pp. 280–290\nConfidence intervals for a population mean\n\n\n\nSee reading and practice for recommended exercises and reading notes."
   },
   {
-    "objectID": "week3/slides.html#source-page-001",
-    "href": "week3/slides.html#source-page-001",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "ETX1100/5900 Business Statistics\nWeek 3 Part 1: Sampling Distribution Part 2: Confidence Interval Estimation\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 1\n\nVisual from source page 1."
-  },
-  {
     "objectID": "week3/slides.html#save-these-slides-as-a-pdf",
     "href": "week3/slides.html#save-these-slides-as-a-pdf",
     "title": "Sampling and estimation",
     "section": "Save these slides as a PDF",
     "text": "Save these slides as a PDF\n\nPress E, then Ctrl/Cmd + P and choose Save as PDF.\nOR\nClick ☰ (menu) &gt; Tools &gt; PDF export mode, then Ctrl/Cmd + P and choose Save as PDF."
+  },
+  {
+    "objectID": "week3/slides.html#chat-time-boba",
+    "href": "week3/slides.html#chat-time-boba",
+    "title": "Sampling and estimation",
+    "section": "Chat Time Boba 🧋",
+    "text": "Chat Time Boba 🧋\n\nInteractive app\nI want it to simulate prices for n number of cups of boba with a set mean and SD, use realistic values for Australia wide\nInputs are n as a slide, the mean and SD, the a button to simulate prices n = X number of times\nI want cards of the mean, the SD and SE all of this in the first tab and plot its histogram with its density curve\nthen the second tab, contains the true sampling distrbution and the sampling distributions of every successive simulated n samples.\nIn the third tab, I want the last simulation and it’s 95% CI. I have n as an input as a slider bar, and mean and SD as well?"
   },
   {
     "objectID": "week3/slides.html#source-page-002",
