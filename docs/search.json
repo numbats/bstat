@@ -2125,7 +2125,7 @@
     "href": "week3/slides.html#chat-time-boba",
     "title": "Sampling and estimation",
     "section": "Chat Time Boba 🧋",
-    "text": "Chat Time Boba 🧋\n\nInteractive app\nI want it to simulate prices for n number of cups of boba with a set mean and SD, use realistic values for Australia wide\nInputs are n as a slide, the mean and SD, the a button to simulate prices n = X number of times\nI want cards of the mean, the SD and SE all of this in the first tab and plot its histogram with its density curve\nthen the second tab, contains the true sampling distrbution and the sampling distributions of every successive simulated n samples.\nIn the third tab, I want the last simulation and it’s 95% CI. I have n as an input as a slider bar, and mean and SD as well?"
+    "text": "Chat Time Boba 🧋\n\n\nRemove\n\n\n\n\n\n\nBoba sampling simulator — interactive in the HTML slides.\nSimulate samples of n cups from X \\sim \\mathcal{N}(8, 1.2) (AUD; SD = $1.20). Compare individual prices, repeated sample means and a 95% confidence interval.\n\nSample mean: \\bar{x}; sample SD: s; estimated SE: s / \\sqrt{n}.\nTheoretical sampling distribution: \\bar{X} \\sim \\mathcal{N}(8, 1.2 / \\sqrt{n}).\n95% confidence interval: \\bar{x} \\pm t_{0.975,n-1} s / \\sqrt{n}.\n\nPrices are illustrative teaching assumptions."
   },
   {
     "objectID": "week3/slides.html#source-page-002",

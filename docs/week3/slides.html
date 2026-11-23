@@ -175,14 +175,59 @@
 </section>
 <section id="chat-time-boba" class="slide level2">
 <h2>Chat Time Boba 🧋</h2>
+<!-- Original app brief
+- Interactive app
+- I want it to simulate prices for n number of cups of boba with a set mean and SD, use realistic values for Australia wide
+- Inputs are n as a slide, the mean and SD, the a button to simulate prices n = X number of times
+- I want cards of the mean, the SD and SE all of this in the first tab and plot its histogram with its density curve
+- then the second tab, contains the true sampling distrbution and the sampling distributions of every successive simulated n samples. 
+- In the third tab, I want the last simulation and it's 95% CI. I have n as an input as a slider bar, and mean and SD as well?
+
+-->
 <ul>
-<li>Interactive app</li>
-<li>I want it to simulate prices for n number of cups of boba with a set mean and SD, use realistic values for Australia wide</li>
-<li>Inputs are n as a slide, the mean and SD, the a button to simulate prices n = X number of times</li>
-<li>I want cards of the mean, the SD and SE all of this in the first tab and plot its histogram with its density curve</li>
-<li>then the second tab, contains the true sampling distrbution and the sampling distributions of every successive simulated n samples.</li>
-<li>In the third tab, I want the last simulation and it’s 95% CI. I have n as an input as a slider bar, and mean and SD as well?</li>
+<li>Remove</li>
 </ul>
+<div class="boba-live" data-boba-tab="sample">
+<iframe id="boba-simulator" src="../apps/boba/site/index.html" title="Boba price sampling simulator" style="width:100%;height:550px;border:0;">
+</iframe>
+</div>
+<div class="boba-print">
+<p><strong>Boba sampling simulator</strong> — interactive in the HTML slides.</p>
+<p>Simulate samples of <span class="math inline">n</span> cups from <span class="math inline">X \sim \mathcal{N}(8, 1.2)</span> (AUD; SD = $1.20). Compare individual prices, repeated sample means and a 95% confidence interval.</p>
+<ul>
+<li>Sample mean: <span class="math inline">\bar{x}</span>; sample SD: <span class="math inline">s</span>; estimated SE: <span class="math inline">s / \sqrt{n}</span>.</li>
+<li>Theoretical sampling distribution: <span class="math inline">\bar{X} \sim \mathcal{N}(8, 1.2 / \sqrt{n})</span>.</li>
+<li>95% confidence interval: <span class="math inline">\bar{x} \pm t_{0.975,n-1} s / \sqrt{n}</span>.</li>
+</ul>
+<p>Prices are illustrative teaching assumptions.</p>
+</div>
+<script>
+// One persistent iframe; later slides provide an empty slot and a selected tab.
+window.addEventListener("load", () => {
+  const app = document.getElementById("boba-simulator");
+  if (document.documentElement.classList.contains("print-pdf")) return;
+  document.body.appendChild(app);
+  Object.assign(app.style, {position:"fixed", zIndex:20, display:"none"});
+  const showBoba = () => {
+    const slot = window.Reveal?.getCurrentSlide()?.querySelector("[data-boba-tab]");
+    if (!slot) { app.style.display = "none"; return; }
+    const bounds = slot.getBoundingClientRect();
+    Object.assign(app.style, {display:"block", left:bounds.left+"px", top:bounds.top+"px", width:bounds.width+"px", height:bounds.height+"px"});
+    app.contentWindow.postMessage({bobaTab:slot.dataset.bobaTab}, window.location.origin);
+  };
+  if (window.Reveal) { Reveal.on("slidechanged", showBoba); Reveal.on("resize", showBoba); }
+  app.addEventListener("load", () => setTimeout(showBoba, 1000));
+  window.addEventListener("resize", showBoba);
+  showBoba();
+});
+</script>
+<style>
+.boba-live {height:550px;}
+.boba-print {display:none;}
+.print-pdf .boba-live {display:none;}
+.print-pdf .boba-print {display:block;}
+@media print {#boba-simulator {display:none !important;} .boba-live {display:none;} .boba-print {display:block;}}
+</style>
 </section>
 <section id="source-page-002" class="slide level2">
 <h2></h2>
