@@ -1510,6 +1510,61 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 </ul>
 </div></div>
 </section>
+<section id="what-chart-type-1" class="slide level2 smaller">
+<h2>What chart type?</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+
+<pre class="mermaid mermaid-js">flowchart TB
+  categorical["Nominal &amp; ordinal data"] --- bar_cat["Bar chart"]
+  categorical --- pie["Pie chart"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Bar chart:</strong> compare categories, especially ordered categories.</li>
+<li><strong>Pie chart:</strong> show portions of a whole.</li>
+</ul>
+</div><div class="column" style="width:52%;">
+<!--
+- Use a .r-stack with fragment and .current-visible
+- First plot Insert Students by course barplot
+- Second plot PG and UG proportions
+-->
+<div class="r-stack">
+<div class="fragment current-visible">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-19-1.png" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment current-visible">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-20-1.png" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</section>
 <section id="plot-frequency-table-as-a-histogram---watch-me" class="slide level2 smaller">
 <h2>Plot frequency table as a histogram - Watch me 👀</h2>
 <ol type="1">
