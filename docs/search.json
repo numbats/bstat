@@ -1158,8 +1158,8 @@
     "objectID": "week4/slides.html#assignment-work-that-can-now-be-completed",
     "href": "week4/slides.html#assignment-work-that-can-now-be-completed",
     "title": "Testing business claims",
-    "section": "Assignment work that can now be completed",
-    "text": "Assignment work that can now be completed\nQ1–Q5 complete: the full assignment is teachable.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
+    "section": "Assignment work that can now be completed 🤳",
+    "text": "Assignment work that can now be completed 🤳\n\n\nQ1–Q5 complete: the full assignment is teachable.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
   },
   {
     "objectID": "week4/index.html",
@@ -1522,8 +1522,8 @@
     "objectID": "week2/slides.html#assignment-work-that-can-now-be-completed",
     "href": "week2/slides.html#assignment-work-that-can-now-be-completed",
     "title": "Probability and distributions",
-    "section": "Assignment work that can now be completed",
-    "text": "Assignment work that can now be completed\nQ1–Q2 complete. Q5 remains a draft.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
+    "section": "Assignment work that can now be completed 🤳",
+    "text": "Assignment work that can now be completed 🤳\n\n\nQ1–Q2 complete. Q5 remains a draft.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
   },
   {
     "objectID": "week2/index.html",
@@ -1845,7 +1845,7 @@
     "href": "week1/slides.html#types-of-variables-1",
     "title": "Describing and visualising data",
     "section": "Types of Variables",
-    "text": "Types of Variables\n\n\nNumerical\n\nQuantitative data organised in groups\n\nDiscrete, countable\n\ne.g. number of chicken nuggets sold\n\nContinuous, requires a measuring process\n\ne.g. grams of protein, price of stock\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class C,F,G numerical;\n\n\n\n\n\n\n\n\n\n\n\n\ned-ie.com\n\n\n\nGive me an example from of a discrete variable\nGive me an example from of an ordinal variable"
+    "text": "Types of Variables\n\n\nNumerical\n\nQuantitative data organised in groups\n\nDiscrete, countable\n\ne.g. number of chicken nuggets sold\n\nContinuous, requires a measuring process\n\ne.g. grams of protein, price of stock\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n  Data --&gt; B[Categorical]\n  Data --&gt; C[Numerical]\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C[Numerical] --&gt; F[Discrete]\n  C --&gt; G[Continuous]\n\n  classDef numerical fill:#FFD54F,stroke:#8A6D00,color:#000;\n  class C,F,G numerical;\n\n\n\n\n\n\n\n\n\n\n\n\ned-ie.com\n\n\n\nGive me an example from of a discrete variable\nGive me an example from of an continuous variable"
   },
   {
     "objectID": "week1/slides.html#talking-about-numerical-data",
@@ -1859,7 +1859,7 @@
     "href": "week1/slides.html#central-tendency",
     "title": "Describing and visualising data",
     "section": "Central tendency",
-    "text": "Central tendency\n\nWhat is the typical value like in this data?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n=MODE(...) the most common value\n=MEDIAN(...) the middle value\n=MEAN(...) the average\n\nSum all values and divide by total number of values (n)\n\n\n\n\\bar{x} = \\frac{1}{n} \\sum_{i=1}^{n} x_i"
+    "text": "Central tendency\n\nWhat is the typical value like in this data?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n=MODE(...) the most common value\n=MEDIAN(...) the middle value\n=AVERAGE(...) the average or mean\n\nSum all values and divide by total number of values (n)\n\n\n\n\\bar{x} = \\frac{1}{n} \\sum_{i=1}^{n} x_i"
   },
   {
     "objectID": "week1/slides.html#spread---sample-standard-deviation-s",
@@ -1894,21 +1894,21 @@
     "href": "week1/slides.html#otis-elevator-company---watch-me",
     "title": "Describing and visualising data",
     "section": "Otis Elevator Company - Watch me 👀",
-    "text": "Otis Elevator Company - Watch me 👀\nFor Supplier 1\nUse Excel to calculate measures of:\n\ncentral tendency (MEAN, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)"
+    "text": "Otis Elevator Company - Watch me 👀\nFor Supplier 1\nUse Excel to calculate measures of:\n\ncentral tendency (AVERAGE, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)"
   },
   {
     "objectID": "week1/slides.html#otis-elevator-company---you-try",
     "href": "week1/slides.html#otis-elevator-company---you-try",
     "title": "Describing and visualising data",
     "section": "Otis Elevator Company - You try ✏️",
-    "text": "Otis Elevator Company - You try ✏️\n\n \nFor Supplier 2\nUse Excel to calculate measures of:\n\ncentral tendency (MEAN, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)"
+    "text": "Otis Elevator Company - You try ✏️\n\n \nFor Supplier 2\nUse Excel to calculate measures of:\n\ncentral tendency (AVERAGE, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)"
   },
   {
     "objectID": "week1/slides.html#otis-elevator-company---bring-it-together",
     "href": "week1/slides.html#otis-elevator-company---bring-it-together",
     "title": "Describing and visualising data",
     "section": "Otis Elevator Company - bring it together 🙌",
-    "text": "Otis Elevator Company - bring it together 🙌\nUse Excel to calculate and compare measures of:\n\ncentral tendency (MEAN, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)\n\n\n\n\n\n\n\n\nSolution\n\n\n\nMean and median: 1 inch for both suppliers\nSD and Variance: Supplier 2 &gt; Supplier 1\n\nSupplier 1 preferred: less variation around the mean."
+    "text": "Otis Elevator Company - bring it together 🙌\nUse Excel to calculate and compare measures of:\n\ncentral tendency (AVERAGE, MODE, MEDIAN)\nspread (STDEV.S, VAR.S)\n\n\n\n\n\n\n\n\nSolution\n\n\n\nMean and median: 1 inch for both suppliers\nSD and Variance: Supplier 2 &gt; Supplier 1\n\nSupplier 1 preferred: less variation around the mean."
   },
   {
     "objectID": "week1/slides.html#talking-about-numerical-data-1",
@@ -1929,7 +1929,7 @@
     "href": "week1/slides.html#box-and-whisker-plot-aka.-boxplot",
     "title": "Describing and visualising data",
     "section": "Box and whisker plot (aka. boxplot)",
-    "text": "Box and whisker plot (aka. boxplot)\nShows the distribution or shape of numerical data\n\n\n\n\n\n\n\n\n\n\n\n\n\n25% of data falls below Q1\n75% of data falls below Q3\nInterquartile range (IQR) is the Q3 - Q1\n\nSpread of middle 50% of the data\n\nWhiskers show the min and max values\n\nMax - min = Range of data"
+    "text": "Box and whisker plot (aka. boxplot)\nShows the distribution or shape of numerical data\n\n\n\n\n\n\n\n\n\n\n\n\n\n25% of data falls below Q1\n75% of data falls below Q3\nInterquartile range (IQR) is the Q3 - Q1\n\nSpread of middle 50% of the data\n\nWhiskers show the min and max values\n\nMax - min = Range"
   },
   {
     "objectID": "week1/slides.html#shape-of-data",
@@ -1984,8 +1984,8 @@
     "objectID": "week1/slides.html#real-estate-data",
     "href": "week1/slides.html#real-estate-data",
     "title": "Describing and visualising data",
-    "section": "Real Estate Data",
-    "text": "Real Estate Data\nEach row of the RealEstate worksheet is one property (329 properties).\n\n\n\nColumn\nMeaning\nData type and units\n\n\n\n\nPrice ($000s)\nProperty price\nNumerical, AUD thousands\n\n\nBeds\nNumber of bedrooms\nNumerical, discrete count\n\n\nBaths\nNumber of bathrooms\nNumerical, discrete count\n\n\nCars\nNumber of car spaces\nNumerical, discrete count\n\n\nArea (sqm)\nProperty area\nNumerical, square metres\n\n\nSchoolZone\nIn a school zone\nCategorical, Yes/No\n\n\nAuction\nAuction status\nCategorical, Yes/No\n\n\nNew\nNew property\nCategorical, Yes/No\n\n\nSubdivided\nSubdivided property\nCategorical, Yes/No"
+    "section": "Real Estate Data 🏙️",
+    "text": "Real Estate Data 🏙️\nEach row of the RealEstate worksheet is one property (329 properties).\n\n\n\nColumn\nMeaning\nData type and units\n\n\n\n\nPrice ($000s)\nProperty price\nNumerical, AUD thousands\n\n\nBeds\nNumber of bedrooms\nNumerical, discrete count\n\n\nBaths\nNumber of bathrooms\nNumerical, discrete count\n\n\nCars\nNumber of car spaces\nNumerical, discrete count\n\n\nArea (sqm)\nProperty area\nNumerical, square metres\n\n\nSchoolZone\nIn a school zone\nCategorical, Yes/No\n\n\nAuction\nAuction status\nCategorical, Yes/No\n\n\nNew\nNew property\nCategorical, Yes/No\n\n\nSubdivided\nSubdivided property\nCategorical, Yes/No"
   },
   {
     "objectID": "week1/slides.html#frequency-tables---pivot-table---watch-me",
@@ -2061,8 +2061,8 @@
     "objectID": "week1/slides.html#assignment-work-that-can-now-be-completed",
     "href": "week1/slides.html#assignment-work-that-can-now-be-completed",
     "title": "Describing and visualising data",
-    "section": "Assignment work that can now be completed",
-    "text": "Assignment work that can now be completed\nQ1 complete. Q5 is a draft only.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
+    "section": "Assignment work that can now be completed 🤳",
+    "text": "Assignment work that can now be completed 🤳\n\n\nQ1 complete. Q5 is a draft only.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
   },
   {
     "objectID": "week2/reading/index.html",
@@ -2376,8 +2376,8 @@
     "objectID": "week3/slides.html#assignment-work-that-can-now-be-completed",
     "href": "week3/slides.html#assignment-work-that-can-now-be-completed",
     "title": "Sampling and estimation",
-    "section": "Assignment work that can now be completed",
-    "text": "Assignment work that can now be completed\nQ1–Q3 complete. Q5 still needs the test result.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
+    "section": "Assignment work that can now be completed 🤳",
+    "text": "Assignment work that can now be completed 🤳\n\n\nQ1–Q3 complete. Q5 still needs the test result.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
   },
   {
     "objectID": "week4/reading/index.html",
