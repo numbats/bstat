@@ -1331,7 +1331,7 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <li><code>Select a table or range</code> &gt; highlight the entire of the dataset</li>
 <li><code>Choose where to place Pivot Table</code> &gt; <code>New worksheet</code> &gt; OK</li>
 <li><code>Beds</code> in <strong>Rows</strong>.</li>
-<li>Put <code>Beds</code> in <strong>Values</strong> and set <strong>Summarize Values By &gt; Count</strong> for raw counts.</li>
+<li>Put <code>Beds</code> in <strong>Values</strong> and set <strong>Summarise Values By &gt; Count</strong> for raw counts.</li>
 <li>Put <code>Beds</code> in <strong>Values</strong> again. For this second value field, set <strong>Summarise Values By &gt; Count</strong>, then <strong>Show Values As &gt; % of Grand Total</strong>.</li>
 </ol>
 <p><strong>Note</strong>: Every property has a <code>Beds</code> entry, so <strong>Count of Beds</strong> counts properties.</p>
@@ -1395,11 +1395,12 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <p>Create a Pivot Table of <strong>percentage of properties</strong> in each area band.</p>
 <ol type="1">
 <li>Select the dataset, then choose <strong>Insert &gt; PivotTable &gt; New Worksheet</strong>.</li>
-<li>Put <code>Area (sqm)</code> in <strong>Rows</strong>. Put <code>Beds</code> in <strong>Values</strong> and set <strong>Summarize Values By &gt; Count</strong>; every property has a <code>Beds</code> entry.</li>
+<li>Put <code>Area (sqm)</code> in <strong>Rows</strong>.</li>
 <li>Right-click an area value in the PivotTable and choose <strong>Group</strong>. Set <strong>Starting at: 0</strong>, <strong>Ending at: 1600</strong>, <strong>By: 200</strong> to create 200 sqm bands.</li>
-<li>Open <strong>Value Field Settings</strong> for <code>Count of Beds</code>, then choose <strong>Show Values As. &gt; % of Grand Total</strong>. Format the result as a percentage with one decimal place.</li>
+<li>Put <code>Beds</code> in <strong>Values</strong> and set <strong>Summarize Values By &gt; Count</strong></li>
+<li>Put <code>Beds</code> in <strong>Values</strong> again. For this second value field, set <strong>Summarise Values By &gt; Count</strong>, then <strong>Show Values As &gt; % of Grand Total</strong>.</li>
 </ol>
-<p>For example, <strong>192 of 329 properties</strong> fall in the <strong>600–799 sqm</strong> band, so its frequency percentage is <strong>58.4%</strong>. The Grand Total should be <strong>100%</strong>.</p>
+<p><strong>Note</strong>: Every property has a <code>Beds</code> entry, so <strong>Count of Beds</strong> counts properties.</p>
 </section>
 <section id="relative-frequency-percentage-table-area" class="slide level2 smaller">
 <h2>Relative frequency percentage table (area)</h2>
@@ -1626,7 +1627,7 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <section id="plot-frequency-table-as-a-histogram---watch-me" class="slide level2 smaller">
 <h2>Plot frequency table as a histogram - Watch me 👀</h2>
 <ol type="1">
-<li>Select the <strong>Area band</strong> and <strong>Percentage of properties</strong> columns, excluding <strong>Grand Total</strong>. Use the complete table above if the PivotTable omits the empty band.</li>
+<li>Select the <strong>Area band</strong> and <strong>Percentage of properties</strong> columns, excluding <strong>Grand Total</strong>.</li>
 <li>Choose <strong>Insert &gt; Column</strong>.</li>
 <li>Right-click a bar and choose <strong>Format Data Series</strong>. Set <strong>Gap Width</strong> to <strong>0%</strong> so adjacent area bands touch.</li>
 <li>Check that the horizontal axis shows the 200 sqm bands in order and the vertical axis shows percentages starting at 0%.</li>
