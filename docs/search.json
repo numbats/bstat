@@ -2135,11 +2135,18 @@
     "text": "Save these slides as a PDF\n\nPress E, then Ctrl/Cmd + P and choose Save as PDF.\nOR\nClick ☰ (menu) &gt; Tools &gt; PDF export mode, then Ctrl/Cmd + P and choose Save as PDF."
   },
   {
-    "objectID": "week3/slides.html#chat-time-boba",
-    "href": "week3/slides.html#chat-time-boba",
+    "objectID": "week3/slides.html#todays-roadmap",
+    "href": "week3/slides.html#todays-roadmap",
     "title": "Sampling and estimation",
-    "section": "Chat Time Boba 🧋",
-    "text": "Chat Time Boba 🧋\n\n\n\n\n\n\n\n\nBoba sampling simulator — interactive in the HTML slides.\nSimulate samples of n cups from X \\sim \\mathcal{N}(8, 1.2) (AUD; SD = $1.20). Compare individual prices, repeated sample means and a 95% confidence interval.\n\nSample mean: \\bar{x}; sample SD: s; estimated SE: s / \\sqrt{n}.\nTheoretical sampling distribution: \\bar{X} \\sim \\mathcal{N}(8, 1.2 / \\sqrt{n}).\n95% confidence interval: \\bar{x} \\pm t_{0.975,n-1} s / \\sqrt{n}.\n\nPrices are illustrative teaching assumptions."
+    "section": "Today’s roadmap",
+    "text": "Today’s roadmap\n\nRecap\n\nPopulation and sample\nPDF (N and Z)\n\nSample distribution\n\nBoba sales\n\nSampling variability\n\nSE\n\nSample distribution\n\n\nHow to reduce sampling variability?\n\nIncrease sample size\nCLT\nActivity - Normal PDF known SD\n\nUnknown SD? Mean Student t\n10 MIN BREAK\nHow to we communicate uncertainty?\n\nCI\n\nProportion\n\nBoba membership sign ups\nUse Z distribution"
+  },
+  {
+    "objectID": "week3/slides.html#boba-sales",
+    "href": "week3/slides.html#boba-sales",
+    "title": "Sampling and estimation",
+    "section": "Boba sales 🧋",
+    "text": "Boba sales 🧋\n\n\n\n\n\n\n\n\nBoba sampling simulator — interactive in the HTML slides.\nSimulate samples of n cups from X \\sim \\mathcal{N}(8, 1.2) (AUD; SD = $1.20). Compare individual prices, repeated sample means and a 95% confidence interval.\n\nSample mean: \\bar{x}; sample SD: s; estimated SE: s / \\sqrt{n}.\nTheoretical sampling distribution: \\bar{X} \\sim \\mathcal{N}(8, 1.2 / \\sqrt{n}).\n95% confidence interval: \\bar{x} \\pm t_{0.975,n-1} s / \\sqrt{n}.\n\nPrices are illustrative teaching assumptions."
   },
   {
     "objectID": "week3/slides.html#source-page-002",
