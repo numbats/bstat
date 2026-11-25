@@ -173,7 +173,7 @@
 <p>Click <strong>☰ (menu) &gt; Tools &gt; PDF export mode</strong>, then <strong>Ctrl/Cmd + P</strong> and choose <strong>Save as PDF</strong>.</p>
 </div>
 </section>
-<section id="todays-roadmap" class="slide level2">
+<section id="todays-roadmap" class="slide level2 scrollable">
 <h2>Today’s roadmap</h2>
 <ul>
 <li>Recap
@@ -219,33 +219,130 @@
 </ul>
 </section>
 <section>
-<section id="recap" class="title-slide slide level1 sectiion-slide center">
-<h1>Recap</h1>
+<section id="on-last-episode" class="title-slide slide level1 section-slide center">
+<h1>On last episode…</h1>
 
 </section>
-<section id="population-and-sampling" class="slide level2">
+<section id="population-and-sampling" class="slide level2 smaller">
 <h2>Population and sampling</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><strong>Population</strong></p>
+<ul>
+<li>All members of the group we want to draw a conclusion about.</li>
+</ul>
+<p><img data-src="../week1/figures/diagram/population.png" style="width:50.0%" alt="Diagram of a full population."></p>
+</div><div class="column" style="width:48%;">
+<p><strong>Sample</strong></p>
+<ul>
+<li>A subset of the population used to estimate its characteristics.</li>
+</ul>
+<p><img data-src="../week1/figures/diagram/random-collection.png" style="width:60.0%" alt="Random selection from a population."> <img data-src="../week1/figures/diagram/sample.png" style="width:20.0%" alt="Selected sample."></p>
+</div></div>
+<p><em>Recap: <a href="../week1/slides.html#/data-collection">Week 1, slide 26</a> and <a href="../week1/slides.html#/data-collection-1">slide 27</a>.</em></p>
 </section>
-<section id="spread-ansd-sd" class="slide level2">
-<h2>Spread ansd SD</h2>
+<section id="spread-and-sd" class="slide level2">
+<h2>Spread and SD</h2>
+<blockquote>
+<p>How much do the values vary around the mean?</p>
+</blockquote>
+<p>For sample data, use <code>=STDEV.S(...)</code> to calculate <span class="math inline">s</span>.</p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center" alt="Dot plot of seven values. Grey arrows show deviations from the mean of 16.3; the sample standard deviation is 4.99." width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:30%;">
+<div style="font-size: 70%;">
+<p><span class="math display">
+s = \sqrt{\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}}
+</span></p>
+<ul>
+<li><span class="math inline">x_i</span>: an individual value</li>
+<li><span class="math inline">\bar{x}</span>: sample mean</li>
+<li><span class="math inline">n</span>: number of observations</li>
+<li><span class="math inline">s</span> has the same unit as the data</li>
+</ul>
+</div>
+</div></div>
+<p><em>Recap: <a href="../week1/slides.html#/spread---sample-standard-deviation-s">Week 1, slide 36</a>.</em></p>
 </section>
 <section id="pdf" class="slide level2">
 <h2>PDF</h2>
+<blockquote>
+<p>A <strong>probability density function</strong> describes how probability is distributed over a range of continuous values.</p>
+</blockquote>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><span class="math inline">\mathcal{N}</span> names the <strong>normal family</strong> of distributions.</li>
+<li><span class="math inline">\mu</span> is the population mean; <span class="math inline">\sigma</span> is the population SD.</li>
+</ul>
+<p><span class="math display">
+X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu,\sigma}_{\text{features}})
+</span></p>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center" alt="Normal density curve with the central region within one standard deviation of the mean shaded darker blue." width="432"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The <strong>total area</strong> under the curve is 1.</p>
+</div></div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Recall</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><strong>Population:</strong> all members of the group of interest.</li>
+<li><strong>Mean</strong> <span class="math inline">\mu</span>: the centre; <strong>SD</strong> <span class="math inline">\sigma</span>: the spread.</li>
+</ul>
+</div>
+</div>
+</div>
+<p><em>Recap: <a href="../week2/slides.html#/probability-density-function">Week 2, slide 33</a>.</em></p>
 </section></section>
 <section>
-<section id="sampling-distribution" class="title-slide slide level1 sectiion-slide center">
+<section id="sampling-distribution" class="title-slide slide level1 section-slide center">
 <h1>Sampling distribution</h1>
 
 </section>
+<section id="boba-sales" class="slide level2">
+<h2>Boba sales 🧋</h2>
+<blockquote>
+<p>What is the average price of a cup of boba in our sample?</p>
+</blockquote>
+<p>Ask five people in Melbourne what they paid. Start with <strong>Cups per sample (<span class="math inline">n</span>) = 5</strong>, draw a sample, and compare the five prices with their sample mean <span class="math inline">\bar{x}</span>.</p>
+<div class="boba-live" data-boba-tab="sample" data-boba-mode="intro">
+<iframe id="boba-simulator" src="../apps/boba/site/index.html" title="Boba price sampling simulator" style="width:100%;height:100%;border:0;">
+</iframe>
+</div>
+<div class="boba-print">
+<p><strong>Illustrative sample of five boba prices (AUD):</strong> $6.50, $8.00, $7.50, $9.00, $8.00.</p>
+<p><span class="math display">
+\bar{x}=\frac{6.50+8.00+7.50+9.00+8.00}{5}=\$7.80
+</span></p>
+<p>The interactive deck lets us draw another sample and see whether its mean changes. These prices are teaching assumptions.</p>
+</div>
+</section>
 <section id="sampling-variability" class="slide level2">
 <h2>Sampling variability</h2>
-<ul>
-<li>Each time we draw a sample, it’s different</li>
-<li>Dartboard analogy</li>
-<li>SE is a statistic that measures how much a sample estimate (such as a sample mean) is expected to vary from the true population value across repeated samples</li>
-<li>SE formula</li>
-<li>Boba tab 2</li>
-</ul>
+<p>Each time we draw a sample, it’s different - Dartboard analogy - SE is a statistic that measures how much a sample mean is expected to vary from the true population value across repeated samples - SE formula - Boba tab 2</p>
 </section>
 <section id="sampling-distribution-1" class="slide level2">
 <h2>Sampling distribution</h2>
@@ -271,6 +368,9 @@
 <h2>What if my population is skewed?</h2>
 <ul>
 <li>CLT</li>
+<li>Remake app but skewed distribution</li>
+<li>Draw samples, get means</li>
+<li></li>
 </ul>
 </section>
 <section id="boba-prices" class="slide level2">
@@ -279,9 +379,8 @@
 - One more tab, the new tab 2, of sample means
 - Vertical bar plot showing the each successive mean
 -->
-<div class="boba-live" data-boba-tab="sample">
-<iframe id="boba-simulator" src="../apps/boba/site/index.html" title="Boba price sampling simulator" style="width:100%;height:610px;border:0;">
-</iframe>
+<div class="boba-live" data-boba-tab="sample" data-boba-mode="full">
+
 </div>
 <div class="boba-print">
 <p><strong>Boba sampling simulator</strong> — interactive in the HTML slides.</p>
@@ -305,7 +404,7 @@ window.addEventListener("load", () => {
     if (!slot) { app.style.display = "none"; return; }
     const bounds = slot.getBoundingClientRect();
     Object.assign(app.style, {display:"block", left:bounds.left+"px", top:bounds.top+"px", width:bounds.width+"px", height:bounds.height+"px"});
-    app.contentWindow.postMessage({bobaTab:slot.dataset.bobaTab}, window.location.origin);
+    app.contentWindow.postMessage({bobaTab:slot.dataset.bobaTab, bobaMode:slot.dataset.bobaMode || "full"}, window.location.origin);
   };
   if (window.Reveal) { Reveal.on("slidechanged", showBoba); Reveal.on("resize", showBoba); }
   app.addEventListener("load", () => setTimeout(showBoba, 1000));
@@ -314,7 +413,8 @@ window.addEventListener("load", () => {
 });
 </script>
 <style>
-.boba-live {height:610px;}
+.boba-live {height:480px;}
+.boba-live:empty {height:610px;}
 .boba-print {display:none;}
 .print-pdf .boba-live {display:none;}
 .print-pdf .boba-print {display:block;}
@@ -1326,6 +1426,44 @@ np, n(1-p) \geq{}5
     // Move progress bar
     menu_div = document.querySelector(".progress");
     document.querySelector(".slides").appendChild(menu_div);
+    </script>
+
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">

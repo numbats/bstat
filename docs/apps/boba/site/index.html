@@ -26,4 +26,4 @@
     
   </body>
 </html>
-<script>let bobaTab="sample";window.addEventListener("message", e=>{if(e.origin!==location.origin)return;if(e.data?.bobaTab)bobaTab=e.data.bobaTab;if(e.data?.bobaTab||e.data?.bobaReady){document.querySelector("iframe")?.contentWindow.postMessage({bobaTab},location.origin);}});</script>
+<script>let bobaTab="sample",bobaMode="full";window.addEventListener("message",e=>{if(e.origin!==location.origin)return;if(e.data?.bobaTab)bobaTab=e.data.bobaTab;if(e.data?.bobaMode)bobaMode=e.data.bobaMode;if(e.data?.bobaTab||e.data?.bobaMode||e.data?.bobaReady){document.querySelector("iframe")?.contentWindow.postMessage({bobaTab,bobaMode},location.origin);}});</script>
