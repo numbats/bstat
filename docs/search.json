@@ -2142,11 +2142,11 @@
     "text": "Today’s roadmap\n\nRecap\n\nPopulation and sample\nPDF (N and Z)\n\nSample distribution\n\nBoba sales\n\nSampling variability\n\nSE\n\nSample distribution\n\n\nHow to reduce sampling variability?\n\nIncrease sample size\nCLT\nActivity - Normal PDF known SD\n\nHow to we communicate uncertainty?\n\nCI\n\n10 MIN BREAK\nDo you know the population SD?\n\nYes use Z\nNo use t\n\nProportion\n\nBoba membership sign ups\nFormula\nUse Z distribution\nActivity\n\nExercise"
   },
   {
-    "objectID": "week3/slides.html#boba-sales",
-    "href": "week3/slides.html#boba-sales",
+    "objectID": "week3/slides.html#boba-prices",
+    "href": "week3/slides.html#boba-prices",
     "title": "Sampling and estimation",
-    "section": "Boba sales 🧋",
-    "text": "Boba sales 🧋\n\n\n\n\n\n\n\n\nBoba sampling simulator — interactive in the HTML slides.\nSimulate samples of n cups from X \\sim \\mathcal{N}(8, 1.2) (AUD; SD = $1.20). Compare individual prices, repeated sample means and a 95% confidence interval.\n\nSample mean: \\bar{x}; sample SD: s; estimated SE: s / \\sqrt{n}.\nTheoretical sampling distribution: \\bar{X} \\sim \\mathcal{N}(8, 1.2 / \\sqrt{n}).\n95% confidence interval: \\bar{x} \\pm t_{0.975,n-1} s / \\sqrt{n}.\n\nPrices are illustrative teaching assumptions."
+    "section": "Boba prices 🧋",
+    "text": "Boba prices 🧋\n\n\n\n\n\n\n\n\nBoba sampling simulator — interactive in the HTML slides.\nSimulate samples of n cups from X \\sim \\mathcal{N}(8, 1.2) (AUD; SD = $1.20). Compare individual prices, repeated sample means and a 95% confidence interval.\n\nSample mean: \\bar{x}; sample SD: s; estimated SE: s / \\sqrt{n}.\nTheoretical sampling distribution: \\bar{X} \\sim \\mathcal{N}(8, 1.2 / \\sqrt{n}).\n95% confidence interval: \\bar{x} \\pm t_{0.975,n-1} s / \\sqrt{n}.\n\nPrices are illustrative teaching assumptions."
   },
   {
     "objectID": "week3/slides.html#source-page-002",
