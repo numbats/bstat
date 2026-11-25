@@ -2139,14 +2139,63 @@
     "href": "week3/slides.html#todays-roadmap",
     "title": "Sampling and estimation",
     "section": "Today’s roadmap",
-    "text": "Today’s roadmap\n\nRecap\n\nPopulation and sample\nPDF (N and Z)\n\nSample distribution\n\nBoba sales\n\nSampling variability\n\nSE\n\nSample distribution\n\n\nHow to reduce sampling variability?\n\nIncrease sample size\nCLT\nActivity - Normal PDF known SD\n\nHow to we communicate uncertainty?\n\nCI\n\n10 MIN BREAK\nDo you know the population SD?\n\nYes use Z\nNo use t\n\nProportion\n\nBoba membership sign ups\nFormula\nUse Z distribution\nActivity\n\nExercise"
+    "text": "Today’s roadmap\n\nRecap\n\nPopulation and sample\nPDF (N and Z)\n\nSample distribution\n\nBoba prices\n\nSampling variability\n\nSE\n\nSample distribution\n\n\nHow to reduce sampling variability?\n\nIncrease sample size\nCLT\nActivity - Normal PDF known SD\n\nHow to we communicate uncertainty?\n\nCI\n\n10 MIN BREAK\nDo you know the population SD?\n\nYes use Z\nNo use t\n\nProportion\n\nBoba membership sign ups\nFormula\nUse Z distribution\nActivity\n\nExercise"
+  },
+  {
+    "objectID": "week3/slides.html#population-and-sampling",
+    "href": "week3/slides.html#population-and-sampling",
+    "title": "Sampling and estimation",
+    "section": "Population and sampling",
+    "text": "Population and sampling"
+  },
+  {
+    "objectID": "week3/slides.html#spread-ansd-sd",
+    "href": "week3/slides.html#spread-ansd-sd",
+    "title": "Sampling and estimation",
+    "section": "Spread ansd SD",
+    "text": "Spread ansd SD"
+  },
+  {
+    "objectID": "week3/slides.html#pdf",
+    "href": "week3/slides.html#pdf",
+    "title": "Sampling and estimation",
+    "section": "PDF",
+    "text": "PDF"
+  },
+  {
+    "objectID": "week3/slides.html#sampling-variability",
+    "href": "week3/slides.html#sampling-variability",
+    "title": "Sampling and estimation",
+    "section": "Sampling variability",
+    "text": "Sampling variability\n\nEach time we draw a sample, it’s different\nDartboard analogy\nSE is a statistic that measures how much a sample estimate (such as a sample mean) is expected to vary from the true population value across repeated samples\nSE formula\nBoba tab 2"
+  },
+  {
+    "objectID": "week3/slides.html#sampling-distribution-1",
+    "href": "week3/slides.html#sampling-distribution-1",
+    "title": "Sampling and estimation",
+    "section": "Sampling distribution",
+    "text": "Sampling distribution\n\nA sampling distribution represents all possible values a sample statistic (like a sample mean or proportion) could take and how likely each value is\nN notation with SE"
+  },
+  {
+    "objectID": "week3/slides.html#sample-size",
+    "href": "week3/slides.html#sample-size",
+    "title": "Sampling and estimation",
+    "section": "Sample size",
+    "text": "Sample size\n\nBoba tab 3\nAs we increase sample size, our sampling SE decreases\nOur sampling distribution approaches the true population"
+  },
+  {
+    "objectID": "week3/slides.html#what-if-my-population-is-skewed",
+    "href": "week3/slides.html#what-if-my-population-is-skewed",
+    "title": "Sampling and estimation",
+    "section": "What if my population is skewed?",
+    "text": "What if my population is skewed?\n\nCLT"
   },
   {
     "objectID": "week3/slides.html#boba-prices",
     "href": "week3/slides.html#boba-prices",
     "title": "Sampling and estimation",
     "section": "Boba prices 🧋",
-    "text": "Boba prices 🧋\n\n\n\n\n\n\n\n\nBoba sampling simulator — interactive in the HTML slides.\nSimulate samples of n cups from X \\sim \\mathcal{N}(8, 1.2) (AUD; SD = $1.20). Compare individual prices, repeated sample means and a 95% confidence interval.\n\nSample mean: \\bar{x}; sample SD: s; estimated SE: s / \\sqrt{n}.\nTheoretical sampling distribution: \\bar{X} \\sim \\mathcal{N}(8, 1.2 / \\sqrt{n}).\n95% confidence interval: \\bar{x} \\pm t_{0.975,n-1} s / \\sqrt{n}.\n\nPrices are illustrative teaching assumptions."
+    "text": "Boba prices 🧋\n\n\n\n\n\n\nBoba sampling simulator — interactive in the HTML slides.\nSimulate samples of n cups from X \\sim \\mathcal{N}(8, 3) (AUD; SD = $3.00). Compare individual prices, repeated sample means and a 95% confidence interval.\n\nSample mean: \\bar{x}; sample SD: s; estimated SE: s / \\sqrt{n}.\nTheoretical sampling distribution: \\bar{X} \\sim \\mathcal{N}(8, 3 / \\sqrt{n}).\n95% confidence interval: \\bar{x} \\pm t_{0.975,n-1} s / \\sqrt{n}.\n\nPrices are illustrative teaching assumptions."
   },
   {
     "objectID": "week3/slides.html#source-page-002",

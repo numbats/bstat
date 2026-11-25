@@ -183,7 +183,7 @@
 </ul></li>
 <li>Sample distribution
 <ul>
-<li>Boba sales
+<li>Boba prices
 <ul>
 <li>Sampling variability
 <ul>
@@ -218,36 +218,66 @@
 <li>Exercise</li>
 </ul>
 </section>
+<section>
+<section id="recap" class="title-slide slide level1 sectiion-slide center">
+<h1>Recap</h1>
+
+</section>
+<section id="population-and-sampling" class="slide level2">
+<h2>Population and sampling</h2>
+</section>
+<section id="spread-ansd-sd" class="slide level2">
+<h2>Spread ansd SD</h2>
+</section>
+<section id="pdf" class="slide level2">
+<h2>PDF</h2>
+</section></section>
+<section>
+<section id="sampling-distribution" class="title-slide slide level1 sectiion-slide center">
+<h1>Sampling distribution</h1>
+
+</section>
+<section id="sampling-variability" class="slide level2">
+<h2>Sampling variability</h2>
+<ul>
+<li>Each time we draw a sample, it’s different</li>
+<li>Dartboard analogy</li>
+<li>SE is a statistic that measures how much a sample estimate (such as a sample mean) is expected to vary from the true population value across repeated samples</li>
+<li>SE formula</li>
+<li>Boba tab 2</li>
+</ul>
+</section>
+<section id="sampling-distribution-1" class="slide level2">
+<h2>Sampling distribution</h2>
+<ul>
+<li>A sampling distribution represents all possible values a sample statistic (like a sample mean or proportion) could take and how likely each value is</li>
+<li>N notation with SE</li>
+</ul>
+</section></section>
+<section>
+<section id="how-to-reduce-sampling-variability" class="title-slide slide level1 section-slide center">
+<h1>How to reduce sampling variability?</h1>
+
+</section>
+<section id="sample-size" class="slide level2">
+<h2>Sample size</h2>
+<ul>
+<li>Boba tab 3</li>
+<li>As we increase sample size, our sampling SE decreases</li>
+<li>Our sampling distribution approaches the true population</li>
+</ul>
+</section>
+<section id="what-if-my-population-is-skewed" class="slide level2">
+<h2>What if my population is skewed?</h2>
+<ul>
+<li>CLT</li>
+</ul>
+</section>
 <section id="boba-prices" class="slide level2">
 <h2>Boba prices 🧋</h2>
-<!-- Original app brief
-- Interactive app
-- I want it to simulate prices for n number of cups of boba with a set mean and SD, use realistic values for Australia wide
-- Inputs are n as a slide, the mean and SD, the a button to simulate prices n = X number of times
-- I want cards of the mean, the SD and SE all of this in the first tab and plot its histogram with its density curve
-- then the second tab, contains the true sampling distrbution and the sampling distributions of every successive simulated n samples. 
-- In the third tab, I want the last simulation and it's 95% CI. I have n as an input as a slider bar, and mean and SD as well?
-
--->
-<!-- App revision brief
-- Use bslibs for cards and formatting 
-- Remove Input box of Number of smaples to draw
-- Input numerical boxes for Population mean and SD
-- Remove text "Illustrative Australian prices"...
-- Y axis, should be histogram count not density for tab 1 
-- Remove footer: "Bars: latest sample prices"
-- Tabset first and inputs under it. 
-- Tab set remove the numeric numbering. 
-- Tab 2, rather than blue bars for simulated means, I want the normal distribution using the sample mean and SD plotted as a density plot. 
-- Tab 2, remove the y axis
-- Tab 2, change legend label for red, to population distribution, blue to sample distribution
-- Tab 3, simulate data can stretch beyond the axis, change the x axis so it can the extend or shorten dynamically. 
-- Tab 3, Move the labels to the right corner of the plot
-- Fit all in one slide and not use scrollable if you can. You can use a sidebar for inputs if neccessary
--->
-<!-- Further app revisions
-- Can we increase the size of the plot more? When I am full screen, there is a lot of negative space below the plot
-- I want to be able to hold each draw in memory so we can plot in tab 2, each successive sampling distributions and each successive CIs in tab 3
+<!-- Sample means tab brief
+- One more tab, the new tab 2, of sample means
+- Vertical bar plot showing the each successive mean
 -->
 <div class="boba-live" data-boba-tab="sample">
 <iframe id="boba-simulator" src="../apps/boba/site/index.html" title="Boba price sampling simulator" style="width:100%;height:610px;border:0;">
@@ -255,10 +285,10 @@
 </div>
 <div class="boba-print">
 <p><strong>Boba sampling simulator</strong> — interactive in the HTML slides.</p>
-<p>Simulate samples of <span class="math inline">n</span> cups from <span class="math inline">X \sim \mathcal{N}(8, 1.2)</span> (AUD; SD = $1.20). Compare individual prices, repeated sample means and a 95% confidence interval.</p>
+<p>Simulate samples of <span class="math inline">n</span> cups from <span class="math inline">X \sim \mathcal{N}(8, 3)</span> (AUD; SD = $3.00). Compare individual prices, repeated sample means and a 95% confidence interval.</p>
 <ul>
 <li>Sample mean: <span class="math inline">\bar{x}</span>; sample SD: <span class="math inline">s</span>; estimated SE: <span class="math inline">s / \sqrt{n}</span>.</li>
-<li>Theoretical sampling distribution: <span class="math inline">\bar{X} \sim \mathcal{N}(8, 1.2 / \sqrt{n})</span>.</li>
+<li>Theoretical sampling distribution: <span class="math inline">\bar{X} \sim \mathcal{N}(8, 3 / \sqrt{n})</span>.</li>
 <li>95% confidence interval: <span class="math inline">\bar{x} \pm t_{0.975,n-1} s / \sqrt{n}</span>.</li>
 </ul>
 <p>Prices are illustrative teaching assumptions.</p>
@@ -956,7 +986,7 @@ np, n(1-p) \geq{}5
 </div></div>
 
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
