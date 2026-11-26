@@ -230,23 +230,26 @@
 <p><strong>Population</strong></p>
 <ul>
 <li>All members of the group we want to draw a conclusion about.</li>
+<li><span class="math inline">\mu</span> <span class="math inline">\sigma</span></li>
 </ul>
-<p><img data-src="../week1/figures/diagram/population.png" style="width:50.0%" alt="Diagram of a full population."></p>
-</div><div class="column" style="width:48%;">
 <p><strong>Sample</strong></p>
 <ul>
-<li>A subset of the population used to estimate its characteristics.</li>
+<li>A <strong>subset</strong> of the population used to estimate its characteristics.
+<ul>
+<li>We use <strong>statistics</strong> to describe the sample</li>
+<li><span class="math inline">\bar{x}</span> <span class="math inline">s</span></li>
+<li><code>=AVERAGE(...)</code> <code>=STDEV.S(...)</code></li>
+</ul></li>
 </ul>
-<p><img data-src="../week1/figures/diagram/random-collection.png" style="width:60.0%" alt="Random selection from a population."> <img data-src="../week1/figures/diagram/sample.png" style="width:20.0%" alt="Selected sample."></p>
+</div><div class="column" style="width:48%;">
+<p><img data-src="../week1/figures/diagram/random-collection.png" style="width:70.0%" alt="Random selection from a population."> <img data-src="../week1/figures/diagram/sample.png" style="width:25.0%" alt="Selected sample."></p>
 </div></div>
-<p><em>Recap: <a href="../week1/slides.html#/data-collection">Week 1, slide 26</a> and <a href="../week1/slides.html#/data-collection-1">slide 27</a>.</em></p>
 </section>
 <section id="spread-and-sd" class="slide level2">
 <h2>Spread and SD</h2>
 <blockquote>
 <p>How much do the values vary around the mean?</p>
 </blockquote>
-<p>For sample data, use <code>=STDEV.S(...)</code> to calculate <span class="math inline">s</span>.</p>
 <div class="columns">
 <div class="column" style="width:70%;">
 <div class="cell" data-layout-align="center">
@@ -271,51 +274,40 @@ s = \sqrt{\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}}
 </ul>
 </div>
 </div></div>
-<p><em>Recap: <a href="../week1/slides.html#/spread---sample-standard-deviation-s">Week 1, slide 36</a>.</em></p>
 </section>
-<section id="pdf" class="slide level2">
-<h2>PDF</h2>
+<section id="probability-as-a-density-function-pdf" class="slide level2 smaller">
+<h2>Probability as a density function (PDF)</h2>
 <blockquote>
 <p>A <strong>probability density function</strong> describes how probability is distributed over a range of continuous values.</p>
 </blockquote>
 <div class="columns">
 <div class="column" style="width:50%;">
-<ul>
-<li><span class="math inline">\mathcal{N}</span> names the <strong>normal family</strong> of distributions.</li>
-<li><span class="math inline">\mu</span> is the population mean; <span class="math inline">\sigma</span> is the population SD.</li>
-</ul>
+<p>The <strong>Normal distribution</strong> is expressed as:</p>
 <p><span class="math display">
-X \sim \overbrace{\mathcal{N}}^{\text{family}}(\underbrace{\mu,\sigma}_{\text{features}})
+X \sim \mathcal{N}(\overbrace{\mu}^{\text{Mean}},\overbrace{\sigma}^{\text{SD}})
 </span></p>
 </div><div class="column" style="width:50%;">
+<p><strong>Histogram</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center" alt="Normal density curve with the central region within one standard deviation of the mean shaded darker blue." width="432"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center" alt="Upright histogram of a symmetric distribution, with the tallest bars in the centre and similar tails on both sides." width="432"></p>
 </figure>
 </div>
 </div>
 </div>
+<p><strong>Probability density function</strong></p>
+</div></div>
+</section>
+<section id="pdf" class="slide level2">
+<h2>PDF</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+
+</div><div class="column" style="width:50%;">
 <p>The <strong>total area</strong> under the curve is 1.</p>
 </div></div>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Recall</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li><strong>Population:</strong> all members of the group of interest.</li>
-<li><strong>Mean</strong> <span class="math inline">\mu</span>: the centre; <strong>SD</strong> <span class="math inline">\sigma</span>: the spread.</li>
-</ul>
-</div>
-</div>
-</div>
-<p><em>Recap: <a href="../week2/slides.html#/probability-density-function">Week 2, slide 33</a>.</em></p>
 </section></section>
 <section>
 <section id="sampling-distribution" class="title-slide slide level1 section-slide center">

@@ -2146,21 +2146,28 @@
     "href": "week3/slides.html#population-and-sampling",
     "title": "Sampling and estimation",
     "section": "Population and sampling",
-    "text": "Population and sampling\n\n\nPopulation\n\nAll members of the group we want to draw a conclusion about.\n\n\n\nSample\n\nA subset of the population used to estimate its characteristics.\n\n \n\nRecap: Week 1, slide 26 and slide 27."
+    "text": "Population and sampling\n\n\nPopulation\n\nAll members of the group we want to draw a conclusion about.\n\\mu \\sigma\n\nSample\n\nA subset of the population used to estimate its characteristics.\n\nWe use statistics to describe the sample\n\\bar{x} s\n=AVERAGE(...) =STDEV.S(...)"
   },
   {
     "objectID": "week3/slides.html#spread-and-sd",
     "href": "week3/slides.html#spread-and-sd",
     "title": "Sampling and estimation",
     "section": "Spread and SD",
-    "text": "Spread and SD\n\nHow much do the values vary around the mean?\n\nFor sample data, use =STDEV.S(...) to calculate s.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns = \\sqrt{\\frac{\\sum_{i=1}^{n}(x_i-\\bar{x})^2}{n-1}}\n\n\nx_i: an individual value\n\\bar{x}: sample mean\nn: number of observations\ns has the same unit as the data\n\n\n\nRecap: Week 1, slide 36."
+    "text": "Spread and SD\n\nHow much do the values vary around the mean?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns = \\sqrt{\\frac{\\sum_{i=1}^{n}(x_i-\\bar{x})^2}{n-1}}\n\n\nx_i: an individual value\n\\bar{x}: sample mean\nn: number of observations\ns has the same unit as the data"
+  },
+  {
+    "objectID": "week3/slides.html#probability-as-a-density-function-pdf",
+    "href": "week3/slides.html#probability-as-a-density-function-pdf",
+    "title": "Sampling and estimation",
+    "section": "Probability as a density function (PDF)",
+    "text": "Probability as a density function (PDF)\n\nA probability density function describes how probability is distributed over a range of continuous values.\n\n\n\nThe Normal distribution is expressed as:\n\nX \\sim \\mathcal{N}(\\overbrace{\\mu}^{\\text{Mean}},\\overbrace{\\sigma}^{\\text{SD}})\n\n\nHistogram\n\n\n\n\n\n\n\n\n\nProbability density function"
   },
   {
     "objectID": "week3/slides.html#pdf",
     "href": "week3/slides.html#pdf",
     "title": "Sampling and estimation",
     "section": "PDF",
-    "text": "PDF\n\nA probability density function describes how probability is distributed over a range of continuous values.\n\n\n\n\n\\mathcal{N} names the normal family of distributions.\n\\mu is the population mean; \\sigma is the population SD.\n\n\nX \\sim \\overbrace{\\mathcal{N}}^{\\text{family}}(\\underbrace{\\mu,\\sigma}_{\\text{features}})\n\n\n\n\n\n\n\n\n\n\n\nThe total area under the curve is 1.\n\n\n\n\n\n\n\nRecall\n\n\n\nPopulation: all members of the group of interest.\nMean \\mu: the centre; SD \\sigma: the spread.\n\n\n\n\nRecap: Week 2, slide 33."
+    "text": "PDF\n\n\n\n\nThe total area under the curve is 1."
   },
   {
     "objectID": "week3/slides.html#boba-sales",
