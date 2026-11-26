@@ -230,14 +230,14 @@
 <p><strong>Population</strong></p>
 <ul>
 <li>All members of the group we want to draw a conclusion about.</li>
-<li><span class="math inline">\mu</span> <span class="math inline">\sigma</span></li>
+<li>Population mean (<span class="math inline">\mu</span>) and standard deviation (<span class="math inline">\sigma</span>)</li>
 </ul>
 <p><strong>Sample</strong></p>
 <ul>
 <li>A <strong>subset</strong> of the population used to estimate its characteristics.
 <ul>
 <li>We use <strong>statistics</strong> to describe the sample</li>
-<li><span class="math inline">\bar{x}</span> <span class="math inline">s</span></li>
+<li>Sample mean (<span class="math inline">\bar{x}</span>) and standard deviation (<span class="math inline">s</span>)</li>
 <li><code>=AVERAGE(...)</code> <code>=STDEV.S(...)</code></li>
 </ul></li>
 </ul>
@@ -278,15 +278,10 @@ s = \sqrt{\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}}
 <section id="probability-as-a-density-function-pdf" class="slide level2 smaller">
 <h2>Probability as a density function (PDF)</h2>
 <blockquote>
-<p>A <strong>probability density function</strong> describes how probability is distributed over a range of continuous values.</p>
+<p>A probability density function describes how likely the range of continuous values in a ** population**</p>
 </blockquote>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>The <strong>Normal distribution</strong> is expressed as:</p>
-<p><span class="math display">
-X \sim \mathcal{N}(\overbrace{\mu}^{\text{Mean}},\overbrace{\sigma}^{\text{SD}})
-</span></p>
-</div><div class="column" style="width:50%;">
 <p><strong>Histogram</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -297,16 +292,25 @@ X \sim \mathcal{N}(\overbrace{\mu}^{\text{Mean}},\overbrace{\sigma}^{\text{SD}})
 </div>
 </div>
 </div>
-<p><strong>Probability density function</strong></p>
-</div></div>
-</section>
-<section id="pdf" class="slide level2">
-<h2>PDF</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-
 </div><div class="column" style="width:50%;">
-<p>The <strong>total area</strong> under the curve is 1.</p>
+<p><strong>Probability density function</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center" alt="Normal density curve with the central region within one standard deviation of the mean shaded darker blue." width="432"></p>
+</figure>
+</div>
+</div>
+</div>
+<div style="text-align: center;">
+<p>The <strong>Normal distribution</strong>:</p>
+<div style="font-size: 1.4em;">
+<p><span class="math inline">\displaystyle X \sim \mathcal{N}(\mu,\sigma)</span></p>
+</div>
+</div>
+<p><br>
+The <strong>total area</strong> under the curve is 1.</p>
 </div></div>
 </section></section>
 <section>
@@ -317,9 +321,8 @@ X \sim \mathcal{N}(\overbrace{\mu}^{\text{Mean}},\overbrace{\sigma}^{\text{SD}})
 <section id="boba-sales" class="slide level2">
 <h2>Boba sales 🧋</h2>
 <blockquote>
-<p>What is the average price of a cup of boba in our sample?</p>
+<p>What is the average price of a cup of boba in our sample of 5 random people?</p>
 </blockquote>
-<p>Ask five people in Melbourne what they paid. Start with <strong>Cups per sample (<span class="math inline">n</span>) = 5</strong>, draw a sample, and compare the five prices with their sample mean <span class="math inline">\bar{x}</span>.</p>
 <div class="boba-live" data-boba-tab="sample" data-boba-mode="intro">
 <iframe id="boba-simulator" src="../apps/boba/site/index.html" title="Boba price sampling simulator" style="width:100%;height:100%;border:0;">
 </iframe>

@@ -2146,7 +2146,7 @@
     "href": "week3/slides.html#population-and-sampling",
     "title": "Sampling and estimation",
     "section": "Population and sampling",
-    "text": "Population and sampling\n\n\nPopulation\n\nAll members of the group we want to draw a conclusion about.\n\\mu \\sigma\n\nSample\n\nA subset of the population used to estimate its characteristics.\n\nWe use statistics to describe the sample\n\\bar{x} s\n=AVERAGE(...) =STDEV.S(...)"
+    "text": "Population and sampling\n\n\nPopulation\n\nAll members of the group we want to draw a conclusion about.\nPopulation mean (\\mu) and standard deviation (\\sigma)\n\nSample\n\nA subset of the population used to estimate its characteristics.\n\nWe use statistics to describe the sample\nSample mean (\\bar{x}) and standard deviation (s)\n=AVERAGE(...) =STDEV.S(...)"
   },
   {
     "objectID": "week3/slides.html#spread-and-sd",
@@ -2160,21 +2160,14 @@
     "href": "week3/slides.html#probability-as-a-density-function-pdf",
     "title": "Sampling and estimation",
     "section": "Probability as a density function (PDF)",
-    "text": "Probability as a density function (PDF)\n\nA probability density function describes how probability is distributed over a range of continuous values.\n\n\n\nThe Normal distribution is expressed as:\n\nX \\sim \\mathcal{N}(\\overbrace{\\mu}^{\\text{Mean}},\\overbrace{\\sigma}^{\\text{SD}})\n\n\nHistogram\n\n\n\n\n\n\n\n\n\nProbability density function"
-  },
-  {
-    "objectID": "week3/slides.html#pdf",
-    "href": "week3/slides.html#pdf",
-    "title": "Sampling and estimation",
-    "section": "PDF",
-    "text": "PDF\n\n\n\n\nThe total area under the curve is 1."
+    "text": "Probability as a density function (PDF)\n\nA probability density function describes how likely the range of continuous values in a ** population**\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\n\nProbability density function\n\n\n\n\n\n\n\n\n\n\nThe Normal distribution:\n\n\\displaystyle X \\sim \\mathcal{N}(\\mu,\\sigma)\n\n\n\nThe total area under the curve is 1."
   },
   {
     "objectID": "week3/slides.html#boba-sales",
     "href": "week3/slides.html#boba-sales",
     "title": "Sampling and estimation",
     "section": "Boba sales 🧋",
-    "text": "Boba sales 🧋\n\nWhat is the average price of a cup of boba in our sample?\n\nAsk five people in Melbourne what they paid. Start with Cups per sample (n) = 5, draw a sample, and compare the five prices with their sample mean \\bar{x}.\n\n\n\n\n\nIllustrative sample of five boba prices (AUD): $6.50, $8.00, $7.50, $9.00, $8.00.\n\n\\bar{x}=\\frac{6.50+8.00+7.50+9.00+8.00}{5}=\\$7.80\n\nThe interactive deck lets us draw another sample and see whether its mean changes. These prices are teaching assumptions."
+    "text": "Boba sales 🧋\n\nWhat is the average price of a cup of boba in our sample of 5 random people?\n\n\n\n\n\n\nIllustrative sample of five boba prices (AUD): $6.50, $8.00, $7.50, $9.00, $8.00.\n\n\\bar{x}=\\frac{6.50+8.00+7.50+9.00+8.00}{5}=\\$7.80\n\nThe interactive deck lets us draw another sample and see whether its mean changes. These prices are teaching assumptions."
   },
   {
     "objectID": "week3/slides.html#sampling-variability",
