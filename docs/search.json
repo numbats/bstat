@@ -2188,7 +2188,7 @@
     "href": "week3/slides.html#sampling-distribution-1",
     "title": "Sampling and estimation",
     "section": "Sampling distribution",
-    "text": "Sampling distribution\n\nA sampling distribution represents all possible values a sample statistic (\\bar{x}) could take and how likely each value is - N notation with SE\n\n\nA probability density function describes how likely the range of continuous values in a population\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\n\nProbability density function\n\n\n\n\n\n\n\n\n\n\nThe Normal distribution:\n\n\\displaystyle X \\sim \\mathcal{N}(\\mu,\\sigma)\n\n\nThe total area under the curve is 1."
+    "text": "Sampling distribution\n\n\nA sampling distribution represents all possible values a sample statistic (\\bar{x}) could take and how likely each value is\n\n\n\n\nSample means\n\n\n\n\n\n\n\n\n\n\nSampling distribution\n\n\n\n\n\n\n\n\n\n\n\n\\displaystyle \\bar{X} \\sim \\mathcal{N}\\left(\\mu, \\frac{\\sigma}{\\sqrt{n}}\\right)"
   },
   {
     "objectID": "week3/slides.html#sample-size",
