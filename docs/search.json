@@ -1628,7 +1628,7 @@
     "href": "index.html#assessment-summary",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Assessment summary",
-    "text": "Assessment summary\n\n\n\n\n\n\n\n\n\nAssessment task\nWeight\nTiming\nMode\n\n\n\n\nWeekly classroom exercises\n15%\nEnd of each class\nGroup\n\n\nWeekly quizzes (best 5 of 7)\n15%\nSee weekly pages for due dates\nIndividual\n\n\nWritten assignment\n20%\nMon 04 Jan 2027 at 11:55 pm\nIndividual\n\n\nExamination\n50%\nExamination period\nIndividual"
+    "text": "Assessment summary\n\n\n\n\n\n\n\n\n\nAssessment task\nWeight\nTiming\nMode\n\n\n\n\nWeekly classroom exercises (best 5 of 7)\n15%\nEnd of each class\nGroup\n\n\nWeekly quizzes (best 5 of 7)\n15%\nSee Moodle\nIndividual\n\n\nWritten assignment\n20%\nMon 04 Jan 2027 at 11:55 pm\nIndividual\n\n\nExamination\n50%\nExamination period\nIndividual"
   },
   {
     "objectID": "week1/index.html",
@@ -2063,6 +2063,13 @@
     "title": "Describing and visualising data",
     "section": "Assignment work that can now be completed 🤳",
     "text": "Assignment work that can now be completed 🤳\n\n\nQ1 complete. Q5 is a draft only.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
+  },
+  {
+    "objectID": "week1/slides.html#extra-excel-tips",
+    "href": "week1/slides.html#extra-excel-tips",
+    "title": "Describing and visualising data",
+    "section": "Extra Excel tips 💡",
+    "text": "Extra Excel tips 💡\n\nDouble click on cell containing a computed formula to enlarge it and show which cells are used in the formula (Zhanasulu)\nClick on your Design &gt; Report Layout &gt; Show in tabular format to format your Pivot Table row labels nicely (Nithya)"
   },
   {
     "objectID": "week2/reading/index.html",
