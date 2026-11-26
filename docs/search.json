@@ -2174,7 +2174,7 @@
     "href": "week3/slides.html#sampling-variability",
     "title": "Sampling and estimation",
     "section": "Sampling variability",
-    "text": "Sampling variability\nEach time we draw a sample, the sample mean is different\n\n\n\n\nStandard error (SE) measures how much a sample mean is expected to vary from the population mean across repeated samples\n\n\n\n\\mathrm{SE}(\\bar X)=\\frac{s}{\\sqrt n}\n\n\ns sample SD\nn samele size"
+    "text": "Sampling variability\nEach time we draw a sample, the sample mean is different\n\n\n\n\nStandard error (SE) measures how much a sample mean varies from the population mean across repeated samples\n\n\n\n\\mathrm{SE}(\\bar X)=\\frac{s}{\\sqrt n}\n\n\n\ns sample SD\nn samele size\n\n\n\n\n\n\n\n\n\n\n\n\n\nSE \\approx SD of sample means"
   },
   {
     "objectID": "week3/slides.html#sampling-variability-1",
