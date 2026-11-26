@@ -2174,7 +2174,7 @@
     "href": "week3/slides.html#sampling-variability",
     "title": "Sampling and estimation",
     "section": "Sampling variability",
-    "text": "Sampling variability\nEach time we draw a sample, it’s different - Dartboard analogy - SE is a statistic that measures how much a sample mean is expected to vary from the true population value across repeated samples - SE formula - Boba tab 2"
+    "text": "Sampling variability\nEach time we draw a sample, it’s different\n\nSE is a statistic that measures how much a sample mean is expected to vary from the true population value across repeated samples\nSE formula\nBoba tab 2"
   },
   {
     "objectID": "week3/slides.html#sampling-distribution-1",
