@@ -320,9 +320,9 @@ The <strong>total area</strong> under the curve is 1.</p>
 </section>
 <section id="boba-sales" class="slide level2">
 <h2>Boba sales 🧋</h2>
-<blockquote>
-<p>What is the average price of a cup of boba in our sample of 5 random people?</p>
-</blockquote>
+<div style="font-size: 60%;">
+<p><strong>What is the average price of a cup of boba in our sample of 5 random people?</strong></p>
+</div>
 <div class="boba-live" data-boba-tab="sample" data-boba-mode="intro">
 <iframe id="boba-simulator" src="../apps/boba/site/index.html" title="Boba price sampling simulator" style="width:100%;height:100%;border:0;">
 </iframe>
@@ -409,6 +409,7 @@ window.addEventListener("load", () => {
 </script>
 <style>
 .boba-live {height:480px;}
+.boba-live[data-boba-mode="intro"] {height:540px;}
 .boba-live:empty {height:610px;}
 .boba-print {display:none;}
 .print-pdf .boba-live {display:none;}
