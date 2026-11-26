@@ -2167,14 +2167,14 @@
     "href": "week3/slides.html#boba-sales",
     "title": "Sampling and estimation",
     "section": "Boba sales 🧋",
-    "text": "Boba sales 🧋\n\nWhat is the average price of a cup of boba in our sample of 5 random people?\n\n\n\n\n\n\nIllustrative sample of five boba prices (AUD): $6.50, $8.00, $7.50, $9.00, $8.00.\n\n\\bar{x}=\\frac{6.50+8.00+7.50+9.00+8.00}{5}=\\$7.80\n\nThe interactive deck lets us draw another sample and see whether its mean changes. These prices are teaching assumptions."
+    "text": "Boba sales 🧋\n\nWhat is the average price of a cup of boba in our sample of 5 random people?\n\n\n\n\n\n\nIllustrative sample of five boba prices (AUD): $6.50, $8.00, $7.50, $9.00, $8.00.\n\n\\bar{x}=\\frac{6.50+8.00+7.50+9.00+8.00}{5}=\\$7.80"
   },
   {
     "objectID": "week3/slides.html#sampling-variability",
     "href": "week3/slides.html#sampling-variability",
     "title": "Sampling and estimation",
     "section": "Sampling variability",
-    "text": "Sampling variability\nEach new sample can give a different sample mean.\n\n\n\nStandard error (SE) is the standard deviation of the sample mean across repeated samples.\n\n\n\\mathrm{SE}(\\bar X)=\\frac{\\sigma}{\\sqrt n}\n\nHere \\sigma is the population SD. For the boba sample, estimate SE with s/\\sqrt n.\nThe dartboard line shows one sample’s error. SE describes the typical variation of sample means over many draws.\nSource: Week 3 workshop, page 4."
+    "text": "Sampling variability\nEach time we draw a sample, the sample mean is different\n\n\n\nStandard error (SE) measures how much a sample mean is expected to vary from the population mean across repeated samples\n\n\n\\mathrm{SE}(\\bar X)=\\frac{s}{\\sqrt n}\n\n\ns sample SD\nn samele size"
   },
   {
     "objectID": "week3/slides.html#sampling-variability-1",
