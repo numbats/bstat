@@ -2160,7 +2160,7 @@
     "href": "week3/slides.html#probability-as-a-density-function-pdf",
     "title": "Sampling and estimation",
     "section": "Probability as a density function (PDF)",
-    "text": "Probability as a density function (PDF)\n\nA probability density function describes how likely the range of continuous values in a population\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\n\nProbability density function\n\n\n\n\n\n\n\n\n\n\nThe Normal distribution:\n\n\\displaystyle X \\sim \\mathcal{N}(\\mu,\\sigma)\n\n\n\nThe total area under the curve is 1."
+    "text": "Probability as a density function (PDF)\n\nA probability density function describes how likely the range of continuous values in a population\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\n\nProbability density function\n\n\n\n\n\n\n\n\n\n\nThe Normal distribution:\n\n\\displaystyle X \\sim \\mathcal{N}(\\mu,\\sigma)\n\n\nThe total area under the curve is 1."
   },
   {
     "objectID": "week3/slides.html#boba-sales",
@@ -2188,7 +2188,7 @@
     "href": "week3/slides.html#sampling-distribution-1",
     "title": "Sampling and estimation",
     "section": "Sampling distribution",
-    "text": "Sampling distribution\n\nA sampling distribution represents all possible values a sample statistic (e.g \\bar{x}) could take and how likely each value is\nN notation with SE"
+    "text": "Sampling distribution\n\nA sampling distribution represents all possible values a sample statistic (\\bar{x}) could take and how likely each value is - N notation with SE\n\n\nA probability density function describes how likely the range of continuous values in a population\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\n\nProbability density function\n\n\n\n\n\n\n\n\n\n\nThe Normal distribution:\n\n\\displaystyle X \\sim \\mathcal{N}(\\mu,\\sigma)\n\n\nThe total area under the curve is 1."
   },
   {
     "objectID": "week3/slides.html#sample-size",
