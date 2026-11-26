@@ -2202,7 +2202,7 @@
     "href": "week3/slides.html#sample-size-1",
     "title": "Sampling and estimation",
     "section": "⬆️ Sample size",
-    "text": "⬆️ Sample size\n\nIncrease cups per sample and draw again. Earlier draws remain visible.\nAs n increases, \\mathrm{SE}(\\bar X)=\\sigma/\\sqrt n decreases, so the sampling distribution narrows around \\mu."
+    "text": "⬆️ Sample size\nAs n increases, \\mathrm{SE}(\\bar X)=\\sigma/\\sqrt n decreases, so the sampling distribution narrows around \\mu."
   },
   {
     "objectID": "week3/slides.html#what-if-my-population-is-skewed",
