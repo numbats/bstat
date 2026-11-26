@@ -2167,21 +2167,21 @@
     "href": "week3/slides.html#boba-sales",
     "title": "Sampling and estimation",
     "section": "Boba sales 🧋",
-    "text": "Boba sales 🧋\n\nWhat is the average price of a cup of boba in our sample of 5 random people?\n\n\n\n\n\n\nIllustrative sample of five boba prices (AUD): $6.50, $8.00, $7.50, $9.00, $8.00.\n\n\\bar{x}=\\frac{6.50+8.00+7.50+9.00+8.00}{5}=\\$7.80"
+    "text": "Boba sales 🧋\n\nWhat is the average price of a cup of boba in our sample of 5 random people?"
   },
   {
     "objectID": "week3/slides.html#sampling-variability",
     "href": "week3/slides.html#sampling-variability",
     "title": "Sampling and estimation",
     "section": "Sampling variability",
-    "text": "Sampling variability\nEach time we draw a sample, the sample mean is different\n\n\n\n\nStandard error (SE) measures how much a sample mean varies from the population mean across repeated samples\n\n\n\n\\mathrm{SE}(\\bar X)=\\frac{s}{\\sqrt n}\n\n\n\ns sample SD\nn samele size\n\n\n\n\n\n\n\n\n\n\n\n\n\nSE \\approx SD of sample means"
+    "text": "Sampling variability\nEach time we draw a sample, the sample mean is different\n\n\n\n\nStandard error (SE) measures how much a sample mean varies from the population mean across repeated samples\n\n\n\n\\mathrm{SE}(\\bar X)=\\frac{s}{\\sqrt n}\n\n\n\ns sample SD\nn sample size\n\n\n\n\n\n\n\n\n\n\n\n\n\nSE \\approx SD of sample means"
   },
   {
     "objectID": "week3/slides.html#sampling-variability-1",
     "href": "week3/slides.html#sampling-variability-1",
     "title": "Sampling and estimation",
     "section": "Sampling variability",
-    "text": "Sampling variability\n\nBoba tab 2"
+    "text": "Sampling variability"
   },
   {
     "objectID": "week3/slides.html#sampling-distribution-1",
