@@ -2174,7 +2174,14 @@
     "href": "week3/slides.html#sampling-variability",
     "title": "Sampling and estimation",
     "section": "Sampling variability",
-    "text": "Sampling variability\nEach time we draw a sample, it’s different\n\nSE is a statistic that measures how much a sample mean is expected to vary from the true population value across repeated samples\nSE formula\nBoba tab 2"
+    "text": "Sampling variability\nEach new sample can give a different sample mean.\n\n\n\nStandard error (SE) is the standard deviation of the sample mean across repeated samples.\n\n\n\\mathrm{SE}(\\bar X)=\\frac{\\sigma}{\\sqrt n}\n\nHere \\sigma is the population SD. For the boba sample, estimate SE with s/\\sqrt n.\nThe dartboard line shows one sample’s error. SE describes the typical variation of sample means over many draws.\nSource: Week 3 workshop, page 4."
+  },
+  {
+    "objectID": "week3/slides.html#sampling-variability-1",
+    "href": "week3/slides.html#sampling-variability-1",
+    "title": "Sampling and estimation",
+    "section": "Sampling variability",
+    "text": "Sampling variability\n\nBoba tab 2"
   },
   {
     "objectID": "week3/slides.html#sampling-distribution-1",
