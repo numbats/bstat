@@ -1425,7 +1425,7 @@
     "href": "week2/slides.html#probability-density-function",
     "title": "Probability and distributions",
     "section": "Probability density function",
-    "text": "Probability density function\n\nA probability density function describes how likely the range of continuous values in a population\n\n\n\n\n\nNotations are used to represent a PDF’s features\n\n\\mathcal{N} is a family of distributions\n\\mu mean; \\sigma SD encode the shape of the distribution\n\n\n\nX \\sim \\overbrace{\\mathcal{N}}^{\\text{family}}(\\underbrace{\\mu, \\sigma}_{\\text{features}})\n\n\n\n\n\n\n\n\n\n\n\n\nThe area under the probability curve sums to 1\n\n\n\n\n\n\n\nRecall\n\n\n\nPopulation refers to all members of a group that you want to draw a conclusion upon.\nMean \\mu describes the central tendency or typical value\nStandard deviation \\sigma describes the spread in the values"
+    "text": "Probability density function\n\nA probability density function describes how likely a continuous variable is to fall within a specific range of values\n\n\n\n\n\nNotations are used to represent a PDF’s features\n\n\\mathcal{N} is a family of distributions\n\\mu mean; \\sigma SD encode the shape of the distribution\n\n\n\nX \\sim \\overbrace{\\mathcal{N}}^{\\text{family}}(\\underbrace{\\mu, \\sigma}_{\\text{features}})\n\n\n\n\n\n\n\n\n\n\n\n\nThe area under the probability curve sums to 1\n\n\n\n\n\n\n\nRecall\n\n\n\nPopulation refers to all members of a group that you want to draw a conclusion upon.\nMean \\mu describes the central tendency or typical value\nStandard deviation \\sigma describes the spread in the values"
   },
   {
     "objectID": "week2/slides.html#probability-density-function---why",
