@@ -2188,7 +2188,7 @@
     "href": "week3/slides.html#sampling-distribution-1",
     "title": "Sampling and estimation",
     "section": "Sampling distribution",
-    "text": "Sampling distribution\n\n\nA sampling distribution represents all possible values a sample statistic (\\bar{x}) could take and how likely each value is\n\n\n\n\nSample means\n\n\n\n\n\n\n\n\n\n\nSampling distribution\n\n\n\n\n\n\n\n\n\n\n\n\\displaystyle \\bar{X} \\sim \\mathcal{N}\\left(\\mu, \\frac{\\sigma}{\\sqrt{n}}\\right)"
+    "text": "Sampling distribution\n\n\nA sampling distribution represents all possible values a sample statistic (\\bar{x}) could take and how likely each value is\n\n\n\n\nSample means\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nBoba Sample means tab: customers vary.\nHere: sample averages vary.\n\n\n\n\n\n\nSampling distribution\n\n\n\n\n\n\n\n\n\n\n\n\\displaystyle \\bar{X} \\sim \\mathcal{N}\\left(\\mu, \\frac{\\sigma}{\\sqrt{n}}\\right)"
   },
   {
     "objectID": "week3/slides.html#sample-size",
