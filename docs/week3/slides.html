@@ -6,7 +6,9 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/countdown-0.6.0/countdown.js"></script>
+<link href="../site_libs/quarto-contrib/countdown-0.6.0/countdown.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.11.9">
 
   <meta name="dcterms.date" content="2026-12-08">
@@ -501,7 +503,55 @@ The <strong>total area</strong> under the curve is 1.</p>
 </figure>
 </div>
 </div></div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>1</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://www.youtube.com/watch?v=jvoxEYmQHNM">Bunnies, Dragons and the ‘Normal’ World: Central Limit Theorem | The New York Times</a></p></li></ol></aside></section>
+<section id="putting-theory-to-practice" class="slide level2">
+<h2>Putting theory to practice</h2>
+<ul>
+<li><p>Example</p></li>
+<li><p>Watch me</p></li>
+<li><p>You try</p></li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Recall</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>We use <code>=NORM.DIST()</code> to find the shaded regions of a Normal distribution</li>
+<li>Sub</li>
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="how-do-we-communicate-uncertainty" class="slide level2 section-slide">
+<h2>How do we communicate uncertainty?</h2>
+</section>
+<section id="boba-sales-1" class="slide level2">
+<h2>Boba sales 🧋</h2>
+<div style="font-size: 60%;">
+<p>We need a way to capture the <strong>possible range of values</strong> as if we were going to sample over and over again</p>
+</div>
+<div class="boba-live" data-boba-tab="ci" data-boba-mode="ci" data-boba-tabs="ci">
+
+</div>
+</section>
+<section id="confidence-interval" class="slide level2">
+<h2>Confidence interval</h2>
+<ul>
+<li>Mermaid decision tree if SD is known or not</li>
+</ul>
+</section>
+<section id="break" class="slide level2 section-slide">
+<h2>Break</h2>
+<countdown-timer id="introductions-timer" minutes="10" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+</section>
 <section id="source-page-008" class="slide level2">
 <h2></h2>
 <h3 id="urbanstyle-is-a-popular-retail-store-that-tracks-customer-spending-to-optimise-staffing-stock-levels-and-promotional-strategies.-past-data-indicate-that-the-distribution-of-individual-customer-purchase-amounts-is-normal-with-mean-purchase-amounts-of-25-and-a-standard-deviation-of-8">UrbanStyle is a popular retail store that tracks customer spending to optimise staffing, stock levels, and promotional strategies. Past data indicate that the distribution of individual customer purchase amounts is normal, with mean purchase amounts of $25 and a standard deviation of $8</h3>
@@ -1033,6 +1083,7 @@ window.addEventListener("load", () => {
 <style>
 .boba-live {height:480px;}
 .boba-live[data-boba-mode^="intro"] {height:540px;}
+.boba-live[data-boba-mode="ci"] {height:610px;}
 .print-pdf .boba-live {display:none;}
 @media print {#boba-simulator {display:none !important;} .boba-live {display:none;}}
 </style>

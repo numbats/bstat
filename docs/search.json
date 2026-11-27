@@ -2216,7 +2216,42 @@
     "href": "week3/slides.html#central-limit-theorem-clt",
     "title": "Sampling and estimation",
     "section": "Central Limit Theorem (CLT)",
-    "text": "Central Limit Theorem (CLT)\n\n\nThe CLT states that the sample distribution approximates a Normal distribution as the sample size grows large, regardless of the original population’s shape1\n\n\n\n\n\nWhy do we care? 🤷🏻‍♀️\n\nIt allows us to use Normal-based techniques even when raw data is skewed\nBUT we need a sufficiently large sample size (n &gt; 30)\n\n\n\n\n\n\n\n\n\n1"
+    "text": "Central Limit Theorem (CLT)\n\n\nThe CLT states that the sample distribution approximates a Normal distribution as the sample size grows large, regardless of the original population’s shape1\n\n\n\n\n\nWhy do we care? 🤷🏻‍♀️\n\nIt allows us to use Normal-based techniques even when raw data is skewed\nBUT we need a sufficiently large sample size (n &gt; 30)\n\n\n\n\n\n\n\n\n\nBunnies, Dragons and the ‘Normal’ World: Central Limit Theorem | The New York Times"
+  },
+  {
+    "objectID": "week3/slides.html#putting-theory-to-practice",
+    "href": "week3/slides.html#putting-theory-to-practice",
+    "title": "Sampling and estimation",
+    "section": "Putting theory to practice",
+    "text": "Putting theory to practice\n\nExample\nWatch me\nYou try\n\n\n\n\n\n\n\nRecall\n\n\n\nWe use =NORM.DIST() to find the shaded regions of a Normal distribution\nSub"
+  },
+  {
+    "objectID": "week3/slides.html#how-do-we-communicate-uncertainty",
+    "href": "week3/slides.html#how-do-we-communicate-uncertainty",
+    "title": "Sampling and estimation",
+    "section": "How do we communicate uncertainty?",
+    "text": "How do we communicate uncertainty?"
+  },
+  {
+    "objectID": "week3/slides.html#boba-sales-1",
+    "href": "week3/slides.html#boba-sales-1",
+    "title": "Sampling and estimation",
+    "section": "Boba sales 🧋",
+    "text": "Boba sales 🧋\n\nWe need a way to capture the possible range of values as if we were going to sample over and over again"
+  },
+  {
+    "objectID": "week3/slides.html#confidence-interval",
+    "href": "week3/slides.html#confidence-interval",
+    "title": "Sampling and estimation",
+    "section": "Confidence interval",
+    "text": "Confidence interval\n\nMermaid decision tree if SD is known or not"
+  },
+  {
+    "objectID": "week3/slides.html#break",
+    "href": "week3/slides.html#break",
+    "title": "Sampling and estimation",
+    "section": "Break",
+    "text": "Break"
   },
   {
     "objectID": "week3/slides.html#source-page-008",
