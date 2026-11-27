@@ -2223,7 +2223,7 @@
     "href": "week3/slides.html#putting-theory-to-practice",
     "title": "Sampling and estimation",
     "section": "Putting theory to practice",
-    "text": "Putting theory to practice\n\nExample\nWatch me\nYou try\n\n\n\n\n\n\n\nRecall\n\n\n\nWe use =NORM.DIST() to find the shaded regions of a Normal distribution\nSub"
+    "text": "Putting theory to practice\n\nExample\nWatch me\nYou try\n\n\n\n\n\n\n\nRecall\n\n\n\nWe use =NORM.DIST(x, mean, standard_dev, cumulative) to find the shaded regions of a Normal distribution\nSubtract cumulative area from 1 to get the right tail"
   },
   {
     "objectID": "week3/slides.html#how-do-we-communicate-uncertainty",
@@ -2258,7 +2258,7 @@
     "href": "week3/slides.html#source-page-008",
     "title": "Sampling and estimation",
     "section": "",
-    "text": "UrbanStyle is a popular retail store that tracks customer spending to optimise staffing, stock levels, and promotional strategies. Past data indicate that the distribution of individual customer purchase amounts is normal, with mean purchase amounts of $25 and a standard deviation of $8\nYou have been asked to analyse spending patterns to support decisions for an upcoming promotional event. The retail store defines a “moderate purchase” as spending between $15 and $35.Using the information above, calculate the probability that a randomly selected customer makes a moderate purchase. b) Store managers want to design a promotion that targets the top 25% of customers by spending. This will help managers set a threshold for premium rewards. Find the dollar amount such that 75% of customers spend no more than this value. c) On a particular weekend, a random sample of 15 customers was taken to estimate average spending.Assuming the store’s spending distribution remains unchanged, calculate the probability that the sample mean purchase amount for these 15 customers is not more than $30. 8 Task 1: Customer Spending\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 8"
+    "text": "UrbanStyle is a popular retail store that tracks customer spending to optimise staffing, stock levels, and promotional strategies. Past data indicate that the distribution of individual customer purchase amounts is normal, with mean purchase amounts of $25 and a standard deviation of $8\nYou have been asked to analyse spending patterns to support decisions for an upcoming promotional event. The retail store defines a “moderate purchase” as spending between $15 and $35.Using the information above, calculate the probability that a randomly selected customer makes a moderate purchase. b) Store managers want to design a promotion that targets the top 25% of customers by spending. This will help managers set a threshold for premium rewards. Find the dollar amount such that 75% of customers spend no more than this value. c) On a particular weekend, a random sample of 15 customers was taken to estimate average spending.Assuming the store’s spending distribution remains unchanged, calculate the probability that the sample mean purchase amount for these 15 customers is not more than $30. 8 Task 1: Customer Spending"
   },
   {
     "objectID": "week3/slides.html#source-page-009",
