@@ -2237,35 +2237,42 @@
     "href": "week3/slides.html#putting-theory-to-practice",
     "title": "Sampling and estimation",
     "section": "Putting theory to practice",
-    "text": "Putting theory to practice\nA boba store tracks how much customers spend to plan staffing, ingredients and promotions. Transaction records from the quarter, purchases are normally distributed with a mean of $25 and a standard deviation of $8\n\nA purchase between $15 and $35 is considered moderate. What is the probability that a sample of 100 customers makes a moderate purchase?\nThe shop wants to offer a reward to its top 25% of customers by spending. If I take a sample of 50 customers, what is the average purchase amount that marks the threshold, so that 75% of customers spend no more than this amount?\nOn one weekend, the shop samples 15 customers. What is the probability that their mean purchase is no more than $30?\n\n\n\n\n\n\n\nTip\n\n\n“Transaction records from the quarter…” is a hint at the population distribution 😉"
+    "text": "Putting theory to practice\nA boba store tracks how much customers spend to plan staffing, ingredients and promotions. Transaction records from the quarter, purchases are normally distributed with a mean of $25 and a standard deviation of $8\n\nA purchase between $24 and $26 is considered moderate. What is the probability that a sample of 10 customers makes a moderate purchase?\nThe shop wants to offer a reward to its top 25% of customers by spending. If I take a sample of 15 customers, what is the average purchase amount that marks the threshold, so that 75% of customers spend no more than this amount?\nOn one weekend, the shop samples 8 customers. What is the probability that their mean purchase is no more than $30?\n\n\n\n\n\n\n\nTip\n\n\n“Transaction records from the quarter…” is a hint at the population distribution 😉"
   },
   {
     "objectID": "week3/slides.html#moderate-purchase---watch-me",
     "href": "week3/slides.html#moderate-purchase---watch-me",
     "title": "Sampling and estimation",
     "section": "Moderate purchase - Watch me 👀",
-    "text": "Moderate purchase - Watch me 👀\nWhat is the probability that a sample of 100 customers makes a purchase between $15 and $35 is considered moderate?\n\nShaded normal distribution\nNotation for shaded region of interest\n\n\n\n\n\n\n\nRecall\n\n\n\nUse =NORM.DIST(x, mean, standard_dev, cumulative) to find the shaded regions of a Normal distribution\nSubtract cumulative area from 1 to get the right tail\nUse =NORM.INV(probablility, mean, standard_dev) to find the threshold value"
+    "text": "Moderate purchase - Watch me 👀\nWhat is the probability that a sample of 10 customers makes a purchase between $24 and $26 is considered moderate?\n\nShaded normal distribution\nNotation for shaded region of interest\n\n\n\n\n\n\n\nRecall\n\n\n\nUse =NORM.DIST(x, mean, standard_dev, cumulative) to find the shaded regions of a Normal distribution\nSubtract cumulative area from 1 to get the right tail\nUse =NORM.INV(probablility, mean, standard_dev) to find the threshold value"
   },
   {
     "objectID": "week3/slides.html#moderate-purchase---watch-me-1",
     "href": "week3/slides.html#moderate-purchase---watch-me-1",
     "title": "Sampling and estimation",
     "section": "Moderate purchase - Watch me 👀",
-    "text": "Moderate purchase - Watch me 👀\nWhat is the probability that a sample of 100 customers makes a purchase between $15 and $35 is considered moderate?\n\nThe sample mean has distribution \\bar X\\sim\\mathcal{N}(25,8/\\sqrt{100})=\\mathcal{N}(25,0.8). Find P(15&lt;\\bar X&lt;35).\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.DIST(35,25,8/SQRT(100),TRUE)-NORM.DIST(15,25,8/SQRT(100),TRUE)\nThe probability is virtually 1 (100%)."
+    "text": "Moderate purchase - Watch me 👀\nWhat is the probability that a sample of 10 customers makes a purchase between $24 and $26 is considered moderate?\n\nThe sample mean has distribution \\bar X\\sim\\mathcal{N}(25,8/\\sqrt{10}). Find P(24&lt;\\bar X&lt;26).\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.DIST(26,25,8/SQRT(10),TRUE)-NORM.DIST(24,25,8/SQRT(10),TRUE)\nThe probability is 0.3074, or about 30.74%."
   },
   {
     "objectID": "week3/slides.html#top-25-of-customers---you-try",
     "href": "week3/slides.html#top-25-of-customers---you-try",
     "title": "Sampling and estimation",
     "section": "Top 25% of customers - You try ✏️",
-    "text": "Top 25% of customers - You try ✏️\n\n \nIf I take a sample of 50 customers, what is the average purchase amount that marks the threshold, so that 75% of customers spend no more than this amount?\n\nFor \\bar X\\sim\\mathcal{N}(25,8/\\sqrt{50}), find c such that P(\\bar X\\leq c)=0.75.\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.INV(0.75,25,8/SQRT(50)) gives c\\approx\\$25.76."
+    "text": "Top 25% of customers - You try ✏️\n\n \nIf I take a sample of 15 customers, what is the average purchase amount that marks the threshold, so that 75% of customers spend no more than this amount?\n\nFor \\bar X\\sim\\mathcal{N}(25,8/\\sqrt{15}), find c such that P(\\bar X\\leq c)=0.75.\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.INV(0.75,25,8/SQRT(15)) gives c\\approx\\$26.39."
   },
   {
     "objectID": "week3/slides.html#weekend-spenders---you-try",
     "href": "week3/slides.html#weekend-spenders---you-try",
     "title": "Sampling and estimation",
     "section": "Weekend spenders - You try ✏️",
-    "text": "Weekend spenders - You try ✏️\n\n \nOn one weekend, the shop samples 15 customers. What is the probability that their mean purchase is no more than $30?\n\nBecause individual purchases are Normal, \\bar X\\sim\\mathcal{N}(25,8/\\sqrt{15}) even for n=15. Find P(\\bar X\\leq30).\n\n\n\n\n\n\n\nSolution\n\n\n\nExcel: =NORM.DIST(30,25,8/SQRT(15),TRUE) gives 0.9923, or about 99.23%."
+    "text": "Weekend spenders - You try ✏️\n\n \nOn one weekend, the shop samples 8 customers. What is the probability that their mean purchase is no more than $30?\n\nBecause individual purchases are Normal, \\bar X\\sim\\mathcal{N}(25,8/\\sqrt{8}) even for n=8. Find P(\\bar X\\leq30).\n\n\n\n\n\n\n\nSolution\n\n\n\nExcel: =NORM.DIST(30,25,8/SQRT(8),TRUE) gives 0.9615, or about 96.15%."
+  },
+  {
+    "objectID": "week3/slides.html#break",
+    "href": "week3/slides.html#break",
+    "title": "Sampling and estimation",
+    "section": "Break",
+    "text": "Break"
   },
   {
     "objectID": "week3/slides.html#how-do-we-communicate-uncertainty",
@@ -2289,53 +2296,11 @@
     "text": "Confidence interval\n\nMermaid decision tree if SD is known or not"
   },
   {
-    "objectID": "week3/slides.html#break",
-    "href": "week3/slides.html#break",
+    "objectID": "week3/slides.html#break-1",
+    "href": "week3/slides.html#break-1",
     "title": "Sampling and estimation",
     "section": "Break",
     "text": "Break"
-  },
-  {
-    "objectID": "week3/slides.html#source-page-008",
-    "href": "week3/slides.html#source-page-008",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "UrbanStyle is a popular retail store that tracks customer spending to optimise staffing, stock levels, and promotional strategies. Past data indicate that the distribution of individual customer purchase amounts is normal, with mean purchase amounts of $25 and a standard deviation of $8\nYou have been asked to analyse spending patterns to support decisions for an upcoming promotional event. The retail store defines a “moderate purchase” as spending between $15 and $35.Using the information above, calculate the probability that a randomly selected customer makes a moderate purchase. b) Store managers want to design a promotion that targets the top 25% of customers by spending. This will help managers set a threshold for premium rewards. Find the dollar amount such that 75% of customers spend no more than this value. c) On a particular weekend, a random sample of 15 customers was taken to estimate average spending.Assuming the store’s spending distribution remains unchanged, calculate the probability that the sample mean purchase amount for these 15 customers is not more than $30. 8 Task 1: Customer Spending"
-  },
-  {
-    "objectID": "week3/slides.html#source-page-009",
-    "href": "week3/slides.html#source-page-009",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "The retail store defines a “moderate purchase” as spending between $15 and $35.Using the information above, calculate the probability that a randomly selected customer makes a moderate purchase\n9 Solutions for Task 1: Customer Spending 15 -1.25 0 1.25 25 35 X scale Z scale\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 9\n\n\n\n\n\nVisual from source page 9.\n\n\n\n\n\n\nVisual from source page 9."
-  },
-  {
-    "objectID": "week3/slides.html#source-page-010",
-    "href": "week3/slides.html#source-page-010",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "b)Store managers want to design a promotion that targets the top 25% of customers by spending. This will help managers set a threshold for premium rewards. Find the dollar amount such that 75% of customers spend no more than this value.\n10 Solutions for Task 1: Purchase Amounts 25 x ? 0 0.67 Z scale X scale 0.75 \nPX\\leq{}x=0.75\n \nNorm.inv(0.75,25,8) = 0.303959 \\approx{} \\$30.40\n OR To get the Z value: From Excel: = norm.s.inv(0.75) = 0.67449 From tables: Z=0.67 (refer to videos) \nZ = X - \\mu{}\\sigma{}\n \n0.67 = = X -258\n \nX = 25 + (0.67)8 = 30.3959 \\approx{} \\$30.40\n\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 10\n\n\n\n\n\nVisual from source page 10.\n\n\n\n\n\n\nVisual from source page 10.\n\n\n\n\n\n\n\n\nVisual from source page 10."
-  },
-  {
-    "objectID": "week3/slides.html#source-page-011",
-    "href": "week3/slides.html#source-page-011",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "Suppose it is known that the distribution of purchase amounts by customers entering a popular retail store is normal with mean $25 and standard deviation $8.\nSuppose a random sample of 15 customers who entered this popular retail store was taken. c) Calculate the probability that their mean purchase amount is not more than $30. 11 Solutions for Task 1: Purchase Amounts Since X~ N(μ, σ2), then X ~ N(μ, σ2n)\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 11\n\n\n\n\n\nVisual from source page 11.\n\n\n\n\n\n\nVisual from source page 11."
-  },
-  {
-    "objectID": "week3/slides.html#source-page-012",
-    "href": "week3/slides.html#source-page-012",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "A consulting firm is preparing a report for a group of employers about graduate starting salaries. A recent national survey reports that the average weekly income of graduates one year after graduation is $600, with a standard deviation of $100. The distribution of individual weekly incomes is known to be non-normal (some graduates earn much more than others).\nFor a client presentation, an analyst at the consulting firm takes a random sample of 50 graduates from the survey data. What is the probability that the mean weekly income of this sample of 50 graduates is less than $580? 12 Task 2: Weekly Income of Graduates\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 12"
-  },
-  {
-    "objectID": "week3/slides.html#source-page-013",
-    "href": "week3/slides.html#source-page-013",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "13\nSolutions for Task 2: Weekly Income of Graduates \nPX&lt;580=PX - \\mu{}\\sigma{}n&lt;580-60010050\n \nP(Z&lt;-1.414) = 0.07865\n Norm.dist(580,600,100/sqrt(50),true) = 0.07865\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 13\n\n\n\n\n\nVisual from source page 13.\n\n\n\n\n\n\nVisual from source page 13."
   },
   {
     "objectID": "week3/slides.html#source-page-014",

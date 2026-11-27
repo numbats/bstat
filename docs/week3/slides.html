@@ -508,9 +508,9 @@ The <strong>total area</strong> under the curve is 1.</p>
 <h2>Putting theory to practice</h2>
 <p>A boba store tracks how much customers spend to plan staffing, ingredients and promotions. Transaction records from the quarter, purchases are <strong>normally distributed</strong> with a <strong>mean of $25 and a standard deviation of $8</strong></p>
 <ol type="1">
-<li>A purchase between $15 and $35 is considered moderate. What is the probability that a <strong>sample of 100</strong> customers makes a moderate purchase?</li>
-<li>The shop wants to offer a reward to its top 25% of customers by spending. If I take a <strong>sample of 50 customers</strong>, what is the <strong>average purchase amount</strong> that marks the threshold, so that 75% of customers spend no more than this amount?</li>
-<li>On one weekend, the shop <strong>samples 15 customers</strong>. What is the probability that their mean purchase is no more than $30?</li>
+<li>A purchase between $24 and $26 is considered moderate. What is the probability that a <strong>sample of 10</strong> customers makes a moderate purchase?</li>
+<li>The shop wants to offer a reward to its top 25% of customers by spending. If I take a <strong>sample of 15 customers</strong>, what is the <strong>average purchase amount</strong> that marks the threshold, so that 75% of customers spend no more than this amount?</li>
+<li>On one weekend, the shop <strong>samples 8 customers</strong>. What is the probability that their mean purchase is no more than $30?</li>
 </ol>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -528,7 +528,7 @@ The <strong>total area</strong> under the curve is 1.</p>
 </section>
 <section id="moderate-purchase---watch-me" class="slide level2">
 <h2>Moderate purchase - Watch me 👀</h2>
-<p>What is the probability that a <strong>sample of 100</strong> customers makes a purchase between $15 and $35 is considered moderate?</p>
+<p>What is the probability that a <strong>sample of 10</strong> customers makes a purchase between <strong>$24 and $26</strong> is considered moderate?</p>
 <ul>
 <li>Shaded normal distribution</li>
 <li>Notation for shaded region of interest</li>
@@ -553,14 +553,14 @@ The <strong>total area</strong> under the curve is 1.</p>
 </section>
 <section id="moderate-purchase---watch-me-1" class="slide level2 smaller">
 <h2>Moderate purchase - Watch me 👀</h2>
-<p>What is the probability that a <strong>sample of 100</strong> customers makes a purchase between <strong>$15 and $35</strong> is considered moderate?</p>
+<p>What is the probability that a <strong>sample of 10</strong> customers makes a purchase between <strong>$24 and $26</strong> is considered moderate?</p>
 <!--
 - Shaded normal distribution
 - Notation for shaded region of interest
 -->
-<p>The sample mean has distribution <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{100})=\mathcal{N}(25,0.8)</span>. Find <span class="math inline">P(15&lt;\bar X&lt;35)</span>.</p>
+<p>The sample mean has distribution <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{10})</span>. Find <span class="math inline">P(24&lt;\bar X&lt;26)</span>.</p>
 
-<img data-src="slides_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 0.8. The area between 15 and 35 is shaded dark blue, covering virtually the whole curve." width="768"><div class="callout callout-tip callout-titled callout-style-default">
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 10. The area between 24 and 26 is shaded dark blue." width="768"><div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
@@ -569,8 +569,8 @@ The <strong>total area</strong> under the curve is 1.</p>
 <p><strong>Solution</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Excel:</strong> <code>=NORM.DIST(35,25,8/SQRT(100),TRUE)-NORM.DIST(15,25,8/SQRT(100),TRUE)</code></p>
-<p>The probability is <strong>virtually 1 (100%)</strong>.</p>
+<p><strong>Excel:</strong> <code>=NORM.DIST(26,25,8/SQRT(10),TRUE)-NORM.DIST(24,25,8/SQRT(10),TRUE)</code></p>
+<p>The probability is <strong>0.3074</strong>, or about <strong>30.74%</strong>.</p>
 </div>
 </div>
 </div>
@@ -579,13 +579,13 @@ The <strong>total area</strong> under the curve is 1.</p>
 <h2>Top 25% of customers - You try ✏️</h2>
 <countdown-timer id="week3-top-quarter" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
-<p>If I take a <strong>sample of 50 customers</strong>, what is the <strong>average purchase amount</strong> that marks the threshold, so that 75% of customers spend no more than this amount?</p>
+<p>If I take a <strong>sample of 15 customers</strong>, what is the <strong>average purchase amount</strong> that marks the threshold, so that 75% of customers spend no more than this amount?</p>
 <!--
 - Shaded normal distribution
 - Label threshold as x = ?
 - Notation for what the question is asking
 -->
-<p>For <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{50})</span>, find <span class="math inline">c</span> such that <span class="math inline">P(\bar X\leq c)=0.75</span>.</p>
+<p>For <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{15})</span>, find <span class="math inline">c</span> such that <span class="math inline">P(\bar X\leq c)=0.75</span>.</p>
 
 <img data-src="slides_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25. Seventy-five percent of the area is shaded to the left of an unknown cutoff c, labelled c equals question mark." width="768"><div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -596,7 +596,7 @@ The <strong>total area</strong> under the curve is 1.</p>
 <p><strong>Solution</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Excel:</strong> <code>=NORM.INV(0.75,25,8/SQRT(50))</code> gives <strong><span class="math inline">c\approx\$25.76</span></strong>.</p>
+<p><strong>Excel:</strong> <code>=NORM.INV(0.75,25,8/SQRT(15))</code> gives <strong><span class="math inline">c\approx\$26.39</span></strong>.</p>
 </div>
 </div>
 </div>
@@ -605,14 +605,14 @@ The <strong>total area</strong> under the curve is 1.</p>
 <h2>Weekend spenders - You try ✏️</h2>
 <countdown-timer id="week3-weekend-spenders" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
-<p>On one weekend, the shop <strong>samples 15 customers</strong>. What is the probability that their mean purchase is <strong>no more than $30?</strong></p>
+<p>On one weekend, the shop <strong>samples 8 customers</strong>. What is the probability that their mean purchase is <strong>no more than $30?</strong></p>
 <!--
 - Shaded normal distribution
 - Notation for shaded region of interest
 -->
-<p>Because individual purchases are Normal, <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{15})</span> even for <span class="math inline">n=15</span>. Find <span class="math inline">P(\bar X\leq30)</span>.</p>
+<p>Because individual purchases are Normal, <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{8})</span> even for <span class="math inline">n=8</span>. Find <span class="math inline">P(\bar X\leq30)</span>.</p>
 
-<img data-src="slides_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 15. The area to the left of 30 is shaded dark blue." width="768"><div class="callout callout-tip callout-titled callout-style-default">
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 8. The area to the left of 30 is shaded dark blue." width="768"><div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
@@ -622,10 +622,15 @@ The <strong>total area</strong> under the curve is 1.</p>
 </div>
 <div class="callout-content">
 <!-- - Add solution -->
-<p><strong>Excel:</strong> <code>=NORM.DIST(30,25,8/SQRT(15),TRUE)</code> gives <strong>0.9923</strong>, or about <strong>99.23%</strong>.</p>
+<p><strong>Excel:</strong> <code>=NORM.DIST(30,25,8/SQRT(8),TRUE)</code> gives <strong>0.9615</strong>, or about <strong>96.15%</strong>.</p>
 </div>
 </div>
 </div>
+</section>
+<section id="break" class="slide level2 section-slide">
+<h2>Break</h2>
+<countdown-timer id="introductions-timer" minutes="10" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
 </section>
 <section id="how-do-we-communicate-uncertainty" class="slide level2 section-slide">
 <h2>How do we communicate uncertainty?</h2>
@@ -645,142 +650,20 @@ The <strong>total area</strong> under the curve is 1.</p>
 <li>Mermaid decision tree if SD is known or not</li>
 </ul>
 </section>
-<section id="break" class="slide level2 section-slide">
+<section id="break-1" class="slide level2 section-slide">
 <h2>Break</h2>
 <countdown-timer id="introductions-timer" minutes="10" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 </section>
-<section id="source-page-008" class="slide level2">
-<h2></h2>
-<p>UrbanStyle is a popular retail store that tracks customer spending to optimise staffing, stock levels, and promotional strategies. Past data indicate that the distribution of individual customer purchase amounts is normal, with mean purchase amounts of $25 and a standard deviation of $8</p>
-<p>You have been asked to analyse spending patterns to support decisions for an upcoming promotional event. The retail store defines a “moderate purchase” as spending between $15 and $35.Using the information above, calculate the probability that a randomly selected customer makes a moderate purchase. b) Store managers want to design a promotion that targets the top 25% of customers by spending. This will help managers set a threshold for premium rewards. Find the dollar amount such that 75% of customers spend no more than this value. c) On a particular weekend, a random sample of 15 customers was taken to estimate average spending.Assuming the store’s spending distribution remains unchanged, calculate the probability that the sample mean purchase amount for these 15 customers is not more than $30. 8 Task 1: Customer Spending</p>
-</section>
-<section id="source-page-009" class="slide level2">
-<h2></h2>
-<h3 id="the-retail-store-defines-a-moderate-purchase-as-spending-between-15-and-35.using-the-information-above-calculate-the-probability-that-a-randomly-selected-customer-makes-a-moderate-purchase">The retail store defines a “moderate purchase” as spending between $15 and $35.Using the information above, calculate the probability that a randomly selected customer makes a moderate purchase</h3>
-<p>9 Solutions for Task 1: Customer Spending 15 -1.25 0 1.25 25 35 X scale Z scale</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=9">Workshop_slides_Week_3_with_solutions.pdf, page 9</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image7.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 9.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image8.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 9.</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="source-page-010" class="slide level2">
-<h2></h2>
-<h3 id="bstore-managers-want-to-design-a-promotion-that-targets-the-top-25-of-customers-by-spending.-this-will-help-managers-set-a-threshold-for-premium-rewards.-find-the-dollar-amount-such-that-75-of-customers-spend-no-more-than-this-value.">b)Store managers want to design a promotion that targets the top 25% of customers by spending. This will help managers set a threshold for premium rewards. Find the dollar amount such that 75% of customers spend no more than this value.</h3>
-<p>10 Solutions for Task 1: Purchase Amounts 25 x ? 0 0.67 Z scale X scale 0.75 <span class="math display">
-PX\leq{}x=0.75
-</span> <span class="math display">
-Norm.inv(0.75,25,8) = 0.303959 \approx{} \$30.40
-</span> OR To get the Z value: From Excel: = norm.s.inv(0.75) = 0.67449 From tables: Z=0.67 (refer to videos) <span class="math display">
-Z = X - \mu{}\sigma{}
-</span> <span class="math display">
-0.67 = = X -258
-</span> <span class="math display">
-X = 25 + (0.67)8 = 30.3959 \approx{} \$30.40
-</span></p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=10">Workshop_slides_Week_3_with_solutions.pdf, page 10</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image9.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 10.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image10.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 10.</figcaption>
-</figure>
-</div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image11.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 10.</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="source-page-011" class="slide level2">
-<h2></h2>
-<h3 id="suppose-it-is-known-that-the-distribution-of-purchase-amounts-by-customers-entering-a-popular-retail-store-is-normal-with-mean-25-and-standard-deviation-8.">Suppose it is known that the distribution of purchase amounts by customers entering a popular retail store is normal with mean $25 and standard deviation $8.</h3>
-<p>Suppose a random sample of 15 customers who entered this popular retail store was taken. c) Calculate the probability that their mean purchase amount is not more than $30. 11 Solutions for Task 1: Purchase Amounts Since X~ N(μ, σ2), then X ~ N(μ, σ2n)</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=11">Workshop_slides_Week_3_with_solutions.pdf, page 11</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image12.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 11.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image44.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 11.</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="source-page-012" class="slide level2">
-<h2></h2>
-<h3 id="a-consulting-firm-is-preparing-a-report-for-a-group-of-employers-about-graduate-starting-salaries.-a-recent-national-survey-reports-that-the-average-weekly-income-of-graduates-one-year-after-graduation-is-600-with-a-standard-deviation-of-100.-the-distribution-of-individual-weekly-incomes-is-known-to-be-non-normal-some-graduates-earn-much-more-than-others.">A consulting firm is preparing a report for a group of employers about graduate starting salaries. A recent national survey reports that the average weekly income of graduates one year after graduation is $600, with a standard deviation of $100. The distribution of individual weekly incomes is known to be non-normal (some graduates earn much more than others).</h3>
-<p>For a client presentation, an analyst at the consulting firm takes a random sample of 50 graduates from the survey data. What is the probability that the mean weekly income of this sample of 50 graduates is less than $580? 12 Task 2: Weekly Income of Graduates</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=12">Workshop_slides_Week_3_with_solutions.pdf, page 12</a></em></p>
-</section>
-<section id="source-page-013" class="slide level2">
-<h2></h2>
-<h3 id="section">13</h3>
-<p>Solutions for Task 2: Weekly Income of Graduates <span class="math display">
-PX&lt;580=PX - \mu{}\sigma{}n&lt;580-60010050
-</span> <span class="math display">
-P(Z&lt;-1.414) = 0.07865
-</span> Norm.dist(580,600,100/sqrt(50),true) = 0.07865</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=13">Workshop_slides_Week_3_with_solutions.pdf, page 13</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image13.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 13.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image430.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 13.</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
 <section id="source-page-014" class="slide level2">
 <h2></h2>
-<h3 id="section-1">14</h3>
+<h3 id="section">14</h3>
 <p>Task 3: Call Centre Performance Analysis (in your own time) A telecommunications company closely monitors its call-centre operations to maintain high service standards. According to company reports, the average call handling time is 6.5 minutes, with a standard deviation of 1.2 minutes. To verify whether daily performance aligns with expectations, a team leader reviews a random sample of 16 customer calls from the previous shift. Assuming the company’s claim is accurate and call handling times are normally distributed, the probability that the sample mean of the 16 calls falls between 6.0 and 7.0 minutes is 0.9044. Is this probability calculation valid given the small sample size (n = 16)?Support your explanation with a discussion of population distribution, sample size, and whether the Central Limit Theorem is required in this case.</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=14">Workshop_slides_Week_3_with_solutions.pdf, page 14</a></em></p>
 </section>
 <section id="source-page-015" class="slide level2">
 <h2></h2>
-<h3 id="section-2">15</h3>
+<h3 id="section-1">15</h3>
 <p>Solutions for Task 3: Call Centre Performance Analysis (in your own time) A telecommunications company closely monitors its call-centre operations to maintain high service standards. According to company reports, the average call handling time is 6.5 minutes, with a standard deviation of 1.2 minutes. To verify whether daily performance aligns with expectations, a team leader reviews a random sample of 16 customer calls from the previous shift. Assuming the company’s claim is accurate and call handling times are normally distributed, the probability that the sample mean of the 16 calls falls between 6.0 and 7.0 minutes is 0.9044. Is this probability calculation valid given the small sample size (n = 16)?Support your explanation with a discussion of population distribution, sample size, and whether the Central Limit Theorem is required in this case. Yes the answer is valid. Although the sample size is only 16, the parent population is normally distributed. We can assume that the mean of the random sample is also normally distributed. Therefore, CLT is not required. In other words, since X ~ Nμ,σ2 then X ~ Nμ,σ2n</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=15">Workshop_slides_Week_3_with_solutions.pdf, page 15</a></em></p>
 
@@ -948,7 +831,7 @@ p1-pn   = std error
 </section>
 <section id="source-page-021" class="slide level2">
 <h2></h2>
-<h3 id="section-3">21</h3>
+<h3 id="section-2">21</h3>
 <p>If the standard deviation (σ) ↑, spread of the distribution is larger (assuming all other factors remain unchanged) standard error std deviationn ↑, width ↑, estimate is less precise If the sample size (n) ↑, standard error std deviationn ↓, width ↓, estimate is more precise (assuming all other factors remain unchanged) The bigger the sample, the more information we have to increase the precision of the interval estimate of the sample mean, the narrower the interval. Factors that affect the width of a Confidence Interval Estimate <span class="math display">
 x\pm{}Z\alpha{}/2\sigma{}n
 </span> <span class="math display">
