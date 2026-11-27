@@ -2209,7 +2209,7 @@
     "href": "week3/slides.html#sample-size",
     "title": "Sampling and estimation",
     "section": "⬆️ Sample size",
-    "text": "⬆️ Sample size\n\n\nSE depends on SD (s) and sample size (n)\n\n\\mathrm{SE}(\\bar X)=\\frac{s}{\\sqrt n}\n\n\n\n\n\nn\n\\sigma / \\sqrt{n}\nSE\n\n\n\n\n5\n1.708 / \\sqrt{5}\n0.764\n\n\n10\n1.708 / \\sqrt{10}\n0.540\n\n\n25\n1.708 / \\sqrt{25}\n0.342\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nAs n increases, the denominator increases\nThis makes our fraction smaller = our sampling SE decreases,"
+    "text": "⬆️ Sample size\n\n\n\nSE depends on SD (s) and sample size (n)\n\n\\mathrm{SE}(\\bar X)=\\frac{s}{\\sqrt n}\n\n\n\n\n\n\n\nn\n\\sigma / \\sqrt{n}\nSE\n\n\n\n\n5\n1.708 / \\sqrt{5}\n0.764\n\n\n10\n1.708 / \\sqrt{10}\n0.540\n\n\n25\n1.708 / \\sqrt{25}\n0.342\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nAs n increases, the denominator increases\nThis makes our fraction smaller = our sampling SE decreases,"
   },
   {
     "objectID": "week3/slides.html#sample-size-1",
