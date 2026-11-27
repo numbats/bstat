@@ -2153,7 +2153,7 @@
     "href": "week3/slides.html#todays-roadmap",
     "title": "Sampling and estimation",
     "section": "Today’s roadmap",
-    "text": "Today’s roadmap\n\nRecap\nSample distribution\n\nBoba sales\n\nSampling variability\nSample distribution\n\n\nHow to reduce sampling variability?\n\nIncrease sample size\nCLT\nActivity - Normal PDF known SD\n\nHow to we communicate uncertainty?\n\nCI\n\n10 MIN BREAK\nDo you know the population SD?\n\nYes use Z\nNo use t\n\nProportion\n\nBoba membership sign ups\nFormula\nUse Z distribution\nActivity\n\nExercise"
+    "text": "Today’s roadmap\n\nRecap\nSample distribution\n\nBoba sales\n\nSampling variability\nSample distribution\n\n\nHow to reduce sampling variability?\n\nIncrease sample size\nCLT\n\n10 MIN BREAK\nHow to we communicate uncertainty?\n\nCI\n\nDo you know the population SD?\n\nYes use Z\nNo use t\n\nProportion\n\nBoba membership sign ups\nFormula\nUse Z distribution\nActivity\n\nExercise"
   },
   {
     "objectID": "week3/slides.html#population-and-sampling",
@@ -2209,7 +2209,7 @@
     "href": "week3/slides.html#sample-size",
     "title": "Sampling and estimation",
     "section": "⬆️ Sample size",
-    "text": "⬆️ Sample size\n\n\nSE is a function of sample size (n)\n\n\\mathrm{SE}(\\bar X)=\\frac{s}{\\sqrt n}\n\n\n\nAs n increases, the denominator increases\nThis makes our fraction smaller = our sampling SE decreases\n\n\n\n\nSample size (n)\nSE formula (\\sigma / \\sqrt{n})\nSE\n\n\n\n\n5\n1.708 / \\sqrt{5}\n0.764\n\n\n10\n1.708 / \\sqrt{10}\n0.540\n\n\n25\n1.708 / \\sqrt{25}\n0.342\n\n\nAs sample size increases, \\sigma_{\\bar{x}} decreases, so \\bar{X} tends to fall closer to \\mu."
+    "text": "⬆️ Sample size\n\n\nSE depends on SD (s) and sample size (n)\n\n\\mathrm{SE}(\\bar X)=\\frac{s}{\\sqrt n}\n\n\n\n\n\nn\n\\sigma / \\sqrt{n}\nSE\n\n\n\n\n5\n1.708 / \\sqrt{5}\n0.764\n\n\n10\n1.708 / \\sqrt{10}\n0.540\n\n\n25\n1.708 / \\sqrt{25}\n0.342\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nAs n increases, the denominator increases\nThis makes our fraction smaller = our sampling SE decreases,"
   },
   {
     "objectID": "week3/slides.html#sample-size-1",
