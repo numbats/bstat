@@ -356,7 +356,7 @@ The <strong>total area</strong> under the curve is 1.</p>
 </div></div>
 </section>
 <section id="sampling-variability-1" class="slide level2">
-<h2>Sampling variability</h2>
+<h2>Sampling variability 🧋</h2>
 <div class="boba-live" data-boba-tab="means" data-boba-mode="intro-se" data-boba-tabs="sample,means">
 
 </div>
@@ -463,7 +463,7 @@ The <strong>total area</strong> under the curve is 1.</p>
 </div>
 </section>
 <section id="sample-size-1" class="slide level2">
-<h2>⬆️ Sample size</h2>
+<h2>⬆️ Sample size 🧋</h2>
 <div style="font-size: 60%;">
 <p>As <span class="math inline">n</span> increases, <span class="math inline">\mathrm{SE}(\bar X)=\sigma/\sqrt n</span> decreases, so the sampling distribution narrows around <span class="math inline">\mu</span>.</p>
 </div>
@@ -472,17 +472,19 @@ The <strong>total area</strong> under the curve is 1.</p>
 </div>
 </section>
 <section id="what-if-my-population-is-skewed" class="slide level2">
-<h2>What if my population is skewed?</h2>
+<h2>What if my population is skewed? 🧋</h2>
 <!-- Draw repeated samples from a **right-skewed** population. How does the shape of their **sample means** change as $n$ increases? -->
 <div class="boba-live" data-boba-tab="clt" data-boba-mode="clt" data-boba-tabs="clt">
 
 </div>
 </section>
-<section id="central-limit-theorem" class="slide level2">
-<h2>Central Limit Theorem</h2>
+<section id="central-limit-theorem-clt" class="slide level2">
+<h2>Central Limit Theorem (CLT)</h2>
+<div style="font-size: 60%;">
 <blockquote>
 <p>The CLT states that the sample distribution approximates a <strong>Normal distribution</strong> as the <strong>sample size grows large</strong>, regardless of the original population’s shape<sup>1</sup></p>
 </blockquote>
+</div>
 <div class="columns">
 <div class="column">
 <p><strong>Why do we care?</strong> 🤷🏻‍♀️</p>
@@ -491,28 +493,14 @@ The <strong>total area</strong> under the curve is 1.</p>
 <li>BUT we need a <strong>sufficiently large sample size (n &gt; 30)</strong></li>
 </ul>
 </div><div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://preview.redd.it/lu5ca1f4n2021.gif?width=480&amp;format=mp4&amp;s=62b968a464067fa8af07b8fecd159a038d1d2119"></p>
-<figcaption>Galton Board</figcaption>
-</figure>
-</div>
+<p><img data-src="https://64.media.tumblr.com/02df8ba13155a78eab4bfb054d195684/tumblr_p5wrk7ZIYX1w6skpso1_500.gifv" style="width:60.0%"></p>
 </div></div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>https://www.youtube.com/watch?v=jvoxEYmQHNM</p></li></ol></aside></section>
-<section id="boba-prices" class="slide level2">
-<h2>Boba prices 🧋</h2>
-<div class="boba-live" data-boba-tab="sample" data-boba-mode="full" data-boba-tabs="sample,means,sampling,ci">
+<p>[^1: [Bunnies, Dragons and the ‘Normal’ World: Central Limit Theorem | The New York Times] (https://www.youtube.com/watch?v=jvoxEYmQHNM)]</p>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>1</p></li></ol></aside></section>
+<section id="boba-prices-app" class="slide level2">
+<h2>Boba prices app 🧋</h2>
+<div class="boba-live" data-boba-tab="sample" data-boba-mode="full" data-boba-tabs="sample,means,sampling,clt,ci">
 
-</div>
-<div class="boba-print">
-<p><strong>Boba sampling simulator</strong> — interactive in the HTML slides.</p>
-<p>Simulate samples of <span class="math inline">n</span> cups from <span class="math inline">X \sim \mathcal{N}(8, 3)</span> (AUD; SD = $3.00). Compare individual prices, repeated sample means and a 95% confidence interval.</p>
-<ul>
-<li>Sample mean: <span class="math inline">\bar{x}</span>; sample SD: <span class="math inline">s</span>; estimated SE: <span class="math inline">s / \sqrt{n}</span>.</li>
-<li>The population price curve uses SD <span class="math inline">\sigma=3</span>; each displayed sampling curve uses that draw’s estimated SE, <span class="math inline">s/\sqrt{n}</span>.</li>
-<li>95% confidence interval: <span class="math inline">\bar{x} \pm t_{0.975,n-1} s / \sqrt{n}</span>.</li>
-</ul>
-<p>Prices are illustrative teaching assumptions.</p>
 </div>
 <script>
 // One persistent iframe; later slides provide an empty slot and a selected tab.
@@ -537,32 +525,10 @@ window.addEventListener("load", () => {
 <style>
 .boba-live {height:480px;}
 .boba-live[data-boba-mode^="intro"] {height:540px;}
-.boba-live[data-boba-mode="full"]:empty {height:610px;}
-.boba-live[data-boba-mode="clt"]:empty {height:560px;}
-.boba-print {display:none;}
 .print-pdf .boba-live {display:none;}
-.print-pdf .boba-print {display:block;}
-@media print {#boba-simulator {display:none !important;} .boba-live {display:none;} .boba-print {display:block;}}
+@media print {#boba-simulator {display:none !important;} .boba-live {display:none;}}
 </style>
 </section>
-<section id="source-page-006" class="slide level2">
-<h2></h2>
-<h3 id="in-other-words-regardless-of-the-distribution-of-the-original-population">In other words, regardless of the distribution of the original population,</h3>
-<p>Regardless of the population distribution, the distribution of the sample mean is approximately normal when the sample size is sufficiently large. This is the Central Limit Theorem (CLT); the approximation improves as <span class="math inline">n</span> increases.</p>
-<p>For a population with mean <span class="math inline">\mu</span> and standard deviation <span class="math inline">\sigma</span>,</p>
-<p><span class="math display">
-\bar{X} \approx N\left(\mu, \frac{\sigma^2}{n}\right), \qquad \mathrm{SE}(\bar{X}) = \frac{\sigma}{\sqrt{n}}.
-</span></p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=6">Workshop_slides_Week_3_with_solutions.pdf, page 6</a></em></p>
-
-<img data-src="figures/etx5900/components/image34.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 6.</p></section>
-<section id="source-page-007" class="slide level2">
-<h2></h2>
-<h3 id="central-limit-theorem-1">Central Limit Theorem</h3>
-<p>https://www.youtube.com/watch?v=jvoxEYmQHNM</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=7">Workshop_slides_Week_3_with_solutions.pdf, page 7</a></em></p>
-
-<img data-src="figures/etx5900/components/image6.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 7.</p></section>
 <section id="source-page-008" class="slide level2">
 <h2></h2>
 <h3 id="urbanstyle-is-a-popular-retail-store-that-tracks-customer-spending-to-optimise-staffing-stock-levels-and-promotional-strategies.-past-data-indicate-that-the-distribution-of-individual-customer-purchase-amounts-is-normal-with-mean-purchase-amounts-of-25-and-a-standard-deviation-of-8">UrbanStyle is a popular retail store that tracks customer spending to optimise staffing, stock levels, and promotional strategies. Past data indicate that the distribution of individual customer purchase amounts is normal, with mean purchase amounts of $25 and a standard deviation of $8</h3>

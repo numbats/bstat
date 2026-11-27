@@ -2180,8 +2180,8 @@
     "objectID": "week3/slides.html#sampling-variability-1",
     "href": "week3/slides.html#sampling-variability-1",
     "title": "Sampling and estimation",
-    "section": "Sampling variability",
-    "text": "Sampling variability"
+    "section": "Sampling variability 🧋",
+    "text": "Sampling variability 🧋"
   },
   {
     "objectID": "week3/slides.html#sampling-distribution-1",
@@ -2201,43 +2201,29 @@
     "objectID": "week3/slides.html#sample-size-1",
     "href": "week3/slides.html#sample-size-1",
     "title": "Sampling and estimation",
-    "section": "⬆️ Sample size",
-    "text": "⬆️ Sample size\n\nAs n increases, \\mathrm{SE}(\\bar X)=\\sigma/\\sqrt n decreases, so the sampling distribution narrows around \\mu."
+    "section": "⬆️ Sample size 🧋",
+    "text": "⬆️ Sample size 🧋\n\nAs n increases, \\mathrm{SE}(\\bar X)=\\sigma/\\sqrt n decreases, so the sampling distribution narrows around \\mu."
   },
   {
     "objectID": "week3/slides.html#what-if-my-population-is-skewed",
     "href": "week3/slides.html#what-if-my-population-is-skewed",
     "title": "Sampling and estimation",
-    "section": "What if my population is skewed?",
-    "text": "What if my population is skewed?"
+    "section": "What if my population is skewed? 🧋",
+    "text": "What if my population is skewed? 🧋"
   },
   {
-    "objectID": "week3/slides.html#central-limit-theorem",
-    "href": "week3/slides.html#central-limit-theorem",
+    "objectID": "week3/slides.html#central-limit-theorem-clt",
+    "href": "week3/slides.html#central-limit-theorem-clt",
     "title": "Sampling and estimation",
-    "section": "Central Limit Theorem",
-    "text": "Central Limit Theorem\n\nThe CLT states that the sample distribution approximates a Normal distribution as the sample size grows large, regardless of the original population’s shape1\n\n\n\nWhy do we care? 🤷🏻‍♀️\n\nIt allows us to use Normal-based techniques even when raw data is skewed\nBUT we need a sufficiently large sample size (n &gt; 30)\n\n\n\n\n\nGalton Board\n\n\n\nhttps://www.youtube.com/watch?v=jvoxEYmQHNM"
+    "section": "Central Limit Theorem (CLT)",
+    "text": "Central Limit Theorem (CLT)\n\n\nThe CLT states that the sample distribution approximates a Normal distribution as the sample size grows large, regardless of the original population’s shape1\n\n\n\n\nWhy do we care? 🤷🏻‍♀️\n\nIt allows us to use Normal-based techniques even when raw data is skewed\nBUT we need a sufficiently large sample size (n &gt; 30)\n\n\n\n\n[^1: [Bunnies, Dragons and the ‘Normal’ World: Central Limit Theorem | The New York Times] (https://www.youtube.com/watch?v=jvoxEYmQHNM)]\n1"
   },
   {
-    "objectID": "week3/slides.html#boba-prices",
-    "href": "week3/slides.html#boba-prices",
+    "objectID": "week3/slides.html#boba-prices-app",
+    "href": "week3/slides.html#boba-prices-app",
     "title": "Sampling and estimation",
-    "section": "Boba prices 🧋",
-    "text": "Boba prices 🧋\n\n\n\n\nBoba sampling simulator — interactive in the HTML slides.\nSimulate samples of n cups from X \\sim \\mathcal{N}(8, 3) (AUD; SD = $3.00). Compare individual prices, repeated sample means and a 95% confidence interval.\n\nSample mean: \\bar{x}; sample SD: s; estimated SE: s / \\sqrt{n}.\nThe population price curve uses SD \\sigma=3; each displayed sampling curve uses that draw’s estimated SE, s/\\sqrt{n}.\n95% confidence interval: \\bar{x} \\pm t_{0.975,n-1} s / \\sqrt{n}.\n\nPrices are illustrative teaching assumptions."
-  },
-  {
-    "objectID": "week3/slides.html#source-page-006",
-    "href": "week3/slides.html#source-page-006",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "In other words, regardless of the distribution of the original population,\nRegardless of the population distribution, the distribution of the sample mean is approximately normal when the sample size is sufficiently large. This is the Central Limit Theorem (CLT); the approximation improves as n increases.\nFor a population with mean \\mu and standard deviation \\sigma,\n\n\\bar{X} \\approx N\\left(\\mu, \\frac{\\sigma^2}{n}\\right), \\qquad \\mathrm{SE}(\\bar{X}) = \\frac{\\sigma}{\\sqrt{n}}.\n\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 6\n\nVisual from source page 6."
-  },
-  {
-    "objectID": "week3/slides.html#source-page-007",
-    "href": "week3/slides.html#source-page-007",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "Central Limit Theorem\nhttps://www.youtube.com/watch?v=jvoxEYmQHNM\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 7\n\nVisual from source page 7."
+    "section": "Boba prices app 🧋",
+    "text": "Boba prices app 🧋"
   },
   {
     "objectID": "week3/slides.html#source-page-008",
