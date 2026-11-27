@@ -486,49 +486,22 @@ The <strong>total area</strong> under the curve is 1.</p>
 </blockquote>
 </div>
 <div class="columns">
-<div class="column">
+<div class="column" style="width:60%;">
+<div style="font-size: 70%;">
 <p><strong>Why do we care?</strong> 🤷🏻‍♀️</p>
 <ul>
 <li>It allows us to use Normal-based techniques even when raw data is skewed</li>
 <li>BUT we need a <strong>sufficiently large sample size (n &gt; 30)</strong></li>
 </ul>
-</div><div class="column">
-<p><img data-src="https://64.media.tumblr.com/02df8ba13155a78eab4bfb054d195684/tumblr_p5wrk7ZIYX1w6skpso1_500.gifv" style="width:60.0%"></p>
-</div></div>
-<p>[^1: [Bunnies, Dragons and the ‘Normal’ World: Central Limit Theorem | The New York Times] (https://www.youtube.com/watch?v=jvoxEYmQHNM)]</p>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>1</p></li></ol></aside></section>
-<section id="boba-prices-app" class="slide level2">
-<h2>Boba prices app 🧋</h2>
-<div class="boba-live" data-boba-tab="sample" data-boba-mode="full" data-boba-tabs="sample,means,sampling,clt,ci">
-
 </div>
-<script>
-// One persistent iframe; later slides provide an empty slot and a selected tab.
-window.addEventListener("load", () => {
-  const app = document.getElementById("boba-simulator");
-  if (document.documentElement.classList.contains("print-pdf")) return;
-  document.body.appendChild(app);
-  Object.assign(app.style, {position:"fixed", zIndex:20, display:"none"});
-  const showBoba = () => {
-    const slot = window.Reveal?.getCurrentSlide()?.querySelector("[data-boba-tab]");
-    if (!slot) { app.style.display = "none"; return; }
-    const bounds = slot.getBoundingClientRect();
-    Object.assign(app.style, {display:"block", left:bounds.left+"px", top:bounds.top+"px", width:bounds.width+"px", height:bounds.height+"px"});
-    app.contentWindow.postMessage({bobaTab:slot.dataset.bobaTab, bobaMode:slot.dataset.bobaMode || "full", bobaTabs:slot.dataset.bobaTabs || "sample,means,sampling,ci"}, window.location.origin);
-  };
-  if (window.Reveal) { Reveal.on("slidechanged", showBoba); Reveal.on("resize", showBoba); }
-  app.addEventListener("load", () => setTimeout(showBoba, 1000));
-  window.addEventListener("resize", showBoba);
-  showBoba();
-});
-</script>
-<style>
-.boba-live {height:480px;}
-.boba-live[data-boba-mode^="intro"] {height:540px;}
-.print-pdf .boba-live {display:none;}
-@media print {#boba-simulator {display:none !important;} .boba-live {display:none;}}
-</style>
-</section>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://64.media.tumblr.com/02df8ba13155a78eab4bfb054d195684/tumblr_p5wrk7ZIYX1w6skpso1_500.gifv" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
+</figure>
+</div>
+</div></div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>1</p></li></ol></aside></section>
 <section id="source-page-008" class="slide level2">
 <h2></h2>
 <h3 id="urbanstyle-is-a-popular-retail-store-that-tracks-customer-spending-to-optimise-staffing-stock-levels-and-promotional-strategies.-past-data-indicate-that-the-distribution-of-individual-customer-purchase-amounts-is-normal-with-mean-purchase-amounts-of-25-and-a-standard-deviation-of-8">UrbanStyle is a popular retail store that tracks customer spending to optimise staffing, stock levels, and promotional strategies. Past data indicate that the distribution of individual customer purchase amounts is normal, with mean purchase amounts of $25 and a standard deviation of $8</h3>
@@ -1031,6 +1004,41 @@ np, n(1-p) \geq{}5
 <h3 id="task-7-recruitment-service-_in-your-own-time-1">Task 7: Recruitment Service _in your own time</h3>
 <p>Suppose that, in a survey of 600 employers, 126 indicate that they have used a recruitment service within the past two months to find new staff. b. Discuss the effect on the confidence interval estimate when you increase the level of confidence, assuming all other factors remain unchanged. When the level of confidence increases, the confidence interval becomes wider. This results in a loss of precision, which is the price you have to pay to achieve a higher level of confidence.</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=34">Workshop_slides_Week_3_with_solutions.pdf, page 34</a></em></p>
+</section>
+<section id="boba-prices-app" class="slide level2">
+<h2>Boba prices app 🧋</h2>
+<div class="boba-live" data-boba-tab="sample" data-boba-mode="full" data-boba-tabs="sample,means,sampling,clt,ci">
+
+</div>
+<script>
+// One persistent iframe; later slides provide an empty slot and a selected tab.
+window.addEventListener("load", () => {
+  const app = document.getElementById("boba-simulator");
+  if (document.documentElement.classList.contains("print-pdf")) return;
+  document.body.appendChild(app);
+  Object.assign(app.style, {position:"fixed", zIndex:20, display:"none"});
+  const showBoba = () => {
+    const slot = window.Reveal?.getCurrentSlide()?.querySelector("[data-boba-tab]");
+    if (!slot) { app.style.display = "none"; return; }
+    const bounds = slot.getBoundingClientRect();
+    Object.assign(app.style, {display:"block", left:bounds.left+"px", top:bounds.top+"px", width:bounds.width+"px", height:bounds.height+"px"});
+    app.contentWindow.postMessage({bobaTab:slot.dataset.bobaTab, bobaMode:slot.dataset.bobaMode || "full", bobaTabs:slot.dataset.bobaTabs || "sample,means,sampling,ci"}, window.location.origin);
+  };
+  if (window.Reveal) { Reveal.on("slidechanged", showBoba); Reveal.on("resize", showBoba); }
+  app.addEventListener("load", () => setTimeout(showBoba, 1000));
+  window.addEventListener("resize", showBoba);
+  showBoba();
+});
+</script>
+<style>
+.boba-live {height:480px;}
+.boba-live[data-boba-mode^="intro"] {height:540px;}
+.print-pdf .boba-live {display:none;}
+@media print {#boba-simulator {display:none !important;} .boba-live {display:none;}}
+</style>
+</section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
 </section>
 <section id="assignment-work-that-can-now-be-completed" class="slide level2">
 <h2><strong>Assignment work that can now be completed</strong> 🤳</h2>

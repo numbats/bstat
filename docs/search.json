@@ -2216,14 +2216,7 @@
     "href": "week3/slides.html#central-limit-theorem-clt",
     "title": "Sampling and estimation",
     "section": "Central Limit Theorem (CLT)",
-    "text": "Central Limit Theorem (CLT)\n\n\nThe CLT states that the sample distribution approximates a Normal distribution as the sample size grows large, regardless of the original population’s shape1\n\n\n\n\nWhy do we care? 🤷🏻‍♀️\n\nIt allows us to use Normal-based techniques even when raw data is skewed\nBUT we need a sufficiently large sample size (n &gt; 30)\n\n\n\n\n[^1: [Bunnies, Dragons and the ‘Normal’ World: Central Limit Theorem | The New York Times] (https://www.youtube.com/watch?v=jvoxEYmQHNM)]\n1"
-  },
-  {
-    "objectID": "week3/slides.html#boba-prices-app",
-    "href": "week3/slides.html#boba-prices-app",
-    "title": "Sampling and estimation",
-    "section": "Boba prices app 🧋",
-    "text": "Boba prices app 🧋"
+    "text": "Central Limit Theorem (CLT)\n\n\nThe CLT states that the sample distribution approximates a Normal distribution as the sample size grows large, regardless of the original population’s shape1\n\n\n\n\n\nWhy do we care? 🤷🏻‍♀️\n\nIt allows us to use Normal-based techniques even when raw data is skewed\nBUT we need a sufficiently large sample size (n &gt; 30)\n\n\n\n\n\n\n\n\n\n1"
   },
   {
     "objectID": "week3/slides.html#source-page-008",
@@ -2413,6 +2406,20 @@
     "title": "Sampling and estimation",
     "section": "",
     "text": "Task 7: Recruitment Service _in your own time\nSuppose that, in a survey of 600 employers, 126 indicate that they have used a recruitment service within the past two months to find new staff. b. Discuss the effect on the confidence interval estimate when you increase the level of confidence, assuming all other factors remain unchanged. When the level of confidence increases, the confidence interval becomes wider. This results in a loss of precision, which is the price you have to pay to achieve a higher level of confidence.\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 34"
+  },
+  {
+    "objectID": "week3/slides.html#boba-prices-app",
+    "href": "week3/slides.html#boba-prices-app",
+    "title": "Sampling and estimation",
+    "section": "Boba prices app 🧋",
+    "text": "Boba prices app 🧋"
+  },
+  {
+    "objectID": "week3/slides.html#summary",
+    "href": "week3/slides.html#summary",
+    "title": "Sampling and estimation",
+    "section": "Summary",
+    "text": "Summary"
   },
   {
     "objectID": "week3/slides.html#assignment-work-that-can-now-be-completed",
