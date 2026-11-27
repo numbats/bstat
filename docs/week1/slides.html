@@ -1514,8 +1514,8 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 </ul>
 </div></div>
 </section>
-<section id="what-chart-type-1" class="slide level2 smaller">
-<h2>What chart type?</h2>
+<section id="categorical-data-bar-chart" class="slide level2 smaller">
+<h2>Categorical data: bar chart</h2>
 <div class="columns">
 <div class="column" style="width:48%;">
 <div class="cell" data-reveal="true" data-layout-align="default">
@@ -1538,13 +1538,6 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 <li><strong>Pie chart:</strong> show portions of a whole.</li>
 </ul>
 </div><div class="column" style="width:52%;">
-<!--
-- Use a .r-stack with fragment and .current-visible
-- First plot Insert Students by course barplot
-- Second plot PG and UG proportions
--->
-<div class="r-stack">
-<div class="fragment current-visible">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -1554,32 +1547,32 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 </div>
 </div>
 </div>
-</div>
-<div class="fragment current-visible">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-20-1.png" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div></div>
 </section>
-<section id="what-chart-type-2" class="slide level2 smaller">
-<h2>What chart type?</h2>
+<section id="categorical-data-pie-chart" class="slide level2 smaller">
+<h2>Categorical data: pie chart</h2>
 <div class="columns">
 <div class="column" style="width:48%;">
-<!--
-- Use a .r-stack with fragment and .current-visible 
-- Insert approximate age histogram
-- Insert approximate age as boxplot use course color palette
--->
-<div class="r-stack">
-<div class="fragment current-visible">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+
+<pre class="mermaid mermaid-js">flowchart TB
+  categorical["Nominal &amp; ordinal data"] --- bar_cat["Bar chart"]
+  categorical --- pie["Pie chart"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Bar chart:</strong> compare categories, especially ordered categories.</li>
+<li><strong>Pie chart:</strong> show portions of a whole.</li>
+</ul>
+</div><div class="column" style="width:52%;">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -1589,8 +1582,12 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 </div>
 </div>
 </div>
-</div>
-<div class="fragment current-visible">
+</div></div>
+</section>
+<section id="numerical-data-histogram" class="slide level2 smaller">
+<h2>Numerical data: histogram</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -1599,6 +1596,41 @@ s^2 &amp;= \left( \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}} \right)^
 </figure>
 </div>
 </div>
+</div>
+</div><div class="column" style="width:52%;">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+
+<pre class="mermaid mermaid-js">flowchart TB
+  numerical["Numerical data"] --- discrete["Discrete data"]
+  numerical --- continuous["Continuous data"]
+  discrete --- bar_num["Bar chart"]
+  continuous --- histogram["Histogram"]
+  continuous --- box["Box plot"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Bar chart, histogram or box plot:</strong> show a distribution.</li>
+</ul>
+</div></div>
+</section>
+<section id="numerical-data-box-plot" class="slide level2 smaller">
+<h2>Numerical data: box plot</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-24-1.png" style="width:100.0%"></p>
+</figure>
 </div>
 </div>
 </div>
