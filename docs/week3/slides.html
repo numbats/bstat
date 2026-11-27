@@ -506,10 +506,10 @@ The <strong>total area</strong> under the curve is 1.</p>
 <aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://www.youtube.com/watch?v=jvoxEYmQHNM">Bunnies, Dragons and the ‘Normal’ World: Central Limit Theorem | The New York Times</a></p></li></ol></aside></section>
 <section id="putting-theory-to-practice" class="slide level2">
 <h2>Putting theory to practice</h2>
-<p>A boba store tracks how much customers spend to plan staffing, ingredients and promotions. Transaction records from the past 10 years, purchases are <strong>normally distributed</strong> with a <strong>mean of $25 and a standard deviation of $8</strong></p>
+<p>A boba store tracks how much customers spend to plan staffing, ingredients and promotions. Transaction records from the quarter, purchases are <strong>normally distributed</strong> with a <strong>mean of $25 and a standard deviation of $8</strong></p>
 <ol type="1">
 <li>A purchase between $15 and $35 is considered moderate. What is the probability that a <strong>sample of 100</strong> customers makes a moderate purchase?</li>
-<li>The shop wants to offer a reward to its top 25% of customers by spending. What purchase amount marks the threshold, so that 75% of customers spend no more than this amount?</li>
+<li>The shop wants to offer a reward to its top 25% of customers by spending. If I take a <strong>sample of 50 customers</strong>, what is the <strong>average purchase amount</strong> that marks the threshold, so that 75% of customers spend no more than this amount?</li>
 <li>On one weekend, the shop <strong>samples 15 customers</strong>. What is the probability that their mean purchase is no more than $30?</li>
 </ol>
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -521,7 +521,7 @@ The <strong>total area</strong> under the curve is 1.</p>
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p>“Transaction records from the past 10 years….” is a hint at the population distribution 😉</p>
+<p>“Transaction records from the quarter…” is a hint at the population distribution 😉</p>
 </div>
 </div>
 </div>
@@ -531,7 +531,7 @@ The <strong>total area</strong> under the curve is 1.</p>
 <p>What is the probability that a <strong>sample of 100</strong> customers makes a purchase between $15 and $35 is considered moderate?</p>
 <ul>
 <li>Shaded normal distribution</li>
-<li>Notation</li>
+<li>Notation for shaded region of interest</li>
 </ul>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -551,11 +551,81 @@ The <strong>total area</strong> under the curve is 1.</p>
 </div>
 </div>
 </section>
-<section id="top-25-of-customers---you-try" class="slide level2">
-<h2>Top 25% of customers - You try ✏️</h2>
+<section id="moderate-purchase---watch-me-1" class="slide level2 smaller">
+<h2>Moderate purchase - Watch me 👀</h2>
+<p>What is the probability that a <strong>sample of 100</strong> customers makes a purchase between <strong>$15 and $35</strong> is considered moderate?</p>
+<!--
+- Shaded normal distribution
+- Notation for shaded region of interest
+-->
+<p>The sample mean has distribution <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{100})=\mathcal{N}(25,0.8)</span>. Find <span class="math inline">P(15&lt;\bar X&lt;35)</span>.</p>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 0.8. The area between 15 and 35 is shaded dark blue, covering virtually the whole curve." width="768"><div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Excel:</strong> <code>=NORM.DIST(35,25,8/SQRT(100),TRUE)-NORM.DIST(15,25,8/SQRT(100),TRUE)</code></p>
+<p>The probability is <strong>virtually 1 (100%)</strong>.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="top-25-of-customers---you-try-1" class="slide level2">
+<section id="top-25-of-customers---you-try" class="slide level2 smaller">
 <h2>Top 25% of customers - You try ✏️</h2>
+<countdown-timer id="week3-top-quarter" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+<p>If I take a <strong>sample of 50 customers</strong>, what is the <strong>average purchase amount</strong> that marks the threshold, so that 75% of customers spend no more than this amount?</p>
+<!--
+- Shaded normal distribution
+- Label threshold as x = ?
+- Notation for what the question is asking
+-->
+<p>For <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{50})</span>, find <span class="math inline">c</span> such that <span class="math inline">P(\bar X\leq c)=0.75</span>.</p>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25. Seventy-five percent of the area is shaded to the left of an unknown cutoff c, labelled c equals question mark." width="768"><div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Excel:</strong> <code>=NORM.INV(0.75,25,8/SQRT(50))</code> gives <strong><span class="math inline">c\approx\$25.76</span></strong>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="weekend-spenders---you-try" class="slide level2 smaller">
+<h2>Weekend spenders - You try ✏️</h2>
+<countdown-timer id="week3-weekend-spenders" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+<p>On one weekend, the shop <strong>samples 15 customers</strong>. What is the probability that their mean purchase is <strong>no more than $30?</strong></p>
+<!--
+- Shaded normal distribution
+- Notation for shaded region of interest
+-->
+<p>Because individual purchases are Normal, <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{15})</span> even for <span class="math inline">n=15</span>. Find <span class="math inline">P(\bar X\leq30)</span>.</p>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 15. The area to the left of 30 is shaded dark blue." width="768"><div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solution</strong></p>
+</div>
+<div class="callout-content">
+<!-- - Add solution -->
+<p><strong>Excel:</strong> <code>=NORM.DIST(30,25,8/SQRT(15),TRUE)</code> gives <strong>0.9923</strong>, or about <strong>99.23%</strong>.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="how-do-we-communicate-uncertainty" class="slide level2 section-slide">
 <h2>How do we communicate uncertainty?</h2>
