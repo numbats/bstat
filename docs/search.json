@@ -2202,7 +2202,7 @@
     "href": "week3/slides.html#sample-size",
     "title": "Sampling and estimation",
     "section": "⬆️ Sample size",
-    "text": "⬆️ Sample size\n\n\nSE is a function of sample size (n)\n\n\\mathrm{SE}(\\bar X)=\\frac{s}{\\sqrt n}\n\n\n\nAs n increases, the denominator increases\nThis makes our fraction smaller = our sampling SE decreases"
+    "text": "⬆️ Sample size\n\n\nSE is a function of sample size (n)\n\n\\mathrm{SE}(\\bar X)=\\frac{s}{\\sqrt n}\n\n\n\nAs n increases, the denominator increases\nThis makes our fraction smaller = our sampling SE decreases\n\n\n\n\nSample size (n)\nSE formula (\\sigma / \\sqrt{n})\nSE\n\n\n\n\n5\n1.708 / \\sqrt{5}\n0.764\n\n\n10\n1.708 / \\sqrt{10}\n0.540\n\n\n25\n1.708 / \\sqrt{25}\n0.342\n\n\nAs sample size increases, \\sigma_{\\bar{x}} decreases, so \\bar{X} tends to fall closer to \\mu."
   },
   {
     "objectID": "week3/slides.html#sample-size-1",
@@ -2216,7 +2216,7 @@
     "href": "week3/slides.html#what-if-my-population-is-skewed",
     "title": "Sampling and estimation",
     "section": "What if my population is skewed?",
-    "text": "What if my population is skewed?\n\n\n\n\n\nCentral Limit Theorem demonstration — interactive in the HTML slides. Draw repeated samples of size n from a right-skewed population and compare the population prices with the distribution of sample means. The latest sample’s estimated standard error is s/\\sqrt n."
+    "text": "What if my population is skewed?\n\n\n\n\nhttps://www.youtube.com/watch?v=jvoxEYmQHNM"
   },
   {
     "objectID": "week3/slides.html#boba-prices",
@@ -2224,34 +2224,6 @@
     "title": "Sampling and estimation",
     "section": "Boba prices 🧋",
     "text": "Boba prices 🧋\n\n\n\n\nBoba sampling simulator — interactive in the HTML slides.\nSimulate samples of n cups from X \\sim \\mathcal{N}(8, 3) (AUD; SD = $3.00). Compare individual prices, repeated sample means and a 95% confidence interval.\n\nSample mean: \\bar{x}; sample SD: s; estimated SE: s / \\sqrt{n}.\nThe population price curve uses SD \\sigma=3; each displayed sampling curve uses that draw’s estimated SE, s/\\sqrt{n}.\n95% confidence interval: \\bar{x} \\pm t_{0.975,n-1} s / \\sqrt{n}.\n\nPrices are illustrative teaching assumptions."
-  },
-  {
-    "objectID": "week3/slides.html#source-page-002",
-    "href": "week3/slides.html#source-page-002",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "Learning Objectives\nDescribe the role of statistical inference and apply inference methods to single populations. Textbook references: Berenson et al Basic Business Statistics 5th edition, Chapter 6 Sections 6.1-6.2 Chapter 7, Sections 7.1-7.5. Chapter 8, Sections 8.1-8.3\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 2"
-  },
-  {
-    "objectID": "week3/slides.html#source-page-003",
-    "href": "week3/slides.html#source-page-003",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "The Basics of Sampling Distribution\nSample statistic is only an estimate of the truth Since the sample may vary, any sample statistic is not exact and has variation/error around them. The smaller the error, the greater the accuracy. Assume we take data samples repeatedly, and compute sample means as the statistic for each set of sample. Then we would have the sampling distribution of the sample mean to portray its variability A sampling distribution is the probability distribution of a sample statistic. (eg: Xbar has a sampling distribution and p also has a sampling distribution)\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 3\n\nVisual from source page 3."
-  },
-  {
-    "objectID": "week3/slides.html#source-page-004",
-    "href": "week3/slides.html#source-page-004",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "Sampling Distribution of the Sample Mean\nThe sampling distribution of the sample mean describes how \\bar{X} varies from sample to sample. It quantifies uncertainty in the estimate of the population mean.\nIf the population variable has a normal distribution,\n\nX \\sim N(\\mu, \\sigma^2), \\qquad \\bar{X} \\sim N\\left(\\mu, \\frac{\\sigma^2}{n}\\right).\n\nThe standard error is the standard deviation of the sampling distribution:\n\n\\mathrm{SE}(\\bar{X}) = \\frac{\\sigma}{\\sqrt{n}}.\n\nAs sample size n increases, the standard error decreases and \\bar{X} gives a more precise estimate of \\mu.\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 4\n\nVisual from source page 4."
-  },
-  {
-    "objectID": "week3/slides.html#source-page-005",
-    "href": "week3/slides.html#source-page-005",
-    "title": "Sampling and estimation",
-    "section": "",
-    "text": "Sampling distributions for different sample sizes\nThe following results are based on all possible samples of size n. The sampling distribution has \\mu_{\\bar{x}} = 3.5 and population standard deviation \\sigma = 1.708.\nCompare the standard deviation of the sample mean, \\sigma_{\\bar{x}}, with \\sigma:\n\n\n\n\n\n\n\n\nSample size (n)\nStandard error (\\sigma_{\\bar{x}} = \\sigma / \\sqrt{n})\nValue\n\n\n\n\n5\n1.708 / \\sqrt{5}\n0.764\n\n\n10\n1.708 / \\sqrt{10}\n0.540\n\n\n25\n1.708 / \\sqrt{25}\n0.342\n\n\n\nThe standard deviation of the sample mean is smaller than \\sigma. As sample size increases, \\sigma_{\\bar{x}} decreases, so \\bar{X} tends to fall closer to \\mu.\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 5\n\n\n\n\n\nVisual from source page 5.\n\n\n\n\n\n\nVisual from source page 5.\n\n\n\n\n\n\n\n\nVisual from source page 5.\n\n\n\n\n\n\nVisual from source page 5.\n\n\n\n\n\n\n\n\nVisual from source page 5.\n\n\n\n\n\n\nVisual from source page 5.\n\n\n\n\n\n\n\n\nVisual from source page 5.\n\n\n\n\n\n\nVisual from source page 5."
   },
   {
     "objectID": "week3/slides.html#source-page-006",

@@ -434,7 +434,33 @@ The <strong>total area</strong> under the curve is 1.</p>
 <li>As <span class="math inline">n</span> increases, the <strong>denominator</strong> increases</li>
 <li>This makes our fraction <strong>smaller</strong> = our sampling <strong>SE decreases</strong></li>
 </ul>
-</div></div>
+</div><table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Sample size (<span class="math inline">n</span>)</th>
+<th>SE formula (<span class="math inline">\sigma / \sqrt{n}</span>)</th>
+<th style="text-align: right;">SE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td><span class="math inline">1.708 / \sqrt{5}</span></td>
+<td style="text-align: right;">0.764</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td><span class="math inline">1.708 / \sqrt{10}</span></td>
+<td style="text-align: right;">0.540</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">25</td>
+<td><span class="math inline">1.708 / \sqrt{25}</span></td>
+<td style="text-align: right;">0.342</td>
+</tr>
+</tbody>
+</table><p>As sample size increases, <span class="math inline">\sigma_{\bar{x}}</span> decreases, so <span class="math inline">\bar{X}</span> tends to fall closer to <span class="math inline">\mu</span>.</p>
+</div>
 </section>
 <section id="sample-size-1" class="slide level2">
 <h2>⬆️ Sample size</h2>
@@ -451,9 +477,7 @@ The <strong>total area</strong> under the curve is 1.</p>
 <div class="boba-live" data-boba-tab="clt" data-boba-mode="clt" data-boba-tabs="clt">
 
 </div>
-<div class="boba-print">
-<p><strong>Central Limit Theorem demonstration</strong> — interactive in the HTML slides. Draw repeated samples of size <span class="math inline">n</span> from a right-skewed population and compare the population prices with the distribution of sample means. The latest sample’s estimated standard error is <span class="math inline">s/\sqrt n</span>.</p>
-</div>
+<p>https://www.youtube.com/watch?v=jvoxEYmQHNM</p>
 </section>
 <section id="boba-prices" class="slide level2">
 <h2>Boba prices 🧋</h2>
@@ -500,138 +524,6 @@ window.addEventListener("load", () => {
 .print-pdf .boba-print {display:block;}
 @media print {#boba-simulator {display:none !important;} .boba-live {display:none;} .boba-print {display:block;}}
 </style>
-</section>
-<section id="source-page-002" class="slide level2">
-<h2></h2>
-<h3 id="learning-objectives">Learning Objectives</h3>
-<p>Describe the role of statistical inference and apply inference methods to single populations. Textbook references: Berenson et al Basic Business Statistics 5th edition, Chapter 6 Sections 6.1-6.2 Chapter 7, Sections 7.1-7.5. Chapter 8, Sections 8.1-8.3</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=2">Workshop_slides_Week_3_with_solutions.pdf, page 2</a></em></p>
-</section>
-<section id="source-page-003" class="slide level2">
-<h2></h2>
-<h3 id="the-basics-of-sampling-distribution">The Basics of Sampling Distribution</h3>
-<p>Sample statistic is only an estimate of the truth Since the sample may vary, any sample statistic is not exact and has variation/error around them. The smaller the error, the greater the accuracy. Assume we take data samples repeatedly, and compute sample means as the statistic for each set of sample. Then we would have the sampling distribution of the sample mean to portray its variability A sampling distribution is the probability distribution of a sample statistic. (eg: Xbar has a sampling distribution and p also has a sampling distribution)</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=3">Workshop_slides_Week_3_with_solutions.pdf, page 3</a></em></p>
-
-<img data-src="figures/etx5900/components/image2.jpg" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 3.</p></section>
-<section id="source-page-004" class="slide level2">
-<h2></h2>
-<h3 id="sampling-distribution-of-the-sample-mean">Sampling Distribution of the Sample Mean</h3>
-<p>The sampling distribution of the sample mean describes how <span class="math inline">\bar{X}</span> varies from sample to sample. It quantifies uncertainty in the estimate of the population mean.</p>
-<p>If the population variable has a normal distribution,</p>
-<p><span class="math display">
-X \sim N(\mu, \sigma^2), \qquad \bar{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right).
-</span></p>
-<p>The standard error is the standard deviation of the sampling distribution:</p>
-<p><span class="math display">
-\mathrm{SE}(\bar{X}) = \frac{\sigma}{\sqrt{n}}.
-</span></p>
-<p>As sample size <span class="math inline">n</span> increases, the standard error decreases and <span class="math inline">\bar{X}</span> gives a more precise estimate of <span class="math inline">\mu</span>.</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=4">Workshop_slides_Week_3_with_solutions.pdf, page 4</a></em></p>
-
-<img data-src="figures/etx5900/components/image23.png" style="width:48.0%" class="r-stretch quarto-figure-center"><p class="caption">Visual from source page 4.</p></section>
-<section id="source-page-005" class="slide level2">
-<h2></h2>
-<h3 id="sampling-distributions-for-different-sample-sizes">Sampling distributions for different sample sizes</h3>
-<p>The following results are based on all possible samples of size <span class="math inline">n</span>. The sampling distribution has <span class="math inline">\mu_{\bar{x}} = 3.5</span> and population standard deviation <span class="math inline">\sigma = 1.708</span>.</p>
-<p>Compare the standard deviation of the sample mean, <span class="math inline">\sigma_{\bar{x}}</span>, with <span class="math inline">\sigma</span>:</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 36%">
-<col style="width: 27%">
-<col style="width: 36%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;">Sample size (<span class="math inline">n</span>)</th>
-<th>Standard error (<span class="math inline">\sigma_{\bar{x}} = \sigma / \sqrt{n}</span>)</th>
-<th style="text-align: right;">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">5</td>
-<td><span class="math inline">1.708 / \sqrt{5}</span></td>
-<td style="text-align: right;">0.764</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">10</td>
-<td><span class="math inline">1.708 / \sqrt{10}</span></td>
-<td style="text-align: right;">0.540</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">25</td>
-<td><span class="math inline">1.708 / \sqrt{25}</span></td>
-<td style="text-align: right;">0.342</td>
-</tr>
-</tbody>
-</table>
-<p>The standard deviation of the sample mean is smaller than <span class="math inline">\sigma</span>. As sample size increases, <span class="math inline">\sigma_{\bar{x}}</span> decreases, so <span class="math inline">\bar{X}</span> tends to fall closer to <span class="math inline">\mu</span>.</p>
-<p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=5">Workshop_slides_Week_3_with_solutions.pdf, page 5</a></em></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image3.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 5.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image4.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 5.</figcaption>
-</figure>
-</div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image27.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 5.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image5.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 5.</figcaption>
-</figure>
-</div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image29.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 5.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image31.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 5.</figcaption>
-</figure>
-</div>
-</div></div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image32.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 5.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/etx5900/components/image33.png" style="width:100.0%"></p>
-<figcaption>Visual from source page 5.</figcaption>
-</figure>
-</div>
-</div></div>
 </section>
 <section id="source-page-006" class="slide level2">
 <h2></h2>
