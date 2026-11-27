@@ -2237,28 +2237,35 @@
     "href": "week3/slides.html#putting-theory-to-practice",
     "title": "Sampling and estimation",
     "section": "Putting theory to practice",
-    "text": "Putting theory to practice\nA boba store tracks how much customers spend to plan staffing, ingredients and promotions. Transaction records from the quarter, purchases are normally distributed with a mean of $25 and a standard deviation of $8\n\nA purchase between $24 and $26 is considered moderate. What is the probability that a sample of 10 customers makes a moderate purchase?\nThe shop wants to offer a reward to its top 25% of customers by spending. If I take a sample of 15 customers, what is the average purchase amount that marks the threshold, so that 75% of customers spend no more than this amount?\nOn one weekend, the shop samples 8 customers. What is the probability that their mean purchase is no more than $30?\n\n\n\n\n\n\n\nTip\n\n\n“Transaction records from the quarter…” is a hint at the population distribution 😉"
+    "text": "Putting theory to practice\nA boba store tracks how much customers spend to plan staffing, ingredients and promotions. Transaction records from the last quarter, purchases are normally distributed with a mean of $25 and a standard deviation of $8\n\nA purchase between $24 and $26 is considered moderate. What is the probability that a sample of 10 customers makes a moderate purchase?\nThe shop wants to offer a reward to its top 25% of customers by spending. If I take a sample of 15 customers, what is the average purchase amount that marks the threshold, so that 75% of customers spend no more than this amount?\nOn one weekend, the shop samples 8 customers. What is the probability that their mean purchase is no more than $30?\n\n\n\n\n\n\n\nTip\n\n\n\n“Transaction records from the last quarter…” is a hint at the a population distribution 😉\n“…a sample of”, “samples”, implies using SE instead of SD in calculations"
   },
   {
     "objectID": "week3/slides.html#moderate-purchase---watch-me",
     "href": "week3/slides.html#moderate-purchase---watch-me",
     "title": "Sampling and estimation",
     "section": "Moderate purchase - Watch me 👀",
-    "text": "Moderate purchase - Watch me 👀\nWhat is the probability that a sample of 10 customers makes a purchase between $24 and $26 is considered moderate?\n\nShaded normal distribution\nNotation for shaded region of interest\n\n\n\n\n\n\n\nRecall\n\n\n\nUse =NORM.DIST(x, mean, standard_dev, cumulative) to find the shaded regions of a Normal distribution\nSubtract cumulative area from 1 to get the right tail\nUse =NORM.INV(probablility, mean, standard_dev) to find the threshold value"
+    "text": "Moderate purchase - Watch me 👀\nWhat is the probability that a sample of 10 customers makes a purchase between $24 and $26 is considered moderate?\n\n\n\n\n\n\n\nRecall\n\n\n\nUse =NORM.DIST(x, mean, standard_dev, cumulative) to find the shaded regions of a Normal distribution\nSubtract cumulative area from each other to get the range"
   },
   {
     "objectID": "week3/slides.html#moderate-purchase---watch-me-1",
     "href": "week3/slides.html#moderate-purchase---watch-me-1",
     "title": "Sampling and estimation",
     "section": "Moderate purchase - Watch me 👀",
-    "text": "Moderate purchase - Watch me 👀\nWhat is the probability that a sample of 10 customers makes a purchase between $24 and $26 is considered moderate?\n\nThe sample mean has distribution \\bar X\\sim\\mathcal{N}(25,8/\\sqrt{10}). Find P(24&lt;\\bar X&lt;26).\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.DIST(26,25,8/SQRT(10),TRUE)-NORM.DIST(24,25,8/SQRT(10),TRUE)\nThe probability is 0.3074, or about 30.74%."
+    "text": "Moderate purchase - Watch me 👀\nWhat is the probability that a sample of 10 customers makes a purchase between $24 and $26 is considered moderate?\nThe sample mean has distribution \\bar X\\sim\\mathcal{N}(25,8/\\sqrt{10}). Find P(24&lt;\\bar X&lt;26).\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.DIST(26,25,8/SQRT(10),TRUE)-NORM.DIST(24,25,8/SQRT(10),TRUE)\nThe probability is 0.3074, or about 30.74%."
   },
   {
     "objectID": "week3/slides.html#top-25-of-customers---you-try",
     "href": "week3/slides.html#top-25-of-customers---you-try",
     "title": "Sampling and estimation",
     "section": "Top 25% of customers - You try ✏️",
-    "text": "Top 25% of customers - You try ✏️\n\n \nIf I take a sample of 15 customers, what is the average purchase amount that marks the threshold, so that 75% of customers spend no more than this amount?\n\nFor \\bar X\\sim\\mathcal{N}(25,8/\\sqrt{15}), find c such that P(\\bar X\\leq c)=0.75.\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.INV(0.75,25,8/SQRT(15)) gives c\\approx\\$26.39."
+    "text": "Top 25% of customers - You try ✏️\n\n \nIf I take a sample of 15 customers, what is the average purchase amount that marks the threshold, so that 75% of customers spend no more than this amount?\n\nFor \\bar X\\sim\\mathcal{N}(25,8/\\sqrt{15}), find c such that P(\\bar X\\leq c)=0.75.\n\n\n\n\n\n\n\nRecall\n\n\n\nUse =NORM.INV(probablility, mean, standard_dev) to find the threshold value"
+  },
+  {
+    "objectID": "week3/slides.html#top-25-of-customers---you-try-1",
+    "href": "week3/slides.html#top-25-of-customers---you-try-1",
+    "title": "Sampling and estimation",
+    "section": "Top 25% of customers - You try ✏️",
+    "text": "Top 25% of customers - You try ✏️\nIf I take a sample of 15 customers, what is the average purchase amount that marks the threshold, so that 75% of customers spend no more than this amount?\nFor \\bar X\\sim\\mathcal{N}(25,8/\\sqrt{15}), find c such that P(\\bar X\\leq c)=0.75.\n\n\n\n\n\n\n\nSolution\n\n\nExcel: =NORM.INV(0.75,25,8/SQRT(15)) gives c\\approx\\$26.39."
   },
   {
     "objectID": "week3/slides.html#weekend-spenders---you-try",
