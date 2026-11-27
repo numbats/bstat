@@ -1607,14 +1607,7 @@
     "href": "index.html#teaching-team",
     "title": "ETX1100/ETX5900 Business Statistics",
     "section": "Teaching team",
-    "text": "Teaching team\n\nDr Fonti Kar, Chief Examiner. Email: fonti.kar@monash.edu"
-  },
-  {
-    "objectID": "index.html#consultation",
-    "href": "index.html#consultation",
-    "title": "ETX1100/ETX5900 Business Statistics",
-    "section": "Consultation",
-    "text": "Consultation\n\nOnline Zoom: Monday and Wednesday (14:00 - 15:00)\nLink in Moodle"
+    "text": "Teaching team\nDr Fonti Kar, Chief Examiner\nTutors\n\nSusama Mahnaz\nHannah Comiskey\nLu Wang\nAditya Sharma\nZheng Fan\n\n{{&lt; bi envelope &gt;}} Unit Email\n{{&lt; bi envelope &gt;}} Email Me"
   },
   {
     "objectID": "index.html#weekly-schedule",
@@ -1691,7 +1684,7 @@
     "href": "week1/slides.html#it-takes-a-village-1",
     "title": "Describing and visualising data",
     "section": "It takes a village…",
-    "text": "It takes a village…\nOn the ground:\n\n\n\n\n\nSusama Mahnaz\n\n\n\n\n\n\nHannah Comiskey\n\n\n\n\n\n\nLu Wang\n\n\n\n\nAS\n\nAditya Sharma\n\n\n\n\nZheng Fan\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nWhat is your role at Monash Uni? (PhD student/Postdoc/Teaching Fellow/Lecturer)\nWhat is one tip for our students to doing well in this unit?"
+    "text": "It takes a village…\nOn the ground:\n\n\n\n\n\nSusama Mahnaz\n\n\n\n\n\n\nHannah Comiskey\n\n\n\n\n\n\nLu Wang\n\n\n\n\n\n\nAditya Sharma\n\n\n\n\n\n\nZheng Fan\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nWhat is your role at Monash Uni? (PhD student/Postdoc/Teaching Fellow/Lecturer)\nWhat is one tip for our students to doing well in this unit?"
   },
   {
     "objectID": "week1/slides.html#now-your-turn",
@@ -2216,7 +2209,14 @@
     "href": "week3/slides.html#what-if-my-population-is-skewed",
     "title": "Sampling and estimation",
     "section": "What if my population is skewed?",
-    "text": "What if my population is skewed?\n\n\n\n\nhttps://www.youtube.com/watch?v=jvoxEYmQHNM"
+    "text": "What if my population is skewed?"
+  },
+  {
+    "objectID": "week3/slides.html#central-limit-theorem",
+    "href": "week3/slides.html#central-limit-theorem",
+    "title": "Sampling and estimation",
+    "section": "Central Limit Theorem",
+    "text": "Central Limit Theorem\n\nThe CLT states that the sample distribution approximates a Normal distribution as the sample size grows large, regardless of the original population’s shape1\n\n\n\nWhy do we care? 🤷🏻‍♀️\n\nIt allows us to use Normal-based techniques even when raw data is skewed\nBUT we need a sufficiently large sample size (n &gt; 30)\n\n\n\n\n\nGalton Board\n\n\n\nhttps://www.youtube.com/watch?v=jvoxEYmQHNM"
   },
   {
     "objectID": "week3/slides.html#boba-prices",
