@@ -2303,13 +2303,6 @@
     "text": "Problem of the unknown\n\n\n\nSo far ⏭️\nWith the sample mean \\bar{x} and SD s\n\nWe can answer: “What is the probability of sampling a particular range of means?”\n\n\n\nLet’s flip this logic around ⏮️\n\nCan we use probability to estimate how far our \\bar{x} might be from an unknown population mean \\mu?"
   },
   {
-    "objectID": "week3/slides.html#sampling-distribution-to-z",
-    "href": "week3/slides.html#sampling-distribution-to-z",
-    "title": "Sampling and estimation",
-    "section": "Sampling distribution to Z",
-    "text": "Sampling distribution to Z"
-  },
-  {
     "objectID": "week3/slides.html#sampling-distribution-and-se",
     "href": "week3/slides.html#sampling-distribution-and-se",
     "title": "Sampling and estimation",
@@ -2349,14 +2342,35 @@
     "href": "week3/slides.html#anatomy-of-a-ci",
     "title": "Sampling and estimation",
     "section": "Anatomy of a CI",
-    "text": "Anatomy of a CI\n\n\\bar x\\pm z^* \\times \\text{SE}\n\n\n\n\n\nHow much probability do we want to capture?\n\n\nFor 95%, we accept that \\alpha = 5% of the time, we miss the population mean\n1 - \\alpha =  95% confidence level\n\n\nSplit your \\alpha into the two tails\n\n\n\\alpha/2 = 2.5% per tail\n\n\nCalculate the z^* threshold / inverse values at your confidence level"
+    "text": "Anatomy of a CI\n\n\\bar x\\pm z^* \\times \\text{SE}\n\n\n\n\n\nHow much probability do we want to capture? \n\n\nFor 95%, we accept that \\alpha = 5% of the time, we miss the population mean\n1 - \\alpha =  95\\% confidence level\n\n\nSplit your \\alpha into the two tails\n\n\n\\alpha/2 = 2.5\\% per tail"
   },
   {
-    "objectID": "week3/slides.html#source-page-014",
-    "href": "week3/slides.html#source-page-014",
+    "objectID": "week3/slides.html#anatomy-of-a-ci-1",
+    "href": "week3/slides.html#anatomy-of-a-ci-1",
     "title": "Sampling and estimation",
-    "section": "",
-    "text": "14\nTask 3: Call Centre Performance Analysis (in your own time) A telecommunications company closely monitors its call-centre operations to maintain high service standards. According to company reports, the average call handling time is 6.5 minutes, with a standard deviation of 1.2 minutes. To verify whether daily performance aligns with expectations, a team leader reviews a random sample of 16 customer calls from the previous shift. Assuming the company’s claim is accurate and call handling times are normally distributed, the probability that the sample mean of the 16 calls falls between 6.0 and 7.0 minutes is 0.9044. Is this probability calculation valid given the small sample size (n = 16)?Support your explanation with a discussion of population distribution, sample size, and whether the Central Limit Theorem is required in this case.\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 14"
+    "section": "Anatomy of a CI",
+    "text": "Anatomy of a CI\n\n\\bar x\\pm z^* \\times \\text{SE}\n\n\n\n\n\nCalculate the z^* threshold (inverse) values at your confidence level\n\n\nz^* = NORM.S.INV(0.95/2) =1.96\n\\bar x\\pm 1.96 \\times \\text{SE}\n\n\nSubstitute your \\bar x and SE \nInterpret your CI\n\n\nWe are 95% confident that the true population value \\mu lies between \\bar x -1.96 \\times SE and \\bar x  +1.96 \\times SE"
+  },
+  {
+    "objectID": "week3/slides.html#an-concrete-example-of-ci",
+    "href": "week3/slides.html#an-concrete-example-of-ci",
+    "title": "Sampling and estimation",
+    "section": "An concrete example of CI",
+    "text": "An concrete example of CI\nOur sample mean for price of a cup of boba = $10.95 Our sample size n = 5 Our SD s = $1.20\nWhat is our 95% confidence interval for the average r"
+  },
+  {
+    "objectID": "week3/slides.html#different-levels-of-confidence",
+    "href": "week3/slides.html#different-levels-of-confidence",
+    "title": "Sampling and estimation",
+    "section": "Different levels of confidence",
+    "text": "Different levels of confidence"
+  },
+  {
+    "objectID": "week3/slides.html#what-if-dont-have-a-sd",
+    "href": "week3/slides.html#what-if-dont-have-a-sd",
+    "title": "Sampling and estimation",
+    "section": "What if don’t have a SD?",
+    "text": "What if don’t have a SD?\n14\nTask 3: Call Centre Performance Analysis (in your own time) A telecommunications company closely monitors its call-centre operations to maintain high service standards. According to company reports, the average call handling time is 6.5 minutes, with a standard deviation of 1.2 minutes. To verify whether daily performance aligns with expectations, a team leader reviews a random sample of 16 customer calls from the previous shift. Assuming the company’s claim is accurate and call handling times are normally distributed, the probability that the sample mean of the 16 calls falls between 6.0 and 7.0 minutes is 0.9044. Is this probability calculation valid given the small sample size (n = 16)?Support your explanation with a discussion of population distribution, sample size, and whether the Central Limit Theorem is required in this case.\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 14"
   },
   {
     "objectID": "week3/slides.html#source-page-015",

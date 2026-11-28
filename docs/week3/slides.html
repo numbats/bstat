@@ -712,9 +712,6 @@ Let’s flip this logic around ⏮️</p>
 </div>
 </div></div>
 </section>
-<section id="sampling-distribution-to-z" class="slide level2">
-<h2>Sampling distribution to Z</h2>
-</section>
 <section id="sampling-distribution-and-se" class="slide level2">
 <h2>Sampling distribution and SE</h2>
 <div class="columns">
@@ -824,26 +821,23 @@ This is the core idea behind a <strong>95% confidence interval!</strong></p>
 \bar x\pm z^* \times \text{SE}
 </span></p>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:55%;">
 <div style="font-size: 0.72em;">
 <ol type="1">
-<li>How much probability do we want to capture?</li>
+<li><strong>How much probability do we want to capture? </strong></li>
 </ol>
 <ul>
 <li>For 95%, we accept that <span class="math inline">\alpha</span> = 5% of the time, we miss the population mean</li>
-<li><span class="math inline">1 - \alpha =  95%</span> confidence level</li>
+<li><span class="math inline">1 - \alpha =  95\%</span> confidence level</li>
 </ul>
 <ol start="2" type="1">
-<li>Split your <span class="math inline">\alpha</span> into the two tails</li>
+<li><strong>Split your <span class="math inline">\alpha</span> into the two tails</strong></li>
 </ol>
 <ul>
-<li><span class="math inline">\alpha/2 = 2.5%</span> per tail</li>
+<li><span class="math inline">\alpha/2 = 2.5\%</span> per tail</li>
 </ul>
-<ol start="3" type="1">
-<li>Calculate the <span class="math inline">z^*</span> threshold / inverse values at your confidence level</li>
-</ol>
 </div>
-</div><div class="column" style="width:52%;">
+</div><div class="column" style="width:45%;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -855,8 +849,51 @@ This is the core idea behind a <strong>95% confidence interval!</strong></p>
 </div>
 </div></div>
 </section>
-<section id="source-page-014" class="slide level2">
-<h2></h2>
+<section id="anatomy-of-a-ci-1" class="slide level2">
+<h2>Anatomy of a CI</h2>
+<p><span class="math display">
+\bar x\pm z^* \times \text{SE}
+</span></p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div style="font-size: 0.72em;">
+<ol start="3" type="1">
+<li><strong>Calculate the <span class="math inline">z^*</span> threshold (inverse) values at your confidence level</strong></li>
+</ol>
+<ul>
+<li><span class="math inline">z^* =</span> <code>NORM.S.INV(0.95/2)</code> <span class="math inline">=1.96</span></li>
+<li><span class="math inline">\bar x\pm 1.96 \times \text{SE}</span></li>
+</ul>
+<ol start="4" type="1">
+<li><p><strong>Substitute your <span class="math inline">\bar x</span> and <span class="math inline">SE</span> </strong></p></li>
+<li><p><strong>Interpret your CI</strong></p></li>
+</ol>
+<ul>
+<li>We are 95% confident that the true population value <span class="math inline">\mu</span> lies between <span class="math inline">\bar x -1.96 \times SE</span> and <span class="math inline">\bar x  +1.96 \times SE</span></li>
+</ul>
+</div>
+</div><div class="column" style="width:45%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-17-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% is shaded dark blue, and each unshaded tail is labelled 2.5%."></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="an-concrete-example-of-ci" class="slide level2">
+<h2>An concrete example of CI</h2>
+<p>Our sample mean for price of a cup of boba = $10.95 Our sample size n = 5 Our SD s = $1.20</p>
+<p><strong>What is our 95% confidence interval for the average r</strong></p>
+</section>
+<section id="different-levels-of-confidence" class="slide level2">
+<h2>Different levels of confidence</h2>
+</section>
+<section id="what-if-dont-have-a-sd" class="slide level2">
+<h2>What if don’t have a SD?</h2>
 <h3 id="section">14</h3>
 <p>Task 3: Call Centre Performance Analysis (in your own time) A telecommunications company closely monitors its call-centre operations to maintain high service standards. According to company reports, the average call handling time is 6.5 minutes, with a standard deviation of 1.2 minutes. To verify whether daily performance aligns with expectations, a team leader reviews a random sample of 16 customer calls from the previous shift. Assuming the company’s claim is accurate and call handling times are normally distributed, the probability that the sample mean of the 16 calls falls between 6.0 and 7.0 minutes is 0.9044. Is this probability calculation valid given the small sample size (n = 16)?Support your explanation with a discussion of population distribution, sample size, and whether the Central Limit Theorem is required in this case.</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=14">Workshop_slides_Week_3_with_solutions.pdf, page 14</a></em></p>
