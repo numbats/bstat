@@ -394,6 +394,8 @@ The <strong>total area</strong> under the curve is 1.</p>
 <ul>
 <li>Boba <code>Sample means</code> tab: <strong>customers vary</strong>.</li>
 <li>Here: <strong>sample averages vary</strong>.</li>
+<li>Notice: <span class="math inline">\frac{\sigma}{\sqrt{n}} = SE</span><br>
+</li>
 </ul>
 </div>
 </div>
@@ -410,10 +412,8 @@ The <strong>total area</strong> under the curve is 1.</p>
 </div>
 </div>
 </div>
-<div style="text-align: center; font-size=50%;">
-<div style="font-size: 1em;">
-<p><span class="math inline">\displaystyle \bar{X} \sim \mathcal{N}\left(\mu, \frac{\sigma}{\sqrt{n}}\right)</span></p>
-</div>
+<div style="text-align: center; font-size: 50%;">
+<p><span class="math inline">\displaystyle \bar{X} \sim \mathcal{N}\left(\mu,\frac{\sigma}{\sqrt{n}}\right)</span></p>
 </div>
 </div></div>
 </section></section>
@@ -669,23 +669,46 @@ Find <span class="math inline">P(24&lt;\bar X&lt;26)</span></p>
 <div style="font-size: 60%;">
 <p>We know our sample mean isn’t the true mean. How can we report all <strong>plausible values</strong>?</p>
 </div>
-<div class="boba-live" data-boba-tab="means" data-boba-mode="intro-se" data-boba-tabs="means">
-
+<div class="boba-live" data-boba-tab="means" data-boba-mode="intro" data-boba-tabs="means">
+<iframe id="boba-simulator" src="../apps/boba/site/index.html" title="Boba price sampling simulator" style="width:100%;height:100%;border:0;">
+</iframe>
 </div>
 </section>
-<section id="probability-and-an-unknown-population-mean" class="slide level2">
-<h2>Probability and an unknown population mean</h2>
+<section id="reverse-engineer-the-unknown-population-mean" class="slide level2">
+<h2>Reverse engineer the unknown population mean</h2>
 <p>So far, we have been asking:</p>
 <p>Given that <strong>we know the population mean</strong> <span class="math inline">\mu</span>, what is the probability of sampling a particular range of sample means?<br>
 </p>
 
 <img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 10. The area between 24 and 26 is shaded dark blue." width="768"><p>Let’s flip this logic around:</p>
 <blockquote>
-<p>In reality, we collect a sample and get a sample mean <span class="math inline">\bar{x}</span>. How can we use probability to work out how far our <span class="math inline">\bar{x}</span> might be from the unknown population mean <span class="math inline">\mu</span>?</p>
+<p>We collect a sample and get a mean <span class="math inline">\bar{x}</span>. Can we use probability to estimate how far our <span class="math inline">\bar{x}</span> might be from the <strong>unknown population mean</strong> <span class="math inline">\mu</span>?</p>
 </blockquote>
 </section>
-<section id="standard-normal-distriubution" class="slide level2">
-<h2>Standard normal distriubution</h2>
+<section id="sampling-distribution-2" class="slide level2">
+<h2>Sampling distribution</h2>
+<div class="columns">
+<div class="column">
+<div style="font-size: 70%; white-space: nowrap;">
+<p><span class="math inline">Z \sim \mathcal{N}(</span>= $0, <span class="math inline">\sigma</span> = 1)$</p>
+</div>
+<ul>
+<li>x axis or Z scores, measures distance in SD</li>
+</ul>
+</div><div class="column">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density centred on zero. The middle 95% of the area, between z equals minus 1.96 and plus 1.96, is shaded blue; each unshaded tail has 2.5% of the area." width="624"></p>
+</figure>
+</div>
+</div>
+</div>
+<div style="font-size: 70%; white-space: nowrap; text-align: center;">
+<p><span class="math inline">P(-1.96\leq Z\leq1.96)=0.95</span></p>
+</div>
+</div></div>
 </section>
 <section id="break-1" class="slide level2 section-slide">
 <h2>Break</h2>

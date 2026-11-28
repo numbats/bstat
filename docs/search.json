@@ -2202,7 +2202,7 @@
     "href": "week3/slides.html#sampling-distribution-1",
     "title": "Sampling and estimation",
     "section": "Sampling distribution",
-    "text": "Sampling distribution\n\n\nA sampling distribution represents all possible values a sample statistic (\\bar{x}) could take and how likely each value is\n\n\n\n\nSample means\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nBoba Sample means tab: customers vary.\nHere: sample averages vary.\n\n\n\n\n\n\nSampling distribution\n\n\n\n\n\n\n\n\n\n\n\n\\displaystyle \\bar{X} \\sim \\mathcal{N}\\left(\\mu, \\frac{\\sigma}{\\sqrt{n}}\\right)"
+    "text": "Sampling distribution\n\n\nA sampling distribution represents all possible values a sample statistic (\\bar{x}) could take and how likely each value is\n\n\n\n\nSample means\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nBoba Sample means tab: customers vary.\nHere: sample averages vary.\nNotice: \\frac{\\sigma}{\\sqrt{n}} = SE\n\n\n\n\n\n\n\nSampling distribution\n\n\n\n\n\n\n\n\n\n\n\\displaystyle \\bar{X} \\sim \\mathcal{N}\\left(\\mu,\\frac{\\sigma}{\\sqrt{n}}\\right)"
   },
   {
     "objectID": "week3/slides.html#sample-size",
@@ -2296,18 +2296,18 @@
     "text": "Boba sales 🧋\n\nWe know our sample mean isn’t the true mean. How can we report all plausible values?"
   },
   {
-    "objectID": "week3/slides.html#probability-and-an-unknown-population-mean",
-    "href": "week3/slides.html#probability-and-an-unknown-population-mean",
+    "objectID": "week3/slides.html#reverse-engineer-the-unknown-population-mean",
+    "href": "week3/slides.html#reverse-engineer-the-unknown-population-mean",
     "title": "Sampling and estimation",
-    "section": "Probability and an unknown population mean",
-    "text": "Probability and an unknown population mean\nSo far, we have been asking:\nGiven that we know the population mean \\mu, what is the probability of sampling a particular range of sample means?\n\n\nLet’s flip this logic around:\n\nIn reality, we collect a sample and get a sample mean \\bar{x}. How can we use probability to work out how far our \\bar{x} might be from the unknown population mean \\mu?"
+    "section": "Reverse engineer the unknown population mean",
+    "text": "Reverse engineer the unknown population mean\nSo far, we have been asking:\nGiven that we know the population mean \\mu, what is the probability of sampling a particular range of sample means?\n\n\nLet’s flip this logic around:\n\nWe collect a sample and get a mean \\bar{x}. Can we use probability to estimate how far our \\bar{x} might be from the unknown population mean \\mu?"
   },
   {
-    "objectID": "week3/slides.html#standard-normal-distriubution",
-    "href": "week3/slides.html#standard-normal-distriubution",
+    "objectID": "week3/slides.html#sampling-distribution-2",
+    "href": "week3/slides.html#sampling-distribution-2",
     "title": "Sampling and estimation",
-    "section": "Standard normal distriubution",
-    "text": "Standard normal distriubution"
+    "section": "Sampling distribution",
+    "text": "Sampling distribution\n\n\n\nZ \\sim \\mathcal{N}(= $0, \\sigma = 1)$\n\n\nx axis or Z scores, measures distance in SD\n\n\n\n\n\n\n\n\n\n\n\n\nP(-1.96\\leq Z\\leq1.96)=0.95"
   },
   {
     "objectID": "week3/slides.html#break-1",
