@@ -773,7 +773,7 @@ P(\mu-1.96SE\leq\bar X\leq\mu+1.96SE) = 0.95 🔍
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% between the mean minus 1.96 standard errors and the mean plus 1.96 standard errors is shaded dark blue."></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% is shaded dark blue, with 2.5% labelled in each tail."></p>
 </figure>
 </div>
 </div>
@@ -821,25 +821,39 @@ This is the core idea behind a <strong>95% confidence interval!</strong></p>
 <section id="anatomy-of-a-ci" class="slide level2">
 <h2>Anatomy of a CI</h2>
 <p><span class="math display">
-\bar x\pm z^*\frac{\sigma}{\sqrt n}
+\bar x\pm z^* \times \text{SE}
 </span></p>
+<div class="columns">
+<div class="column" style="width:48%;">
+<div style="font-size: 0.72em;">
 <ol type="1">
-<li>How much probabilty do we want to capture?</li>
+<li>How much probability do we want to capture?</li>
 </ol>
 <ul>
-<li>For 95% confidence, we accept that <span class="math inline">\alpha</span> = 5% of missing the population mean</li>
-<li>1 - <span class="math inline">\alpha</span> = 95%</li>
+<li>For 95%, we accept that <span class="math inline">\alpha</span> = 5% of the time, we miss the population mean</li>
+<li><span class="math inline">1 - \alpha =  95%</span> confidence level</li>
 </ul>
 <ol start="2" type="1">
 <li>Split your <span class="math inline">\alpha</span> into the two tails</li>
 </ol>
 <ul>
-<li>Label 2.5% at each tail</li>
+<li><span class="math inline">\alpha/2 = 2.5%</span> per tail</li>
 </ul>
-
-<img data-src="slides_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% between the mean minus 1.96 standard errors and the mean plus 1.96 standard errors is shaded dark blue."><ol start="3" type="1">
-<li>Calculate the threshold / inverse values at your confidence level</li>
+<ol start="3" type="1">
+<li>Calculate the <span class="math inline">z^*</span> threshold / inverse values at your confidence level</li>
 </ol>
+</div>
+</div><div class="column" style="width:52%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% is shaded dark blue, and each unshaded tail is labelled 2.5%."></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
 </section>
 <section id="source-page-014" class="slide level2">
 <h2></h2>

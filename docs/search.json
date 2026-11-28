@@ -2349,7 +2349,7 @@
     "href": "week3/slides.html#anatomy-of-a-ci",
     "title": "Sampling and estimation",
     "section": "Anatomy of a CI",
-    "text": "Anatomy of a CI\n\n\\bar x\\pm z^*\\frac{\\sigma}{\\sqrt n}\n\n\nHow much probabilty do we want to capture?\n\n\nFor 95% confidence, we accept that \\alpha = 5% of missing the population mean\n1 - \\alpha = 95%\n\n\nSplit your \\alpha into the two tails\n\n\nLabel 2.5% at each tail\n\n\n\nCalculate the threshold / inverse values at your confidence level"
+    "text": "Anatomy of a CI\n\n\\bar x\\pm z^* \\times \\text{SE}\n\n\n\n\n\nHow much probability do we want to capture?\n\n\nFor 95%, we accept that \\alpha = 5% of the time, we miss the population mean\n1 - \\alpha =  95% confidence level\n\n\nSplit your \\alpha into the two tails\n\n\n\\alpha/2 = 2.5% per tail\n\n\nCalculate the z^* threshold / inverse values at your confidence level"
   },
   {
     "objectID": "week3/slides.html#source-page-014",
