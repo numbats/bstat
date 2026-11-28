@@ -2370,7 +2370,14 @@
     "href": "week3/slides.html#what-if-dont-have-a-sd",
     "title": "Sampling and estimation",
     "section": "What if don’t have a SD?",
-    "text": "What if don’t have a SD?\n14\nTask 3: Call Centre Performance Analysis (in your own time) A telecommunications company closely monitors its call-centre operations to maintain high service standards. According to company reports, the average call handling time is 6.5 minutes, with a standard deviation of 1.2 minutes. To verify whether daily performance aligns with expectations, a team leader reviews a random sample of 16 customer calls from the previous shift. Assuming the company’s claim is accurate and call handling times are normally distributed, the probability that the sample mean of the 16 calls falls between 6.0 and 7.0 minutes is 0.9044. Is this probability calculation valid given the small sample size (n = 16)?Support your explanation with a discussion of population distribution, sample size, and whether the Central Limit Theorem is required in this case.\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 14"
+    "text": "What if don’t have a SD?"
+  },
+  {
+    "objectID": "week3/slides.html#source-page-045",
+    "href": "week3/slides.html#source-page-045",
+    "title": "Sampling and estimation",
+    "section": "",
+    "text": "Task 3: Call Centre Performance Analysis (in your own time) A telecommunications company closely monitors its call-centre operations to maintain high service standards. According to company reports, the average call handling time is 6.5 minutes, with a standard deviation of 1.2 minutes. To verify whether daily performance aligns with expectations, a team leader reviews a random sample of 16 customer calls from the previous shift. Assuming the company’s claim is accurate and call handling times are normally distributed, the probability that the sample mean of the 16 calls falls between 6.0 and 7.0 minutes is 0.9044. Is this probability calculation valid given the small sample size (n = 16)?Support your explanation with a discussion of population distribution, sample size, and whether the Central Limit Theorem is required in this case.\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 14"
   },
   {
     "objectID": "week3/slides.html#source-page-015",
