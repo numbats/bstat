@@ -2300,7 +2300,14 @@
     "href": "week3/slides.html#the-unknown-population-mean",
     "title": "Sampling and estimation",
     "section": "The unknown population mean",
-    "text": "The unknown population mean\nSo far, we have been asking ⏭️\nWe know the population mean \\mu, what is the probability of sampling a particular range of sample means?\n\n\n\nLet’s flip this logic around ⏮️\n\nWe collected a sample and have mean \\bar{x}. Can we use probability to estimate how far our \\bar{x} might be from the unknown population mean \\mu?"
+    "text": "The unknown population mean\n\n\nSo far, we have been asking ⏭️\nWe know the population mean \\mu, what is the probability of sampling a particular range of sample means?\n\n\nLet’s flip this logic around ⏮️\n\nWe collected a sample and have mean \\bar{x}. Can we use probability to estimate how far our \\bar{x} might be from the unknown population mean \\mu?"
+  },
+  {
+    "objectID": "week3/slides.html#sampling-distribution-to-z",
+    "href": "week3/slides.html#sampling-distribution-to-z",
+    "title": "Sampling and estimation",
+    "section": "Sampling distribution to Z",
+    "text": "Sampling distribution to Z"
   },
   {
     "objectID": "week3/slides.html#sampling-distribution-and-se",
@@ -2329,6 +2336,20 @@
     "title": "Sampling and estimation",
     "section": "Break",
     "text": "Break"
+  },
+  {
+    "objectID": "week3/slides.html#boba-sales-ci-1",
+    "href": "week3/slides.html#boba-sales-ci-1",
+    "title": "Sampling and estimation",
+    "section": "Boba sales + CI 🧋",
+    "text": "Boba sales + CI 🧋"
+  },
+  {
+    "objectID": "week3/slides.html#anatomy-of-a-ci",
+    "href": "week3/slides.html#anatomy-of-a-ci",
+    "title": "Sampling and estimation",
+    "section": "Anatomy of a CI",
+    "text": "Anatomy of a CI\n\n\\bar x\\pm z^*\\frac{\\sigma}{\\sqrt n}\n\n\nHow much probabilty do we want to capture?\n\n\nFor 95% confidence, we accept that \\alpha = 5% of missing the population mean\n1 - \\alpha = 95%\n\n\nSplit your \\alpha into the two tails\n\n\nLabel 2.5% at each tail\n\n\n\nCalculate the threshold / inverse values at your confidence level"
   },
   {
     "objectID": "week3/slides.html#source-page-014",
@@ -2490,6 +2511,13 @@
     "title": "Sampling and estimation",
     "section": "Assignment work that can now be completed 🤳",
     "text": "Assignment work that can now be completed 🤳\n\n\nQ1–Q3 complete. Q5 still needs the test result.\nDue: Monday 4 January 2027, 11:55 pm Melbourne time\nWorth: 20% of the unit"
+  },
+  {
+    "objectID": "week3/slides.html#boba-full-app",
+    "href": "week3/slides.html#boba-full-app",
+    "title": "Sampling and estimation",
+    "section": "Boba full app",
+    "text": "Boba full app"
   },
   {
     "objectID": "week4/reading/index.html",

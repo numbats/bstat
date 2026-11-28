@@ -676,15 +676,30 @@ Find <span class="math inline">P(24&lt;\bar X&lt;26)</span></p>
 </section>
 <section id="the-unknown-population-mean" class="slide level2">
 <h2>The unknown population mean</h2>
+<div class="columns">
+<div class="column">
 <p>So far, we have been asking ⏭️</p>
 <p><strong>We know the population mean</strong> <span class="math inline">\mu</span>, what is the probability of sampling a particular range of sample means?<br>
 </p>
-
-<img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 10. The area between 24 and 26 is shaded dark blue." width="768"><p><br>
+<p><br>
 Let’s flip this logic around ⏮️</p>
 <blockquote>
 <p>We collected a sample and have mean <span class="math inline">\bar{x}</span>. Can we use probability to estimate how far our <span class="math inline">\bar{x}</span> might be from the <strong>unknown population mean</strong> <span class="math inline">\mu</span>?</p>
 </blockquote>
+</div><div class="column">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 10. The area between 24 and 26 is shaded dark blue." width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="sampling-distribution-to-z" class="slide level2">
+<h2>Sampling distribution to Z</h2>
 </section>
 <section id="sampling-distribution-and-se" class="slide level2">
 <h2>Sampling distribution and SE</h2>
@@ -774,43 +789,43 @@ This is the core idea behind a <strong>95% confidence interval!</strong></p>
 </section>
 <section id="boba-sales-ci" class="slide level2">
 <h2>Boba sales + CI 🧋</h2>
-<div class="boba-live" data-boba-tab="ci" data-boba-mode="full" data-boba-tabs="sample,means,sampling,clt,ci">
+<div class="boba-live" data-boba-tab="ci" data-boba-mode="full" data-boba-tabs="ci">
 
 </div>
-<script>
-// One persistent iframe; later slides provide an empty slot and a selected tab.
-window.addEventListener("load", () => {
-  const app = document.getElementById("boba-simulator");
-  if (document.documentElement.classList.contains("print-pdf")) return;
-  document.body.appendChild(app);
-  Object.assign(app.style, {position:"fixed", zIndex:20, display:"none"});
-  const showBoba = () => {
-    const slot = window.Reveal?.getCurrentSlide()?.querySelector("[data-boba-tab]");
-    if (!slot) { app.style.display = "none"; return; }
-    const slide = slot.closest("section");
-    const scale = slide.getBoundingClientRect().width / slide.offsetWidth;
-    const available = slide.getBoundingClientRect().bottom - slot.getBoundingClientRect().top - 20;
-    slot.style.height = Math.max(0, available / scale) + "px";
-    const bounds = slot.getBoundingClientRect();
-    Object.assign(app.style, {display:"block", left:bounds.left+"px", top:bounds.top+"px", width:bounds.width+"px", height:bounds.height+"px"});
-    app.contentWindow.postMessage({bobaTab:slot.dataset.bobaTab, bobaMode:slot.dataset.bobaMode || "full", bobaTabs:slot.dataset.bobaTabs || "sample,means,sampling,ci"}, window.location.origin);
-  };
-  if (window.Reveal) { Reveal.on("slidechanged", showBoba); Reveal.on("resize", showBoba); }
-  app.addEventListener("load", () => setTimeout(showBoba, 1000));
-  window.addEventListener("resize", showBoba);
-  showBoba();
-});
-</script>
-<style>
-.boba-live {height:480px;}
-.print-pdf .boba-live {display:none;}
-@media print {#boba-simulator {display:none !important;} .boba-live {display:none;}}
-</style>
 </section>
 <section id="break-1" class="slide level2 section-slide">
 <h2>Break</h2>
 <countdown-timer id="introductions-timer" minutes="10" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
+</section>
+<section id="boba-sales-ci-1" class="slide level2">
+<h2>Boba sales + CI 🧋</h2>
+<div class="boba-live" data-boba-tab="ci" data-boba-mode="full" data-boba-tabs="ci">
+
+</div>
+</section>
+<section id="anatomy-of-a-ci" class="slide level2">
+<h2>Anatomy of a CI</h2>
+<p><span class="math display">
+\bar x\pm z^*\frac{\sigma}{\sqrt n}
+</span></p>
+<ol type="1">
+<li>How much probabilty do we want to capture?</li>
+</ol>
+<ul>
+<li>For 95% confidence, we accept that <span class="math inline">\alpha</span> = 5% of missing the population mean</li>
+<li>1 - <span class="math inline">\alpha</span> = 95%</li>
+</ul>
+<ol start="2" type="1">
+<li>Split your <span class="math inline">\alpha</span> into the two tails</li>
+</ol>
+<ul>
+<li>Label 2.5% at each tail</li>
+</ul>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% between the mean minus 1.96 standard errors and the mean plus 1.96 standard errors is shaded dark blue."><ol start="3" type="1">
+<li>Calculate the threshold / inverse values at your confidence level</li>
+</ol>
 </section>
 <section id="source-page-014" class="slide level2">
 <h2></h2>
@@ -1205,6 +1220,41 @@ np, n(1-p) \geq{}5
 </div><div class="column">
 <p><img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb959OfJdbew7J63ZZ_CVSkzvv7uAgkeyeGyHLJWHonQ&amp;s=10.png" style="width:50.0%"></p>
 </div></div>
+</section>
+<section id="boba-full-app" class="slide level2">
+<h2>Boba full app</h2>
+<div class="boba-live" data-boba-tab="ci" data-boba-mode="full" data-boba-tabs="sample,means,sampling,clt,ci">
+
+</div>
+<script>
+// One persistent iframe; later slides provide an empty slot and a selected tab.
+window.addEventListener("load", () => {
+  const app = document.getElementById("boba-simulator");
+  if (document.documentElement.classList.contains("print-pdf")) return;
+  document.body.appendChild(app);
+  Object.assign(app.style, {position:"fixed", zIndex:20, display:"none"});
+  const showBoba = () => {
+    const slot = window.Reveal?.getCurrentSlide()?.querySelector("[data-boba-tab]");
+    if (!slot) { app.style.display = "none"; return; }
+    const slide = slot.closest("section");
+    const scale = slide.getBoundingClientRect().width / slide.offsetWidth;
+    const available = slide.getBoundingClientRect().bottom - slot.getBoundingClientRect().top - 20;
+    slot.style.height = Math.max(0, available / scale) + "px";
+    const bounds = slot.getBoundingClientRect();
+    Object.assign(app.style, {display:"block", left:bounds.left+"px", top:bounds.top+"px", width:bounds.width+"px", height:bounds.height+"px"});
+    app.contentWindow.postMessage({bobaTab:slot.dataset.bobaTab, bobaMode:slot.dataset.bobaMode || "full", bobaTabs:slot.dataset.bobaTabs || "sample,means,sampling,ci"}, window.location.origin);
+  };
+  if (window.Reveal) { Reveal.on("slidechanged", showBoba); Reveal.on("resize", showBoba); }
+  app.addEventListener("load", () => setTimeout(showBoba, 1000));
+  window.addEventListener("resize", showBoba);
+  showBoba();
+});
+</script>
+<style>
+.boba-live {height:480px;}
+.print-pdf .boba-live {display:none;}
+@media print {#boba-simulator {display:none !important;} .boba-live {display:none;}}
+</style>
 
 
 </section></section>
