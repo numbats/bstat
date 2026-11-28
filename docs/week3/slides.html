@@ -733,7 +733,11 @@ P(\mu-1.96SE\leq\bar X\leq\mu+1.96SE) = 0.95 🔍
 </section>
 <section id="probability-to-confidence" class="slide level2">
 <h2>Probability to confidence</h2>
+<div style="font-size: 0.8em; margin-botton: -2em;">
+<blockquote>
 <p><strong>95%</strong> of sample means <strong>fall within +/- 1.96 SE </strong> of the population mean 🔍</p>
+</blockquote>
+</div>
 <div class="columns">
 <div class="column" style="width:60%;">
 <div class="cell" data-layout-align="center">
@@ -745,7 +749,7 @@ P(\mu-1.96SE\leq\bar X\leq\mu+1.96SE) = 0.95 🔍
 </div>
 </div>
 </div>
-<div style="font-size: 0.7em; margin-top: -2em;">
+<div style="font-size: 0.7em; margin-top: -3em;">
 <p><span class="math display">
 P(\mu-1.96SE\leq\bar X\leq\mu+1.96SE) = 0.95
 </span></p>
@@ -757,22 +761,51 @@ P(\mu-1.96SE\leq\bar X\leq\mu+1.96SE) = 0.95
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Logic 🤔</strong></p>
+<p><strong>Logic</strong></p>
 </div>
 <div class="callout-content">
-<div style="font-size: 0.7em;">
-<ul>
-<li>If we construct a <strong>range</strong> extending <strong>1.96 SE</strong> on either side of our sample mean, that range will contain the true population mean <span class="math inline">\mu</span> in 95% of repeated samples.</li>
-</ul>
+<p>If we construct a <strong>range</strong> extending <strong>1.96 SE</strong> on either side of our sample mean, that range will <strong>contain the true population mean</strong> <span class="math inline">\mu</span> in <strong>95%</strong> of repeated samples.</p>
 </div>
 </div>
 </div>
-</div>
-<p>This is the core idea behind a <strong>95% confidence interval</strong> 💡</p>
+<p><br>
+This is the core idea behind a <strong>95% confidence interval!</strong></p>
 </div></div>
 </section>
 <section id="boba-sales-ci" class="slide level2">
-<h2>Boba sales + CI</h2>
+<h2>Boba sales + CI 🧋</h2>
+<div class="boba-live" data-boba-tab="ci" data-boba-mode="full" data-boba-tabs="sample,means,sampling,clt,ci">
+
+</div>
+<script>
+// One persistent iframe; later slides provide an empty slot and a selected tab.
+window.addEventListener("load", () => {
+  const app = document.getElementById("boba-simulator");
+  if (document.documentElement.classList.contains("print-pdf")) return;
+  document.body.appendChild(app);
+  Object.assign(app.style, {position:"fixed", zIndex:20, display:"none"});
+  const showBoba = () => {
+    const slot = window.Reveal?.getCurrentSlide()?.querySelector("[data-boba-tab]");
+    if (!slot) { app.style.display = "none"; return; }
+    const slide = slot.closest("section");
+    const scale = slide.getBoundingClientRect().width / slide.offsetWidth;
+    const available = slide.getBoundingClientRect().bottom - slot.getBoundingClientRect().top - 20;
+    slot.style.height = Math.max(0, available / scale) + "px";
+    const bounds = slot.getBoundingClientRect();
+    Object.assign(app.style, {display:"block", left:bounds.left+"px", top:bounds.top+"px", width:bounds.width+"px", height:bounds.height+"px"});
+    app.contentWindow.postMessage({bobaTab:slot.dataset.bobaTab, bobaMode:slot.dataset.bobaMode || "full", bobaTabs:slot.dataset.bobaTabs || "sample,means,sampling,ci"}, window.location.origin);
+  };
+  if (window.Reveal) { Reveal.on("slidechanged", showBoba); Reveal.on("resize", showBoba); }
+  app.addEventListener("load", () => setTimeout(showBoba, 1000));
+  window.addEventListener("resize", showBoba);
+  showBoba();
+});
+</script>
+<style>
+.boba-live {height:480px;}
+.print-pdf .boba-live {display:none;}
+@media print {#boba-simulator {display:none !important;} .boba-live {display:none;}}
+</style>
 </section>
 <section id="break-1" class="slide level2 section-slide">
 <h2>Break</h2>
@@ -1158,41 +1191,6 @@ np, n(1-p) \geq{}5
 <h3 id="task-7-recruitment-service-_in-your-own-time-1">Task 7: Recruitment Service _in your own time</h3>
 <p>Suppose that, in a survey of 600 employers, 126 indicate that they have used a recruitment service within the past two months to find new staff. b. Discuss the effect on the confidence interval estimate when you increase the level of confidence, assuming all other factors remain unchanged. When the level of confidence increases, the confidence interval becomes wider. This results in a loss of precision, which is the price you have to pay to achieve a higher level of confidence.</p>
 <p><em>Source: <a href="../resources/ETX5900-S2-2026/Workshop_slides_Week_3_with_solutions.pdf#page=34">Workshop_slides_Week_3_with_solutions.pdf, page 34</a></em></p>
-</section>
-<section id="boba-prices-app" class="slide level2">
-<h2>Boba prices app 🧋</h2>
-<div class="boba-live" data-boba-tab="sample" data-boba-mode="full" data-boba-tabs="sample,means,sampling,clt,ci">
-
-</div>
-<script>
-// One persistent iframe; later slides provide an empty slot and a selected tab.
-window.addEventListener("load", () => {
-  const app = document.getElementById("boba-simulator");
-  if (document.documentElement.classList.contains("print-pdf")) return;
-  document.body.appendChild(app);
-  Object.assign(app.style, {position:"fixed", zIndex:20, display:"none"});
-  const showBoba = () => {
-    const slot = window.Reveal?.getCurrentSlide()?.querySelector("[data-boba-tab]");
-    if (!slot) { app.style.display = "none"; return; }
-    const slide = slot.closest("section");
-    const scale = slide.getBoundingClientRect().width / slide.offsetWidth;
-    const available = slide.getBoundingClientRect().bottom - slot.getBoundingClientRect().top - 20;
-    slot.style.height = Math.max(0, available / scale) + "px";
-    const bounds = slot.getBoundingClientRect();
-    Object.assign(app.style, {display:"block", left:bounds.left+"px", top:bounds.top+"px", width:bounds.width+"px", height:bounds.height+"px"});
-    app.contentWindow.postMessage({bobaTab:slot.dataset.bobaTab, bobaMode:slot.dataset.bobaMode || "full", bobaTabs:slot.dataset.bobaTabs || "sample,means,sampling,ci"}, window.location.origin);
-  };
-  if (window.Reveal) { Reveal.on("slidechanged", showBoba); Reveal.on("resize", showBoba); }
-  app.addEventListener("load", () => setTimeout(showBoba, 1000));
-  window.addEventListener("resize", showBoba);
-  showBoba();
-});
-</script>
-<style>
-.boba-live {height:480px;}
-.print-pdf .boba-live {display:none;}
-@media print {#boba-simulator {display:none !important;} .boba-live {display:none;}}
-</style>
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>

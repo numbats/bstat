@@ -2314,14 +2314,14 @@
     "href": "week3/slides.html#probability-to-confidence",
     "title": "Sampling and estimation",
     "section": "Probability to confidence",
-    "text": "Probability to confidence\n95% of sample means fall within +/- 1.96 SE  of the population mean 🔍\n\n\n\n\n\n\n\n\n\n\n\n\n\nP(\\mu-1.96SE\\leq\\bar X\\leq\\mu+1.96SE) = 0.95\n\n\n\n\n\n\n\n\n\nLogic 🤔\n\n\n\n\nIf we construct a range extending 1.96 SE on either side of our sample mean, that range will contain the true population mean \\mu in 95% of repeated samples.\n\n\n\n\n\nThis is the core idea behind a 95% confidence interval 💡"
+    "text": "Probability to confidence\n\n\n95% of sample means fall within +/- 1.96 SE  of the population mean 🔍\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nP(\\mu-1.96SE\\leq\\bar X\\leq\\mu+1.96SE) = 0.95\n\n\n\n\n\n\n\n\n\nLogic\n\n\nIf we construct a range extending 1.96 SE on either side of our sample mean, that range will contain the true population mean \\mu in 95% of repeated samples.\n\n\n\n\nThis is the core idea behind a 95% confidence interval!"
   },
   {
     "objectID": "week3/slides.html#boba-sales-ci",
     "href": "week3/slides.html#boba-sales-ci",
     "title": "Sampling and estimation",
-    "section": "Boba sales + CI",
-    "text": "Boba sales + CI"
+    "section": "Boba sales + CI 🧋",
+    "text": "Boba sales + CI 🧋"
   },
   {
     "objectID": "week3/slides.html#break-1",
@@ -2476,13 +2476,6 @@
     "title": "Sampling and estimation",
     "section": "",
     "text": "Task 7: Recruitment Service _in your own time\nSuppose that, in a survey of 600 employers, 126 indicate that they have used a recruitment service within the past two months to find new staff. b. Discuss the effect on the confidence interval estimate when you increase the level of confidence, assuming all other factors remain unchanged. When the level of confidence increases, the confidence interval becomes wider. This results in a loss of precision, which is the price you have to pay to achieve a higher level of confidence.\nSource: Workshop_slides_Week_3_with_solutions.pdf, page 34"
-  },
-  {
-    "objectID": "week3/slides.html#boba-prices-app",
-    "href": "week3/slides.html#boba-prices-app",
-    "title": "Sampling and estimation",
-    "section": "Boba prices app 🧋",
-    "text": "Boba prices app 🧋"
   },
   {
     "objectID": "week3/slides.html#summary",
