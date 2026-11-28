@@ -521,7 +521,7 @@ The <strong>total area</strong> under the curve is 1.</p>
 <aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://www.youtube.com/watch?v=jvoxEYmQHNM">Bunnies, Dragons and the ‘Normal’ World: Central Limit Theorem | The New York Times</a></p></li></ol></aside></section>
 <section id="putting-theory-to-practice" class="slide level2 smaller">
 <h2>Putting theory to practice</h2>
-<p>A boba store tracks how much customers spend to plan staffing, ingredients and promotions. Transaction records from the last quarter, purchases are <strong>normally distributed</strong> with a <strong>mean of $25 and a standard deviation of $8</strong></p>
+<p>A boba store tracks how much customers spend to plan staffing, ingredients and promotions. Transactions from the last quarter, show that purchases are <strong>normally distributed</strong> with a <strong>mean of $25 and a standard deviation of $8</strong></p>
 <ol type="1">
 <li class="fragment">A purchase between $24 and $26 is considered moderate. What is the probability that a <strong>sample of 10</strong> customers makes a moderate purchase?</li>
 <li class="fragment">The shop wants to offer a reward to its top 25% of customers by spending. If I take a <strong>sample of 15 customers</strong>, what is the <strong>average purchase amount</strong> that marks the threshold, so that 75% of customers spend no more than this amount?</li>
@@ -537,7 +537,7 @@ The <strong>total area</strong> under the curve is 1.</p>
 </div>
 <div class="callout-content">
 <ul>
-<li>“Transaction records from the last quarter…” is a hint at the a <strong>population distribution</strong> 😉</li>
+<li>“Transactions from the last quarter…” is a hint at the a <strong>population distribution</strong> 😉</li>
 <li>“…a sample of”, “samples”, implies <strong>using SE</strong> instead of SD in calculations</li>
 </ul>
 </div>
@@ -546,7 +546,8 @@ The <strong>total area</strong> under the curve is 1.</p>
 </section>
 <section id="moderate-purchase---watch-me" class="slide level2">
 <h2>Moderate purchase - Watch me 👀</h2>
-<p>What is the probability that a <strong>sample of 10</strong> customers makes a purchase between <strong>$24 and $26</strong> is considered moderate?</p>
+<p>What is the probability that a <strong>sample of 10</strong> customers makes a purchase between <strong>$24 and $26</strong>?<br>
+Find <span class="math inline">P(24&lt;\bar X&lt;26)</span></p>
 
 <img data-src="slides_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 10. The area between 24 and 26 is shaded dark blue." width="768"><div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -559,7 +560,7 @@ The <strong>total area</strong> under the curve is 1.</p>
 <div class="callout-content">
 <ul>
 <li>Use <code>=NORM.DIST(x, mean, standard_dev, cumulative)</code> to find the shaded regions of a Normal distribution</li>
-<li>Subtract cumulative area from each other to get the range</li>
+<li>Subtract cumulative areas from each other to get their range</li>
 </ul>
 </div>
 </div>
@@ -567,8 +568,8 @@ The <strong>total area</strong> under the curve is 1.</p>
 </section>
 <section id="moderate-purchase---watch-me-1" class="slide level2 smaller">
 <h2>Moderate purchase - Watch me 👀</h2>
-<p>What is the probability that a <strong>sample of 10</strong> customers makes a purchase between <strong>$24 and $26</strong> is considered moderate?</p>
-<p>The sample mean has distribution <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{10})</span>. Find <span class="math inline">P(24&lt;\bar X&lt;26)</span>.</p>
+<p>What is the probability that a <strong>sample of 10</strong> customers makes a purchase between <strong>$24 and $26</strong>?</p>
+<p>The sample mean has distribution <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{10})</span>.</p>
 
 <img data-src="slides_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 10. The area between 24 and 26 is shaded dark blue." width="768"><div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -589,13 +590,9 @@ The <strong>total area</strong> under the curve is 1.</p>
 <h2>Top 25% of customers - You try ✏️</h2>
 <countdown-timer id="week3-top-quarter" minutes="05" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
-<p>If I take a <strong>sample of 15 customers</strong>, what is the <strong>average purchase amount</strong> that marks the threshold, so that 75% of customers spend no more than this amount?</p>
-<!--
-- Shaded normal distribution
-- Label threshold as x = ?
-- Notation for what the question is asking
--->
-<p>For <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{15})</span>, find <span class="math inline">c</span> such that <span class="math inline">P(\bar X\leq c)=0.75</span>.</p>
+<p>If I take a <strong>sample of 15 customers</strong>, what is the <strong>average purchase amount</strong> that marks the threshold, so that 75% of customers spend no more than this amount?<br>
+</p>
+<p>Find <span class="math inline">c</span> such that <span class="math inline">P(\bar X\leq c)=0.75</span>.</p>
 
 <img data-src="slides_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25. Seventy-five percent of the area is shaded to the left of an unknown cutoff c, labelled c equals question mark." width="768"><div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -615,7 +612,8 @@ The <strong>total area</strong> under the curve is 1.</p>
 </section>
 <section id="top-25-of-customers---you-try-1" class="slide level2 smaller">
 <h2>Top 25% of customers - You try ✏️</h2>
-<p>If I take a <strong>sample of 15 customers</strong>, what is the <strong>average purchase amount</strong> that marks the threshold, so that 75% of customers spend no more than this amount?</p>
+<p>If I take a <strong>sample of 15 customers</strong>, what is the <strong>average purchase amount</strong> that marks the threshold, so that 75% of customers spend no more than this amount?<br>
+</p>
 <p>For <span class="math inline">\bar X\sim\mathcal{N}(25,8/\sqrt{15})</span>, find <span class="math inline">c</span> such that <span class="math inline">P(\bar X\leq c)=0.75</span>.</p>
 
 <img data-src="slides_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25. Seventy-five percent of the area is shaded to the left of an unknown cutoff c, labelled c equals question mark." width="768"><div class="callout callout-tip callout-titled callout-style-default">
@@ -663,22 +661,27 @@ The <strong>total area</strong> under the curve is 1.</p>
 <countdown-timer id="introductions-timer" minutes="10" seconds="00" class="countdown" warn-when="30" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 </section>
-<section id="how-do-we-communicate-uncertainty" class="slide level2 section-slide">
+<section id="how-do-we-communicate-uncertainty" class="slide level2 section-slide" style="font-size: 0.7em;">
 <h2>How do we communicate uncertainty?</h2>
 </section>
 <section id="boba-sales-1" class="slide level2">
 <h2>Boba sales 🧋</h2>
 <div style="font-size: 60%;">
-<p>We need a way to capture the <strong>possible range of values</strong> as if we were going to sample over and over again</p>
+<p>We know our sample mean isn’t the true mean. How can we report all <strong>plausible values</strong>?</p>
 </div>
-<div class="boba-live" data-boba-tab="ci" data-boba-mode="ci" data-boba-tabs="ci">
+<div class="boba-live" data-boba-tab="means" data-boba-mode="intro-se" data-boba-tabs="means">
 
 </div>
-</section>
-<section id="confidence-interval" class="slide level2">
-<h2>Confidence interval</h2>
+<p>o far, we have been asking:</p>
+<p>Given that <strong>we know the population mean</strong> <span class="math inline">\mu</span>, what is the probability of sampling a particular range of sample means?<br>
+</p>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 10. The area between 24 and 26 is shaded dark blue." width="768"><p>Let’s flip this logic around:</p>
+<blockquote>
+<p>In reality, we collect a sample and get a sample mean <span class="math inline">\bar{x}</span>. Can we <strong>estimate the range of population means</strong> that is consistent with that observation at the 95% confidence level?</p>
+</blockquote>
 <ul>
-<li>Mermaid decision tree if SD is known or not</li>
+<li>Standard normal distriubution</li>
 </ul>
 </section>
 <section id="break-1" class="slide level2 section-slide">
@@ -1081,6 +1084,10 @@ window.addEventListener("load", () => {
   const showBoba = () => {
     const slot = window.Reveal?.getCurrentSlide()?.querySelector("[data-boba-tab]");
     if (!slot) { app.style.display = "none"; return; }
+    const slide = slot.closest("section");
+    const scale = slide.getBoundingClientRect().width / slide.offsetWidth;
+    const available = slide.getBoundingClientRect().bottom - slot.getBoundingClientRect().top - 20;
+    slot.style.height = Math.max(0, available / scale) + "px";
     const bounds = slot.getBoundingClientRect();
     Object.assign(app.style, {display:"block", left:bounds.left+"px", top:bounds.top+"px", width:bounds.width+"px", height:bounds.height+"px"});
     app.contentWindow.postMessage({bobaTab:slot.dataset.bobaTab, bobaMode:slot.dataset.bobaMode || "full", bobaTabs:slot.dataset.bobaTabs || "sample,means,sampling,ci"}, window.location.origin);
@@ -1093,8 +1100,6 @@ window.addEventListener("load", () => {
 </script>
 <style>
 .boba-live {height:480px;}
-.boba-live[data-boba-mode^="intro"] {height:540px;}
-.boba-live[data-boba-mode="ci"] {height:610px;}
 .print-pdf .boba-live {display:none;}
 @media print {#boba-simulator {display:none !important;} .boba-live {display:none;}}
 </style>
