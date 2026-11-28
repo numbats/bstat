@@ -412,7 +412,7 @@ The <strong>total area</strong> under the curve is 1.</p>
 </div>
 </div>
 </div>
-<div style="text-align: center; font-size: 50%;">
+<div style="text-align: center; font-size: 70%;">
 <p><span class="math inline">\displaystyle \bar{X} \sim \mathcal{N}\left(\mu,\frac{\sigma}{\sqrt{n}}\right)</span></p>
 </div>
 </div></div>
@@ -688,25 +688,45 @@ Find <span class="math inline">P(24&lt;\bar X&lt;26)</span></p>
 <section id="sampling-distribution-2" class="slide level2">
 <h2>Sampling distribution</h2>
 <div class="columns">
-<div class="column">
-<div style="font-size: 70%; white-space: nowrap;">
-<p><span class="math inline">Z \sim \mathcal{N}(</span>= $0, <span class="math inline">\sigma</span> = 1)$</p>
-</div>
-<ul>
-<li>x axis or Z scores, measures distance in SD</li>
-</ul>
-</div><div class="column">
+<div class="column" style="width:60%;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center" alt="Standard normal density centred on zero. The middle 95% of the area, between z equals minus 1.96 and plus 1.96, is shaded blue; each unshaded tail has 2.5% of the area." width="624"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% between the mean minus 1.96 standard errors and the mean plus 1.96 standard errors is shaded dark blue."></p>
 </figure>
 </div>
 </div>
 </div>
-<div style="font-size: 70%; white-space: nowrap; text-align: center;">
-<p><span class="math inline">P(-1.96\leq Z\leq1.96)=0.95</span></p>
+<div style="font-size: 0.7em; margin-top: -2em;">
+<p><span class="math display">
+P(\mu-1.96SE\leq\bar X\leq\mu+1.96SE) = 0.95
+</span></p>
+</div>
+</div><div class="column" style="width:40%;">
+<p><span class="math display">
+\bar{X} \sim \mathcal{N}\left(\mu,\frac{\sigma}{\sqrt{n}}\right)
+</span></p>
+<div style="font-size: 0.7em;">
+<ul>
+<li>Sample distributions have and SD of SE <span class="math inline">\frac{\sigma}{\sqrt{n}}</span></li>
+<li>It measures how far a sample mean <span class="math inline">\bar{x}</span> is from the true population mean <span class="math inline">\mu</span> in SEs units.</li>
+</ul>
+</div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Recall</strong></p>
+</div>
+<div class="callout-content">
+<div style="font-size: 0.7em;">
+<p>A sampling distribution represents <strong>all possible values of <span class="math inline">\bar{x}</span></strong> and how <em>likely</em> each value is</p>
+</div>
+</div>
+</div>
 </div>
 </div></div>
 </section>

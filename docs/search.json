@@ -2307,7 +2307,7 @@
     "href": "week3/slides.html#sampling-distribution-2",
     "title": "Sampling and estimation",
     "section": "Sampling distribution",
-    "text": "Sampling distribution\n\n\n\nZ \\sim \\mathcal{N}(= $0, \\sigma = 1)$\n\n\nx axis or Z scores, measures distance in SD\n\n\n\n\n\n\n\n\n\n\n\n\nP(-1.96\\leq Z\\leq1.96)=0.95"
+    "text": "Sampling distribution\n\n\n\n\n\n\n\n\n\n\n\n\n\nP(\\mu-1.96SE\\leq\\bar X\\leq\\mu+1.96SE) = 0.95\n\n\n\n\n\\bar{X} \\sim \\mathcal{N}\\left(\\mu,\\frac{\\sigma}{\\sqrt{n}}\\right)\n\n\n\nSample distributions have and SD of SE \\frac{\\sigma}{\\sqrt{n}}\nIt measures how far a sample mean \\bar{x} is from the true population mean \\mu in SEs units.\n\n\n\n\n\n\n\n\nRecall\n\n\n\nA sampling distribution represents all possible values of \\bar{x} and how likely each value is"
   },
   {
     "objectID": "week3/slides.html#break-1",
