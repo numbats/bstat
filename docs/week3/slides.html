@@ -674,19 +674,20 @@ Find <span class="math inline">P(24&lt;\bar X&lt;26)</span></p>
 </iframe>
 </div>
 </section>
-<section id="reverse-engineer-the-unknown-population-mean" class="slide level2">
-<h2>Reverse engineer the unknown population mean</h2>
-<p>So far, we have been asking:</p>
-<p>Given that <strong>we know the population mean</strong> <span class="math inline">\mu</span>, what is the probability of sampling a particular range of sample means?<br>
+<section id="the-unknown-population-mean" class="slide level2">
+<h2>The unknown population mean</h2>
+<p>So far, we have been asking ⏭️</p>
+<p><strong>We know the population mean</strong> <span class="math inline">\mu</span>, what is the probability of sampling a particular range of sample means?<br>
 </p>
 
-<img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 10. The area between 24 and 26 is shaded dark blue." width="768"><p>Let’s flip this logic around:</p>
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 10. The area between 24 and 26 is shaded dark blue." width="768"><p><br>
+Let’s flip this logic around ⏮️</p>
 <blockquote>
-<p>We collect a sample and get a mean <span class="math inline">\bar{x}</span>. Can we use probability to estimate how far our <span class="math inline">\bar{x}</span> might be from the <strong>unknown population mean</strong> <span class="math inline">\mu</span>?</p>
+<p>We collected a sample and have mean <span class="math inline">\bar{x}</span>. Can we use probability to estimate how far our <span class="math inline">\bar{x}</span> might be from the <strong>unknown population mean</strong> <span class="math inline">\mu</span>?</p>
 </blockquote>
 </section>
-<section id="sampling-distribution-2" class="slide level2">
-<h2>Sampling distribution</h2>
+<section id="sampling-distribution-and-se" class="slide level2">
+<h2>Sampling distribution and SE</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
 <div class="cell" data-layout-align="center">
@@ -700,7 +701,7 @@ Find <span class="math inline">P(24&lt;\bar X&lt;26)</span></p>
 </div>
 <div style="font-size: 0.7em; margin-top: -2em;">
 <p><span class="math display">
-P(\mu-1.96SE\leq\bar X\leq\mu+1.96SE) = 0.95
+P(\mu-1.96SE\leq\bar X\leq\mu+1.96SE) = 0.95 🔍
 </span></p>
 </div>
 </div><div class="column" style="width:40%;">
@@ -709,7 +710,7 @@ P(\mu-1.96SE\leq\bar X\leq\mu+1.96SE) = 0.95
 </span></p>
 <div style="font-size: 0.7em;">
 <ul>
-<li>Sample distributions have and SD of SE <span class="math inline">\frac{\sigma}{\sqrt{n}}</span></li>
+<li>Sample distributions have and SD of SE <span class="math inline">\frac{\sigma}{\sqrt{n}}</span> 🔍</li>
 <li>It measures how far a sample mean <span class="math inline">\bar{x}</span> is from the true population mean <span class="math inline">\mu</span> in SEs units.</li>
 </ul>
 </div>
@@ -729,6 +730,49 @@ P(\mu-1.96SE\leq\bar X\leq\mu+1.96SE) = 0.95
 </div>
 </div>
 </div></div>
+</section>
+<section id="probability-to-confidence" class="slide level2">
+<h2>Probability to confidence</h2>
+<p><strong>95%</strong> of sample means <strong>fall within +/- 1.96 SE </strong> of the population mean 🔍</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% between the mean minus 1.96 standard errors and the mean plus 1.96 standard errors is shaded dark blue."></p>
+</figure>
+</div>
+</div>
+</div>
+<div style="font-size: 0.7em; margin-top: -2em;">
+<p><span class="math display">
+P(\mu-1.96SE\leq\bar X\leq\mu+1.96SE) = 0.95
+</span></p>
+</div>
+</div><div class="column" style="width:40%;">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Logic 🤔</strong></p>
+</div>
+<div class="callout-content">
+<div style="font-size: 0.7em;">
+<ul>
+<li>If we construct a <strong>range</strong> extending <strong>1.96 SE</strong> on either side of our sample mean, that range will contain the true population mean <span class="math inline">\mu</span> in 95% of repeated samples.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<p>This is the core idea behind a <strong>95% confidence interval</strong> 💡</p>
+</div></div>
+</section>
+<section id="boba-sales-ci" class="slide level2">
+<h2>Boba sales + CI</h2>
 </section>
 <section id="break-1" class="slide level2 section-slide">
 <h2>Break</h2>

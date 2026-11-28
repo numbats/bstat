@@ -2296,18 +2296,32 @@
     "text": "Boba sales 🧋\n\nWe know our sample mean isn’t the true mean. How can we report all plausible values?"
   },
   {
-    "objectID": "week3/slides.html#reverse-engineer-the-unknown-population-mean",
-    "href": "week3/slides.html#reverse-engineer-the-unknown-population-mean",
+    "objectID": "week3/slides.html#the-unknown-population-mean",
+    "href": "week3/slides.html#the-unknown-population-mean",
     "title": "Sampling and estimation",
-    "section": "Reverse engineer the unknown population mean",
-    "text": "Reverse engineer the unknown population mean\nSo far, we have been asking:\nGiven that we know the population mean \\mu, what is the probability of sampling a particular range of sample means?\n\n\nLet’s flip this logic around:\n\nWe collect a sample and get a mean \\bar{x}. Can we use probability to estimate how far our \\bar{x} might be from the unknown population mean \\mu?"
+    "section": "The unknown population mean",
+    "text": "The unknown population mean\nSo far, we have been asking ⏭️\nWe know the population mean \\mu, what is the probability of sampling a particular range of sample means?\n\n\n\nLet’s flip this logic around ⏮️\n\nWe collected a sample and have mean \\bar{x}. Can we use probability to estimate how far our \\bar{x} might be from the unknown population mean \\mu?"
   },
   {
-    "objectID": "week3/slides.html#sampling-distribution-2",
-    "href": "week3/slides.html#sampling-distribution-2",
+    "objectID": "week3/slides.html#sampling-distribution-and-se",
+    "href": "week3/slides.html#sampling-distribution-and-se",
     "title": "Sampling and estimation",
-    "section": "Sampling distribution",
-    "text": "Sampling distribution\n\n\n\n\n\n\n\n\n\n\n\n\n\nP(\\mu-1.96SE\\leq\\bar X\\leq\\mu+1.96SE) = 0.95\n\n\n\n\n\\bar{X} \\sim \\mathcal{N}\\left(\\mu,\\frac{\\sigma}{\\sqrt{n}}\\right)\n\n\n\nSample distributions have and SD of SE \\frac{\\sigma}{\\sqrt{n}}\nIt measures how far a sample mean \\bar{x} is from the true population mean \\mu in SEs units.\n\n\n\n\n\n\n\n\nRecall\n\n\n\nA sampling distribution represents all possible values of \\bar{x} and how likely each value is"
+    "section": "Sampling distribution and SE",
+    "text": "Sampling distribution and SE\n\n\n\n\n\n\n\n\n\n\n\n\n\nP(\\mu-1.96SE\\leq\\bar X\\leq\\mu+1.96SE) = 0.95 🔍\n\n\n\n\n\\bar{X} \\sim \\mathcal{N}\\left(\\mu,\\frac{\\sigma}{\\sqrt{n}}\\right)\n\n\n\nSample distributions have and SD of SE \\frac{\\sigma}{\\sqrt{n}} 🔍\nIt measures how far a sample mean \\bar{x} is from the true population mean \\mu in SEs units.\n\n\n\n\n\n\n\n\nRecall\n\n\n\nA sampling distribution represents all possible values of \\bar{x} and how likely each value is"
+  },
+  {
+    "objectID": "week3/slides.html#probability-to-confidence",
+    "href": "week3/slides.html#probability-to-confidence",
+    "title": "Sampling and estimation",
+    "section": "Probability to confidence",
+    "text": "Probability to confidence\n95% of sample means fall within +/- 1.96 SE  of the population mean 🔍\n\n\n\n\n\n\n\n\n\n\n\n\n\nP(\\mu-1.96SE\\leq\\bar X\\leq\\mu+1.96SE) = 0.95\n\n\n\n\n\n\n\n\n\nLogic 🤔\n\n\n\n\nIf we construct a range extending 1.96 SE on either side of our sample mean, that range will contain the true population mean \\mu in 95% of repeated samples.\n\n\n\n\n\nThis is the core idea behind a 95% confidence interval 💡"
+  },
+  {
+    "objectID": "week3/slides.html#boba-sales-ci",
+    "href": "week3/slides.html#boba-sales-ci",
+    "title": "Sampling and estimation",
+    "section": "Boba sales + CI",
+    "text": "Boba sales + CI"
   },
   {
     "objectID": "week3/slides.html#break-1",
