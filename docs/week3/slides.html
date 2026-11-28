@@ -674,24 +674,38 @@ Find <span class="math inline">P(24&lt;\bar X&lt;26)</span></p>
 </iframe>
 </div>
 </section>
-<section id="the-unknown-population-mean" class="slide level2">
-<h2>The unknown population mean</h2>
+<section id="problem-of-the-unknown" class="slide level2">
+<h2>Problem of the unknown</h2>
 <div class="columns">
 <div class="column">
-<p>So far, we have been asking ⏭️</p>
-<p><strong>We know the population mean</strong> <span class="math inline">\mu</span>, what is the probability of sampling a particular range of sample means?<br>
-</p>
+<div style="font-size: 0.8em;">
+<p>So far ⏭️</p>
+<p>With the sample mean <span class="math inline">\bar{x}</span> and SD <span class="math inline">s</span></p>
+<ul>
+<li>We can answer: “What is the probability of sampling a particular range of means?”<br>
+</li>
+</ul>
 <p><br>
 Let’s flip this logic around ⏮️</p>
 <blockquote>
-<p>We collected a sample and have mean <span class="math inline">\bar{x}</span>. Can we use probability to estimate how far our <span class="math inline">\bar{x}</span> might be from the <strong>unknown population mean</strong> <span class="math inline">\mu</span>?</p>
+<p>Can we use probability to estimate how far our <span class="math inline">\bar{x}</span> might be from an <strong>unknown population mean</strong> <span class="math inline">\mu</span>?</p>
 </blockquote>
+</div>
 </div><div class="column">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center" alt="Normal sampling distribution centred on 25 with standard error 8 divided by the square root of 10. The area between 24 and 26 is shaded dark blue." width="768"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Sampling distribution centred on 25. The area between 24 and 26 is shaded blue and marked with a question mark."></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Sampling distribution centred on the population mean mu. The middle 90 percent is shaded and labelled Known: 90%. A sample mean x bar is marked to the right of mu."></p>
 </figure>
 </div>
 </div>
@@ -709,7 +723,7 @@ Let’s flip this logic around ⏮️</p>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% between the mean minus 1.96 standard errors and the mean plus 1.96 standard errors is shaded dark blue."></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% between the mean minus 1.96 standard errors and the mean plus 1.96 standard errors is shaded dark blue."></p>
 </figure>
 </div>
 </div>
@@ -759,7 +773,7 @@ P(\mu-1.96SE\leq\bar X\leq\mu+1.96SE) = 0.95 🔍
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% between the mean minus 1.96 standard errors and the mean plus 1.96 standard errors is shaded dark blue."></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% between the mean minus 1.96 standard errors and the mean plus 1.96 standard errors is shaded dark blue."></p>
 </figure>
 </div>
 </div>
@@ -823,7 +837,7 @@ This is the core idea behind a <strong>95% confidence interval!</strong></p>
 <li>Label 2.5% at each tail</li>
 </ul>
 
-<img data-src="slides_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% between the mean minus 1.96 standard errors and the mean plus 1.96 standard errors is shaded dark blue."><ol start="3" type="1">
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%" alt="Sampling distribution of the sample mean. The middle 95% between the mean minus 1.96 standard errors and the mean plus 1.96 standard errors is shaded dark blue."><ol start="3" type="1">
 <li>Calculate the threshold / inverse values at your confidence level</li>
 </ol>
 </section>

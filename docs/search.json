@@ -2296,11 +2296,11 @@
     "text": "Boba sales 🧋\n\nWe know our sample mean isn’t the true mean. How can we report all plausible values?"
   },
   {
-    "objectID": "week3/slides.html#the-unknown-population-mean",
-    "href": "week3/slides.html#the-unknown-population-mean",
+    "objectID": "week3/slides.html#problem-of-the-unknown",
+    "href": "week3/slides.html#problem-of-the-unknown",
     "title": "Sampling and estimation",
-    "section": "The unknown population mean",
-    "text": "The unknown population mean\n\n\nSo far, we have been asking ⏭️\nWe know the population mean \\mu, what is the probability of sampling a particular range of sample means?\n\n\nLet’s flip this logic around ⏮️\n\nWe collected a sample and have mean \\bar{x}. Can we use probability to estimate how far our \\bar{x} might be from the unknown population mean \\mu?"
+    "section": "Problem of the unknown",
+    "text": "Problem of the unknown\n\n\n\nSo far ⏭️\nWith the sample mean \\bar{x} and SD s\n\nWe can answer: “What is the probability of sampling a particular range of means?”\n\n\n\nLet’s flip this logic around ⏮️\n\nCan we use probability to estimate how far our \\bar{x} might be from an unknown population mean \\mu?"
   },
   {
     "objectID": "week3/slides.html#sampling-distribution-to-z",
