@@ -2293,7 +2293,21 @@
     "href": "week3/slides.html#boba-sales-1",
     "title": "Sampling and estimation",
     "section": "Boba sales 🧋",
-    "text": "Boba sales 🧋\n\nWe know our sample mean isn’t the true mean. How can we report all plausible values?\n\n\n\n\no far, we have been asking:\nGiven that we know the population mean \\mu, what is the probability of sampling a particular range of sample means?\n\n\nLet’s flip this logic around:\n\nIn reality, we collect a sample and get a sample mean \\bar{x}. Can we estimate the range of population means that is consistent with that observation at the 95% confidence level?\n\n\nStandard normal distriubution"
+    "text": "Boba sales 🧋\n\nWe know our sample mean isn’t the true mean. How can we report all plausible values?"
+  },
+  {
+    "objectID": "week3/slides.html#probability-and-an-unknown-population-mean",
+    "href": "week3/slides.html#probability-and-an-unknown-population-mean",
+    "title": "Sampling and estimation",
+    "section": "Probability and an unknown population mean",
+    "text": "Probability and an unknown population mean\nSo far, we have been asking:\nGiven that we know the population mean \\mu, what is the probability of sampling a particular range of sample means?\n\n\nLet’s flip this logic around:\n\nIn reality, we collect a sample and get a sample mean \\bar{x}. How can we use probability to work out how far our \\bar{x} might be from the unknown population mean \\mu?"
+  },
+  {
+    "objectID": "week3/slides.html#standard-normal-distriubution",
+    "href": "week3/slides.html#standard-normal-distriubution",
+    "title": "Sampling and estimation",
+    "section": "Standard normal distriubution",
+    "text": "Standard normal distriubution"
   },
   {
     "objectID": "week3/slides.html#break-1",
